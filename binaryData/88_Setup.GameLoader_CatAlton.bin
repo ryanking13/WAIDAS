@@ -1,0 +1,91 @@
+
+dialogue start
+Cat-Alton
+
+action:response:root
+Cat
+root-1:Meow!
+</>root-end:Hsss!
+action end
+
+action:statement:root-1
+Alton:Aw, hey there kitty!
+Alton:Man, staffing the observation room is so boring.  Maybe you can come with me to keep me company!
+next:root-2
+action end
+
+action:response:root-2
+Cat
+root-3:Meow!
+</>root-2-no:Leave
+action end
+
+action:statement:root-2-no
+Alton:I guess not.
+next:root-null
+action end
+
+action:statement:root-3
+Alton:Great!  Everyone seems so caught up in their own stuff.  They never stop by.
+Alton:I guess it's my job to get them to lighten up, right?
+Alton:Especially if I could get Sue to stop by at all...
+Alton:....
+Alton:I'm talking to a cat.  What's wrong with me?
+next:root-null
+action end
+
+
+
+action:response:root2
+Cat
+root2-1:Meow!
+</>root2-end:Hsss!
+action end
+
+action:statement:root2-1
+Alton:...Hey kitty.
+Alton:Sorry, I'm not in the mood to play right now.
+next:root2-2
+action end
+
+action:response:root2-2
+Cat
+root2-3:Meow!
+</>root2-null:Leave
+action end
+
+action:statement:root2-3
+Alton:Sigh...
+Alton:Kinda wish I was back home right now.
+Alton:I just don't understand.
+next:root2-null
+action end
+
+dialogue end
+
+
+
+action:response:root3
+Cat
+root3-1:Meow!
+</>root-end:Hsss!
+action end
+
+action:statement:root3-1
+Alton:Aw, hey kitty.
+Alton:Things are going to be okay...right?
+next:root3-2
+action end
+
+action:response:root3-2
+Cat
+root3-3:Meow!
+</>root3-null:Leave
+action end
+
+action:statement:root3-3
+Alton:I just wish things would go back to how they were before.
+Alton:Now, I don't know what's going on.  With Sue...the captain...
+Alton:I don't know what to do.  Or if I can do anything.
+next:root3-null
+action end

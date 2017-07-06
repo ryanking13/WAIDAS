@@ -1,0 +1,180 @@
+
+
+
+// GWEN - QUELLA ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Gwen-Quella
+
+action:response:root
+Gwen
+root-1:Where are you from?
+root-2:Where are you going?
+</>root-null:Never mind.
+action end
+
+action:statement:root-1
+Quella:Me?  I'm from Toronto.
+next:root-1-A
+action end
+
+action:response:root-1-A
+Gwen
+root-1-B:How do you like it there?
+root-1-C:What brings you out here?
+</>root-null:Never mind.
+action end
+
+action:statement:root-1-B
+Quella:It's alright.  I kind of think all cities are the same to a large extent.
+Quella:It has more to do with where you're living in that city.
+Quella:My neighborhood isn't bad.
+next:root-1-A
+action end
+
+action:statement:root-1-C
+Quella:I'm just trying to clear my head by getting out of the city.
+Quella:It also allows me to focus more on my book.
+Quella:My family hated the idea, but it's been really good for me.
+next:root-1-A
+action end
+
+action:statement:root-2
+Quella:Nowhere in particular.  After we land I'll be hotel-hopping a bit.
+Quella:Eventually I'll head back home.
+Quella:It'd be great if I could finish my first draft before then.
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+// GWEN - QUELLA (CHAPTER 4) ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Gwen-Quella
+
+action:response:chap4
+Gwen
+chap4-A:Hey...can we talk?
+</>chap4-null:Say nothing
+action end
+
+action:statement:chap4-A
+Quella:Yes, of course!  What is it?
+next:chap4-B
+action end
+
+action:response:chap4-B
+Gwen
+chap4-C:You have to believe me.  I didn't do it.:trigger.chap4gwenQuellaProgress.on
+chap4-D:I never saw that key before in my life.
+chap4-E:The real killer must still be out there...
+</>chap4-null:...Never mind.
+action end
+
+action:statement:chap4-C
+Quella:I do believe you, Gwen.  I don't think you could have done it.
+Quella:The question is, how do we prove that?
+next:chap4-B
+action end
+
+action:statement:chap4-D
+Quella:I've been wondering if someone may have planted the key in your room while you were sleeping.
+Quella:Do you have any thoughts about that?
+next:chap4-D-1
+action end
+
+action:response:chap4-D-1
+Gwen
+chap4-B:That sounds likely, but I don't have any idea who would have done that.
+chap4-trigger.chap4MarcConfessedPlant:Marcurio admitted to me that he planted the key.
+action end
+
+action:statement:chap4-trigger.chap4MarcConfessedPlant
+Quella:What?  Really?!
+Quella:That's crazy.  I can't believe he'd admit it to you.  He must be really confident the others will take his side if we called him on it.
+Quella:If one crew member was a part of this, I wonder if Xu or Alton were as well...?
+next:chap4-B
+action end
+
+action:statement:chap4-E
+Quella:That's what worries me most.
+Quella:If you're being framed, there's no reason to think any of us are safe on this ship.
+next:chap4-B
+action end
+
+dialogue end
+
+
+
+
+// GWEN - QUELLA (CHAPTER 5) ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Gwen-Quella
+
+action:response:chap5
+Gwen
+chap5-trigger.chap4gwenQuellaProgress:Thank you for believing in me.
+chap5-B:Be careful, Quella.  The killer is still out there.
+chap5-C:How are you holding up?
+</>chap5-null:Never mind.
+action end
+
+action:statement:chap5-trigger.chap4gwenQuellaProgress
+Quella:Of course.  There was no question about it.
+next:chap5-innocent
+action end
+
+action:response:chap5-innocent
+Gwen
+chap5-innocent-A:So many others thought I was suspicious.  Why didn't you?
+</>chap5-null:Never mind.
+action end
+
+action:statement:chap5-innocent-A
+Quella:I could just tell, when I talked to you.
+Quella:I knew you weren't the kind to hurt anybody.  It's as simple as that.
+next:chap5
+action end
+
+action:statement:chap5-B
+Quella:Thanks.  I will.
+Quella:After everything that's happened, it's hard to see how a good outcome is possible.
+Quella:But I try to have faith.
+next:chap5-B-1
+action end
+
+action:response:chap5-B-1
+Gwen
+chap5-B-2:Faith?:trigger.chap5gwenQuellaProgress.on
+chap5-trigger.chap5gwenQuellaProgress:I don't believe in miracles.
+</>chap5-null:Talk to you later.
+action end
+
+action:statement:chap5-B-2
+Quella:...I don't know.
+Quella:I try to remind myself, this world is good.  People are good.
+Quella:Somehow, it'll work out.  Even if it takes a miracle.
+next:chap5-B-1
+action end
+
+action:statement:chap5-trigger.chap5gwenQuellaProgress
+Quella:That's fair.  There's probably no such thing.
+Quella:It's silly, but I still like to think there's someone watching out for us.
+next:chap5
+action end
+
+action:statement:chap5-C
+Quella:About as well as I could hope, thanks.
+Quella:I'm just glad you're in the clear now.
+next:chap5
+action end
+
+dialogue end
+
+
+

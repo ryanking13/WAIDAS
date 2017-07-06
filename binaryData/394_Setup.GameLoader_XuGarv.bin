@@ -1,0 +1,73 @@
+
+
+// XU - GARV ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Xu-Garv
+
+action:response:root
+Xu
+root-1:You really like animals, huh?
+root-trigger.ChapterTwoOn:Have you run into Donovan?
+root-3:What's your trade?:trigger.chap1xuGarvProgress.on
+</>root-null:Never mind.
+action end
+
+action:statement:root-1
+Garv:Of course I do!  Who doesn't like animals?
+Garv:They're so innocent.  Incorruptible, even.
+next:root-null
+action end
+
+action:statement:root-trigger.ChapterTwoOn
+Garv:You mean the man in the room next to me?  No, I haven't.  Why?
+next:root-2-A
+action end
+
+action:response:root-2-A
+Xu
+root-2-B:Oh, I just want to talk to him.
+action end
+
+action:statement:root-2-B
+Garv:He's rather reclusive, so I haven't seen him much.
+Garv:He seems to have a mean streak.  When my cat rubbed up against him, he looked as if he wanted to kick her!
+Garv:A man with no warmth for pets...quite the brute.
+next:root-null
+action end
+
+action:statement:root-3
+Garv:Ah, now there's a girl with a head on her shoulders - asking the one question that matters!
+Garv:I'm a wholesaler - basically, I buy product where it's cheap, move it to a place where it's expensive, and sell it.
+Garv:It's not a terribly complicated business, but it is quite lucrative.
+next:root-null
+action end
+
+
+
+action:response:root2
+Xu
+root2-A:Why'd you decide to bring your pets on board, anyway?
+root2-B:Earlier you said you're a wholesaler.  What kind of product do you move?:trigger.chap3xuGarvProgress.on
+</>root-null:Never mind.
+action end
+
+action:statement:root2-A
+Garv:Oh, you know.
+Garv:Allowing them to get outside and experience new environments is healthy for them.
+Garv:Wouldn't want them to get cabin fever!
+next:root2
+action end
+
+action:statement:root2-B
+Garv:Ah, yes, that's a good memory.
+Garv:I move...well, it's a bit of an exotic product.  It's a bit problematic to explain.
+Garv:It suffices to say that transporting it is quite the challenge.
+Garv:It requires a very resourceful kind of person.
+next:root2
+action end
+
+dialogue end
+
+
+

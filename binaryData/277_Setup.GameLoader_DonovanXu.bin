@@ -1,0 +1,49 @@
+
+
+// DONOVAN - XU ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Donovan-Xu
+
+action:response:root
+Donovan
+root-1:Do you know of any areas in the ship?
+root-2:Does anyone else know I broke into your room?
+</>root-null:Bye.
+action end
+
+action:statement:root-1
+Xu:You mean, like, hidden areas?
+Xu:The captain before this previous one had said this ship used to be a smuggler's ship.
+Xu:I guess it's possible there are small little spaces that have been built over.
+Xu:But I feel like if there were any that had been used recently, we would have noticed.
+Xu:...Right?
+next:root-null
+action end
+
+action:statement:root-2
+Xu:Well...Alton knows.  But it's not like I specifically told him or anything.
+Xu:He was following me around yesterday as I tried to figure out who had broken in.
+Xu:I haven't told anyone else, honest.
+next:root-3
+action end
+
+action:response:root-3
+Donovan
+root-4:Shit.  The more people know about that, the more dangerous things are.
+action end
+
+action:statement:root-4
+Xu:What, Alton?  I wouldn't worry about him.
+Xu:I don't think he'd be capable of any of the stuff you had talked about.
+Xu:He's too nice.  And...not extremely bright.
+next:root-5
+action end
+
+action:response:root-5
+Donovan
+</>root-null:You can never be too careful.
+action end
+
+dialogue end
+

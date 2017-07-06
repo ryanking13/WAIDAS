@@ -1,0 +1,164 @@
+
+
+// GARV - GWEN ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Garv-Gwen
+
+action:response:root
+Garv
+root-1:How well did you know the captain?  What did you think of her?
+</>root-null:Goodbye.
+action end
+
+action:statement:root-1
+Gwen:I didn't know her.  She was a stranger to me.
+Gwen:She was...nice enough.  Polite.
+next:root-2
+action end
+
+action:response:root-2
+Garv
+root-2-A:Yes, yes.  But what did you think of her?
+root-2-B:How did you feel around her?
+</>root-null:Goodbye.
+action end
+
+action:statement:root-2-A
+Gwen:I...I don't know.  I don't know why you're asking, either.
+Gwen:She was distant.  She seemed nice, but was distracted.  Worried about something.
+next:root-3
+action end
+
+action:statement:root-2-B
+Gwen:Why...why do you ask?
+next:root-4
+action end
+
+action:response:root-3
+Garv
+root-3-A:What makes you say that?
+root-3-B:You make it sound very ominous.
+</>root-null:Goodbye.
+action end
+
+action:statement:root-3-A
+Gwen:I don't know.  Maybe nothing.
+Gwen:It was just the feeling around her.
+next:root-3
+action end
+
+action:statement:root-3-B
+Gwen:I guess it seems that way now.
+Gwen:I...I wonder sometimes.  If she knew.  If she felt it.
+next:root-3
+action end
+
+action:response:root-4
+Garv
+root-4-A:You seem a bit easy to fright.  I just wonder if you were threatened by her.
+root-4-B:You seem to have a high sense of intuition.
+</>root-null:Goodbye.
+action end
+
+action:statement:root-4-A
+Gwen:I...I don't know what you're talking about.
+Gwen:She seemed nice.  That's all.  She was...nice.
+next:root-4
+action end
+
+action:statement:root-4-B
+Gwen:I don't know about that.
+Gwen:I'm not sure what it is you want to know, but I don't think I can help you.
+Gwen:...Sorry.
+next:root-4
+action end
+
+dialogue end
+
+
+
+
+
+// GARV - GWEN (CHAPTER 4) ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Garv-Gwen
+
+action:response:chap4
+Garv
+chap4-A:You look as if you're in total despair.
+</>chap4-null:Goodbye.
+action end
+
+action:statement:chap4-A
+Gwen:Shouldn't I?  I'm tied up here and everyone thinks I'm a murderer...but I'm innocent!
+next:chap4-B
+action end
+
+action:response:chap4-B
+Garv
+chap4-C:Calm down.  You're going to be fine.
+</>chap4-null:Goodbye.
+action end
+
+action:statement:chap4-C
+Gwen:How can I be calm in circumstances like this?
+next:chap4-C-2
+action end
+
+action:response:chap4-C-2
+Garv
+chap4-C-3:If you're really innocent, you'll be released after we land.
+action end
+
+action:statement:chap4-C-3
+Gwen:What about the real murderer?  They could even strike again before we land...
+next:chap4-C-4
+action end
+
+action:response:chap4-C-4
+Garv
+</>chap4-null:You don't need to worry about that.  I think I have things under control.
+action end
+
+
+
+action:response:chap6
+Garv
+chap6-A:I'm glad to see that your innocence has been proven.
+</>chap6-null:Goodbye.
+action end
+
+action:statement:chap6-A
+Gwen:...Thanks.
+Gwen:I just wish I understood more about all of this.
+next:chap6-B
+action end
+
+action:response:chap6-B
+Garv
+chap6-C:Proving your innocence was just the first step.
+chap6-D:Listen to your intuition.
+</>chap6-null:Goodbye.
+action end
+
+action:statement:chap6-C
+Gwen:You think we'll still find who the killer is, after all of this?
+Gwen:I wish I was as optimistic as you are.
+next:chap6-B
+action end
+
+action:statement:chap6-D
+Gwen:I feel like I have, and it's just gotten me in trouble.
+Gwen:Though...I guess it's possible I wasn't completely wrong, just misguided.
+Gwen:I have a lot to think about.
+next:chap6-B
+action end
+
+
+dialogue end
+
+
+
+

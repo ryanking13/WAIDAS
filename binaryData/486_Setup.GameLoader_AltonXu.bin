@@ -1,0 +1,172 @@
+
+
+dialogue start
+Alton-Xu
+
+action:response:root
+Alton
+root-1:We need to talk.
+</>root-null:Never mind.
+action end
+
+action:statement:root-1
+Xu:...Okay...let's talk.
+next:root-2
+action end
+
+action:response:root-2
+Alton
+root-used:So I guess that was the reason you hung out with me?  For free stuff?
+root-why:Why?  Why would you steal from me?
+</>root-null:Never mind.
+action end
+
+action:statement:root-used
+Xu:No...no, that's not true at all.
+Xu:Look, I'm sorry...I don't know what to say.
+next:root-2
+action end
+
+action:statement:root-why
+Xu:I'm really sorry...really, really sorry.
+Xu:I didn't mean to...uh...y'know...
+Xu:It's kinda hard for me to talk about.
+next:root-why-2
+action end
+
+action:response:root-why-2
+Alton
+root-why-3:You could try.
+root-why-4:What were you planning to do with that stuff?  Sell it?
+action end
+
+action:statement:root-why-3
+Xu:...
+Xu:Look, I'm really sorry...I know you're not going to forgive me.
+next:root-why-2
+action end
+
+action:statement:root-why-4
+Xu:...Yeah.  Look, I...I really need the money.  Really badly.
+next:root-why-5
+action end
+
+action:response:root-why-5
+Alton
+root-why-6:And that makes it okay, or something?:trigger.chap2altonSad.on
+action end
+
+action:statement:root-why-6
+Xu:Well, not everyone has it off as well as you do, Alton.
+Xu:You're here because you wanted to take a long vacation.  But others are here because it's the only way they'll stay fed.
+Xu:If I didn't have this job, I'd be completely screwed.  Same with Marc.
+Xu:And they know that, so they charge us shit for honest work.
+Xu:Meanwhile, you get to sit around all day doing nothing, and for way higher pay.
+Xu:What if I told you that there's a whole world of people living under you?
+Xu:That you are so privileged over, you aren't even aware of them?
+next:root-6
+action end
+
+action:response:root-6
+Alton
+<!!>root-6-A:Do you expect me to fall for any of those excuses?:trigger.epilogueAX1.on
+<!!>root-6-B:That doesn't make what you did right.:trigger.epilogueAX2.on
+<!!>root-6-C:I didn't realize things were so bad.:trigger.epilogueAX3.on
+action end
+
+action:statement:root-6-A
+Xu:What?  I'm telling you the truth.  It's not an excuse.
+Xu:Like I thought, you don't care.  It's uncomfortable to think about so you just ignore it.
+Xu:You're really like all of the others, aren't you?
+next:root-null
+action end
+
+action:statement:root-6-B
+Xu:You're probably right.  I'm not going to try and justify my actions.
+Xu:But you're lying to yourself if you think you understand.
+Xu:It's easy to have a strong sense of right and wrong when they've never been tested.
+next:root-null
+action end
+
+action:statement:root-6-C
+Xu:Well...they are.  I'm stuck here, you know?
+Xu:You can leave here, get a real job, move on with your life.  But not me.
+Xu:I'm going to spend the rest of my life in this awful place.  I know it.
+Xu:Look...I'm sorry about what I did.
+Xu:I just want you to know it wasn't personal.
+next:root-null
+action end
+
+
+action:statement:root2
+Xu:I don't think there's anything left to say.
+next:root2-null
+action end
+
+
+action:response:root3
+Alton
+root3-A:What did Donovan steal from your room, again?
+root3-trigger.ChapterThreeOn:Have you seen the captain around at all today?
+</>root-null:Never mind.
+action end
+
+action:statement:root3-A
+Xu:Oh...it was a, uh, family heirloom.
+Xu:It was a tea set I got from my mother.
+next:root3-A-1
+action end
+
+action:response:root3-A-1
+Alton
+root3-A-2:Oh, okay!
+root3-A-3:I thought it was an old vase?
+</>root3-null:Forget it.
+action end
+
+action:statement:root3-A-2
+Xu:Yeah, I don't know.  Why would he go to such lengths to steal that?
+Xu:I really wish I understood why.  But I don't think he'll just tell me.
+next:root3-A-1
+action end
+
+action:statement:root3-A-3
+Xu:Huh...?  Did I say that?
+Xu:Well, there was a vase as...part of the tea set.
+Xu:Yeah, that's what I meant.  It was a, uh...tea...vase.
+next:root3-A-1
+action end
+
+action:statement:root3-trigger.ChapterThreeOn
+Xu:...No.  Can't say that I have.
+Xu:And I didn't see her at all yesterday, either...
+next:root3-B
+action end
+
+action:response:root3-B
+Alton
+root3-B-1:What if we can't find her today?
+root3-B-2:Do you think something happened to her?
+</>root3-null:Never mind.
+action end
+
+action:statement:root3-B-1
+Xu:I don't know.
+Xu:I...really don't know.
+next:root3-B
+action end
+
+action:statement:root3-B-2
+Xu:God, I hope not.
+Xu:I wonder if this has anything to do with...
+Xu:Oh, sorry.  Just thinking out loud.
+next:root3-B
+action end
+
+dialogue end
+
+
+
+
+
+

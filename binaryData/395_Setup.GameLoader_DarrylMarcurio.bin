@@ -1,0 +1,36 @@
+
+
+// DARRYL - MARCURIO ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Darryl-Marcurio
+
+action:response:root
+Darryl
+root-1:What wakes you up in the morning?
+</>root-null:See you later.
+action end
+
+action:statement:root-1
+Marcurio:My alarm clock?
+next:root-1-A
+action end
+
+action:response:root-1-A
+Darryl
+root-1-B:I mean...what motivates you?
+action end
+
+action:statement:root-1-B
+Marcurio:For...everything?
+Marcurio:Success.
+Marcurio:This ship reeks of mediocrity.  Every day I wake up and remember how bad I wanna get out of here.
+Marcurio:I'm going to become the best damn cook I can, and then I'll start up my own four star restaurant.
+Marcurio:Unlike other people here, I've had to bite and claw for everything I get.  I'm used to it.
+Marcurio:No matter how much work I have to put in, I'm going to make it big.
+next:root-null
+action end
+	
+dialogue end
+
+

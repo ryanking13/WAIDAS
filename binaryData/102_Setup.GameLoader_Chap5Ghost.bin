@@ -1,0 +1,300 @@
+
+
+
+dialogue start
+Ghost-EvilDonovan
+
+action:response:root
+<player>
+root-trigger.chap6GarvEnd4:I confess.
+<!>root-trigger.chap6GarvEnd1:Marcurio was feeding the people down here with kitchen stock.
+<!>root-trigger.chap6GarvClue3:The camera footage on your computer shows something important.:trigger.chap6GarvEnd3.on
+root-A:So what about the captain?  What happened to her?
+root-B:The captain wouldn't want this to happen.
+root-C:Why are these people here?
+</>root-null:Never mind.
+action end
+
+action:statement:root-trigger.chap6GarvEnd4
+Donovan:You...what?
+next:root-confessionFail
+action end
+
+action:response:root-confessionFail
+<player>
+root-confessionFail-A:I did it.  I'm the killer.
+action end
+
+action:statement:root-confessionFail-A
+Donovan:That makes this easy.  And yet...
+Donovan:...The evidence doesn't point towards you at all.
+Donovan:I think you're trying to take the fall for everyone else.
+Donovan:Heroic.  Touching.  And a waste of my time.
+next:root-null
+action end
+
+
+action:statement:root-A
+Donovan:I have to admit...I was wrong.
+Donovan:I thought she would be down here, but instead I found that kid.
+Donovan:The same thing that happened to me must've happened to her.  She found out too much, got too close to the truth - and was silenced.
+Donovan:But her discovery, and her death, led us to this exact moment.  I'm not going to waste that.
+next:root
+action end
+
+action:statement:root-B
+Donovan:There's no way you could know that.
+Donovan:But I'm not doing this to avenge her.  This goes far beyond that.
+next:root
+action end
+
+action:statement:root-C
+Donovan:I'm not sure I want to know.
+Donovan:The strange thing is they've clearly been here for our whole trip, but are relatively uninjured.
+Donovan:Yet that kid has been here for just a day, and has been tortured.
+Donovan:After all of this, I feel like I still haven't come close to the truth...
+Donovan:But then, I don't have to.  I already have a way to solve everything.
+next:root
+action end
+
+
+
+action:statement:root-trigger.chap6GarvEnd1
+Donovan:That would answer the question of how these people have stayed down here for so long.
+Donovan:How do you know he was doing this?
+next:root-corruption
+action end
+
+action:response:root-corruption
+<player>
+root-corruption1:There were notes in the cupboard talking about dropping off supplies.  He was being bribed.
+root-corruption2:The kitchen ledger showed mysteriously missing stock.  
+<!>root-corruption3:The captain had found out.
+action end
+
+action:statement:root-corruption1
+Donovan:Bribed?  By who?
+Xu:We don't know.  All the payments and instructions were anonymous.
+Donovan:And in all this time you never pieced together who it was?
+Marcurio:It's been different people over time.  It was all extremely organized...zero loose ends.
+Donovan:Not zero.  I'm still here.
+next:root-corruption
+action end
+
+action:statement:root-corruption2
+Donovan:I get it.  Marcurio, you've been the inside-man for this whole operation, haven't you?
+Donovan:It would seem impossible to sneak all these people in and manage them in total secrecy.
+Donovan:But if you have someone who knows the ins and outs of the ship, where everyone is...
+Marcurio:Hey, I never knew about this place, or what was going on!  I just delivered things.
+Donovan:No.  You did more than that.  You helped cover this up.
+Donovan:Even if you didn't know about this place, you still worked to conceal details that would lead to it being found.
+Marcurio:It was all very organized.  It's not like I had a chance to observe anything.
+Donovan:I wonder about that.
+next:root-corruption
+action end
+
+action:statement:root-corruption3
+Donovan:So the captain was on to what you were doing.  And then soon after, she was gone.
+Donovan:Even if you are as ignorant as you say, you undeniably had motive to silence her.
+Marcurio:No way.  You're not really thinking that I...?
+Donovan:Come to think of it, all of this is just evidence that you were responsible for this operation.
+Donovan:There's almost no evidence anyone else was involved.
+Marcurio:That's ridiculous!  Look, there's no way it could've been me!
+Donovan:Then who was it?
+Marcurio:...One of the passengers.  I know that much.
+Donovan:So you were holding out earlier.  You better talk, and fast.
+Marcurio:When the captain arrived, things changed.  The way I received messages, what they told me to do...
+Marcurio:The person that was giving me orders changed, and it gave me some hints who they were.
+next:root-desperation
+action end
+
+action:response:root-desperation
+<player>
+root-desperation-captain:What do you mean, when the captain arrived?
+<!>root-desperation-way:How did the way you received orders change?:trigger.chap6bothClue1.on
+<!>root-desperation-orders:What new orders did you have?:trigger.chap6garvBridgeClue.on
+</>root:That's enough.
+action end
+
+action:statement:root-desperation-captain
+Marcurio:I have a theory.
+Marcurio:Smilla, our deceased captain, was brand new.  This was her first voyage.
+Marcurio:The captain before her...I'm pretty sure he was on the take.
+Marcurio:Something must have happened to him though.  He was replaced at the last second with Smilla.
+Marcurio:I think there was some change in management, if you could call it that.
+next:root-desperation
+action end
+
+action:statement:root-desperation-way
+Marcurio:The notes I received were usually slid under my door while I was on shift.
+Marcurio:That way I could never see who it was.  It was discrete enough.
+Marcurio:Recently, though, the orders have been placed in the broom closet.
+Marcurio:It's strange, because it's an unnecessary risk - what if someone else found those notes?
+next:root-desperation
+action end
+
+action:statement:root-desperation-orders
+Marcurio:Before the ship departed, before everyone had even boarded, I was instructed to leave the boarding ramp out overnight.
+Marcurio:This would've allowed anyone to get on and off board without anyone knowing.
+Marcurio:And they could smuggle anything...or anyone...on board.
+Marcurio:Here's the thing.  At that time, all staff was already on board.  So the only reason I'd need to leave the ramp out...
+Donovan:...Is if the smuggler wasn't staff.  They were a passenger.
+Marcurio:Exactly.
+next:root-desperation
+action end
+
+
+action:statement:root-trigger.chap6GarvClue3
+Donovan:How did you find that?  My computer was password protected.
+Donovan:Well...what are you talking about?  I never caught anything incriminating.
+Donovan:I wasn't able to hide cameras on the first floor, which was the most important thing.
+next:root-garvClue2
+action end
+
+action:response:root-garvClue2
+<player>
+root-garvClue2-A:Marcurio said that he was getting orders from the broom closet.  Who was seen regularly going in there?
+action end
+
+action:statement:root-garvClue2-A
+Donovan:...Hold on.
+Donovan:Marcurio said before this boat trip, he got orders slid under his door.  Why did that change?  Why now? 
+Donovan:I wonder if the smuggler realized I had bugged the ship.
+Donovan:If they were seen sliding notes under the door of staff, it would alert me.  I would investigate.
+Donovan:So they disguised their correspondence with something innocuous.
+Donovan:Something like...cleaning up after their cat.
+Donovan:Marcurio was going in and out of the closet per his usual need to clean the kitchen...but so were you, Garv.
+Garv:...Hm.  As it happens, I was.
+Donovan:Anything to add on that?
+Garv:Not really.  I have a litter box I need to regularly clean out.
+Donovan:You were the only person besides Marcurio who was going in and out of there.  You were orchestrating this!
+Garv:That's a lot of conclusions to draw from such a small detail.
+Donovan:Well, how do you explain how those notes got there?
+Garv:I'd say that Marcurio's making this up to cover how suspicious he is.  Maybe if he can tie a detail to someone else, he'll be okay.
+Garv:You have to admit there's nothing concrete tying me to anything he's talking about.
+Donovan:...That doesn't mean there isn't anything.  It just means I haven't found it yet.  But I will.
+Garv:No you won't - not if I'm innocent.
+next:root-null
+action end  
+
+
+dialogue end
+
+
+
+
+
+dialogue start
+GhostGarv-EvilDonovan
+
+
+action:response:root
+Garv
+<!>root-trigger.chap6GarvEnd4:I confess.  It was me.
+root-A:This is ridiculous.  You need to slow down and re-evaluate things.
+root-B:There must be some evidence we can use.  Some details.  Something!
+</>root-null:Never mind.
+action end
+
+
+action:statement:root-trigger.chap6GarvEnd4
+Donovan:You...what?
+next:root-confession
+action end
+
+action:response:root-confession
+Garv
+root-confession-A:I was sending Marcurio instructions using the closet.
+action end
+
+action:statement:root-confession-A
+Donovan:When considering the camera footage, that's the only real possibility.
+Donovan:So you knew about all of this?  You were bribing the staff to cover this up?
+next:root-confession-B
+action end
+
+action:response:root-confession-B
+Garv
+root-confession-null:Yes.  And when the captain got too close...I shot her.:trigger.chap5garvNail1.on
+action end
+
+
+action:statement:root-A
+Donovan:Explain.
+next:root-A-1
+action end
+
+action:response:root-A-1
+Garv
+root-A-2:You still can't explain the captain's disappearance, or these other people.  Killing everyone won't answer anything!
+root-A-3:If we can come up with a theory that explains everything, maybe the killer will become obvious.
+action end
+
+action:statement:root-A-2
+Donovan:I don't need to answer anything.  I don't care anymore.
+Donovan:Maybe you want to know why these things have happened.  I think it's too late for that.
+next:root
+action end
+
+action:statement:root-A-3
+Donovan:I need something better than a theory.  I need proof.  And as far as I can tell, there is none.
+Donovan:Maybe it went overboard with the captain.  Maybe it was here before I was thrown overboard.  But it's gone now.
+next:root
+action end
+
+action:statement:root-B
+Donovan:If you have an idea, please share.
+next:root-B-1
+action end
+
+action:response:root-B-1
+Garv
+root-B-2:What's in the boxes?
+<!>root-B-3:Is there anything in the kid's possession?:trigger.chap5GarvQuestion.on
+root-B-4:Do these other people have anything on them?  Clues of where they're from?
+</>root-null:Never mind...
+action end
+
+action:statement:root-B-2
+Donovan:There's some basic, non-spoilable food and drink.
+Donovan:But they're mostly empty, and I'd expect to find other things here.
+Donovan:For example, these people are all heavily sedated, but there's no drugs remaining here.
+Donovan:I think someone dumped everything important out of them.  It's a dead end.
+next:root-B-1
+action end
+
+action:statement:root-B-3
+Donovan:There was a crumpled piece of paper in his pocket.  It came from a book.
+Donovan:I couldn't see anything about it that was relevant to this whatsoever.
+next:root-B-1
+action end
+
+action:statement:root-B-4
+Donovan:Tattered rags for clothes and small cots, nothing else.
+Donovan:No identification.  No possessions.  The only thing I can say is they're not from around here.
+next:root-B-1
+action end
+
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

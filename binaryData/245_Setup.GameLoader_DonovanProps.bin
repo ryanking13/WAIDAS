@@ -1,0 +1,753 @@
+
+dialogue start
+MarcuriosWallHoleDonovan
+action:statement:root
+Donovan:There's a hole in the wall's plaster.
+Donovan:When I tap on the wall, I can tell that it's hollow, from floor to ceiling.
+Donovan:I wonder how far up or down this continues.
+action end
+dialogue end
+
+
+dialogue start
+DiningRoomWallHoleDonovan
+action:statement:root
+Donovan:There's a hole in the wall's plaster.
+Donovan:When I tap on the metal behind the plaster, I can tell it's hollow.
+Donovan:There might be some crawl space behind here.
+action end
+dialogue end
+
+
+
+
+
+
+
+////  DONOVAN'S PROP DIALOGUES   ///////////////////////////////////////////////////
+
+
+// Donovan's room   ////////////////////////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+DonovansComputerDonovan
+
+action:response:root
+Donovan
+root-1:Log on
+</>root-null:Leave the computer alone
+action end
+
+action:response:root-1
+Donovan
+root-email:Check email
+root-camera:Check camera recordings
+</>root-null:Log off
+action end
+
+action:statement:root-camera
+Donovan:I have a lot of footage to comb through.
+Donovan:I can compile the footage of specific days, or focus on each camera.
+next:root-camera2
+action end
+
+action:response:root-camera2
+Donovan
+root-days:Footage for each day
+root-cameras:Footage for each camera
+</>root-1:Back
+</>root-null:Log off
+action end
+
+action:response:root-days
+Donovan
+root-day1:Footage for the day before last
+root-day2:Footage for yesterday
+root-day3:Footage for today
+</>root-camera2:Back
+action end
+
+action:response:root-cameras
+Donovan
+root-cameraB1:Camera on B2
+root-cameraB2:Camera on B1:trigger.chap6donovansFootage.on
+</>root-1:Back
+action end
+
+action:statement:root-day1
+Donovan:The day before last...that was the day the captain was last seen.
+Donovan:There aren't any peculiar movements that morning or afternoon.
+Donovan:That night, after a break the captain left her room and went up to the first floor.
+Donovan:She never came back down.
+Donovan:Unfortunately I couldn't install cameras on the first floor, so I don't have any eyes on her after that point.
+Donovan:Between the time when she left and the next morning, every single person went up to the first floor and came back down.
+Donovan:So really, anything could have happened in that time period.
+Donovan:The last thing to note is when Sue came back to her room that night, she had the spare master key with her.
+Donovan:She must have picked it from the pilothouse when the captain was no longer there...
+next:root-days
+action end
+
+action:statement:root-day2
+Donovan:A couple things happened yesterday.
+Donovan:Alton and Sue were walking all around the place talking to people.  Very strange.
+Donovan:Quella was also particularly busy, walking all around talking to people.
+Donovan:And then that evening, Gwen entered my room.  Somehow, my door was unlocked.
+Donovan:She clearly didn't take anything, so I'm confused what her goal was.
+next:root-days
+action end
+
+action:statement:root-day3
+Donovan:Today isn't over yet, but there's still plenty of footage to cover.
+Donovan:At the crack of dawn, Ferdinand paid a visit to Garv's room.  Odd.
+Donovan:Not long afterwards he had a meeting with most of the ship.
+Donovan:Afterwards most people headed up to the first floor, where I don't have cameras installed.
+next:root-days
+action end
+
+action:statement:root-cameraB1
+Donovan:This is the lowest floor, where all passengers stay.
+Donovan:As expected, there's a lot of people moving in and out of their rooms from day to day.
+Donovan:The only constant is that black cat, which wanders around everywhere.
+Donovan:Sometimes it's carrying small objects in its mouth...it's a small-time thief, I guess.
+Donovan:There really isn't anything suspicious that goes on down here from day to day, though.
+next:root-cameras
+action end
+
+action:statement:root-cameraB2
+Donovan:This is the middle floor, where all the staff stay.
+Donovan:Usually people are walking through here to reach the upper deck, where I don't have any cameras.
+Donovan:Marcurio and Garv are always going in and out of the broom closet for cleaning supplies.
+Donovan:Almost every day since we've disembarked, in fact.
+Donovan:Ferdinand is always walking around everywhere with that stupid grin on his face.
+Donovan:Darryl walks through here once or twice a day, but spends all day on the upper deck.
+next:root-cameras
+action end
+
+
+action:response:root-email
+Donovan
+root-A:Email #1
+root-B:Email #2
+root-C:Email #3:trigger.musicDonovanUnlocked.on
+</>root-1:Back
+</>root-null:Log off
+action end
+
+action:statement:root-A
+null:Hey, Donovan.  It's been a long time since we've spoken.
+null:I hope you're doing better since you left the force.  I know it's been rough.
+null:Truth is, I'm contacting you because I need your help.  Something has come up which requires...a special touch.
+null:It's him, Donovan.
+null:Let me know if you can help.
+null:  - L 
+next:root-1
+action end
+
+action:statement:root-B
+null:I've tracked him down to a small cruise ship.  Of sorts.
+null:However, it's across the border, so it's out of our jurisdiction.  By the time we can coordinate an effort, he'll be gone.
+null:I'd throw away my badge and go after him myself, but I got close to him.  My identity was compromised.
+null:I need someone from outside that he doesn't know.  You're the only one who can do this, Donovan.
+null:It's been a long time since he's struck, and it's possible he'll regard this isolated ship as a prime opportunity.
+null:Attached, you'll find everything you need to know in order to get there.  The rest is on you.
+null:  - L 
+next:root-1
+action end
+
+action:statement:root-C
+null:Oh, and...one last thing, Donovan.
+null:I know you blame me for your dismissal.  But you weren't okay, Donovan.  You needed the break.
+null:Maybe you're still bitter.  But keep this in mind...
+null:I'm breaking a lot of regulations, and personal standards, enlisting your help like this.  I'm putting a lot of trust in you.
+null:So please, be professional about this.  Don't do anything reckless.  Get the job done, and come home.
+null:For me.
+null:  - Lucille
+next:root-1
+action end
+
+dialogue end
+
+
+dialogue start
+DonovansHardwareDonovan
+action:statement:root
+Donovan:My external hard-drive and server.
+Donovan:Not really necessary here, but it couldn't hurt to bring them along.
+next:root-null
+action end
+dialogue end
+
+dialogue start
+DonovansCamerasDonovan
+action:statement:root
+Donovan:Some audio recorders and a photo camera.
+Donovan:I always wear a wire, though I don't expect it'll be too much help.
+next:root-null
+action end
+dialogue end
+
+dialogue start
+DonovansCamerasTwoDonovan
+action:statement:root
+Donovan:A couple of leftover surveillance cameras.
+Donovan:I couldn't set up cameras in every area of the ship.
+Donovan:Some areas are open and unfurnished.  The cameras would have been too obvious.
+next:root-null
+action end
+dialogue end
+
+dialogue start
+SkeletonKeyDonovan
+
+action:response:root
+<player>
+root-1:Take the key:trigger.donovanMasterKey.on
+root-null:Leave it alone
+action end
+
+action:statement:root-1
+Donovan:With this key, I can finish my comprehensive search of this ship.
+Donovan:So far, I've gone through every room, except Marcurio's room and the Captain's room.
+Donovan:I could also check my computer for any information.  I've got a lot of footage of the ship to check out.
+Donovan:...I'm sure I'll be able to find the captain with all of this.
+next:root-null
+action end
+dialogue end
+
+
+
+// Garv's Room   ////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+dialogue start
+GarvsDresserDonovan
+
+action:statement:root
+null:It's a giant, rustic dresser with a mirror on top.  It has four large shelves.
+next:root1
+action end
+
+action:response:root1
+Donovan
+root-A:Top left shelf
+root-B:Top right shelf
+root-C:Bottom left shelf
+root-D:Bottom right shelf
+</>root-null:Never mind.
+action end
+
+action:statement:root-A
+null:This shelf is packed with cat food and bird feed.
+next:root1
+action end
+
+action:statement:root-B
+null:This shelf is stuffed to the brim with cat litter.
+null:Bleh.
+next:root1
+action end
+
+action:statement:root-C
+null:This shelf has a modest amount of clothes.
+null:Human clothes, of course.
+next:root1
+action end
+
+action:statement:root-D
+null:In this shelf there's a variety of medicines and first aid equipment.
+null:Things like bandages, needles, even what appears to be...an IV drip?
+next:root1
+action end
+
+dialogue end
+
+
+// Empty NE Room   ////////////////////////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+EmptyNEDresserDonovan
+
+action:statement:root
+null:It's a giant rustic dresser.
+next:root1
+action end
+
+action:response:root1
+Donovan
+root-A:Top left shelf
+root-B:Top right shelf
+root-C:Bottom left shelf
+root-D:Bottom right shelf:trigger.achievementSecretThree.on
+</>root-null:Never mind.
+action end
+
+action:statement:root-A
+null:Empty.
+next:root1
+action end
+
+action:statement:root-B
+null:There's a fistful of airfresheners in the front.
+null:In the back, there's a decomposing rat.
+null:...Great.
+next:root1
+action end
+
+action:statement:root-C
+null:Empty.
+next:root1
+action end
+
+action:statement:root-D
+null:There are a bunch of crumpled up receipts, all of them unremarkable.
+null:Underneath them is a crumbled up note.
+null:"This loan will take care of the hotel's expenses while we get things set up."
+null:"Soon enough the regular split will be more than enough to support you."
+null:"Obviously, don't leave the money or this note lying around."
+null: - C 
+next:root1
+action end
+
+dialogue end
+
+
+
+// Gwen's room       ////////////////////////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+GwensDresserDonovan
+
+action:statement:root
+null:It's a giant, rustic dresser with a mirror on top.  It has four large shelves.
+next:root1
+action end
+
+action:response:root1
+Donovan
+root-A:Top left shelf
+root-B:Top right shelf
+root-C:Bottom left shelf
+root-D:Bottom right shelf
+</>root-null:Never mind.
+action end
+
+action:statement:root-A
+null:The shelf is filled with clothes.  Undergarments, specifically.
+null:Nothing to see here.
+next:root1
+action end
+
+action:statement:root-B
+null:More clothes.  That shouldn't be surprising, really.  It's what dressers are for.
+next:root1
+action end
+
+action:statement:root-C
+null:The shelf is completely empty, except for what looks like a business card placed in the center.
+null:  Group Therapy for Survivors
+null:On the back is various contact information.
+next:root1
+action end
+
+action:statement:root-D
+null:Empty.
+next:root1
+action end
+
+dialogue end
+
+
+dialogue start
+GwensAxeDonovan
+action:statement:root
+Donovan:Why would someone travel around with a hatchet?
+Donovan:Stranger still, by the look of the blade this axe has never seen any use.
+Donovan:I'll have to keep an eye on Gwen.  She doesn't seem to have a firm grip on reality.
+next:null
+action end
+dialogue end
+
+dialogue start
+GwensBackpackDonovan
+
+action:statement:root
+null:A backpack lies on the floor.
+next:root-1
+action end
+
+action:response:root-1
+<player>
+root-2:Root through it!
+</>root-null:Leave it.
+action end
+
+action:statement:root-2
+Donovan:A mixture of family mementos and pepper spray.
+Donovan:Not what I was expecting to see.
+next:root-null
+action end
+dialogue end
+
+
+
+
+// Marcurio's room   ////////////////////////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+MarcuriosBookcaseDonovan
+
+action:statement:root
+null:A large bookcase filled with big intimidating looking books.
+null:All of them have something to do with food or cooking.
+next:root1
+action end
+
+action:response:root1
+Donovan
+<!>root2:Take a closer look.
+</>root-null:Forget it.
+action end
+
+action:statement:root2
+Donovan:Investigating this book shelf is going to be a bit of an undertaking.  Where should I start...?
+next:root3
+action end
+
+action:response:root3
+Donovan
+root-A:The top shelf
+root-B:The middle shelf
+root-C:The bottom shelf
+</>root-null:I've had enough.
+action end
+
+action:response:root-A
+Donovan
+root-A-1:The Fundamentals of Cooking
+root-A-2:Temperature Management
+root-A-3:Baking, Frying and Grilling
+root-A-4:The Cook's Ultimate Encyclopedia
+root-A-5:The Zen of Food
+root3:Back
+action end
+
+action:statement:root-A-1
+null:It's a giant book that seems to cover a lot of general things about cooking.
+null:It doesn't look very worn.  It was apparently bought and immediately forgotten about.
+next:root-A
+action end
+
+action:statement:root-A-2
+null:The title makes it sound like a really dry and boring book.
+null:Investigating it confirms this is exactly what it is.
+null:Sometimes you can judge a book by its cover.
+next:root-A
+action end
+
+action:statement:root-A-3
+null:This book has a lot of small sticky notes sticking out of the top.
+null:They all have illegible scribbles on them referring to different pages.
+next:root-A
+action end
+
+action:statement:root-A-4
+null:One page in particular is crumpled folded in on itself.
+null:There are big words, written frantically in marker.
+null:I'LL NEVER GET OFF THIS SHIP
+next:root-A
+action end
+
+action:statement:root-A-5
+null:On the inside cover, there are a few words hastily scribbled.
+null: fuck this book
+next:root-A
+action end
+
+action:response:root-B
+Donovan
+root-B-1:The Clean Kitchen Advantage
+root-B-2:100 Great Starter Recipes
+root-B-3:Caring for Your Meat
+root-B-4:A Recipe for Every Occasion
+</>root3:Back
+action end
+
+action:statement:root-B-1
+null:A book made for only the most anal-retentive people alive.
+null:One great tip advises the sorting of vegetables into alphabetical order.
+next:root-B
+action end
+
+action:statement:root-B-2
+null:Almost every recipe in the book is crossed out.
+null:Under each one, several ingredients are circled - presumably, they are lacking at the moment.
+next:root-B
+action end
+
+action:statement:root-B-3
+null:How did a title like that get past the publisher?
+next:root-B
+action end
+
+action:statement:root-B-4
+null:Hiding behind the book are several empty bottles of whiskey.
+null:A recipe for every occassion indeed.
+next:root-B
+action end
+
+action:response:root-C
+Donovan
+root-C-1:Kitchen Management and Organization
+root-trigger.chap3noChestKey:Creating A Successful Restaurant:trigger.chap3chestKey.on
+root-trigger.chap3chestKey:Creating A Successful Restaurant 
+root-C-3:The Complete Chef
+root-C-4:The Art and Science of Culinary Studies
+root-C-5:From Amateur to Professional
+</>root3:Back
+action end
+
+action:statement:root-C-1
+null:The pages are worn and marked all over, with millions of post-it notes sticking out.
+next:root-C
+action end
+
+action:statement:root-trigger.chap3noChestKey
+null:On the inside cover there are some words scribbled down.
+null:Never forget why you're doing this
+null:There's a bulge in the book's pages.
+null:On further inspection, there's a key that's been stuffed inside.
+null:Finders keepers.
+next:root-C
+action end
+
+action:statement:root-trigger.chap3chestKey
+null:On the inside cover there are some words scribbled down.
+null:Never forget why you're doing this
+null:With the key gone, the book can now close completely flat.
+next:root-C
+action end
+
+action:statement:root-C-3
+null:The book talks a lot about the mindset a cook should have towards cooking.
+null:Only the last quarter of the book is dedicated to talking about food.
+next:root-C
+action end
+
+action:statement:root-C-4
+null:This book contains a lot of numbers and really uninteresting diagrams.
+null:On the final page there are some words scribbled down.
+null:Useless, I don't have any equipment that is consistent enough for these measurements!
+next:root-C
+action end
+
+action:statement:root-C-5
+null:This book is so worn out that the pages are falling out of the binding.
+null:Other than that, there's nothing notable about this book.
+next:root-C
+action end
+
+dialogue end
+
+
+
+// Sue's room    ////////////////////////////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+SuesDresserDonovan
+
+action:statement:root
+null:It's a giant, rustic dresser with a mirror on top.  It has four large shelves.
+next:root-2
+action end
+
+action:response:root-2
+Donovan
+root-A:Top left shelf
+root-B:Top right shelf
+root-C:Bottom left shelf
+root-D:Bottom right shelf
+</>root-null:Never mind.
+action end
+
+action:statement:root-A
+null:This shelf contains all sorts of textbooks for studying English and passing English comprehension exams.
+null:Looks like all that studying paid off.
+next:root-2
+action end
+
+action:statement:root-B
+null:Just some extra clothes in here.
+next:root-2
+action end
+
+action:statement:root-C
+null:In this shelf, there are several vibrators.  Also, an open pack of condoms.
+next:root-2
+action end
+
+action:statement:root-D
+null:There are several books and DVDs in Chinese here.  I have no idea what they're about.
+next:root-2
+action end
+
+dialogue end
+
+
+
+// Alton's room     ////////////////////////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+AltonsDresserDonovan
+
+action:statement:root
+null:It's a giant rustic dresser, with four shelves to hold clothes in.
+next:root-2
+action end
+
+action:response:root-2
+Donovan
+root-A:Top left shelf
+root-B:Top right shelf:trigger.achievementSecretOne.on
+root-C:Bottom left shelf
+root-D:Bottom right shelf
+</>root-null:Never mind.
+action end
+
+action:statement:root-A
+null:There's a huge pile of cards.  Cards for a birthday, cards for Christmas, cards just because.
+null:They're all addressed from mom or grandma.  Well, isn't that sweet.
+next:root-2
+action end
+
+action:statement:root-B
+null:A pile of programming textbooks.  They look brand new.
+null:Underneath them is something else...it looks like college transcripts.
+null:For the first two years, there's all As.  A cumulative GPA of 3.9.
+null:The third year there are only withrawals and Fs.  Oh wait, there's one C.  After that it ends.
+null:Finally, at the bottom...a letter of expulsion.
+next:root-2
+action end
+
+action:statement:root-C
+null:Nothing but clothes here.
+next:root-2
+action end
+
+action:statement:root-D
+null:There's all sorts of gadgets and wires here.  Chargers, spare headphones, and so on.
+next:root-2
+action end
+
+dialogue end
+
+
+
+// Closet   ////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+ClosetDonovan
+
+action:statement:root
+null:It's a metal closet for cleaning supplies.
+null:The door won't open.  It needs a key.
+next:root-null
+action end
+
+action:statement:root2
+null:It's a metal closet for cleaning supplies.
+null:The master key is able to open the door.
+null:Inside there are all sorts of cleaning supplies.  There's also a top shelf with lots of paperwork.
+next:root-2
+action end
+
+action:response:root-2
+Donovan
+root-A:Investigate cleaning supplies
+root-B:Investigate paperwork
+</>root-null:That's enough.
+action end
+
+action:statement:root-A
+null:Most of it is what you would expect to find.  Rags, dust pans, bleach, soap, sponges...
+null:They mostly look old and forgotten, except...the bleach has been bought recently.
+null:That can't be good.
+next:root-2
+action end
+
+action:statement:root-B
+null:It's a giant stack of receipts and expenses...it all looks really uninteresting.
+null:Wait.  In the middle of the stack there's a smaller paper with handwriting on it.
+next:root-3
+action end
+
+action:response:root-3
+Donovan
+root-C:Investigate receipts and expenses
+root-D:Investigate handwritten paper:trigger.GhostBGProgressCloset.on
+</>root-null:That's enough.
+action end
+
+action:statement:root-C
+null:Most of the expenses involve staff.  There's also supplies being bought, and food inventory being restocked.
+null:Then there's the income from passengers coming onboard.
+null:Oddly enough, the two don't seem to add up.  The expenses are always a great deal larger than the income.
+next:root-3
+action end
+
+action:statement:root-D
+null:"I hope this note has been found by the right person."
+null:"I have reason to believe someone has been breaking into my room while I'm away.  I think it has to do with that strange chest."
+null:"If I'm right, it means something is terribly wrong here.  Only the master key unlocks my door, and I have the only master key...right?"
+null:"I have a plan, but I could fail.  If I do, someone else needs to know."
+null:"I'm looking for a door that shouldn't exist.  It could be in a corner, or on a side where you don't normally look."
+null:"It must have something to do with what's in that chest, but I couldn't get it open."
+null:"Be careful.  This ship has eyes and ears.  People know things they shouldn't.  There are alliances being forged."
+next:root-3
+action end
+
+
+dialogue end
+
+
+
+// Captain's room   ////////////////////////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+CaptainsChestDonovan
+
+action:response:root
+<player>
+root-1:Open the chest
+</>root-null:Leave it alone.
+action end
+
+action:statement:root-1
+Donovan:Not even the ship's master key will open this chest.  And from the looks of it, picking the lock would be too time-consuming.
+Donovan:If I had the key I could take a look, but otherwise I don't think it's worth my time.
+next:root-null
+action end
+
+action:response:root2
+<player>
+root3:Open the chest
+</>root-null:Leave it alone.
+action end
+
+action:statement:root3
+null:The chest opens up with the key found in Marcurio's room.
+null:Inside are buckets of paint and a paint-roller, along with a hand-written note.
+null:"Do NOT get the cheap shit.  The sun, rain and salt-water will make quick work of shoddy paint."
+null:"I'm sure you understand how disastrous it would be if the paint started chipping before it's due.  Don't be stupid."
+null:"Make sure it's paint for exteriors and it's high quality."
+Donovan:It's all a bit dusty.  It hasn't seen recent use.
+Donovan:Still, it's clear someone has had to do frequent painting on an exterior wall of the ship.
+Donovan:I'd be interested to know why.
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+

@@ -1,0 +1,150 @@
+
+
+
+
+// DARRYL - GWEN ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Darryl-Gwen
+
+action:response:root
+Darryl
+root-1:So how'd you wind up in a place like this?
+</>root-null:See you later.
+action end
+
+action:statement:root-1
+Gwen:Um...it was better than home, I guess.
+next:root-2
+action end
+
+action:response:root-2
+Darryl
+root-3:That seems to be what most people here think.  And where are you hoping to go?
+action end
+
+action:statement:root-3
+Gwen:Away.  Far, far away.
+next:root-4
+action end
+
+action:response:root-4
+Darryl
+root-5:Okay...let's say you get far, far away.  What do you do then?
+</>root-null:Well, good luck with that.
+action end
+
+action:statement:root-5
+Gwen:I...haven't thought that far ahead, really.
+Gwen:I guess I'd want to get an education.  If I could.
+Gwen:I've always wanted to be a scientist...
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+// DARRYL - GWEN (CHAPTER 4) ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Darryl-Gwen
+
+action:response:chap4
+Darryl
+chap4-A:You've seen better days.
+</>chap4-null:Bye.
+action end
+
+action:statement:chap4-A
+Gwen:Yeah...I have.  Thanks, I guess?
+Gwen:You know I didn't do it...right?
+next:chap4-B
+action end
+
+action:response:chap4-B
+Darryl
+chap4-C:Yeah.  I know.
+chap4-D:I don't know anything.
+action end
+
+action:statement:chap4-C
+Gwen:Then why don't you tell anyone?  Can you help me?
+next:chap4-C-1
+action end
+
+action:response:chap4-C-1
+Darryl
+chap4-C-2:I have no evidence or proof.
+chap4-C-3:It doesn't matter.
+chap4-null:Bye.
+action end
+
+action:statement:chap4-C-2
+Gwen:Still...can't you talk to people?  I think they'd listen to you.  You can reason with them!
+next:chap4-null
+action end
+
+action:statement:chap4-C-3
+Gwen:What do you mean it doesn't matter?  There's potentially a murderer loose on the ship!
+next:chap4-null
+action end
+
+action:statement:chap4-D
+Gwen:Of course...no one here trusts me...
+next:chap4-null
+action end
+
+
+
+
+action:response:chap6
+Darryl
+chap6-A:I'm glad you were cleared.:trigger.chap6darrylGwenProgress.on
+chap6-trigger.chap6darrylGwenProgress:You're off the hook, but our situation is still bad.
+</>chap6-null:Never mind.
+action end
+
+action:statement:chap6-A
+Gwen:...Thanks.
+Gwen:You don't sound very glad, though.
+next:chap6
+action end
+
+action:statement:chap6-trigger.chap6darrylGwenProgress
+Gwen:You're right.
+Gwen:Marcurio planted the key in my room, but Sue said he was bribed.
+Gwen:So that would mean someone else was behind it.
+next:chap6-2
+action end
+
+action:response:chap6-2
+Darryl
+chap6-2A:Sounds like you're on the case.
+chap6-2B:I doubt that's where the bribes end.
+</>chap6-null:Bye.
+action end
+
+action:statement:chap6-2A
+Gwen:...I don't know.
+Gwen:I think I have some of the pieces.  Everything seems to revolve around that master key...
+next:chap6-2
+action end
+
+action:statement:chap6-2B
+Gwen:I wonder about that.
+Gwen:If multiple people have been involved from the beginning...it'd be hard to see the whole picture.
+Gwen:Each person just a part of the machine, never seeing the end result.
+Gwen:I wonder if Donovan found anything that could've tied it all together.
+next:chap6-2
+action end
+
+dialogue end
+
+
+
+
+

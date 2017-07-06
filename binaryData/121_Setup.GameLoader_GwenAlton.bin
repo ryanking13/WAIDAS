@@ -1,0 +1,154 @@
+
+
+
+
+// GWEN - ALTON ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Gwen-Alton
+
+action:response:root
+Gwen
+root-1:Where are you from?
+root-2:Where are you going?
+</>root-null:Never mind.
+action end
+
+action:statement:root-1
+Alton:I'm from a small town just outside of Boston.  Nothing special.
+Alton:Hey, where are you from?
+next:root-1-A
+action end
+
+action:response:root-1-A
+Gwen
+root-1-B:Oh, uh...me too.  Outside Boston.
+</>root-null:I should go.
+action end
+
+action:statement:root-1-B
+Alton:Oh, really?  Maybe we lived nearby!  What township were you in?
+next:root-1-C
+action end
+
+action:response:root-1-C
+Gwen
+root-1-D:Um...Glens...dale?
+action end
+
+action:statement:root-1-D
+Alton:Glensdale, huh?  I don't remember hearing of any Glensdale near Boston.
+Alton:That's weird, I'm generally pretty familiar with the area.
+Alton:Hmm.  Glensdale...
+next:root-null
+action end
+
+action:statement:root-2
+Alton:After this?  I dunno, maybe grad school.
+Alton:I could also try teaching English abroad, that'd be cool.
+Alton:But...maybe getting a job in computer science would be better.
+Alton:I don't know.  Ask me again in a year?
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+// GWEN - ALTON  (CHAPTER 4) ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Gwen-Alton
+
+action:response:chap4
+Gwen
+chap4-A:Please...listen to me.
+</>chap4-null:Say nothing
+action end
+
+action:statement:chap4-A
+Alton:I...okay...?
+next:chap4-B
+action end
+
+action:response:chap4-B
+Gwen
+chap4-C:You have to believe me.  I didn't do it.
+chap4-D:I never saw that key before in my life.
+chap4-E:The real killer must still be out there...
+</>chap4-null:...Never mind.
+action end
+
+action:statement:chap4-C
+Alton:I want to believe you, but I just can't.
+Alton:Everyone else says...well...you know.
+next:chap4-B
+action end
+
+action:statement:chap4-D
+Alton:I mean, sure, but, it was in your room, right?
+Alton:You must have seen it...you must have.
+next:chap4-B
+action end
+
+action:statement:chap4-E
+Alton:That...that would be bad.  Really bad, I guess.
+Alton:But they say you're the killer.  So I...I don't know...
+next:chap4-B
+action end
+
+dialogue end
+
+
+
+
+
+// GWEN - ALTON  (CHAPTER 4) ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Gwen-Alton
+
+action:response:chap5
+Gwen
+chap5-A:I told you I was innocent.
+chap5-B:The killer is still around.  And they tried to frame me.
+</>root-null:Never mind.
+action end
+
+action:statement:chap5-A
+Alton:Yeah...I'm sorry I doubted you.
+Alton:I just...all the others seemed so convinced...I didn't know what to think.
+next:chap5-A-1
+action end
+
+action:response:chap5-A-1
+Gwen
+chap5-A-2:It's okay.  I understand.
+chap5-A-3:Who was it that was so convinced?
+</>chap5-null:Forget it.
+action end
+
+action:statement:chap5-A-2
+Alton:Thanks for understanding.
+Alton:I'm just glad that the truth came out.
+next:chap5-A-1
+action end
+
+action:statement:chap5-A-3
+Alton:Well, the staff, mostly.
+Alton:Marcurio, and Ferdinand especially.  Sue too.
+Alton:Garv seemed convinced at first, but I guess he had a change of heart.
+next:chap5-A-1
+action end
+
+action:statement:chap5-B
+Alton:Y-yeah...
+Alton:But maybe now that you're clear of guilt, we'll be able to find out who's really behind this.
+Alton:Right?
+next:chap5
+action end
+
+dialogue end

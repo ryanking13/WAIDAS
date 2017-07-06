@@ -1,0 +1,296 @@
+
+
+//  Bathroom ghost dialogues
+
+
+
+dialogue start
+TheLog
+
+action:statement:root
+???:Hello there, voice.
+???:I cannot remember the last time I was noticed.
+???:Many voices have approached me, but they do not seem to sense me.
+next:root-2
+action end
+
+action:response:root-2
+???
+<?>root-A:Are you talking to me?
+<?>root-B:Who are you?
+<?>root-C:What are you doing here?
+<!>root-D:Can you help me at all?
+action end
+
+action:statement:root-A
+???:You can speak.  You can even sense my presence.
+???:I have not met something like this in a long time.
+???:What are you?
+next:root-A-2
+action end
+
+action:response:root-A-2
+???
+root-A-3:I'm a ghost.  I was murdered by someone here.
+root-A-4:Forgotten what?
+root-A-5:What do you mean, "voices"?
+</>root-2:Back to my other questions...
+action end
+
+action:statement:root-A-3
+???:It makes sense now.
+???:You were one of the voices on this ship.  And then you were silenced.
+???:But you were not ready.  You still have something you want to say.
+???:It seems like you've forgotten what that was.  But it is still there.
+next:root-A-2
+action end
+
+action:statement:root-A-4
+???:You do not know what you do not know.
+???:There is something you want to say.
+???:It is what ties you to this place.
+next:root-A-2
+action end
+
+action:statement:root-A-5
+???:Can you not hear them?
+???:In every other direction, there is total silence, but here there are many voices.
+???:Most cry out for something...attention, safety, respite, revenge.  They hold many secrets.
+???:But then...there is a second group of voices, too.
+???:They are very, very quiet.  I do not hear them often.
+???:Why don't they speak?
+next:root-A-2
+action end
+
+
+action:statement:root-B
+???:I do not understand the question.
+???:I am what I am.
+???:Maybe some time before, I was something else.  Like you.  Or the other voices.
+???:I do not know.
+next:root-2
+action end
+
+action:statement:root-C
+???:I am not doing anything.
+???:I simply...am.
+next:root-C-2
+action end
+
+action:response:root-C-2
+???
+root-C-3:I mean, why are you in the bathroom?
+root-C-4:Are you...watching people here?  In the bathroom?
+</>root-2:Let's change the subject...
+action end
+
+action:statement:root-C-3
+???:I could go anywhere on this ship that I want.
+???:For some reason, this place is...pleasant.
+next:root-C-2
+action end
+
+action:statement:root-C-4
+???:I do not understand the question.
+???:When the voices come in here, they become very relaxed.
+???:It is pleasant.
+next:root-C-2
+action end
+
+action:statement:root-D
+???:It is strange.
+???:Your voice is very loud.  It is...stronger than mine.
+???:Still, you cannot sense everything that I can.  You cannot hear all of the voices, can you?
+???:If you come to me from time to time, I will try to share what I can.
+next:root-null
+action end
+
+
+
+
+
+
+action:statement:nothingNew
+???:I have already shared everything that I can for now.
+???:Come back later and I may have more to say.
+next:root-null
+action end
+
+action:statement:nothingNewAgain
+???:I have already shared everything that I have heard.
+???:The nightmare is about to begin.  Or has it been a nightmare all along?
+???:The voices have all had their turn.
+???:Now it is yours.
+next:root-null
+action end
+
+
+
+
+
+action:statement:chapter1
+???:I hear things.
+???:The voices tangle.  They are confused.
+???:They hold secrets.  Some are small and light, but some are heavy.
+???:Heavy.  So heavy...they are weighing the ship down.
+???:There is something wrong about this place.  Can't you feel it?
+???:...
+???:Tell me...do you believe that this world is just?
+next:chapter1-choice
+action end
+
+action:response:chapter1-choice
+???
+chapter1-yes:Yes, this world is just.:trigger.LogHasSpoken.on
+chapter1-no:No, justice doesn't exist.:trigger.LogHasSpoken.on
+action end
+
+action:statement:chapter1-yes
+???:You do not know it, but this answer is a cruel one.
+???:The voices speak of these ideas, such as justice...but I do not sense anything like it.
+???:There is agony in this place.  Can you not feel it?
+next:root-null
+action end
+
+action:statement:chapter1-no
+???:The other voices disagree with you.  But they are wrong.
+???:They do not know.  They are afraid to know. 
+???:The truth is under their feet, just out of plain view...but they do nothing.
+???:You can do something.
+next:root-null
+action end
+
+
+
+
+action:statement:chapter2
+???:I hear things.
+???:The voices lie.  They move down the wrong path.
+???:You want to find the truth, but the voices will only lead you to error.
+???:They are moving closer and closer...some will be silenced.  Which voice will have the last word?
+???:...
+???:Tell me...do you believe that people are inherently good?
+next:chapter2-choice
+action end
+
+action:response:chapter2-choice
+???
+chapter2-yes:People are naturally good.:trigger.LogHasSpoken.on
+chapter2-no:People are naturally evil.:trigger.LogHasSpoken.on
+action end
+
+action:statement:chapter2-yes
+???:I have heard that the child comes into this world innocent.
+???:But as the child grows, it is corrupted by some affliction.
+???:The parasite moves from host to host, and traces back to the beginning of time.
+???:It wears a most crooked grin.
+next:root-null
+action end
+
+action:statement:chapter2-no
+???:I have heard that the child comes into this world wild and selfish.
+???:But as the child grows, it learns restraint.  It is taught how to be civil.
+???:And yet its first nature is there.  Watching.  Waiting...
+???:It wears a band of tears.
+next:root-null
+action end
+
+
+
+
+
+action:statement:chapter3
+???:I hear things.
+???:The voices have changed.  Something very bad is going to happen.
+???:Can you hear its laughter?  It is becoming deafeningly loud...
+???:...It is happening again.
+???:....It is happening again.
+???:...
+???:Tell me...do you like happy endings?
+next:chapter3-choice
+action end
+
+action:response:chapter3-choice
+???
+chapter3-yes:Yes.:trigger.LogHasSpoken.on
+chapter3-no:No.:trigger.LogHasSpoken.on
+action end
+
+action:statement:chapter3-yes
+???:It is pleasant...the voices yearn for this.  Closure.  Resolution.
+???:But what sort of resolution are we heading towards?
+???:I worry what kind of sacrifices will be needed to find this happy ending...
+next:root-null
+action end
+
+action:statement:chapter3-no
+???:Sometimes what is most needed is unpleasant.
+???:I have heard of illnesses that can only be fought by drinking venom...
+???:A bitter medicine, for a tumor that has grown rampant from neglect.
+???:But how much will remain after the toxin has done its work?
+next:root-null
+action end
+
+
+
+
+
+
+action:statement:chapter4
+???:I hear things.
+???:The voices break.  They scatter in every direction now.
+???:The path is now unclear...this is the chance for redemption.
+???:Beware the black reaper.  Its eyes are everywhere, but it can only see red.
+???:Death has merely deepened its madness.  From below it screams in fury.
+???:Its own mind was destroyed by its incredible power...it is an all-mighty fool.
+???:It waits for you in the black room.
+???:...
+???:Tell me...do you understand all that has happened?
+next:chapter4-choice
+action end
+
+action:response:chapter4-choice
+???
+chapter4-yes:Yes.:trigger.LogHasSpokenAgain.on
+chapter4-no:No.:trigger.LogHasSpokenAgain.on
+action end
+
+action:statement:chapter4-yes
+???:It has all been for a reason.  There are no accidents.
+???:You may not have realized it, but you were drawn here.
+???:Perhaps you could always hear their voices, just as I have, all these years...
+???:There is something special about you.
+???:Yes...you are the only one here who can stop this.
+next:root-null
+action end
+
+action:statement:chapter4-no
+???:This place is everywhere.
+???:Do you think it is a bad dream?  No, it is real.
+???:Things have always been this way...and no matter what you do, it will continue.
+???:But it will be alright.
+???:Just remember.  Remember those who would be otherwise forgotten.
+next:root-null
+action end
+
+
+
+
+
+
+
+
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="10" height="11" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="Basement Room Sheet" tilewidth="32" tileheight="32">
+  <image source="../Tiles/Basement Room Sheet.png" width="224" height="320"/>
+ </tileset>
+ <tileset firstgid="71" name="PropGrid" tilewidth="32" tileheight="32">
+  <image source="../Props/PropGrid.png" width="512" height="832"/>
+ </tileset>
+ <tileset firstgid="487" name="AIGrid" tilewidth="32" tileheight="32">
+  <image source="../Props/AIGrid.png" width="96" height="32"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="10" height="11">
+  <data>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="2"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="14"/>
+   <tile gid="8"/>
+   <tile gid="9"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="21"/>
+   <tile gid="15"/>
+   <tile gid="16"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="21"/>
+   <tile gid="15"/>
+   <tile gid="23"/>
+   <tile gid="36"/>
+   <tile gid="41"/>
+   <tile gid="37"/>
+   <tile gid="1"/>
+   <tile gid="40"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="21"/>
+   <tile gid="15"/>
+   <tile gid="1"/>
+   <tile gid="40"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="41"/>
+   <tile gid="1"/>
+   <tile gid="36"/>
+   <tile gid="1"/>
+   <tile gid="21"/>
+   <tile gid="29"/>
+   <tile gid="30"/>
+   <tile gid="37"/>
+   <tile gid="41"/>
+   <tile gid="36"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="41"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="29"/>
+   <tile gid="30"/>
+   <tile gid="1"/>
+   <tile gid="40"/>
+   <tile gid="1"/>
+   <tile gid="37"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="29"/>
+   <tile gid="30"/>
+   <tile gid="1"/>
+   <tile gid="34"/>
+   <tile gid="26"/>
+   <tile gid="26"/>
+   <tile gid="26"/>
+   <tile gid="35"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="1"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+  </data>
+ </layer>
+ <objectgroup name="Props" width="10" height="11">
+  <object name="DarrylsPainting" gid="307" x="148" y="80">
+   <properties>
+    <property name="Sprite" value="CrookedPainting"/>
+   </properties>
+  </object>
+  <object gid="308" x="180" y="80"/>
+  <object gid="323" x="148" y="112"/>
+  <object gid="324" x="180" y="112"/>
+  <object name="DarrylsFlower" gid="144" x="258" y="115">
+   <properties>
+    <property name="Collidable" value="true"/>
+    <property name="Sprite" value="TableFlower"/>
+   </properties>
+  </object>
+  <object gid="160" x="258" y="147"/>
+  <object gid="176" x="258" y="179"/>
+  <object name="DarrylsDresser" gid="295" x="62" y="135">
+   <properties>
+    <property name="Collidable" value="true"/>
+    <property name="Permissions" value="All"/>
+    <property name="Sprite" value="Dresser"/>
+    <property name="SuccessDialogue" value="Dresser"/>
+   </properties>
+  </object>
+  <object gid="296" x="94" y="135"/>
+  <object gid="297" x="126" y="135"/>
+  <object gid="313" x="126" y="167"/>
+  <object gid="312" x="94" y="167"/>
+  <object gid="311" x="62" y="167"/>
+  <object name="DarrylsNightstand" gid="431" x="169" y="155">
+   <properties>
+    <property name="Collidable" value="true"/>
+    <property name="Sprite" value="Nightstand"/>
+   </properties>
+  </object>
+  <object name="DarrylsPicture" gid="427" x="167" y="141">
+   <properties>
+    <property name="Bounds" value="0,0,32,50"/>
+    <property name="Permissions" value="All"/>
+    <property name="Sprite" value="FramedPicture"/>
+    <property name="SuccessDialogue" value="DarrylsPicture"/>
+   </properties>
+  </object>
+  <object name="DarrylsBed" gid="185" x="208" y="135">
+   <properties>
+    <property name="Collidable" value="true"/>
+    <property name="Permissions" value="All"/>
+    <property name="Sprite" value="BedThree"/>
+    <property name="SuccessDialogue" value="MessyBed"/>
+   </properties>
+  </object>
+  <object gid="201" x="208" y="167"/>
+  <object gid="217" x="208" y="199"/>
+  <object gid="218" x="240" y="199"/>
+  <object gid="202" x="240" y="167"/>
+  <object gid="186" x="240" y="135"/>
+  <object name="DarrylsDesk" gid="363" x="221" y="245">
+   <properties>
+    <property name="Bounds" value="0,16,64,24"/>
+    <property name="Collidable" value="true"/>
+    <property name="Sprite" value="Desk"/>
+   </properties>
+  </object>
+  <object gid="379" x="221" y="277"/>
+  <object gid="364" x="253" y="245"/>
+  <object gid="380" x="253" y="277"/>
+  <object name="DarrylsChair" gid="442" x="250" y="231">
+   <properties>
+    <property name="Bounds" value="0,0,26,36"/>
+    <property name="Sprite" value="ChairFront"/>
+   </properties>
+  </object>
+  <object name="DarrylsJournal" gid="424" x="233" y="235">
+   <properties>
+    <property name="Bounds" value="0,0,32,50"/>
+    <property name="CharDialogue" value="Ghost-true-DarrylsDiaryHandless"/>
+    <property name="CharDialogue2" value="Cat-true-DarrylsDiaryHandless"/>
+    <property name="Permissions" value="All"/>
+    <property name="Sprite" value="Diary"/>
+    <property name="SuccessDialogue" value="DarrylsDiary"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="AI" width="10" height="11">
+  <object name="DarrylAtNight" gid="487" x="160" y="192">
+   <properties>
+    <property name="Character" value="Darryl"/>
+    <property name="Index" value="1"/>
+    <property name="Loop" value="true"/>
+    <property name="Type" value="Routine"/>
+    <property name="WaitTime" value="200"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

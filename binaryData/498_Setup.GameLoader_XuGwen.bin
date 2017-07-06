@@ -1,0 +1,138 @@
+
+
+
+// XU - GWEN ////////////////////////////////////////////////////////////////////////////
+
+
+dialogue start
+Xu-Gwen
+
+action:response:root
+Xu
+root-1:Hey, looking for something?
+root-2:What do you do for a living?
+</>root-null:Never mind.
+action end
+
+action:statement:root-1
+Gwen:...What?  Oh, no.  No.
+next:root-1-A
+action end
+
+action:response:root-1-A
+Xu
+root-1-B:Okay.  I mean, if you're looking for something I could help you find it.
+action end
+
+action:statement:root-1-B
+Gwen:No...I mean, thank you.  But that's not necessary.
+next:root-1-C
+action end
+
+action:response:root-1-C
+Xu
+root-null:Then...enjoy walking around here in circles, I guess?
+action end
+
+action:statement:root-2
+Gwen:...Me?
+Gwen:I guess you could say I'm between things...
+action end
+
+action:response:root-2-A
+Xu
+root-2-B:Not very talkative, are you?
+action end
+
+action:statement:root-2-B
+Gwen:...
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+// XU - GWEN (CHAPTER 4) ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Xu-Gwen
+
+action:response:chap4
+Xu
+chap4-A:Hey, Gwen.
+</>chap4-null:Goodbye.
+action end
+
+action:statement:chap4-A
+Gwen:Xu...please tell them.  It wasn't me.
+Gwen:You're friends with them.  They'd listen to you.  You know it wasn't me, right?
+next:chap4-B
+action end
+
+action:response:chap4-B
+Xu
+chap4-C:I don't know that, no.  If it wasn't you, who was it?
+chap4-D:I think you're mistaken.  I don't have any friends.
+</>chap4-null:See ya.
+action end
+
+action:statement:chap4-C
+Gwen:What...?  I don't know.
+Gwen:I really don't know...
+next:chap4-B
+action end
+
+action:statement:chap4-D
+Gwen:What do you mean?  What about Marcurio?  Alton?  Quella?
+Gwen:You get along with them so well...
+next:chap4-E
+action end
+
+action:response:chap4-E
+Xu
+chap4-F:Gwen, don't be so naive.  Look around.  None of us are friends here.
+action end
+
+action:statement:chap4-F
+Gwen:I don't understand...
+next:chap4-null
+action end
+
+
+
+action:response:chap6
+Xu-Gwen
+chap6-A:Hey, so uh...how's it going?
+</>See ya.
+action end
+
+action:statement:chap6-A
+Gwen:Save it.  Ferdinand filled me in on your part in all of this.
+next:chap6-B
+action end
+
+action:response:chap6-B
+Xu
+chap6-C:I was the one that got Marcurio to spill, and got you freed.
+chap6-D:Well, you're a lot more talkative now, I see.
+</>chap6-null:Never mind.
+action end
+
+action:statement:chap6-C
+Gwen:That's worth something, I guess.  Thank you.
+Gwen:You owe me some answers, though.
+next:chap6-B
+action end
+
+action:statement:chap6-D
+Gwen:There's a lot more to say.
+Gwen:The captain...Donovan...that child...someone has to talk for them.
+next:chap6-B
+action end
+
+dialogue end
+
+

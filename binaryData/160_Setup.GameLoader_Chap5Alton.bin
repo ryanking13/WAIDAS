@@ -1,0 +1,31 @@
+
+
+dialogue start
+Alton-EvilDonovan
+
+action:response:root
+Alton
+root-A:There...there has to be some other solution!
+root-B:You're bluffing, right?  There's no way you'd actually go through with that...
+root-C:I...I just took this job because I wanted to travel.  I don't have anything to do with this...
+</>root-D:Never mind.
+action end
+
+action:statement:root-A
+Donovan:If there was, I wouldn't be standing here right now.
+Donovan:I've gone through it over and over again.  This is the best I can do.
+next:root
+action end
+
+action:statement:root-B
+Donovan:Look where we are.  Consider everything that's happened.  You think I'm putting on an act?
+Donovan:I'm completely serious.  So you better think of something that proves who the killer is.  Fast.
+next:root
+action end
+
+action:statement:root-C
+Donovan:Shut up.
+next:root
+action end
+
+dialogue end

@@ -1,0 +1,116 @@
+
+
+dialogue start
+Marcurio-EvilDonovan
+
+action:response:root
+Marcurio
+root-trigger.chap5XuConfession:I took bribes from the same person Sue did.
+root-A:You're gonna just shoot everyone?  Have you lost your fucking mind?!
+root-B:What if you're wrong about all of this?  Huh?
+root-C:So what's your end game here?
+</>root-null:Never mind.
+action end
+
+action:statement:root-A
+Donovan:Don't be ridiculous.  I'm not going to shoot everybody.
+Donovan:Just most of you.
+next:root
+action end
+
+action:statement:root-B
+Donovan:Explain.
+next:root-B-1
+action end
+
+action:response:root-B-1
+Marcurio
+root-B-2:What if there is no serial killer on board?  What if it's something else completely?
+root-B-3:What if your profile or whatever is wrong?
+action end
+
+action:statement:root-B-2
+Donovan:The serial killer is on board.
+Donovan:Paulo's injuries match up with his previous victims.  And that kind of information is something few people would know.
+Donovan:Maybe I didn't find the captain, but I was still right all along.
+next:root
+action end
+
+action:statement:root-B-3
+Donovan:I have it on very high authority that the person I'm after is a man.
+Donovan:It's not much to go off of, but it narrows things down just enough.
+next:root
+action end
+
+action:statement:root-C
+Donovan:There is no end game.  This is it.
+next:root
+action end
+
+
+action:statement:root-trigger.chap5XuConfession
+Donovan:Fantastic.  We have a second accomplice.
+Donovan:And what were you bribed into doing?  And by whom?
+next:root-marcConfession
+action end
+
+action:response:root-marcConfession
+Marcurio
+root-marcConfession-A:Everything was anonymous.  I don't know who it was.
+root-marcConfession-B:I was the one that received the second copy of the master key.
+root-marcConfession-C:I was instructed to plant the key in Gwen's room, in order to put her under suspicion.:trigger.chap5MarcConfession.on
+<!>root-trigger.chap5MarcConfession:They must have taken the kid before they sent the key, obviously.  So it was completely intentional.:trigger.chap5MarcConfession2.on
+action end
+
+action:statement:root-marcConfession-A
+Donovan:Of course.  And you were the perfect little grunt, never bothering to consider what you were really doing.
+Donovan:Much less who you were truly working for.
+next:root-marcConfession
+action end
+
+action:statement:root-marcConfession-B
+Donovan:It was sent anonymously, I assume?  Do you have any idea who sent it to you?
+next:root-marcConfession-B-1
+action end
+
+action:response:root-marcConfession-B-1
+Marcurio
+root-marcConfession-B-2:No, I don't.  It was dropped off in the middle of last night.
+action end
+
+action:statement:root-marcConfession-B-2
+Donovan:Not long after I had been disposed of.
+Donovan:That must have been the killer.
+next:root-marcConfession
+action end
+
+action:statement:root-marcConfession-C
+Donovan:It's a good thing that didn't stick.
+Donovan:But if they were trying to distance themselves from this, why abduct the kid too?
+Donovan:Those two actions seem to go directly against each other...
+next:root-marcConfession
+action end
+
+action:statement:root-trigger.chap5MarcConfession
+Donovan:You're right...there was no accident there.
+Donovan:But it seems like a contradiction.  If the plan was to give away the key and lay low, why take an additional victim?
+Donovan:Something's missing from this...
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

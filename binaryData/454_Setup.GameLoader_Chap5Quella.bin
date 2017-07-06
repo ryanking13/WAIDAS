@@ -1,0 +1,204 @@
+
+
+
+dialogue start
+Quella-EvilDonovan
+
+action:response:root
+Quella
+<!>trigger.chap6quellaPaulosRoom:I was able to take a look at Paulo's room after he disappeared.
+root-A:You're not thinking clearly, Donovan.  You know this isn't right.
+root-B:What about Paulo?  Is he okay?
+root-C:Don't we need to attend to these people?  We can sort everything else out later.
+</>root-null:Never mind.
+action end
+
+action:statement:root-A
+Donovan:I'm thinking very clearly.
+Donovan:Letting the killer go would mean way more people suffering.  You've seen what they're capable of.
+Donovan:If this boat reaches land, they'll slip away.  I just know it.  This is my last chance to end this.
+next:root-A-1
+action end
+
+action:response:root-A-1
+Quella
+root-A-2:So that means killing innocent people is okay?
+root-A-3:Isn't there evidence here we can use against them?
+action end
+
+action:statement:root-A-2
+Donovan:Innocent people are murdered all over the world as collateral damage of politics or war.
+Donovan:In comparison, this is nothing.
+next:root
+action end
+
+action:statement:root-A-3
+Donovan:If there was, I wouldn't be talking to you right now.  I would have already ended things.
+Donovan:But this place has been cleansed of anything incriminating.
+Donovan:Do you think the killer even anticipated that you would all end up here?
+next:root
+action end
+
+action:statement:root-B
+Donovan:No.  He's not okay.
+Donovan:If there was any doubt that the killer I'm after was on this boat...it's been erased now.
+Donovan:Paulo's injuries match up with his previous victims.  Early stage victims, at least.
+Donovan:Still, most fingers are broken, there's signs of strangulation, and other...injuries.
+Donovan:He's not going to be okay for a very long time.
+next:root
+action end
+
+action:statement:root-C
+Donovan:We can attend to them after the killer has been dealt with.
+Donovan:Before then, they won't truly be safe.
+next:root
+action end
+
+
+action:statement:trigger.chap6quellaPaulosRoom
+Ferdinand:You did?  But that room was off-limits!  How did you get in there?
+Donovan:Shut up.
+Donovan:What did you find?
+next:root-paulo
+action end
+
+action:response:root-paulo
+Quella
+root-trigger.chap6FerdEnd1:One of his books was lying on the floor.  It had a page torn out.:trigger.chap5paulosHint.on
+root-trigger.chap6FerdEnd2:I found a bracelet of Marcurio's on his dresser.  It had blood on it.
+<!>root-trigger.chap5paulosPage:What if the page you found on Paulo came from the book in his room?
+</>root:Never mind.
+action end
+
+action:statement:root-trigger.chap6FerdEnd1
+Donovan:If there was a struggle it would make sense for things to be thrown to the floor.
+Donovan:But I don't think this tells us anything by itself.
+next:root-paulo
+action end
+
+action:statement:root-trigger.chap5paulosPage
+Donovan:That would tie the page to his abduction.
+Donovan:Presumably he tore the page out of the book shortly before he was taken.
+Donovan:It all seems a little too neat to be an accident.  But why?
+next:root-paulosHint
+action end
+
+action:response:root-paulosHint
+Quella
+root-paulosHint1:Maybe it was just an accident.
+root-paulosHint2:Maybe there's something special about the page he tore out.:trigger.chap5ferdNail1.on
+root-paulosHint3:Did he leave a message on the page?
+action end
+
+action:statement:root-paulosHint1
+Donovan:It's possible.  But then it tells us nothing, and this is useless information.
+next:root-paulosHint
+action end
+
+action:statement:root-paulosHint3
+Donovan:There are no writings on the page, and the text itself is completely unremarkable.
+Donovan:Assuming he tore the page out deliberately, chances are he wouldn't have any time to leave such a message.
+next:root-paulosHint
+action end
+
+action:statement:root-paulosHint2
+Donovan:The page was torn straight off.  It does look like he deliberately took out this page.
+Donovan:Why?  What was unique about this page?
+Donovan:I suppose its page number.  Page 106.
+Donovan:...It could be a room number.  There isn't a room 106, but there is a B-106.
+Donovan:That's the first mate's room, isn't it?
+Ferdinand:W-why...I suppose it is.
+Ferdinand:What a strange coincidence.  Though there are many other pages in the book that could have matched with a room!
+Donovan:Not that many.
+Ferdinand:Well, it's truly an unfortunate fluke.
+Donovan:It is circumstantial, but...suspicious.
+next:root-paulo
+action end
+
+action:statement:root-trigger.chap6FerdEnd2
+Marcurio:Wait, we talked about that!  It wasn't what it looked like!
+Donovan:You better have a really good story.  What were you doing there, Marcurio?
+Marcurio:I wasn't there.  Not then, at least.
+Marcurio:My bracelet was taken by that stupid cat.  It must've carried it around and dropped it in that kid's room.
+Garv:He's right.  I saw Sunshine carrying it that night as she passed through my room.
+Donovan:That sounds absurd.  How does a cat steal a bracelet off a grown man's arm?  And why?
+Marcurio:Does it matter why?  There's testimony backing me up.
+next:root-bracelet
+action end
+
+action:response:root-bracelet
+Quella
+root-bracelet1:The cat likes jewelry.  When he knelt down, the bracelet was in reach.
+root-bracelet2:He's lying.  He gave the cat his bracelet.
+root-bracelet1:The cat was on a dresser, and when he tried to move it, it fought back.
+action end
+
+action:statement:root-bracelet1
+Donovan:It's possible.  Is that what happened?
+Marcurio:Sure.  Does it matter?  Does it change anything?
+Donovan:...I can't see how it does.
+next:root-bracelet
+action end
+
+action:statement:root-bracelet2
+Marcurio:That bracelet was a gift.  I've had it for years.  Why would I give it to some rodent?
+next:root-bracelet3
+action end
+
+action:response:root-bracelet3
+Quella
+root-bracelet4:Because you needed the cat to be quiet and leave you alone.:trigger.chap5catExplanation.on
+root-bracelet5:You didn't like the bracelet that much.
+root-bracelet6:You wanted to use the bracelet as an alibi.
+action end
+
+action:statement:root-bracelet5
+Marcurio:...I just said it was an important gift.
+Marcurio:And again, even if that were true how would it change anything?
+next:root-bracelet3
+action end
+
+action:statement:root-bracelet6
+Marcurio:So, what...I give it to the cat, the cat drops it somewhere else, and it looks like I was there?
+Marcurio:Except that actually still doesn't give me a good alibi.  It makes no sense at all.
+next:root-bracelet3
+action end
+
+action:statement:root-bracelet4
+Marcurio:Okay...say that were true.  I still don't see how it's relevant to everything else.
+Marcurio:That guy's pointing a gun at us, and we're arguing about why a cat took my bracelet?!
+Garv:It's relevant because you were in Gwen's room, weren't you?
+Garv:You were planting the master key to incriminate her, as you had been instructed.
+Garv:The cat was there, since it snuck through the vents...and it was in your way.  It wanted to play with you.
+Garv:You needed it to move and leave you alone, but if you antagonized it, Gwen would wake up.
+Garv:So you gave it something to keep it distracted.  And you planted the key in silence.
+Marcurio:...Yeah.  You're right.
+Marcurio:So I was planting the key in Gwen's room when it happened.  So what?
+Donovan:Shut up.
+Marcurio:Again, we're just going in circles...
+Donovan:Shut up!
+next:root-null
+action end
+
+action:statement:root-garvsHint
+Donovan:Don't you idiots get it?
+Donovan:The blood on the bracelet means the cat left it in Paulo's room during or after his abduction.
+Donovan:Meaning, Marcurio planted the key before Paulo was taken.
+Donovan:Tell me, if the master key was in Gwen's room...how could anyone break into Paulo's room?
+Donovan:There should only be one other person who would be able to unlock his door.
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+
+

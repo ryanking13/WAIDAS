@@ -1,0 +1,288 @@
+
+
+
+
+// GWEN - MARCURIO ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Gwen-Marcurio
+
+action:response:root
+Gwen
+root-1:Where are you from?:trigger.gwenAskedMarc.on
+root-trigger.gwenAskedMarc:Where are you going?
+</>root-null:Never mind.
+action end
+
+action:statement:root-1
+Marcurio:You mean before I worked here?  I lived in the Bronx.
+next:root-1-A
+action end
+
+action:response:root-1-A
+Gwen
+root-1-B:How did you like it there?
+action end
+
+action:statement:root-1-B
+Marcurio:Well, I left there to work on this miserable death-trap of a ship.
+Marcurio:That should give you a hint.
+next:root-null
+action end
+
+action:statement:root-trigger.gwenAskedMarc
+Marcurio:What's with all this questioning?
+Marcurio:It's not my job to deal with passengers.
+Marcurio:If you want some company, go find Alton or something.
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+// GWEN - MARCURIO (CHAPTER 4) ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Gwen-Marcurio
+
+action:response:chap4
+Gwen
+chap4-A:Please...listen to me.
+</>chap4-null:Say nothing
+action end
+
+action:statement:chap4-A
+Marcurio:Fine.  I'm listening.
+next:chap4-B
+action end
+
+action:response:chap4-B
+Gwen
+chap4-C:You have to believe me.  I didn't do it.
+chap4-D:I never saw that key before in my life.
+chap4-E:The real killer must still be out there...
+<!>chap4-trigger.chap4MarcPast:You know me.  You know what I've been through.  You know I'm innocent.:trigger.chap4marcGwenMusic.on
+</>chap4-null:...Never mind.
+action end
+
+action:statement:chap4-C
+Marcurio:Why should anyone believe you?  You've been sneakin' around and acting suspicious since the day you got here.
+Marcurio:It's no surprise you're the one under suspicion.
+next:chap4-C-1
+action end
+
+action:response:chap4-C-1
+Gwen
+chap4-C-2:I thought someone was following me.  That's all...:trigger.chap4gwenMarcProgression.on
+chap4-trigger.chap4gwenMarcProgression:I...I thought someone was going to take me back home.:trigger.chap4MarcPast.on
+action end
+
+action:statement:chap4-C-2
+Marcurio:You should just listen to yourself.  That explanation only makes you look worse.
+Marcurio:You thought someone was following you?  What's that all about?
+next:chap4-C-1
+action end
+
+
+action:statement:chap4-trigger.chap4gwenMarcProgression
+Marcurio:Listen.
+Marcurio:I don't know exactly what you've been through, but I can probably relate.  A little.
+Marcurio:But other people - they don't know.  Or they don't care.  And they definitely don't understand.
+Marcurio:You have to...find some other way to deal with it.
+next:chap4-C-4
+action end
+
+action:response:chap4-C-4
+Gwen
+chap4-C-4-A:Get help?
+chap4-C-4-B:You can relate?
+action end
+
+action:statement:chap4-C-4-A
+Marcurio:Talk to people.  People who've gone through the same things.
+Marcurio:I don't know, I think they have groups for that kinda thing.
+Marcurio:...I never did.  Maybe I should have.
+next:chap4-C-4
+action end
+
+action:statement:chap4-C-4-B
+Marcurio:My family was kind of a mess.
+Marcurio:My dad had some...issues.  And he had, well, his own way of dealing with it.
+Marcurio:He'd beat me 'til I was bloody, using anything in arms reach.
+Marcurio:There were times I really thought he'd kill me.  Maybe he thought he would too.
+next:chap4-thePast
+action end
+
+action:response:chap4-thePast
+Gwen
+chap4-thePast-1:Did you ever tell anyone?
+chap4-thePast-2:You don't seem like...I mean, you seem okay.
+chap4-thePast-3:Thank you for sharing with me.
+action end
+
+action:statement:chap4-thePast-1
+Marcurio:Who could I tell?  And how would it help?
+Marcurio:They would see me the day after, all beaten to a pulp.  They could hear it happening.
+Marcurio:No one cared.
+next:chap4-thePast
+action end
+
+action:statement:chap4-thePast-2
+Marcurio:You wouldn't say that if you met me five, ten years ago.
+Marcurio:I was messed up.  Real messed up, and desperate.  I did some dumb things.
+Marcurio:...Which is why I'm stuck here in the first place.
+next:chap4-thePast
+action end
+
+action:statement:chap4-thePast-3
+Marcurio:...You shouldn't thank me.
+Marcurio:I still can't help you.
+next:chap4-B
+action end
+
+
+action:statement:chap4-D
+Marcurio:That's real strange, since we found it in your room.
+Marcurio:Weirder things have happened though.
+next:chap4-B
+action end
+
+action:statement:chap4-E
+Marcurio:Well, when we find 'em, I'll be the first to let you go.
+Marcurio:Until then, you're our best suspect.
+next:chap4-F
+action end
+
+action:response:chap4-F
+Gwen
+chap4-G:Do you really think I'm the murderer?
+action end
+
+action:statement:chap4-G
+Marcurio:Here's the thing.  At the end of the day, it doesn't matter what I think.
+Marcurio:Cause I'm not gonna free you either way.
+next:chap4-B
+action end
+
+
+action:statement:chap4-trigger.chap4MarcPast
+Marcurio:Yeah.  I do.  But there's still a lot you don't know about me.
+Marcurio:You know what, here.  I'll let you in on a secret.
+Marcurio:I know it wasn't you.
+Marcurio:...
+Marcurio:Because I was the one that planted the key in your room.
+next:chap4-marcConfess
+action end
+
+action:response:chap4-marcConfess
+Gwen
+chap4-marcConfess-1:What?  Why would you do that?!
+chap4-marcConfess-2:You need to tell everyone!  They'll let me go if you tell them!
+chap4-marcConfess-3:Why are you telling me this?:trigger.chap4MarcConfessedPlant.on
+action end
+
+action:statement:chap4-marcConfess-1
+Marcurio:It's a little complicated.
+Marcurio:I don't expect you to understand.
+next:chap4-marcConfess
+action end
+
+action:statement:chap4-marcConfess-2
+Marcurio:That's the last thing I'm going to do.
+Marcurio:Look, Gwen, we had a moment just now.  We've both been through some shit.  And that's great.
+Marcurio:But this is a different matter entirely.  This is business.
+Marcurio:There are forces larger than both of us at work here.  My advice for you is to just go along with it.
+Marcurio:You're not going to come to harm.  If you're innocent, which I know you are, you'll be let go by the police after their investigation.
+Marcurio:...Probably.
+Marcurio:But until then, this little play has to keep on going.
+next:chap4-marcConfess
+action end
+
+action:statement:chap4-marcConfess-3
+Marcurio:Well, I thought you should know.  You deserve the truth.
+Marcurio:It's nothing personal - I'm really just following instructions.
+Marcurio:But I'm mainly telling you because there's literally nothing you can do about it.
+Marcurio:You just try and tell people I planted the key.  Go on!  They won't believe you.  It's your word against mine.
+Marcurio:Just keep calm, and this whole thing will be over before you know it.  Okay?  Okay.
+next:chap4-null
+action end
+
+dialogue end
+
+
+
+
+// GWEN - MARCURIO (CHAPTER 5) ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Gwen-Marcurio
+
+action:response:chap5
+Gwen
+chap5-A:You...you planted the key in my room.
+chap5-B:The killer is still around.  And they tried to frame me.
+</>chap5-null:Never mind.
+action end
+
+action:statement:chap5-A
+Marcurio:Yeah.  I told you as much to your face.
+Marcurio:Thinking back on that, not one of my best ideas.
+next:chap5-A-1
+action end
+
+action:response:chap5-A-1
+Gwen
+chap5-A-2:You were just going to let me take the fall!
+chap5-A-3:Why aren't you the one tied up in the observation room now?
+chap5-A-4:Why?  What were you getting out of it?
+</>chap5-null:Forget it.
+action end
+
+action:statement:chap5-A-2
+Marcurio:Only until we docked.  Nothing would've actually happened to you.
+next:chap5-A-1
+action end
+
+action:statement:chap5-A-3
+Marcurio:It wouldn't accomplish anything.
+Marcurio:All I did was follow orders.  And I wasn't the only one getting 'em.
+Marcurio:If anything, after all of this, I'm more likely to be the next one gone missing.
+next:chap5-A-1
+action end
+
+action:statement:chap5-A-4
+Marcurio:Money.
+Marcurio:Now that Sue's gone and exposed everything, though...who knows.
+next:chap5-A-1
+action end
+
+action:statement:chap5-B
+Marcurio:If you're asking me to help you investigate, the answer's no.
+Marcurio:I'm not interested in taking a swim.
+next:chap5-B-1
+action end
+
+action:response:chap5-B-1
+Gwen
+chap5-B-2:You don't have any ideas who it is?
+chap5-B-3:You're a coward.
+</>chap5-null:Forget it.
+action end
+
+action:statement:chap5-B-2
+Marcurio:Whoever it is, they're good at being discrete.
+Marcurio:Donovan had free reign of the ship, could've snuck into any of our rooms and searched anything...
+Marcurio:And still, someone got the jump on him.
+Marcurio:To catch someone like this...you'd have to be monitoring the ship all the time.
+Marcurio:Now, if we had security camera footage...that'd make this all pretty straightforward, huh?
+next:chap5-B-1
+action end
+
+action:statement:chap5-B-3
+Marcurio:I'm a pragmatist.
+next:chap5-B-1
+action end
+
+dialogue end

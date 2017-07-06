@@ -1,0 +1,32 @@
+
+
+dialogue start
+Cat-Ferdinand
+
+action:statement:root
+Ferdinand:Why hello there, kitty cat!  Roaming the ship, yes?
+Ferdinand:If I recall, pets aren't allowed on board.  Your owner should be a bit more discrete!
+Ferdinand:But like any good first mate, I will defer to the captain and let her decide what to do with you.
+next:root-1
+action end
+
+action:response:root-1
+Cat
+root-2:Meow!
+root-3:Hsss!
+action end
+
+action:statement:root-2
+Ferdinand:There's a good kitty!  Now run along.  I have important first-mate things to do!
+next:root-null
+action end
+
+action:statement:root-3
+Ferdinand:Alright, furball.  Scram.
+next:root-null
+action end
+
+dialogue end
+
+
+

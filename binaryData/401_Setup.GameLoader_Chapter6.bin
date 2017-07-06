@@ -1,0 +1,142 @@
+
+dialogue start
+chap6PaulosDoor
+
+action:statement:root
+null:I'm not supposed to go in here.  It's been cordoned off for future investigation.
+action end
+
+dialogue end
+
+
+dialogue start
+CatUnlockPaulosDoor
+
+action:statement:root
+null:The door is locked from the inside.  It looks like turning the handle from here would unlock it.
+null:However, there is no reason to unlock the door at this time.
+next:root-null
+action end
+
+action:statement:root2
+null:The door is locked from the inside.  It looks like turning the handle from here will unlock it.
+null:The handle is just low enough to reach...
+next:root-3
+action end
+
+action:response:root-3
+<player>
+root-4:Unlock the door.:trigger.paulosDoorUnlocked.on
+action end
+
+dialogue end
+
+
+dialogue start
+chap6gwenEpiphany
+
+action:statement:root
+Gwen:"I was completely wrong about Donovan."
+Gwen:"Not only was he just searching for the captain...but someone else on the ship may be a serial killer?"
+Gwen:"And I even broke into...well, maybe this is karma.  That key is now being used to frame me."
+Gwen:"Wait a second.  There's...there's one other person who knew at the time that Donovan had that key."
+Gwen:"And they knew...because I told them."
+next:root4-null
+action end
+
+dialogue end
+
+
+
+dialogue start
+chap6FerdinandClue1
+
+action:statement:root
+Quella:I don't know why, but this seems like a really important detail.
+Quella:I should remember this.  It might come up again later...
+next:root-null
+action end
+
+dialogue end
+
+
+dialogue start
+chap6FerdinandClue2
+
+action:statement:root
+Garv:So, Marcurio ran into my cat in Gwen's room.  It's pretty suspicious.
+Garv:Still, I wonder that the implications of this may run even deeper.
+Garv:We should keep this in mind.  It might be important later on.
+next:root-null
+action end
+
+dialogue end
+
+
+dialogue start
+chap6FerdinandClue3
+
+action:statement:root
+Gwen:Ferdinand used me to spy on Donovan.  I know this now.
+Gwen:Still, by myself I don't have any concrete evidence against him.
+Gwen:If there's a situation where evidence like that comes up, though...this could be important.
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+
+/////////  Garv clue dialogues  ///////////////////////////////////////
+
+dialogue start
+MarcurioScold
+
+action:statement:root
+Marcurio:Hey!  Get away from that!  That's for kitchen staff only.
+Marcurio:The food budget is closely monitored, so you can't just waltz in and grab whatever you want.
+next:root-null
+action end
+
+dialogue end
+
+
+dialogue start
+chap6GarvClue1
+
+action:statement:root
+null:It's clear that Marcurio has a lot of experience with this shady figure.
+null:The evidence doesn't tell the whole story, but it must be connected to the captain and Donovan.
+null:The way he's talking though, he'd need a gun pointed to his head before he opened up.
+next:root-null
+action end
+
+dialogue end
+
+
+dialogue start
+chap6GarvClue2
+
+action:statement:root
+Darryl:I had suspected Garv's true feelings were something like that.  I always found him suspicious.
+Darryl:I don't have any evidence against him, but I know he's hiding things.
+Darryl:If evidence does come up that points to him, perhaps people would like to know about that talk we just had.
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+

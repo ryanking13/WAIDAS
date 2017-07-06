@@ -1,0 +1,120 @@
+
+// Quella's ability notes
+
+Quella-Darryl:root-1:He sounds emotionless.;blank
+Quella-Darryl:root-thoughts-A:He's in pain...;sad
+Quella-Darryl:root-thoughts-B:He sounds emotionless.;blank
+Quella-Darryl:root-trigger.chap2quellaDarrylProgression3:He's in pain...;sad
+Quella-Darryl:root-2:He sounds emotionless.;blank
+Quella-Darryl:root-ocean-A:He sounds calm.;blank
+Quella-Darryl:root-trigger.chap2quellaDarrylProgression:I'm not sure we're just talking about the ocean...;sad
+Quella-Darryl:root-ocean-B:He sounds emotionless.;blank
+Quella-Darryl:root-trigger.chap2quellaDarrylProgression2:Something about his voice scares me.;blank
+
+Quella-Darryl:root2-A:He's in pain...;sad
+Quella-Darryl:root2-B:He's hiding a lot.;sad
+Quella-Darryl:root2-trigger.chap3readMarisJournal:He's not very happy with me.;angry
+Quella-Darryl:root3-2:This is hard for him to talk about...;sad
+Quella-Darryl:root3-A:He barely hears me.;blank
+Quella-Darryl:root3-B:He's blaming himself.;sad
+Quella-Darryl:root3-C:He's blaming himself.;sad
+Quella-Darryl:root3-why:He doesn't believe me.;sad
+Quella-Darryl:root3-support:He's in pain...;sad
+Quella-Darryl:root3-counsel:He sounds hopeless.;blank
+Quella-Darryl:root3-escape:The way he's talking...it scares me.;blank
+Quella-Darryl:root3-death-A:That was the wrong thing to say.;angry
+Quella-Darryl:root3-death-B:He's serious.  He's made up his mind.;blank
+Quella-Darryl:root3-death-C:He sounds a little better.;null
+
+Quella-Darryl:root4-B:He's in pain...;sad
+Quella-Darryl:root4-C:He's in pain...;sad
+
+
+
+Quella-Alton:root-1:He sounds a bit lonely.;sad
+Quella-Alton:root-1-B:Not very optimistic.;null
+Quella-Alton:root-1-C:He sounds very anxious.;blank
+Quella-Alton:root-2:He's angry with himself.;angry
+Quella-Alton:root-2-C:He's angry with himself.;angry
+Quella-Alton:root-2-B:He's really upset.;angry
+Quella-Alton:root-used-A:He's really anxious.;angry
+Quella-Alton:root-used-C:He's angry with himself.;angry
+Quella-Alton:root-used-B:He really believes what he's saying...;sad
+Quella-Alton:root-used-2-A:He's angry with himself.;angry
+Quella-Alton:root-used-2-B:He's more angry with himself than with her?;angry
+
+Quella-Alton:chap2Alton:He sounds really down.;sad
+Quella-Alton:chap2Alton2-A:He sounds really down.;sad
+Quella-Alton:chap2Alton2-B:He's completely worn out.;sad
+Quella-Alton:chap2Alton2-E:He's completely worn out.;sad
+
+Quella-Alton:chap3-A:That same line again...;sad
+Quella-Alton:chap3-B:He sounds like he's burning out.;sad
+Quella-Alton:chap3-travel-A:Was that...condescension?;unsure
+Quella-Alton:chap3-travel-B:He's lying.  That's not why he's here.;dishonest
+
+
+
+Quella-Xu:root-1:She doesn't sound very enthusiastic.;sad
+Quella-Xu:root-1-B:This really bothers her.;sad
+Quella-Xu:root-1-E:Did I upset her?;angry
+Quella-Xu:root-2:She really is bothered by something.;sad
+Quella-Xu:root-2-B:She's feeling a little guilty.;unsure
+Quella-Xu:root-2-C:She's feeling a little guilty.;unsure
+Quella-Xu:root-trigger.chap3DarrylsKeyQuella:She's scared.;dishonest
+Quella-Xu:root-foundOut-1:She's lying.;dishonest
+Quella-Xu:root-foundOut-3:I don't have the heart to force it out of her.;sad
+
+
+
+Quella-Garv:root-1-B:He's more angry than he lets on...;angry
+Quella-Garv:root-2:Ice cold.;null
+Quella-Garv:root-trigger.divorce:There's a lot of buried anger here.;angry
+Quella-Garv:root-chap4Clues-A:I feel like he's not telling me something.;dishonest
+Quella-Garv:root-chap4Clues-C:He hesitated to say that.;dishonest
+Quella-Garv:root-trigger.chap4FerdClue2-3:He's surprisingly calm.;blank
+Quella-Garv:root-connection-B:He's surprisingly calm.;blank
+Quella-Garv:root-connection-C:He's surprisingly calm.;blank
+Quella-Garv:root-connection-D:He's surprisingly calm.;blank
+
+
+
+Quella-Marcurio:root-2-A:He's got a bit of a grudge.;null
+Quella-Marcurio:root-2-C:He likes talking about his work.;blank
+Quella-Marcurio:root-3-A:He likes talking about his work.;blank
+Quella-Marcurio:root-3-C:He's anxious and fed up.;angry
+Quella-Marcurio:root-chap4Clue-A:He's really surprised.;unsure
+Quella-Marcurio:root-chap4Clue-B:He's scared.;unsure
+Quella-Marcurio:root-chap4Clue-C:He's scared.;unsure
+Quella-Marcurio:root-trigger.chap4BraceletExcuse:He's hiding something.;dishonest
+Quella-Marcurio:root-trigger.chap4CatBracelet:He's scared;unsure
+Quella-Marcurio:root-backpedal-B:He's telling the truth.;blank
+
+
+
+Quella-Gwen:root-1:She's scared of something;unsure
+Quella-Gwen:root-2:She's scared of something;unsure
+Quella-Gwen:root-greetedGwen-1:She's scared of something;unsure
+Quella-Gwen:root-greetedGwen-3:She's scared of something;unsure
+Quella-Gwen:root-greetedGwen-5:She's scared of something;unsure
+Quella-Gwen:root-greetedGwen-7:There's a lot of conflicting emotions...;angry
+Quella-Gwen:root-greetedGwen-9:She's scared of something;unsure
+
+Quella-Gwen:chap4-A:She sounds hopeless.;sad
+Quella-Gwen:chap4-C:She sounds hopeless.;sad
+
+
+
+Quella-Ferdinand:root-1:His tone is all over the place.;unsure
+Quella-Ferdinand:root-2:His tone is all over the place.;unsure
+Quella-Ferdinand:root-3:His tone is all over the place.;unsure
+
+
+
+Quella-Donovan:root-1-C:He's annoyed.;angry
+Quella-Donovan:root-2:He's hiding something.;dishonest
+Quella-Donovan:root-2-D:He's annoyed.;angry
+
+
+
+Quella-Cat:root-A:Yep, it's a cat.;unsure

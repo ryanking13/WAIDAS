@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="13" height="13" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="Basement Room Sheet" tilewidth="32" tileheight="32">
+  <image source="../Tiles/Basement Room Sheet.png" width="224" height="320"/>
+ </tileset>
+ <tileset firstgid="71" name="PropGrid" tilewidth="32" tileheight="32">
+  <image source="../Props/PropGrid.png" width="512" height="832"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="13" height="13">
+  <data>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="2"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="6"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="8"/>
+   <tile gid="9"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="13"/>
+   <tile gid="14"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="16"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="20"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="23"/>
+   <tile gid="40"/>
+   <tile gid="1"/>
+   <tile gid="41"/>
+   <tile gid="37"/>
+   <tile gid="1"/>
+   <tile gid="36"/>
+   <tile gid="27"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="37"/>
+   <tile gid="41"/>
+   <tile gid="36"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="40"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="29"/>
+   <tile gid="30"/>
+   <tile gid="1"/>
+   <tile gid="40"/>
+   <tile gid="37"/>
+   <tile gid="1"/>
+   <tile gid="36"/>
+   <tile gid="41"/>
+   <tile gid="34"/>
+   <tile gid="35"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="29"/>
+   <tile gid="26"/>
+   <tile gid="30"/>
+   <tile gid="40"/>
+   <tile gid="34"/>
+   <tile gid="26"/>
+   <tile gid="26"/>
+   <tile gid="35"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="37"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+  </data>
+ </layer>
+ <objectgroup name="Props" width="13" height="13">
+  <object name="EmptyNEFlower" gid="144" x="98" y="186">
+   <properties>
+    <property name="Collidable" value="true"/>
+    <property name="Sprite" value="TableFlower"/>
+   </properties>
+  </object>
+  <object gid="160" x="98" y="218"/>
+  <object gid="176" x="98" y="250"/>
+  <object name="EmptyNENightstand" gid="431" x="129" y="182">
+   <properties>
+    <property name="Collidable" value="true"/>
+    <property name="Sprite" value="Nightstand"/>
+   </properties>
+  </object>
+  <object gid="199" x="164" y="202"/>
+  <object name="EmptyNEBed" gid="183" x="164" y="170">
+   <properties>
+    <property name="Collidable" value="true"/>
+    <property name="Permissions" value="All"/>
+    <property name="Sprite" value="BedTwo"/>
+    <property name="SuccessDialogue" value="NormalBed"/>
+   </properties>
+  </object>
+  <object gid="215" x="164" y="234"/>
+  <object gid="184" x="196" y="170"/>
+  <object gid="200" x="196" y="202"/>
+  <object gid="216" x="196" y="234"/>
+  <object name="EmptyNEDresser" gid="295" x="260" y="165">
+   <properties>
+    <property name="CharDialogue" value="Donovan-true-EmptyNEDresserDonovan"/>
+    <property name="Collidable" value="true"/>
+    <property name="Permissions" value="All"/>
+    <property name="Sprite" value="Dresser"/>
+    <property name="SuccessDialogue" value="Dresser"/>
+   </properties>
+  </object>
+  <object gid="296" x="292" y="165"/>
+  <object gid="297" x="324" y="165"/>
+  <object gid="313" x="324" y="197"/>
+  <object gid="312" x="292" y="197"/>
+  <object gid="311" x="260" y="197"/>
+  <object name="EmptyNEDesk" gid="271" x="294" y="219">
+   <properties>
+    <property name="Collidable" value="true"/>
+    <property name="Sprite" value="SideDesk"/>
+   </properties>
+  </object>
+  <object gid="287" x="294" y="251"/>
+  <object name="EmptyNEVent" gid="189" x="216" y="113">
+   <properties>
+    <property name="Sprite" value="OpenVent"/>
+   </properties>
+  </object>
+  <object gid="205" x="216" y="145"/>
+ </objectgroup>
+</map>

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="13" height="12" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="Basement Set" tilewidth="32" tileheight="32">
+  <image source="../Tiles/Basement Room Sheet.png" width="224" height="320"/>
+ </tileset>
+ <tileset firstgid="71" name="Props" tilewidth="32" tileheight="32">
+  <image source="../Props/PropGrid.png" width="512" height="832"/>
+ </tileset>
+ <tileset firstgid="487" name="AIGrid" tilewidth="32" tileheight="32">
+  <image source="../Props/AIGrid.png" width="96" height="32"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="13" height="12">
+  <data>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="2"/>
+   <tile gid="3"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="5"/>
+   <tile gid="6"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="8"/>
+   <tile gid="9"/>
+   <tile gid="10"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="12"/>
+   <tile gid="13"/>
+   <tile gid="14"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="16"/>
+   <tile gid="17"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="19"/>
+   <tile gid="20"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="23"/>
+   <tile gid="36"/>
+   <tile gid="41"/>
+   <tile gid="43"/>
+   <tile gid="44"/>
+   <tile gid="45"/>
+   <tile gid="37"/>
+   <tile gid="41"/>
+   <tile gid="27"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="36"/>
+   <tile gid="37"/>
+   <tile gid="40"/>
+   <tile gid="50"/>
+   <tile gid="51"/>
+   <tile gid="52"/>
+   <tile gid="36"/>
+   <tile gid="40"/>
+   <tile gid="37"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="36"/>
+   <tile gid="40"/>
+   <tile gid="37"/>
+   <tile gid="50"/>
+   <tile gid="51"/>
+   <tile gid="52"/>
+   <tile gid="40"/>
+   <tile gid="36"/>
+   <tile gid="37"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="29"/>
+   <tile gid="30"/>
+   <tile gid="37"/>
+   <tile gid="1"/>
+   <tile gid="57"/>
+   <tile gid="58"/>
+   <tile gid="59"/>
+   <tile gid="37"/>
+   <tile gid="1"/>
+   <tile gid="34"/>
+   <tile gid="35"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="29"/>
+   <tile gid="26"/>
+   <tile gid="26"/>
+   <tile gid="30"/>
+   <tile gid="40"/>
+   <tile gid="34"/>
+   <tile gid="26"/>
+   <tile gid="26"/>
+   <tile gid="35"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="1"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+  </data>
+ </layer>
+ <objectgroup name="Props" width="13" height="12">
+  <object name="XusCalligraphyOne" gid="339" x="102" y="111">
+   <properties>
+    <property name="Sprite" value="CalligraphyOne"/>
+   </properties>
+  </object>
+  <object gid="355" x="102" y="143"/>
+  <object name="XusCalligraphyTwo" gid="365" x="134" y="113">
+   <properties>
+    <property name="Sprite" value="CalligraphyTwo"/>
+   </properties>
+  </object>
+  <object gid="381" x="134" y="145"/>
+  <object name="XusBed" gid="309" x="102" y="173">
+   <properties>
+    <property name="Collidable" value="true"/>
+    <property name="Permissions" value="All"/>
+    <property name="Sprite" value="BigBedThree"/>
+    <property name="SuccessDialogue" value="MessyBed"/>
+   </properties>
+  </object>
+  <object gid="310" x="134" y="173"/>
+  <object gid="325" x="102" y="205"/>
+  <object gid="326" x="134" y="205"/>
+  <object name="XusPillow" gid="438" x="66" y="192">
+   <properties>
+    <property name="Collidable" value="true"/>
+    <property name="Sprite" value="Pillow"/>
+   </properties>
+  </object>
+  <object name="XusDresser" gid="141" x="173" y="125">
+   <properties>
+    <property name="CharDialogue" value="Donovan-true-SuesDresserDonovan"/>
+    <property name="Collidable" value="true"/>
+    <property name="Permissions" value="All"/>
+    <property name="Sprite" value="DresserWMirror"/>
+    <property name="SuccessDialogue" value="DresserWMirror"/>
+   </properties>
+  </object>
+  <object gid="142" x="205" y="125"/>
+  <object gid="157" x="173" y="157"/>
+  <object gid="173" x="173" y="189"/>
+  <object gid="158" x="205" y="157"/>
+  <object gid="159" x="237" y="157"/>
+  <object gid="174" x="205" y="189"/>
+  <object gid="175" x="237" y="189"/>
+  <object name="XusCabinet" gid="137" x="253" y="134">
+   <properties>
+    <property name="CharDialogue" value="Xu-true-XusDresserXu"/>
+    <property name="Collidable" value="true"/>
+    <property name="Permissions" value="All"/>
+    <property name="Sprite" value="GlassCabinet"/>
+    <property name="SuccessDialogue" value="XusDresser"/>
+   </properties>
+  </object>
+  <object gid="138" x="285" y="134"/>
+  <object gid="153" x="253" y="166"/>
+  <object gid="154" x="285" y="166"/>
+  <object gid="169" x="253" y="198"/>
+  <object gid="170" x="285" y="198"/>
+  <object name="XusDesk" gid="237" x="257" y="263">
+   <properties>
+    <property name="Bounds" value="0,24,64,40"/>
+    <property name="Collidable" value="true"/>
+    <property name="Sprite" value="GlassDesk"/>
+   </properties>
+  </object>
+  <object gid="238" x="289" y="263"/>
+  <object gid="253" x="257" y="295"/>
+  <object gid="254" x="289" y="295"/>
+  <object name="XusLoot" gid="372" x="192" y="128">
+   <properties>
+    <property name="Sprite" value="XusLoot"/>
+    <property name="Static" value="true"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="AI" width="13" height="12">
+  <object name="XuAtNight" gid="487" x="96" y="256">
+   <properties>
+    <property name="Character" value="Xu"/>
+    <property name="Index" value="1"/>
+    <property name="Loop" value="true"/>
+    <property name="Type" value="Routine"/>
+    <property name="WaitTime" value="180"/>
+   </properties>
+  </object>
+  <object name="XuLounging" gid="489" x="192" y="256">
+   <properties>
+    <property name="Character" value="Xu"/>
+    <property name="Frequency" value="180"/>
+    <property name="HorizontalBound" value="4"/>
+    <property name="Type" value="Random"/>
+    <property name="VerticalBound" value="3"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

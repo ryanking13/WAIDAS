@@ -1,0 +1,169 @@
+
+
+dialogue start
+Alton-Garv
+
+action:response:root
+Alton
+<!>root-trigger.xuIsFollowing:What was going on last night?:trigger.altonXuTalkedtoGarv.on
+root-1:Hey, how's it going?
+root-2:Interested in checking out the observation room?:trigger.garvsAnimals.on
+root-trigger.garvsAnimals:You seem to really love animals.
+root-trigger.ChapterTwoOn:I just don't understand people sometimes...
+</>root-null:Never mind.
+action end
+
+action:statement:root-trigger.xuIsFollowing
+Garv:Last night?  I wouldn't know, myself.  I was just looking after my pets at the time.
+Garv:Actually, last night a rat snuck into my room!  Thankfully, I managed to kill it.
+Garv:Can't let any filthy rats spread diseases to my pets.
+next:root-trigger.xuIsFollowing-1
+action end
+
+action:response:root-trigger.xuIsFollowing-1
+Alton
+root-trigger.xuIsFollowing-2:I didn't know there were rats on this ship.
+</>root-null:Yawn.
+action end
+
+action:statement:root-trigger.xuIsFollowing-2
+Garv:Oh, sure.  I imagine they sneak on the ship when it docks.
+Garv:Once they get on, there's nothing to do but kill them.
+next:root-null
+action end
+
+
+action:statement:root-1
+Garv:...
+Garv:...Oh, hello!
+Garv:Have you seen my cat?  She's a nice black bombay.
+Garv:She likes to explore a lot, so I let her move around the ship.  Maybe you've seen her.
+next:root-1-A
+action end
+
+action:statement:root-2
+Garv:...
+Garv:...Oh, hi!
+Garv:You should take a look at my parrotlets.  They've learned some phrases!
+Garv:They seem to love attention, so don't be shy.
+next:root-2-A
+action end
+
+action:statement:root-trigger.garvsAnimals
+Garv:Love is a bit of a strong word, but they do keep me company.
+Garv:They may not be as smart as humans, but they're simpler.  They don't have mortgages or mid-life crises, and they don't lie.
+Garv:It's comforting that the things I can give them - food, shelter - are all they'll ever need.
+Garv:Wouldn't you agree?
+next:root-trigger.garvsAnimals-A
+action end
+
+action:response:root-1-A
+Alton
+root-1-A-2:You have a cat?  Cool!  What's its name?
+</>root-null:Not really interested.
+action end
+
+action:statement:root-1-A-2
+Garv:Her name?  'Sunshine'.  It's one of those ironic names, since she's black.
+Garv:It was my daughter who picked the name, actually.
+Garv:I...would have picked something else.
+next:root-null
+action end
+
+action:response:root-2-A
+Alton
+root-2-A-2:They've learned phrases?
+</>root-null:Not really interested.
+action end
+
+action:statement:root-2-A-2
+Garv:Sure!  Most people just think of parrots talking, but parakeets and parrotlets can talk too.
+Garv:They're still young, so they don't know too much.
+Garv:But I think I'm a pretty good trainer, if I do say so myself.
+next:root-null
+action end
+
+action:response:root-trigger.garvsAnimals-A
+Alton
+root-rant:Mortgages or mid-life crises?  What does that have to do with cats and birds?
+root-trigger.garvsAnimals-A-1:I've never had a pet.
+</>root-null:Gee, look at the time, I should be going.
+action end
+
+action:statement:root-trigger.garvsAnimals-A-1
+Garv:Then you're missing out!
+Garv:Why, I think you'd be a good pet owner.  A real natural.
+Garv:Call it an old man's intuition.
+next:root-null
+action end
+
+action:statement:root-rant
+Garv:What I mean is that pets have no desire or ambition.
+Garv:Humans, we...we like to have dreams, and plans.  We're always chasing something.  Or someone.
+Garv:But those desires can hurt ourselves.  Or worse, it can hurt other people.
+Garv:Those dreams can even be manipulated by others for their own ends.
+next:root-rant2
+action end
+
+action:response:root-rant2
+Alton
+root-rant3:Are we still talking about pets, or...?
+</>root-null:Gee, look at the time, I should be going.
+action end
+
+action:statement:root-rant3
+Garv:Oh, I'm sorry, I started rambling there!
+Garv:Don't mind me - the older I get, the more I go on about things.
+next:root-null
+action end
+
+
+action:statement:root-trigger.ChapterTwoOn
+Garv:Something's troubling you, I take it.
+Garv:Well?  If you want advice, you can't be so vague.  What is it?
+next:root-darkSide
+action end
+
+action:response:root-darkSide
+Alton
+root-darkSide-A:She seems so sweet and friendly.  I can't believe she would...steal.
+root-darkSide-B:Is there something wrong with me?
+</>root-null:No, never mind.
+action end
+
+action:statement:root-darkSide-A
+Garv:There's your problem.  You believe in what people 'seem' like.
+Garv:Here's a tip for you - everyone lies about who they are.  Everyone cheats.  Everyone steals.
+Garv:Expect the worst in people, and you'll never be surprised.
+next:root-darkSide-C
+action end
+
+action:response:root-darkSide-C
+Alton
+root-darkSide-D:That's awfully cynical.
+</>root-null:I should go.
+action end
+
+action:statement:root-darkSide-D
+Garv:Cynical, maybe.  But also correct.
+Garv:I'd wager you haven't even begun to see the dark truth in the people around you.
+Garv:...Much less the truth about yourself.
+Garv:But you will eventually.
+next:root-null
+action end
+
+action:statement:root-darkSide-B
+Garv:Of course not.  Everyone gets hurt by others at some point in their life.
+Garv:You can dwell on it and beat yourself up...or you can work past it and grow stronger from it.
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+
+

@@ -1,0 +1,129 @@
+
+
+
+
+dialogue start
+Alton-Marcurio
+
+action:response:root
+Alton
+root-1:Hey Marcurio, how's it going?
+root-trigger.ChapterTwoOn:Hey, can I ask you a question?
+root-trigger.lookingforxu:Have you seen Sue around lately?
+</>root-null:Never mind.
+action end
+
+action:statement:root-1
+Marcurio:Fine.  Cleaning up the kitchen.
+next:root-1-A
+action end
+
+action:statement:root-trigger.lookingforxu
+Marcurio:Like I said, she's off hours.  If you want to see her, try her room downstairs.
+next:root-trigger.lookingforxu-A
+action end
+
+action:response:root-1-A
+Alton
+root-1-A-1:Cool, cool.  Er, how's that going?
+</>root-1-A-2:Good luck with that.
+action end
+
+action:response:root-trigger.lookingforxu-A
+Alton
+root-null:Oh, okay.
+action end
+
+action:statement:root-1-A-1
+Marcurio:...It's fine, Alton.  It's fine.
+Marcurio:Please leave me alone right now.
+next:root-null
+action end
+
+
+action:statement:root-trigger.ChapterTwoOn
+Marcurio:...Can I say no?
+next:root-darkSide
+action end
+
+action:response:root-darkSide
+Alton
+root-darkSide-A:You're friends with Sue.  How would you describe her?
+root-darkSide-B:Has any of your stuff recently...gone missing?
+</>root-darkSide-null:Never mind.
+action end
+
+action:statement:root-darkSide-A
+Marcurio:Well...since you asked, I guess I'll just be honest with you.
+Marcurio:Don't get me wrong, I like her, but she's kinda abrasive.
+Marcurio:I mean, it's her job to act really nice to the passengers.  That's what a waitress does, right?
+Marcurio:Doesn't mean that's who she really is.  She doesn't wear the apron all the time, you know?
+next:root-null
+action end
+
+action:statement:root-darkSide-B
+Marcurio:...
+Marcurio:No.  Can't say it has.
+Marcurio:I keep a strict tab on everything that comes in and out of here.
+Marcurio:The kitchen stock would be the last thing on this ship to go missing.
+next:root-null
+action end
+
+
+
+action:statement:xuIsFollowing
+Marcurio:Didn't expect to see you two wandering around together.
+Marcurio:At all.
+Marcurio:Well, whatever.  Need something?
+next:xuIsFollowing-1
+action end
+
+action:response:xuIsFollowing-1
+Alton
+<!>xuIsFollowing-2:Everything go okay last night?:trigger.altonXuTalkedtoMarcurio.on
+xuIsFollowing-3:How's the kitchen doing?
+xuIsFollowing-4:You didn't expect to see us?
+</>null:Never mind.
+action end
+
+action:statement:xuIsFollowing-2
+Marcurio:Yeah.  Stayed after hours cleaning and all, like usual.
+next:xuIsFollowing-5
+action end
+
+action:response:xuIsFollowing-5
+Alton
+xuIsFollowing-6:You spent the entire night cleaning the kitchen?
+xuIsFollowing-7:I think you might be addicted to work.
+action end
+
+action:statement:xuIsFollowing-6
+Marcurio:No.  I spent some time organizing, too.
+Marcurio:Look, I have an inventory to manage and keep stock of.
+Marcurio:If I get sloppy and disorganized, stuff gets forgotten.  Things go bad.  Money is lost.
+Marcurio:I bet I have to do more management work on this boat than everyone else combined.
+Marcurio:...So yeah, I spent the entire night in the kitchen.
+next:root-null
+action end
+
+action:statement:xuIsFollowing-7
+Marcurio:I'll do whatever it takes to get off this tin can.  Anything.
+Marcurio:If I have to work in this terrible place, I'm going to make it the best terrible place in the world.
+Marcurio:I'm not going to be a creature of circumstance.  I create my own circumstances.
+next:root-null
+action end
+
+action:statement:xuIsFollowing-3
+Marcurio:Good.  Do me a favor and don't touch anything, alright?
+Marcurio:I have my own system.  Please don't mess up my system.
+next:xuIsFollowing-1
+action end
+
+action:statement:xuIsFollowing-4
+Marcurio:It's nothing.  Don't worry about it.
+next:xuIsFollowing-1
+action end
+
+
+dialogue end
+

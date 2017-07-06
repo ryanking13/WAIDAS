@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="18" height="14" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="Basement Room Sheet" tilewidth="32" tileheight="32">
+  <image source="../Tiles/Basement Room Sheet.png" width="224" height="320"/>
+ </tileset>
+ <tileset firstgid="71" name="PropGrid" tilewidth="32" tileheight="32">
+  <image source="../Props/PropGrid.png" width="512" height="832"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="18" height="14">
+  <data>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="2"/>
+   <tile gid="3"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="14"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="2"/>
+   <tile gid="9"/>
+   <tile gid="10"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="2"/>
+   <tile gid="3"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="5"/>
+   <tile gid="9"/>
+   <tile gid="16"/>
+   <tile gid="17"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="8"/>
+   <tile gid="9"/>
+   <tile gid="10"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="12"/>
+   <tile gid="16"/>
+   <tile gid="23"/>
+   <tile gid="46"/>
+   <tile gid="47"/>
+   <tile gid="47"/>
+   <tile gid="47"/>
+   <tile gid="48"/>
+   <tile gid="40"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="16"/>
+   <tile gid="17"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="19"/>
+   <tile gid="23"/>
+   <tile gid="40"/>
+   <tile gid="53"/>
+   <tile gid="54"/>
+   <tile gid="54"/>
+   <tile gid="54"/>
+   <tile gid="55"/>
+   <tile gid="37"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="23"/>
+   <tile gid="36"/>
+   <tile gid="1"/>
+   <tile gid="37"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="41"/>
+   <tile gid="53"/>
+   <tile gid="54"/>
+   <tile gid="54"/>
+   <tile gid="54"/>
+   <tile gid="55"/>
+   <tile gid="36"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="41"/>
+   <tile gid="37"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="40"/>
+   <tile gid="36"/>
+   <tile gid="1"/>
+   <tile gid="60"/>
+   <tile gid="61"/>
+   <tile gid="61"/>
+   <tile gid="61"/>
+   <tile gid="62"/>
+   <tile gid="34"/>
+   <tile gid="35"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="29"/>
+   <tile gid="30"/>
+   <tile gid="1"/>
+   <tile gid="36"/>
+   <tile gid="41"/>
+   <tile gid="1"/>
+   <tile gid="40"/>
+   <tile gid="37"/>
+   <tile gid="34"/>
+   <tile gid="26"/>
+   <tile gid="26"/>
+   <tile gid="26"/>
+   <tile gid="26"/>
+   <tile gid="35"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="29"/>
+   <tile gid="30"/>
+   <tile gid="40"/>
+   <tile gid="1"/>
+   <tile gid="36"/>
+   <tile gid="1"/>
+   <tile gid="34"/>
+   <tile gid="35"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="29"/>
+   <tile gid="30"/>
+   <tile gid="37"/>
+   <tile gid="34"/>
+   <tile gid="26"/>
+   <tile gid="35"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="41"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+  </data>
+ </layer>
+ <objectgroup name="Props" width="18" height="14">
+  <object name="CaptainsBed" gid="337" x="162" y="232">
+   <properties>
+    <property name="Collidable" value="true"/>
+    <property name="Permissions" value="All"/>
+    <property name="Sprite" value="BigBedOne"/>
+    <property name="SuccessDialogue" value="NormalBed"/>
+   </properties>
+  </object>
+  <object gid="338" x="194" y="232"/>
+  <object gid="353" x="162" y="264"/>
+  <object gid="354" x="194" y="264"/>
+  <object name="CaptainsNightstand" gid="431" x="125" y="247">
+   <properties>
+    <property name="Collidable" value="true"/>
+    <property name="Sprite" value="Nightstand"/>
+   </properties>
+  </object>
+  <object name="CaptainsJournal" gid="424" x="124" y="244">
+   <properties>
+    <property name="Bounds" value="0,0,32,40"/>
+    <property name="Elevation" value="5"/>
+    <property name="Permissions" value="All"/>
+    <property name="Sprite" value="Diary"/>
+    <property name="SuccessDialogue" value="CaptainsJournal"/>
+   </properties>
+  </object>
+  <object name="CaptainsPainting" gid="190" x="158" y="176">
+   <properties>
+    <property name="Sprite" value="PaintingFour"/>
+   </properties>
+  </object>
+  <object gid="191" x="190" y="176"/>
+  <object gid="206" x="158" y="208"/>
+  <object gid="207" x="190" y="208"/>
+  <object name="CaptainsChest" gid="330" x="443" y="167">
+   <properties>
+    <property name="CharDialogue" value="Ghost-true-CaptainsChestHandless"/>
+    <property name="CharDialogue2" value="Cat-true-CaptainsChestHandless"/>
+    <property name="CharDialogue3" value="Donovan-true-CaptainsChestDonovan"/>
+    <property name="Collidable" value="true"/>
+    <property name="Permissions" value="All"/>
+    <property name="Sprite" value="Chest"/>
+    <property name="SuccessDialogue" value="CaptainsChest"/>
+   </properties>
+  </object>
+  <object gid="331" x="475" y="167"/>
+  <object gid="346" x="443" y="199"/>
+  <object gid="347" x="475" y="199"/>
+  <object name="CaptainsDresser" gid="141" x="338" y="118">
+   <properties>
+    <property name="Collidable" value="true"/>
+    <property name="Permissions" value="All"/>
+    <property name="Sprite" value="DresserWMirror"/>
+    <property name="SuccessDialogue" value="CaptainsDresser"/>
+   </properties>
+  </object>
+  <object gid="142" x="370" y="118"/>
+  <object gid="157" x="338" y="150"/>
+  <object gid="158" x="370" y="150"/>
+  <object gid="159" x="402" y="150"/>
+  <object gid="173" x="338" y="182"/>
+  <object gid="174" x="370" y="182"/>
+  <object gid="175" x="402" y="182"/>
+  <object name="CaptainsDesk" gid="237" x="374" y="245">
+   <properties>
+    <property name="Bounds" value="0,24,64,40"/>
+    <property name="Collidable" value="true"/>
+    <property name="Sprite" value="GlassDesk"/>
+   </properties>
+  </object>
+  <object gid="238" x="406" y="245"/>
+  <object gid="253" x="374" y="277"/>
+  <object gid="254" x="406" y="277"/>
+  <object name="CaptainsChair" gid="335" x="387" y="220">
+   <properties>
+    <property name="Bounds" value="0,25,32,21"/>
+    <property name="Collidable" value="true"/>
+    <property name="Sprite" value="CoffeeChairRightBlack"/>
+   </properties>
+  </object>
+  <object gid="351" x="387" y="252"/>
+ </objectgroup>
+</map>

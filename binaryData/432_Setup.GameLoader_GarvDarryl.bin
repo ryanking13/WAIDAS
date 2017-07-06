@@ -1,0 +1,83 @@
+
+
+// GARV - DARRYL ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Garv-Darryl
+
+action:response:root
+Garv
+root-1:What brought you on board this ship?
+root-2:What are your thoughts about the captain's disappearance?
+</>root-null:Goodbye.
+action end
+
+action:statement:root-1
+Darryl:I wanted to get away for a while.
+next:root-1-A
+action end
+
+action:response:root-1-A
+Garv
+root-1-B:Get away...from what?
+root-1-C:But why here, specifically?
+</>root-null:Goodbye.
+action end
+
+action:statement:root-1-B
+Darryl:Away from home.  Away from work.  Away from...some memories.
+Darryl:Away from everything, actually.
+next:root-1-A
+action end
+
+action:statement:root-1-C
+Darryl:Because it's the last place anyone would come looking for me.
+next:root-1-D
+action end
+
+action:response:root-1-D
+Garv
+root-1-E:Interesting.  And why are people looking for you?
+</>root-null:Goodbye.
+action end
+
+action:statement:root-1-E
+Darryl:I didn't exactly say people were looking for me...but nice try.
+Darryl:When people notice I'm gone, and if they decided to look for me, they wouldn't think of this place.
+Darryl:That's all I meant.
+next:root-null
+action end
+
+action:statement:root-2
+Darryl:I don't have any thoughts on it.
+Darryl:It's terrible.  And there's nothing I can do about it.
+Darryl:That's the world I find myself in.
+next:root-2-A
+action end
+
+action:response:root-2-A
+Garv
+root-2-B:What about justice?  What about the truth?
+root-2-C:Do you have any ideas who did it?  Or why?
+</>root-null:Goodbye.
+action end
+
+action:statement:root-2-B
+Darryl:I already know the truth - that there is no justice.
+Darryl:I should know.  I'm a lawyer.
+Darryl:...Nothing will bring her back.
+Darryl:And knowing the truth is one thing, but making sense of it is another.
+next:root-2-A
+action end
+
+action:statement:root-2-C
+Darryl:To be honest, we don't even know if someone did anything.
+Darryl:Why are we ruling out suicide?
+Darryl:But to answer your question, assuming it was murder...
+Darryl:...I have absolutely no idea who the culprit would be.
+next:root-2-A
+action end
+
+dialogue end
+
+

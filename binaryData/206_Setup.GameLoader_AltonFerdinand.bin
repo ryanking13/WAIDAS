@@ -1,0 +1,143 @@
+
+
+dialogue start
+Alton-Ferdinand
+
+action:statement:root
+Ferdinand:Why hello there, Alton!  Is there something for which my assistance is required?
+Ferdinand:As the first mate of this fine vessel, it is my duty to help the staff in any way I can.
+next:root-1
+action end
+
+action:response:root-1
+Alton
+<!>root-1-trigger.xuIsFollowing:What were you up to last night?  Just curious.:trigger.altonXuTalkedtoFerdinand.on
+root-1-A:How's the boat doing?
+root-1-B:How are the passengers?
+</>root-null:Er, no, there's nothing.
+action end
+
+action:statement:root-1-trigger.xuIsFollowing
+Ferdinand:Last night?  Why, I was making sure all of the ship's readings were correct.
+Ferdinand:Double checking all of our instruments in the pilothouse.  Yes, that took a while.
+Ferdinand:I got to bed rather late, I must admit, but it was worth it!
+next:root-1-trigger.xuIsFollowing-1
+action end
+
+action:response:root-1-trigger.xuIsFollowing-1
+Alton
+root-1-trigger.xuIsFollowing-2:Isn't that something the captain would normally do?
+root-1-trigger.xuIsFollowing-3:Was all of that really necessary?
+</>root-null:Um, cool.
+action end
+
+action:statement:root-1-trigger.xuIsFollowing-2
+Ferdinand:Maybe...but is it not my job, as the first mate, to assist the captain in any way I can?
+Ferdinand:She cannot be everywhere at once.  So I am like an extension to her eyes and ears!
+Ferdinand:That means making sure everything is in order, at all parts of the ship, all the time.
+next:root-null
+action end
+
+action:statement:root-1-trigger.xuIsFollowing-3
+Ferdinand:It may seem unnecessary, until the day when suddenly it isn't.
+Ferdinand:You never know what might go wrong, and if they do, it's better to know sooner rather than later!
+Ferdinand:Yes indeed - forewarned is forearmed.  And I am always forewarned.
+next:root-null
+action end
+
+
+action:statement:root-1-A
+Ferdinand:She's purring like a kitten!  At this rate, we'll reach our destination right on time!
+Ferdinand:I have to say, all credit goes to our lovely captain.  She is a true professional!
+next:root-1-A-1
+action end
+
+action:response:root-1-A-1
+Alton
+root-1-A-1-A:How long will that be?
+root-captain:How is the captain?
+</>root-null:Cool.  I should get going, then.
+action end
+
+action:statement:root-1-A-1-A
+Ferdinand:According to our schedule, it will be another two days.
+Ferdinand:Just in time!  The weather seems to be taking a turn for the worse.
+next:null
+action end
+
+action:statement:root-captain
+Ferdinand:She must have turned in for the night.  She was around a little earlier, I think.
+Ferdinand:We make a great team, I think!
+Ferdinand:She's a little rough around the edges with people, but I'm a natural people-person.
+Ferdinand:And I may be a little fuzzy with details, but she is the paragon of diligence.
+Ferdinand:When two such as us get together, what can't we accomplish?
+next:root-null
+action end
+
+
+action:statement:root-1-B
+Ferdinand:They seem quite content.
+Ferdinand:But perhaps - as the ship entertainer - you are more of an authority on the matter!
+Ferdinand:I'm sure you've been able to acquaint yourself with all the passengers at the observation room, yes?
+next:root-1-B-1
+action end
+
+action:response:root-1-B-1
+Alton
+root-2:No one goes to the observation room.
+</>root-1-B-1-C:Er, yeah, sure have!
+action end
+
+action:statement:root-1-B-1-C
+Ferdinand:Wonderful!
+next:null
+action end
+
+action:statement:root-2
+Ferdinand:Haha!  Oh Alton, you're such a kidder!
+Ferdinand:I'm sure with your natural charm and talent, it's party central over there!
+Ferdinand:Party city!  Party headquarters!  Party palooza!
+next:root-2-A
+action end
+
+action:response:root-2-A
+Alton
+root-2-A-1:I guess, if you say so?
+root-2-A-2:No, not at all actually.
+root-2-A-3:Why don't you stop by then?
+root-2-A-4:What are you talking about?
+action end
+
+action:statement:root-2-A-1
+Ferdinand:See?  I knew it!
+Ferdinand:Haha, such a kidder!
+Ferdinand:Keep up the good work!
+next:root-null
+action end
+
+action:statement:root-2-A-2
+Ferdinand:Well, everyone has slow days.  The important thing is that you don't let them get you down!
+Ferdinand:Why, whenever I run into a problem like that, you know what I do?
+Ferdinand:Ignore it!
+Ferdinand:Yup!
+Ferdinand:And then it just goes away.  Probably.  I don't even know!  That's the beauty of it!
+Ferdinand:Well, great talk, Alton!  Keep up the good work!
+next:root-null
+action end
+
+action:statement:root-2-A-3
+Ferdinand:Ooh, hmm, yes, I would, I really would.
+Ferdinand:But you see, I'm busy.  So busy.  Yes, very much so.
+Ferdinand:With the boat.  You know.  Looking after the boat.
+Ferdinand:But really, it's for the best.  I'd just cramp your style!  
+next:root-null
+action end
+
+action:statement:root-2-A-4
+null:He doesn't respond.
+null:He's looking somewhere else, as if he's already forgotten about the conversation he was having with you.
+next:root-null
+action end
+
+
+dialogue end

@@ -1,0 +1,132 @@
+
+
+
+// DARRYL - XU ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Darryl-Xu
+
+action:response:root
+Darryl
+root-1:What brings you here and now?
+<!>root-trigger.chap3DarrylsKeyDarryl:So Quella says you stole my key, and she found it in your room?:trigger.chap3DarrylsKeyDarryl.off
+</>root-null:See you later.
+action end
+
+action:statement:root-1
+Xu:I didn't have many options, exactly.
+Xu:I don't think anyone who finds themself in my line of work does, exactly.
+next:root-2
+action end
+
+action:response:root-2
+Darryl
+root-2-A:Any plans on further education?
+root-2-B:I used to be the exact same.
+root-2-null:I should be going.
+action end
+
+action:statement:root-2-A
+Xu:Well, that requires money, or loans, or grants...
+Xu:All of which are far out of my reach.
+Xu:I had a good shot once, but I completely blew it.  I guess I'm paying pennance.
+next:root-null
+action end
+
+action:statement:root-2-B
+Xu:No offence, but whatever your circumstances were, mine are quite different.
+Xu:If I were to quit this job, I'd be...well, let's just say, I'm stuck here.
+next:root-null
+action end
+
+
+action:statement:root-trigger.chap3DarrylsKeyDarryl
+Xu:I...stole...?  No, I would never do something like that.
+Xu:I'm sorry, there must be some misunderstanding, I...
+next:root-foundOut-1
+action end
+
+action:response:root-foundOut-1
+Darryl
+root-foundOut-2:You can drop the act.  I'll take Quella's word over yours any day.
+action end
+
+action:statement:root-foundOut-2
+Xu:No, I mean, you don't understand, it's...
+next:root-foundOut-3
+action end
+
+action:response:root-foundOut-3
+Darryl
+root-foundOut-4:Give me a good reason not to tell everyone else what you're doing.:trigger.chap3darrylXuProgress.on
+root-trigger.chap3darrylXuProgress:That's not a good reason.  You get room and board, so you don't need the money.
+action end
+
+action:statement:root-foundOut-4
+Xu:W-What?!
+Xu:Jeez, look, I just...need any extra money I can get.
+Xu:I get paid in peanuts here, and I'm really desperate.  Every bit counts.
+next:root-foundOut-3
+action end
+
+
+action:statement:root-trigger.chap3darrylXuProgress
+Xu:...
+Xu:I'm not legal, alright?
+Xu:I came over on a student visa for university, and, well...I flunked.
+Xu:My family threw everything away to send me over here.  I couldn't go back like a total failure.
+Xu:So, I disappeared.  Stupid, I know.  With no paperwork or money, I couldn't get very far.
+Xu:This job didn't need any ID or qualifications, but I'm pretty much broke and stuck here.
+Xu:For me to have any chance of getting out, I have to scrape together something.
+Xu:...If I lose this job, I have no idea what'll happen to me.
+next:root-foundOut-7
+action end
+
+action:response:root-foundOut-7
+Darryl
+root-foundOut-8:This is no way to live, Sue.  Once we land, we're going to sort this out.:trigger.chap3XuUnlocked.on
+action end
+
+action:statement:root-foundOut-8
+Xu:...You may not have to do anything.  It seems like almost everyone knows by this point.
+Xu:I'm mostly worried about Donovan.  I just don't understand what he's planning...
+next:root-null
+action end
+
+
+action:response:root2
+Darryl
+root2-A:What happened with college?  You seem bright enough.
+root2-B:You can't keep running forever.  You know that.
+</>root2-null:Bye.
+action end
+
+action:statement:root2-A
+Xu:I can be a good student if I try, yeah.  It's how I got the visa in the first place.
+Xu:As for why I dropped out...bad decisions.  A lot of them, all at once.
+Xu:I just assumed I could pull my act together in time.  Turns out I couldn't.
+next:root2
+action end
+
+action:statement:root2-B
+Xu:If I go back, there's a good chance I never leave China again.
+Xu:The thought of returning home feels like diving into quicksand.
+Xu:Never being able to leave...I'd rather stay here.  That says a lot, doesn't it?
+next:root2-C
+action end
+
+action:response:root2-C
+Darryl
+root2-D:It doesn't have to be that way.  You can make your own path.
+action end
+
+action:statement:root2-D
+Xu:It isn't that simple for everyone.
+Xu:I was dealt a different hand in life than you were.
+next:root2
+action end
+
+dialogue end
+
+
+

@@ -1,0 +1,112 @@
+
+
+
+
+// MARCURIO - GARV ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Marcurio-Garv
+
+action:response:root
+Marcurio
+root-1:Where are you headed to, old man?
+root-2:Why're you here and not at home?  Don't you have grandkids to look after?
+</>root-null:See ya.
+action end
+
+action:statement:root-1
+Garv:That's...certainly one way to greet someone.
+Garv:I'm travelling on work related reasons.  The company's setting up a new branch and I'm there to oversee it.
+Garv:Some lugheads had a work place accident at another branch and got themselves, and the branch, closed permanently.
+Garv:So we've got some catch-up work to do.
+next:root-1-A
+action end
+
+action:repsonse:root-1-A
+Marcurio
+root-1-B:Overseeing it, huh?  You must be some ways up the corporate ladder I'm guessing.
+root-1-C:That's a pretty cold way to put two coworkers' deaths.
+</>root-null:Never mind.
+action end
+
+action:statement:root-1-B
+Garv:Eh, not really.  Depends on how you look at it.
+Garv:There are people below me, and there are people above me.  And that's probably how it's always gonna be.
+next:root-1-A
+action end
+
+action:statement:root-1-C
+Garv:In the business world, it helps to be cold.  If you don't put profit over feelings, the guy that takes your job will.
+Garv:And anyway, the two guys I'm talking about weren't very pitiable.  Trust me on that.
+next:root-cold
+action end
+
+action:response:root-cold
+Marcurio
+root-cold-1:Not really crazy about ethics I take it.
+root-cold-2:How far would you go for profit?
+</>root-null:Never mind.
+action end
+
+action:statement:root-cold-1
+Garv:Oh, I have ethics.  But you have to be able to suspend your personal beliefs every once in a while.
+Garv:That's the world we live in.  If you don't believe me, you aren't paying close attention to your surroundings.
+next:root-cold
+action end
+
+action:statement:root-cold-2
+Garv:Maybe not as far as you're thinking I would, judging off the way you asked me that.
+Garv:But that's just profit.  Protecting myself and my own investments, well, I don't really know.
+Garv:Can you say you know exactly what your limits are, when push comes to shove?
+next:root-cold-3
+action end
+
+action:response:root-cold-3
+Marcurio
+root-cold-A:I'm not sure I know what we're talking about right now.
+root-cold-B:No, I can't.
+action end
+
+action:statement:root-cold-A
+Garv:I think you do know.  But that's fine.  A clean self-image is important to most people.
+Garv:Who am I to deprive you of that?
+next:root-null
+action end
+
+action:statement:root-cold-B
+Garv:Being honest with oneself is a rare quality these days.  Even rarer, someone who is openly honest.
+Garv:A man like you can do well for himself in this world.
+next:root-null
+action end
+
+action:statement:root-2
+Garv:I suppose you think you're being funny.
+Garv:I don't have any grandchildren.  Just children.  And even then, only half the time.
+Garv:Human relations are a complicated and messy ordeal.
+next:root-2-A
+action end
+
+action:response:root-2-A
+Marcurio
+root-2-B:What happened?  Got in a divorce or something?
+root-2-C:You seem to have more affection for your pets than your family.
+</>root-null:See you later.
+action end
+
+action:statement:root-2-B
+Garv:Frankly, it's none of your business.
+next:root-2-A
+action end
+
+action:statement:root-2-C
+Garv:They are much more predictable.  If you treat them well, they treat you well.  And vice-versa.
+Garv:There is something to be said for that.  That clarity.  That simplicity.
+Garv:Of course I love my children far more than any dumb bird.
+Garv:But I don't have to worry about the dumb bird getting turned against me by my whore wife.
+next:root-2-A
+action end
+
+
+dialogue end
+
+

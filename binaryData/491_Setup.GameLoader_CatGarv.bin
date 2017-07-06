@@ -1,0 +1,92 @@
+
+dialogue start
+Cat-Garv
+
+action:response:root
+Cat
+root-1:Meow!
+</>root-null:Hsss!
+action end
+
+action:statement:root-1
+Garv:What?  Your food bowl is filled, you stupid cat.
+next:root-2
+action end
+
+action:response:root-2
+Cat
+root-2-1:Meow!
+</>root-2-null:Leave
+action end
+
+action:statement:root-2-1
+Garv:Stop your meowing.  I know you're not hungry.  You have your food.
+Garv:And I just emptied your litter box yesterday.  Don't tell me you're going to wet the floor anyway.
+next:root-2-2
+action end
+
+action:response:root-2-2
+Cat
+root-2-3:Meow!
+</>root-2-2-null:Leave
+action end
+
+action:statement:root-2-3
+Garv:I think there must be something wrong with your stupid little brain.  That's why you keep bothering me.
+next:root-null
+action end
+
+
+
+action:response:root2
+Cat
+root2-1:Meow!
+</>root2-null:Hsss!
+action end
+
+action:statement:root2-1
+Garv:Looks like things have gotten complicated, Sunshine.
+Garv:I don't care what the first mate says...I think he's up to something.
+Garv:But we're going to show him, right?
+next:root2-2
+action end
+
+action:response:root2-2
+Cat
+root2-3:Meow!
+</>root2-null:Leave
+action end
+
+action:statement:root2-3
+Garv:That's the spirit.
+next:root2-null
+action end
+
+
+
+
+action:response:root3
+Cat
+root3-1:Meow!
+</>root3-null:Hsss!
+action end
+
+action:statement:root3-1
+Garv:Good work last night, Sunshine.
+Garv:You're a very obedient pet.  And more clever than some humans I know.
+next:root3-2
+action end
+
+action:response:root3-2
+Cat
+root3-3:Meow!
+</>root3-null:Leave
+action end
+
+action:statement:root3-3
+Garv:Between that and the page...I think it should be enough.
+Garv:Now we just have to wait for the pieces to come together.
+next:root3-null
+action end
+
+dialogue end

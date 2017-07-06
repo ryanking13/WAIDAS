@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="18" height="20" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="Main tiles" tilewidth="32" tileheight="32">
+  <image source="../Tiles/Observation Room Sheet.png" width="224" height="224"/>
+ </tileset>
+ <tileset firstgid="50" name="PropGrid" tilewidth="32" tileheight="32">
+  <image source="../Props/PropGrid.png" width="512" height="832"/>
+ </tileset>
+ <tileset firstgid="466" name="AIGrid" tilewidth="32" tileheight="32">
+  <image source="../Props/AIGrid.png" width="96" height="32"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="18" height="20">
+  <data>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="2"/>
+   <tile gid="3"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="5"/>
+   <tile gid="6"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="2"/>
+   <tile gid="9"/>
+   <tile gid="10"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="12"/>
+   <tile gid="13"/>
+   <tile gid="6"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="8"/>
+   <tile gid="9"/>
+   <tile gid="16"/>
+   <tile gid="17"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="19"/>
+   <tile gid="20"/>
+   <tile gid="13"/>
+   <tile gid="14"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="16"/>
+   <tile gid="23"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="27"/>
+   <tile gid="20"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="23"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="27"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="34"/>
+   <tile gid="35"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="34"/>
+   <tile gid="35"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="34"/>
+   <tile gid="35"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="29"/>
+   <tile gid="30"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="34"/>
+   <tile gid="35"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="29"/>
+   <tile gid="30"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="34"/>
+   <tile gid="26"/>
+   <tile gid="26"/>
+   <tile gid="26"/>
+   <tile gid="35"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="29"/>
+   <tile gid="30"/>
+   <tile gid="1"/>
+   <tile gid="34"/>
+   <tile gid="35"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="1"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+  </data>
+ </layer>
+ <objectgroup name="Props" width="18" height="20">
+  <object name="DJTableLeft" gid="65" x="166" y="227">
+   <properties>
+    <property name="Bounds" value="0,16,32,64"/>
+    <property name="CharDialogue" value="Alton-true-ObservationDJTableLeftAlton"/>
+    <property name="Collidable" value="true"/>
+    <property name="Permissions" value="All"/>
+    <property name="Sprite" value="DJTableLeft"/>
+    <property name="SuccessDialogue" value="ObservationDJTableLeft"/>
+   </properties>
+  </object>
+  <object gid="81" x="166" y="259"/>
+  <object gid="97" x="166" y="291"/>
+  <object name="DJTableRight" gid="118" x="194" y="191">
+   <properties>
+    <property name="Bounds" value="0,16,32,64"/>
+    <property name="CharDialogue" value="Alton-true-ObservationDJTableRightAlton"/>
+    <property name="Collidable" value="true"/>
+    <property name="Permissions" value="All"/>
+    <property name="Sprite" value="DJTableRight"/>
+    <property name="SuccessDialogue" value="ObservationDJTableRight"/>
+   </properties>
+  </object>
+  <object gid="134" x="194" y="223"/>
+  <object gid="150" x="194" y="255"/>
+  <object gid="119" x="226" y="191"/>
+  <object gid="135" x="226" y="223"/>
+  <object gid="151" x="226" y="255"/>
+  <object name="ObservationCounter" gid="210" x="63" y="347">
+   <properties>
+    <property name="Bounds" value="0,16,128,48"/>
+    <property name="Collidable" value="true"/>
+    <property name="Sprite" value="ObservationCounter"/>
+   </properties>
+  </object>
+  <object gid="211" x="95" y="347"/>
+  <object gid="212" x="127" y="347"/>
+  <object gid="213" x="159" y="347"/>
+  <object gid="229" x="159" y="379"/>
+  <object gid="228" x="127" y="379"/>
+  <object gid="227" x="95" y="379"/>
+  <object gid="226" x="63" y="379"/>
+  <object name="CoffeeTableOne" gid="416" x="320" y="170">
+   <properties>
+    <property name="Collidable" value="true"/>
+    <property name="Sprite" value="CoffeeTable"/>
+   </properties>
+  </object>
+  <object name="CoffeeChairOne" gid="313" x="288" y="138">
+   <properties>
+    <property name="Bounds" value="0,24,32,20"/>
+    <property name="Collidable" value="true"/>
+    <property name="Sprite" value="CoffeeChairLeft"/>
+   </properties>
+  </object>
+  <object gid="329" x="288" y="170"/>
+  <object name="CoffeeChairTwo" gid="315" x="352" y="138">
+   <properties>
+    <property name="Bounds" value="0,24,32,20"/>
+    <property name="Collidable" value="true"/>
+    <property name="Sprite" value="CoffeeChairRight"/>
+   </properties>
+  </object>
+  <object gid="331" x="352" y="170"/>
+  <object name="SpeakerTwo" gid="224" x="104" y="134">
+   <properties>
+    <property name="Collidable" value="true"/>
+    <property name="Permissions" value="All"/>
+    <property name="Sprite" value="SpeakerLeft"/>
+    <property name="SuccessDialogue" value="ObservationSpeakers"/>
+   </properties>
+  </object>
+  <object gid="240" x="104" y="166"/>
+  <object name="SpeakerThree" gid="225" x="415" y="132">
+   <properties>
+    <property name="Collidable" value="true"/>
+    <property name="Permissions" value="All"/>
+    <property name="Sprite" value="SpeakerRight"/>
+    <property name="SuccessDialogue" value="ObservationSpeakers"/>
+   </properties>
+  </object>
+  <object gid="241" x="415" y="164"/>
+  <object name="SpeakerFour" gid="225" x="445" y="162">
+   <properties>
+    <property name="Collidable" value="true"/>
+    <property name="Permissions" value="All"/>
+    <property name="Sprite" value="SpeakerRight"/>
+    <property name="SuccessDialogue" value="ObservationSpeakers"/>
+   </properties>
+  </object>
+  <object gid="241" x="445" y="194"/>
+  <object gid="240" x="71" y="199"/>
+  <object name="SpeakerOne" gid="224" x="71" y="167">
+   <properties>
+    <property name="Collidable" value="true"/>
+    <property name="Permissions" value="All"/>
+    <property name="Sprite" value="SpeakerLeft"/>
+    <property name="SuccessDialogue" value="ObservationSpeakers"/>
+   </properties>
+  </object>
+  <object gid="329" x="359" y="254"/>
+  <object name="CoffeeChairThree" gid="313" x="359" y="222">
+   <properties>
+    <property name="Bounds" value="0,24,32,20"/>
+    <property name="Collidable" value="true"/>
+    <property name="Sprite" value="CoffeeChairLeft"/>
+   </properties>
+  </object>
+  <object gid="329" x="333" y="372"/>
+  <object name="CoffeeChairFive" gid="313" x="333" y="340">
+   <properties>
+    <property name="Bounds" value="0,24,32,20"/>
+    <property name="Collidable" value="true"/>
+    <property name="Sprite" value="CoffeeChairLeft"/>
+   </properties>
+  </object>
+  <object gid="331" x="439" y="256"/>
+  <object name="CoffeeChairFour" gid="315" x="439" y="224">
+   <properties>
+    <property name="Bounds" value="0,24,32,20"/>
+    <property name="Collidable" value="true"/>
+    <property name="Sprite" value="CoffeeChairRight"/>
+   </properties>
+  </object>
+  <object gid="331" x="399" y="363"/>
+  <object name="CoffeeChairSix" gid="315" x="399" y="331">
+   <properties>
+    <property name="Bounds" value="0,24,32,20"/>
+    <property name="Collidable" value="true"/>
+    <property name="Sprite" value="CoffeeChairRight"/>
+   </properties>
+  </object>
+  <object name="CoffeeTableTwo" gid="416" x="399" y="239">
+   <properties>
+    <property name="Collidable" value="true"/>
+    <property name="Sprite" value="CoffeeTable"/>
+   </properties>
+  </object>
+  <object name="CoffeeTableThree" gid="416" x="367" y="358">
+   <properties>
+    <property name="Collidable" value="true"/>
+    <property name="Sprite" value="CoffeeTable"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="AI" width="18" height="20">
+  <object name="AltonSulking" gid="466" x="160" y="192">
+   <properties>
+    <property name="Character" value="Alton"/>
+    <property name="Frequency" value="180"/>
+    <property name="Index" value="1"/>
+    <property name="Loop" value="true"/>
+    <property name="Type" value="Routine"/>
+    <property name="WaitTime" value="180"/>
+   </properties>
+  </object>
+  <object name="FerdinandRoute" gid="466" x="192" y="352">
+   <properties>
+    <property name="Frequency" value="15"/>
+    <property name="Index" value="7"/>
+    <property name="Type" value="Routine"/>
+   </properties>
+  </object>
+  <object name="FerdinandRoute" gid="466" x="288" y="224">
+   <properties>
+    <property name="Frequency" value="20"/>
+    <property name="Index" value="8"/>
+    <property name="Type" value="Routine"/>
+   </properties>
+  </object>
+  <object name="FerdinandRoute" gid="466" x="256" y="224">
+   <properties>
+    <property name="Frequency" value="80"/>
+    <property name="Index" value="9"/>
+    <property name="Type" value="Routine"/>
+   </properties>
+  </object>
+  <object name="AltonSulking" gid="466" x="129" y="271">
+   <properties>
+    <property name="Character" value="Alton"/>
+    <property name="Frequency" value="180"/>
+    <property name="Index" value="2"/>
+    <property name="Loop" value="true"/>
+    <property name="Type" value="Routine"/>
+    <property name="WaitTime" value="180"/>
+   </properties>
+  </object>
+  <object name="QuellaChap4" gid="466" x="384" y="288">
+   <properties>
+    <property name="Character" value="Quella"/>
+    <property name="Frequency" value="600"/>
+    <property name="Index" value="1"/>
+    <property name="Loop" value="false"/>
+    <property name="Type" value="Routine"/>
+    <property name="WaitTime" value="100"/>
+   </properties>
+  </object>
+  <object name="QuellaChap42" gid="466" x="224" y="288">
+   <properties>
+    <property name="Character" value="Quella"/>
+    <property name="Frequency" value="400"/>
+    <property name="Index" value="1"/>
+    <property name="Loop" value="false"/>
+    <property name="Type" value="Routine"/>
+    <property name="WaitTime" value="100"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

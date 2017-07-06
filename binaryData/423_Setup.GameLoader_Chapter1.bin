@@ -1,0 +1,436 @@
+
+
+
+dialogue start
+AltonMarcurioIntro
+
+action:statement:root
+
+Alton:Hey, Marcurio!  Glad I found you.
+Marcurio:You are?  What's going on?
+Alton:Oh.  Uh, nothing.  Nothing really.  You finished up at the diner?
+Marcurio:Pretty much, dinner hours are over.  I'm gonna go back up and clean the kitchen, though.
+Alton:You really like staying in the kitchen after hours, huh?  I don't think I've ever actually seen you turn in.
+Alton:My shift in the observation room is over, so I'm gonna kick back and relax!
+Marcurio:...Was there something you needed?
+Alton:Oh, that's right, I just remembered.  I was looking for Sue.  She's probably off hours too, right?
+Marcurio:Yeah, of course.
+Alton:Any idea where she went?
+Marcurio:No.
+Alton:Oh, okay.  I just thought...she looked kind of upset earlier today, didn't she?
+Marcurio:Maybe.  I wouldn't know.
+Alton:I was just curious what was up.
+Marcurio:Probably nothing.
+Alton:Oh.  Well, maybe I'll stop by her room to check on her, just in case.
+Marcurio:Knock yourself out.  I'm going to clean the kitchen now.
+Alton:....Bye....
+next:end
+
+action end
+dialogue end
+
+
+dialogue start
+AltonIntroTwo
+
+action:statement:root
+
+Alton:....
+Alton:Well, I guess I could go check Sue's room on the upper deck, but now I'm not sure I should.
+Alton:Would that be weird?  I don't know...
+next:end
+
+action end
+dialogue end
+
+
+
+dialogue start
+AltonXuCinematic
+
+action:statement:root
+Xu:Hey Alton, what's up?
+next:root-1
+action end
+
+action:response:root-1
+Alton
+root-2:Not much with me.  How are you?
+action end
+
+action:statement:root-2
+Xu:I'm okay.  Um, you can come in.
+next:root-3
+action end
+
+action:response:root-3
+Alton
+root-4:Oh, right.
+action end
+
+dialogue end
+
+
+dialogue start
+AltonXuCinematic2
+
+action:response:root
+Alton
+root-2-trigger.altonOne:Um...so, everything okay?  You seemed upset this morning.:trigger.altonThree.on
+root-2-trigger.altonTwo:Oh yeah, I made a new mixtape that I think you'd be into.:trigger.altonFour.on
+</>root-2-trigger.altonBoth:Right.  Well, I guess that's everything.  See you later.
+action end
+
+action:statement:root-2-trigger.altonOne
+Xu:Y-yes!  Everything's alright.  I'm sorry if I made you worry.
+next:root
+action end
+
+action:statement:root-2-trigger.altonTwo
+Xu:Oh, that sounds...nice.
+next:root-awk
+action end
+
+action:response:root-awk
+Alton
+root-awk2:Maybe you could drop by the observation room sometime?  And listen to it, I mean.  The mixtape.
+action end
+
+action:statement:root-awk2
+Xu:Oh...yeah.  Well, I'm usually pretty busy, but maybe when I have time.
+next:root
+action end
+
+action:statement:altonWait
+Xu:Alton, wait!
+Xu:I haven't been completely honest.
+Xu:You were right.  Something happened last night.
+Xu:Someone broke into my room and stole something.
+next:root-null
+action end
+
+action:response:root-3
+Alton
+root-4:W...what?!  How?!
+action end
+
+action:statement:root-4
+Xu:I don't know.  My door lock felt...different today.  I think someone forced it open.
+next:root-5
+action end
+
+action:response:root-5
+Alton
+root-5-A:Why would someone do that?
+root-5-key:What did they steal?
+root-5-B:We need to tell someone!:trigger.altonKeepSecret.on
+<!>root-5-trigger.altonKeepSecret:Maybe I can help you figure out who's behind this.
+action end
+
+action:statement:root-5-A
+Xu:I guess they were looking for something expensive that they could pawn.
+Xu:Some people have no shame when it comes to money.  
+Xu:But I have no idea why a thief would target me.  It's not like I keep anything valuable around.
+next:root-5
+action end
+
+action:statement:root-5-key
+Xu:Oh.  They stole a, um...a family heirloom.  An old vase.  Yeah.
+Xu:It isn't worth a lot of money, but they probably didn't know that.
+Xu:But it would be really, really great if I could get it back.
+next:root-5
+action end
+
+
+action:statement:root-5-B
+Xu:No!  We can't!
+Xu:Um, I mean...I'd prefer to keep this just between the two of us, for now.
+Xu:I don't know if we can trust the other ship staff.  We don't know who was behind this, after all.
+next:root-5
+action end
+
+action:statement:root-5-trigger.altonKeepSecret
+Xu:Really?  No, I wouldn't want to get you caught up in this...
+next:root-6
+action end
+
+action:response:root-6
+Alton
+root-7:Hey, that's why I came here in the first place, right?
+action end
+
+action:statement:root-7
+Xu:...Thank you, Alton.
+Xu:We could start by talking to people around the ship.
+Xu:Maybe we'll notice something.
+next:root-8
+action end
+
+action:response:root-8
+Alton
+root-9:Alright!  We can do this!:trigger.follow.on
+action end
+
+action:statement:root-9
+null:Xu has joined the party!
+next:null
+action end
+
+action:statement:root-10
+Xu:We should ask everyone on the ship what they've been up to.  That's a total of seven people.
+Xu:I'd start upstairs.
+Xu:Marcurio's probably in the kitchen, behind the dining room.  And the first mate is...well, he's easy to find.
+next:null
+action end
+
+dialogue end
+
+
+
+
+
+
+dialogue start
+AltonXuHint
+
+action:statement:root
+Xu:I don't know if this is working.
+Xu:It seems like we're just creeping people out.
+next:root-1
+action end
+
+action:response:root-1
+Alton
+root-2:Yeah, you're right.
+root-3:I've learned a lot!
+action end
+
+action:statement:root-2
+Xu:I don't know.  Maybe we should just go back to my room and rethink things.
+next:root-null
+action end
+
+action:statement:root-3
+Xu:Really?  What info have you picked up?
+next:root-4
+action end
+
+action:response:root-4
+Alton
+root-5:Um....
+action end
+
+action:statement:root-5
+Xu:I didn't think so.
+next:root-2
+action end
+
+dialogue end
+
+
+
+
+// Mega Alton/Xu resolution dialogue ///////////////////////////////////////////////////////////////////////////////////////////
+
+
+dialogue start
+AltonXuResolution
+
+action:statement:root
+Xu:Well...I didn't learn anything that tells me who broke into my room.
+Xu:I really hoped there might be some detail I'd pick up.
+Xu:What about you?
+next:root-1
+action end
+
+action:response:root-1
+Alton
+root-2:I have an idea about who it was.
+root-3:Beats the hell out of me.
+action end
+
+action:statement:root-2
+Xu:Really?  Who do you think it was?
+next:root-guess
+action end
+
+action:statement:root-3
+Xu:...So we really didn't accomplish anything by talking to everyone, huh...
+Xu:Well, we didn't actually talk to everyone, I guess.  We never ran into the captain.
+Xu:She must've turned in for the night.  She's almost always around, so that's bad luck on our part.
+next:root-null
+action end
+
+action:response:root-guess
+Alton
+root-failCaptain:The captain of the ship
+root-failFerdinand:Ferdinand, the first mate
+root-failMarcurio:Marcurio, the ship cook
+root-failDarryl:Darryl, the guy outside
+root-failQuella:Quella, the writer
+root-failDonovan:Donovan, the unfriendly guy
+root-failGarv:Garv, the pet owner
+root-failGwen:Gwen, the quiet woman
+action end
+
+action:statement:root-failCaptain
+Xu:Really?  The captain, Smilla?
+Xu:I guess we never got to talk to her, but she is still a suspect.
+Xu:But, as the captain, she has a key that can open any lock.
+Xu:I don't think she'd need to break into my room if she really wanted...
+Xu:Why do you think it was her?
+next:root-fail
+action end
+
+action:statement:root-failFerdinand
+Xu:Ferdinand?  If the first mate was breaking into rooms that would be really bad.
+Xu:He is new here - this is his first voyage with the ship.  So I don't know much about him.
+Xu:Why do you think it was him?
+next:root-fail
+action end
+
+action:statement:root-failMarcurio
+Xu:Marcurio?  No, no way - I don't think so.
+Xu:I work with Marcurio every day in the dining area.  We're...good friends.
+Xu:He may not be the most personable guy, but he wouldn't do something like this.
+Xu:Why do you think it was him?
+next:root-fail
+action end
+
+action:statement:root-failDarryl
+Xu:Darryl?  Hmm...that guy is kinda weird.  Mysterious.
+Xu:He spends most of his time outside the ship, and doesn't really like to talk much.
+Xu:Why do you think it was him?
+next:root-fail
+action end
+
+action:statement:root-failQuella
+Xu:Quella?  She spends a lot of time in the dining area.  She's a good tipper!
+Xu:We've talked a lot.  I'd really hate it if it were her...
+Xu:Why do you think it was her?
+next:root-fail
+action end
+
+action:statement:root-failDonovan
+Xu:Donovan...I see him around, but he doesn't say much.
+Xu:He's always so emotionless.  He walks around with a totally blank face.  It's kinda creepy.
+Xu:Why do you think it was him?
+next:root-fail
+action end
+
+action:statement:root-failGarv
+Xu:Garv?  He seems like a sweet guy.  And he gives me pretty good tips!
+Xu:What would someone like him be doing sneaking around and picking locks?
+Xu:Why do you think it was him?
+next:root-fail
+action end
+
+action:statement:root-failGwen
+Xu:Gwen?  I mean, I know she comes off as really weird...she doesn't really respond to anyone.
+Xu:I'm not sure what her deal is.  I don't know if she's a thief, though.
+Xu:Why do you think it was her?
+next:root-fail
+action end
+
+action:response:root-fail
+Alton
+root-fail2:It's just a feeling I have.
+root-fail3:Nothing.  I just wanted to see how you'd react.
+action end
+
+action:statement:root-fail2
+Xu:Okay, well you may be right, but I was hoping for something more concrete.
+Xu:If all we have are hunches, that won't do much good.
+next:root-null
+action end
+
+action:statement:root-fail3
+Xu:Really?  Come on, Alton, that's not okay.  You really got my hopes up!
+Xu:...I guess we really don't have any idea who it is, after all.
+next:root-null
+action end
+
+
+action:statement:root-fail4
+Alton:Ahh....ahhh....
+Alton:AAACHOOOO!
+Xu:Oh jeez, you're still reacting to the dust, huh?  I really need to clean up my room, I guess.
+Xu:...
+Xu:Ha, I just had a thought.  Maybe the person left their finger print in the dust on my glass furniture!
+Xu:Now, all we need is a copy of the finger prints from everybody on the ship...
+next:root-null
+action end
+
+action:statement:root-fail5
+Alton:Alright, lemme check and see if there's anything like that.
+Xu:Wait, Alton!  You don't have to do that.  I was just joking!  
+Xu:I mean, there's no way we could figure out who it was from a finger print.
+Alton:But...there are no finger prints.
+Xu:What do you mean?
+Alton:I mean there are finger marks where someone touched the glass...but there are no finger prints.
+Xu:Oh, okay.  Hmm.
+Alton:So...I guess they were wearing gloves, then?
+Xu:I guess.
+next:root-null
+action end
+
+action:statement:root-fail6
+Xu:Wait...that's it!  Alton, you're a genius!
+Xu:If there are no prints, it means they must have been wearing gloves, which means it must have been...
+Xu:Donovan!  That weird quiet guy.  I always thought it was strange how he wears those all the time.
+Xu:I bet it was him!
+next:ancitipation1
+action end
+
+action:statement:anticipation1
+Alton:Ahh....
+next:root-null
+action end
+
+action:statement:anticipation2
+Xu:It makes sense, really.  That guy always gave me a bad feeling.
+next:root-null
+action end
+
+action:statement:anticipation3
+Alton:Aaahhh...
+next:root-null
+action end
+
+action:statement:anticipation4
+Xu:But why would he break into my room and steal, er, that?
+next:root-null
+action end
+
+action:statement:anticipation5
+Alton:AAACCHHOOOO!
+next:root-null
+action end
+
+
+action:statement:theReveal
+Alton:Oh gosh, I'm so sorry.  I hope I didn't break anything!
+Xu:No, no, it's fine.  Let's get you out of here.  You look so ill!
+Alton:It's weird though.  Why wouldn't Donovan have stolen some of this stuff?
+Alton:There's an MP3 player here - a really good model!  I used to have one like that, but I lost it.
+Xu:...Um...
+Alton:And those headphones are a really good brand too.  Not cheap.  I had one like that too, but I...
+Alton:...Lost it.
+Xu:...
+Alton:I never lost them.  You stole them.
+Xu:Alton, wait, it's not like that.
+Alton:I was always just an easy mark, huh?  A walking pile of money.  That was how you saw me.
+Alton:That was a nice long con you had going there.  Congratulations.
+Xu:Come on.  Just wait a minute!
+Alton:So that you can steal something else from me?  I'm out of here.
+next:root-null
+action end
+
+action:statement:finale
+Xu:Well, damn.
+next:root-null
+action end
+
+
+dialogue end
+

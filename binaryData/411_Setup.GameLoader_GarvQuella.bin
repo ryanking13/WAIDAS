@@ -1,0 +1,111 @@
+
+
+
+// GARV - QUELLA ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Garv-Quella
+
+action:response:root
+Garv
+root-1:What made you decide to come out here on this boat?
+root-2:What do you think about the captain's situation?
+</>root-null:Goodbye.
+action end
+
+action:statement:root-1
+Quella:Well, I'm trying to finish writing a book.
+Quella:I wanted to go some place I wouldn't have any distractions.  Some place new.
+Quella:This seemed like it fit pretty well.
+next:root-1-A
+action end
+
+action:response:root-1-A
+Garv
+root-1-B:You could've gone anywhere.  Why this boat, specifically?:trigger.garvAskedQuella.on
+root-1-C:And what will you do when we land?
+root-1-trigger.garvAskedQuella:Most people have a solid reason for being here...except you.
+</>root-null:Goodbye.
+action end
+
+action:statement:root-1-B
+Quella:I don't think I can give you a satisfying answer.  There wasn't much reason to it.
+Quella:Biggest reason is that this was cheap!  I don't have much travel money as it is.
+next:root-1-A
+action end
+
+action:statement:root-1-C
+Quella:Find the cheapest lodging I can and keep pounding out pages, basically.
+Quella:If I get sick of the place, I'll move.  Eventually I'll head back home.
+Quella:But yeah, those are my grand plans as such.
+next:root-1-A
+action end
+
+action:statement:root-1-trigger.garvAskedQuella
+Quella:Wow, is that suspicion I'm hearing?
+Quella:Yes, I'm a bit of a drifter.  Some people are that way.  It doesn't mean anything!
+Quella:If I had ulterior motives for being here, I probably would have come up with a better story, y'know?
+next:root-1-A
+action end
+
+
+action:statement:root-2
+Quella:Um, it's pretty bad!
+Quella:If Marcurio is right - that is, if she went overboard...
+Quella:We wouldn't be able to find her.  Find the cause of death, or the murder weapon, or...anything.
+next:root-2-A
+action end
+
+action:response:root-2-A
+Garv
+root-2-B:We can look for motivation amongst the passengers.:trigger.garvQuellaBigQuestion.on
+root-2-C:Someone must have had means and opportunity.
+root-2-trigger.garvQuellaBigQuestion:You're not looking at the big picture.  Why here?  Why now?  There must be something larger going on.
+</>root-null:Goodbye.
+action end
+
+action:statement:root-2-B
+Quella:You're right.  Problem is...I don't really see it.
+Quella:From what I heard, the captain was brand new here.  No one really knew her.
+Quella:I don't think she had much time to give people reason to kill her.
+next:root-2-A
+action end
+
+action:statement:root-2-C
+Quella:Wouldn't that be all of us?
+Quella:If we don't even know exactly when she disappeared, or how she was attacked, if at all...
+Quella:How can we narrow it down?
+next:root-2-A
+action end
+
+action:statement:root-2-trigger.garvQuellaBigQuestion
+Quella:What are you saying?  You think...she was targeted?
+Quella:If it was premeditated, it would have to be someone who knew her...prior to her even coming aboard.
+next:root-3
+action end
+
+action:response:root-3
+Garv
+root-3-A:The timing and placement is very ideal.  Do you think it's a coincidence?
+root-3-B:That is one possibility.  But premeditation and targeting are different things entirely.
+</>root-null:Goodbye.
+action end
+
+action:statement:root-3-A
+Quella:I...I don't know.  I never thought about it that way.
+Quella:It's true, we don't know anything about what happened.  If someone wanted the captain gone, they did a great job covering their tracks.
+Quella:But it still doesn't answer the question...why?
+next:root-3
+action end
+
+action:statement:root-3-B
+Quella:What are you saying?  A murder was planned, but...the captain wasn't being targeted?
+Quella:That would mean...someone here...
+Quella:...
+Quella:That's too dreadful to consider.  I hope that's not true.
+next:root-3
+action end
+
+dialogue end
+
+

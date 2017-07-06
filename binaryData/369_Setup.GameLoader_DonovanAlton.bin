@@ -1,0 +1,48 @@
+
+
+// DONOVAN - ALTON ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Donovan-Alton
+
+action:response:root
+Donovan
+root-1:Hey.
+</>root-null:Bye.
+action end
+
+action:statement:root-1
+Alton:Oh, hey!  You weren't thinking of hanging around the observation room by any chance, were you?
+next:root-2
+action end
+
+action:response:root-2
+Donovan
+root-A:No, I'm busy.
+root-B:I would rather scoop my eyes out with a rusty spoon.
+action end
+
+action:statement:root-A
+Alton:Aww, sorry to hear that.  Maybe next time!
+next:root-null
+action end
+
+action:statement:root-B
+Alton:...ha, ha!  That was a joke, right?  You're joshing me!  This is friendly banter!
+next:root-3
+action end
+
+action:response:root-3
+Donovan
+root-4:For fuck's sake, can't you tell when someone is insulting you to your face?
+</>root-null:Sure, let's go with that.
+action end
+
+action:statement:root-4
+Alton:O-Oh...uh, sorry for bothering you.
+null:His face flushes bright red.
+next:root-null
+action end
+
+dialogue end
+

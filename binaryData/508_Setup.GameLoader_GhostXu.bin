@@ -1,0 +1,693 @@
+
+// GHOST/ALTON - XU ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Ghost-Xu
+
+action:statement:root
+Xu:Oh, hey Alton.  I wasn't expecting to see you around.
+Xu:Is, uh...everything okay?
+next:root-1
+action end
+
+action:response:root-1
+Alton
+root-1-A:When was the last time you saw the captain?
+root-1-B:Have you noticed anything odd around the ship recently?
+</>root-null:Never mind.
+action end
+
+action:statement:root-1-A
+Xu:Umm...I can't really remember.  I think the last time I saw her was last night.
+next:root-null
+action end
+
+action:statement:root-1-B
+Xu:Well, yeah.  My room was broken into.
+Xu:That's not something that happens every day.
+next:root-1-C
+action end
+
+action:response:root-1-C
+Alton
+root-1-D:What exactly was stolen from your room?
+</>root-null:Never mind.
+action end
+
+action:statement:root-1-D
+Xu:Like I said, a family heirloom.
+Xu:It was a, uh, porcelain vase.
+next:root-1-E
+action end
+
+action:response:root-1-E
+Alton
+root-1-F:Go to all that trouble to steal some porcelain?  I don't believe you.
+action end
+
+action:statement:root-1-F
+Xu:No.  I guess you shouldn't, after all.
+Xu:But I can't tell you what Donovan stole.  It's bad enough that he knows I had that.
+Xu:I'm sorry I can't be honest with you, but I have my reasons.
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+
+// CHAPTER 3   GHOST - XU  ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Ghost-Xu
+
+action:response:root2
+<player>
+root2-1:What do you think has happened to the captain?
+root2-2:What should we all do?
+root2-3:Who might want to get rid of the captain?
+root2-captain:What can you tell me about the captain?
+root-trigger.chap3SecretArea:Do you know about any secret areas on the ship?
+</>root2-null:Never mind.
+action end
+
+action:statement:root2-1
+Xu:I...I don't know.  Marcurio says she's probably dead, but I just don't want to believe it.
+Xu:I'm having a hard time making sense of it all.
+next:root2
+action end
+
+action:statement:root2-2
+Xu:How are situations like this handled?  We're not detectives.  And we're pretty far from society.
+Xu:I know it's unlikely, but...I hope she's here.  I hope we can find her.
+next:root2
+action end
+
+action:statement:root2-3
+Xu:She seemed really nice.  I don't know why anyone would want to harm her.
+Xu:Some of the passengers are pretty weird.  Donovan in particular scares me.
+Xu:But to think any of them are murderers?
+next:root2
+action end
+
+action:statement:root2-captain
+Xu:I didn't really know her all that well.  She was a strange person.
+next:root2-captain2
+action end
+
+action:response:root2-captain2
+<player>
+root2-captain2-A:How long had she been captain of the ship?
+root2-captain2-B:Strange in what way?:trigger.SmillaMarcurio.on
+root2-captain2-trigger.SmillaMarcurio:How did she get along with you?
+</>root2-captain2-null:Never mind.
+action end
+
+action:statement:root2-captain2-A
+Xu:Just for this trip.  She was hired on at the last second.
+Xu:I guess things came up, but they can't just cancel the trip.  So, they settled.
+next:root2-captain2
+action end
+
+action:statement:root2-captain2-B
+Xu:Don't take it the wrong way, I really liked her.
+Xu:She was just...very honest.  In good ways, and in harsh ways.  She didn't seem to know what tact was.
+Xu:She got into arguments with Marc a lot.  And I remember one time she almost made Alton cry.
+next:root2-captain2
+action end
+
+action:statement:root2-captain2-trigger.SmillaMarcurio
+Xu:We got along very smoothly.  I was her young little sidekick.
+Xu:She was actually a very nice person, granted you told her what she wanted to hear.
+next:root2-captain2
+action end
+
+action:statement:root-trigger.chap3SecretArea
+Xu:Secret areas?  N-no...can't say I have.
+Xu:I've heard about the chance there might be one, but that's all.  I doubt there's any truth to it.
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+// CHAPTER 4  GHOST - XU ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Ghost-Xu
+
+action:response:root3
+<player>
+root3-A:What do you think happened to Donovan and Paulo?
+root3-B:Do you believe that Gwen is guilty?
+root3-C:Why do you think all of this has happened?
+root3-captain:What can you tell me about the captain?
+root3-D:What should we do now?
+</>root-null:Never mind.
+action end
+
+action:statement:root3-A
+Xu:Whatever happened to the captain, I guess.
+Xu:We can only make guesses, but still, it seems pretty clear that they...
+Xu:...I'm sorry, I can't say the words.
+next:root3-A1
+action end
+
+action:response:root3-A1
+<player>
+root3-A2:Why did Donovan want the master key again?
+root3-null:Never mind.
+action end
+
+action:statement:root3-A2
+Xu:He...he thought that the captain was alive and still onboard for some reason.
+Xu:He refused to tell me why.  All I knew is he was looking for a secret area to the ship.
+Xu:He thought she might be there.
+next:root3-A3
+action end
+
+action:response:root3-A3
+<player>
+root3-A4:Do you think he was right?  That the captain is still on the ship?
+root3-A5:Doesn't that seem like a really big coincidence?  The person looking for the captain goes missing too?
+root3-A6:Did Donovan say anything else?  About his thoughts on the captain?
+</>root-null:Never mind.
+action end
+
+action:statement:root3-A4
+Xu:I had my doubts at the time.  Now I definitely don't think so.
+Xu:It's a very complicated explanation for her disappearance, when we have a much simpler one.
+next:root3-A3
+action end
+
+action:statement:root3-A5
+Xu:...Yes.  It does.
+Xu:I don't know what I think about that.  Not yet.
+next:root3-A3
+action end
+
+action:statement:root3-A6
+Xu:He...thought someone had taken the captain.  He didn't know who, just that it would be a ma...
+Xu:I mean, he didn't know who.  He was pretty vague about the whole thing.
+next:root3-A3
+action end
+
+
+action:statement:root3-B
+Xu:I don't want to believe anyone is guilty, but I don't have much choice.  I think it was Gwen.
+Xu:To be honest, out of all of us here it seemed like she was the most unstable.
+next:root3-B1
+action end
+
+action:response:root3-B1
+<player>
+root3-B2:What if the key was planted in her room?
+root3-B3:Why did she do it?
+</>root-null:Never mind.
+action end
+
+action:statement:root3-B2
+Xu:...N-no, I don't think so.  If someone wanted to plant the key, they must have known it would be found.
+Xu:Not many people could know that.
+Xu:...Anyway, I was the one that found the key in her room.  And I know I didn't plant it.
+next:root3-E
+action end
+
+action:response:root3-E
+<player>
+root3-E1:You don't seem very confident about that.
+action end
+
+action:statement:root3-E1
+Xu:W-what are you trying to say?
+Xu:Three people just went missing.  I'm kind of shaken, okay?
+next:root3-B1
+action end
+
+action:statement:root3-B3
+Xu:I have no idea.  Maybe I'm better off not knowing.
+Xu:I just want this whole thing to be over.
+next:root3-B1
+action end
+
+
+action:statement:root3-C
+Xu:I don't know.  I guess Donovan had his own ideas about why the captain went missing.
+Xu:Based on what happened to him, I don't think he was right.
+next:root3
+action end
+
+action:statement:root3-D
+Xu:Sit tight.  Comfort each other, and make sure we're all safe.
+Xu:We'll land soon.  Then we can put all of this stuff behind us.
+Xu:It's...going to be okay.  It's going to be okay.
+next:root3
+action end
+
+
+action:statement:root3-captain
+Xu:I didn't really know her all that well.  She was a strange person.
+next:root3-captain2
+action end
+
+action:response:root3-captain2
+<player>
+root3-captain2-A:How long had she been captain of the ship?
+root3-captain2-B:Strange in what way?:trigger.SmillaMarcurio.on
+root3-captain2-trigger.SmillaMarcurio:How did she get along with you?
+</>root3-captain2-null:Never mind.
+action end
+
+action:statement:root3-captain2-A
+Xu:Just for this trip.  She was hired on at the last second.
+Xu:I guess things came up, but they can't just cancel the trip.  So, they settled.
+next:root3-captain2
+action end
+
+action:statement:root3-captain2-B
+Xu:Don't take it the wrong way, I really liked her.
+Xu:She was just...very honest.  In good ways, and in harsh ways.  She didn't seem to know what tact was.
+Xu:She got into arguments with Marc a lot.  And I remember one time she almost made Alton cry.
+next:root3-captain2
+action end
+
+action:statement:root3-captain2-trigger.SmillaMarcurio
+Xu:We got along very smoothly.  I was her young little sidekick.
+Xu:She was actually a very nice person, granted you told her what she wanted to hear.
+next:root3-captain2
+action end
+
+
+
+dialogue end
+
+
+
+
+
+
+
+// CHAPTER 4 CONFESSION  GHOST/QUELLA - XU ////////////////////////////////////////////////////////////////////////////
+
+
+
+dialogue start
+GhostQuella-Xu
+
+action:response:root3
+<player>
+root3-A:What do you think happened to Donovan and Paulo?
+<!>root3-B:Do you believe that Gwen is guilty?
+root3-D:What should we do now?
+root3-captain:What can you tell me about the captain?
+</>root-null:Never mind.
+action end
+
+
+action:statement:root3-captain
+Xu:I didn't really know her all that well.  She was a strange person.
+next:root3-captain2
+action end
+
+action:response:root3-captain2
+<player>
+root3-captain2-A:How long had she been captain of the ship?
+root3-captain2-B:Strange in what way?:trigger.SmillaMarcurio.on
+root3-captain2-trigger.SmillaMarcurio:How did she get along with you?
+</>root3-captain2-null:Never mind.
+action end
+
+action:statement:root3-captain2-A
+Xu:Just for this trip.  She was hired on at the last second.
+Xu:I guess things came up, but they can't just cancel the trip.  So, they settled.
+next:root3-captain2
+action end
+
+action:statement:root3-captain2-B
+Xu:Don't take it the wrong way, I really liked her.
+Xu:She was just...very honest.  In good ways, and in harsh ways.  She didn't seem to know what tact was.
+Xu:She got into arguments with Marc a lot.  And I remember one time she almost made Alton cry.
+next:root3-captain2
+action end
+
+action:statement:root3-captain2-trigger.SmillaMarcurio
+Xu:We got along very smoothly.  I was her young little sidekick.
+Xu:She was actually a very nice person, granted you told her what she wanted to hear.
+next:root3-captain2
+action end
+
+action:statement:root3-A
+Xu:Whatever happened to the captain, I guess.
+Xu:We can only make guesses, but still, it seems pretty clear that they...
+Xu:...I'm sorry, I can't say the words.  Please don't make me.
+next:root3-A1
+action end
+
+action:response:root3-A1
+<player>
+root3-A2:Why did Donovan want the master key again?
+</>root3-null:Never mind.
+action end
+
+action:statement:root3-A2
+Xu:He...he thought that the captain was alive and still onboard for some reason.
+Xu:He refused to tell me why.  All I knew is he was looking for a secret area to the ship.
+Xu:He thought she might be there.
+next:root3-A3
+action end
+
+action:response:root3-A3
+<player>
+root3-A4:Do you think he was right?  That the captain is still on the ship?
+root3-A5:Doesn't that seem like a really big coincidence?  The person looking for the captain goes missing too?
+root3-A6:Did Donovan say anything else?  About his thoughts on the captain?
+</>root-null:Never mind.
+action end
+
+action:statement:root3-A4
+Xu:I had my doubts at the time.  Now I definitely don't think so.
+Xu:It's a very complicated explanation for her disappearance, when we have a much simpler one.
+next:root3-A3
+action end
+
+action:statement:root3-A5
+Xu:...Yes.  It does.
+Xu:I don't know what I think about that.  Not yet.
+next:root3-A3
+action end
+
+action:statement:root3-A6
+Xu:...Yeah.  He did.  He thought the captain was taken by someone.
+Xu:He didn't know who, just that it had to be a...man.  That he came here to find that man.
+Xu:I guess that means you're in the clear.  I don't think I would have shared that with you otherwise.
+next:root3-A3
+action end
+
+
+
+action:statement:root3-B
+Xu:I don't want to believe anyone is guilty, but I don't have much choice.  I think it was Gwen.
+Xu:To be honest, out of all of us here it seemed like she was the most unstable.
+next:root3-B1
+action end
+
+action:response:root3-B1
+<player>
+root3-B3:Why would she do it?
+<!>root3-B2:What if the key was planted in her room?
+</>root-null:Never mind.
+action end
+
+action:statement:root3-B3
+Xu:I have no idea.  Maybe I'm better off not knowing.
+Xu:I just want this whole thing to be over.
+next:root3-B1
+action end
+
+action:statement:root3-B2
+Xu:...N-no, I don't think so.  If someone wanted to plant the key, they must have known it would be found.
+Xu:Not many people could know that.
+Xu:...Anyway, I was the one that found the key in her room.  And I know I didn't plant it.
+next:root3-E
+action end
+
+action:response:root3-E
+<player>
+root3-E1:You don't seem very confident about that.  What are you hiding, Sue?
+action end
+
+action:statement:root3-E1
+Xu:...
+Xu:I guess I can trust you.  Based off what Donovan said...
+Xu:Look, I found the key in Gwen's room, like I said.  I didn't plant it, either.  But...
+Xu:It wasn't the same key that Donovan had.  I've seen that one myself.  They have different designs.
+Xu:Maybe they're both master keys, but the key Gwen had wasn't taken from Donovan.
+next:root3-E2
+action end
+
+action:response:root3-E2
+<player>
+root3-E3:You have to tell someone about that!  Gwen is innocent!:trigger.chap4QuellaXuConfession.on
+action end
+
+action:statement:root3-E3
+Xu:I...I can't.  This has to stay between you and me.
+Xu:Think what you want about me, but...I just can't let anyone else know.
+Xu:You don't have to understand.  You won't understand.  You haven't been here as long as we have.
+next:root3-null
+action end
+
+
+
+
+action:statement:root3-D
+Xu:Sit tight.  Comfort each other, and make sure we're all safe.
+Xu:We'll land soon.  Then we can put all of this stuff behind us.
+Xu:It's...going to be okay.  It's going to be okay.
+next:root3
+action end
+
+dialogue end
+
+
+
+
+
+
+
+// CHAPTER 4 CONFESSION  GHOST/ALTON - XU ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+GhostAlton-Xu
+
+action:response:root3
+<player>
+<!>root3-A:What did Donovan steal from your room, again?
+root3-C:Why do you think all of this has happened?
+root3-D:What should we do now?
+root3-captain:What can you tell me about the captain?
+</>root-null:Never mind.
+action end
+
+
+action:statement:root3-captain
+Xu:I didn't really know her all that well.  She was a strange person.
+next:root3-captain2
+action end
+
+action:response:root3-captain2
+<player>
+root3-captain2-A:How long had she been captain of the ship?
+root3-captain2-B:Strange in what way?:trigger.SmillaMarcurio.on
+root3-captain2-trigger.SmillaMarcurio:How did she get along with you?
+</>root3-captain2-null:Never mind.
+action end
+
+action:statement:root3-captain2-A
+Xu:Just for this trip.  She was hired on at the last second.
+Xu:I guess things came up, but they can't just cancel the trip.  So, they settled.
+next:root3-captain2
+action end
+
+action:statement:root3-captain2-B
+Xu:Don't take it the wrong way, I really liked her.
+Xu:She was just...very honest.  In good ways, and in harsh ways.  She didn't seem to know what tact was.
+Xu:She got into arguments with Marc a lot.  And, well, you remember that one time...
+Xu:...She wasn't really that angry with you Alton, you know?  You don't need to take it so hard.
+next:root3-captain2
+action end
+
+action:statement:root3-captain2-trigger.SmillaMarcurio
+Xu:We got along very smoothly.  I was her young little sidekick.
+Xu:She was actually a very nice person, granted you told her what she wanted to hear.
+next:root3-captain2
+action end
+
+
+
+action:statement:root3-A
+Xu:Oh...it was a, uh, family heirloom.
+Xu:It was a tea set I got from my mother.
+next:root3-A1
+action end
+
+action:response:root3-A1
+<player>
+root3-A2:Oh, okay!
+root3-A3:I thought it was an old vase?
+</>root3-null:Forget it.
+action end
+
+action:statement:root3-A2
+Xu:Yeah, I don't know.  Why would he go to such lengths to steal that?
+Xu:I really wish I understood why.  But I don't think he'll just tell me.
+next:root3-A1
+action end
+
+action:statement:root3-A3
+Xu:Huh...?  Did I say that?
+Xu:Well, there was a vase as...part of the tea set.
+Xu:Yeah, that's what I meant.  It was a, uh...tea...vase.
+next:root3-A4
+action end
+
+action:response:root3-A4
+<player>
+root3-A5:I know he took the master key from you.  Stop lying.
+action end
+
+action:statement:root3-A5
+Xu:...W-what?  I don't know how Donovan got the master key, but it wasn't through me.
+Xu:As a waitress, I never had access to it.
+Xu:What would give you that idea?
+next:root3-A6
+action end
+
+action:response:root3-A6
+<player>
+root3-A7:You stole the key from the pilothouse.  Just like you've stolen from me and others.:trigger.chap4xuProgress.on
+root3-trigger.chap4xuProgress:I know basically everything.  What I don't know yet is why you took the master key.
+action end
+
+action:statement:root3-A7
+Xu:...Christ.  Are there any secrets left?
+Xu:How much do you know?  Well...I guess it's not really important.
+next:root3-A6
+action end
+
+action:statement:root3-trigger.chap4xuProgress
+Xu:You said it yourself.
+Xu:Just like I've stolen from everyone else, I took the key so I could grab stuff.
+Xu:With it, I could get into anyone's room and take what I want.
+next:root3-confess
+action end
+
+action:response:root3-confess
+<player>
+root3-confess2:No.  Around the same time the captain went missing, you took the key.  That isn't just a coincidence.:trigger.chap4AltonXuConfession.on
+action end
+
+action:statement:root3-confess2
+Xu:...
+Xu:Since I took that key, everything has started spiralling downwards.
+Xu:I thought I could just keep it under wraps and it'd go away, but...I was wrong.
+Xu:None of this should have happened.  I don't understand.  It...I didn't want any of this...
+Xu:....
+Xu:That night, I received a note.
+Xu:Telling me that I'd find the key in the pilothouse.
+Xu:Ordering me to take it for myself, and hide it.
+next:root3-confess-F
+action end
+
+action:response:root3-confess-F
+<player>
+root3-confess-F-1:An order?  From who?
+root3-confess-F-2:Why were you told to hide the key?
+<!>root3-confess-F-3:Why did you follow the orders?
+action end
+
+action:statement:root3-confess-F-1
+Xu:I don't know.  It was anonymous.
+Xu:I don't recognize the hand-writing, and it was left discretely.
+next:root3-confess-F
+action end
+
+action:statement:root3-confess-F-2
+Xu:I can only guess.  Maybe I was supposed to hide the key from Donovan.
+Xu:Well, he found it anyway, of course.  And then he...disappeared.
+next:root3-confess-F
+action end
+
+action:statement:root3-confess-F-3
+Xu:It's not the first set of instructions I've gotten.  I have an...arrangement.
+Xu:I did small errands.  Moved things around.  And I got paid.
+Xu:I never understood it, but I didn't have to.  Of course I was suspicious, but it was all harmless stuff.
+next:root3-confess-G
+action end
+
+action:response:root3-confess-G
+<player>
+<!!>root3-confess-1:Thanks for opening up to me.  What can we do now?:trigger.epilogueAX6.on
+<!!>root3-confess-2:You've been taking bribes?  Why didn't you tell someone about this sooner?:trigger.epilogueAX5.on
+<!!>root3-confess-3:Well, now three people are missing - and it's your fault!:trigger.epilogueAX4.on
+action end
+
+action:statement:root3-confess-1
+Xu:Well...as long as Gwen is positioned to take all the blame, the truth will never come out.
+Xu:If her name is cleared, the investigation can continue.
+Xu:Someone must have planted the key in her room, right?  That's the only explanation.
+Xu:I have an idea who it might be.  It must've been staff.
+Xu:No, I'd have to be out of my mind to confront him about it...
+next:root-null
+action end
+
+action:statement:root3-confess-2
+Xu:No way.  I'd be canned instantly.
+Xu:And the money was good.  It was...really good.
+Xu:I needed that money, Alton.  I didn't think any of this would happen.
+Xu:If I had known, I...how could I have known?
+next:root-null
+action end
+
+action:statement:root3-confess-3
+Xu:N-no, what I did had nothing to do with that...
+Xu:...You're right, aren't you?  I could have told Donovan everything I knew.  And I didn't.
+Xu:And now he's gone.
+Xu:I really am a horrible person, aren't I?
+next:root-null
+action end
+
+
+
+
+action:statement:root3-B
+Xu:I don't want to believe anyone is guilty, but I don't have much choice.  I think it was Gwen.
+Xu:To be honest, out of all of us here it seemed like she was the most unstable.
+next:root3-B1
+action end
+
+action:response:root3-B1
+<player>
+root3-B2:What if the key was planted in her room?
+root3-B3:Why did she do it?
+</>root-null:Never mind.
+action end
+
+action:statement:root3-B2
+Xu:...N-no, I don't think so.  If someone wanted to plant the key, they must have known it would be found.
+Xu:Not many people could know that.
+Xu:...Anyway, I was the one that found the key in her room.  And I know I didn't plant it.
+next:root3-B1
+action end
+
+
+action:statement:root3-B3
+Xu:I have no idea.  Maybe I'm better off not knowing.
+Xu:I just want this whole thing to be over.
+next:root3-B1
+action end
+
+
+action:statement:root3-C
+Xu:I don't know.  I guess Donovan had his own ideas about why the captain went missing.
+Xu:Based on what happened to him, I don't think he was right.
+next:root3
+action end
+
+action:statement:root3-D
+Xu:Sit tight.  Comfort each other, and make sure we're all safe.
+Xu:We'll land soon.  Then we can put all of this stuff behind us.
+Xu:It's...going to be okay.  It's going to be okay.
+next:root3
+action end
+
+dialogue end
+

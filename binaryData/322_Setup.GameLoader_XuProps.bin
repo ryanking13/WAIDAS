@@ -1,0 +1,59 @@
+
+
+dialogue start
+XusLootXu
+
+action:statement:root
+Xu:This box contains stuff I've...collected up over time.
+Xu:People leave all their expensive stuff just lying aroud, unprotected.
+Xu:What do they think's gonna happen?
+next:root-2
+action end
+
+action:response:root-2
+Xu
+root-3:Investigate the items in the box.
+</>root-null:Leave it.
+action end
+
+action:statement:root-3
+Xu:There's a bunch of jewelry and electronics from Alton and other passengers.
+Xu:I also took a key from Darryl, but...it doesn't really open anything of value to me.
+next:root-null
+action end
+
+dialogue end
+
+
+dialogue start
+XusDresserXu
+
+action:statement:root
+Xu:I keep all my clothes here.
+Xu:God, I really hate this uniform...I wish I could just wear my jeans.
+Xu:Alton and Marcurio don't have to wear a skirt.  Such bullshit.
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+dialogue start
+SkeletonKeyXu
+
+action:statement:root
+Xu:Here it is...the master key to the ship.
+Xu:I can tell by its weird design.  It's got a creepy, angry skeleton face on it.
+Xu:I stole it from the pilothouse, and in turn Donovan stole it from me.
+Xu:What's next, the cat comes in and swallows it?
+next:root-null
+action end
+
+dialogue end
+
+
+
+

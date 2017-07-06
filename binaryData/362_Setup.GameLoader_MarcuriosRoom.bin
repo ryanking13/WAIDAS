@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="14" height="14" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="Basement Room Sheet" tilewidth="32" tileheight="32">
+  <image source="../Tiles/Basement Room Sheet.png" width="224" height="320"/>
+ </tileset>
+ <tileset firstgid="71" name="PropGrid" tilewidth="32" tileheight="32">
+  <image source="../Props/PropGrid.png" width="512" height="832"/>
+ </tileset>
+ <tileset firstgid="487" name="AIGrid" tilewidth="32" tileheight="32">
+  <image source="../Props/AIGrid.png" width="96" height="32"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="14" height="14">
+  <data>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="2"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="6"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="8"/>
+   <tile gid="9"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="13"/>
+   <tile gid="14"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="16"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="20"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="23"/>
+   <tile gid="43"/>
+   <tile gid="44"/>
+   <tile gid="44"/>
+   <tile gid="44"/>
+   <tile gid="45"/>
+   <tile gid="27"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="1"/>
+   <tile gid="50"/>
+   <tile gid="51"/>
+   <tile gid="51"/>
+   <tile gid="51"/>
+   <tile gid="52"/>
+   <tile gid="1"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="1"/>
+   <tile gid="50"/>
+   <tile gid="51"/>
+   <tile gid="51"/>
+   <tile gid="51"/>
+   <tile gid="52"/>
+   <tile gid="1"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="1"/>
+   <tile gid="50"/>
+   <tile gid="51"/>
+   <tile gid="51"/>
+   <tile gid="51"/>
+   <tile gid="52"/>
+   <tile gid="1"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="29"/>
+   <tile gid="30"/>
+   <tile gid="57"/>
+   <tile gid="58"/>
+   <tile gid="58"/>
+   <tile gid="58"/>
+   <tile gid="59"/>
+   <tile gid="34"/>
+   <tile gid="33"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="29"/>
+   <tile gid="26"/>
+   <tile gid="30"/>
+   <tile gid="1"/>
+   <tile gid="34"/>
+   <tile gid="26"/>
+   <tile gid="33"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="1"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+  </data>
+ </layer>
+ <objectgroup name="Props" width="14" height="14">
+  <object name="MarcuriosBed" gid="327" x="160" y="175">
+   <properties>
+    <property name="Collidable" value="true"/>
+    <property name="Permissions" value="All"/>
+    <property name="Sprite" value="BigBedTwo"/>
+    <property name="SuccessDialogues" value="NormalBed"/>
+   </properties>
+  </object>
+  <object gid="328" x="192" y="175"/>
+  <object gid="343" x="160" y="207"/>
+  <object gid="344" x="192" y="207"/>
+  <object name="MarcuriosNightstand" gid="431" x="125" y="184">
+   <properties>
+    <property name="Collidable" value="true"/>
+    <property name="Sprite" value="Nightstand"/>
+   </properties>
+  </object>
+  <object name="MarcuriosBookcase" gid="135" x="221" y="134">
+   <properties>
+    <property name="CharDialogue" value="Donovan-true-MarcuriosBookcaseDonovan"/>
+    <property name="Collidable" value="true"/>
+    <property name="Permissions" value="All"/>
+    <property name="Sprite" value="Bookcase"/>
+    <property name="SuccessDialogue" value="MarcuriosBookcase"/>
+   </properties>
+  </object>
+  <object gid="136" x="253" y="134"/>
+  <object gid="151" x="221" y="166"/>
+  <object gid="152" x="253" y="166"/>
+  <object gid="167" x="221" y="198"/>
+  <object gid="168" x="253" y="198"/>
+  <object name="MarcuriosDeskOne" gid="363" x="98" y="279">
+   <properties>
+    <property name="Bounds" value="0,16,64,26"/>
+    <property name="Collidable" value="true"/>
+    <property name="Sprite" value="Desk"/>
+   </properties>
+  </object>
+  <object gid="364" x="130" y="279"/>
+  <object gid="379" x="98" y="311"/>
+  <object gid="380" x="130" y="311"/>
+  <object name="MarcuriosChair" gid="442" x="109" y="261">
+   <properties>
+    <property name="Bounds" value="0,0,26,36"/>
+    <property name="Sprite" value="ChairFront"/>
+   </properties>
+  </object>
+  <object name="MarcuriosBookPile" gid="329" x="132" y="258">
+   <properties>
+    <property name="Elevation" value="24"/>
+    <property name="Permissions" value="All"/>
+    <property name="Sprite" value="BookPile"/>
+    <property name="SuccessDialogue" value="MarcuriosBookPile"/>
+   </properties>
+  </object>
+  <object gid="345" x="132" y="290"/>
+  <object name="MarcuriosBooks" gid="370" x="99" y="286">
+   <properties>
+    <property name="Elevation" value="24"/>
+    <property name="Permissions" value="All"/>
+    <property name="Sprite" value="Books"/>
+    <property name="SuccessDialogue" value="MarcuriosBooks"/>
+   </properties>
+  </object>
+  <object name="MarcuriosDeskTwo" gid="271" x="286" y="251">
+   <properties>
+    <property name="Bounds" value="0,14,32,50"/>
+    <property name="Collidable" value="true"/>
+    <property name="Sprite" value="SideDesk"/>
+   </properties>
+  </object>
+  <object gid="287" x="286" y="283"/>
+  <object name="MarcuriosCuttingBoard" gid="340" x="287" y="265">
+   <properties>
+    <property name="Elevation" value="25"/>
+    <property name="Sprite" value="CuttingBoard"/>
+   </properties>
+  </object>
+  <object gid="356" x="287" y="297"/>
+  <object name="MarcuriosWallHole" gid="444" x="100" y="142">
+   <properties>
+    <property name="Bounds" value="0,0,32,64"/>
+    <property name="CharDialogue" value="Donovan-true-MarcuriosWallHoleDonovan"/>
+    <property name="Permissions" value="All"/>
+    <property name="Sprite" value="HoleWallOne"/>
+    <property name="SuccessDialogue" value="MarcuriosWallHole"/>
+   </properties>
+  </object>
+  <object gid="460" x="100" y="174"/>
+ </objectgroup>
+ <objectgroup name="AI" width="14" height="14">
+  <object name="MarcurioAtNight" gid="487" x="224" y="224">
+   <properties>
+    <property name="Character" value="Marcurio"/>
+    <property name="Index" value="1"/>
+    <property name="Loop" value="true"/>
+    <property name="Type" value="Routine"/>
+    <property name="WaitTime" value="200"/>
+   </properties>
+  </object>
+  <object name="MarcurioChap4" gid="487" x="160" y="256">
+   <properties>
+    <property name="Character" value="Marcurio"/>
+    <property name="Frequency" value="30"/>
+    <property name="Index" value="1"/>
+    <property name="Loop" value="false"/>
+    <property name="Type" value="Routine"/>
+    <property name="WaitTime" value="30"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

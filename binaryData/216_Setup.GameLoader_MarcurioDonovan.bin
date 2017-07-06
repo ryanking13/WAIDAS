@@ -1,0 +1,88 @@
+
+
+
+// MARCURIO - DONOVAN ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Marcurio-Donovan
+
+action:response:root
+Marcurio
+root-1:Don't see you around much.
+root-2:What's your vocation?
+root-3:Where you headed, anyway?
+</>root-null:See ya.
+action end
+
+action:statement:root-1
+Donovan:That's not a coincidence.
+next:root
+action end
+
+action:statement:root-2
+Donovan:I wouldn't want to bore you.
+next:root-2-A
+action end
+
+action:response:root-2-A
+Marcurio
+root-2-B:Try me.
+</>root-null:Okay, never mind.
+action end
+
+action:statement:root-2-B
+Donovan:Alright then.
+Donovan:I work in computer architecture for small surveillance devices.
+Donovan:It generally involves storing a sizable amount of information or relaying it wirelessly, all with very limited space and power.
+next:root-2-C
+action end
+
+action:response:root-2-C
+Marcurio
+root-2-D:Sounds fancy.  What's a guy with a fancy job doing out in these boonies?
+root-2-E:You were right, sounds boring to me.
+</>root-null:Never mind.
+action end
+
+action:statement:root-2-D
+Donovan:I'm visiting family.  My little brother's not doing so good.
+Donovan:I'm travelling out to make my peace with him.
+next:root-brother
+action end
+
+action:statement:root-2-E
+Donovan:There you go.
+Donovan:It may sound dry, but it's a stable job.  Not too many people are as good at it as I am.
+next:root-2-C
+action end
+
+action:response:root-brother
+Marcurio
+root-brother-1:Sorry to hear that.  What's he got?
+root-brother-2:Well then, why's he out here?  I'm sure there are better hospitals in the city.
+</>root-null:Never mind.
+action end
+
+action:statement:root-brother-1
+Donovan:Some obscure, rare syndrome.
+Donovan:It's slow, and very painful.
+Donovan:I'd rather not say more.
+next:root-brother
+action end
+
+action:statement:root-brother-2
+Donovan:His prognosis is very grim.  And very clear.
+Donovan:Moving to a better hospital is not of much concern.
+Donovan:I'm coming out to see him off.  That's all.
+next:root-brother
+action end
+
+action:statement:root-3
+Donovan:Visiting family.
+Donovan:I guess you could say I'm making peace with them.
+next:root
+action end
+
+dialogue end
+
+

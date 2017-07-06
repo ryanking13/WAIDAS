@@ -1,0 +1,184 @@
+
+
+//  Epilogue dialogues
+
+
+
+// Bad epilogue  ///////////////////////////////////////////////////////
+
+dialogue start
+BadEpilogue
+
+action:statement:root
+???:We'll be on the ship soon enough.  Then you can relax.  We'll handle the rest.
+next:root-null
+action end
+
+action:statement:root2
+Marcurio:I'm just glad you were able to reach us at all in this weather.
+Marcurio:There's no way any of us could've steered that thing to a dock, much less navigate there.
+Marcurio:How's everyone holding up?
+next:root2-null
+action end
+
+action:statement:root3
+Xu:...
+Gwen:....
+Marcurio:Yeah...same here.
+Xu:They didn't do anything wrong, Marc.  They were innocent.
+Xu:We were the ones that were guilty!  It's...
+Xu:It's our fault they're gone...
+Paulo:...t...h...e...y...r...e...g...o...n...e...
+next:root3-null
+action end
+
+action:statement:root4
+Gwen:He still isn't responding to anything...he just keeps staring straight ahead.
+Gwen:And he almost never says anything.  He just repeats things...
+Xu:What happened down there?  What did he see?
+Xu:I don't understand any of it...
+Paulo:...a...n...y...o...f...i...t...
+Marcurio:I know it's hard, but we have to stay focused for now.  We can try and figure the rest out later.
+Marcurio:And...maybe it's best if we let someone else put the pieces together.
+Paulo:...p...i...e...c...e...s...t...o...g...e...t...h...e...r...
+next:root4-null
+action end
+
+action:statement:root5
+Gwen:I don't know if I can do that.
+Gwen:Something else happened there.  On the ship.   There was more going on.
+Gwen:I need to understand what happened.  I need it to make sense.
+Gwen:Just leaving it behind like that...it's not right.
+Paulo:...n...o...t...r...i...g...h...t...
+next:root5-null
+action end
+
+dialogue end
+
+
+
+
+
+
+// Ferdinand epilogue  ///////////////////////////////////////////////////////
+
+dialogue start
+FerdinandEpilogue
+
+action:statement:root
+Marcurio:I never thought I'd see solid land again, after all of that.
+Xu:Thank god Darryl could dock the boat, or I don't know what we'd do.
+Darryl:I guess my short-lived sailboating days were of some use after all.
+next:root-null
+action end
+
+action:statement:root2
+Alton:So...what now?
+Marcurio:Well, the local authorities have been called, and should be on their way.
+Marcurio:Maybe they'll be able to make sense of everything.
+Xu:It looks like Donovan got what he wanted, in the end.  The serial killer that he thought was on the boat...
+Alton:I...I can't believe Ferdinand really...he really did all of that.  Did he kill the captain, too?
+Gwen:Most likely.  He enjoyed manipulating people, and watching them suffer.  It's who he was - everything else was a lie.
+Garv:To think, he was just putting on an act that entire time.  And the horrific things he did...
+Quella:But did he need to die?  He could have been taken into custody.  And Donovan...
+Darryl:There's nothing we could have done.  He had given up a long time ago.
+Darryl:Maybe this is the best outcome we could have hoped for.
+Quella:The best outcome...for us, maybe.  But what about all of those people?
+next:root-null
+action end
+
+action:statement:root3
+Marcurio:I can't stay on this boat.  Not after everything I've seen.
+Marcurio:But I'll find work.  And if I never understand what happened back there, well, I'm okay with that.
+Alton:I guess the important thing is that it's over.  Ferdinand's...gone, and nobody else will be hurt.
+Garv:That's right.  What happened was a shame, but at least Donovan got what he wanted in the end.
+Garv:Nothing could bring the captain back, but we do have closure.
+Darryl:Closure, huh?  Yeah...I guess so.
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+// Garv epilogue  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+GarvEpilogue
+
+action:statement:root
+Ferdinand:Here we are, safe and sound!  Please be careful as you exit the ship.
+Marcurio:Good thing it only took a couple hours and multiple tries to dock.  Where did you get your license, anyway?
+Ferdinand:...Well, the important thing is we're here, right?
+next:root-null
+action end
+
+action:statement:root2
+Xu:The authorities should arrive in a few hours.  They'll be able to take care of all those people.
+Alton:Was Donovan telling the truth?  About...why they were there?
+Quella:Human trafficking.  Sexual slavery.  I've heard of those things.  But to see all of that with my own eyes...
+Gwen:So cruel.  Garv didn't even blink at the thought of what would happen to those poor women.
+Darryl:Of course not.  He had been drugging and beating them.  He knew what he was doing.
+Marcurio:It was happening under our feet this whole time.  And we let it.  Enabled it.
+Marcurio:He was right about that part.  We...I...helped create that.  That's the truth.
+Ferdinand:Perhaps.  But now you know the truth - and you can work to fix it!
+Ferdinand:Whatever our faults, and whatever my faults, Garv was the real evil.
+Ferdinand:I'm sure if the captain was here, she'd be pleased.  She could have closure, at last!
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+// Final epilogue  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+FinalEpilogue
+
+
+action:statement:root
+Marcurio:I never thought I'd see solid land again, after all of that.
+Xu:Thank god Darryl could dock the boat, or I don't know what we'd do.
+Darryl:I guess my short-lived sailboating days were of some use after all.
+next:root-null
+action end
+
+action:statement:root2
+Marcurio:The authorities should arrive in a few hours.  They'll be able to take care of all those people.
+Marcurio:Once they do, I'm out of here.  This ship can sink into the ocean for all I care.
+Alton:I can't believe it.  Both Ferdinand and Garv...the things they did, and they didn't even pretend to feel guilt.
+Darryl:They made quite the team.  A serial killer and a businessman.  Hard to tell which of the two was worse.
+Quella:Darryl, Gwen...if you hadn't come forward, who knows what would have happened to us.
+Quella:The information you gave brought us to the truth.  Thank you.
+Gwen:I remember having help along the way more than once.  Thanks, Quella.
+Xu:I just wish Donovan was still here.  He didn't deserve to end like that.  The captain didn't, either.
+Quella:Yeah.  If it wasn't for them, we'd never have found out what was really happening.
+Quella:It can't all be fixed.  And a lot of it will take time.  But...we can start to make things right.
+Quella:There won't be any more victims, now.  The nightmare is over.
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
