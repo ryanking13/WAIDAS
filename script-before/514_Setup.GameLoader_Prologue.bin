@@ -2,9 +2,9 @@ dialogue start
 Prologue
 
 action:statement:root
-???:Wow, that actually worked.
-???:I mean...welcome back.
-???:Come over here to talk.  Telepathy wears me out.
+???:오, 진짜로 됐잖아.
+???:그러니까 음... 돌아온걸 환영해.
+???:이리와서 나랑 얘기하자.  텔레파시는 너무 지치니까.
 next:end
 
 action end
@@ -21,13 +21,13 @@ next:root-1
 action end
 
 action:statement:root-1
-???:What has happened to me?
+???:나한테 무슨 일이 일어난 거지?
 next:root-1-A
 action end
 
 action:statement:root-1-A
-Paulo:Yeah...I'd be confused if I were you.
-Paulo:How much do you remember?
+Paulo:음... 혼란스러운 상황인 걸 이해해.
+Paulo:뭔가 기억나는 건 있어?
 next:root-1-A-2
 action end
 
@@ -37,130 +37,130 @@ next:root-1-A-2-B
 action end
 
 action:statement:root-1-A-2-B
-Paulo:Nothing, huh?
-Paulo:Well, I have some bad news.
-Paulo:You're dead.
-Paulo:In fact, you were murdered.
-Paulo:But, your soul hung on to this world.  And before it faded away completely, I brought it back.
-Paulo:It was actually really close...I almost failed.
+Paulo:아무 것도 없지?
+Paulo:그래, 일단 안 좋은 소식이 있어.
+Paulo:너는 죽었어.
+Paulo:정확히는, 넌 살해당했어.
+Paulo:그렇지만, 네 영혼은 아직 이 세상에 떠돌고 있어. 그래서 그게 완전히 사라지기 전에, 내가 너를 붙잡은 거야.
+Paulo:되게 아슬아슬해서... 거의 실패할 뻔 했지.
 next:root-1-A-2-B-3
 action end
 
 action:response:root-1-A-2-B-3
 ???
-<?>root-questions:I have some questions...
-<!>root-1-A-2-B-3-what:What now?
+<?>root-questions:질문이 있는데...
+<!>root-1-A-2-B-3-what:그래서 앞으로 어떻게 해야 하지?
 action end
 
 action:statement:root-questions
-Paulo:I'm sure you do.
+Paulo:그래 당연히 궁금한 게 많겠지.
 next:root-questions2
 action end
 
 action:response:root-questions2
 ???
-root-1-A-2-B-3-where:Where am I?
-root-1-A-2-B-3-who:Who am I?
-root-1-A-2-B-3-you:Who are you?
-root-1-A-2-B-3-why:Why am I dead?
-</>root-1-A-2-B-3:Never mind.
+root-1-A-2-B-3-where:여긴 어디지?
+root-1-A-2-B-3-who:나는 누구?
+root-1-A-2-B-3-you:너는 누구?
+root-1-A-2-B-3-why:나는 왜 죽었지?
+</>root-1-A-2-B-3:돌아가기.
 action end
 
 
 action:statement:root-1-A-2-B-3-where
-Paulo:You're on a small cruise ship.  At least, that's what they call it.
-Paulo:It's really more of a ferry.  A bad one.
-Paulo:We're out to sea right now, so I don't know our exact location.
+Paulo:너는 지금 작은, 다른 사람들이 크루즈 선이라고 부르는 곳에 있어.
+Paulo:뭐 실제로는 작은 페리에 가깝지.
+Paulo:지금은 바다 한 가운데어 항해 중이라, 정확한 위치는 모르겠네.
 next:root-questions2
 action end
 
 action:statement:root-1-A-2-B-3-who
-Paulo:I don't know.
-Paulo:But...it shouldn't be too hard to find out.
-Paulo:If you see a dead body anywhere, it's probably you.
+Paulo:몰라.
+Paulo:그렇지만... 알아내기 어렵지는 않을 거야.
+Paulo:어디선가 시체를 찾아낸다면, 그게 아마 너겠지.
 next:root-questions2
 action end
 
 action:statement:root-1-A-2-B-3-you
-Paulo:My name's Paulo.
-Paulo:I see dead people.
-Paulo:It's not something I understand well...
+Paulo:내 이름은 Paulo.
+Paulo:난 죽은 사람을 볼 수 있어.
+Paulo:나도 잘 이해하는 건 아니라...
 next:root-questions2
 action end
 
 action:statement:root-1-A-2-B-3-why
-Paulo:That is the big question, isn't it?
-Paulo:But I don't know.  Your memories are gone, and I can't bring them back.
-Paulo:I was able to pick up your final thoughts.  Pain, shock, confusion...it wasn't a quick death.
-Paulo:I wish I could help more.  I'm sorry.
+Paulo:그래, 그게 굉장히 중요한 질문이지?
+Paulo:근데 나도 몰라. 네 기억이 전부 사라졌고, 내가 되찾아 올 수 없었어.
+Paulo:나는 네 마지막 기억의 단편만 건져낼 수 있었어. 고통, 충격, 혼란... 순식간에 죽은 건 아니었지.
+Paulo:나도 널 더 돕고 싶어. 미안해.
 next:root-questions2
 action end
 
 action:statement:root-1-A-2-B-3-what
-Paulo:Well, to be honest...I need your help.
-Paulo:Something bad is going to happen here.  To the people on this ship.  I can sense it.
-Paulo:I don't know how, but we're heading into a living nightmare.
-Paulo:I can't prevent it from happening myself. I'm just a kid, and the other adults won't listen to me.
+Paulo:솔직히 말해서, 난 네 도움이 필요해.
+Paulo:지금 여기서 뭔가 안 좋은 일이 벌어지고 있어. 이 배의 사람들에게 말야. 느낄 수 있어.
+Paulo:뭐라 설명할 수는 없지만, 우리는 살아있는 악몽 속으로 발걸음을 내딛고 있어.
+Paulo:나 혼자서는 그걸 막을 수 없어. 나는 그냥 꼬마일 뿐이고, 다른 사람들은 내 말에 귀 기울여 주지 않아.
 next:root-1-A-2-B-3-what-how
 action end
 
 action:response:root-1-A-2-B-3-what-how
 ???
-root-1-A-2-B-3-what-how-C:What can I do?
+root-1-A-2-B-3-what-how-C:내가 뭘 해야 하는데?
 action end
 
 action:statement:root-1-A-2-B-3-what-how-C
-Paulo:In your current form?  Not much.
-Paulo:The fact is, you're hanging onto this world by a thread.
-Paulo:Not having a body has its perks, though.
-Paulo:You might be able to get inside people.  Read their minds, take control of them.
-Paulo:If you can use other people to investigate, you might be able to figure out who killed you, and why.
+Paulo:지금의 네 상태로는 아무 것도 할 수 없지.
+Paulo:사실은 넌 지금 이 세상에 겨우 실 한가닥으로 연결되어 있는 거나 마찬가지야.
+Paulo:그래서 실제로 움직일 수 있는 몸뚱아리는 없지, 그렇지만.
+Paulo:너는 다른 사람들 속으로 들어갈 수 있어. 그리고 그 사람들의 마음을 읽고, 조종할 수 있어.
+Paulo:다른 사람을 이용해서 조사하면, 누가 너를 죽였고, 왜 죽였는지를 알 수 있을 지도 모르지.
 next:root-1-A-2-B-3-what-how-C-4
 action end
 
 action:response:root-1-A-2-B-3-what-how-C-4
 ???
-root-1-A-2-B-3-what-how-C-4-D:I can possess people?
-<!>root-1-A-2-B-3-what-how-C-4-G:What next?:trigger.catFall.on
+root-1-A-2-B-3-what-how-C-4-D:내가 다른 사람을 조종할 수 있다고?
+<!>root-1-A-2-B-3-what-how-C-4-G:그 다음엔?:trigger.catFall.on
 action end
 
 action:statement:root-1-A-2-B-3-what-how-C-4-D
-Paulo:...Maybe.  But don't get too excited.  Your presence here is very weak.
-Paulo:If you tried to jump into a person's body unprepared, their own consciousness could consume you.
-Paulo:If you understood that person's thoughts and feelings, you'd stand a better shot at jumping into them.
-Paulo:So, the more people you understand, the more you'll be able to control.
+Paulo:...아마도.  그렇지만 너무 흥분하지는 마. 네 존재는 너무나도 희박하니까.
+Paulo:네가 준비되지 않은 사람의 몸 속에 들어가려하면, 그 사람들의 의식이 너를 튕겨낼 거야.
+Paulo:누군가의 생각과 감정을 이해하고 나서야, 그 사람의 몸 속에 들어갈 수 있을 거야.
+Paulo:그러니까, 네가 누군가를 너 많이 이해할 수록, 네가 조종할 수 있는 것이 늘어나는 거지.
 next:root-1-A-2-B-3-what-how-C-5
 action end
 
 action:response:root-1-A-2-B-3-what-how-C-5
 ???
-root-1-A-2-B-3-what-how-C-4-E:So if I understand a person, I can possess them?
-<!>root-1-A-2-B-3-what-how-C-4-G:What next?:trigger.catFall.on
+root-1-A-2-B-3-what-how-C-4-E:내가 누군가를 이해하면, 그 사람을 조종할 수 있다고?
+<!>root-1-A-2-B-3-what-how-C-4-G:그 다음엔?:trigger.catFall.on
 action end
 
 
 action:statement:root-1-A-2-B-3-what-how-C-4-E
-Paulo:From what I've seen, it comes in two degrees.  You'll find most people won't give up full autonomy right away.
-Paulo:But if you understand a person at a basic level, you should still be able to influence them.
-Paulo:You could guide them along and nudge them to do things, but you would be sharing their body, not stealing it.
-Paulo:For example, you wouldn't be able to use their voice to talk about things they have no awareness of.
-Paulo:However, if you completely understand someone's will, you should be able to take full control of them.
-Paulo:You could hijack their body, and speak through their voice.
-Paulo:I don't expect this level of control would come easily, though.
+Paulo:내가 봐온 바로는, 두 단계가 있어.  처음엔 사람들이 너에게 모든 전혀 의식을 내주지 않을 거야.
+Paulo:그렇지만 누군가를 이해한다면, 너는 그 사람의 행동에 영향을 줄 수 있어.
+Paulo:그러면 너는 그 사람이 특정한 행동을 하도록 할 수 있지만, 이건 그 사람의 몸을 공유하는 것이고, 빼앗는 것은 아냐.
+Paulo:예를 들어, 너는 그 사람이 의도하지 않는 말은 하도록 할 수 없지.
+Paulo:하지만 네가 그 사람의 모든 것을 이해한다면, 너는 그 사람을 완전히 조종할 수 있어.
+Paulo:몸을 완전히 빼앗아서, 그들의 목소리로 말할 수 있지.
+Paulo:물론 쉽게 그런 레벨에 도달할 수 있는 건 아냐.
 next:root-1-A-2-B-3-what-how-C-4
 action end
 
 action:statement:root-1-A-2-B-3-what-how-C-4-G
-Paulo:Oh, good timing.  You could try to take control of that cat.
-Paulo:Its spirit shouldn't put up much resistance, so you should be able to take full control of it.
-Paulo:Go see what happens.
+Paulo:저기 보이는 고양이를 한번 조종해 봐.
+Paulo:저 녀석의 영혼은 별로 저항하지 않을거라, 쉽게 완전히 조종할 수 있을 거야.
+Paulo:무슨 일이 일어나는 지 보자고.
 next:end
 action end
 
 
 action:statement:catThere
-Paulo:You should try and take control of the cat over there.
-Paulo:Then come back and talk to me.
+Paulo:저기 보이는 고양이를 조종해봐.
+Paulo:그리고 돌아와서 나한테 말을 걸어봐.
 next:end
 action end
 
