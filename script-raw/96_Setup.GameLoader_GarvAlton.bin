@@ -1,0 +1,53 @@
+
+// GARV - ALTON ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Garv-Alton
+
+action:response:root
+Garv
+root-1:What made you take a job on this ship?
+root-2:What are your plans after this, career wise?
+</>root-null:Goodbye.
+action end
+
+action:statement:root-1
+Alton:Huh?  Well, it's hard to say...
+Alton:I guess I just wanted to get out and travel a bit.  Before I settle into a real career.
+Alton:You get into a desk job and never escape, you know?
+next:root-1-A
+action end
+
+action:response:root-1-A
+Garv
+root-1-B:But does this really...challenge you?  People should have work they are passionate about.
+root-1-C:I suppose I do.
+</>root-null:Goodbye.
+action end
+
+action:statement:root-1-B
+Alton:I mean, I like music, so playing music here is...kind of a passion?
+Alton:It's strange how low expectations are here though.
+Alton:The previous captain didn't bother with me or check on me at all...I don't really know why I was hired.
+next:root-null
+action end
+
+action:statement:root-1-C
+Alton:Oh, sorry, I didn't mean to belittle that kind of, I mean...
+Alton:I'm sure every job is different and can be fulfilling to different people.
+Alton:I'm just afraid I'll grow roots and get stuck somewhere.
+next:root-null
+action end
+
+
+action:statement:root-2
+Alton:Jeez, career-wise?  I don't really know.
+Alton:I've just been taking things step by step so far.  I guess I'm not sure what career I want, even.
+Alton:Am I getting to the point where I should be figuring that stuff out?  I don't know...
+next:root-null
+action end
+
+
+dialogue end
+
+

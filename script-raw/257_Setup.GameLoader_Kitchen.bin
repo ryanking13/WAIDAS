@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="14" height="13" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="Main set" tilewidth="32" tileheight="32">
+  <image source="../Tiles/Bathroom Sheet.png" width="224" height="224"/>
+ </tileset>
+ <tileset firstgid="50" name="PropGrid" tilewidth="32" tileheight="32">
+  <image source="../Props/PropGrid.png" width="512" height="832"/>
+ </tileset>
+ <tileset firstgid="466" name="AIGrid" tilewidth="32" tileheight="32">
+  <image source="../Props/AIGrid.png" width="96" height="32"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="14" height="13">
+  <data>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="8"/>
+   <tile gid="3"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="5"/>
+   <tile gid="6"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="10"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="12"/>
+   <tile gid="13"/>
+   <tile gid="14"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="17"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="19"/>
+   <tile gid="20"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="27"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="29"/>
+   <tile gid="26"/>
+   <tile gid="26"/>
+   <tile gid="26"/>
+   <tile gid="26"/>
+   <tile gid="26"/>
+   <tile gid="26"/>
+   <tile gid="26"/>
+   <tile gid="30"/>
+   <tile gid="1"/>
+   <tile gid="34"/>
+   <tile gid="35"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="1"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+  </data>
+ </layer>
+ <objectgroup name="Props" width="14" height="13">
+  <object name="Refrigerator" gid="251" x="111" y="180">
+   <properties>
+    <property name="CharDialogue" value="Marcurio-true-KitchenFridgeMarcurio"/>
+    <property name="CharDialogue2" value="Cat-true-KitchenFridgeHandless"/>
+    <property name="CharDialogue3" value="Ghost-true-KitchenFridgeHandless"/>
+    <property name="Collidable" value="true"/>
+    <property name="Permissions" value="All"/>
+    <property name="Sprite" value="Refrigerator"/>
+    <property name="SuccessDialogue" value="KitchenFridge"/>
+   </properties>
+  </object>
+  <object gid="252" x="143" y="180"/>
+  <object gid="267" x="111" y="212"/>
+  <object gid="268" x="143" y="212"/>
+  <object name="KitchenCupboard" gid="220" x="68" y="181">
+   <properties>
+    <property name="CharDialogue" value="Marcurio-true-KitchenCupboardMarcurio"/>
+    <property name="CharDialogue2" value="Cat-true-KitchenCupboardHandless"/>
+    <property name="CharDialogue3" value="Ghost-true-KitchenCupboardHandless"/>
+    <property name="Collidable" value="true"/>
+    <property name="Permissions" value="All"/>
+    <property name="Sprite" value="KitchenCupboard"/>
+    <property name="SuccessDialogue" value="KitchenCupboard"/>
+   </properties>
+  </object>
+  <object gid="236" x="68" y="213"/>
+  <object name="Stove" gid="383" x="64" y="288">
+   <properties>
+    <property name="Bounds" value="0,10,64,22"/>
+    <property name="Collidable" value="true"/>
+    <property name="Permissions" value="All"/>
+    <property name="Sprite" value="Stove"/>
+    <property name="SuccessDialogue" value="KitchenStove"/>
+   </properties>
+  </object>
+  <object gid="384" x="96" y="288"/>
+  <object name="Sink" gid="376" x="128" y="288">
+   <properties>
+    <property name="Bounds" value="0,10,32,22"/>
+    <property name="Collidable" value="true"/>
+    <property name="Permissions" value="All"/>
+    <property name="Sprite" value="Sink"/>
+    <property name="SuccessDialogue" value="KitchenSink"/>
+   </properties>
+  </object>
+  <object name="KitchenCounter" gid="390" x="160" y="288">
+   <properties>
+    <property name="Bounds" value="0,10,128,22"/>
+    <property name="Collidable" value="true"/>
+    <property name="Sprite" value="KitchenCounter"/>
+   </properties>
+  </object>
+  <object gid="391" x="192" y="288"/>
+  <object gid="392" x="224" y="288"/>
+  <object gid="393" x="256" y="288"/>
+  <object name="Trashcan" gid="248" x="334" y="206">
+   <properties>
+    <property name="Collidable" value="true"/>
+    <property name="Permissions" value="All"/>
+    <property name="Sprite" value="Trashcan"/>
+    <property name="SuccessDialogue" value="KitchenTrash"/>
+   </properties>
+  </object>
+  <object gid="264" x="334" y="238"/>
+  <object gid="221" x="100" y="181"/>
+  <object gid="237" x="100" y="213"/>
+  <object name="WallCupboard" gid="370" x="180" y="165">
+   <properties>
+    <property name="Sprite" value="WallCupboard"/>
+   </properties>
+  </object>
+  <object gid="371" x="212" y="165"/>
+  <object gid="372" x="244" y="165"/>
+  <object gid="373" x="276" y="165"/>
+  <object gid="374" x="308" y="165"/>
+  <object name="MarcurioMess2" gid="22" x="320" y="224">
+   <properties>
+    <property name="Collidable" value="false"/>
+    <property name="Hidden" value="true"/>
+    <property name="Sprite" value="MarcurioMess2"/>
+   </properties>
+  </object>
+  <object name="MarcurioMess1" gid="22" x="132" y="244">
+   <properties>
+    <property name="Collidable" value="false"/>
+    <property name="Hidden" value="true"/>
+    <property name="Sprite" value="MarcurioMess1"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="AI" width="14" height="13">
+  <object name="MarcurioKitchen" gid="466" x="256" y="256">
+   <properties>
+    <property name="Character" value="Marcurio"/>
+    <property name="Frequency" value="60"/>
+    <property name="Index" value="3"/>
+    <property name="Type" value="Routine"/>
+   </properties>
+  </object>
+  <object name="MarcurioKitchen" gid="466" x="120" y="250">
+   <properties>
+    <property name="Character" value="Marcurio"/>
+    <property name="Frequency" value="60"/>
+    <property name="Index" value="1"/>
+    <property name="Type" value="Routine"/>
+   </properties>
+  </object>
+  <object name="MarcurioKitchen" gid="466" x="160" y="256">
+   <properties>
+    <property name="Character" value="Marcurio"/>
+    <property name="Frequency" value="180"/>
+    <property name="Index" value="2"/>
+    <property name="Loop" value="true"/>
+    <property name="Type" value="Routine"/>
+    <property name="WaitTime" value="10"/>
+   </properties>
+  </object>
+  <object name="XuDiningRoom" gid="466" x="288" y="256">
+   <properties>
+    <property name="Frequency" value="300"/>
+    <property name="Index" value="6"/>
+    <property name="Type" value="Routine"/>
+   </properties>
+  </object>
+  <object name="MarcurioChap4" gid="466" x="96" y="256">
+   <properties>
+    <property name="Character" value="Marcurio"/>
+    <property name="Frequency" value="300"/>
+    <property name="Index" value="2"/>
+    <property name="Type" value="Routine"/>
+   </properties>
+  </object>
+  <object name="MarcurioChap4" gid="466" x="192" y="256">
+   <properties>
+    <property name="Character" value="Marcurio"/>
+    <property name="Frequency" value="550"/>
+    <property name="Index" value="3"/>
+    <property name="Type" value="Routine"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

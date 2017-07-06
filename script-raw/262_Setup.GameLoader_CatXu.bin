@@ -1,0 +1,56 @@
+
+
+dialogue start
+Cat-Xu
+
+action:response:root
+Cat
+root-1:Meow!
+</>root-null:Hsss!
+action end
+
+action:statement:root-1
+Xu:...Oh.  It's a cat.
+next:root-2
+action end
+
+action:response:root-2
+Cat
+root-3:Meow!
+</>root-null:Hsss!
+action end
+
+action:statement:root-3
+Xu:I've got a lot on my mind right now.
+Xu:Go find someone else to bother, okay?
+next:root-null
+action end
+
+
+
+action:response:root2
+Cat
+root2-1:Meow!
+</>root2-null:Hsss!
+action end
+
+action:statement:root2-1
+Xu:...Hey, cat.
+Xu:...You don't think I'm a bad person, do you?
+next:root2-2
+action end
+
+action:response:root2-2
+Cat
+root2-3:Meow!
+</>root-null:Hsss!
+action end
+
+action:statement:root2-3
+Xu:...I should've told Donovan the entire truth.  While I still had a chance.
+Xu:Maybe things would be different if I did.
+Xu:I wonder what Alton and Quella would think...
+next:root-null
+action end
+
+dialogue end

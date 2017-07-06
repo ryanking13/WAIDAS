@@ -1,0 +1,43 @@
+
+
+// DONOVAN - DARRYL ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Donovan-Darryl
+
+action:response:root
+Donovan
+root-1:Hey.
+</>root-null:Bye.
+action end
+
+action:statement:root-1
+Darryl:Heh.  Hey.
+Darryl:As sullen as ever, huh?
+next:root-2
+action end
+
+action:response:root-2
+Donovan
+root-3:I don't know what you mean.
+</>root-null:Bye.
+action end
+
+action:statement:root-3
+Darryl:You sure?  Your face looks like the grim reaper himself.
+next:root-4
+action end
+
+action:response:root-4
+Donovan
+root-5:I'd rather that than be smirking like an idiot all the time.  Is everything a joke to you?
+action end
+
+action:statement:root-5
+Darryl:Well...of course.  You, me, life.  What is it, if not a big cosmic joke?
+next:root-null
+action end
+
+dialogue end
+
+

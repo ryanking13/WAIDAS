@@ -1,0 +1,233 @@
+
+
+// QUELLA - GWEN ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Quella-Gwen
+
+action:response:root
+Quella
+root-1:Hey, is anything wrong?  
+root-2:Hi, my name is Quella.  What's your name?:trigger.chap2greetGwen.on
+</>root-null:Never mind.
+action end
+
+action:statement:root-1
+Gwen:...
+Gwen:No, I'm fine.
+next:root-null
+action end
+
+action:statement:root-2
+Gwen:...
+Gwen:Hi, Quella.  I'm Gwen.
+Gwen:Um...
+Gwen:Nice to meet you.
+next:root-greetedGwen
+action end
+
+action:response:root-greetedGwen
+Quella
+root-greetedGwen-1:I don't see you around much!
+root-greetedGwen-2:What have you been up to lately?
+root-greetedGwen-3:How are things with you?  You doing okay?:trigger.chap2everythingsFine.on
+<!>root-trigger.chap2everythingsFine:Something is clearly bothering you.  What's wrong?
+root-trigger.chap2everythingsNotFine:I'm sure you're safe here, Gwen.  But if anything comes up, you can tell me.:trigger.chap2quellaGwenProgress.on
+</>root-null:Never mind.
+action end
+
+action:statement:root-greetedGwen-1
+Gwen:...No.
+Gwen:I usually stay in my room...that's why.
+next:root-greetedGwen
+action end
+
+action:statement:root-greetedGwen-2
+Gwen:Nothing.
+Gwen:I mean...nothing interesting.
+next:root-greetedGwen
+action end
+
+action:statement:root-greetedGwen-3
+Gwen:...
+Gwen:...I'm fine.  Everything's fine.
+next:root-greetedGwen
+action end
+
+action:statement:root-trigger.chap2everythingsNotFine
+Gwen:...Thanks.
+Gwen:I...I'm not so sure, though.
+Gwen:I haven't felt like this since I was back home.  I don't like it.
+Gwen:It's someone here.  I know it.
+next:root-greetedGwen
+action end
+
+
+action:statement:root-trigger.chap2everythingsFine
+Gwen:...
+Gwen:Please don't say this to anyone, but...
+Gwen:I think someone's following me.
+next:root-shadow
+action end
+
+action:response:root-shadow
+Quella
+root-shadow-why:Why would someone be following you?
+root-shadow-who:Who do you think is following you?
+root-shadow-what:What makes you think someone is following you?:trigger.unlockGwen.on
+action end
+
+
+action:statement:root-shadow-why
+Gwen:I...think they want to take me back.
+Gwen:I wasn't supposed to leave home.  But I couldn't stay there.
+Gwen:....
+Gwen:I'm sorry, I can't talk about it.  They might hear me.
+next:root-shadow
+action end
+
+action:statement:root-shadow-who
+Gwen:I'm not sure.  Not exactly.
+Gwen:...But I can feel their eyes on me.  Always watching me.
+next:root-shadow
+action end
+
+action:statement:root-shadow-what
+Gwen:...I can just sense it.
+Gwen:I don't know who, but a person here is...looking for a target.
+Gwen:There's a cruel feeling in the air.  I hate it...
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+// QUELLA - GWEN (CHAPTER 4) ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Quella-Gwen
+
+action:response:chap4
+Quella
+chap4-A:Don't worry, Gwen.  I'm going to try and prove you're innocent.
+</>chap4-null:Goodbye.
+action end
+
+action:statement:chap4-A
+Gwen:R-really?  Oh, thank you.  I think you're the only person who really believes in me.
+Gwen:But what can you do?
+next:chap4-B
+action end
+
+action:response:chap4-B
+Quella
+chap4-C:Who was there when they found the key in your room?
+action end
+
+action:statement:chap4-C
+Gwen:All of the ship staff.  Ferdinand, Marcurio, Xu, and Alton.
+Gwen:They apparently had been searching all of the ship together.
+next:chap4-D
+action end
+
+action:response:chap4-D
+Quella
+chap4-E:You know, this wouldn't be the first time a key was in a place it shouldn't be...
+chap4-F:Have you been able to talk to any of them?
+</>chap4-null:I'll see you later.  Hang in there.
+action end
+
+action:statement:chap4-E
+Gwen:What do you mean?
+next:chap4-G
+action end
+
+action:response:chap4-G
+Quella
+chap4-G-2:I just wonder if one of the crew members in particular knows more about the master key than they're letting on...
+action end
+
+action:statement:chap4-G-2
+Gwen:I wouldn't know...do they?
+next:chap4-D
+action end
+
+action:statement:chap4-F
+Gwen:No, well...it's not like I can walk up to them and say hi.
+Gwen:If they come in here though I can try to speak to them and pick their minds.
+Gwen:I'd really like to talk to them, honestly...
+next:chap4-D
+action end
+
+
+
+
+
+action:response:chap6
+Quella
+chap6-A:I knew you were innocent.  Restraining you was absurd.
+chap6-trigger.chap2quellaGwenProgress:How are you holding up?  Is everything okay?
+</>chap6-null:Talk to you later.
+action end
+
+action:statement:chap6-A
+Gwen:Thank you for believing in me.
+Gwen:...Marcurio knew I was innocent.  But he said the way I acted made me suspicious.
+next:chap6-B
+action end
+
+action:response:chap6-B
+Quella
+chap6-C:Don't listen to that.  It had nothing to do with you.
+chap6-D:Is that why you think you were framed?
+</>chap6-null:Talk to you later.
+action end
+
+action:statement:chap6-C
+Gwen:Yeah...I guess you're right.
+Gwen:It sounded like he's still fighting some demons of his own.
+next:chap6-B
+action end
+
+action:statement:chap6-D
+Gwen:I don't know.
+Gwen:Maybe...it isn't a reflection of me, but just the circumstances.
+Gwen:I was just caught in the middle of something larger than myself.
+next:chap6-B
+action end
+
+action:statement:chap6-trigger.chap2quellaGwenProgress
+Gwen:I don't really get it.  I'm just a stranger to you...
+Gwen:...Why do you seem to care so much?
+next:chap6-2
+action end
+
+action:response:chap6-2
+Quella
+chap6-2-A:I don't know if I have a reason.  Do I need one?:trigger.chap6quellaGwenProgress.on
+chap6-trigger.chap6quellaGwenProgress:It's not strange, if that's how you've been taught to think.
+action end
+
+action:statement:chap6-2-A
+Gwen:...
+Gwen:I guess not.
+Gwen:It never occurred to me...that someone wouldn't need a reason.
+Gwen:Normally when people are nice to me, I distrust them because of that.
+Gwen:Is that strange?
+next:chap6-2
+action end
+
+action:statement:chap6-trigger.chap6quellaGwenProgress
+Gwen:...I guess you're right.  Maybe it's something I just have to unlearn.
+Gwen:There's probably a lot that I'll have to unlearn.
+next:chap6-null
+action end
+
+dialogue end
+
+
+

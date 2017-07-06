@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="15" height="15" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="Basement Room Sheet" tilewidth="32" tileheight="32">
+  <image source="../Tiles/Basement Room Sheet.png" width="224" height="320"/>
+ </tileset>
+ <tileset firstgid="71" name="PropGrid" tilewidth="32" tileheight="32">
+  <image source="../Props/PropGrid.png" width="512" height="832"/>
+ </tileset>
+ <tileset firstgid="487" name="AIGrid" tilewidth="32" tileheight="32">
+  <image source="../Props/AIGrid.png" width="96" height="32"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="15" height="15">
+  <data>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="8"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="14"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="40"/>
+   <tile gid="46"/>
+   <tile gid="47"/>
+   <tile gid="47"/>
+   <tile gid="47"/>
+   <tile gid="48"/>
+   <tile gid="36"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="36"/>
+   <tile gid="53"/>
+   <tile gid="54"/>
+   <tile gid="54"/>
+   <tile gid="54"/>
+   <tile gid="55"/>
+   <tile gid="37"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="37"/>
+   <tile gid="53"/>
+   <tile gid="54"/>
+   <tile gid="54"/>
+   <tile gid="54"/>
+   <tile gid="55"/>
+   <tile gid="40"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="40"/>
+   <tile gid="53"/>
+   <tile gid="54"/>
+   <tile gid="54"/>
+   <tile gid="54"/>
+   <tile gid="55"/>
+   <tile gid="36"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="29"/>
+   <tile gid="30"/>
+   <tile gid="60"/>
+   <tile gid="61"/>
+   <tile gid="61"/>
+   <tile gid="61"/>
+   <tile gid="62"/>
+   <tile gid="34"/>
+   <tile gid="35"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="29"/>
+   <tile gid="26"/>
+   <tile gid="30"/>
+   <tile gid="37"/>
+   <tile gid="34"/>
+   <tile gid="26"/>
+   <tile gid="35"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="36"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+  </data>
+ </layer>
+ <objectgroup name="Props" width="15" height="15">
+  <object name="AltonsPosterTwo" gid="425" x="159" y="122">
+   <properties>
+    <property name="Collidable" value="false"/>
+    <property name="Sprite" value="FighterPoster"/>
+   </properties>
+  </object>
+  <object gid="426" x="191" y="122"/>
+  <object name="AltonsSpeakerLeft" gid="245" x="130" y="150">
+   <properties>
+    <property name="CharDialogue" value="Alton-true-AltonsSpeakerAlton"/>
+    <property name="Collidable" value="true"/>
+    <property name="Permissions" value="All"/>
+    <property name="Sprite" value="SpeakerLeft"/>
+    <property name="SuccessDialogue" value="AltonsSpeaker"/>
+   </properties>
+  </object>
+  <object gid="261" x="130" y="182"/>
+  <object name="AltonsSpeakerRight" gid="246" x="326" y="152">
+   <properties>
+    <property name="CharDialogue" value="Alton-true-AltonsSpeakerAlton"/>
+    <property name="Collidable" value="true"/>
+    <property name="Permissions" value="All"/>
+    <property name="Sprite" value="SpeakerRight"/>
+    <property name="SuccessDialogue" value="AltonsSpeaker"/>
+   </properties>
+  </object>
+  <object gid="262" x="326" y="184"/>
+  <object name="AltonsPosterOne" gid="275" x="273" y="110">
+   <properties>
+    <property name="Collidable" value="false"/>
+    <property name="Sprite" value="ShooterPoster"/>
+   </properties>
+  </object>
+  <object gid="291" x="273" y="142"/>
+  <object name="AltonsBed" gid="337" x="247" y="172">
+   <properties>
+    <property name="Collidable" value="true"/>
+    <property name="Permissions" value="All"/>
+    <property name="Sprite" value="BigBedOne"/>
+    <property name="SuccessDialogue" value="NormalBed"/>
+   </properties>
+  </object>
+  <object gid="338" x="279" y="172"/>
+  <object gid="353" x="247" y="204"/>
+  <object gid="354" x="279" y="204"/>
+  <object name="AltonsDresser" gid="295" x="162" y="169">
+   <properties>
+    <property name="CharDialogue" value="Donovan-true-AltonsDresserDonovan"/>
+    <property name="Collidable" value="true"/>
+    <property name="Permissions" value="All"/>
+    <property name="Sprite" value="Dresser"/>
+    <property name="SuccessDialogue" value="Dresser"/>
+   </properties>
+  </object>
+  <object gid="296" x="194" y="169"/>
+  <object gid="297" x="226" y="169"/>
+  <object gid="311" x="162" y="201"/>
+  <object gid="312" x="194" y="201"/>
+  <object gid="313" x="226" y="201"/>
+  <object name="AltonsDesk" gid="341" x="130" y="253">
+   <properties>
+    <property name="Bounds" value="0,20,32,44"/>
+    <property name="CharDialogue" value="Alton-true-AltonsComputerAlton"/>
+    <property name="Collidable" value="true"/>
+    <property name="Permissions" value="All"/>
+    <property name="Sprite" value="ComputerDesk"/>
+    <property name="SuccessDialogue" value="AltonsComputer"/>
+   </properties>
+  </object>
+  <object gid="357" x="130" y="285"/>
+  <object name="AltonsChair" gid="336" x="167" y="269">
+   <properties>
+    <property name="Bounds" value="0,25,32,21"/>
+    <property name="Collidable" value="true"/>
+    <property name="Sprite" value="CoffeeChairRightBlack"/>
+   </properties>
+  </object>
+  <object gid="352" x="167" y="301"/>
+  <object name="AltonsTech" gid="408" x="281" y="273">
+   <properties>
+    <property name="CharDialogue" value="Alton-true-AltonsTechAlton"/>
+    <property name="Collidable" value="true"/>
+    <property name="Permissions" value="All"/>
+    <property name="Sprite" value="AltonsTech"/>
+    <property name="SuccessDialogue" value="AltonsTech"/>
+   </properties>
+  </object>
+  <object gid="409" x="313" y="273"/>
+  <object name="AltonsNightstand" gid="431" x="307" y="212">
+   <properties>
+    <property name="Collidable" value="true"/>
+    <property name="Sprite" value="Nightstand"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="AI" width="15" height="15">
+  <object name="AltonAtNight" gid="487" x="192" y="224">
+   <properties>
+    <property name="Character" value="Alton"/>
+    <property name="Frequency" value="240"/>
+    <property name="Index" value="1"/>
+    <property name="Loop" value="true"/>
+    <property name="Type" value="Routine"/>
+    <property name="WaitTime" value="200"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

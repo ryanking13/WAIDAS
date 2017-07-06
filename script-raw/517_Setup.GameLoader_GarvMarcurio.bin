@@ -1,0 +1,184 @@
+
+
+
+// GARV - MARCURIO ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Garv-Marcurio
+
+action:response:root
+Garv
+root-1:How's your pay?  Are you happy here?
+root-2:What was your opinion of the captain?
+</>root-null:Goodbye.
+action end
+
+action:statement:root-1
+Marcurio:Pay's not good, but I manage.  Working here has its advantages.
+Marcurio:The lack of passengers here means I often have the kitchen all to myself.
+Marcurio:I may still be on work hours, but I have time to do my own stuff.  Study.  Practice.
+Marcurio:At least, as far as our meager supplies and ingredients allow me to.
+next:root-1-A
+action end
+
+action:response:root-1-A
+Garv
+root-1-B:You haven't thought of another job?
+root-1-C:You've never thought about...forcing the issue of a raise to the captain?
+</>root-null:Goodbye.
+action end
+
+action:statement:root-1-B
+Marcurio:What, are you offering me a job or something?  Unless you own a restaraunt, I'm not interested.
+Marcurio:Sure, I'd like to get out of here and work somewhere classier, but that's easier said than done.
+next:root-1-A
+action end
+
+action:statement:root-1-C
+Marcurio:What exactly are you getting at?
+Marcurio:I'm not crazy about my pay, but that's a secondary concern to me.
+Marcurio:I would never do anything stupid just for cash.
+next:root-1-D
+action end
+
+action:response:root-1-D
+Garv
+root-1-E:Everyone has their price.
+action end
+
+action:statement:root-1-E
+Marcurio:Maybe.  But mine is pretty high.
+next:root-null
+action end
+
+
+action:statement:root-2
+Marcurio:Honestly?  She seemed a little clueless.
+Marcurio:About how the ship works, sure, but also about everything in general.
+Marcurio:She had some weird ideas about how to improve this ship that were just...strange.
+Marcurio:Not sure why someone so bright-eyed became captain of a shit-pile like this in the first place.
+next:root-2-A
+action end
+
+action:response:root-2-A
+Garv
+root-2-B:Weird ideas?  Would you say they were ideas that had to be...stopped?
+<!>root-2-C:You don't seem very cut up about her disappearance.
+</>root-null:Goodbye.
+action end
+
+action:statement:root-2-B
+Marcurio:I hope you're trying to be funny with that veiled accusation.
+Marcurio:It's not like I ever cared one way or the other about her stupid ideas.
+Marcurio:In fact, if they worked, which they weren't going to, it would only benefit me.
+Marcurio:But no kind of management could make this an actual, successful cruise ship.
+next:root-2-A
+action end
+
+action:statement:root-2-C
+Marcurio:Hey, I feel bad about this situation.  Everyone does.
+Marcurio:But making a show of it doesn't help anyone.  Least of all the captain.
+Marcurio:It's also not like I can do anything about it.  I'm not a cop, and I don't solve murders.
+Marcurio:I'm just the cook.
+next:root-3-C
+action end
+
+action:response:root-3-C
+Garv
+root-3-D:I see.  You're just going to keep your head down and wait things out.  Smart.:trigger.chap3MarcUnlocked.on
+action end
+
+action:statement:root-3-D
+Marcurio:Yeah, that's right.  I wouldn't have expected a geezer like you to understand that.
+Marcurio:I've seen people die for having the wrong friends, or stick up for the wrong person.
+Marcurio:I learned a long time ago to mind my own damn business.  There's no point acting like a hero.
+Marcurio:I'm just trying to do my job, here.
+next:root-null
+action end
+
+
+
+action:response:root2
+Garv
+root2-1:How's your pay?  Do you like working here?
+root2-A:Do you really think the ship will stay open after this?
+</>root2-null:Never mind.
+action end
+
+action:statement:root2-1
+Marcurio:Pay's not good, but I manage.  Working here has its advantages.
+Marcurio:The lack of passengers here means I often have the kitchen all to myself.
+Marcurio:I may still be on work hours, but I have time to do my own stuff.  Study.  Practice.
+Marcurio:At least, as far as our meager supplies and ingredients allow me to.
+next:root2-1-A
+action end
+
+action:response:root2-1-A
+Garv
+root2-1-B:You haven't thought of another job?
+root2-1-C:You've never thought about...forcing the issue of a raise to the captain?
+</>root2-null:Goodbye.
+action end
+
+action:statement:root2-1-B
+Marcurio:What, are you offering me a job or something?  Unless you own a restaraunt, I'm not interested.
+Marcurio:Sure, I'd like to get out of here and work somewhere classier, but that's easier said than done.
+next:root2-1-A
+action end
+
+action:statement:root2-1-C
+Marcurio:What exactly are you getting at?
+Marcurio:I'm not crazy about my pay, but that's a secondary concern to me.
+Marcurio:I would never do anything stupid just for cash.
+next:root2-1-D
+action end
+
+action:response:root2-1-D
+Garv
+root2-1-E:Everyone has their price.
+action end
+
+action:statement:root2-1-E
+Marcurio:Maybe.  But mine is pretty high.
+next:root2-null
+action end
+
+action:statement:root2-A
+Marcurio:You mean you think it'll close down?  Maybe.
+Marcurio:Honestly, I don't know how this ship has managed to stay open so long in the first place.
+Marcurio:I don't even know who owns this ship.  They might find a way.
+next:root2-A-1
+action end
+
+action:response:root2-A-1
+Garv
+root2-A-2:You don't know who the owner is?:trigger.chap4garvMarcProgress.on
+root2-trigger.chap4garvMarcProgress:Then...where do the paychecks come from?
+root2-A-3:I doubt anyone would want to be associated with this mess.
+</>root2-null:Never mind.
+action end
+
+action:statement:root2-A-2
+Marcurio:Nope.
+Marcurio:The captain is technically an employee, just like me.
+Marcurio:The actual owner of the boat...I've never had to deal directly with them.
+next:root2-A-1
+action end
+
+action:statement:root2-trigger.chap4garvMarcProgress
+Marcurio:Eh...well...
+Marcurio:I don't exactly get paychecks.  I just get paid in hard cash.
+Marcurio:It makes everything a lot...simpler.
+next:root2-A-1
+action end
+
+action:statement:root2-A-3
+Marcurio:You think we'll get dropped for image reasons?
+Marcurio:I hope not.  But who knows anymore, you might be right.
+next:root2-A-1
+action end
+
+dialogue end
+
+
+

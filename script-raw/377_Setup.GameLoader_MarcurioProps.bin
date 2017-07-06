@@ -1,0 +1,147 @@
+
+
+
+dialogue start
+KitchenCupboardMarcurio
+
+action:statement:root
+Marcurio:It's the cupboard I use for all my non-spoilable ingredients.  A little too small for my needs.
+next:root-2
+action end
+
+action:response:root-2
+Marcurio
+root-3:Open it:trigger.chap6kitchenExposed.on
+</>root-null:Leave it alone
+action end
+
+action:statement:root-3
+Marcurio:Looks the same as it did last time I checked it.
+next:root-investigate
+action end
+
+action:response:root-investigate
+Marcurio
+root-A:Top shelf
+root-B:Middle shelf
+root-C:Bottom shelf
+</>root-null:Close the cupboard
+action end
+
+action:statement:root-A
+null:The shelf is crammed with bottles of cooking oil and various sauces.
+null:At the back of the shelf is a small box, with the word 'Insurance' written on it.
+next:root-insurance
+action end
+
+action:response:root-insurance
+Marcurio
+root-insurance2:Open the box:trigger.chap6cabinetBox.on
+root-investigate:Leave it alone
+action end
+
+action:statement:root-insurance2
+null:Inside the box are various handwritten notes.
+null:They all have vague instructions regarding dropping off items or supplies.
+null:One note has instructions for leaving the boat's docking ramp out overnight before the ship had disembarked.
+null:In each case, few specifics are given, but a payment for these services is referenced.
+Marcurio:Keeping these around hasn't done me much good.
+Marcurio:If I can't figure out who sends the notes, I have no leverage.  Period.
+next:root-investigate
+action end
+
+action:statement:root-B
+null:The middle shelf is the largest, and contains all sorts of grains and starches.
+next:root-investigate
+action end
+
+action:statement:root-C
+null:On the bottom shelf are miscellaneous supplies like plastic wrap and parchment paper.
+null:There's several paper forms with different tables of information.
+next:root-budget
+action end
+
+action:response:root-budget
+Marcurio
+root-budget2:Investigate the forms:trigger.chap6ledger.on
+</>root-investigate:Leave them alone
+action end
+
+action:statement:root-budget2
+null:The forms all have tables counting the kitchen stock.  This much grain, this much chicken, and so on.
+null:It's not very interesting to read through.
+null:Several papers in, there's writing with red ink everywhere.  Numbers are crossed out and other numbers are written over them.
+null:These ledgers are almost completely inaccurate.  I will be coming to check the kitchen stock more often from now on.
+Marcurio:That was the captain for you.  Always so diligent.
+Marcurio:What did she care if a little food went missing here and there?
+next:root-investigate
+action end
+
+dialogue end
+
+
+
+
+dialogue start
+KitchenFridgeMarcurio
+
+action:statement:root
+Marcurio:My trusty old fridge.  I have to use every inch of this thing or I run out of room.
+next:root-2
+action end
+
+action:response:root-2
+Marcurio
+root-3:Open it:trigger.chap6kitchenExposed.on
+</>root-null:Leave it alone
+action end
+
+action:statement:root-3
+Marcurio:Looks like nothing's been tampered with.  Good.
+next:root-investigate
+action end
+
+action:response:root-investigate
+Marcurio
+root-A:Left door drawers:trigger.chap6fridgeAlcohol.on
+root-B:Right door drawers
+root-C:Main unit shelves
+</>root-null:Close the fridge
+action end
+
+action:statement:root-A
+null:The left door is lined with condiments and jars of spoilable content.
+null:There are some gaps where it seems some items used to be.
+null:The shelf also smells of alcohol.  When you lean in closer, the odor is quite powerful.
+next:root-investigate
+action end
+
+action:statement:root-B
+null:The right door contains all sorts of dairies and beverages.
+null:There isn't much noteworthy about it.
+next:root-investigate
+action end
+
+action:statement:root-C
+null:The main compartment of the fridge is jam packed with all sorts of foodstuffs.
+null:It oddly manages to be extremely tidy despite this.
+null:There's a curious number of empty plastic bags, however.  Some of the food has been used up way before expiration.
+next:root-investigate
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

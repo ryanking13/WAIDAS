@@ -1,0 +1,68 @@
+
+
+// XU - ALTON ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Xu-Alton
+
+action:response:root
+Xu
+root-fail:We should probably talk.
+</>root-null:Never mind.
+action end
+
+action:statement:root-fail
+Alton:...I'm not really in the mood to talk right now.
+Alton:Maybe later.
+next:root-null
+action end
+
+
+action:response:root2
+Xu
+root2-A:I may have been a bit harsh before.
+root2-B:Did you tell anyone else about what happened?
+</>root-null:Never mind.
+action end
+
+action:statement:root2-A
+Alton:...A bit.
+next:root2-harsh
+action end
+
+action:response:root2-harsh
+Xu
+root2-harsh-A:What's your plan though?  I'm assuming you're not here for the long haul.
+root2-harsh-B:You know your job is redundant, right?  The ship doesn't need a DJ.
+</>root2-null:Never mind.
+action end
+
+action:statement:root2-harsh-A
+Alton:I don't know.  I just wanted to...get away for a while.
+Alton:I thought I could clear my head if I traveled.
+Alton:Guess it's not that simple.
+next:root2-harsh
+action end
+
+action:statement:root2-harsh-B
+Alton:...It's not just me, huh?  It is strange.
+Alton:It's not like anybody here expects a real cruise.  They just use it as a ferry.
+Alton:Sometimes I get the feeling that I'm just here for show.
+next:root2-harsh
+action end
+
+action:statement:root2-B
+Alton:...No.  Maybe I should, but I won't.
+Alton:So you don't have to worry about that, I guess.
+next:root2
+action end
+
+dialogue end
+
+
+
+
+
+
+
+

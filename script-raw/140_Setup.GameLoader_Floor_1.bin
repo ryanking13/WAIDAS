@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="13" height="23" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="Maintiles" tilewidth="32" tileheight="32">
+  <image source="../Tiles/Main Deck Sheet.png" width="224" height="224"/>
+ </tileset>
+ <tileset firstgid="50" name="PropGrid" tilewidth="32" tileheight="32">
+  <image source="../Props/PropGrid.png" width="512" height="832"/>
+ </tileset>
+ <tileset firstgid="466" name="AIGrid" tilewidth="32" tileheight="32">
+  <image source="../Props/AIGrid.png" width="96" height="32"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="13" height="23">
+  <data>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="8"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="14"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="29"/>
+   <tile gid="43"/>
+   <tile gid="43"/>
+   <tile gid="43"/>
+   <tile gid="30"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="34"/>
+   <tile gid="26"/>
+   <tile gid="26"/>
+   <tile gid="26"/>
+   <tile gid="35"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="44"/>
+   <tile gid="44"/>
+   <tile gid="44"/>
+   <tile gid="15"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="44"/>
+   <tile gid="22"/>
+   <tile gid="39"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="38"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="8"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="9"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="13"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="14"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="37"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="20"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="23"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="27"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="29"/>
+   <tile gid="26"/>
+   <tile gid="26"/>
+   <tile gid="30"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="34"/>
+   <tile gid="26"/>
+   <tile gid="26"/>
+   <tile gid="35"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="29"/>
+   <tile gid="30"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="34"/>
+   <tile gid="35"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+  </data>
+ </layer>
+ <objectgroup name="Props" width="13" height="23">
+  <object gid="50" x="320" y="192"/>
+  <object gid="66" x="320" y="160"/>
+  <object gid="51" x="352" y="128"/>
+  <object gid="67" x="352" y="160"/>
+  <object gid="83" x="352" y="192"/>
+  <object gid="99" x="352" y="224"/>
+  <object gid="98" x="320" y="224"/>
+  <object gid="82" x="320" y="192"/>
+  <object gid="243" x="64" y="192"/>
+  <object gid="244" x="96" y="192"/>
+  <object gid="259" x="64" y="224"/>
+  <object gid="260" x="96" y="224"/>
+  <object name="MarcurioMess5" gid="22" x="128" y="192">
+   <properties>
+    <property name="Collidable" value="false"/>
+    <property name="Hidden" value="true"/>
+    <property name="Sprite" value="MarcurioMess5"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="AI" width="13" height="23">
+  <object name="FerdinandRoute" gid="466" x="192" y="480">
+   <properties>
+    <property name="Frequency" value="60"/>
+    <property name="Index" value="4"/>
+    <property name="Type" value="Routine"/>
+   </properties>
+  </object>
+  <object name="GwenDefault" gid="466" x="256" y="480">
+   <properties>
+    <property name="Character" value="Gwen"/>
+    <property name="Frequency" value="300"/>
+    <property name="Index" value="7"/>
+    <property name="Type" value="Routine"/>
+   </properties>
+  </object>
+  <object name="GwenDefault" gid="466" x="192" y="512">
+   <properties>
+    <property name="Character" value="Gwen"/>
+    <property name="Frequency" value="90"/>
+    <property name="Index" value="8"/>
+    <property name="Type" value="Routine"/>
+   </properties>
+  </object>
+  <object name="GwenDefault" gid="466" x="320" y="480">
+   <properties>
+    <property name="Character" value="Gwen"/>
+    <property name="Frequency" value="90"/>
+    <property name="Index" value="9"/>
+    <property name="Type" value="Routine"/>
+   </properties>
+  </object>
+  <object name="GwenDefault" gid="466" x="96" y="480">
+   <properties>
+    <property name="Character" value="Gwen"/>
+    <property name="Frequency" value="800"/>
+    <property name="Index" value="10"/>
+    <property name="Type" value="Routine"/>
+   </properties>
+  </object>
+  <object name="FerdinandLounging" gid="468" x="192" y="448">
+   <properties>
+    <property name="Character" value="Ferdinand"/>
+    <property name="Frequency" value="45"/>
+    <property name="HorizontalBound" value="6"/>
+    <property name="Type" value="Random"/>
+    <property name="VerticalBound" value="6"/>
+   </properties>
+  </object>
+  <object name="QuellaOutside2" gid="466" x="256" y="448">
+   <properties>
+    <property name="Character" value="Quella"/>
+    <property name="Frequency" value="600"/>
+    <property name="Index" value="1"/>
+    <property name="Loop" value="true"/>
+    <property name="Type" value="Routine"/>
+    <property name="WaitTime" value="120"/>
+   </properties>
+  </object>
+  <object name="QuellaChap4" gid="466" x="256" y="512">
+   <properties>
+    <property name="Frequency" value="900"/>
+    <property name="Index" value="3"/>
+    <property name="Type" value="Routine"/>
+   </properties>
+  </object>
+  <object name="GwenChap4" gid="466" x="160" y="512">
+   <properties>
+    <property name="Character" value="Quella"/>
+    <property name="Frequency" value="700"/>
+    <property name="Index" value="1"/>
+    <property name="Loop" value="false"/>
+    <property name="Type" value="Routine"/>
+    <property name="WaitTime" value="120"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

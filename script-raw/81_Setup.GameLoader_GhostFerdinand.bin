@@ -1,0 +1,552 @@
+
+// GHOST/ALTON - FERDINAND ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Ghost-Ferdinand
+
+action:statement:root
+Ferdinand:Why hello there, Alton!  Is there something for which my assistance is required?
+Ferdinand:As the first mate of this fine vessel, it is my duty to help the staff in any way I can.
+next:root-1
+action end
+
+action:response:root-1
+<player>
+root-1-A:When was the last time you saw the captain?
+root-1-B:Have you noticed anything odd around the ship recently?
+</>root-null:Never mind.
+action end
+
+action:statement:root-1-A
+Ferdinand:Why, I believe I saw her this morning at the helm.  She seemed quite well.
+next:root-null
+action end
+
+action:statement:root-1-B
+Ferdinand:Odd?  Not at all, I believe we are proceeding as normal and right on schedule.
+Ferdinand:If there were any problems, I'm sure the captain would have notified me as soon as possible.
+next:root-1-C
+action end
+
+action:response:root-1-C
+<player>
+root-1-D:Actually, I think something has happened to the captain.
+action end
+
+action:statement:root-1-D
+Ferdinand:Really?  That would be terrible!  A ship without its captain would be...
+Ferdinand:Er...captainless!
+Ferdinand:Fret not.  I'm sure the captain is fine.
+Ferdinand:But just to be sure, I'll double-check the ship and see that she is fine.
+Ferdinand:Thank you for your concern!
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+// CHAPTER 3  GHOST - FERDINAND  ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Ghost-Ferdinand
+
+action:response:root2
+<player>
+root2-1:What do you think has happened to the captain?
+root2-2:What should we all do?
+root2-3:Who might want to get rid of the captain?
+root2-captain:What can you tell me about the captain?
+root-trigger.chap3SecretArea:Do you know about any secret areas on the ship?
+</>root2-null:Never mind.
+action end
+
+action:statement:root2-1
+Ferdinand:I'm sure our beloved captain is still somewhere on this ship.
+Ferdinand:Why, I've heard old ships like this have plenty of strange compartments and cubbies.
+Ferdinand:It is quite possible she stumbled into one and is simply awaiting our assistance.
+next:root2
+action end
+
+action:statement:root2-2
+Ferdinand:We should search the ship thoroughly, and with great haste!
+Ferdinand:Of course, attending the passengers is still a priority.  We cannot forget that.
+Ferdinand:So we shall have to work double-time to sort this out!
+next:root2
+action end
+
+action:statement:root2-3
+Ferdinand:I refuse to think of such a thing!
+Ferdinand:Only when I see the smoking gun will I acknowledge someone here could pull off such an act.
+next:root2
+action end
+
+action:statement:root2-captain
+Ferdinand:I do hope we can find her soon.  She is indispensable to the management of this ship and its crew!
+next:root2-captain2
+action end
+
+action:response:root2-captain2
+<player>
+root2-captain2-A:What kind of person is she?
+root2-captain2-B:How long has she worked on this ship?
+root2-captain2-trigger.SmillaMarcurio:I hear her relationship with the crew has been rocky.
+</>root2-captain2-null:Never mind.
+action end
+
+action:statement:root2-captain2-A
+Ferdinand:Diligent, to say the least.  She's devoted to making this ship the best it can be!
+Ferdinand:There is resignation and stagnation all around us.  But no matter our situation, we can always strive for better.
+Ferdinand:The captain understands this.
+next:root2-captain2
+action end
+
+action:statement:root2-captain2-B
+Ferdinand:She started at the same time that I did.  That is...the start of this voyage.
+Ferdinand:It's a big turnover, but I think that's exactly what this ship needed!  A little shake-up!
+next:root2-captain2
+action end
+
+action:statement:root2-captain2-trigger.SmillaMarcurio
+Ferdinand:Hmm.  Yes, I suppose you could say that, but it's nothing to worry over.
+Ferdinand:These things are to be expected when old and new ideas come together.  Some clash is inevitable.
+next:root2-captain2
+action end
+
+action:statement:root-trigger.chap3SecretArea
+Ferdinand:Ohoho, now that is an interesting question!  Very interesting indeed!
+Ferdinand:Truth be told, I have been curious about this very question since setting board this vessel!
+Ferdinand:You see, this ship used to be used to smuggle certain illegal substances across borders.  I am almost certain.
+Ferdinand:This comes with the possibility that there are unknown areas of the ship that were used to hide these substances.
+Ferdinand:Wouldn't it be marvelous to be the one to rediscover such a thing?  It would be like staring back into history!
+next:root-chap3SecretArea
+action end
+
+action:response:root-chap3SecretArea
+<player>
+root-chap3SecretArea-1:What would be the signs for a hidden area?
+root-chap3SecretArea-2:Do you know where they are?
+</>root-null:I've heard enough.
+action end
+
+action:statement:root-chap3SecretArea-1
+Ferdinand:Good question.  Any good smuggling compartment should be very well disguised - otherwise, it's not very useful, is it?
+Ferdinand:That said, some things cannot be helped.  For instance, it could impact the weighting and balance of the ship.
+Ferdinand:In addition, some parts of the ship would be hollow when they otherwise shouldn't.
+Ferdinand:A hidden compartment needs space, obviously, and that has to come from somewhere.
+next:root-chap3SecretArea
+action end
+
+action:statement:root-chap3SecretArea-2
+Ferdinand:Where?  No.  I do not know if, indeed, they exist.  But I hope.
+Ferdinand:Logic would dictate that any compartment should be easily accessible, despite being well hidden.
+Ferdinand:Especially if there were large packages being moved, one would expect they need to be hidden quickly and smoothly.
+Ferdinand:I doubt the smugglers would be very keen on moving it through too many doors or up and down stairs.
+Ferdinand:I'd expect to find a hole of some sort where they could simply drop things down and retrieve them later.
+next:root-chap3SecretArea
+action end
+
+dialogue end
+
+
+
+
+
+
+// CHAPTER 4  GHOST - FERDINAND ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Ghost-Ferdinand
+
+action:response:root3
+<player>
+root3-A:What do you think happened to Donovan and Paulo?
+root3-B:Do you believe that Gwen is guilty?
+root3-C:Why do you think all of this has happened?
+root3-D:What should we do now?
+root3-captain:What can you tell me about the captain?
+</>root-null:Never mind.
+action end
+
+action:statement:root3-captain
+Ferdinand:She was a great captain indeed.  It pains me to say that we may have lost her.
+Ferdinand:I only wonder if there is anything I could have done.
+next:root3-captain2
+action end
+
+action:response:root3-captain2
+<player>
+root3-captain2-A:What kind of person was she?
+root3-captain2-B:How long has she worked on this ship?
+root3-captain2-trigger.SmillaMarcurio:I hear her relationship with the crew has been rocky.
+</>root3-captain2-null:Never mind.
+action end
+
+action:statement:root3-captain2-A
+Ferdinand:Diligent, to say the least.  She was devoted to making this ship the best it can be!
+Ferdinand:There is resignation and stagnation all around us.  But no matter our situation, we can always strive for better.
+Ferdinand:The captain understood this.
+next:root3-captain2
+action end
+
+action:statement:root3-captain2-B
+Ferdinand:She started at the same time that I did.  That is...the start of this voyage.
+Ferdinand:It's a big turnover, but I think that's exactly what this ship needed!  A little shake-up!
+next:root3-captain2
+action end
+
+action:statement:root3-captain2-trigger.SmillaMarcurio
+Ferdinand:Hmm.  Yes, I suppose you could say that, but it's nothing to worry over.
+Ferdinand:These things are to be expected when old and new ideas come together.  Some clash is inevitable.
+next:root3-captain2
+action end
+
+action:statement:root3-A
+Ferdinand:Shamefully, we may never know the precise details.
+Ferdinand:However, it seems that my previous optimism regarding the captain's location may have been...incorrect.
+Ferdinand:We should all hope for the best, but we can't let that blind us to reality.
+Ferdinand:They are most likely gone.
+next:root3
+action end
+
+action:statement:root3-B
+Ferdinand:I was there when we found the master key to the ship in her drawer.
+Ferdinand:I would like to think everyone on the ship was innocent, but that isn't possible.
+Ferdinand:Yes, I think Gwen is guilty.
+next:root3-B1
+action end
+
+action:response:root3-B1
+<player>
+root3-B2:What if the key was planted in Gwen's room?
+root3-B3:Why do you think she did it?
+</>root3-null:Never mind.
+action end
+
+action:statement:root3-B2
+Ferdinand:Now, that is an interesting idea.  What if the key was planted?
+Ferdinand:I will have to look into that possibility.  It is however unlikely, I should think.
+Ferdinand:Don't you worry about it.  Ferdinand is on the case!
+next:root3-B1
+action end
+
+action:statement:root3-B3
+Ferdinand:To be honest, there is something I did not speak of at the meeting earlier.
+Ferdinand:Gwen had approached me earlier.  She revealed to me that she felt someone was...following her.
+Ferdinand:She had decided it was Donovan.  She seemed to become obsessed about him.  I could not tell you why.
+Ferdinand:It seems hardly a coincidence, then, that she should turn out to be responsible for his disappearance.
+next:root3-B1
+action end
+
+action:statement:root3-C
+Ferdinand:It would seem that Gwen's paranoia got the better of her and pushed her to do some truly dreadful things.
+Ferdinand:The details may be a bit murky, but I believe that I have ascertained the nature of our situation.
+next:root3
+action end
+
+action:statement:root3-D
+Ferdinand:Very simple.  We keep Gwen restrained until we land, and let the authorities take care of the rest.
+Ferdinand:I'm sure whatever they find will back up what we have uncovered so far.
+Ferdinand:I think any rash actions or decisions could put us in even greater danger.
+next:root3
+action end
+
+dialogue end
+
+
+
+
+
+// CHAPTER 4 CONFESSION  GHOST/XU - FERDINAND ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+GhostXu-Ferdinand
+
+action:response:root3
+<player>
+<!>root3-trigger.chap4AllConfessions:I have solid proof that the key found in Gwen's room was planted there.
+root3-A:What do you think happened to Donovan and Paulo?
+root3-B:Do you believe that Gwen is guilty?
+root3-C:Why do you think all of this has happened?
+root3-D:What should we do now?
+root3-captain:What can you tell me about the captain?
+</>root-null:Never mind.
+action end
+
+action:statement:root3-captain
+Ferdinand:She was a great captain indeed.  It pains me to say that we may have lost her.
+Ferdinand:I only wonder if there is anything I could have done.
+next:root3-captain2
+action end
+
+action:response:root3-captain2
+<player>
+root3-captain2-A:What kind of person was she?
+root3-captain2-B:How long has she worked on this ship?
+root3-captain2-trigger.SmillaMarcurio:I hear her relationship with the crew has been rocky.
+</>root3-captain2-null:Never mind.
+action end
+
+action:statement:root3-captain2-A
+Ferdinand:Diligent, to say the least.  She was devoted to making this ship the best it can be!
+Ferdinand:There is resignation and stagnation all around us.  But no matter our situation, we can always strive for better.
+Ferdinand:The captain understood this.
+next:root3-captain2
+action end
+
+action:statement:root3-captain2-B
+Ferdinand:She started at the same time that I did.  That is...the start of this voyage.
+Ferdinand:It's a big turnover, but I think that's exactly what this ship needed!  A little shake-up!
+next:root3-captain2
+action end
+
+action:statement:root3-captain2-trigger.SmillaMarcurio
+Ferdinand:Hmm.  Yes, I suppose you could say that, but it's nothing to worry over.
+Ferdinand:These things are to be expected when old and new ideas come together.  Some clash is inevitable.
+next:root3-captain2
+action end
+
+action:statement:root3-A
+Ferdinand:Shamefully, we may never know the precise details.
+Ferdinand:However, it seems that my previous optimism regarding the captain's location may have been...incorrect.
+Ferdinand:We should all hope for the best, but we can't let that blind us to reality.
+Ferdinand:They are most likely gone.
+next:root3
+action end
+
+action:statement:root3-A
+Ferdinand:Shamefully, we may never know the precise details.
+Ferdinand:However, it seems that my previous optimism regarding the captain's location may have been...incorrect.
+Ferdinand:We should all hope for the best, but we can't let that blind us to reality.
+Ferdinand:They are most likely gone.
+next:root3
+action end
+
+action:statement:root3-B
+Ferdinand:I was there when we found the master key to the ship in her drawer.
+Ferdinand:I would like to think everyone on the ship was innocent, but that isn't possible.
+Ferdinand:Yes, I think Gwen is guilty.
+next:root3-B1
+action end
+
+action:response:root3-B1
+<player>
+root3-B2:What if the key was planted in Gwen's room?
+root3-B3:Why do you think she did it?
+</>root3-null:Never mind.
+action end
+
+action:statement:root3-B2
+Ferdinand:Now, that is an interesting idea.  What if the key was planted?
+Ferdinand:I will have to look into that possibility.  It is however unlikely, I should think.
+Ferdinand:Don't you worry about it.  Ferdinand is on the case!
+next:root3-B1
+action end
+
+action:statement:root3-B3
+Ferdinand:To be honest, there is something I did not speak of at the meeting earlier.
+Ferdinand:Gwen had approached me earlier.  She revealed to me that she felt someone was...following her.
+Ferdinand:She had decided it was Donovan.  She seemed to become obsessed about him.  I could not tell you why.
+Ferdinand:It seems hardly a coincidence, then, that she should turn out to be responsible for his disappearance.
+next:root3-B1
+action end
+
+action:statement:root3-C
+Ferdinand:It would seem that Gwen's paranoia got the better of her and pushed her to do some truly dreadful things.
+Ferdinand:The details may be a bit murky, but I believe that I have ascertained the nature of our situation.
+next:root3
+action end
+
+action:statement:root3-D
+Ferdinand:Very simple.  We keep Gwen restrained until we land, and let the authorities take care of the rest.
+Ferdinand:I'm sure whatever they find will back up what we have uncovered so far.
+Ferdinand:I think any rash actions or decisions could put us in even greater danger.
+next:root3
+action end
+
+
+
+action:statement:root3-trigger.chap4AllConfessions
+Ferdinand:The key?  Planted?  What are you talking about here?
+next:root3-concession
+action end
+
+action:response:root3-concession
+Xu
+root3-null:The key I saw in Donovan's room isn't the same as the one found in Gwen's room.  And Marcurio admitted to planting that key to incriminate Gwen.:trigger.chap4XuFerdConfession.on
+action end
+
+action:statement:root3Concession2
+Ferdinand:That is quite the revelation, Sue.  Marcurio, is she correct?
+next:root3-concession3
+action end
+
+action:statement:root3-concession3
+Marcurio:...Yeah, she's right.  I received the key in a package, along with anonymous instructions to plant it in Gwen's room.
+Ferdinand:What?!  You cannot be serious!  My very own staff, working behind my back to throw off my investigation!
+next:root3-concession4
+action end
+
+action:response:root3-concession4
+Xu
+root3-concession-5:Actually, I've been following anonymous instructions as well.  We have both been, for quite some time.
+action end
+
+action:statement:root3-concession-5
+Ferdinand:I...I don't understand.  What instructions?  Why would you do something like this?
+Marcurio:For money.  Whoever was anonymously sending instructions would also send handsome payments at the end.
+Marcurio:And honestly, it's been going on for a long time.  Since before the captain even worked on this ship.
+Ferdinand:Well, this is incredibly suspicious, don't you think?  Why, it adds a completely different dimension to our entire situation!
+Ferdinand:As for Gwen...perhaps it is not her, but the two of you who should be restrained in the observation room.
+Ferdinand:What sort of employees keep such secrets from their superiors?!  And at such a critical time!
+Marcurio:Sure, sure.  The real issue is, what are you going to do with this information now?
+Ferdinand:...
+Ferdinand:Well, there is no longer a point to keeping Gwen tied up.
+Ferdinand:Our main priority now should be to find out who this strange figure is issuing out commands and bribing our staff!
+next:root3-concession-6
+action end
+
+action:response:root3-concession-6
+Xu
+root3-concession-A:Any ideas on who it is?
+root3-concession-B:Do you think this is the same person responsible for the recent disappearances?
+root3-concession-C:What should be our next course of action?
+action end
+
+action:statement:root3-concession-A
+Ferdinand:Well, we can cross one person off the list - me.
+Ferdinand:I have access to every room on the ship with or without a master key.
+Ferdinand:I'd have no need to bribe someone to plant a key in Gwen's room.  I could do it myself!
+Marcurio:Also, I got my orders while the ship was at sea, so obviously it has to be someone on the ship now.
+Ferdinand:That implies it must be one of the ship's residents...but which one?
+next:root3-concession-6
+action end
+
+action:statement:root3-concession-B
+Marcurio:You have to admit, there's nothing directly linking the two.
+Marcurio:Like I said, these orders have been coming in for a long time - it's not a new occurence.
+Ferdinand:Sure, but if this person wanted Gwen incriminated...it sounds like an attempt to throw suspicion off themselves.
+Ferdinand:That's a pretty strong connection in my opinion.
+Marcurio:If you say so.
+next:root3-concession-6
+action end
+
+action:statement:root3-concession-C
+Marcurio:We know now that Gwen is innocent, but not a whole lot else.  So how much has really changed?
+Marcurio:If we can't be certain who the culprit is, we don't have much choice but to wait until we've landed.
+Marcurio:We can lock the ship down until authorities have carried out an investigation and questioned everybody.
+Ferdinand:Not the ideal course of action.  I'd like to revisit the evidence with this new information.
+Ferdinand:But I have to admit, if we can't prove one person is guilty, I'm not sure what there is to do.
+Ferdinand:Bind everyone in their rooms?  That's not a real solution.
+next:root3-null
+action end
+
+action:response:root3ConcessionD
+Xu
+root3-concession-E:None of those are solutions.  We need to find the killer and apprehend them or they will get away.
+action end
+
+action:statement:root3-concession-E
+Marcurio:Uh huh.  And just how do you propose we do that?
+next:root3-concession-F
+action end
+
+action:response:root3-concession-F
+Xu
+root3-null:Donovan was looking for a hidden area to the ship before he was killed.  I know for a fact it exists...and where to find it.  But only the master key can open it.:trigger.chap4AllConfessions.on
+action end
+
+action:statement:root3ConcessionG
+Marcurio:W-what?!  You never mentioned this to me before, Sue!
+Ferdinand:You know where to find it?  That's incredible news.  And if Donovan perished in his search for this area, that implies there's something to find there.
+Ferdinand:Perhaps something that your anonymous donor wants to remain hidden, no?
+Marcurio:If Donovan went missing looking for it, then that's all the more reason we should steer clear of it!  Let the guys with guns and badges investigate it.
+Ferdinand:That's not a bad point.  We need to think about our own safety, as well as that of the passengers.
+Ferdinand:...
+Ferdinand:I've got it!
+Ferdinand:What if everyone went into this hidden area together?  Safety in numbers, and all that.
+Ferdinand:If one of the people on the ship is a murderer, they won't be able to try anything funny - they'll be completely outnumbered.
+Marcurio:You can't be serious.  What, we just round up everyone and march them around?
+Ferdinand:Precisely!  I can call everyone together and we can make a full sweep of the area.  If there's evidence that ties everything together - we'll find it!
+next:root3-concession-H
+action end
+
+action:response:root3-concession-H
+Xu
+root3-concession-I:Perfect.  We'll find out the secret that Donovan was killed to hide, and set everything straight.:trigger.chap4FinalConfessOver.on
+action end
+
+action:statement:root3-concession-I
+Ferdinand:At least, I hope so.  Sue, when you're ready, let me know where the area is and I'll bring the passengers together.
+Ferdinand:A word of caution, though.  I believe this is the safest action for all of us, but that doesn't mean it is necessarily safe.
+Ferdinand:Once we put this plan in motion, there's no telling what will happen or what we will find.
+Ferdinand:So I urge you, we should explore every lead and make sure all loose ends are tied up before we go ahead with this.
+Marcurio:I just hope you guys know what you're doing...
+Ferdinand:I do too.
+Ferdinand:Oh!  I just remembered - I should probably let Gwen go and make an announcement!
+Ferdinand:Like I said, Sue.  Come talk to me when you're sure you're ready.  And not a moment sooner.
+next:root3-null
+action end
+
+
+
+action:statement:root4
+Ferdinand:Ah, there you are Sue!
+Ferdinand:Did you come to talk to me about the hidden area?  I have the master key we found in Gwen's room, so I'm all set.
+Ferdinand:But like I said, there's no telling what will happen when we investigate it.
+Ferdinand:Make sure everyone's ready for this.
+next:root4-A
+action end
+
+action:response:root4-A
+Xu
+<!>root4-chap5:Yes, I'm ready.
+</>root4-B:No, I'm not ready yet.
+action end
+
+action:statement:root4-chap5
+Ferdinand:Alright.  So, here's the million dollar question - how can we find this strange hidden area?
+next:root4-chap5-2
+action end
+
+action:response:root4-chap5-2
+Xu
+root4-chap5-A:On the outside wall of the dining room there's a door that's been painted over.  The master key will open it.
+</>root4-chap5-B:I forgot.  Oops.
+action end
+
+action:statement:root4-chap5-A
+Ferdinand:Amazing!  Painted over, you say?  That's quite extraordinary.
+Ferdinand:...How, exactly, did you discover this, Sue?
+next:root4-chap5-A-1
+action end
+
+action:response:root4-chap5-A-1
+Xu
+root4-null:Donovan was the one that discovered it.  I'm just carrying the message.:trigger.chapter5Init.on
+action end
+
+action:statement:root4-chap5-B
+Ferdinand:Well...come back and talk to me when you remember?
+next:root4-null
+action end
+
+
+action:statement:root4-B
+Ferdinand:Alright, if you think more time is needed.  I'm not going anywhere for a while.
+Ferdinand:Talk to me again when you're ready.
+next:root4-null
+action end
+
+
+dialogue end
+
+
+
+
+
+
+

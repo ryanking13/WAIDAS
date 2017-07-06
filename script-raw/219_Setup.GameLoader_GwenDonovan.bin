@@ -1,0 +1,13 @@
+
+// GWEN - DONOVAN ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Gwen-Donovan
+
+action:statement:root
+Gwen:...
+null:She's too anxious to say anything.
+next:root-null
+action end
+
+dialogue end

@@ -16,7 +16,7 @@ dialogue start
 Ghost-Paulo
 
 action:statement:root
-Paulo:여어.  나는 Paulo야.
+Paulo:Heya.  My name's Paulo.
 next:root-1
 action end
 

@@ -1,0 +1,93 @@
+
+
+// MARCURIO - FERDINAND ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Marcurio-Ferdinand
+
+action:statement:root
+Ferdinand:Why, hello Marcurio!  What a rare and most welcome sight.
+Ferdinand:Is there some issue you are having with the kitchen that I can assist you with?
+next:root-1
+action end
+
+action:response:root-1
+Marcurio
+root-2:Really though, what's your deal?
+root-3:Why are you always walking around everywhere?
+</>root-null:Bye.
+action end
+
+action:statement:root-2
+Ferdinand:I'm afraid I'm not quite sure what you mean!
+Ferdinand:I don't have any deals that I know of.
+next:root-2-A
+action end
+
+action:response:root-2-A
+Marcurio
+root-2-B:You're so damn happy all the time.
+root-2-C:You talk like an idiot.
+root-2-D:Nobody actually wants to work here.  Except you.
+</>root-null:Ugh, forget it.
+action end
+
+action:statement:root-2-B
+Ferdinand:Why, wouldn't you say that's a good thing?
+Ferdinand:Being happy isn't always easy in our troubled world, but it beats the alternative!
+Ferdinand:Wouldn't you say?
+next:root-2-A
+action end
+
+action:statement:root-2-C
+Ferdinand:Well, now you're just being mean.
+next:root-2-A
+action end
+
+action:statement:root-2-D
+Ferdinand:Yes, except me.
+Ferdinand:I will be frank with you, Marcurio.  We are not on the most glorious ship that has touched water.
+Ferdinand:Nor are our occupations the most esteemed.
+Ferdinand:But it is life's highest challenge to turn less-ideal circumstances to our advantage, no?
+next:root-2-A
+action end
+
+action:statement:root-3
+Ferdinand:Why, as the first mate it is my job to be aware of the ship's various on goings!
+Ferdinand:Doubly so, now that I must also stand in for our captain, bless her heart.
+next:root-3-A
+action end
+
+action:response:root-3-A
+Marcurio
+root-3-B:Our previous first mate didn't seem so interested in the whole ship.
+root-3-C:What is there going on near the passenger's rooms?  Or in the kitchen?
+root-3-D:There's no other reason?  Really?
+</>root-null:Never mind.
+action end
+
+action:statement:root-3-B
+Ferdinand:Well, everyone has their own manner of doing things I suppose.
+Ferdinand:I, for one, prefer doing my job rather than neglecting it!
+next:root-3-A
+action end
+
+action:statement:root-3-C
+Ferdinand:You're not thinking of the bigger picture, Marcurio!
+Ferdinand:To effectively manage anything, you must understand it from top to bottom.
+Ferdinand:The ship may appear to be only so many cogs and wheels.  But at its heart, it is composed of people.
+Ferdinand:I would be doing the ship an injustice if I did not study the most important thing - its inhabitants!
+next:root-3-A
+action end
+
+action:statement:root-3-D
+Ferdinand:You wound me, Marcurio!  I don't know what I've done to earn this distrust.
+Ferdinand:I do not know what strange suspicion you have of me, but hear this - Ferdinand is a man of his word, if nothing else!
+next:root-3-A
+action end
+
+dialogue end
+
+
+
+

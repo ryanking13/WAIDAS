@@ -1,0 +1,22 @@
+
+dialogue start
+Marcurio-Cat
+
+action:response:root
+Marcurio
+root-A:Hey cat.
+root-B:Pet the cat
+</>root-null:Leave it alone
+action end
+
+action:statement:root-A
+Sunshine:Meow!
+next:root-null
+action end
+
+action:statement:root-B
+Sunshine:Purrrr....
+next:root-null
+action end
+
+dialogue end

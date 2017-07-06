@@ -1,0 +1,40 @@
+
+
+
+// DONOVAN - GARV ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Donovan-Garv
+
+action:response:root
+Donovan
+root-1:Hey.
+</>root-null:Bye.
+action end
+
+action:statement:root-1
+Garv:Hello there.  It's, uh...Donovan, right?
+Garv:Say, did you wanna hand-feed my parrotlet?  It can be quite fun.
+next:root-2
+action end
+
+action:response:root-2
+Donovan
+root-3:Dear god...no.  No I do not.
+action end
+
+action:statement:root-3
+Garv:Alright, suit yourself.  I take it you're not an animal person.
+Garv:You know, you can tell a lot about a person by how they treat their pets...
+next:root-4
+action end
+
+action:response:root-4
+Donovan
+</>root-null:Fascinating.  Bye.
+action end
+
+dialogue end
+
+
+

@@ -1,0 +1,70 @@
+
+
+dialogue start
+Garv-EvilDonovan
+
+action:response:root
+Garv
+root-A:This is ridiculous.  You need to slow down and re-evaluate things.
+root-B:There must be some evidence we can use.  Some details.  Something!
+</>root-null:Never mind.
+action end
+
+action:statement:root-A
+Donovan:Explain.
+next:root-A-1
+action end
+
+action:response:root-A-1
+Garv
+root-A-2:You still can't explain the captain's disappearance, or these other people.  Killing everyone won't answer anything!
+root-A-3:If we can come up with a theory that explains everything, maybe the killer will become obvious.
+action end
+
+action:statement:root-A-2
+Donovan:I don't need to answer anything.  I don't care anymore.
+Donovan:Maybe you want to know why these things have happened.  I think it's too late for that.
+next:root
+action end
+
+action:statement:root-A-3
+Donovan:I need something better than a theory.  I need proof.  And as far as I can tell, there is none.
+Donovan:Maybe it went overboard with the captain.  Maybe it was here before I was thrown overboard.  But it's gone now.
+next:root
+action end
+
+action:statement:root-B
+Donovan:If you have an idea, please share.
+next:root-B-1
+action end
+
+action:response:root-B-1
+Garv
+root-B-2:What's in the boxes?
+<!>root-B-3:Is there anything in the kid's possession?:trigger.chap5GarvQuestion.on
+root-B-4:Do these other people have anything on them?  Clues of where they're from?
+</>root-null:Never mind...
+action end
+
+action:statement:root-B-2
+Donovan:There's some basic, non-spoilable food and drink.
+Donovan:But they're mostly empty, and I'd expect to find other things here.
+Donovan:For example, these people are all heavily sedated, but there's no drugs remaining here.
+Donovan:I think someone dumped everything important out of them.  It's a dead end.
+next:root-B-1
+action end
+
+action:statement:root-B-3
+Donovan:There was a crumpled piece of paper in his pocket.  It came from a book.
+Donovan:I couldn't see anything about it that was relevant to this whatsoever.
+next:root-B-1
+action end
+
+action:statement:root-B-4
+Donovan:Tattered rags for clothes and small cots, nothing else.
+Donovan:No identification.  No possessions.  The only thing I can say is they're not from around here.
+next:root-B-1
+action end
+
+
+dialogue end

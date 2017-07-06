@@ -1,0 +1,261 @@
+
+
+
+
+// QUELLA - DARRYL ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Quella-Darryl
+
+action:response:root
+Quella
+root-1:You look worried.  What's up?
+root-2:You spend a lot of time out here, don't you?
+</>root-null:Never mind.
+action end
+
+action:statement:root-1
+Darryl:Worried?  No, just...lost in thought is all.
+next:root-thoughts
+action end
+
+action:response:root-thoughts
+Quella
+root-thoughts-A:Penny for your thoughts?:trigger.chap2quellaDarrylProgression3.on
+root-thoughts-B:You're not really a fan of small talk, huh?
+root-trigger.chap2quellaDarrylProgression3:The one that got away, something like that?
+</>root-null:Talk to you later.
+action end
+
+action:statement:root-thoughts-A
+Darryl:Oh, just thinking about someone I used to know.
+next:root-thoughts
+action end
+
+action:statement:root-thoughts-B
+Darryl:Ha, sorry.  I guess I'm just not in a talkative mood right now.
+Darryl:I appreciate the effort, though.
+next:root-thoughts
+action end
+
+action:statement:root-trigger.chap2quellaDarrylProgression3
+Darryl:Well...not exactly.  But close enough.
+next:root-thoughts
+action end
+
+action:statement:root-2
+Darryl:I guess I do.
+Darryl:There's just something very calming about looking at the ocean.
+next:root-ocean
+action end
+
+action:response:root-ocean
+Quella
+root-ocean-A:It is very pretty, isn't it?:trigger.chap2quellaDarrylProgression.on
+root-trigger.chap2quellaDarrylProgression:Insignificant?  That's more scary than calming...
+root-ocean-B:You do seem exceptionally calm.:trigger.trigger.chap2quellaDarrylProgression2.on
+root-trigger.chap2quellaDarrylProgression2:What was your job, and why'd you leave?
+</>root-null:Talk to you later.
+action end
+
+action:statement:root-ocean-A
+Darryl:It's sublime.
+Darryl:When you look at the ocean, or the stars, you're reminded of just how insignificant you are.
+next:root-ocean
+action end
+
+action:statement:root-trigger.chap2quellaDarrylProgression
+Darryl:Maybe both.  You know, when I was a kid I had a huge fear of the ocean.
+Darryl:Knowing I could just sink further and further down, never reaching bottom...
+Darryl:Up here the ocean is a nice blue color, but go down just a bit and it becomes pitch black.
+Darryl:It terrified me.  Why shouldn't it?  But it's something you just learn to...ignore.
+next:root-ocean
+action end
+
+action:statement:root-ocean-B
+Darryl:Well, I don't have a lot to worry about anymore.
+Darryl:I left my job, and now I'm just living the good old hobo lifestyle.
+next:root-ocean
+action end
+
+action:statement:root-trigger.chap2quellaDarrylProgression2
+Darryl:Oh, I was an attorney.  A smart, boring occupation.
+Darryl:I left because...well, I just need to take a break from everything right now.
+Darryl:You could call it an early retirement.
+next:root-ocean
+action end
+
+
+
+action:response:root2
+Quella
+<!>root2-trigger.chap3readMarisJournal:I'm sorry, but I read your journal.
+root2-A:What was that about back there?
+root2-B:Something about the captain's disappearance has upset you.
+root2-C:Have you noticed anything suspicious around the ship?
+</>root2-null:Never mind.
+action end
+
+action:statement:root2-A
+Darryl:The captain...a murder...I don't have the energy to deal with it.
+Darryl:And even if I did, there's still nothing I could do about any of it.
+Darryl:I couldn't help her, and I can't help anyone here.
+next:root2
+action end
+
+action:statement:root2-B
+Darryl:She reminded me of...someone I used to know.
+Darryl:It doesn't matter anymore.
+next:root2
+action end
+
+action:statement:root2-C
+Darryl:I did notice some things were missing from my room.  Like the key to my journal.
+Darryl:And when I say missing, I mean stolen.  Seems like there's a thief on board.
+Darryl:Not sure why they took the key.  They might have thought it opened something more important.
+next:root2
+action end
+
+action:statement:root2-trigger.chap3readMarisJournal
+Darryl:You...what?  That was private.  Extremely private.
+Darryl:There's a reason it was locked.  And how did you get the key?
+next:root3
+action end
+
+action:response:root3
+Quella
+root3-1:I got the key from Sue's room.  I think she stole it from you.
+action end
+
+action:statement:root3-1
+Darryl:Is that right?  Well...thanks for letting me know, I guess.
+Darryl:But there was no reason to use it for yourself.
+next:root3point5
+action end
+
+action:response:root3point5
+Quella
+root3-2:I'll return the key, but we have to talk.:trigger.chap3DarrylSpills.on
+action end
+
+
+action:statement:root3-2
+Darryl:There's nothing to talk about.
+Darryl:You read the journal, so you know what happened.
+Darryl:We were married for three years.  Moved out to the suburbs, got a house...had plans for a family.
+Darryl:She was stressed about her work, but she was happy.  I thought.
+Darryl:She had combined medications.  Lots of them.  I guess she wanted to be sure.
+Darryl:I came home from work late and, well...there she was.
+next:root3-3
+action end
+
+action:response:root3-3
+Quella
+root3-A:I'm so sorry.
+root3-B:She was on medication?
+root3-C:It wasn't your fault.
+action end
+
+action:statement:root3-A
+Darryl:Sure.
+next:root3-3
+action end
+
+action:statement:root3-B
+Darryl:For her anxiety.  She would have panic attacks some times.
+Darryl:She also took sleeping pills.  Sometimes she got so tense about things, she had a hard time sleeping.
+Darryl:They told me it was slow, but peaceful.  Six to ten hours between the overdose and death.
+Darryl:I worked late that day.  I could have been there.
+next:root3-3
+action end
+
+action:statement:root3-C
+Darryl:There were signs.  For a long time, really.
+Darryl:But I never saw them.  And she never brought it up.
+Darryl:Why?  Why didn't I notice?  For years she was suffering, and I did nothing.
+Darryl:Nothing.
+next:root3-4
+action end
+
+action:response:root3-4
+Quella
+root3-why:She hid it well.  You couldn't have known.
+root3-support:Have you talked about this with others?
+root3-counsel:Have you gone to counseling?
+root3-escape:Darryl, you look like death itself...where are you really traveling to?:trigger.darrylUnlocked.on
+action end
+
+action:statement:root3-why
+Darryl:...Maybe.
+Darryl:But if I did...if I knew.  She'd still be here, wouldn't she?
+next:root3-4
+action end
+
+action:statement:root3-support
+Darryl:Yes.  With her family, and mine.
+Darryl:No one saw it coming.
+next:root3-4
+action end
+
+action:statement:root3-counsel
+Darryl:...A couple times.  But I stopped going.
+Darryl:I wasn't getting much out of it.
+next:root3-4
+action end
+
+action:statement:root3-escape
+Darryl:Far away, I hope.  I can't be sure.
+Darryl:But it doesn't matter.  None of it matters.
+next:root3-death
+action end
+
+action:response:root3-death
+Quella
+<!!>root3-death-A:God never gives you more than you can handle.:trigger.epilogueQD1.on
+<!!>root3-death-B:Darryl...what are you planning on doing?:trigger.epilogueQD2.on
+<!!>root3-death-C:If you ever want to talk, I'm here to listen.:trigger.epilogueQD3.on
+action end
+
+action:statement:root3-death-A
+Darryl:...What a load of cliche bullshit.
+next:root-null
+action end
+
+action:statement:root3-death-B
+Darryl:...
+Darryl:We're just strangers.  There's no reason for you to care about me.
+Darryl:So please...don't.
+next:root-null
+action end
+
+action:statement:root3-death-C
+Darryl:I don't think that'll be necessary.
+Darryl:But...thank you.
+next:root-null
+action end
+
+
+
+action:response:root4
+Quella
+root4-B:Something about the captain's disappearance upset you.
+root4-C:You should go back to therapy, Darryl.  You aren't okay.
+root4-null:Never mind.
+action end
+
+action:statement:root4-B
+Darryl:She reminded me of Mari.
+Darryl:A lot of things remind me of her.
+Darryl:...Everything does.
+next:root4
+action end
+
+action:statement:root4-C
+Darryl:Maybe I'm not supposed to be okay.
+Darryl:I deserve this.
+next:root4
+action end
+
+dialogue end
+
+

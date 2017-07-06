@@ -1,0 +1,227 @@
+
+
+
+dialogue start
+QuellasBooksQuella
+action:statement:root
+Quella:Some assorted books on writing and editing.
+Quella:I've read through them all so many times, I don't even know why I keep them with me!
+action end
+dialogue end
+
+dialogue start
+QuellasPapersQuella
+action:statement:root
+Quella:I just can't pin down this one scene.
+Quella:I must've rewritten this conversation half a dozen times, but it still doesn't feel right.
+Quella:I mean...does anyone talk like this in real life?  Come on, Quella...you can do better.
+action end
+dialogue end
+
+dialogue start
+QuellasTrashQuella
+action:statement:root
+Quella:I haven't been here long, but I've already managed to fill up the trashcan with rewrites.
+Quella:At this rate, how much can I expect to finish before time's up?
+Quella:...Well, nothing to do at this point but keep moving forward.
+action end
+dialogue end
+
+
+
+
+
+
+
+dialogue start
+XusLootDownQuella
+action:response:root
+Quella
+<!>root-1:Investigate the box.:trigger.chap3DarrylsKey.on
+</>root-null:Leave it alone.
+action end
+
+action:statement:root-1
+Quella:There's assorted electronics and jewelry here.  Does this all belong to Sue?
+Quella:Wait...that key says 'Darryl' on it.
+Quella:...
+Quella:I think I understand what's going on here.
+Quella:I should take Darryl's key.  It unlocks his journal, doesn't it?
+next:root-null
+action end
+
+action:statement:root2
+Quella:It's a box with assorted electronics and jewelry.
+Quella:I'm pretty sure, since I found Darryl's key here, that the rest isn't Sue's stuff either.
+next:root-null
+action end
+
+dialogue end
+
+
+
+dialogue start
+PaulosMessyBedQuella
+
+action:statement:root
+null:The bed sheets have been pulled all over the place.
+next:root-2
+action end
+
+action:response:root-2
+Quella
+root-A:Investigate
+</>root-null:Leave it alone
+action end
+
+action:statement:root-A
+null:After searching through the bed sheets and under the bed, nothing of note was found.
+Quella:If Paulo went missing over night, could this have been where the struggle started?
+next:root-null
+action end
+dialogue end
+
+
+dialogue start
+PaulosMessySuitcaseQuella
+
+action:statement:root
+null:The suitcase is open, and there are clothes spilling out of it.
+next:root-2
+action end
+
+action:response:root-2
+Quella
+root-A:Investigate
+</>root-null:Leave it alone
+action end
+
+action:statement:root-A
+null:The suitcase contains clothes, crumpled pictures, and some textbooks.
+next:root-3
+action end
+
+action:response:root-3
+Quella
+root-B:Examine the pictures
+root-C:Examine the textbooks
+</>root-null:Leave them alone
+action end
+
+action:statement:root-B
+null:There's a picture of a boy and what appears to be a husband and wife standing beside him.
+null:They're dressed formally, and are standing in a very exquisitely furnished room.
+Quella:I guess this is Paulo and his parents, huh?
+Quella:They don't seem to like smiling for the camera...
+next:root-3
+action end
+
+action:statement:root-C
+null:There's textbooks for Essay Writing, Biology, American History and Trigonometry.
+Quella:Trigonometry...isn't that high school math?  How old was this kid?
+next:root-3
+action end
+
+dialogue end
+
+
+dialogue start
+PaulosMessyDrawerQuella
+
+action:statement:root
+null:A couple of the drawers have been pulled out.
+null:On the side of the dresser...is that...blood?
+next:root-2
+action end
+
+action:response:root-2
+Quella
+root-A:Investigate the drawers:trigger.chap4Bracelet.on
+root-B:Investigate the blood
+</>root-null:Leave it alone
+action end
+
+action:statement:root-A
+null:Most of the drawers simply contain clothes and have nothing interesting in them.
+null:The drawer hanging open on the top, however, has a bracelet resting on some socks.
+null:The bracelet and socks have been stained red with blood.
+Quella:It has the letter 'M' engraved on it.  Hmmm...
+next:root-2
+action end
+
+action:statement:root-B
+Quella:Is this Paulo's blood?  My god...
+Quella:It looks like he was smashed into the side of the dresser really hard.
+Quella:Who would do this to just a child?
+next:root-2
+action end
+
+dialogue end
+
+
+dialogue start
+PaulosMessyBookQuella
+
+action:statement:root
+null:There's a book on the ground.
+null:It's titled "Overcoming Shyness".  It seems to be a self-help book.
+null:The pages are bent and crumpled by the way it's been thrown to the ground.
+next:root-2
+action end
+
+action:response:root-2
+Quella
+<!>root-A:Investigate:trigger.chap6FerdClue1.on
+</>root-null:Leave it alone
+action end
+
+action:statement:root-A
+null:The book is open to page 105.  There doesn't seem to be anything out of the ordinary about it.
+Quella:Wait a second...the next page is missing.
+Quella:It looks like it got torn out somehow.  There's only a jagged scrap left.
+next:root-2
+action end
+
+dialogue end
+
+
+
+dialogue start
+SavePropQuella
+
+action:statement:root
+null:There's a teddy bear lying on the ground.
+null:It looks a little beat-up.
+next:root-2
+action end
+
+action:response:root-2
+Quella
+root-A:Investigate
+</>root-null:Leave it alone
+action end
+
+action:statement:root-A
+Quella:Strange.  When I look at this doll, I get a weird feeling.
+Quella:Like...it's looking back at me.
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

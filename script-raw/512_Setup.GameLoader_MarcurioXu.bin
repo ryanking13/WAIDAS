@@ -1,0 +1,119 @@
+
+
+
+
+// MARCURIO - XU ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Marcurio-Xu
+
+action:response:root
+Marcurio
+root-1:Things aren't so great between you and Alton now, huh?
+root-2:So, what's your plan to get off this piece of scrap again?
+root-3:How'd you get stuck on this ship anyway?
+</>root-null:Bye.
+action end
+
+action:statement:root-1
+Xu:Nope.
+next:root-1-A
+action end
+
+action:response:root-1-A
+Marcurio
+root-1-B:You bring him down easy?
+root-1-C:Nothing else to say?
+</>root-null:Guess you don't want to talk about it.
+action end
+
+action:statement:root-1-B
+Xu:I guess not.  Things kind of...
+Xu:Well, there's nothing I can do about it now.
+next:root-1-A
+action end
+
+action:statement:root-1-C
+Xu:Sorry.  Don't really want to get into all that right now.
+next:root-1-A
+action end
+
+action:statement:root-2
+Xu:I guess I'm figuring it out as I go.
+Xu:Saving up money for a ticket out of here would be...tricky.  And getting another job is near impossible.
+Xu:I might have to strike some kind of deal if I can.
+next:root-2-A
+action end
+
+action:response:root-2-A
+Marcurio
+root-2-B:I don't like the sound of that.
+root-2-C:What kind of deal?
+</>root-null:Well, good luck.
+action end
+
+action:statement:root-2-B
+Xu:Well, that's not saying a lot coming from you.  No offense.
+Xu:Look, I can handle myself, alright?  I always look before I leap.
+next:root-2-A
+action end
+
+action:statement:root-2-C
+Xu:I don't know.  Bribery?  I'd do blackmail if I could find a hook.
+Xu:I'm not there yet.  But I think I'm getting close.
+next:root-2-D
+action end
+
+action:response:root-2-D
+Marcurio
+root-2-E:Blackmail?  You must have a death wish.  It would never work.
+action end
+
+action:statement:root-2-E
+Xu:Maybe you're right.  Maybe not.
+Xu:But if it was the only shot I had left, I'd probably take it.
+next:root-null
+action end
+
+action:statement:root-3
+Xu:You've never asked me about that before.  Why now?
+next:root-3-A
+action end
+
+action:response:root-3-A
+Marcurio
+root-3-B:Because I want to know now.
+root-3-C:I'd kinda like to know who I'm working with here.
+<!>root-trigger.chap3MarcPressesXu:Considering all the shit you do that I turn a blind eye to, I think you kinda owe me this.:trigger.chap3XuUnlocked.on
+</>root-null:Forget it.
+action end
+
+action:statement:root-3-B
+Xu:That's your reason?  Really? 
+Xu:Sorry, if that's all it is, then I'd rather not get into my history.
+next:root-3-A
+action end
+
+action:statement:root-3-C
+Xu:I could say the same to you.  But I keep my questions about why you're here to myself.
+Xu:We trust each other, right?  Those things aren't important.
+next:root-3-A
+action end
+
+action:statement:root-trigger.chap3MarcPressesXu
+Xu:Woah, woah.  Really, Marc?  You're going to play that card?
+Xu:....
+Xu:Jesus, you're serious.
+Xu:Alright, fine.  But you better keep this to yourself.
+Xu:I originally came here on a student visa to go to college.  Being admitted and getting the visa were...extremely expensive.
+Xu:And then I fucked it up.  Flunked out during my junior year.
+Xu:I couldn't go back home like that.  Not after everything my family did to get me here.
+Xu:So I just...disappeared.  Crossed the border and looked for whatever job I could get.
+Xu:Which was basically just this one.  So, here I am.
+next:root-null
+action end
+
+dialogue end
+
+
+

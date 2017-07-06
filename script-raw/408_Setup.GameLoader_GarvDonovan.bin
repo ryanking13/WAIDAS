@@ -1,0 +1,64 @@
+
+
+// GARV - DONOVAN ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Garv-Donovan
+
+action:response:root
+Garv
+root-1:What brought you on board this ship?
+root-2:You seem to like walking around the ship a lot.
+</>root-null:Goodbye.
+action end
+
+action:statement:root-1
+Donovan:From what I can tell, that's no concern of yours.
+next:root-1-A
+action end
+
+action:response:root-1-A
+Garv
+root-1-B:You're right.  But there's been a disappearance on the ship, and everyone is a suspect.
+root-1-C:What's the harm in telling me?  Surely there's nothing to hide?
+</>root-null:Goodbye.
+action end
+
+action:statement:root-1-B
+Donovan:And you're the one who's going to get to the bottom of it, is that right?
+Donovan:I'm not going to stick around and humor your pointless questions.
+next:root-null
+action end
+
+action:statement:root-1-C
+Donovan:No harm, and no benefit either.  But if you insist...
+Donovan:I'm travelling to meet an old friend of mine.
+Donovan:Now, I have things to do.
+next:root-null
+action end
+
+action:statement:root-2
+Donovan:There's not much else to do on a ship like this.
+next:root-2-A
+action end
+
+action:response:root-2-A
+Garv
+root-2-B:You're not looking for something?  Or someone?
+root-2-C:It's almost like you're keeping tabs on things around here.
+</>root-null:Goodbye.
+action end
+
+action:statement:root-2-B
+Donovan:Of course not.
+Donovan:What is there to look for on this tea cup?
+next:root-null
+action end
+
+action:statement:root-2-C
+Donovan:I see you're trying to play detective.
+Donovan:Maybe if you're suspicious of everyone, everyone won't think to be suspicious of you?
+next:root-null
+action end
+
+dialogue end

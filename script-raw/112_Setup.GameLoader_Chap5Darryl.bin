@@ -1,0 +1,40 @@
+
+
+
+dialogue start
+Darryl-EvilDonovan
+
+action:response:root
+Darryl
+root-A:Why is this some kind of crusade for you?  What's really going on?
+root-B:Have you found anything here that could reveal something about the killer?
+</>root-null:Never mind.
+action end
+
+action:statement:root-A
+Donovan:Just look around you.  Look at this place.  You see what's happening here.  How can you not be disgusted by it?!
+Donovan:I'm not going to allow even a one percent chance for this to continue.
+next:root-A-1
+action end
+
+action:response:root-A-1
+Darryl
+root-A-2:You were on this mission before you came down here.  There's something else.
+action end
+
+action:statement:root-A-2
+Donovan:What does it matter?  The result is the same.  Stop wasting my time!
+next:root
+action end
+
+action:statement:root-B
+Donovan:You would think so, wouldn't you?  But you'd be wrong.
+Donovan:No fingerprints.  No shoeprints.
+Donovan:Everyone is incredibly drugged.  They are unarousable and I doubt they'd remember anything even if they were lucid.
+Donovan:The boxes contain some supplies and foodstuffs, but they're mostly empty.  As if some things have been disposed of.
+Donovan:The blood stains are relatively new.  This place has been cleaned not too long ago.
+Donovan:I think that covers everything.
+next:root
+action end
+
+dialogue end

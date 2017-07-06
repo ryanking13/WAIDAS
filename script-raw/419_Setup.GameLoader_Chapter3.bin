@@ -1,0 +1,374 @@
+
+
+dialogue start
+MeetingIntercom
+
+action:statement:root
+Ferdinand:Good morning, passengers!  This is your friendly first mate Ferdinand speaking!
+Ferdinand:I would like to ask all staff and passengers onto the B1 floor for an important announcement!
+Ferdinand:I could make the announcement via intercom, but I feel this is a matter that requires a face to face talk.
+Ferdinand:Thank you, and I'll see you very soon!
+next:root-null
+action end
+
+dialogue end
+
+
+dialogue start
+ChapterThreeIntro
+
+action:statement:root
+Ferdinand:Hello everyone!
+Ferdinand:As the first mate of this fine vessel, I must inform the crew of any notable events!
+Ferdinand:And so it happens that right now, we find ourselves in just such a -
+Marcurio:*cough cough COUGH*
+Ferdinand:...Right.
+Ferdinand:Yesterday, our lovely captain was not in the pilothouse all day.
+Ferdinand:In her absence, it is my duty to fill her shoes and pilot the ship.  For the time being.
+Ferdinand:However, rest assured that this is no cause for alarm!  I am sure the captain is fine.
+Ferdinand:She is most certainly on the ship somewhere. Yup. Right as rain.
+Ferdinand:If the staff would look for her in their off-hours, I am sure things will be back to normal by nightfall.
+Ferdinand:Now I must head to the pilothouse.  Enjoy your cruise!
+next:root-null
+action end
+
+action:statement:root2
+Marcurio:Well, you all heard the man.  Sounds like unpaid overtime to me.
+Quella:Is that...is that true?  The captain is missing?
+Xu:Actually, I didn't see her yesterday either. Not that I was looking, but...
+Marcurio:We won't know anything for sure until we've searched the ship.
+Marcurio:No reason to start freaking out now.
+Garv:Maybe not, but it does raise a lot of questions, doesn't it?
+next:root-null
+action end
+
+action:statement:root3
+Marcurio:...Well, breakfast hours have started.  I gotta get back to work.
+Marcurio:No matter what happens, people gotta eat.
+next:root-null
+action end
+
+action:statement:root4
+Marcurio:Sue, you coming?
+Xu:...Yes!  Yes, of course.  Sorry.
+next:root-null
+action end
+
+action:statement:root5
+Garv:I have a feeling they aren't going to find the captain.
+Alton:W...what do you mean?
+Garv:Given the circumstances, they didn't seem very worried.
+Garv:I wonder if they know something they're not letting on.
+Alton:But the captain has to be somewhere, right?
+Garv:...
+Alton:...I should get to work, I guess.  I'm sure this'll turn out okay...
+next:root-null
+action end
+
+
+action:statement:root6
+Quella:Where's Donovan?  He's the only person who didn't show up.
+Garv:Yeah, strange.  I'm sure he heard the announcement on the intercom.
+Gwen:...That's okay.  He creeps me out...
+Garv:He is a strange one.  It might not be a bad idea to keep an eye on him.
+Garv:Well, I should go feed my pets.  Be careful, everyone.
+next:root-null
+action end
+
+action:statement:root7
+Quella:You've been really quiet, Darryl.
+Darryl:...
+Quella:What do you think?  What should we do?
+Darryl:Nothing.  There's no point.
+Quella:We can search the ship, or ask around if anyone saw something suspicious, or...
+Darryl:....
+Quella:What is it?
+next:root-null
+action end
+
+action:statement:root8
+Darryl:Don't you get it?
+Darryl:She's dead.
+Darryl:And there's nothing we can do about it.
+next:root-null
+action end
+
+action:statement:root9
+Quella:When they announced the captain was missing, Darryl had a strong reaction.
+Quella:He looked like he was in pain.
+Quella:What's going on with him...?
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+dialogue start
+DonovansSecret
+
+action:statement:root
+Donovan:You're playing a dangerous game here.
+Donovan:Stealing the master key from the pilothouse, blackmailing me...what do you hope to accomplish?
+next:root-null
+action end
+
+action:response:root1
+Xu
+<?>root-key:Why did you break into my room and take the master key?
+<!>root-2:I want answers.  The captain is dead, and if we're going to find out why we can't afford to keep secrets from each other.
+action end
+
+action:statement:root-key
+Donovan:You mean the master key you stole from the pilothouse?
+Donovan:I need unrestricted access to the rooms on this ship.  For that, I needed the key.
+Donovan:It was never yours to take.  And I had greater need for it.
+next:root1
+action end
+
+action:statement:root-2
+Donovan:There is no 'we'.  But fine.
+Donovan:The first secret is that the captain isn't dead.
+Donovan:She's still somewhere on this ship, though I don't know in what state.
+next:root-3
+action end
+
+action:response:root-3
+Xu
+<?>root-A:That sounds unlikely.
+<?>root-B:What do you mean, 'in what state'?
+<?>root-C:Where on the ship is she, then?
+<!>root-D:How can you possibly know that for sure?
+action end
+
+action:statement:root-A
+Donovan:Only from your perspective.
+Donovan:I have solid reason to believe it's more likely she's been abducted.
+next:root-3
+action end
+
+action:statement:root-B
+Donovan:If she was abducted, she's probably seriously injured.
+Donovan:She should be alive, but she'll need medical attention.
+next:root-3
+action end
+
+action:statement:root-C
+Donvan:I haven't checked every room of the ship yet.  The master key will solve that problem.
+Donovan:On top of that...
+Donovan:This is an old ship.  It's clearly seen renovations over the years.
+Donovan:That could mean there are secret areas to it that we don't know about.
+next:root-3
+action end
+
+action:statement:root-D
+Donovan:...
+Donovan:What I'm about to tell you cannot leave this room.
+Donovan:...For the sake of the captain, and all the other people on this ship.
+next:root-E
+action end
+
+action:statement:root-E
+Donovan:I'm in pursuit of a known serial killer.  His trail has led me to this ship.
+Donovan:He's a sadist.  He tortures his victims, maims them...and worse.  But he keeps them alive for days.
+Donovan:I believe he has chosen the captain as his latest victim.
+Donovan:If I'm right, there's still time to reach her before she dies.
+next:root-4
+action end
+
+action:response:root-4
+Xu
+<?>root-4-A:Who is it?
+<?>root-4-B:How do you know the serial killer is on the ship?
+<?>root-4-C:Would they really take such a big risk by leaving the captain alive here?
+<?>root-4-D:So, you're a cop or something?
+<!>root-4-E:What can we do, then?
+action end
+
+action:statement:root-4-A
+Donovan:If I knew that, we wouldn't be having this conversation.
+Donovan:All I have is a basic profile - it's an adult white male.
+Donovan:So you're ruled out.  Which is the only reason we're having this conversation right now.
+next:root-4
+action end
+
+action:statement:root-4-B
+Donovan:That's confidential.
+Donovan:This search has been going on for a long time and has involved multiple people.
+next:root-4
+action end
+
+action:statement:root-4-C
+Donovan:To him, there would be no point in immediately killing his target.
+Donovan:And if anything, the risk of being discovered here...it might just make it more exciting to him.
+Donovan:When I realized he was on this ship, I knew there was the chance this would happen.
+next:root-4
+action end
+
+action:statement:root-4-D
+Donovan:FBI.
+next:root-4-D-1
+action end
+
+action:response:root-4-D-1
+Xu
+root-4-D-2:Can I see your badge?:trigger.chap3xuDonProgression.on
+root-trigger.chap3xuDonProgression:Then how do I know I can trust what you say?
+root-4-D-3:Why don't you call for help?
+action end
+
+action:statement:root-4-D-2
+Donovan:No.
+next:root-4
+action end
+
+action:statement:root-trigger.chap3xuDonProgression
+Donovan:I'm laying innocent lives on the line by sharing this information with you.
+Donovan:If I'm going to put that much trust in you, I expect some in return.
+next:root-4
+action end
+
+action:statement:root-4-D-3
+Donovan:I don't need any help.  It would only get in my way.
+Donovan:In order to apprehend the right person, I need evidence.
+Donovan:That means stealth and surveillance.  One person is more effective for that.
+next:root-4
+action end
+
+action:statement:root-4-E
+Donovan:You can help by being quiet and staying out of my way.
+Donovan:I'll need to make a full sweep of the boat.  That's where the master key comes in.
+Donovan:When I do find the captain, I'll be able to track down my killer.
+Donovan:...Let me tell you something.
+Donovan:There is such a thing as evil.  It's on this ship with us.
+Donovan:And I'm here to exterminate it.
+Donovan:Now, I have a lot of work to do, so I'd like you to go away.
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+dialogue start
+chap3theTwist
+
+
+action:statement:root
+Donovan:In theory, the dining room is on the other side of this wall.
+Donovan:But investigating the dining room wall showed there is a hollow space somewhere here.
+Donovan:Hmm...
+Donovan:Like I thought, there's a layer of fresh paint here.  I wonder if...
+Donovan:Yes, there's a seam in the wall that's been painted over.  There's a waist-high door here.
+Donovan:And now that I've cleared off a bit more paint, I can see a lock to the door.
+next:root-investigate
+action end
+
+action:response:root-investigate
+Donovan
+root-fail:Investigate the lock.
+</>root-null:Leave it alone.
+action end
+
+action:statement:root-fail
+Donovan:This lock is quite modern and sophisticated.  It must have been installed in the last decade.
+Donovan:Picking a lock like this is still possible, but I don't have the tools.
+Donovan:It could take several days...I don't have that kind of time.
+Donovan:I wonder if the master key in my room would be able to open it.
+next:root-null
+action end
+
+
+
+action:statement:root2
+Donovan:In theory, the dining room is on the other side of this wall.
+Donovan:But investigating the dining room wall showed there is a hollow space somewhere here.
+Donovan:Hmm...
+Donovan:Like I thought, there's a layer of fresh paint here.  I wonder if...
+Donovan:Yes, there's a seam in the wall that's been painted over.  There's a waist-high door here.
+Donovan:And now that I've cleared off a bit more paint, I can see a lock to the door.
+next:root2-investigate
+action end
+
+action:response:root2-investigate
+Donovan
+<!>root2-nulll:Investigate the lock.:trigger.chap3theTwistTrigger.on
+</>root2-null:Leave it alone.
+action end
+
+action:statement:root3
+Donovan:This lock is quite modern and sophisticated.  It must have been installed in the last decade.
+Donovan:Picking a lock like this is still possible, but I don't have the tools.  It could take several days...
+null:*click*
+Donovan:...Except that the boat's antiquated skeleton key is somehow able to open it.
+null:The waist-high door slides open to reveal a ladder extending down into darkness.
+next:root-null
+action end
+
+action:statement:root4
+Donovan:This might be what I've been looking for.
+Donovan:What happens next is very important.  I'll need to retrieve more equipment from my room.
+Donovan:Worst case scenario, the captain is too physically damaged to answer any questions.
+Donovan:I'll need to lay down a proper investigation to ensure I get the info I need.
+next:root-null
+action end
+
+action:statement:root5
+Donovan:Who are you?  How long have you been standing there?
+next:root-null
+action end
+
+action:statement:root6
+???:...
+next:root-null
+action end
+
+action:statement:root7
+???:How sad.
+???:You didn't know it, but you never stood a chance.  You weren't even close to the truth.
+???:Not nearly as close as she was.
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

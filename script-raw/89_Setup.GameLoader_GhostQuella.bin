@@ -1,0 +1,232 @@
+
+
+// GHOST/ALTON - QUELLA ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Ghost-Quella
+
+action:response:root
+<player>
+root-1:When was the last time you saw the captain?
+root-2:Have you noticed anything odd around the ship recently?
+</>root-null:Never mind.
+action end
+
+action:statement:root-1
+Quella:I guess...I'd have to say yesterday afternoon, maybe?
+Quella:I don't think I've seen her today at all.
+Quella:Then again, I basically locked myself in my room most of day.
+next:root-null
+action end
+
+action:statement:root-2
+Quella:No, can't say I have.  Why, what's going on?
+next:root-2-A
+action end
+
+action:response:root-2-A
+<player>
+root-2-B:I think something has happened to the captain.
+</>root-null:Nothing, forget it.
+action end
+
+action:statement:root-2-B
+Quella:For...for real?
+Quella:If you really think so, you should tell someone.
+Quella:Someone more important than me!
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+// CHAPTER 3  GHOST - QUELLA  ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Ghost-Quella
+
+action:response:root2
+<player>
+root2-1:What do you think has happened to the captain?
+root2-2:What should we all do?
+root2-3:Who might want to get rid of the captain?
+root2-captain:What can you tell me about the captain?
+root-trigger.chap3SecretArea:Do you know about any secret areas on the ship?
+</>root2-null:Never mind.
+action end
+
+action:statement:root2-1
+Quella:I'm reserving judgment for now.  It doesn't help to jump to any wild conclusions.
+next:root2
+action end
+
+action:statement:root2-2
+Quella:Searching the ship isn't a bad idea.  Also, someone on board may know something about what happened to her.
+Quella:That Donovan guy is very secretive.  I would like to know what he's thinking...
+next:root2
+action end
+
+action:statement:root2-3
+Quella:I haven't the foggiest idea.  Given how new she was here, I doubt it would have been over something personal, though.
+next:root2
+action end
+
+action:statement:root2-captain
+Quella:I hope everyone's wrong about the captain.  I mean, I hope she's alright.
+Quella:She's an amazing person.
+next:root2-captain2
+action end
+
+action:response:root2-captain2
+<player>
+root2-captain2-A:How did you get along with her?:trigger.SmillaQuella.on
+root2-captain2-trigger.SmillaQuella:She had been through a lot?:trigger.GhostBGProgressQuella.on
+root2-captain2-B:How did she get along with everyone else?
+</>root2-null:Never mind.
+action end
+
+action:statement:root2-captain2-A
+Quella:She stopped by my room some times while I was writing.  She even read through some of my drafts and gave feedback.
+Quella:She sincerely wanted to help me within moments of finding out who I am.  A lot of empathy in her.
+Quella:I'd like to see her again and return the favor.  She had clearly been through a lot.
+next:root2-captain2
+action end
+
+action:statement:root2-captain2-trigger.SmillaQuella
+Quella:Sometimes the people who seem the warmest and liveliest are the ones truly struggling.
+Quella:She was very friendly, but she never talked about herself.  Where she was from, what she did before this.
+Quella:I think she came here to get away from her past.  There was something she needed to forget.
+next:root2-captain2
+action end
+
+action:statement:root2-captain2-B
+Quella:She'd stop by the lower decks when she could to check up on people.  It was a nice gesture.
+Quella:She meshes better with some people than others, but I think everyone generally likes her.
+next:root2-captain2
+action end
+
+
+action:statement:root-trigger.chap3SecretArea
+Quella:Huhhh?  What's that about?
+Quella:I can't say I had even heard about that kind of thing.  Sorry.
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+// CHAPTER 4   GHOST - QUELLA ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Ghost-Quella
+
+action:response:root3
+<player>
+root3-A:What do you think happened to Donovan and Paulo?
+root3-B:Do you believe that Gwen is guilty?
+root3-C:Why do you think all of this has happened?
+root3-D:What should we do now?
+root3-captain:What can you tell me about the captain?
+</>root-null:Never mind.
+action end
+
+action:statement:root3-A
+Quella:I guess everyone has decided they're...dead.
+Quella:It seems so strange to decide that so quickly, but I guess there aren't many alternatives.
+next:root3
+action end
+
+action:statement:root3-B
+Quella:Honestly, I don't.
+Quella:I don't feel she's that kind of person.  She's eccentric, and scared...but not murderous.
+Quella:I refuse to think she's behind a triple homicide.  It's crazy.
+next:root3-B1
+action end
+
+action:response:root3-B1
+<player>
+root3-B2:Have you considered if the key was a plant?
+root3-B3:Then how can her innocence be proven?
+root3-B4:So you think the killer is still free?
+</>root3-null:Never mind.
+action end
+
+action:statement:root3-B2
+Quella:I have, yes.  It makes a lot of sense to me.
+Quella:It's almost odd that more people haven't thought about that.
+next:root3-B1
+action end
+
+action:statement:root3-B3
+Quella:I'm not sure.  I guess one way would be to incriminate some one else?
+Quella:But that doesn't seem possible.  We know so little about the disappearance of the captain, Donovan, and Paulo...
+next:root3-B1
+action end
+
+action:statement:root3-B4
+Quella:It sounds like that to me.
+Quella:I bet it would be really convenient for that person if Gwen took all the blame, don't you?
+next:root3-B1
+action end
+
+action:statement:root3-C
+Quella:I don't know.
+Quella:All I know is...something big is going on here.  Something larger than any of us.
+Quella:Call it a feeling.  I just know.
+next:root3
+action end
+
+action:statement:root3-D
+Quella:I think if we want to get to the truth of things, Gwen needs to be cleared of guilt.
+Quella:Then we can focus on looking for the real culprit.  Whoever that is.
+next:root3
+action end
+
+action:statement:root3-captain
+Quella:It's sad.  Everything that's happened is so sad.  I don't know why anyone would do this.
+next:root3-captain2
+action end
+
+action:response:root3-captain2
+<player>
+root3-captain2-A:How did you get along with her?:trigger.SmillaQuella.on
+root3-captain2-trigger.SmillaQuella:She had been through a lot?:trigger.GhostBGProgressQuella.on
+root3-captain2-B:How did she get along with everyone else?
+</>root3-null:Never mind.
+action end
+
+action:statement:root3-captain2-A
+Quella:She stopped by my room some times while I was writing.  She even read through some of my drafts and gave feedback.
+Quella:She sincerely wanted to help me within moments of finding out who I am.  A lot of empathy in her.
+Quella:...I wish I could see her again and return the favor.  She had clearly been through a lot.
+next:root3-captain2
+action end
+
+action:statement:root3-captain2-trigger.SmillaQuella
+Quella:Sometimes the people who seem the warmest and liveliest are the ones truly struggling.
+Quella:She was very friendly, but she never talked about herself.  Where she was from, what she did before this.
+Quella:I think she came here to get away from her past.  There was something she needed to forget.
+next:root3-captain2
+action end
+
+action:statement:root3-captain2-B
+Quella:She'd stop by the lower decks when she could to check up on people.  It was a nice gesture.
+Quella:She got along better with some people than others, but I think everyone generally liked her.
+next:root3-captain2
+action end
+
+dialogue end
+
+
+
+

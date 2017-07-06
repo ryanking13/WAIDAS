@@ -1,0 +1,1141 @@
+
+
+// CHAPTER 3 CINEMATIC SCRIPTING
+
+trigger start
+chap3captainMissing,0
+requirements
+	.null
+effects
+trigger end
+
+trigger start
+initiateThirdChapter,-1
+requirements
+	self.timer-1
+effects
+
+	cinematic.removeProp-Boat-BoatSundown
+	cinematic.removeProp-Boat-BoatSundownWater
+	cinematic.addParallaxProp-Boat-BoatDaytime
+	cinematic.removeProp-Observation Room-WindowSundown
+	cinematic.addProp-Observation Room-WindowDaytime
+
+	dialogue.changeDialogueRoot-Ghost<hyphen>Paulo-root2
+	dialogue.changeDialogueRoot-Ghost<hyphen>Ferdinand-root2
+	dialogue.changeDialogueRoot-Ghost<hyphen>Marcurio-root2
+	dialogue.changeDialogueRoot-Ghost<hyphen>Xu-root2
+	dialogue.changeDialogueRoot-Ghost<hyphen>Alton-root2
+	dialogue.changeDialogueRoot-Ghost<hyphen>Donovan-root3
+	dialogue.changeDialogueRoot-Ghost<hyphen>Garv-root2
+	dialogue.changeDialogueRoot-Ghost<hyphen>Quella-root2
+	dialogue.changeDialogueRoot-Ghost<hyphen>Gwen-root2
+	dialogue.changeDialogueRoot-Ghost<hyphen>Darryl-root2
+	
+	dialogue.changeDialogueRoot-Cat<hyphen>Alton-root3
+	dialogue.changeDialogueRoot-Quella<hyphen>Alton-chap3
+	dialogue.changeDialogueRoot-Cat<hyphen>Garv-root2
+	
+	dialogue.changeDialogueRoot-XuStealMarcurio-root2
+	dialogue.changeDialogueRoot-XuStealGarv-root2
+	
+	dialogue.changeDialogueRoot-GhostXu<hyphen>Marcurio-root2
+	
+	dialogue.changeDialogueRoot-KitchenFridge-root2
+	dialogue.changeDialogueRoot-KitchenCupboard-root2
+	
+	trigger.triggerStatus-lockGwensDoor-asleep
+	trigger.triggerStatus-lockDonovansDoor-asleep
+	trigger.triggerStatus-lockDonovansDoor2-asleep
+	
+	prop.changeAllPermission-DonovansDoor-false
+	prop.changePermission-DonovansDoor-Donovan-true
+	map.changeTransition-Donovan's Room-Basement Two-on
+	prop.changeAllPermission-DarrylsDoor-true
+
+	character.eraseBehavior-Ferdinand
+	character.eraseBehavior-Marcurio
+	character.eraseBehavior-Xu
+	character.eraseBehavior-Alton
+	character.eraseBehavior-Gwen
+	character.eraseBehavior-Darryl
+	character.eraseBehavior-Quella
+	character.eraseBehavior-Garv
+	character.pauseCommand-Ferdinand
+	character.pauseCommand-Marcurio
+	character.pauseCommand-Xu
+	character.pauseCommand-Alton
+	character.pauseCommand-Gwen
+	character.pauseCommand-Darryl
+	character.pauseCommand-Quella
+	character.pauseCommand-Garv
+	
+	character.stopChar-Ferdinand
+	character.stopChar-Marcurio
+	character.stopChar-Xu
+	character.stopChar-Alton
+	character.stopChar-Gwen
+	character.stopChar-Darryl
+	character.stopChar-Quella
+	character.stopChar-Garv
+	
+requirements
+	self.timer-10
+effects
+	cinematic.moveChar-Ferdinand-Basement One-15,9
+	cinematic.moveChar-Marcurio-Basement One-13,11
+	cinematic.moveChar-Xu-Basement One-13,12
+	cinematic.moveChar-Alton-Basement One-18,11
+	cinematic.moveChar-Gwen-Basement One-14,14
+	cinematic.moveChar-Darryl-Basement One-16,14
+	cinematic.moveChar-Quella-Basement One-17,14
+	cinematic.moveChar-Garv-Basement One-18,13
+	
+	character.animate-Ferdinand-Front Idle
+	character.animate-Marcurio-Right Idle
+	character.animate-Xu-Right Idle
+	character.animate-Alton-Left Idle
+	character.animate-Gwen-Back Idle
+	character.animate-Darryl-Back Idle
+	character.animate-Quella-Back Idle
+	character.animate-Garv-Left Idle
+	
+	trigger.triggerStatus-meetingAnnouncement-awake
+	trigger.triggerStatus-chapterThreeIntro-awake
+	
+	
+	trigger.triggerStatus-BeforeChapterThree-asleep
+	trigger.triggerStatus-ChapterThreeOn-awake
+	trigger.triggerStatus-ChapterThreeOn-on
+	trigger.triggerStatus-ChapterOneOn-asleep
+	trigger.triggerStatus-ChapterTwoOn-asleep
+	trigger.triggerStatus-ChapterFourOn-asleep
+	
+	self.setStatus-asleep
+trigger end
+
+
+trigger start
+meetingAnnouncement,-1
+requirements
+	player.isInMap-Basement Two
+	self.timer-10
+effects
+	player.lockPlayer-true
+	trigger.triggerStatus-AnimateIntercom-on
+	gui.startDialogue-MeetingIntercom-root
+	prop.changeAllPermission-DarrylsDoor-true
+requirements
+	gui.outOfDialogue
+effects
+	player.lockPlayer-false
+	trigger.triggerStatus-UnanimateIntercom-on
+	self.setStatus-asleep
+trigger end
+
+
+
+
+trigger start
+chapterThreeIntro,-1
+requirements
+	player.isInMap-Basement One
+	self.timer-2
+effects
+	player.lockPlayer-true
+	player.cameraLock-true
+	sound.fadeOutAllSounds-<dot>01
+	sound.fadeInSound-Track2-1-<dot>01
+	player.cameraPan-5-500,350
+requirements
+	self.timer-30
+effects
+	gui.startDialogue-ChapterThreeIntro-root
+	cinematic.moveChar-Donovan-Basement Two-9,4
+	cinematic.moveChar-Cat-Basement Two-13,5
+requirements
+	gui.outOfDialogue
+effects
+	sound.fadeOutSound-Track2-<dot>01
+	character.unanimate-Ferdinand
+	character.setBehavior-FerdinandCaptain
+requirements
+	self.timer-45
+effects
+	character.unanimate-Marcurio
+	cinematic.walkChar-Marcurio-Basement One-15,10
+	character.setBehavior-FerdinandCaptain
+	gui.startDialogue-ChapterThreeIntro-root2
+requirements
+	self.timer-30
+effects
+	character.stopChar-Marcurio
+	character.pauseCommand-Marcurio
+	character.animate-Marcurio-Front Idle
+requirements
+	gui.outOfDialogue
+	self.timer-25
+effects
+	gui.startDialogue-ChapterThreeIntro-root3
+requirements
+	gui.outOfDialogue
+effects
+	character.unanimate-Marcurio
+	character.setBehavior-MarcurioKitchen
+requirements
+	self.timer-30
+effects
+	character.pauseBehavior-Marcurio
+	character.stopChar-Marcurio
+	character.animate-Marcurio-Front Idle
+	gui.startDialogue-ChapterThreeIntro-root4
+requirements
+	gui.outOfDialogue
+effects
+	character.unanimate-Marcurio
+	character.resumeBehavior-Marcurio
+	character.unanimate-Xu
+	character.setBehavior-XuDiningRoom
+requirements
+	self.timer-45
+effects
+	player.cameraPanRelative-3-0,64
+	gui.startDialogue-ChapterThreeIntro-root5
+	sound.fadeInSound-Track6-1-<dot>01
+requirements
+	gui.outOfDialogue
+effects
+	character.unanimate-Alton
+	character.setBehavior-AltonSulking
+requirements
+	self.timer-45
+effects
+	gui.startDialogue-ChapterThreeIntro-root6
+requirements
+	gui.outOfDialogue
+	self.timer-45
+effects
+	character.unanimate-Garv
+	character.setBehavior-GarvInRoom
+	character.unanimate-Gwen
+	character.setBehavior-GwenDiningRoom
+requirements
+	self.timer-30
+effects
+	character.unanimate-Darryl
+	cinematic.walkChar-Darryl-Basement One-16,11
+	player.cameraPanRelative-3-0,<neg>64
+requirements
+	self.timer-35
+effects
+	character.animate-Quella-Back Idle
+	character.pauseCommand-Darryl
+	character.stopChar-Darryl
+	gui.startDialogue-ChapterThreeIntro-root7
+requirements
+	gui.outOfDialogue
+effects
+	character.animate-Darryl-Front Idle
+	gui.startDialogue-ChapterThreeIntro-root8
+	sound.fadeOutAllSounds-<dot>01
+requirements
+	gui.outOfDialogue
+effects
+	character.unanimate-Darryl
+	character.setBehavior-DarrylOutside
+requirements
+	self.timer-45
+effects
+	gui.startDialogue-ChapterThreeIntro-root9
+	sound.fadeInSound-Track12-1-<dot>01
+requirements
+	gui.outOfDialogue
+effects
+	character.unanimate-Quella
+	character.setBehavior-QuellaBreakfast
+requirements
+	self.timer-15
+effects
+	player.cameraPan-3-547,581
+requirements
+	self.timer-80
+effects
+	player.cameraLock-false
+	player.lockPlayer-false
+	sound.fadeOutSound-Track6-<dot>01
+	
+	spectral.changeMindReadThoughts-Paulo-Paulo3
+	spectral.changeMindReadThoughts-Alton-Alton3
+	spectral.changeMindReadThoughts-Xu-Xu3
+	spectral.changeMindReadThoughts-Marcurio-Marcurio3
+	spectral.changeMindReadThoughts-Garv-Garv3
+	spectral.changeMindReadThoughts-Darryl-Darryl3
+	spectral.changeMindReadThoughts-Quella-Quella3
+	spectral.changeMindReadThoughts-Gwen-Gwen3
+	spectral.changeMindReadThoughts-Ferdinand-Ferdinand2
+	
+	character.setBehavior-DonovanDefault
+	dialogue.changeDialogueRoot-Quella<hyphen>Darryl-root2
+	prop.changePropDialogue-XusLootDown-Quella-XusLootDownQuella-true
+	cinematic.addProp-Dining Room-SaveProp3
+	
+	map.clearMapSound-Basement Two
+	map.clearMapSound-Empty SW Room
+	map.clearMapSound-Donovan's Room
+	map.clearMapSound-Empty NE Room
+	map.clearMapSound-Bathroom
+	map.clearMapSound-Basement One
+	map.clearMapSound-Closet
+	map.clearMapSound-Sue's Room
+	map.clearMapSound-Floor One
+	map.clearMapSound-Dining Room
+	map.clearMapSound-Kitchen
+	map.clearMapSound-Pilothouse
+	map.clearMapSound-Boat
+	
+	map.addMapSound-Basement Two-Track12-1
+	map.addMapSound-Empty SW Room-Track12-1
+	map.addMapSound-Donovan's Room-Track12-1
+	map.addMapSound-Empty NE Room-Track12-1
+	map.addMapSound-Bathroom-Track12-1
+	map.addMapSound-Basement One-Track12-1
+	map.addMapSound-Closet-Track12-1
+	map.addMapSound-Sue's Room-Track12-1
+	map.addMapSound-Floor One-Track12-1
+	map.addMapSound-Dining Room-Track12-1
+	map.addMapSound-Kitchen-Track12-1
+	map.addMapSound-Pilothouse-Track12-1
+	map.addMapSound-Boat-Track12-1
+	
+	trigger.triggerStatus-ferdinandUnlocked-asleep
+	trigger.triggerStatus-chap3StartHint-on
+	trigger.triggerStatus-chap3captainMissing-on
+	self.setStatus-asleep
+trigger end
+
+
+trigger start
+chap3StartHint,0
+requirements
+	.null
+effects
+trigger end
+	
+trigger start
+chap3XuGarv2,0
+requirements
+	trigger.triggerIsStatus-chap1xuGarvProgress-on
+	trigger.triggerIsStatus-ChapterThreeOn-on
+effects
+	dialogue.changeDialogueRoot-Xu<hyphen>Darryl-root2
+trigger end
+
+
+trigger start
+chap3XuDarryl2,0
+requirements
+	trigger.triggerIsStatus-chap1xuDarrylProgress-on
+	trigger.triggerIsStatus-ChapterThreeOn-on
+effects
+	dialogue.changeDialogueRoot-Xu<hyphen>Darryl-root2
+trigger end
+	
+	
+	
+// Quella's unlocking of Darryl triggers //////////////////////////////////
+	
+	
+	
+
+trigger start
+chap3QuellaDarryl,0
+requirements
+	.null
+effects
+trigger end
+
+
+trigger start
+chap3DarrylsKey,0
+requirements
+	.null
+effects
+	character.setBehavior-GarvDiningRoom
+	character.setBehavior-GwenB2Pacing
+
+	prop.changePropDialogue-DarrylsJournal-Quella-DarrylsDiaryUnlocked-true
+	dialogue.changeDialogueRoot-XusLootDownQuella-root2
+	trigger.triggerStatus-chap3MarisJournalMusic-awake
+	trigger.triggerStatus-chap3DarrylsKeyQuella-on
+	trigger.triggerStatus-chap3DarrylsKeyDarryl-on
+	self.setStatus-asleep
+trigger end
+
+trigger start
+chap3MarisJournalMusic,-1
+requirements
+	gui.inSpecificDialogue-DarrylsDiaryUnlocked
+effects
+	sound.fadeOutAllSounds-<dot>05
+	sound.fadeInSound-Track10-1-<dot>01
+	trigger.triggerStatus-chap3MarisJournalStop-awake
+	self.setStatus-asleep
+trigger end
+trigger start
+chap3MarisJournalStop,-1
+requirements
+	player.isInMap-Basement Two
+effects
+	sound.fadeOutSound-Track10-<dot>01
+	self.setStatus-asleep
+trigger end
+
+trigger start
+chap3DarrylsKeyQuella,0
+requirements
+	.null
+effects
+trigger end
+
+trigger start
+chap3DarrylsKeyDarryl,0
+requirements
+	.null
+effects
+trigger end
+
+
+trigger start
+chap3readMarisJournal,0
+requirements
+	.null
+effects
+trigger end
+
+trigger start
+chap3DarrylSpills,0
+requirements
+	.null
+effects
+	sound.fadeOutAllSounds-<dot>05
+	sound.loopSound-Track10-1
+	trigger.triggerStatus-chap3FadeDarrylSpillMusic-awake
+	self.setStatus-asleep
+trigger end
+
+trigger start
+chap3FadeDarrylSpillMusic,-1
+requirements
+	player.isInMap-Floor One
+effects
+	sound.fadeOutSound-Track10-0<dot>1
+	self.setStatus-asleep
+trigger end
+
+
+trigger start
+darrylUnlocked,0
+requirements
+	.null
+effects
+	character.setPossessable-Darryl-1
+	trigger.triggerStatus-darrylSpectralAnimation-awake
+	trigger.triggerStatus-musicDarrylUnlocked-on
+	dialogue.changeDialogueRoot-Quella<hyphen>Darryl-root4
+	character.setBehavior-DarrylDialogue
+	character.setBehavior-GarvRoutine
+	self.setStatus-asleep
+trigger end
+
+trigger start
+darrylSpectralAnimation,-1
+requirements
+	gui.outOfDialogue
+effects
+	player.cameraLock-true
+	player.lockPlayer-true
+	character.drawCharGhostEffect-Darryl
+requirements
+	self.timer-150
+effects
+	character.removeCharGhostEffect-Darryl
+	player.cameraLock-false
+	player.lockPlayer-false
+	trigger.triggerStatus-chap3StartHint-awake
+	trigger.triggerStatus-chap3StartHint-asleep
+	trigger.triggerStatus-chap3DarrylHint-on
+	sound.fadeOutAllSounds-<dot>05
+	self.setStatus-asleep
+trigger end
+
+trigger start
+chap3DarrylHint,0
+requirements
+	.null
+effects
+trigger end
+
+
+
+// Darryl's unlocking of other characters triggers //////////////////////////////////////////////////////////////
+
+
+trigger start
+chap3XuHint,0
+requirements
+	.null
+effects
+trigger end
+
+
+trigger start
+chap3XuUnlocked,0
+requirements
+	.null
+effects
+
+	cinematic.removeProp-Boat-BoatDaytime
+	cinematic.addParallaxProp-Boat-BoatSunset
+	cinematic.removeProp-Observation Room-WindowDaytime
+	cinematic.addProp-Observation Room-WindowSunset
+	
+	character.setPossessable-Xu-2
+	character.setBehavior-DarrylOutside
+	trigger.triggerStatus-xuSpectralAnimation-awake
+	trigger.triggerStatus-chap3XuHint-on
+	trigger.triggerStatus-chap3DarrylHint-awake
+	trigger.triggerStatus-chap3DarrylHint-asleep
+	dialogue.changeDialogueRoot-Darryl<hyphen>Xu-root2
+	self.setStatus-asleep
+trigger end
+
+trigger start
+xuSpectralAnimation,-1
+requirements
+	gui.outOfDialogue
+effects
+	player.cameraLock-true
+	player.lockPlayer-true
+	character.drawCharGhostEffect-Xu
+requirements
+	self.timer-150
+effects
+	character.removeCharGhostEffect-Xu
+	player.cameraLock-false
+	player.lockPlayer-false
+	
+	cinematic.activateAchievement-XU_FULL
+	self.setStatus-asleep
+trigger end
+
+trigger start
+chap3quellaConfession,0
+requirements
+	.null
+effects
+	sound.fadeOutAllSounds-<dot>01
+	sound.fadeInSound-Track10-1-<dot>01
+	self.setStatus-asleep
+trigger end
+
+
+trigger start
+chap3QuellaUnlocked,0
+requirements
+	.null
+effects
+	character.setPossessable-Quella-2
+	trigger.triggerStatus-musicQuellaUnlocked-on
+	trigger.triggerStatus-chap3QuellaSpectralAnimation-awake
+	dialogue.changeDialogueRoot-Darryl<hyphen>Quella-root2
+	self.setStatus-asleep
+trigger end
+
+trigger start
+chap3QuellaSpectralAnimation,-1
+requirements
+	gui.outOfDialogue
+effects
+	player.cameraLock-true
+	player.lockPlayer-true
+	character.drawCharGhostEffect-Quella
+requirements
+	self.timer-150
+effects
+	character.removeCharGhostEffect-Quella
+	sound.fadeOutAllSounds-<dot>01
+	
+	cinematic.activateAchievement-QUELLA_FULL
+	player.cameraLock-false
+	player.lockPlayer-false
+	self.setStatus-asleep
+trigger end
+
+trigger start
+chap3GarvUnlocked,0
+requirements
+	.null
+effects
+	character.setPossessable-Garv-1
+	trigger.triggerStatus-chap3GarvSpectralAnimation-awake
+	trigger.triggerStatus-chap3darrylGarvProgress-on
+	
+	self.setStatus-asleep
+trigger end
+
+trigger start
+chap3GarvSpectralAnimation,-1
+requirements
+	gui.outOfDialogue
+effects
+	player.cameraLock-true
+	player.lockPlayer-true
+	character.drawCharGhostEffect-Garv
+requirements
+	self.timer-150
+effects
+	character.removeCharGhostEffect-Garv
+	player.cameraLock-false
+	player.lockPlayer-false
+	self.setStatus-asleep
+trigger end
+
+
+
+trigger start
+chap3MarcUnlocked,0
+requirements
+	.null
+effects
+	character.setPossessable-Marcurio-1
+	trigger.triggerStatus-musicMarcurioUnlocked-on
+	trigger.triggerStatus-chap3MarcurioSpectralAnimation-awake
+	self.setStatus-asleep
+trigger end
+
+trigger start
+chap3MarcurioSpectralAnimation,-1
+requirements
+	gui.outOfDialogue
+effects
+	player.cameraLock-true
+	player.lockPlayer-true
+	character.drawCharGhostEffect-Marcurio
+requirements
+	self.timer-150
+effects
+	character.removeCharGhostEffect-Marcurio
+	player.cameraLock-false
+	player.lockPlayer-false
+	
+	self.setStatus-asleep
+trigger end
+
+
+
+
+
+
+// Donovan unlock triggers  ////////////////////////////////////////////////////////////////////////////
+
+
+trigger start
+chap3GwenMoreInfo,0
+requirements
+	trigger.triggerIsStatus-chap3GwenMoreInfoA-on
+	trigger.triggerIsStatus-chap3GwenMoreInfoB-on
+effects
+	trigger.triggerStatus-chap3GwenMoreInfoA-asleep
+	trigger.triggerStatus-chap3GwenMoreInfoB-asleep
+trigger end
+
+trigger start
+chap3GwenUnlocked,0
+requirements
+	.null
+effects
+	character.setPossessable-Gwen-2
+	trigger.triggerStatus-chap3GwenSpectralAnimation-awake
+	trigger.triggerStatus-chap3GwenMoreInfo-asleep
+	self.setStatus-asleep
+trigger end
+
+trigger start
+chap3GwenSpectralAnimation,-1
+requirements
+	gui.outOfDialogue
+effects
+	player.cameraLock-true
+	player.lockPlayer-true
+	character.drawCharGhostEffect-Gwen
+requirements
+	self.timer-150
+effects
+	character.removeCharGhostEffect-Gwen
+	player.cameraLock-false
+	player.lockPlayer-false
+	self.setStatus-asleep
+trigger end
+
+
+
+
+
+// Xu and Donovan mini-skit  ////////////////////////////////////////////////////////////////////////////
+
+trigger start
+chap3DonovanHint,0
+requirements
+	.null
+effects
+trigger end
+
+
+trigger start
+chap3DonovanConfesses,0
+requirements
+	.null
+effects
+	trigger.triggerStatus-chap3DonovanConfessionSkit-awake
+	self.setStatus-asleep
+trigger end
+
+trigger start
+chap3DonovanConfessionSkit,-1
+
+requirements
+	gui.outOfDialogue
+effects
+	character.setBehavior-DonovanInRoom
+requirements
+	character.isInMap-Donovan-Donovan's Room
+effects
+	prop.changePermission-DonovansDoor-Xu-true
+	cinematic.walkChar-Donovan-Donovan's Room-8,6
+requirements
+	character.isInMap-Xu-Donovan's Room
+effects
+	character.setBehavior-DarrylAtNight
+	character.setBehavior-QuellaInRoomPacing
+	character.setBehavior-XuIndecisive
+	player.lockPlayer-true
+	sound.fadeOutSound-Track12-0<dot>01
+requirements
+	self.timer-45
+effects
+	character.animate-Donovan-Front Idle
+	cinematic.walkChar-Xu-Donovan's Room-6,6
+	player.cameraPanRelative-3-0,<neg>64
+	sound.fadeInSound-Track6-0<dot>5-0<dot>01
+	gui.startDialogue-DonovansSecret-root
+requirements
+	self.timer-30
+effects
+	character.animate-Xu-Right Idle
+	character.animate-Donovan-Left Idle
+requirements
+	gui.outOfDialogue
+effects
+	gui.startDialogue-DonovansSecret-root1
+	sound.fadeOutAllSounds-<dot>01
+	sound.fadeInSound-Track3-1-0<dot>01
+requirements
+	gui.outOfDialogue
+	self.timer-30
+effects
+	character.setPossessable-Donovan-1
+	trigger.triggerStatus-donovanSpectralAnimation-awake
+	trigger.triggerStatus-chap3SecretArea-awake
+	trigger.triggerStatus-chap3SecretArea-on
+	prop.changePermission-DonovansDoor-Xu-false
+	spectral.changeMindReadThoughts-Xu-Xu32
+	
+	dialogue.changeDialogueRoot-GhostXu<hyphen>Donovan-root2
+	dialogue.changeDialogueRoot-Xu<hyphen>Donovan-root3
+	
+	cinematic.removeProp-Boat-BoatSunset
+	cinematic.addParallaxProp-Boat-BoatSundown
+	cinematic.addStaticProp-Boat-BoatSundownWater
+	cinematic.removeProp-Observation Room-WindowSunset
+	cinematic.addProp-Observation Room-WindowSundown
+	
+	trigger.triggerStatus-chap3DonovanHint-on
+	trigger.triggerStatus-chap3XuHint-awake
+	trigger.triggerStatus-chap3XuHint-asleep
+	
+	trigger.triggerStatus-achievementAllCharsUnlocked-awake
+	self.setStatus-asleep
+trigger end
+	
+	
+trigger start
+chap3SecretArea,-1
+requirements
+	.null
+effects
+trigger end
+
+trigger start
+donovanSpectralAnimation,-1
+requirements
+	gui.outOfDialogue
+effects
+	player.cameraLock-true
+	player.lockPlayer-true
+	character.drawCharGhostEffect-Donovan
+requirements
+	self.timer-150
+effects
+	sound.fadeOutSound-Track3-0<dot>01
+
+	character.unanimate-Donovan
+	character.unanimate-Xu
+	character.setBehavior-DonovanDefault
+	character.setBehavior-XuLounging
+	character.removeCharGhostEffect-Donovan
+	player.cameraLock-false
+	player.lockPlayer-false
+	self.setStatus-asleep
+trigger end
+
+trigger start
+donovanMasterKey,0
+requirements
+	.null
+effects
+	trigger.triggerStatus-donovanInvestigation-awake
+	self.setStatus-asleep
+trigger end
+
+trigger start
+donovanInvestigation,-1
+requirements
+	gui.outOfDialogue
+effects
+	character.setBehavior-DarrylAtNight
+	
+	dialogue.changeDialogueRoot-ClosetDonovan-root2
+	prop.changePermission-FirstMatesDoor-Donovan-true
+	prop.changePermission-CaptainsDoor-Donovan-true
+	prop.changePermission-MarcuriosDoor-Donovan-true
+	prop.changePermission-GwensDoor-Donovan-true
+	prop.changePermission-PaulosDoor-Donovan-true
+	cinematic.removeProp-Donovan's Room-MasterKey
+	trigger.triggerStatus-chap3noChestKey-on
+	
+	trigger.triggerStatus-chap3theTwist-awake
+	dialogue.changeDialogueRoot-chap3theTwist-root2
+	
+	self.setStatus-asleep
+trigger end
+
+trigger start
+chap3noChestKey,0
+requirements
+	.null
+effects
+trigger end
+
+trigger start
+chap3chestKey,0
+requirements
+	.null
+effects
+	dialogue.changeDialogueRoot-CaptainsChestDonovan-root2
+	trigger.triggerStatus-chap3noChestKey-asleep
+trigger end
+
+
+
+trigger start
+achievementAllCharsUnlocked,-1
+requirements
+	character.isPossessable-Donovan-1
+	character.isPossessable-Marcurio-1
+effects
+	cinematic.activateAchievement-ALL_CHARACTERS_UNLOCKED
+	self.setStatus-asleep
+trigger end
+
+
+
+
+//////////////////// THE TWIST  ///////////////////////////////////////////////////////////////
+
+
+trigger start
+chap3theTwistTrigger,0
+requirements
+	.null
+effects
+trigger end
+
+
+trigger start
+chap3theTwist,-1
+
+requirements
+	trigger.triggerIsStatus-chap3theTwistTrigger-on
+effects
+	trigger.triggerStatus-chap3theTwistTrigger-asleep
+	player.lockPlayer-true
+	player.cameraLock-true
+requirements
+	self.timer-30
+effects
+	gui.fadeOutScreen-<dot>05
+requirements
+	self.timer-45
+effects
+	trigger.triggerStatus-chap3ResetCharacters-on
+	gui.fadeInScreen-<dot>05
+	dialogue.changeDialogueRoot-chap3theTwist-root3
+	gui.startDialogue-chap3theTwist-root3
+requirements
+	gui.outOfDialogue
+	self.timer-20
+effects
+	cinematic.walkChar-Donovan-Boat-10,11
+	sound.fadeOutAllSounds-<dot>01
+requirements
+	self.timer-30
+effects
+	character.animate-Donovan-Back Idle
+	player.cameraPanRelative-3-0,<neg>120
+	gui.startDialogue-chap3theTwist-root4
+	cinematic.moveChar-Killer-Boat-22,13
+requirements
+	self.timer-30
+effects
+	cinematic.walkChar-Killer-Boat-10,14
+requirements
+	gui.outOfDialogue
+effects
+	dialogue.changeDialogueRoot-chap3theTwist-root5
+requirements
+	self.timer-45
+effects
+	gui.startDialogue-chap3theTwist-root5
+	character.animate-Killer-Back Idle
+requirements
+	gui.outOfDialogue
+effects
+	dialogue.changeDialogueRoot-chap3theTwist-root6
+requirements
+	self.timer-30
+effects
+	player.cameraPanRelative-3-0,160
+	sound.fadeInSound-Track9-1-<dot>01
+requirements
+	self.timer-120
+effects
+	gui.startDialogue-chap3theTwist-root6
+requirements
+	gui.outOfDialogue
+effects
+	character.animate-Donovan-Shot
+	cinematic.moveChar-Donovan-Boat-10,9<dot>4
+requirements
+	self.timer-5
+effects
+	sound.playSound-Remington-1
+requirements
+	self.timer-60
+effects
+	character.animate-Donovan-ShotAgain
+	cinematic.moveChar-Donovan-Boat-10,9<dot>4
+	sound.playSound-Remington-1
+
+requirements
+	self.timer-10
+effects
+	character.animate-Donovan-ShotAgain
+	cinematic.moveChar-Donovan-Boat-10,9<dot>4
+	sound.playSound-Remington-1
+requirements
+	self.timer-10
+effects
+	character.animate-Donovan-ShotAgain
+	sound.playSound-Remington-1
+requirements
+	self.timer-10
+effects
+	character.animate-Donovan-ShotAgain
+	sound.playSound-Remington-1
+
+requirements
+	self.timer-40
+effects
+	character.forceChar-Killer-up
+	character.animate-Killer-Back Walk
+requirements
+	character.isPastPoint-Killer-Boat-Up-320
+effects
+	character.stopChar-Killer
+	character.animate-Killer-Back Idle
+requirements
+	self.timer-60
+effects
+	cinematic.moveChar-Donovan-Boat-10,9
+	character.animate-Donovan-Overboard
+requirements
+	self.timer-45
+effects
+	gui.startDialogue-chap3theTwist-root7
+requirements
+	gui.outOfDialogue
+effects
+	map.fadeOutMap-<dot>02
+requirements
+	self.timer-100
+effects
+	cinematic.removeChar-Killer
+	cinematic.removeChar-Paulo
+	map.clearMapSound-Boat
+	player.depossess
+	cinematic.removeChar-Donovan
+	cinematic.moveChar-Ghost-Inbetween-3,3
+	cinematic.removeProp-Inbetween-Tutorial1
+	cinematic.removeProp-Inbetween-Tutorial2
+	
+	map.changeMap-Inbetween
+	map.fadeInMap-<dot>01
+	sound.fadeOutSound-Track6-<dot>01
+	sound.fadeOutSound-Track9-<dot>01
+	
+	trigger.triggerStatus-initiateFourthChapter-awake
+	cinematic.activateAchievement-CHAPTER_THREE
+	
+	player.lockPlayer-false
+	player.cameraLock-false
+	
+	self.setStatus-asleep
+trigger end
+
+
+
+
+
+trigger start
+AnimateIntercom,0
+requirements
+	.null
+effects
+	prop.animateProp-Intercom1
+	prop.animateProp-Intercom2
+	prop.animateProp-Intercom3
+	prop.animateProp-Intercom4
+	prop.animateProp-Intercom5
+	prop.animateProp-Intercom6
+	prop.animateProp-Intercom7
+	prop.animateProp-Intercom8
+	prop.animateProp-Intercom9
+	prop.animateProp-Intercom10
+	self.setStatus-awake
+trigger end
+
+trigger start
+UnanimateIntercom,0
+requirements
+	.null
+effects
+	prop.unanimateProp-Intercom1
+	prop.unanimateProp-Intercom2
+	prop.unanimateProp-Intercom3
+	prop.unanimateProp-Intercom4
+	prop.unanimateProp-Intercom5
+	prop.unanimateProp-Intercom6
+	prop.unanimateProp-Intercom7
+	prop.unanimateProp-Intercom8
+	prop.unanimateProp-Intercom9
+	prop.unanimateProp-Intercom10
+	self.setStatus-awake
+trigger end
+
+
+
+trigger start
+chap3ResetCharacters,0
+requirements
+	.null
+effects
+	character.eraseBehavior-Ferdinand
+	character.eraseBehavior-Marcurio
+	character.eraseBehavior-Xu
+	character.eraseBehavior-Alton
+	character.eraseBehavior-Gwen
+	character.eraseBehavior-Darryl
+	character.eraseBehavior-Quella
+	character.eraseBehavior-Garv
+	character.pauseCommand-Ferdinand
+	character.pauseCommand-Marcurio
+	character.pauseCommand-Xu
+	character.pauseCommand-Alton
+	character.pauseCommand-Gwen
+	character.pauseCommand-Darryl
+	character.pauseCommand-Quella
+	character.pauseCommand-Garv
+	character.stopChar-Ferdinand
+	character.stopChar-Marcurio
+	character.stopChar-Xu
+	character.stopChar-Alton
+	character.stopChar-Gwen
+	character.stopChar-Darryl
+	character.stopChar-Quella
+	character.stopChar-Garv
+	
+	cinematic.moveChar-Ferdinand-Basement One-17,10
+	cinematic.moveChar-Marcurio-Basement One-18,11
+	cinematic.moveChar-Xu-Basement One-18,12
+	cinematic.moveChar-Alton-Basement One-17,13
+	cinematic.moveChar-Darryl-Basement One-14,10
+	cinematic.moveChar-Quella-Basement One-13,12
+	cinematic.moveChar-Garv-Basement One-14,14
+	cinematic.moveChar-Cat-Garv's Room-5,7
+	
+	self.setStatus-asleep
+trigger end
+
+
+
+
+
+
+
+
+
+trigger start
+achievementSecretOne,0
+requirements
+	.null
+effects
+	cinematic.activateAchievement-SECRET_1
+	self.setStatus-asleep
+trigger end
+
+trigger start
+achievementSecretTwo,0
+requirements
+	.null
+effects
+	cinematic.activateAchievement-SECRET_2
+	self.setStatus-asleep
+trigger end
+
+trigger start
+achievementSecretThree,0
+requirements
+	.null
+effects
+	cinematic.activateAchievement-SECRET_3
+	self.setStatus-asleep
+trigger end
+
+trigger start
+achievementCharOne,0
+requirements
+	.null
+effects
+	cinematic.activateAchievement-CHARACTER_1
+	self.setStatus-asleep
+trigger end

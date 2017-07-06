@@ -1,0 +1,936 @@
+
+
+
+
+
+// GHOST/ALTON - MARCURIO ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Ghost-Marcurio
+
+action:response:root
+<player>
+root-1:When was the last time you saw the captain?
+root-2:Have you noticed anything odd around the ship recently?
+</>root-null:Never mind.
+action end
+
+action:statement:root-1
+Marcurio:The captain?  Hmm...
+Marcurio:I know I saw her last night, but I don't think I've seen her today.
+next:root-1-A
+action end
+
+action:response:root-1-A
+<player>
+root-1-B:Doesn't that seem strange to you?
+</>root-null:Never mind.
+action end
+
+action:statement:root-1-B
+Marcurio:Eh, not really.  It's not like she ever swings by the kitchen.
+Marcurio:She's also not much of a people person.  Wouldn't be the first time I went a day without seeing her.
+next:root-null
+action end
+
+action:statement:root-2
+Marcurio:Why, what's up?
+Marcurio:Oh, are you playing detective for Xu or something?
+next:root-2-A
+action end
+
+action:response:root-2-A
+<player>
+root-2-B:Answer the qestion.  This is serious.
+</>root-2-null:Never mind.
+action end
+
+action:statement:root-2-B
+Marcurio:Oh, is that right?
+Marcurio:In that case, no, I haven't seen anything strange.
+Marcurio:But go ahead, play detective.  Have fun.
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+// CHAPTER 3  GHOST - MARCURIO  ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Ghost-Marcurio
+
+action:response:root2
+<player>
+root2-1:What do you think has happened to the captain?
+root2-2:What should we all do?
+root2-3:Who might want to get rid of the captain?
+root2-4:What can you tell me about the captain?
+root-trigger.chap3SecretArea:Do you know about any secret areas on the ship?
+<!>trigger.chap6kitchenExposed:I found some interesting things in the kitchen cabinet and fridge...
+</>root2-null:Never mind.
+action end
+
+action:statement:root2-1
+Marcurio:At first I thought she was just holed up somewhere, but now...
+Marcurio:It's not a big ship.  I would have seen her by now.  I'm sure of it.
+Marcurio:The only possibility is she isn't on the ship anymore.
+next:root2
+action end
+
+action:statement:root2-2
+Marcurio:I can only speak for myself.  I'm going to continue to do my job.
+Marcurio:Other than that, shit.  If it comes down to it, what do we do?  Arrest each other?
+next:root2
+action end
+
+action:statement:root2-3
+Marcurio:Jesus, I don't know.  No one?
+Marcurio:She barely started working on the ship, so it's not like anyone had enough time to dislike her.
+next:root2
+action end
+
+action:statement:root2-4
+Marcurio:Not much.  She's worryingly absent, recently.
+next:root2-captain
+action end
+
+action:response:root2-captain
+<player>
+root2-captain-A:Is that all you can say?
+root2-trigger.SmillaMarcurio:But you haven't gotten along with her very well.:trigger.SmillaMarcurio2.on
+root2-trigger.SmillaMarcurio2:What kinds of things did she micromanage?:trigger.GhostBGProgressMarcurio.on
+</>root2-null:Never mind.
+action end
+
+action:statement:root2-captain-A
+Marcurio:I dunno, what do you want me to tell you?
+Marcurio:I work in the kitchen all day.  She drives the ship.  Didn't see her a lot.
+next:root2-captain
+action end
+
+action:statement:root2-trigger.SmillaMarcurio
+Marcurio:Ugh.  Everyone's a gossip around here, huh?
+Marcurio:Well, it's not my fault she was a nazi about everything.
+Marcurio:I mean, look around you.  Do you think this is a four-star cruise line heading to Bermuda?
+Marcurio:And she couldn't accept other peoples' word on things.  She had to micromanage everything.
+next:root2-captain
+action end
+
+action:statement:root2-trigger.SmillaMarcurio2
+Marcurio:You know she always wanted to come back here and check on the stock?  And the appliances?
+Marcurio:I've been running this kitchen immaculately for a very long time.  I know what I'm doing.
+Marcurio:You know, we've got our own way of doing things here, and there are reasons for them.
+Marcurio:Very good reasons.
+next:root2-captain
+action end
+
+
+
+action:statement:root-trigger.chap3SecretArea
+Marcurio:I know that some people like to think this ship was used for smuggling back in the day, and had secret compartments.
+Marcurio:But I'll bet the ship was just as boring and useless then as it is now.
+Marcurio:In all my time here, I certainly haven't seen anything that would tell me otherwise.
+Marcurio:The first-mate, on the other hand, loves to romanticize this heap of metal.  Maybe you should ask him.
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+
+// CHAPTER 4  GHOST - MARCURIO ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Ghost-Marcurio
+
+action:response:root3
+<player>
+root3-A:What do you think happened to Donovan and Paulo?
+root3-B:Do you believe that Gwen is guilty?
+root3-C:Why do you think all of this has happened?
+root3-D:What should we do now?
+root3-captain:What can you tell me about the captain?
+<!>trigger.chap6kitchenExposed:I found some interesting things in the kitchen cabinet and fridge...
+</>root-null:Never mind.
+action end
+
+action:statement:root3-A
+Marcurio:The same thing that happened to the captain, I'd guess.
+Marcurio:If they aren't on the ship, they must be off of it.
+Marcurio:And I don't think it's likely three people all lost their footing and slipped off at the same time.
+Marcurio:So the answer's pretty simple.  Someone killed them.
+next:root3-A1
+action end
+
+action:response:root3-A1
+<player>
+root3-A2:You don't seem very upset.
+root3-A3:How do you think they were killed?
+</>root-null:Never mind.
+action end
+
+action:statement:root3-A2
+Marcurio:Being upset or not has nothing to do with it.
+Marcurio:Weepin' doesn't bring anyone back.  So I've learned to stop trying a long time ago.
+Marcurio:Besides, I didn't know any of those people.
+next:root3-A1
+action end
+
+action:statement:root3-A3
+Marcurio:How the hell am I supposed to know?
+Marcurio:Considering we haven't found any crime scene, I'd guess it was quick and quiet.
+Marcurio:Anything else is random guessing.
+next:root3-A1
+action end
+
+
+action:statement:root3-B
+Marcurio:It kinda speaks for itself, doesn't it?
+Marcurio:The master key was last seen with Donovan.  He goes missin', and all of a sudden Gwen has it?
+Marcurio:We also know Donovan would have never willingly given it to anyone.  He was on some sort of crusade.
+next:root3-B1
+action end
+
+action:response:root3-B1
+<player>
+root3-B2:You didn't answer the question.
+root3-B3:What if the key was planted in her room?
+root3-B4:Why do you think she did it, then?
+</>root3-null:Never mind.
+action end
+
+action:statement:root3-B2
+Marcurio:....
+Marcurio:Yes.  I think it was Gwen.  Happy?
+next:root3-B1
+action end
+
+action:statement:root3-B3
+Marcurio:Interesting thought, but I doubt it.
+Marcurio:For that to make sense, the person who had planted it would have to know for sure it would be found.
+Marcurio:No one had any control or foresight over where we searched, or if we even searched anything at all, except for the ship staff.
+Marcurio:And I know staff isn't involved in this.
+next:root3-B1
+action end
+
+action:statement:root3-B4
+Marcurio:Who the hell knows.
+Marcurio:She did seem kinda off.  It's always the quiet unassuming ones, isn't it?
+Marcurio:She could just be nuts.  I've seen dumber reasons for murder than that.
+next:root3-B1
+action end
+
+
+action:statement:root3-C
+Marcurio:What makes you so sure there's one big reason?
+Marcurio:Sometimes, shit happens.  Sometimes worse than other times.
+next:root3
+action end
+
+
+action:statement:root3-D
+Marcurio:We've got Gwen restrained.  That should be the end of it.
+Marcurio:We can wait 'til we hit land and there's an official investigation.
+Marcurio:Though honestly, what are they gonna find that we already haven't?
+next:root3
+action end
+
+
+action:statement:root3-captain
+Marcurio:Not much.  It's a shame what has happened, that's for sure.
+next:root3-captain2
+action end
+
+action:response:root3-captain2
+<player>
+root3-captain2-A:Is that all you can say?
+root3-trigger.SmillaMarcurio:But you haven't gotten along with her very well.:trigger.SmillaMarcurio2.on
+root3-trigger.SmillaMarcurio2:What kinds of things did she micromanage?:trigger.GhostBGProgressMarcurio.on
+</>root3-null:Never mind.
+action end
+
+action:statement:root3-captain2-A
+Marcurio:I dunno, what do you want me to tell you?
+Marcurio:I work in the kitchen all day.  She drives the ship.  Didn't see her a lot.
+next:root3-captain2
+action end
+
+action:statement:root3-trigger.SmillaMarcurio
+Marcurio:Ugh.  Everyone's a gossip around here, huh?
+Marcurio:Well, it's not my fault she was a nazi about everything.
+Marcurio:I mean, look around you.  Do you think this is a four-star cruise line heading to Bermuda?
+Marcurio:And she couldn't accept other peoples' word on things.  She had to micromanage everything.
+next:root3-captain2
+action end
+
+action:statement:root3-trigger.SmillaMarcurio2
+Marcurio:You know she always wanted to come back here and check on the stock?  And the appliances?
+Marcurio:I've been running this kitchen immaculately for a very long time.  I know what I'm doing.
+Marcurio:You know, we've got our own way of doing things here, and there are reasons for them.
+Marcurio:Very good reasons.
+next:root3-captain2
+action end
+
+
+
+
+
+action:statement:trigger.chap6kitchenExposed
+Marcurio:You mean, the cabinet and fridge that I always have tightly locked when I'm not around?
+Marcurio:Yes, I'm sure you have.
+next:chap6Garv
+action end
+
+action:response:chap6Garv
+<player>
+chap6Garv-trigger.chap6fridgeAlcohol:There was a strange smell of alcohol in the fridge.
+chap6Garv-trigger.chap6cabinetBox:I found a box with weird notes in the cabinet.
+chap6Garv-trigger.chap6ledger:There was a ledger of kitchen stock in the cabinet.
+chap6Garv-trigger.chap6marcurioSummary:I get the feeling you're holding out a lot on me.
+</>chap6Garv-null:Never mind.
+action end
+
+action:statement:chap6Garv-trigger.chap6fridgeAlcohol
+Marcurio:Wait...how did you get into the fridge?  I definitely locked it.
+Marcurio:Er, I mean, I don't know what you're talking about.
+next:chap6Garv-denial
+action end
+
+action:response:chap6Garv-denial
+<player>
+chap6Garv-alcohol1:That's not going to work.  Why are you trying to lie to me?
+chap6Garv-alcohol2:There isn't a bar on the ship.  What are you doing with all that booze?
+chap6Garv-trigger.chap6fridgeBooze:How do you not know what it was?  You were the one stocking it.
+</>chap6Garv:Back to my other questions...
+action end
+
+action:statement:chap6Garv-alcohol1
+Marcurio:Alright, fine, you got me.
+Marcurio:But you had no right to be rooting around the kitchen in the first place!
+next:chap6Garv-denial
+action end
+
+action:statement:chap6Garv-alcohol2
+Marcurio:I'm not drinking on the side, if that's what you're insinuating.
+Marcurio:Anyway, it wasn't booze you were smelling.  I'm not sure what the stuff was, I never drank it.
+next:chap6Garv-denial
+action end
+
+action:statement:chap6Garv-trigger.chap6fridgeBooze
+Marcurio:It's...it's not stuff I used for cooking, exactly.  I just stored it there to keep it cool.
+Marcurio:It was some kind of medicinal supplies.  So it's outside my department.
+next:chap6Garv-denial
+action end
+
+
+action:statement:chap6Garv-trigger.chap6cabinetBox
+Marcurio:Wait, how did you find that?!  I don't understand...
+Marcurio:Well, you probably have questions about that.
+next:chap6Garv-notes
+action end
+
+action:response:chap6Garv-notes
+<player>
+chap6Garv-notes1:You were being instructed to pick up and drop off things.  What things?:trigger.chap6marcurioBox.on
+chap6Garv-notes2:Who was writing those notes?
+chap6Garv-notes3:Why are the notes so vague and anonymous?  Does anyone else know about this?:trigger.chap6bribeExcuse.on
+chap6Garv-trigger.chap6bribeExcuse:Stop making excuses.  You're taking bribes.
+</>chap6Garv:Back to my other questions...
+action end
+
+action:statement:chap6Garv-notes1
+Marcurio:Just supplies from the kitchen, really.  Some food or water.
+Marcurio:Occasionally I've had to drop off things like blankets or cleaning supplies.
+Marcurio:It's all pretty mundane.
+next:chap6Garv-notes
+action end
+
+action:statement:chap6Garv-notes2
+Marcurio:I don't know.  I keep the notes to try and see if I can figure it out.
+Marcurio:The handwriting changes, meaning it's probably been different people over time.
+Marcurio:The only thing that's clear is that one of these people is on the ship now.
+next:chap6Garv-notes
+action end
+
+action:statement:chap6Garv-notes3
+Marcurio:As far as I can tell, no.  And I'd like it to stay that way.
+Marcurio:It seems shady, but if I wasn't doing this stuff they'd pay someone else to.
+Marcurio:I've been trying to figure out who it is and what their goal is.
+next:chap6Garv-notes
+action end
+
+action:statement:chap6Garv-trigger.chap6bribeExcuse
+Marcurio:Yeah.  I am.
+Marcurio:If you're thinking of turning me in, consider this...
+Marcurio:Someone on this ship is the one bribing me.  And you don't know who it is or how they'll react.
+next:chap6Garv-notes
+action end
+
+
+action:statement:chap6Garv-trigger.chap6ledger
+Marcurio:Shit.  You found that, huh?  I really don't understand how...
+next:chap6Garv-ledger
+action end
+
+action:response:chap6Garv-ledger
+<player>
+chap6Garv-ledger1:You've been stealing food from your own kitchen.  Why?:trigger.chap6marcurioLedger.on
+chap6Garv-ledger2:Someone knew what you were doing.  Was it the captain?
+</>chap6Garv:Back to my other questions...
+action end
+
+action:statement:chap6Garv-ledger1
+Marcurio:Is it really stealing?  
+Marcurio:Well sure, the ship pays for the food...but I'm the one that needs it to do their job.
+Marcurio:Someone really wants a share of the stock.  And they're paying well for it.  Really well.
+next:chap6Garv-ledger
+action end
+
+action:statement:chap6Garv-ledger2
+Marcurio:Yeah, the captain started taking stock of every single thing on the ship.  Including the food.
+Marcurio:She wasn't too happy about her results.
+Marcurio:I feigned incompetence, but I'm not sure she bought it.
+next:chap6Garv-ledger
+action end
+
+action:statement:chap6Garv-trigger.chap6marcurioSummary
+Marcurio:I've thought a lot about what all of this is about.
+Marcurio:I have one theory, but it's sort of ridiculous.
+next:chap6Garv-summary
+action end
+
+action:response:chap6Garv-summary
+<player>
+chap6Garv-summary1:What's your theory?
+chap6Garv-summary2:Surely after all this time, you have to have at least one lead.:trigger.chap6GarvClue1.on
+action end
+
+action:statement:chap6Garv-summary1
+Marcurio:I've considered that someone's smuggling something.  Like an animal.
+Marcurio:They'd need foodstuffs to keep it fed, and something to tranquilize it.
+Marcurio:It's not very plausible though, is it?
+next:chap6Garv-summary
+action end
+
+action:statement:chap6Garv-summary2
+Marcurio:I've kept my distance on purpose.
+Marcurio:If I find out too much and they know, the deal would be broken off.  Or something worse.
+Marcurio:Even if I had some magical piece of information, I'm not sure why I'd speak openly about it.
+next:null
+action end
+
+
+dialogue end
+
+
+
+
+
+
+
+// CHAPTER 3/4 CONFESSION  GHOST/XU - MARCURIO ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+GhostXu-Marcurio
+
+
+action:response:root2
+<player>
+root2-2:What should we all do?
+root2-3:Who might want to get rid of the captain?
+root3-captain:What can you tell me about the captain?
+root-trigger.chap3SecretArea:Do you know about any secret areas on the ship?
+<!>trigger.chap6kitchenExposed:I found some interesting things in the kitchen cabinet and fridge...
+</>root2-null:Never mind.
+action end
+
+
+action:statement:root2-2
+Marcurio:I can only speak for myself.  I'm going to continue to do my job.
+Marcurio:Other than that, who knows.  If it comes down to it, what do we do?  Arrest each other?
+next:root2
+action end
+
+action:statement:root2-3
+Marcurio:Jesus, I don't know.  No one?
+Marcurio:She barely started working on the ship, so it's not like anyone had enough time to dislike her.
+next:root2
+action end
+
+
+action:statement:root-trigger.chap3SecretArea
+Marcurio:I know that some people like to think this ship was used for smuggling back in the day, and had secret compartments.
+Marcurio:But I'll bet the ship was just as boring and useless then as it is now.
+Marcurio:In all my time here, I certainly haven't seen anything that would tell me otherwise.
+Marcurio:The first-mate, on the other hand, loves to romanticize this heap of metal.  Maybe you should ask him.
+next:root-null
+action end
+
+
+
+action:statement:root3-captain
+Marcurio:Not much.  It's a shame what has happened, that's for sure.
+next:root3-captain2
+action end
+
+action:response:root3-captain2
+<player>
+root3-captain2-A:Is that all you can say?
+root3-trigger.SmillaMarcurio:But you haven't gotten along with her very well.:trigger.SmillaMarcurio2.on
+root3-trigger.SmillaMarcurio2:What kinds of things did she micromanage?:trigger.GhostBGProgressMarcurio.on
+</>root3-null:Never mind.
+action end
+
+action:statement:root3-captain2-A
+Marcurio:I dunno, what do you want me to tell you?
+Marcurio:I work in the kitchen all day.  She drives the ship.  Didn't see her a lot.
+next:root3-captain2
+action end
+
+action:statement:root3-trigger.SmillaMarcurio
+Marcurio:Ugh.  Everyone's a gossip around here, huh?
+Marcurio:Well, it's not my fault she was a nazi about everything.
+Marcurio:I mean, look around you.  Do you think this is a four-star cruise line heading to Bermuda?
+Marcurio:And she couldn't accept other peoples' word on things.  She had to micromanage everything.
+next:root3-captain2
+action end
+
+action:statement:root3-trigger.SmillaMarcurio2
+Marcurio:You know she always wanted to come back here and check on the stock?  And the appliances?
+Marcurio:I've been running this kitchen immaculately for a very long time.  I know what I'm doing.
+Marcurio:You know, we've got our own way of doing things here, and there are reasons for them.
+Marcurio:Very good reasons.
+next:root3-captain2
+action end
+
+
+action:response:root3
+<player>
+root3-A:What do you think happened to Donovan and Paulo?
+<!>root3-B:Do you believe that Gwen is guilty?
+root3-D:What should we do now?
+root3-captain:What can you tell me about the captain?
+<!>trigger.chap6kitchenExposed:I found some interesting things in the kitchen cabinet and fridge...
+</>root-null:Never mind.
+action end
+
+action:statement:root3-A
+Marcurio:The same thing that happened to the captain, I'd guess.
+Marcurio:If they aren't on the ship, they must be off of it.
+Marcurio:And I don't think it's likely three people all lost their footing and slipped off at the same time.
+Marcurio:So the answer's pretty simple.  Someone killed them.
+next:root3-A1
+action end
+
+action:response:root3-A1
+<player>
+root3-A2:You don't seem very upset.
+root3-A3:How do you think they were killed?
+</>root-null:Never mind.
+action end
+
+action:statement:root3-A2
+Marcurio:Being upset or not has nothing to do with it.
+Marcurio:Weepin' doesn't bring anyone back.  So I've learned to stop trying a long time ago.
+Marcurio:Besides, I didn't know any of those people.
+next:root3-A1
+action end
+
+action:statement:root3-A3
+Marcurio:How the hell am I supposed to know?
+Marcurio:Considering we haven't found any crime scene, I'd guess it was quick and quiet.
+Marcurio:Anything else is random guessing.
+next:root3-A1
+action end
+
+
+action:statement:root3-B
+Marcurio:It kinda speaks for itself, doesn't it?
+Marcurio:The master key was last seen with Donovan.  He goes missin', and all of a sudden Gwen has it?
+Marcurio:We also know Donovan would have never willingly given it to anyone.  He was on some sort of crusade.
+next:root3-B1
+action end
+
+action:response:root3-B1
+<player>
+root3-B3:What if the key was planted in her room?
+<!>root3-trigger.chap4QuellaXuConfession:The key Donovan had and the key I found in Gwen's room...they weren't the same.
+</>root3-null:Never mind.
+action end
+
+
+action:statement:root3-B3
+Marcurio:Interesting thought, but I doubt it.
+Marcurio:For that to make sense, the person who had planted it would have to know for sure it would be found.
+Marcurio:No one had any control or foresight over where we searched, or if we even searched anything at all, except for the ship staff.
+Marcurio:And I know staff isn't involved in this.
+next:root3-B1
+action end
+
+action:statement:root3-trigger.chap4QuellaXuConfession
+Marcurio:They...they weren't the same?  That doesn't make sense.
+Marcurio:There should only be one master key to the ship.  What are you saying?
+next:root3-confession
+action end
+
+
+action:statement:root3-C
+Marcurio:What makes you so sure there's one big reason?
+Marcurio:Sometimes, shit happens.  Sometimes worse than other times.
+next:root3
+action end
+
+
+action:statement:root3-D
+Marcurio:We've got Gwen restrained.  That should be the end of it.
+Marcurio:We can wait 'til we hit land and there's an official investigation.
+Marcurio:Though honestly, what are they gonna find that we already haven't?
+next:root3
+action end
+
+
+action:response:root3-confession
+Xu
+root3-confession-2:There must be two master keys, then.
+root3-confession-3:I'm saying Gwen must be innocent.  The key in her room wasn't taken from Donovan!
+action end
+
+action:statement:root3-confession-2
+Marcurio:By itself it's not too strange to have a spare key, but I never heard of that key before.  Why all the secrecy?
+Marcurio:And where had the second key been up until this point?  Hmm...
+next:root3-confession
+action end
+
+action:statement:root3-confession-3
+Marcurio:Maybe it wasn't, but that doesn't make things any less suspicious.  Where did the key come from, then?
+Marcurio:Did this key previously belong to the captain?  If that's the case, it's even more incriminating!
+Marcurio:And how did it wind up in her room?
+next:root3-confession-4
+action end
+
+action:response:root3-confession-4
+Xu
+root3-confession-A:Maybe it was planted by somebody?
+<!>root3-confession-trigger.chap4MarcConfessedPlant:You can drop the act.  I know you planted the key in her room, Marcurio.
+</>root3-confession-null:Never mind...
+action end
+
+action:statement:root3-confession-A
+Marcurio:Well, that's one theory.
+Marcurio:Here's another - it wasn't planted, because she took the key herself.
+Marcurio:As far as I can see, my theory is way simpler.  So I'll go with that one.
+next:root3-confession-4
+action end
+
+action:statement:root3-confession-trigger.chap4MarcConfessedPlant
+Marcurio:Huh?  Where is this coming from?
+Marcurio:So maybe the key in Gwen's room wasn't the same.  How does that mean I planted it there?
+Marcurio:Why would I do something like that?
+next:root3-confession2
+action end
+
+
+action:response:root3-confession2
+Xu
+root3-confession2-fail:Maybe you're the killer.  You took out Donovan and got the key from him.
+root3-confession2-failHard:I...well, I don't know exactly.  But I know you planted the key!
+<!>root3-trigger.chap4AltonXuConfession:You planted the key because you were following instructions.  I bet you were anonymously given the key too.
+action end
+
+action:statement:root3-confession2-fail
+Marcurio:...Didn't you just tell me that Donovan's key and this one are different?
+Marcurio:You don't even have your basic facts straight, and you're accusing me of murder!
+Marcurio:Are you even listening to yourself at this point?
+next:root3-confession2
+action end
+
+action:statement:root3-confession2-failHard
+Marcurio:Ha!  Well, I have no idea where you're getting this stuff from.
+Marcurio:I mean, I don't know how you expect me to have planted the key if there was no way for me to have it in the first place.
+Marcurio:How about you come back to me when you got your story straight?
+next:root3-null
+action end
+
+action:statement:root3-trigger.chap4AltonXuConfession
+Marcurio:Wait...what?
+Marcurio:I mean...
+next:root3-confession2-B
+action end
+
+action:response:root3-confession2-B
+Xu
+root3-confession2-C:You've been getting instructions for a while, and you follow them because you're getting paid for it.
+action end
+
+action:statement:root3-confession2-C
+Marcurio:How did you...where...
+Marcurio:Wait, I get it.
+Marcurio:You've been receiving instructions too, haven't you?  Of course you have.
+Marcurio:Fine.  You're right.  Congratulations.
+Marcurio:I was given a key and told to plant it in Gwen's room.  Which is exactly why this has to remain a secret.
+Marcurio:If people find out, this gravyboat we've got going is going to turn over.  And I need that money, Sue.  I really need it.
+next:root3-confession3
+action end
+
+action:response:root3-confession3
+Xu
+root3-confession3-A:Are you crazy?  Three people are missing or dead!  What if you're working for a murderer?
+root3-confession3-trg:You're just rationalizing for your actions, Marcurio.  And poorly.
+root3-confession3-B:What else have you been instructed to do?
+<!>root3-confession3-C:It's not up to you.  I'm taking this to Ferdinand.
+action end
+
+action:statement:root3-confession3-A
+Marcurio:Slow down.  We don't know if there's a direct connection between these instructions and what happened to the others.
+Marcurio:And if there is, well, that's all the more reason not to rock the boat.
+Marcurio:Seems like this would be the most dangerous time to stick my neck out.
+next:root3-confession3
+action end
+
+action:statement:root3-confession3-trg
+Marcurio:I'm just seeing this from a different angle.  We're all better off if we settle things down and don't try anything crazy.
+Marcurio:If Donovan didn't go nuts and steal the master key god knows how, he'd probably still be here.
+Marcurio:Mark my words, staying the course is the safest thing.  Not just for me, for everyone.
+next:root3-confession3
+action end
+
+action:statement:root3-confession3-B
+Marcurio:That's not something I need to tell you.
+Marcurio:Nothing illegal, don't worry.  And nothing crazy.  All very harmless.
+next:root3-confession3
+action end
+
+action:statement:root3-confession3-C
+Marcurio:Wait, what?  If that idiot finds out, who knows what's going to happen.
+Marcurio:Sue, come on, be reasonable here...
+next:root3-confession4
+action end
+
+action:response:root3-confession4
+Xu
+root3-confession4-A:I'm the only one being reasonable here.  You can be there when I tell him what's going on, or you can talk to him afterwards.:trigger.chap4AllConfessions.on
+action end
+
+action:statement:root3-confession4-A
+Marcurio:...God dammit, fine!
+Marcurio:I'll go along with your supposed heroism for now.
+Marcurio:I'd like to be there to make sure Ferdinand doesn't go ahead with something crazy.
+Marcurio:But just to be clear, I think you're making a big mistake here.
+next:root3-null
+action end
+
+
+
+
+
+
+
+
+
+action:statement:trigger.chap6kitchenExposed
+Marcurio:You mean, the cabinet and fridge that I always have tightly locked when I'm not around?
+Marcurio:Yes, I'm sure you have.
+next:chap6Garv
+action end
+
+action:response:chap6Garv
+<player>
+chap6Garv-trigger.chap6fridgeAlcohol:There was a strange smell of alcohol in the fridge.
+chap6Garv-trigger.chap6cabinetBox:I found a box with weird notes in the cabinet.
+chap6Garv-trigger.chap6ledger:There was a ledger of kitchen stock in the cabinet.
+chap6Garv-trigger.chap6marcurioSummary:I get the feeling you're holding out a lot on me.
+chap6Garv-null:Never mind.
+action end
+
+action:statement:chap6Garv-trigger.chap6fridgeAlcohol
+Marcurio:Wait...how did you get into the fridge?  I definitely locked it.
+Marcurio:Er, I mean, I don't know what you're talking about.
+next:chap6Garv-denial
+action end
+
+action:response:chap6Garv-denial
+<player>
+chap6Garv-alcohol1:That's not going to work.  Why are you trying to lie to me?
+chap6Garv-alcohol2:There isn't a bar on the ship.  What are you doing with all that booze?:trigger.chap6fridgeBooze.on
+chap6Garv-trigger.chap6fridgeBooze:How do you not know what it was?  You were the one stocking it.
+</>chap6Garv:Back to my other questions...
+action end
+
+action:statement:chap6Garv-alcohol1
+Marcurio:Alright, fine, you got me.
+Marcurio:But you had no right to be rooting around the kitchen in the first place!
+next:chap6Garv-denial
+action end
+
+action:statement:chap6Garv-alcohol2
+Marcurio:I'm not drinking on the side, if that's what you're insinuating.
+Marcurio:Anyway, it wasn't booze you were smelling.  I'm not sure what the stuff was, I never drank it.
+next:chap6Garv-denial
+action end
+
+action:statement:chap6Garv-trigger.chap6fridgeBooze
+Marcurio:It's...it's not stuff I used for cooking, exactly.  I just stored it there to keep it cool.
+Marcurio:It was some kind of medicinal supplies.  So it's outside my department.
+next:chap6Garv-denial
+action end
+
+
+action:statement:chap6Garv-trigger.chap6cabinetBox
+Marcurio:Wait, how did you find that?!  I don't understand...
+Marcurio:Well, you probably have questions about that.
+next:chap6Garv-notes
+action end
+
+action:response:chap6Garv-notes
+<player>
+chap6Garv-notes1:You were being instructed to pick up and drop off things.  What things?:trigger.chap6marcurioBox.on
+chap6Garv-notes2:Who was writing those notes?
+chap6Garv-notes3:Why are the notes so vague and anonymous?  Does anyone else know about this?:trigger.chap6bribeExcuse.on
+chap6Garv-trigger.chap6bribeExcuse:Stop making excuses.  You're taking bribes.
+</>chap6Garv:Back to my other questions...
+action end
+
+action:statement:chap6Garv-notes1
+Marcurio:Just supplies from the kitchen, really.  Some food or water.
+Marcurio:Occasionally I've had to drop off things like blankets or cleaning supplies.
+Marcurio:It's all pretty mundane.
+next:chap6Garv-notes
+action end
+
+action:statement:chap6Garv-notes2
+Marcurio:I don't know.  I keep the notes to try and see if I can figure it out.
+Marcurio:The handwriting changes, meaning it's probably been different people over time.
+Marcurio:The only thing that's clear is that one of these people is on the ship now.
+next:chap6Garv-notes
+action end
+
+action:statement:chap6Garv-notes3
+Marcurio:As far as I can tell, no.  And I'd like it to stay that way.
+Marcurio:It seems shady, but if I wasn't doing this stuff they'd pay someone else to.
+Marcurio:I've been trying to figure out who it is and what their goal is.
+next:chap6Garv-notes
+action end
+
+action:statement:chap6Garv-trigger.chap6bribeExcuse
+Marcurio:Yeah.  I am.
+Marcurio:If you're thinking of turning me in, consider this...
+Marcurio:Someone on this ship is the one bribing me.  And you don't know who it is or how they'll react.
+next:chap6Garv-notes
+action end
+
+
+action:statement:chap6Garv-trigger.chap6ledger
+Marcurio:Shit.  You found that, huh?  I really don't understand how...
+next:chap6Garv-ledger
+action end
+
+action:response:chap6Garv-ledger
+<player>
+chap6Garv-ledger1:You've been stealing food from your own kitchen.  Why?:trigger.chap6marcurioLedger.on
+chap6Garv-ledger2:Someone knew what you were doing.  Was it the captain?
+</>chap6Garv:Back to my other questions...
+action end
+
+action:statement:chap6Garv-ledger1
+Marcurio:Is it really stealing?  
+Marcurio:Well sure, the ship pays for the food...but I'm the one that needs it to do their job.
+Marcurio:Someone really wants a share of the stock.  And they're paying well for it.  Really well.
+next:chap6Garv-ledger
+action end
+
+action:statement:chap6Garv-ledger2
+Marcurio:Yeah, the captain started taking stock of every single thing on the ship.  Including the food.
+Marcurio:She wasn't too happy about her results.
+Marcurio:I feigned incompetence, but I'm not sure she bought it.
+next:chap6Garv-ledger
+action end
+
+action:statement:chap6Garv-trigger.chap6marcurioSummary
+Marcurio:I've thought a lot about what all of this is about.
+Marcurio:I have one theory, but it's sort of ridiculous.
+next:chap6Garv-summary
+action end
+
+action:response:chap6Garv-summary
+<player>
+chap6Garv-summary1:What's your theory?
+chap6Garv-summary2:Surely after all this time, you have to have at least one lead.:trigger.chap6GarvClue1.on
+action end
+
+action:statement:chap6Garv-summary1
+Marcurio:I've considered that someone's smuggling something.  Like an animal.
+Marcurio:They'd need foodstuffs to keep it fed, and something to tranquilize it.
+Marcurio:It's not very plausible though, is it?
+next:chap6Garv-summary
+action end
+
+action:statement:chap6Garv-summary2
+Marcurio:I've kept my distance on purpose.
+Marcurio:If I find out too much and they know, the deal would be broken off.  Or something worse.
+Marcurio:Even if I had some magical piece of information, I'm not sure why I'd speak openly about it.
+next:null
+action end
+
+
+
+
+
+action:response:chap5
+<player>
+chap5-A:What should we do now?
+root3-A:What do you think happened to Donovan and Paulo?
+root3-captain:What can you tell me about the captain?
+<!>trigger.chap6kitchenExposed:I found some interesting things in the kitchen cabinet and fridge...
+</>root2-null:Never mind.
+action end
+
+action:statement:chap5-A
+Marcurio:Well, thanks to you, I guess we follow Ferdinand into who knows where.
+Marcurio:I hope you're happy with yourself.
+next:chap5-A2
+action end
+
+action:response:chap5-A2
+<player>
+chap5-B:What's wrong with that?  What's your problem?:trigger.chap5ghostMarcProgress.on
+chap5-trigger.chap5ghostMarcProgress:I'm looking for the truth.  That's all.
+chap5-C:It's too late now.  Deal with it.
+</>chap5-null:Never mind.
+action end
+
+action:statement:chap5-B
+Marcurio:My problem is that you're making it my problem.
+Marcurio:I don't want to have anything to do with this.
+Marcurio:Do you even know at this point what you're looking for?  Or why?
+next:chap5-A2
+action end
+
+action:statement:chap5-trigger.chap5ghostMarcProgress
+Marcurio:The truth is overrated.
+Marcurio:The truth doesn't solve problems...it just creates more of them.
+Marcurio:There are some things I'm better off not knowing about.
+next:chap5-A2
+action end
+
+action:statement:chap5-C
+Marcurio:I will.
+Marcurio:Just...be careful.
+Marcurio:We don't know what's going to happen.
+next:chap5-A2
+action end
+
+dialogue end
+

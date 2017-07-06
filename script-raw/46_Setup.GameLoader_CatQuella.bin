@@ -1,0 +1,35 @@
+
+dialogue start
+Cat-Quella
+
+action:response:root
+Cat
+root-1:Meow!
+</>root-null:Hsss!
+action end
+
+action:statement:root-1
+Quella:Hey there kitty!  Aww, you're so cute.  Will you let a stranger pet you?
+next:root-2
+action end
+
+action:response:root-2
+Cat
+root-3:Meow!
+</>root-null:Hsss!
+action end
+
+action:statement:root-3
+null:Quella pets the cat gently.
+Quella:If I could afford it, I'd love to have a cat of my own.  Or five.
+Quella:I'm sure I'd become some kind of crazy cat lady.  Haha!  Maybe it's better I can't afford it!
+Quella:I'll just have to settle for you, huh?
+next:root-4
+action end
+
+action:response:root-4
+Cat
+</>root-null:Purrr...
+action end
+
+dialogue end

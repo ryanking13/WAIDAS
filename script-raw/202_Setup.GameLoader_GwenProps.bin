@@ -1,0 +1,90 @@
+
+dialogue start
+GwensAxeGwen
+action:statement:root
+Gwen:I know it looks crazy to bring this with me, but...
+Gwen:I just feel more at ease if I have this around.
+action end
+dialogue end
+
+
+dialogue start
+GwensBackpackGwen
+
+action:statement:root
+Gwen:All I took with me were some clothes, medication and memorabilia.
+Gwen:I wanted to travel light, after all.
+Gwen:...I'm getting tired of running.
+Gwen:Will I ever be far away enough?
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+dialogue start
+DonovansComputerGwen
+action:statement:root
+Gwen:It looks like he left his computer on...
+next:root-1
+action end
+
+action:response:root-1
+Gwen
+root-2:See what's on the computer.
+</>root-null:Leave it alone.
+action end
+
+action:statement:root-2
+Gwen:Oh.  I need a password to log on.  That makes sense.
+Gwen:I have no idea what it would be, though.  I guess that's that.
+next:root-null
+action end
+dialogue end
+
+
+
+dialogue start
+DonovansHardwareGwen
+action:statement:root
+Gwen:These look like they have something to do with his computer, but I'm not sure exactly what they are.
+next:root-null
+action end
+dialogue end
+
+
+
+dialogue start
+DonovansCamerasTwoGwen
+action:statement:root
+Gwen:These are...microphones?  Cameras?  And they're small, designed to be concealed.
+Gwen:What is he using these for?
+next:root-null
+action end
+dialogue end
+
+
+
+dialogue start
+DonovansCamerasGwen
+action:statement:root
+Gwen:Why would someone bring all of this surveillance equipment on board?
+Gwen:What is he hoping to see?
+next:root-null
+action end
+dialogue end
+
+
+
+dialogue start
+SkeletonKeyGwen
+action:statement:root
+Gwen:It's a...metal rod?  It has holes and engravings all over it.  I'm not quite sure what it is.
+Gwen:There's a creepy face engraved on the top.
+next:root-null
+action end
+dialogue end
+

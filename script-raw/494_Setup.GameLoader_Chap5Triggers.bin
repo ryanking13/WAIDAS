@@ -1,0 +1,1035 @@
+
+
+// CHAPTER 5 CINEMATIC SCRIPTING
+
+trigger start
+chapter5Init,0
+requirements
+	.null
+effects
+	trigger.triggerStatus-chapter5OpeningInit-awake
+	self.setStatus-asleep
+trigger end
+
+trigger start
+chapter5OpeningInit,-1
+requirements
+	gui.outOfDialogue
+effects
+	player.lockPlayer-true
+	map.fadeOutMap-<dot>02
+	sound.fadeOutAllSounds-<dot>01
+	trigger.triggerStatus-chapter5Intro-awake
+	self.setStatus-asleep
+trigger end
+
+
+trigger start
+chapter5Intro,-1
+
+requirements
+	self.timer-100
+effects
+	player.depossess
+	map.changeMap-Boat
+	cinematic.moveChar-Ghost-Boat-10,9
+	player.moveToPlayer
+	player.cameraLock-true
+	
+	character.unlockChar-Gwen
+	character.unanimate-Gwen
+	character.eraseBehavior-Ferdinand
+	character.eraseBehavior-Marcurio
+	character.eraseBehavior-Xu
+	character.eraseBehavior-Alton
+	character.eraseBehavior-Gwen
+	character.eraseBehavior-Darryl
+	character.eraseBehavior-Quella
+	character.eraseBehavior-Garv
+	
+	character.pauseCommand-Ferdinand
+	character.pauseCommand-Marcurio
+	character.pauseCommand-Xu
+	character.pauseCommand-Alton
+	character.pauseCommand-Gwen
+	character.pauseCommand-Darryl
+	character.pauseCommand-Quella
+	character.pauseCommand-Garv
+	
+	character.stopChar-Ferdinand
+	character.stopChar-Marcurio
+	character.stopChar-Xu
+	character.stopChar-Alton
+	character.stopChar-Gwen
+	character.stopChar-Darryl
+	character.stopChar-Quella
+	character.stopChar-Garv
+	
+	cinematic.moveChar-Ferdinand-Boat-11,10
+	cinematic.moveChar-Xu-Boat-10,10
+	cinematic.moveChar-Marcurio-Boat-7,11
+	cinematic.moveChar-Alton-Boat-8,10
+	cinematic.moveChar-Darryl-Boat-8,12
+	cinematic.moveChar-Quella-Boat-9,12
+	cinematic.moveChar-Gwen-Boat-10,12
+	cinematic.moveChar-Garv-Boat-11,12
+	
+	character.animate-Ferdinand-Front Idle
+	character.animate-Xu-Front Idle
+	character.animate-Marcurio-Right Idle
+	character.animate-Alton-Right Idle
+	character.animate-Darryl-Back Idle
+	character.animate-Quella-Back Idle
+	character.animate-Gwen-Back Idle
+	character.animate-Garv-Back Idle
+	map.fadeInMap-<dot>02
+	
+	gui.startDialogue-chap5Opening-root
+requirements
+	gui.outOfDialogue
+	self.timer-30
+effects
+	gui.startDialogue-chap5Opening-root2
+requirements
+	gui.outOfDialogue
+	self.timer-10
+effects
+	gui.startDialogue-chap5Opening-root3
+requirements
+	gui.outOfDialogue
+	self.timer-10
+effects
+	character.animate-Ferdinand-Right Idle
+	gui.startDialogue-chap5Opening-root4
+requirements
+	gui.outOfDialogue
+effects
+	map.fadeOutMap-<dot>02
+requirements
+	self.timer-100
+effects
+	map.changeMap-Bottom Deck-6,5
+	gui.blackEffect-0-0-<dot>8
+	cinematic.moveChar-Ghost-Bottom Deck-7,5
+	cinematic.moveChar-Ferdinand-Bottom Deck-7,5
+	cinematic.moveChar-Xu-Bottom Deck-6,6
+	cinematic.moveChar-Marcurio-Bottom Deck-6,5
+	cinematic.moveChar-Alton-Bottom Deck-5,5
+	cinematic.moveChar-Garv-Bottom Deck-4,6
+	cinematic.moveChar-Quella-Bottom Deck-4,5
+	cinematic.moveChar-Darryl-Bottom Deck-3,5
+	cinematic.moveChar-Gwen-Bottom Deck-2,5
+	
+	character.animate-Xu-Right Idle
+	character.animate-Marcurio-Right Idle
+	character.animate-Alton-Right Idle
+	character.animate-Garv-Right Idle
+	character.animate-Quella-Right Idle
+	character.animate-Darryl-Right Idle
+	character.animate-Gwen-Right Idle
+	
+	player.moveToPlayer
+	player.cameraLock-true
+	map.fadeInMap-<dot>02
+	sound.fadeInSound-Track9-1-<dot>01
+	gui.startDialogue-chap5Opening-rootbottomdeck
+requirements
+	gui.outOfDialogue
+	self.timer-20
+effects
+	character.unanimate-Ferdinand
+	character.unanimate-Xu
+	character.unanimate-Marcurio
+	character.unanimate-Alton
+	character.unanimate-Garv
+	character.unanimate-Quella
+	character.unanimate-Darryl
+	character.unanimate-Gwen
+	character.forceChar-Ferdinand-right
+	character.forceChar-Xu-right
+requirements
+	self.timer-20
+effects
+	character.forceChar-Marcurio-right
+	character.forceChar-Alton-right
+	character.forceChar-Garv-right
+requirements
+	self.timer-20
+effects
+	character.forceChar-Quella-right
+	character.forceChar-Darryl-right
+	character.forceChar-Gwen-right
+	player.cameraLock-true
+	player.cameraPanRelative-2-480,0
+requirements
+	character.isPastPoint-Alton-Bottom Deck-Right-544
+effects
+	cinematic.walkChar-Ferdinand-Bottom Deck-25,7
+	cinematic.walkChar-Xu-Bottom Deck-24,6
+	cinematic.walkChar-Marcurio-Bottom Deck-26,6
+	cinematic.walkChar-Alton-Bottom Deck-22,7
+	cinematic.walkChar-Garv-Bottom Deck-25,8
+	cinematic.walkChar-Quella-Bottom Deck-24,8
+	cinematic.walkChar-Darryl-Bottom Deck-23,8
+	cinematic.walkChar-Gwen-Bottom Deck-22,8
+	gui.startDialogue-chap5Opening-root5
+requirements
+	gui.outOfDialogue
+	self.timer-30
+effects
+	gui.startDialogue-chap5Opening-root6
+requirements
+	gui.outOfDialogue
+effects
+	player.cameraPanRelative-2-96,32
+	gui.fadeOutScreen-<dot>05
+requirements
+	self.timer-60
+effects
+
+	cinematic.moveChar-Ferdinand-Bottom Deck-28,7
+	cinematic.moveChar-Xu-Bottom Deck-24<dot>6,5
+	cinematic.moveChar-Marcurio-Bottom Deck-26,5
+	cinematic.moveChar-Alton-Bottom Deck-27,6
+	cinematic.moveChar-Garv-Bottom Deck-28,8
+	cinematic.moveChar-Darryl-Bottom Deck-27,9
+	cinematic.moveChar-Quella-Bottom Deck-26,10
+	cinematic.moveChar-Gwen-Bottom Deck-24<dot>6,10
+	character.animate-Ferdinand-Right Idle
+	character.animate-Xu-Front Idle
+	character.animate-Marcurio-Front Idle
+	character.animate-Alton-Right Idle
+	character.animate-Garv-Right Idle
+	character.animate-Darryl-Front Idle
+	character.animate-Quella-Right Idle
+	character.animate-Gwen-Back Idle
+	
+	gui.fadeInScreen-<dot>05
+	gui.startDialogue-chap5Opening-root7
+requirements
+	gui.outOfDialogue
+	self.timer-10
+effects
+	gui.startDialogue-chap5Opening-root8
+	map.fadeOutMap-1
+requirements
+	gui.outOfDialogue
+	self.timer-30
+effects
+
+	character.animate-Ferdinand-Left Idle
+	character.animate-Xu-Left Idle
+	character.animate-Marcurio-Left Idle
+	character.animate-Alton-Left Idle
+	character.animate-Garv-Left Idle
+	character.animate-Darryl-Left Idle
+	character.animate-Quella-Left Idle
+	character.animate-Gwen-Left Idle
+	
+	gui.startDialogue-chap5Opening-root9
+	trigger.triggerStatus-chap5SetPositions-awake
+	cinematic.moveChar-EvilDonovan-Bottom Deck-15,7
+requirements
+	gui.outOfDialogue
+effects
+	map.fadeInMap-<dot>05
+	cinematic.walkChar-EvilDonovan-Bottom Deck-22,8
+requirements
+	character.isPastPoint-EvilDonovan-Bottom Deck-Right-650
+effects
+	gui.startDialogue-chap5Opening-root10
+requirements
+	gui.outOfDialogue
+	self.timer-30
+effects
+	gui.startDialogue-chap5Opening-root11
+requirements
+	gui.outOfDialogue
+	self.timer-15
+effects
+	gui.startDialogue-chap5Opening-root12
+requirements
+	gui.outOfDialogue
+	self.timer-15
+effects
+	character.animate-EvilDonovan-Ultimatum
+	gui.startDialogue-chap5Opening-root13
+requirements
+	gui.outOfDialogue
+effects
+	cinematic.moveChar-Ghost-Bottom Deck-25,8
+	player.lockPlayer-false
+	player.cameraLock-false
+	
+	character.disableSpeechBubbles
+	
+	character.changeTheme-Xu-null
+	character.changeTheme-Marcurio-null
+	character.changeTheme-Alton-null
+	character.changeTheme-Ferdinand-null
+	character.changeTheme-Garv-null
+	character.changeTheme-Darryl-null
+	character.changeTheme-Quella-null
+	character.changeTheme-Gwen-null
+	
+	character.lockChar-Ferdinand
+	character.lockChar-Xu
+	character.lockChar-Marcurio
+	character.lockChar-Alton
+	character.lockChar-Darryl
+	character.lockChar-Quella
+	character.lockChar-Gwen
+	character.lockChar-Garv
+	character.lockChar-EvilDonovan
+	
+	dialogue.disableDialogue-Xu<hyphen>Marcurio
+	dialogue.disableDialogue-Marcurio<hyphen>Xu
+	dialogue.disableDialogue-Marcurio<hyphen>Alton
+	dialogue.disableDialogue-Alton<hyphen>Marcurio
+	dialogue.disableDialogue-Alton<hyphen>Ferdinand
+	dialogue.disableDialogue-Ferdinand<hyphen>Alton
+	dialogue.disableDialogue-Ferdinand<hyphen>Garv
+	dialogue.disableDialogue-Garv<hyphen>Ferdinand
+	dialogue.disableDialogue-Garv<hyphen>Darryl
+	dialogue.disableDialogue-Darryl<hyphen>Garv
+	dialogue.disableDialogue-Darryl<hyphen>Quella
+	dialogue.disableDialogue-Quella<hyphen>Darryl
+	dialogue.disableDialogue-Quella<hyphen>Gwen
+	dialogue.disableDialogue-Gwen<hyphen>Quella
+	
+	dialogue.disableDialogue-GhostXu<hyphen>Marcurio
+	dialogue.disableDialogue-GhostAlton<hyphen>Marcurio
+	dialogue.disableDialogue-GhostAlton<hyphen>Ferdinand
+	dialogue.disableDialogue-GhostGarv<hyphen>Ferdinand
+	dialogue.disableDialogue-GhostGarv<hyphen>Alton
+	dialogue.disableDialogue-GhostGarv<hyphen>Darryl
+	dialogue.disableDialogue-GhostDarryl<hyphen>Ferdinand
+	dialogue.disableDialogue-GhostDarryl<hyphen>Quella
+	dialogue.disableDialogue-GhostDarryl<hyphen>Garv
+	dialogue.disableDialogue-GhostQuella<hyphen>Gwen
+	dialogue.disableDialogue-GhostQuella<hyphen>Darryl
+	dialogue.disableDialogue-GhostGwen<hyphen>Quella
+	
+	dialogue.disableDialogue-Ghost<hyphen>Xu
+	dialogue.disableDialogue-Ghost<hyphen>Marcurio
+	dialogue.disableDialogue-Ghost<hyphen>Alton
+	dialogue.disableDialogue-Ghost<hyphen>Ferdinand
+	dialogue.disableDialogue-Ghost<hyphen>Garv
+	dialogue.disableDialogue-Ghost<hyphen>Darryl
+	dialogue.disableDialogue-Ghost<hyphen>Quella
+	dialogue.disableDialogue-Ghost<hyphen>Gwen
+	
+	trigger.triggerStatus-chap5BadEndingBegin-awake
+	trigger.triggerStatus-chap5FerdEndingBegin-awake
+	trigger.triggerStatus-chap5GarvEndingBegin-awake
+	trigger.triggerStatus-chap5FinalEndingBegin-awake
+	trigger.triggerStatus-chap5paulosPage-awake
+	self.setStatus-asleep
+trigger end
+
+
+trigger start
+chap5SetPositions,-1
+requirements
+	character.isOnTile-Ferdinand-Bottom Deck-28,8
+	character.isOnTile-Xu-Bottom Deck-25,6
+	character.isOnTile-Marcurio-Bottom Deck-26,6
+	character.isOnTile-Alton-Bottom Deck-27,7
+	character.isOnTile-Garv-Bottom Deck-28,9
+	character.isOnTile-Darryl-Bottom Deck-27,10
+	character.isOnTile-Quella-Bottom Deck-26,11
+	character.isOnTile-Gwen-Bottom Deck-25,11
+effects
+	character.animate-Ferdinand-Left Idle
+	character.animate-Xu-Front Idle
+	character.animate-Marcurio-Front Idle
+	character.animate-Alton-Left Idle
+	character.animate-Garv-Left Idle
+	character.animate-Quella-Left Idle
+	character.animate-Darryl-Left Idle
+	character.animate-Gwen-Left Idle
+	self.setStatus-asleep
+trigger end
+
+
+
+
+
+
+// CHAPTER 5   BAD ENDING PROGRESSION TRIGGERS   /////////////////////////////////////////////////////////////
+
+
+trigger start
+chap5BadEndingBegin,-1
+requirements
+	trigger.triggerIsStatus-chap5GarvQuestion-on
+	trigger.triggerIsStatus-chap5XuConfession-on
+	trigger.triggerIsStatus-chap5MarcConfession2-on
+effects
+	trigger.triggerStatus-chap5GarvQuestion-asleep
+	trigger.triggerStatus-chap5XuConfession-asleep
+	trigger.triggerStatus-chap5MarcConfession2-asleep
+	player.lockPlayer-true
+	trigger.triggerStatus-chap5BadEnding-awake
+	self.setStatus-asleep
+trigger end
+
+trigger start
+chap5BadEnding,-1
+requirements
+	gui.outOfDialogue
+	self.timer-30
+effects
+	gui.startDialogue-chap5ClosingBad-root
+	character.undrawSpeechBubbles
+	trigger.triggerStatus-chap5BadEnding2-awake
+	cinematic.activateAchievement-ENDING_ONE
+	self.setStatus-asleep
+trigger end
+	
+trigger start
+chap5BadEnding2,-1
+requirements
+	gui.outOfDialogue
+effects
+	character.unlockChar-EvilDonovan
+	character.unlockChar-Alton
+	character.unlockChar-Garv
+	character.unlockChar-Ferdinand
+	character.unlockChar-Darryl
+	character.unlockChar-Quella
+	
+	character.animate-EvilDonovan-TheSolution
+	sound.playSound-Remington-1
+	gui.blackEffect-1-<dot>10
+	character.animate-Alton-Death
+requirements
+	self.timer-10
+effects
+	gui.startDialogue-chap5ClosingBad-root2
+requirements
+	self.timer-20
+	gui.outOfDialogue
+effects
+	gui.startDialogue-chap5ClosingBad-root3
+requirements
+	gui.outOfDialogue
+effects
+	character.animate-EvilDonovan-TheSolution
+	sound.playSound-Remington-1
+	gui.blackEffect-1-<dot>10
+	character.animate-Garv-Death
+requirements
+	self.timer-10
+effects
+	gui.startDialogue-chap5ClosingBad-root4
+	character.animate-Ferdinand-Salute
+requirements
+	gui.outOfDialogue
+effects
+	character.animate-EvilDonovan-TheSolution
+	sound.playSound-Remington-1
+	gui.blackEffect-1-<dot>10
+	character.animate-Ferdinand-Death
+requirements
+	self.timer-10
+effects
+	character.animate-Darryl-Resigned
+	gui.startDialogue-chap5ClosingBad-root5
+requirements
+	gui.outOfDialogue
+effects
+	character.animate-EvilDonovan-TheSolution
+	gui.blackEffect-1-<dot>10
+	sound.playSound-Remington-1
+	cinematic.moveChar-Quella-Bottom Deck-26<dot>7,9
+	character.animate-Quella-Death
+	character.animate-Darryl-Shock
+requirements
+	self.timer-45
+effects
+	gui.startDialogue-chap5ClosingBad-root6
+requirements
+	gui.outOfDialogue
+effects
+	character.animate-EvilDonovan-TheSolution
+	sound.playSound-Remington-1
+	gui.blackEffect-1-<dot>10
+	character.animate-Darryl-Death
+	cinematic.moveChar-Quella-Bottom Deck-27,9
+requirements
+	self.timer-45
+effects
+	gui.startDialogue-chap5ClosingBad-root7
+requirements
+	gui.outOfDialogue
+	self.timer-10
+effects
+	character.animate-EvilDonovan-Goodbye
+	gui.startDialogue-chap5ClosingBad-root8
+requirements
+	gui.outOfDialogue
+effects
+	sound.playSound-Remington-1
+	gui.blackEffect-1-<dot>10
+	character.animate-EvilDonovan-Death
+	cinematic.moveChar-EvilDonovan-Bottom Deck-21,7<dot>5
+requirements
+	self.timer-60
+effects
+	map.fadeOutMap-<dot>01
+	trigger.triggerStatus-BadEpilogue-awake
+	
+	self.setStatus-asleep
+trigger end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// CHAPTER 5   FERDINAND ENDING PROGRESSION TRIGGERS   /////////////////////////////////////////////////////////////
+
+trigger start
+chap5ferdNail1,0
+requirements
+	.null
+effects
+	trigger.triggerStatus-chap5ferdNail4-on
+trigger end
+
+trigger start
+chap5ferdNail2,0
+requirements
+	.null
+effects
+trigger end
+
+trigger start
+chap5ferdNail3,0
+requirements
+	.null
+effects
+	trigger.triggerStatus-chap5ferdNail4-on
+	trigger.triggerStatus-chap5targetAquired-on
+trigger end
+
+trigger start
+chap5ferdNail4,0
+requirements
+effects
+trigger end
+
+
+
+trigger start
+chap5paulosPage,-1
+requirements
+	trigger.triggerIsStatus-chap5paulosHint-on
+	trigger.triggerIsStatus-chap5GarvQuestion-on
+effects
+	trigger.triggerStatus-chap5paulosHint-asleep
+	trigger.triggerStatus-chap5GarvQuestion-asleep
+trigger end
+
+trigger start
+chap5catExplanation,0
+requirements
+	.null
+effects
+	trigger.triggerStatus-chap5catExplanationSkit-awake
+	player.lockPlayer-true
+	self.setStatus-asleep
+trigger end
+	
+trigger start
+chap5catExplanationSkit,-1
+requirements
+	gui.outOfDialogue
+	self.timer-60
+effects
+	gui.startDialogue-Quella<hyphen>EvilDonovan-root<hyphen>garvsHint
+requirements
+	gui.outOfDialogue
+effects
+	gui.startDialogue-Quella<hyphen>EvilDonovan-root
+	trigger.triggerStatus-chap5ferdNail2-awake
+	trigger.triggerStatus-chap5ferdNail2-on
+	player.lockPlayer-false
+	self.setStatus-asleep
+trigger end
+	
+trigger start
+chap5FerdEndingBegin,-1
+requirements
+	trigger.triggerIsStatus-chap5ferdNail4-on
+	trigger.triggerIsStatus-chap5ferdNail2-on
+effects
+	trigger.triggerStatus-chap5ferdNail1-asleep
+	trigger.triggerStatus-chap5ferdNail2-asleep
+	trigger.triggerStatus-chap5ferdNail3-asleep
+	trigger.triggerStatus-chap5ferdNail4-asleep
+	player.lockPlayer-true
+	trigger.triggerStatus-chap5FerdEnding-awake
+	self.setStatus-asleep
+trigger end
+
+
+
+trigger start
+chap5FerdEnding,-1
+requirements
+	gui.outOfDialogue
+	self.timer-30
+effects
+	gui.startDialogue-chap5ClosingFerdinand-root
+	character.undrawSpeechBubbles
+	character.unlockChar-EvilDonovan
+	character.unlockChar-Ferdinand
+	character.unlockChar-Quella
+requirements
+	gui.outOfDialogue
+	self.timer-60
+effects
+	gui.startDialogue-chap5ClosingFerdinand-root2
+	character.animate-EvilDonovan-Right Idle
+requirements
+	gui.outOfDialogue
+	self.timer-30
+effects
+	gui.startDialogue-chap5ClosingFerdinand-root4
+requirements
+	gui.outOfDialogue
+	self.timer-30
+effects
+	gui.startDialogue-chap5ClosingFerdinand-root5
+	character.unanimate-Ferdinand
+	character.noClip-Ferdinand
+	character.forceChar-Ferdinand-left
+requirements
+	self.timer-10
+effects
+	character.stopChar-Ferdinand
+	character.yesClip-Ferdinand
+	character.animate-Ferdinand-Laughing
+requirements
+	gui.outOfDialogue
+	self.timer-5
+effects
+	gui.startDialogue-chap5ClosingFerdinand-root6
+	character.animate-EvilDonovan-Ultimatum
+	character.animate-Ferdinand-Left Idle
+requirements
+	gui.outOfDialogue
+effects
+	character.animate-EvilDonovan-TheSolution
+	sound.playSound-Remington-1
+	gui.blackEffect-1-<dot>10
+	character.animate-Ferdinand-KneeShot
+requirements
+	self.timer-30
+effects
+	character.animate-EvilDonovan-Right Idle
+	gui.startDialogue-chap5ClosingFerdinand-root7
+	character.unanimate-Quella
+	cinematic.walkChar-Quella-Bottom Deck-26,10
+requirements
+	gui.outOfDialogue
+effects
+	character.animate-EvilDonovan-Ultimatum
+	character.animate-Quella-Left Idle
+requirements
+	self.timer-30
+effects
+	character.animate-EvilDonovan-TheSolution
+	sound.playSound-Remington-1
+	gui.blackEffect-1-<dot>10
+	character.animate-Ferdinand-KneeShot2
+requirements
+	self.timer-30
+effects
+	gui.startDialogue-chap5ClosingFerdinand-root8
+requirements
+	gui.outOfDialogue
+effects
+	gui.startDialogue-chap5ClosingFerdinand-root9
+	character.animate-Ferdinand-Confession
+requirements
+	gui.outOfDialogue
+	self.timer-90
+effects
+	gui.startDialogue-chap5ClosingFerdinand-root10
+	character.animate-EvilDonovan-TheSolution
+	sound.playSound-Remington-1
+	gui.blackEffect-1-<dot>10
+	character.animate-Ferdinand-Death
+requirements
+	gui.outOfDialogue
+	self.timer-60
+effects
+	character.animate-EvilDonovan-Goodbye
+requirements
+	self.timer-60
+effects
+	sound.playSound-Remington-1
+	gui.blackEffect-1-<dot>10
+	character.animate-EvilDonovan-Death
+	cinematic.moveChar-EvilDonovan-Bottom Deck-21,7<dot>5
+requirements
+	self.timer-60
+effects
+	map.fadeOutMap-<dot>01
+	sound.fadeOutAllSounds-<dot>1
+	trigger.triggerStatus-FerdEpilogue-awake
+	
+	cinematic.activateAchievement-ENDING_TWO
+	self.setStatus-asleep
+trigger end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// CHAPTER 5   GARV ENDING PROGRESSION TRIGGERS   /////////////////////////////////////////////////////////////
+
+trigger start
+chap5garvNail1,0
+requirements
+	.null
+effects
+	trigger.triggerStatus-chap5targetAquired-on
+trigger end
+
+
+trigger start
+chap5GarvEndingBegin,-1
+requirements
+	trigger.triggerIsStatus-chap5garvNail1-on
+	trigger.triggerIsStatus-chap6GarvEnd3-on
+effects
+	trigger.triggerStatus-chap5garvNail1-asleep
+	player.lockPlayer-true
+	trigger.triggerStatus-chap5GarvEnding-awake
+	self.setStatus-asleep
+trigger end
+
+
+
+trigger start
+chap5GarvEnding,-1
+requirements
+	gui.outOfDialogue
+	self.timer-30
+effects
+	player.depossess
+requirements
+	self.timer-60
+effects
+	gui.startDialogue-chap5ClosingGarv-root
+	character.undrawSpeechBubbles
+	character.animate-EvilDonovan-Right Idle
+requirements
+	gui.outOfDialogue
+	self.timer-30
+effects
+	gui.startDialogue-chap5ClosingGarv-root4
+requirements
+	gui.outOfDialogue
+	self.timer-30
+effects
+	gui.startDialogue-chap5ClosingGarv-root5
+requirements
+	gui.outOfDialogue
+effects
+	gui.startDialogue-chap5ClosingGarv-root6
+	character.unanimate-Garv
+	character.unlockChar-Garv
+	character.unlockChar-EvilDonovan
+	character.noClip-Garv
+	character.forceChar-Garv-left
+requirements
+	self.timer-15
+effects
+	character.yesClip-Garv
+	character.stopChar-Garv
+	character.animate-Garv-Bargain
+requirements
+	gui.outOfDialogue
+effects
+	character.animate-Garv-Right Idle
+requirements
+	self.timer-45
+effects
+	gui.startDialogue-chap5ClosingGarv-root7
+	character.animate-Garv-Bargain
+requirements
+	gui.outOfDialogue
+effects
+	character.animate-Garv-Right Idle
+requirements
+	self.timer-45
+effects
+	character.unanimate-Garv
+	cinematic.walkChar-Garv-Bottom Deck-25,9
+	gui.startDialogue-chap5ClosingGarv-root8
+requirements
+	self.timer-20
+effects
+	character.animate-Garv-Bargain2
+	character.animate-EvilDonovan-Ultimatum
+requirements
+	gui.outOfDialogue
+effects
+	character.animate-EvilDonovan-TheSolution
+	sound.playSound-Remington-1
+	gui.blackEffect-1-<dot>10
+	character.animate-Garv-Death
+requirements
+	self.timer-30
+effects
+	gui.startDialogue-chap5ClosingGarv-root9
+requirements
+	self.timer-60
+	gui.outOfDialogue
+effects
+	character.animate-EvilDonovan-Goodbye
+requirements
+	self.timer-60
+effects
+	sound.playSound-Remington-1
+	gui.blackEffect-1-<dot>10
+	character.animate-EvilDonovan-Death
+	cinematic.moveChar-EvilDonovan-Bottom Deck-21,7<dot>5
+requirements
+	self.timer-60
+effects
+	map.fadeOutMap-<dot>01
+	sound.fadeOutAllSounds-<dot>01
+	trigger.triggerStatus-GarvEpilogue-awake
+	
+	cinematic.activateAchievement-ENDING_THREE
+	self.setStatus-asleep
+trigger end
+
+
+
+
+
+// CHAPTER 5   FINAL ENDING PROGRESSION TRIGGERS   /////////////////////////////////////////////////////////////
+
+
+trigger start
+chap5eitherTargetAvailable,0
+requirements
+	.null
+effects
+trigger end
+
+trigger start
+chap5FinalEndingBegin,-1
+requirements
+	trigger.triggerIsStatus-chap5ferdNail2-on
+	trigger.triggerIsStatus-chap6garvBridgeClue-on
+	trigger.triggerIsStatus-chap5eitherTargetAvailable-on
+	gui.outOfDialogue
+effects
+	trigger.triggerStatus-chap5ferdNail2-asleep
+	trigger.triggerStatus-chap5eitherTargetAvailable-asleep
+	
+	trigger.triggerStatus-chap5BadEndingBegin-asleep
+	trigger.triggerStatus-chap5FerdEndingBegin-asleep
+	trigger.triggerStatus-chap5GarvEndingBegin-asleep
+	
+	trigger.triggerStatus-chap5FinalEndingBad-awake
+	trigger.triggerStatus-chap5FinalEndingGood-awake
+	
+	gui.startDialogue-chap5ClosingFinal-root
+	self.setStatus-asleep
+trigger end
+
+trigger start
+chap5bothTargetsAvailable,0
+requirements
+	trigger.triggerIsStatus-chap6FerdEnd3-on
+	trigger.triggerIsStatus-chap6GarvEnd2-on
+effects
+trigger end
+
+trigger start
+chap5targetAquired,0
+requirements
+	.null
+effects
+trigger end
+
+
+
+
+
+
+trigger start
+chap5FinalEndingBad,-1
+requirements
+	trigger.triggerIsStatus-chap5bothTargetsAvailable-awakeOnly
+	trigger.triggerIsStatus-chap5targetAquired-on
+	gui.outOfDialogue
+	self.timer-30
+effects
+	player.lockPlayer-true
+	gui.startDialogue-chap5ClosingBad-rootFinal
+	
+	trigger.triggerStatus-chap5BadEnding2-awake
+	
+	cinematic.activateAchievement-ENDING_FOUR_BAD
+	self.setStatus-asleep
+trigger end
+
+
+trigger start
+chap5FinalEndingGood,-1
+requirements
+	trigger.triggerIsStatus-chap5bothTargetsAvailable-on
+	trigger.triggerIsStatus-chap5garvNail1-on
+	trigger.triggerIsStatus-chap5ferdNail3-on
+effects
+	trigger.triggerStatus-chap5FinalEndingGoodGo-awake
+	self.setStatus-asleep
+trigger end
+
+
+trigger start
+chap5FinalEndingGoodGo,-1
+requirements
+	gui.outOfDialogue
+	self.timer-60
+effects
+	player.lockPlayer-true
+	gui.startDialogue-chap5ClosingFinal-root7
+	character.undrawSpeechBubbles
+	character.animate-EvilDonovan-Right Idle
+	
+	character.unlockChar-EvilDonovan
+	character.unlockChar-Darryl
+	character.unlockChar-Gwen
+	character.unlockChar-Garv
+	character.unlockChar-Ferdinand
+requirements
+	gui.outOfDialogue
+effects
+	gui.startDialogue-chap5ClosingFinal-root8
+	character.noClip-Garv
+	character.unanimate-Garv
+	character.forceChar-Garv-left
+requirements
+	self.timer-15
+effects
+	character.yesClip-Garv
+	character.stopChar-Garv
+requirements
+	gui.outOfDialogue
+	self.timer-60
+effects
+	gui.startDialogue-chap5ClosingFinal-root9
+	character.noClip-Ferdinand
+	character.unanimate-Ferdinand
+	character.forceChar-Ferdinand-left
+requirements
+	self.timer-15
+effects
+	character.yesClip-Ferdinand
+	character.stopChar-Ferdinand
+requirements
+	gui.outOfDialogue
+	self.timer-10
+effects
+	cinematic.walkChar-Garv-Bottom Deck-23,9
+requirements
+	self.timer-10
+effects
+	character.animate-Garv-Back Idle
+	character.animate-EvilDonovan-Ultimatum
+	gui.startDialogue-chap5ClosingFinal-root10
+requirements
+	gui.outOfDialogue
+	self.timer-60
+effects
+	character.animate-Garv-Left Idle
+	gui.startDialogue-chap5ClosingFinal-root11
+requirements
+	gui.outOfDialogue
+effects
+	character.animate-EvilDonovan-TheSolution
+	sound.playSound-Remington-1
+	gui.blackEffect-1-<dot>10
+	character.animate-Garv-Death
+requirements
+	self.timer-120
+effects
+	character.animate-Ferdinand-Left Idle
+	gui.startDialogue-chap5ClosingFinal-root12
+requirements
+	gui.outOfDialogue
+effects
+	character.animate-EvilDonovan-TheSolution
+	sound.playSound-Remington-1
+	gui.blackEffect-1-<dot>10
+	character.animate-Ferdinand-Death
+requirements
+	self.timer-90
+effects
+	character.animate-EvilDonovan-Goodbye
+requirements
+	self.timer-10
+effects
+	sound.playSound-Remington-1
+	gui.blackEffect-1-<dot>10
+	character.animate-EvilDonovan-Death
+	cinematic.moveChar-EvilDonovan-Bottom Deck-21,7<dot>5
+requirements
+	self.timer-60
+effects
+	map.fadeOutMap-<dot>01
+	sound.fadeOutAllSounds-<dot>01
+	trigger.triggerStatus-FinalEpilogue-awake
+	
+	cinematic.activateAchievement-ENDING_FOUR_GOOD
+	self.setStatus-asleep
+trigger end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

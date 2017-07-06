@@ -1,0 +1,222 @@
+
+
+
+// GWEN - XU ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Gwen-Xu
+
+action:response:root
+Gwen
+root-1:Where are you from?
+root-2:Where are you going?
+</>root-null:Never mind.
+action end
+
+action:statement:root-1
+Xu:China.  From central China, actually, in a city called Xi'an.
+Xu:It's been years since I left, though.
+next:root-1-A
+action end
+
+action:response:root-1-A
+Gwen
+root-1-B:Do you miss it there?
+root-1-C:Your English is really good!
+</>root-null:Never mind.
+action end
+
+action:statement:root-1-B
+Xu:Miss it?  I hadn't really thought about that...
+Xu:I guess I miss some things about China.
+Xu:...It's a give and take, though.
+next:root-1-A
+action end
+
+action:statement:root-1-C
+Xu:Thanks.  Like I said, it's been years since leaving China.
+Xu:I've spent a lot of time around native English speakers, so that's why.
+next:root-1-A
+action end
+
+
+action:statement:root-2
+Xu:Where am I...going?
+Xu:I work on the ship.  So I go where it goes.
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+// GWEN - XU (CHAPTER 4) ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Gwen-Xu
+
+action:response:chap4
+Gwen
+chap4-A:Can you listen to me?
+</>chap4-null:Say nothing
+action end
+
+action:statement:chap4-A
+Xu:Eh...sure.  I think I already know what you're going to say.
+next:chap4-B
+action end
+
+action:response:chap4-B
+Gwen
+chap4-C:You have to believe me.  I didn't do it.:trigger.chap4gwenXuProgress.on
+chap4-D:I never saw that key before in my life.
+chap4-E:The real killer must still be out there...
+</>chap4-null:...Never mind.
+action end
+
+action:statement:chap4-C
+Xu:Cute.  Why should I believe you?  Why should I believe anyone?
+Xu:Don't you get it?  We're all liars here.
+next:chap4-C-1
+action end
+
+action:response:chap4-C-1
+Gwen
+chap4-C-2:Including you?
+chap4-C-3:Not everyone...not Quella...
+action end
+
+action:statement:chap4-C-2
+Xu:Especially me.
+Xu:Can I let you in on a secret, Gwen?
+Xu:People are stupid.  You flaunt the truth in their face and they'll still take the lie you slip under their door.
+Xu:People don't want the truth.  So I don't give it to them.
+next:chap4-C-1
+action end
+
+action:statement:chap4-C-3
+Xu:Quella?  She...yeah.  She seems like a good person.
+Xu:Donovan seemed like a good person too.  And he put his trust in me.
+Xu:...
+Xu:What would Quella say if she really knew...
+next:chap4-null
+action end
+
+action:statement:chap4-D
+Xu:What are you trying to say?  You saw the key Donovan had, right?  And we found it in your room.
+Xu:The end.  Nothing else to talk about.
+next:chap4-B
+action end
+
+action:statement:chap4-E
+Xu:Oh yeah?  And who would that be?  One of the other passengers, who isn't known to skulk around the ship all the time?
+Xu:Someone who isn't constantly paranoid and obsessed with other people on the ship being their enemies?
+Xu:You dug this hole, Gwen.  You dig yourself out of it.
+next:chap4-B
+action end
+
+dialogue end
+
+
+
+// GWEN - XU (CHAPTER 5) ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Gwen-Xu
+
+action:response:chap5
+Gwen
+<!>chap5-trigger.chap4gwenXuProgress:You never really thought I was guilty, did you?:trigger.ending2GwenKey.on
+chap5-A:The real killer is still around.  If you know anything relevant...
+</>chap5-null:Never mind.
+action end
+
+action:statement:chap5-trigger.chap4gwenXuProgress
+Xu:...No.  You're right.
+Xu:I knew the key in your room wasn't the same as the one Donovan had.
+Xu:Donovan's master key had this angry skull design...yours was different.
+next:chap5-key
+action end
+
+action:response:chap5-key
+Gwen
+chap5-key-A:So why didn't you say something?
+<!>chap5-key-B:Why did Donovan have the master key, again?:trigger.end2Donovan.on
+<!>chap5-key-trigger.end2Donovan:...And to think I was suspicious of him.
+</>chap5-null:Forget it.
+action end
+
+action:statement:chap5-key-A
+Xu:I'm sorry...I was scared of what would happen.
+Xu:I should have stepped forward much sooner.
+next:chap5-key
+action end
+
+action:statement:chap5-key-B
+Xu:Well...it's sort of a long story.
+Xu:He said he was here on a search for a serial killer, if you can believe that.
+Xu:He needed the key to search for the captain.
+next:chap5-key
+action end
+
+action:statement:chap5-key-trigger.end2Donovan
+Xu:It's okay.  I can...well, I can certainly see why you'd be suspicious of him.
+Xu:He seemed to rub everyone the wrong way.
+next:chap5-key-ferd
+action end
+
+action:response:chap5-key-ferd
+Gwen
+<!>chap5-key-ferd2:Yeah.  Ferdinand was especially worried about him, actually...::trigger.ending2GwenFerdinand.on
+action end
+
+action:statement:chap5-key-ferd2
+Xu:Is that right?  I don't recall him saying anything like that to me.
+Xu:If anything, he's always had the same oblivious, optimistic outlook on everyone.
+Xu:...Strange.
+next:chap5-key
+action end
+
+
+action:statement:chap5-A
+Xu:Well, someone has been handing out bribes to staff.
+Xu:Er, by staff I mean...Marcurio and I.
+Xu:I don't know if it's gone any farther than the two of us.
+next:chap5-A-1
+action end
+
+action:response:chap5-A-1
+Gwen
+chap5-A-2:Bribes?  From who?
+chap5-A-3:What were the bribes for?
+</>chap5-null:Never mind.
+action end
+
+action:statement:chap5-A-2
+Xu:I don't know.  It was all very anonymous.
+Xu:Notes left in random, discrete places...I never figured who it was.
+Xu:I'm not sure I wanted to know.
+next:chap5-A-1
+action end
+
+action:statement:chap5-A-3
+Xu:For my part, uh...I guess you could say I held onto things.
+Xu:Recently, I was told to take the captain's master key from the pilothouse.
+Xu:I knew it was the captain's, not mine, but...it was just lying there.  It seemed innocent enough.
+Xu:...That was not long after the captain had disappeared.
+next:chap5-A-1
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+

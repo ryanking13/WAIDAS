@@ -1,0 +1,176 @@
+
+
+// GWEN - DARRYL ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Gwen-Darryl
+
+action:response:root
+Gwen
+root-1:Where are you from?
+root-3:Where are you headed?
+</>root-null:Never mind.
+action end
+
+action:statement:root-1
+Darryl:Me?  Only the greatest place on this earth - New York City.
+next:root-2
+action end
+
+action:response:root-2
+Gwen
+root-2-A:So you like it there?
+</>root-2-null:Never mind.
+action end
+
+action:statement:root-2-A
+Darryl:Like it?  No, I hate it.  If I never go back it'll be too soon.
+next:root-2-B
+action end
+
+action:response:root-2-B
+Gwen
+root-2-C:But you said...
+action end
+
+action:statement:root-2-C
+Darryl:I was just kidding.  It's not the greatest city ever - it's just a city.
+Darryl:All cities are just cities.  People make more out of them than they are.
+Darryl:It's not about where you are...it's about who you're with.
+next:root-null
+action end
+
+
+action:statement:root-3
+Darryl:Oh, nowhere.
+next:root-4
+action end
+
+action:response:root-4
+Gwen
+root-5:You don't know where you're going?
+action end
+
+action:statement:root-5
+Darryl:No, I know where I'm going.
+Darryl:I'm going nowhere.
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+// GWEN - DARRYL (CHAPTER 4) ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Gwen-Darryl
+
+action:response:chap4
+Gwen
+chap4-A:Please...listen to me.
+</>chap4-null:Say nothing
+action end
+
+action:statement:chap4-A
+Darryl:...
+Darryl:Alright.  Sure.
+next:chap4-B
+action end
+
+action:response:chap4-B
+Gwen
+chap4-C:You have to believe me.  I didn't do it.
+chap4-D:I never saw that key before in my life.
+chap4-E:The real killer must still be out there...
+</>chap4-null:...Never mind.
+action end
+
+action:statement:chap4-C
+Darryl:I believe you.
+Darryl:But it doesn't matter whether I believe you or not.  The reality is the same.
+Darryl:I can't help you, Gwen.
+next:chap4-B
+action end
+
+action:statement:chap4-D
+Darryl:Perhaps not.
+next:chap4-B
+action end
+
+action:statement:chap4-E
+Darryl:Certainly.  Whoever he or she is.
+Darryl:Or whoever they are.
+next:chap4-B
+action end
+
+dialogue end
+
+
+
+
+// GWEN - DARRYL (CHAPTER 5) ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Gwen-Darryl
+
+action:response:chap5
+Gwen
+chap5-A:Thanks for your help back there.
+chap5-B:The killer is still around.  And they tried to frame me.
+</>chap5-null:Never mind.
+action end
+
+action:statement:chap5-A
+Darryl:Sarcasm.  I get it.
+Darryl:I may not have been very supportive, but I didn't think you were guilty.
+Darryl:But without evidence...
+next:chap5-A-1
+action end
+
+action:response:chap5-A-1
+Gwen
+chap5-A-2:If enough of you spoke up, it might've helped.
+chap5-A-3:You didn't even try.
+</>chap5-null:Forget it.
+action end
+
+action:statement:chap5-A-2
+Darryl:Maybe.
+Darryl:Some people were pretty invested in the story of your guilt.
+Darryl:I wonder what would have happened if it came down to a protest.
+next:chap5-A-1
+action end
+
+action:statement:chap5-A-3
+Darryl:...You're probably right about that.
+Darryl:I'm sorry, Gwen.
+next:chap5-A-1
+action end
+
+
+action:statement:chap5-B
+Darryl:...It's strange, though, isn't it?
+Darryl:Up to this point, there has been no concrete evidence left behind of the captain's or Donovan's dissapearances.
+Darryl:That would take great diligence and forethought.
+Darryl:But the evidence used to frame you was...very incomplete.
+next:chap5-B-1
+action end
+
+action:response:chap5-B-1
+Gwen
+chap5-B-2:What are you trying to say?
+</>chap5-null:Talk to you later.
+action end
+
+action:statement:chap5-B-2
+Darryl:Think about it.  The murderer would have access to something much more incriminating.
+Darryl:But someone deliberately chose the key - a deeply flawed piece of evidence.
+Darryl:It's as if they didn't care - or they even expected this to happen.
+Darryl:...I don't completely understand it.  But I don't like it.
+next:root-null
+action end
+
+
+dialogue end

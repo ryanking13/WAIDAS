@@ -1,0 +1,93 @@
+
+
+
+
+// XU - QUELLA ////////////////////////////////////////////////////////////////////////////
+
+
+dialogue start
+Xu-Quella
+
+action:response:root
+Xu
+root-1:You've got a lot of trash paper.
+root-2:So...you're a writer I take it?
+</>root-null:Never mind.
+action end
+
+action:statement:root-1
+Quella:Hahaha!  You saw my trash bin, I guess.
+Quella:Yeah, I'm writing a story and I can never decide how to word things.  I end up throwing a lot away.
+next:root-null
+action end
+
+action:statement:root-2
+Quella:I'm trying to be.  I don't know if you can call yourself a writer when you haven't finished writing anything.
+next:root-3
+action end
+
+action:response:root-3
+Xu
+root-3-A:But you do write things, yeah?
+root-3-B:How does that work out for you, money-wise?
+</>root-3-null:I'll let you get back to that then.
+action end
+
+action:statement:root-3-A
+Quella:I have been working on a novel, and I do hope to get it published.
+Quella:But...it feels like I do more re-writing than actual writing.
+Quella:Sometimes it feels like I'm never going to finish it.
+next:root-3
+action end
+
+action:statement:root-3-B
+Quella:Money-wise?  It doesn't work out.
+Quella:I don't get paid just for writing, of course.  I have to finish a book and get it published.
+Quella:But I haven't finished, don't know when I will, and even then I won't have a publisher.
+Quella:So...it's rough.
+next:root-4
+action end
+
+action:response:root-4
+Xu
+root-4-A:Then how do you support yourself?:trigger.quellasSavings.on
+root-4-trigger.quellasSavings:What happens after you run out of money?
+root-4-trigger.quellasSavings-1:You seem really calm about going broke.
+<!>root-4-B:So why do you do write?:trigger.unlockQuella.on
+action end
+
+action:statement:root-4-A
+Quella:I have some money saved up.  I'm burning through it, though.
+Quella:I think I have...oh, four or five months left, and then I'm broke.
+next:root-4
+action end
+
+action:statement:root-4-trigger.quellasSavings
+Quella:I haven't thought too much about it!
+Quella:I'm just focusing on writing as much as I possibly can before that happens.
+next:root-4
+action end
+
+action:statement:root-4-trigger.quellasSavings-1
+Quella:I am.
+Quella:Maybe it seems a bit crazy or reckless, but in truth it's freeing.
+Quella:Writing is my dream.  There is nothing I'd rather do.
+Quella:I'd rather try and fail at this than spend the rest of my life doing something I dislike.
+next:root-4
+action end
+
+action:statement:root-4-B
+Quella:That's a good question.  I guess the short answer is, I like writing.
+Quella:But that isn't to say it's fun.  It's often very tedious...so much rewriting!
+Quella:And there isn't much money in it.
+Quella:I guess I just want to share something with people that I couldn't with regular words.
+Quella:And most of all, I want to leave something behind after I'm gone.
+Quella:Even if I have to work myself ragged and go broke, having the chance to do that...it's enough, I think.
+next:root-null
+action end
+
+dialogue end
+
+
+
+

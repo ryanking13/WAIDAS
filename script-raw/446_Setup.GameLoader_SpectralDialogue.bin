@@ -1,0 +1,784 @@
+
+
+
+
+dialogue start
+GhostClueNotice
+
+action:statement:root
+null:I feel like a part of my identity has returned to me...
+next:root-null
+action end
+
+dialogue end
+
+
+dialogue start
+GhostUpgradeOne
+
+action:statement:root
+null:I am more whole now.  Though I'm not what I once was.
+null:I feel more grounded in the real world...
+next:root-null
+action end
+
+dialogue end
+
+
+dialogue start
+GhostUpgradeTwo
+
+action:statement:root
+null:Is this who I was?  What I looked like?
+null:I feel as if I could reach out and touch the real world.
+null:Can people see me?  Can I interact with them?
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+dialogue start
+Ghost1-Alton
+action:statement:root
+Alton:...Strange.  I thought something was there.
+next:root-null
+action end
+dialogue end
+
+dialogue start
+Ghost1-Xu
+action:statement:root
+Xu:Am I hearing things?  I could've sworn...
+next:root-null
+action end
+dialogue end
+
+dialogue start
+Ghost1-Marcurio
+action:statement:root
+Marcurio:...I need to get more sleep.  I'm starting to hallucinate.
+next:root-null
+action end
+dialogue end
+
+dialogue start
+Ghost1-Ferdinand
+action:statement:root
+Ferdinand:Doo de doo...huh?
+Ferdinand:Hmm, guess it was nothing.
+next:root-null
+action end
+dialogue end
+
+dialogue start
+Ghost1-Darryl
+action:statement:root
+Darryl:...I just can't get her out of my head.
+next:root-null
+action end
+dialogue end
+
+dialogue start
+Ghost1-Quella
+action:statement:root
+Quella:Weird, I thought I saw something...has it started spreading to my brain, or something?
+next:root-null
+action end
+dialogue end
+
+dialogue start
+Ghost1-Garv
+action:statement:root
+Garv:...Huh?
+Garv:No, it was nothing.  I'm too young to be going senile.
+next:root-null
+action end
+dialogue end
+
+dialogue start
+Ghost1-Gwen
+action:statement:root
+Gwen:...A shiver just went down my spine.  I can feel someone's eyes on me.
+next:root-null
+action end
+dialogue end
+
+dialogue start
+Ghost1-Donovan
+action:statement:root
+Donovan:...Hmph.
+next:root-null
+action end
+dialogue end
+
+
+
+
+dialogue start
+Ghost2-Alton
+action:statement:root
+Alton:Did I just see the captain?
+Alton:N-no, that's not possible.  The stress must really be getting to me.
+next:root-null
+action end
+dialogue end
+
+dialogue start
+Ghost2-Xu
+action:statement:root
+Xu:Smilla?  Is that you?
+Xu:Why do I feel like she's still here, somehow?
+next:root-null
+action end
+dialogue end
+
+dialogue start
+Ghost2-Marcurio
+action:statement:root
+Marcurio:What?  Wait, no...that wasn't just a hallucination.
+Marcurio:I feel like she's watching.  And I'm not a superstitious person.
+Marcurio:Is she here to help...or get revenge?
+next:root-null
+action end
+dialogue end
+
+dialogue start
+Ghost2-Ferdinand
+action:statement:root
+Ferdinand:Why, hello there ghost lady!
+Ferdinand:Actually, I don't believe in ghosts, so I'm probably having a psychotic break right now!
+Ferdinand:Boy, I really hate when I get those.
+next:root-null
+action end
+dialogue end
+
+dialogue start
+Ghost2-Quella
+action:statement:root
+Quella:Mom?  Is that you?
+Quella:N-no, that was just in my head.  Also, it looked more like the captain, when I think back on it.
+Quella:I guess I saw what I wanted to see...
+next:root-null
+action end
+dialogue end
+
+dialogue start
+Ghost2-Garv
+action:statement:root
+Garv:N-no way, that's impossible!
+Garv:Oh, it was nothing.  Am I starting to lose it now, too?
+Garv:Maybe I really am getting too old for this.  I need to retire...
+next:root-null
+action end
+dialogue end
+
+dialogue start
+Ghost2-Donovan
+action:statement:root
+Donovan:Luce?  How did you...?  I have everything under control here, I promise.
+Donovan:Oh...it was nothing.  I must be going insane.
+next:root-null
+action end
+dialogue end
+
+dialogue start
+Ghost2-Gwen
+action:statement:root
+Gwen:Sis?  Is that you?
+Gwen:I thought you died all that time ago.  Is that really you?
+next:root-2
+action end
+
+action:response:root-2
+Smilla
+root-null:LISTEN:trigger.GhostTraumaPortal.on
+action end
+
+action:statement:root2
+Gwen:I feel...different.
+Gwen:It's like I'd been in a terrible dream for months.
+Gwen:...I'm not there anymore.  And I never have to go back.
+next:root-null
+action end
+
+dialogue end
+
+dialogue start
+Ghost2-Darryl
+action:statement:root
+Darryl:Mari?  It's really you, isn't it?
+Darryl:I'm so sorry...it's all my fault.  I should have seen what was happening.  How could I not have seen...
+Darryl:It should have been me.  It should have been me.
+next:root-2
+action end
+
+action:response:root-2
+Smilla
+root-null:LISTEN:trigger.GhostVoidPortal.on
+action end
+
+action:statement:root2
+Darryl:...
+Darryl:I just had the strangest feeling wash over me.
+Darryl:Like I just woke up from a living nightmare.
+Darryl:Mari...was that the nightmare you were in at that time?
+next:root-null
+action end
+
+
+dialogue end
+
+
+
+
+
+//////////////////////////////   VOID   /////////////////////////////////////////////////
+
+
+
+dialogue start
+VoidPills1
+
+action:statement:root
+null:you didn't deserve her
+next:root-null
+action end
+dialogue end
+
+dialogue start
+VoidPills2
+
+action:statement:root
+null:pathetic
+null:worthless
+next:root-null
+action end
+dialogue end
+
+dialogue start
+VoidDiary
+
+action:statement:root
+null:it's your fault
+null:it's your fault 
+null:it's your fault  
+next:root-null
+action end
+dialogue end
+
+
+
+
+dialogue start
+VoidDarrylImage
+
+action:statement:root
+Darryl:          
+next:root-2
+action end
+
+action:response:root-2
+Smilla
+root-A:Darryl, it's me.
+root-B:Where are we?
+root-null:Never mind.
+action end
+
+action:statement:root-A
+Darryl:Mari
+Darryl:is that you
+next:root-A-2
+action end
+
+action:response:root-A-2
+Smilla
+root-A-A:No, I'm Smilla.  The captain of the ship.
+root-mari:Yes, I'm Mari.
+action end
+
+action:statement:root-A-A
+Darryl:I don't know who that is
+Darryl:it doesn't matter
+next:root-A-B
+action end
+
+action:response:root-A-B
+Smilla
+root-A-C:Don't you remember me?
+root-A-D:I was murdered.  I need your help.
+root-A-E:Snap out of it!
+root-null:This isn't working.
+action end
+
+action:statement:root-A-C
+Darryl:you aren't her
+Darryl:why do you look like her
+Darryl:I don't know who you are
+next:root-A-B
+action end
+
+action:statement:root-A-D
+Darryl:I don't know what you're talking about
+Darryl:I can't help anyone
+next:root-A-B
+action end
+
+action:statement:root-A-E
+Darryl:               
+next:root-A-B
+action end
+
+
+action:statement:root-B
+Darryl:our house
+Darryl:I just got back from work
+next:root-B-A
+action end
+
+action:response:root-B-A
+Smilla
+root-B-B:That's not right.  You're on the ship, remember?
+root-B-C:What are you doing here?
+root-B-D:What is all of that on the ground?
+root-null:Never mind.
+action end
+
+action:statement:root-B-B
+Darryl:no
+Darryl:I'm in our house
+next:root-B-A
+action end
+
+action:statement:root-B-C
+Darryl:I
+Darryl:I just got back from work
+Darryl:like always
+next:root-B-A
+action end
+
+action:statement:root-B-D
+Darryl:oh god
+Darryl:no
+Darryl:why  
+Darryl:why   
+Darryl:why    
+next:root-B-A
+action end
+
+
+action:statement:root-mari
+Darryl:I'm sorry
+Darryl:I'm sorry 
+Darryl:I love you
+next:root-C
+action end
+
+action:response:root-C
+Mari
+root-C-A:Why are you sorry?
+root-C-B:Don't be sorry.
+action end
+
+action:statement:root-C-A
+Darryl:I should have done more
+Darryl:should have noticed
+Darryl:it's my fault
+Darryl:I should have been there
+Darryl:it's my fault 
+Darryl:it's my fault  
+next:root-C-2
+action end
+
+action:statement:root-C-B
+Darryl:it's my fault
+Darryl:why
+Darryl:I failed you
+next:root-C
+action end
+
+action:response:root-C-2
+Mari
+root-C-C:You need to move on.
+root-C-D:The others are in trouble.  You have to help them.
+root-C-E:It's not your fault.
+action end
+
+action:statement:root-C-C
+Darryl:I love you
+Darryl:I love you 
+next:root-C-2
+action end
+
+action:statement:root-C-D
+Darryl:who
+Darryl:I don't understand
+Darryl:please don't leave
+Darryl:I'm sorry
+next:root-C-2
+action end
+
+action:statement:root-C-E
+Darryl:then why
+Darryl:I don't understand
+Darryl:why did you go
+next:root-why
+action end
+
+action:response:root-why
+Mari
+root-why-A:Because I wanted to die.
+root-why-B:Because I hated myself.
+root-why-C:Because I was under too much pressure.
+root-why-D:Because I was sick.:trigger.chap5voidEndSwitch.on
+action end
+
+action:statement:root-why-A
+Darryl:but why
+Darryl:I don't understand
+Darryl:you were happy
+next:root-why
+action end
+
+action:statement:root-why-B
+Darryl:everyone loves you
+Darryl:I love you
+Darryl:how could you hate yourself
+next:root-why
+action end
+
+action:statement:root-why-C
+Darryl:I could have helped
+Darryl:we could fix it
+Darryl:it could have gotten better
+Darryl:now it never will
+Darryl:I don't understand
+next:root-why
+action end
+
+action:statement:root-why-D
+Darryl:sick
+Darryl:what do you mean
+next:root-null
+action end
+
+action:statement:root-why2
+Smilla:I wasn't myself.  I was mentally ill, and I wasn't being treated.
+Smilla:I was having terrible thoughts...incredibly painful thoughts.  And I couldn't escape them.
+Smilla:My thoughts and feelings were distorted.  I wasn't myself.
+next:root-null
+action end
+
+action:statement:root-why3
+Darryl:there had to be another way
+Darryl:I want to help you
+Darryl:but I can't
+Darryl:I couldn't
+next:root-null
+action end
+
+action:statement:root-why4
+Smilla:I know.  I'm sorry...I can't change what I've done.  It's too late for me.
+Smilla:But it's not too late for you, Darryl.
+Smilla:You can still be happy.
+Smilla:Maybe right now, you don't even want to be happy.  But some day, you will.  And you can.
+Smilla:Please...don't give up hope.
+next:root-null
+action end
+
+dialogue end
+
+dialogue start
+VoidClear
+
+action:statement:root
+Darryl:...
+Darryl:I just had the strangest feeling wash over me.
+Darryl:Like I just woke up from a living nightmare.
+Darryl:Mari...was that the nightmare you were in at that time?
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+//////////////////////////////   TRAUMA   /////////////////////////////////////////////////
+
+
+
+
+dialogue start
+TraumaIntruder
+
+action:statement:root
+null:go away go away go away go away
+next:root-null
+action end
+dialogue end
+
+dialogue start
+TraumaBed
+
+action:statement:root
+null:it isn't normal
+next:root-null
+action end
+dialogue end
+
+
+dialogue start
+TraumaNightstand
+
+action:statement:root
+null:don't, please
+next:root-null
+action end
+dialogue end
+
+
+dialogue start
+TraumaGwenImage
+
+
+action:statement:root
+Gwen:                        
+next:root-2
+action end
+
+action:response:root-2
+Smilla
+root-A:Gwen, it's me.
+root-B:Where are we?
+root-null:Never mind.
+action end
+
+action:statement:root-A
+Gwen:who is that
+Gwen:please stay away
+next:root-who
+action end
+
+action:response:root-who
+Smilla
+root-who-A:It's Smilla.  The captain of the ship.
+root-who-B:It's your sister.
+root-2:Never mind.
+action end
+
+action:statement:root-who-A
+Gwen:captain...ship...
+Gwen:I don't know what you're talking about
+next:root-who-captain
+action end
+
+action:response:root-who-captain
+Smilla
+root-who-captain-A:You're on a ship.  Don't you remember?
+root-who-captain-B:I was murdered.  I need your help.
+root-who-captain-C:What's wrong?  You sound different.
+root-2:This isn't working...
+action end
+
+action:statement:root-who-captain-A
+Gwen:you're wrong
+Gwen:I'm not on a ship
+Gwen:I'm in my bedroom
+next:root-who-captain
+action end
+
+action:statement:root-who-captain-B
+Gwen:not murdered
+Gwen:they told me you were sick
+Gwen:you died in the hospital
+next:root-who-captain
+action end
+
+action:statement:root-who-captain-C
+Gwen:is this a dream
+Gwen:I can hear you, but your mouth isn't moving
+Gwen:can I wake up
+next:root-who-captain
+action end
+
+
+action:statement:root-B
+Gwen:in my bedroom
+Gwen:it's almost time for sleep
+Gwen:it's not normal
+next:root-where
+action end
+
+action:response:root-where
+Smilla
+root-where-A:No...you're on a ship, remember?
+root-where-B:What are you doing here?
+root-where-C:Who is that at the door?
+root-null:Never mind.
+action end
+
+action:statement:root-where-A
+Gwen:stop lying to me
+Gwen:why are you here
+Gwen:go away before someone sees you
+next:root-where
+action end
+
+action:statement:root-where-B
+Gwen:I don't want to be here
+Gwen:please don't
+Gwen:just go away
+Gwen:leave me alone
+Gwen:stop
+next:root-where
+action end
+
+action:statement:root-where-C
+Gwen:no
+Gwen:please no
+Gwen:it's just a dream
+Gwen:it's not real
+Gwen:stop
+next:root-where
+action end
+
+
+
+
+action:statement:root-who-B
+Gwen:elisa
+Gwen:you shouldn't be here
+Gwen:if they see you outside your room at this hour
+Gwen:please go
+next:root-who-sis
+action end
+
+action:response:root-who-sis
+Elisa
+root-who-sis-A:Who is 'they'?
+root-who-sis-B:They aren't here.  It's just the two of us.
+action end
+
+action:statement:root-who-sis-A
+Gwen:they know
+Gwen:they have to
+Gwen:but they pretend they don't
+next:root-who-sis
+action end
+
+action:statement:root-who-sis-B
+Gwen:you're lying
+Gwen:he can tell
+Gwen:he's watching me right now
+next:root-fear
+action end
+
+action:response:root-fear
+Elisa
+root-fear-A:You need to trust me.  It's just us.
+root-fear-B:Come on Gwen, snap out of it!  I need your help!
+root-fear-C:No, he isn't watching you.  He's far away.
+action end
+
+action:statement:root-fear-A
+Gwen:trust
+Gwen:no
+Gwen:who are you
+Gwen:what do you want from me
+Gwen:stay away from me
+next:root-fear
+action end
+
+action:statement:root-fear-B
+Gwen:quiet
+Gwen:you'll get us both in trouble
+Gwen:just leave me alone before they notice please please please
+next:root-fear
+action end
+
+action:statement:root-fear-C
+Gwen:what
+Gwen:but why do I sense him watching
+Gwen:always
+next:root-fear2
+action end
+
+action:response:root-fear2
+Elisa
+root-fear2-A:You have good reasons for being scared, but you're safe now.
+root-fear2-B:You need to let it go.
+root-fear2-C:Pay close attention, Gwen.  You're in a dream.  This isn't real.:trigger.chap5traumaEndSwitch.on
+action end
+
+action:statement:root-fear2-A
+Gwen:no I'm not
+Gwen:you know it's dangerous out there
+Gwen:I can tell you know
+Gwen:you've been hurt too
+next:root-fear2
+action end
+
+action:statement:root-fear2-B
+Gwen:how can I
+Gwen:why should I
+Gwen:after everything that's happened
+Gwen:that's impossible
+next:root-fear2
+action end
+
+action:statement:root-fear2-C
+Gwen:just like when we were kids
+Gwen:I would wake up and there you are
+Gwen:letting me know it was a nightmare
+Gwen:but why
+Gwen:why does it always feel so real
+next:root-null
+action end
+
+action:statement:root-fear3
+Smilla:Because, Gwen, part of it is real.
+Smilla:The part that still exists in your mind.  What your mind recreates for you.
+Smilla:But it's only a part.  And it's not all true.
+next:root-null
+action end
+
+action:statement:root-fear4
+Gwen:then how do I tell the difference
+Gwen:the nightmare when I sleep is the same as when I'm awake
+Gwen:does it even matter which is which
+next:root-null
+action end
+
+action:statement:root-fear5
+Smilla:Yes.  The nightmare you're awake for is the one you can change.
+Smilla:There are people that can help, Gwen.  You don't have to carry this by yourself.
+Smilla:But you have to take a leap of faith first.
+next:root-null
+action end
+
+dialogue end
+
+
+dialogue start
+TraumaClear
+
+action:statement:root
+Gwen:I feel...different.
+Gwen:It's like I'd been in a terrible dream for months.
+Gwen:...I'm not there anymore.  And I never have to go back.
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+

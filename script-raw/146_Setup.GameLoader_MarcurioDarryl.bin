@@ -1,0 +1,122 @@
+
+
+
+
+
+// MARCURIO - DARRYL ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Marcurio-Darryl
+
+action:response:root
+Marcurio
+root-1:What's a guy like you doing out here?
+root-2:Where you headed, pal?
+</>root-null:See ya.
+action end
+
+action:statement:root-1
+Darryl:I'm not sure I know what a guy 'like me' is.
+next:root-1-A
+action end
+
+action:response:root-1-A
+Marcurio
+root-1-B:You seem a bit blue-blooded.  Got a fancy desk job back home?
+root-1-C:You look like you're headed to a business meeting or something.
+</>root-null:Never mind.
+action end
+
+action:statement:root-1-B
+Darryl:I was a lawyer, so I guess so, yeah.
+next:root-job
+action end
+
+action:response:root-job
+Marcurio
+root-job-A:Man, I'd kill for a job like that.
+root-job-B:So then, what's a lawyer doing out here?
+</>root-null:See ya.
+action end
+
+action:statement:root-job-A
+Darryl:I don't know what you think my job was like, but I can tell you it's not worth killing anyone over.
+Darryl:I worked in real estate.  There is absolutely nothing interesting about real estate law.
+next:root-job-A1
+action end
+
+action:response:root-job-A1
+Marcurio
+root-job-A2:Yeah, but the pay must be good, right?
+root-gloomy:You are a real gloomy guy, you know that?
+action end
+
+action:statement:root-job-A2
+Darryl:The job's pay is one thing, but its cost is another.
+Darryl:There are some things more important than money.
+next:root-null
+action end
+
+action:statement:root-job-B
+Darryl:I just needed to get away from city life for a while.
+Darryl:Or rather, I needed to get away from everything.
+next:root-null
+action end
+
+action:statement:root-1-C
+Darryl:No.  That's the furthest thing from the truth.
+Darryl:I'm going...nowhere.  That's where I'm going.
+next:root-null
+action end
+
+
+action:statement:root-2
+Darryl:Nowhere.
+next:root-2-A
+action end
+
+action:response:root-2-A
+Marcurio
+root-2-B:That's not much of an answer.  Everyone's going somewhere.
+root-gloomy:You're the richest looking sad person I've ever met, you know that?
+</>root-null:See ya.
+action end
+
+action:statement:root-2-B
+Darryl:That's where you're wrong.  Nobody's going anywhere.
+Darryl:Especially not any of the people on this ship.
+next:root-null
+action end
+
+action:statement:root-gloomy
+Darryl:I'm not sad as much as I don't care.
+Darryl:Or maybe it's that I don't have any feelings at all.
+Darryl:If you saw what I have, you wouldn't either.
+next:root-gloomy-2
+action end
+
+action:response:root-gloomy-2
+Marcurio
+root-gloomy-3:Yeah, I'm sure you've had such a damn hard life.  I feel real bad for you.
+action end
+
+action:statement:root-gloomy-3
+Darryl:...
+next:root-gloomy-4
+action end
+
+action:response:root-gloomy-4
+Marcurio
+root-gloomy-5:I guess I'll leave you to your dark and mysterious thoughts then.
+action end
+
+action:statement:root-gloomy-5
+Darryl:...
+next:root-null
+action end
+
+dialogue end
+
+
+
+

@@ -1,0 +1,65 @@
+
+
+// FERDINAND - XU ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Ferdinand-Xu
+
+action:response:root
+Ferdinand
+root-1:Why hello, Sue!  How do you do?
+root-2:How does the dining room fare?  Are all the passengers content?
+</>root-null:Never mind.
+action end
+
+action:statement:root-1
+Xu:Um, I'm fine.  Thanks for asking.
+next:root-1-A
+action end
+
+action:response:root-1-A
+Ferdinand
+root-1-B:Anyhoo, I was wondering - I can't seem to find the captain's master key.  Have you seen it around?
+</>root-null:Well, see you later.
+action end
+
+action:statement:root-1-B
+Xu:N-no...I mean, er, what's the master key?
+next:root-1-C
+action end
+
+action:response:root-1-C
+Ferdinand
+root-1-D:Oh, it's just the really important key, which only the captain has, that's able to open up every door on the ship.
+action end
+
+action:statement:root-1-D
+Xu:Oh, gee, that sounds bad.  I wonder what happened to it?
+Xu:Well, if I see it I'll be sure to let you know!
+next:root-1-E
+action end
+
+action:response:root-1-E
+Ferdinand
+</>root-null:I'm certain you will.
+action end
+
+
+action:statement:root-2
+Xu:It's doing as well as it always does.  The passengers are okay, I guess.
+Xu:You wouldn't know it judging by how much they tip, though...
+next:root-2-A
+action end
+
+action:response:root-2-A
+Ferdinand
+root-2-B:Haha, that's great to hear!
+action end
+
+action:statement:root-2-B
+Xu:Not...really...
+next:root-null
+action end
+
+dialogue end
+

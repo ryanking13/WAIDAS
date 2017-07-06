@@ -1,0 +1,182 @@
+
+
+dialogue start
+Alton-Gwen
+
+action:response:root
+Alton
+root-1:Hi miss, can I help you?
+root-2:Are you looking for something?
+root-3:You should check out the observation room!
+</>root-null:Never mind.
+action end
+
+action:statement:root-1
+Gwen:...
+Gwen:...Oh.  No thank you.
+next:root-1-A
+action end
+
+action:statement:root-2
+Gwen:...
+Gwen:...No.  Not really.
+Gwen:Um.  Bye.
+next:root-2-A
+action end
+
+action:statement:root-3
+Gwen:...
+Gwen:...No thanks.
+Gwen:Sorry.
+next:root-3-A
+action end
+
+action:response:root-1-A
+Alton
+root-null:Oh.  Okay.
+action end
+
+action:response:root-2-A
+Alton
+root-null:Oh, sorry.  It just looked like you were.
+action end
+
+action:response:root-3-A
+Alton
+root-null:Oh.
+action end
+
+
+action:response:xuIsFollowing
+Alton
+<!>xuIsFollowing-1:Anything interesting happen last night?:trigger.altonXuTalkedtoGwen.on
+</>null:Never mind.
+action end
+
+action:statement:xuIsFollowing-1
+Gwen:...
+Gwen:... 
+Xu:I don't think she'll tell us much, Alton.
+Xu:Maybe we should just move on.
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+// ALTON - GWEN (CHAPTER 4) ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Alton-Gwen
+
+action:response:chap4
+Alton
+chap4-A:How's it going, Gwen?
+chap4-Z:I finally have an audience!
+</>chap4-null:Never mind.
+action end
+
+action:statement:chap4-A
+Gwen:Not very good.  Everyone thinks I'm a murderer.
+Gwen:What's going to happen to me...?
+next:chap4-B
+action end
+
+action:response:chap4-B
+Alton
+chap4-C:I don't think it's you.  Probably.  I don't know.
+chap4-D:You'll just stay here until the police come.
+</>chap4-null:Gee, look at the time...
+action end
+
+action:statement:chap4-C
+null:Such a strong endorsement somehow did not manage to cheer her up.
+null:If anything, she looks even deeper in despair.
+next:chap4-B
+action end
+
+action:statement:chap4-D
+Gwen:Right...great.
+Gwen:I'm sure they'll figure out the truth.  Whatever it is.
+Gwen:I'm sure.
+next:chap4-B
+action end
+
+action:statement:chap4-Z
+Gwen:Huh?
+next:chap4-Y
+action end
+
+action:response:chap4-Y
+Alton
+chap4-X:Well, before I was always trying to get people to come to the observation room, but no one did...and now you're here!
+action end
+
+action:statement:chap4-X
+Gwen:............
+next:chap4-W
+action end
+
+action:response:chap4-W
+Alton
+chap4-V:It's kind of funny, right?  And sort of ironic.
+action end
+
+action:statement:chap4-V
+Gwen:............................
+next:chap4-U
+action end
+
+action:response:chap4-U
+Alton
+chap4-null:...Maybe not.
+action end
+
+dialogue end
+
+
+
+
+
+// ALTON - GWEN (AFTER CHAPTER 4) ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Alton-Gwen
+
+action:response:chap6
+Alton
+chap6-A:How are you doing now?
+chap6-B:Um...sorry.  About everything.
+</>chap6-null:Never mind.
+action end
+
+action:statement:chap6-A
+Gwen:You know...I'm doing okay.
+Gwen:I have a lot to think about.
+next:chap6
+action end
+
+action:statement:chap6-B
+Gwen:It's okay, Alton.  None of this was your fault.
+next:chap6-C
+action end
+
+action:response:chap6-C
+Alton
+chap6-D:How was it, though?  The observation room I mean.  Did you like the music?
+</>chap6-null:Oh, okay.
+action end
+
+action:statement:chap6-D
+Gwen:That was the last thing I was...
+Gwen:...
+Gwen:I mean, yes.  It was really great.
+next:chap6-null
+action end
+
+dialogue end
+

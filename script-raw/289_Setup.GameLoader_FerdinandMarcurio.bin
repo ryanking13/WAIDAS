@@ -1,0 +1,91 @@
+
+
+// FERDINAND - MARCURIO ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Ferdinand-Marcurio
+
+action:response:root
+Ferdinand
+root-1:Hello, Marcurio!  How are you feeling on this fine day?
+root-2:Another long day of work I presume?
+root-3:How did you feel about the captain before this one?
+</>root-null:Never mind.
+action end
+
+action:statement:root-1
+Marcurio:Not as good as I was a minute ago.
+next:root-1-A
+action end
+
+action:response:root-1-A
+Ferdinand
+root-1-B:I get the feeling you don't enjoy our little chats!:trigger.chap3ferdMarcProgression2.on
+root-trigger.chap3ferdMarcProgression2:You wound me, sir!  I am wounded!
+</>root-null:Never mind.
+action end
+
+action:statement:root-1-B
+Marcurio:No, I don't.
+next:root-1-A
+action end
+
+action:statement:root-trigger.chap3ferdMarcProgression2
+Marcurio:...Okay.
+next:root-1-A
+action end
+
+
+action:statement:root-2
+Marcurio:I guess?  Every day is about the same.  Breakfast, lunch, dinner.
+next:root-2-A
+action end
+
+action:response:root-2-A
+Ferdinand
+root-2-A-1:You are a man of routine.  I like that!:trigger.chap3ferdMarcProgression.on
+root-trigger.chap3ferdMarcProgression:And you are so humble, too!
+</>root-null:Never mind.
+action end
+
+action:statement:root-2-A-1
+Marcurio:Well, most jobs generally involve some amount of routine.
+Marcurio:I don't see anything special about that.
+next:root-2-A
+action end
+
+action:statement:root-trigger.chap3ferdMarcProgression
+Marcurio:...Sure.
+next:root-2-A
+action end
+
+action:statement:root-3
+Marcurio:Oh, the old captain?
+Marcurio:He was...alright.  Kind of a loner, which I didn't mind at all.
+Marcurio:He gave off some weird vibes, though.
+next:root-3-A
+action end
+
+action:response:root-3-A
+Ferdinand
+root-3-B:Weird vibes?  What makes you say that?
+root-3-C:What became of him afterwards?
+</>root-null:Never mind.
+action end
+
+action:statement:root-3-B
+Marcurio:I don't know.  He acted like...blue blood.
+Marcurio:Like he was really well off, and this place was beneath him.
+Marcurio:Why would a guy like that come to work for a heap like this ship?
+next:root-3-A
+action end
+
+action:statement:root-3-C
+Marcurio:You mean, after he quit?  How the hell should I know?
+Marcurio:He was just my boss.  I don't know about his personal life, nor do I care.
+next:root-3-A
+action end
+
+
+dialogue end
+

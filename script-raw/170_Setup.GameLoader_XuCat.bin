@@ -1,0 +1,22 @@
+
+dialogue start
+Xu-Cat
+
+action:response:root
+Xu
+root-A:Hello kitty!
+root-B:Pet the cat
+</>root-null:Leave it alone
+action end
+
+action:statement:root-A
+Sunshine:Meow!
+next:root-null
+action end
+
+action:statement:root-B
+Sunshine:Purrrr....
+next:root-null
+action end
+
+dialogue end

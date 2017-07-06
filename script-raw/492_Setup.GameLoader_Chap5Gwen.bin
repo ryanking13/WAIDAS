@@ -1,0 +1,66 @@
+
+
+dialogue start
+Gwen-EvilDonovan
+
+action:response:root
+Gwen
+root-A:I'm sorry...
+root-B:Please don't do this.
+<!>root-trigger.chap6FerdEnd3:I told someone what I saw in your room.  Ferdinand knew.
+</>root-null:Never mind.
+action end
+
+action:statement:root-A
+Donovan:You should be.
+Donovan:I know it was you who broke into my room.
+Donovan:I don't know or care how you did it, but why?
+next:root-A-1
+action end
+
+action:response:root-A-1
+Gwen
+root-A-2:It's hard to explain.  I thought you were following me.  I was...paranoid.
+root-trigger.chap6FerdEnd3:Ferdinand told me you were suspicious.  I told him what I saw in your room.
+action end
+
+action:statement:root-A-2
+Donovan:Clearly.
+Donovan:But your paranoia wasn't completely wrong.  Just misguided.
+Donovan:After all, there's a killer on board.
+next:root
+action end
+
+action:statement:root-B
+Donovan:You don't have a say in this.
+next:root
+action end
+
+
+action:statement:root-trigger.chap6FerdEnd3
+Donovan:Wait.  You told him what you saw in my room?
+Donovan:And just what did you see in my room?
+next:root-masterKey
+action end
+
+action:response:root-masterKey
+Gwen
+root-masterKey2:I saw the master key.  And I told him.  I'm sorry.:trigger.chap5ferdNail3.on
+action end
+
+action:statement:root-masterKey2
+Donovan:I expect the person who ambushed me knew I had the master key.  That's how they anticipated me.
+Donovan:At that time, Sue knew because I got the key from her.  And you knew because you broke into my room.
+Donovan:But neither of you fit the profile.
+Donovan:But Ferdinand...he fits the profile.  And he knew.
+Donovan:Why did you tell him?
+Gwen:He made me scared.  I think he knew that if he did, I might do something rash...
+Ferdinand:T-that's not what happened!  I merely confided in her that the captain was missing.
+Ferdinand:I personally disapproved of her actions!  I never told her to do anything!
+Donovan:Even so, you set her against me.  And you knew I had the master key.
+Donovan:You were the only suspect with that information.
+Ferdinand:Well, perhaps, but what if she told someone else?  Or what if...what if I told someone else?
+next:root-null
+action end
+
+dialogue end

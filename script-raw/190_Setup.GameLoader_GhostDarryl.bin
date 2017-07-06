@@ -1,0 +1,238 @@
+
+
+// GHOST/ALTON - DARRYL ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Ghost-Darryl
+
+action:response:root
+<player>
+root-1:When was the last time you saw the captain?
+root-2:Have you seen anything odd around the ship recently?
+</>root-null:Never mind.
+action end
+
+action:statement:root-1
+Darryl:Who can say?
+next:root-1-A
+action end
+
+action:response:root-1-A
+<player>
+root-1-B:What kind of answer is that?
+action end
+
+action:statement:root-1-B
+Darryl:I don't really pay others much mind.
+Darryl:I honestly don't remember the last time I talked to her.
+next:root-null
+action end
+
+action:statement:root-2
+Darryl:I don't know what that means.
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+// CHAPTER 3  GHOST - DARRYL ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Ghost-Darryl
+
+action:response:root2
+<player>
+root2-1:What do you think has happened to the captain?
+root2-2:What should we all do?
+root2-3:Who might want to get rid of the captain?
+root2-captain:What can you tell me about the captain?
+root-trigger.chap3SecretArea:Do you know about any secret areas on the ship?
+</>root2-null:Never mind.
+action end
+
+action:statement:root2-1
+Darryl:I can't say for sure yet, but things don't look good.
+Darryl:We should prepare ourselves for the worst.
+next:root2
+action end
+
+action:statement:root2-2
+Darryl:That's for you all to decide.
+next:root2-4
+action end
+
+action:response:root2-4
+<player>
+root2-5:What is that supposed to mean?
+action end
+
+action:statement:root2-5
+Darryl:There's nothing I can do to help that others here can't.
+Darryl:It's better for everyone if I stay back and let things run their course.
+next:root2
+action end
+
+action:statement:root2-3
+Darryl:I'm not going to speculate on something I know nothing about.
+next:root2
+action end
+
+action:statement:root2-captain
+Darryl:She was nice.
+next:root2-captain2
+action end
+
+action:response:root2-captain2
+<player>
+root2-captain2-A:Is that all you have to say?
+root2-captain2-trigger.blah:What's wrong?  Why don't you want to talk about her?
+root2-captain2-B:How did you get along with her?
+</>root2-null:Never mind.
+action end
+
+action:statement:root2-captain2-A
+Darryl:I'd rather not talk about her.
+next:root2-captain2
+action end
+
+action:statement:root2-captain2-trigger.blah
+Darryl:I don't want to think about it.  She...reminds me of someone I knew.
+Darryl:It doesn't matter anymore.  She's gone now.
+next:root2-captain2
+action end
+
+action:statement:root2-captain2-B
+Darryl:We talked a bit.  She was nice.  And smart.
+Darryl:It's a rare thing.
+next:root2-captain2
+action end
+
+action:statement:root-trigger.chap3SecretArea
+Darryl:I've been on this ship for less than a week.
+Darryl:If a person like me knew about some kind of hidden area, it must not have been very well hidden.
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+// CHAPTER 4  GHOST - DARRYL ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Ghost-Darryl
+
+action:response:root3
+<player>
+root3-A:What do you think happened to Donovan and Paulo?
+root3-B:Do you believe that Gwen is guilty?
+root3-C:Why do you think all of this has happened?
+root3-D:What should we do now?
+root3-captain:What can you tell me about the captain?
+</>root-null:Never mind.
+action end
+
+action:statement:root3-A
+Darryl:Once is nothing.  Twice is a coincidence.  Three times...
+Darryl:...that's a pattern.  I don't think we're going to be seeing them again.
+next:root3
+action end
+
+action:statement:root3-B
+Darryl:No.  Not really.
+next:root3-B1
+action end
+
+action:response:root3-B1
+<player>
+root3-B2:That's all you have to say?
+root3-B3:Have you considered that the key was planted in her room?
+root3-B4:Who do you think the killer is, then?
+</>root3-null:Never mind.
+action end
+
+action:statement:root3-B2
+Darryl:Yes.
+next:root3-B1
+action end
+
+action:statement:root3-B3
+Darryl:I have.  It sounds likely to me.
+next:root3-B1
+action end
+
+action:statement:root3-B4
+Darryl:Maybe you're asking the wrong questions.
+Darryl:What makes you think it's one person?
+next:root3-B5
+action end
+
+action:response:root3-B5
+<player>
+root3-B6:What are you saying?  There's a conspiracy?
+</>root-null:Never mind.
+action end
+
+action:statement:root3-B6
+Darryl:Am I the only one that can sense it?  Just how rotten this ship is?
+Darryl:From wall to wall, from top to bottom, inside and out.  It's nauseating.
+Darryl:Maybe I'm the only innocent person here.
+Darryl:But that's okay.  I'll be far away from here very soon.
+next:root-null
+action end
+
+action:statement:root3-C
+Darryl:I wouldn't look for one particular reason.
+Darryl:Atomic bombs are so destructive because the initial reaction is able to spread so violently.
+Darryl:But I suspect we haven't seen the real explosion just yet.
+next:root3
+action end
+
+action:statement:root3-D
+Darryl:That depends.  Are you religious?
+next:root3
+action end
+
+
+action:statement:root3-captain
+Darryl:She was nice.
+next:root3-captain2
+action end
+
+action:response:root3-captain2
+<player>
+root3-captain2-A:Is that all you have to say?
+root3-captain2-trigger.blah:What's wrong?  Why don't you want to talk about her?
+root3-captain2-B:How did you get along with her?
+</>root3-null:Never mind.
+action end
+
+action:statement:root3-captain2-A
+Darryl:I'd rather not talk about her.
+next:root3-captain2
+action end
+
+action:statement:root3-captain2-trigger.blah
+Darryl:I don't want to think about it.  She...reminds me of someone I knew.
+Darryl:It doesn't matter anymore.  She's gone now.
+next:root3-captain2
+action end
+
+action:statement:root3-captain2-B
+Darryl:We talked a bit.  She was nice.  And smart.
+Darryl:It's a rare thing.
+next:root3-captain2
+action end
+
+dialogue end
+
+
+
+

@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="13" height="13" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="Basement Room Sheet" tilewidth="32" tileheight="32">
+  <image source="../Tiles/Basement Room Sheet.png" width="224" height="320"/>
+ </tileset>
+ <tileset firstgid="71" name="PropGrid" tilewidth="32" tileheight="32">
+  <image source="../Props/PropGrid.png" width="512" height="832"/>
+ </tileset>
+ <tileset firstgid="487" name="AIGrid" tilewidth="32" tileheight="32">
+  <image source="../Props/AIGrid.png" width="96" height="32"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="13" height="13">
+  <data>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="2"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="6"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="8"/>
+   <tile gid="9"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="13"/>
+   <tile gid="14"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="16"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="20"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="23"/>
+   <tile gid="37"/>
+   <tile gid="36"/>
+   <tile gid="40"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="37"/>
+   <tile gid="41"/>
+   <tile gid="36"/>
+   <tile gid="27"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="36"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="40"/>
+   <tile gid="1"/>
+   <tile gid="36"/>
+   <tile gid="1"/>
+   <tile gid="41"/>
+   <tile gid="36"/>
+   <tile gid="41"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="1"/>
+   <tile gid="40"/>
+   <tile gid="37"/>
+   <tile gid="1"/>
+   <tile gid="36"/>
+   <tile gid="1"/>
+   <tile gid="40"/>
+   <tile gid="41"/>
+   <tile gid="41"/>
+   <tile gid="34"/>
+   <tile gid="35"/>
+   <tile gid="22"/>
+   <tile gid="24"/>
+   <tile gid="26"/>
+   <tile gid="26"/>
+   <tile gid="30"/>
+   <tile gid="37"/>
+   <tile gid="34"/>
+   <tile gid="26"/>
+   <tile gid="26"/>
+   <tile gid="26"/>
+   <tile gid="26"/>
+   <tile gid="33"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="40"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+  </data>
+ </layer>
+ <objectgroup name="Props" width="13" height="13">
+  <object name="QuellasDesk" gid="363" x="66" y="247">
+   <properties>
+    <property name="Bounds" value="0,14,64,26"/>
+    <property name="Collidable" value="true"/>
+    <property name="Sprite" value="Desk"/>
+   </properties>
+  </object>
+  <object gid="364" x="98" y="247"/>
+  <object gid="379" x="66" y="279"/>
+  <object gid="380" x="98" y="279"/>
+  <object name="QuellasPapers" gid="439" x="96" y="260">
+   <properties>
+    <property name="CharDialogue" value="Quella-true-QuellasPapersQuella"/>
+    <property name="Elevation" value="20"/>
+    <property name="Permissions" value="All"/>
+    <property name="Sprite" value="Papers"/>
+    <property name="SuccessDialogue" value="QuellasPapers"/>
+   </properties>
+  </object>
+  <object name="QuellasBooks" gid="370" x="67" y="253">
+   <properties>
+    <property name="CharDialogue" value="Quella-true-QuellasBooksQuella"/>
+    <property name="Elevation" value="20"/>
+    <property name="Permissions" value="All"/>
+    <property name="Sprite" value="Books"/>
+    <property name="SuccessDialogue" value="QuellasBooks"/>
+   </properties>
+  </object>
+  <object name="QuellasPapers2" gid="439" x="153" y="236">
+   <properties>
+    <property name="Bounds" value="0,0,32,0"/>
+    <property name="Sprite" value="Papers"/>
+   </properties>
+  </object>
+  <object name="QuellasTrash" gid="436" x="131" y="181">
+   <properties>
+    <property name="CharDialogue" value="Quella-true-QuellasTrashQuella"/>
+    <property name="Collidable" value="true"/>
+    <property name="Permissions" value="All"/>
+    <property name="Sprite" value="QuellasTrash"/>
+    <property name="SuccessDialogue" value="QuellasTrash"/>
+   </properties>
+  </object>
+  <object name="QuellasFlower" gid="144" x="174" y="142">
+   <properties>
+    <property name="Collidable" value="true"/>
+    <property name="Sprite" value="TableFlower"/>
+   </properties>
+  </object>
+  <object gid="160" x="174" y="174"/>
+  <object gid="176" x="174" y="206"/>
+  <object name="QuellasDresser" gid="141" x="208" y="121">
+   <properties>
+    <property name="Collidable" value="true"/>
+    <property name="Permissions" value="All"/>
+    <property name="Sprite" value="DresserWMirror"/>
+    <property name="SuccessDialogue" value="DresserWMirror"/>
+   </properties>
+  </object>
+  <object gid="142" x="240" y="121"/>
+  <object gid="157" x="208" y="153"/>
+  <object gid="158" x="240" y="153"/>
+  <object gid="159" x="272" y="153"/>
+  <object gid="173" x="208" y="185"/>
+  <object gid="174" x="240" y="185"/>
+  <object gid="175" x="272" y="185"/>
+  <object name="QuellasBed" gid="183" x="290" y="160">
+   <properties>
+    <property name="Collidable" value="true"/>
+    <property name="Permissions" value="All"/>
+    <property name="Sprite" value="BedTwo"/>
+    <property name="SuccessDialogue" value="NormalBed"/>
+   </properties>
+  </object>
+  <object gid="184" x="322" y="160"/>
+  <object gid="199" x="290" y="192"/>
+  <object gid="200" x="322" y="192"/>
+  <object gid="215" x="290" y="224"/>
+  <object gid="216" x="322" y="224"/>
+  <object name="QuellasNightstand" gid="431" x="340" y="192">
+   <properties>
+    <property name="Collidable" value="true"/>
+    <property name="Sprite" value="Nightstand"/>
+   </properties>
+  </object>
+  <object name="QuellasChair" gid="442" x="92" y="233">
+   <properties>
+    <property name="Bounds" value="0,0,26,36"/>
+    <property name="Sprite" value="ChairFront"/>
+   </properties>
+  </object>
+  <object name="QuellasPapers3" gid="439" x="233" y="223">
+   <properties>
+    <property name="Bounds" value="0,0,32,0"/>
+    <property name="Sprite" value="Papers"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="AI" width="13" height="13">
+  <object name="QuellaInRoomPacing" gid="488" x="192" y="224">
+   <properties>
+    <property name="Character" value="Quella"/>
+    <property name="Frequency" value="60"/>
+    <property name="Horizontal" value="true"/>
+    <property name="Length" value="4"/>
+    <property name="Type" value="Pacing"/>
+   </properties>
+  </object>
+  <object name="QuellaAtNight" gid="487" x="352" y="224">
+   <properties>
+    <property name="Character" value="Quella"/>
+    <property name="Index" value="1"/>
+    <property name="Loop" value="true"/>
+    <property name="Type" value="Routine"/>
+    <property name="WaitTime" value="200"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

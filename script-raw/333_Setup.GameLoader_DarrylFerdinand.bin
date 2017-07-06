@@ -1,0 +1,45 @@
+
+
+
+
+// DARRYL - FERDINAND ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Darryl-Ferdinand
+
+action:response:root
+Darryl
+root-1:What made you want to be a sailor?
+</>root-null:I'll be going now.
+action end
+
+action:statement:root-1
+Ferdinand:Why, that's a hard question to answer!  Ever since I was a child, I loved the sea.
+Ferdinand:My pappy always took me out deep-sea fishing.
+Ferdinand:Once I stopped throwing up constantly, I really fell in love with the ocean.
+next:root-2
+action end
+
+action:response:root-2
+Darryl
+root-3:That sounds like a canned response.  No one is that simple.
+</>root-null:Right.  Well, bye.
+action end
+
+action:statement:root-3
+Ferdinand:It sounds like someone doesn't believe in childhood dreams!
+Ferdinand:I assure you, it's the truth!  On my pappy's grave!
+next:root-4
+action end
+
+action:response:root-4
+Darryl
+</>root-null:Whatever you say.
+action end
+
+dialogue end
+
+
+
+
+

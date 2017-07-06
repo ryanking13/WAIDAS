@@ -1,0 +1,132 @@
+
+
+
+// QUELLA - XU ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Quella-Xu
+
+action:response:root
+Quella
+root-trigger.chap3DarrylsKeyQuella:So, I found this box in your room...:trigger.chap3DarrylsKeyQuella.off
+root-1:How has being a waitress here treated you?
+root-2:You look upset.  What's wrong?
+</>root-3:Never mind.
+action end
+
+action:statement:root-1
+Xu:It's...it's alright.
+Xu:Since we don't have many passengers, the work isn't too hard.
+next:root-1-A
+action end
+
+action:response:root-1-A
+Quella
+root-1-B:You don't sound crazy about it.
+</>root-1-null:Nevermind.
+action end
+
+action:statement:root-1-B
+Xu:Well, the pay is on the low side.
+Xu:The really low side.
+Xu:Even with generous tips, I don't make a lot.
+next:root-1-C
+action end
+
+action:response:root-1-C
+Quella
+root-1-D:As someone who makes no money, I sympathize.
+root-1-E:Money isn't everything.  So long as you like the work, right?
+</>root-1-F:Never mind.
+action end
+
+action:statement:root-1-D
+Xu:Ha, thanks.  Now if only I could take sympathy to the bank.
+next:root-1-C
+action end
+
+action:statement:root-1-E
+Xu:I guess we see things differently, then.
+Xu:Money is everything.  Money is god.  We may not like it, but it controls everything.
+next:root-1-C
+action end
+
+
+action:statement:root-2
+Xu:Oh...I don't know.  It's not a huge deal.
+Xu:I screwed something up and burned a bridge.
+next:root-2-A
+action end
+
+action:response:root-2-A
+Quella
+root-2-B:Hey, you're not perfect.  We all make mistakes!
+root-2-C:An apology might go further than you'd think!
+</>root-2-null:Never mind.
+action end
+
+action:statement:root-2-B
+Xu:This wasn't exactly what I'd call a mistake.
+Xu:Let's just say it's complicated and leave it at that.
+next:root-2-A
+action end
+
+action:statement:root-2-C
+Xu:I appreciate the advice, but I really don't think this is a situation that can be solved by an apology.
+next:root-2-A
+action end
+
+
+
+
+
+action:statement:root-trigger.chap3DarrylsKeyQuella
+Xu:Oh, that...wait, you went into my room?
+Xu:Snooping around a staff's room like that is...
+next:root-foundOut
+action end
+
+action:response:root-foundOut
+Quella
+root-foundOut-1:I found Darryl's key.  I'm assuming you stole it.
+action end
+
+action:statement:root-foundOut-1
+Xu:T-That's a pretty bold assumption.
+Xu:As it happens, he left it behind in the dining room and, um, I was going to return it.
+next:root-pressure
+action end
+
+action:response:root-pressure
+Quella
+root-pressure-A:I wonder what Ferdinand would say if he knew the staff was stealing from passengers?:trigger.chap3gwenXuProgress.on
+root-trigger.chap3gwenXuProgress:Relax, I'm not going to tell anyone.  But it has to stop.
+</>root-null:Forget it.
+action end
+
+action:statement:root-pressure-A
+Xu:Wait, you can't tell him!  I could lose my job here!
+Xu:Look, I promise it'll never happen again, I'll even return everything, just please...
+next:root-pressure
+action end
+
+action:statement:root-trigger.chap3gwenXuProgress
+Xu:...
+Xu:...Thank you.  If I lose this job, I won't have anywhere to go.
+next:root-pressure-B
+action end
+
+action:response:root-pressure-B
+Quella
+root-pressure-C:But I can't vouch for how Darryl will react.  He may want to speak to you.
+action end
+
+action:statement:root-pressure-C
+Xu:...Right...
+next:root-null
+action end
+
+
+dialogue end
+
+
