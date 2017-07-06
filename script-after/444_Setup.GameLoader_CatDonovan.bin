@@ -5,12 +5,12 @@ Cat-Donovan
 
 action:response:root
 Cat
-root-1:Meow!
-</>root-null:Hsss!
+root-1:냐융!
+</>root-null: 그르릉!
 action end
 
 action:statement:root-1
-null:He doesn't react in any way.
+null:그는 반응하지 않는다.
 next:root-null
 action end
 

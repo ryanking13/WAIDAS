@@ -4,12 +4,12 @@ Donovan-Cat
 
 action:response:root
 Donovan
-root-A:Hey cat.
-</>root-null:Leave it alone
+root-A:고양아.
+</>root-null:놔둔다
 action end
 
 action:statement:root-A
-Sunshine:Meow!
+Sunshine:냐용!
 next:root-null
 action end
 

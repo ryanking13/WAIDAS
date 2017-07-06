@@ -6,7 +6,7 @@ Gwen-Donovan
 
 action:statement:root
 Gwen:...
-null:She's too anxious to say anything.
+null:그녀는 그에게 말을 걸기 두려워한다.
 next:root-null
 action end
 
