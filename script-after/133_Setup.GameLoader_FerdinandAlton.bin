@@ -1,0 +1,106 @@
+
+
+
+// FERDINAND - ALTON ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Ferdinand-Alton
+
+action:response:root
+Ferdinand
+root-1:아름다운 하루를 보내고 계신가요, Alton?
+root-2:전망실 분위기는 좀 어떤가요?
+</>root-null:관둔다.
+action end
+
+action:statement:root-1
+Alton:좋아요, 감사합니다. Ferdinand씨는 어때요?
+next:root-1-A
+action end
+
+action:response:root-1-A
+Ferdinand
+root-1-B:바다에 있는 동안에 저는 언제나 평화롭지요!
+root-trigger.chap3captainMissing:선장님이 안 계시니, 조금 울적하군요.
+action end
+
+action:statement:root-1-B
+Alton:그거 멋지네요!
+Alton:근데, 무슨 일이 있으셔서 오신 건가요?
+next:root-1-D
+action end
+
+action:response:root-1-D
+Ferdinand
+</>root-null:전혀요!
+action end
+
+action:statement:root-trigger.chap3captainMissing
+Alton:맞아요, 저도 너무 걱정되네요. 선장님한테 아무 일도 없어야 할텐데.
+Alton:설마 당신도 선장님한테 무슨 일이 생겼다고...?
+next:root-1-E
+action end
+
+action:response:root-1-E
+Ferdinand
+root-1-E-1:그녀가 어디에 있던 간에, 무사할 겁니다.
+root-1-E-2:죽었겠냐고요?  당연하죠.  완전 죽었겠죠.
+action end
+
+action:statement:root-1-E-1
+Alton:그래요, 저도 그렇길 바라요.  이 배가 되게 오래 돼서, 어딘가에는 안 쓰는 저장고가 있겠죠.
+Alton:우연히 거기에 빠져서 못 나오고 계신 거겠죠.
+next:root-null
+action end
+
+action:statement:root-1-E-2
+Alton:뭐-뭐라구요?!  그게 무슨...
+next:root-1-E-3
+action end
+
+action:response:root-1-E-3
+Ferdinand
+root-1-E-4:그냥 장난쳐 본 거에요 하하!  그렇게 심각해지지 마요, Alton.
+action end
+
+action:statement:root-1-E-4
+Alton:...
+next:root-null
+action end
+
+
+action:statement:root-2
+Alton:괜찮아요. 뭐 사람들은 별로 안 오지만요.
+Alton:음 아니, 전혀 안 오지만요.
+next:root-2-A
+action end
+
+action:response:root-2-A
+Ferdinand
+root-2-B:멋지군요! 계속 열심히 일해주세요!
+root-2-C:언젠가는 사람들이 찾아올 겁니다!
+action end
+
+action:statement:root-2-B
+Alton:네? 아뇨, 그렇게 멋지지 않은데...
+next:root-2-B-1
+action end
+
+action:response:root-2-B-1
+Ferdinand
+root-2-B-2:흠, 뭐라고 말했나요?
+action end
+
+action:statement:root-2-B-2
+Alton:아, 제 말은...아니에요.
+next:root-null
+action end
+
+action:statement:root-2-C
+Alton:그랬으면 좋겠네요. 뭔가 다들 자기 일에 사로잡혀 바쁜 것 같아요.
+next:root-null
+action end
+
+dialogue end
+
+

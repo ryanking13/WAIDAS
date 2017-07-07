@@ -1,0 +1,59 @@
+
+
+dialogue start
+XusLootXu
+
+action:statement:root
+Xu:이 상자 속에는 내가 오랜 기간 동안...수집한 것들이 들어있다.
+Xu:사람들은 비싼 물건들을 마구 방치해놓고 다니지.
+Xu:그러다 무슨 일이 일어날 지 전혀 생각도 안 하는 가봐?
+next:root-2
+action end
+
+action:response:root-2
+Xu
+root-3:상자를 조사한다.
+</>root-null:그만둔다.
+action end
+
+action:statement:root-3
+Xu:Alton과 다른 승객들의 여러 보석과 전자기기가 들어있다.
+Xu:Darryl씨 한테서 열쇠를 훔쳤는데, 나한테 가치있는 건 아무 것도 못 여는 것 같네.
+next:root-null
+action end
+
+dialogue end
+
+
+dialogue start
+XusDresserXu
+
+action:statement:root
+Xu:내 옷들이 전부 여기에 들어있다.
+Xu:난 이 유니폼이 진짜 싫어...그냥 청바지를 입고 싶은데.
+Xu:Alton이랑 Marcurio는 치마를 안 입어도 되지. 제기랄.
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+dialogue start
+SkeletonKeyXu
+
+action:statement:root
+Xu:여기에... 이 배의 마스터 키가 있다.
+Xu:진짜 이상한 디자인이란 말이야. 완전 징그러운 화난 해골 얼굴이 그려져 있어.
+Xu:조타실에서 훔친 건데, Donovan이 그걸 다시 나한테서 훔쳤지.
+Xu:다음에는 고양이가 와서 삼키려나?
+next:root-null
+action end
+
+dialogue end
+
+
+
+

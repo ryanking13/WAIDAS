@@ -2,8 +2,8 @@
 dialogue start
 AltonsSpeakerAlton
 action:statement:root
-Alton:These things weren't cheap, and they weren't convenient, but they were worth it!
-Alton:What's music without big tower speakers?
+Alton:이거 사는데 돈이 엄청 들었지. 사실 별로 편리하지도 않아. 그래도 그만한 가치가 있다고!
+Alton:거대 스피커 없는 음악에는 아무런 가치가 없지!
 action end
 dialogue end
 
@@ -12,8 +12,8 @@ dialogue end
 dialogue start
 AltonsTechAlton
 action:statement:root
-Alton:Now's not the time to play videogames.
-Alton:I've got way better things to do than that!
+Alton:지금은 게임을 할 때가 아냐.
+Alton:훨씬 더 중요한 일을 할 때라고!
 action end
 dialogue end
 
@@ -22,21 +22,21 @@ dialogue end
 dialogue start
 ObservationDJTableLeftAlton
 action:statement:root
-Alton:There's my deck and mic.  Nothing too flashy, but they get the job done.
+Alton:내 테이블이랑 마이크다.  번쩍번쩍한 새 것은 아니지만, 제 할 일은 하는 것 들이지.
 action end
 dialogue end
 
 dialogue start
 ObservationDJTableRightAlton
 action:statement:root
-Alton:My work computer.  Doesn't have the best specs, but it does what it needs to!
+Alton:내 컴퓨터다. 최고 사양은 아니지만, 필요한 건 충분히 할 수 있다고!
 next:root-2
 action end
 
 action:response:root-2
 Alton
-root-3:Change the music.
-</>root-null:Leave it alone.
+root-3:음악을 바꾼다.
+</>root-null:놔둔다.
 action end
 
 action:response:root-3
@@ -48,7 +48,7 @@ root-3-trigger.musicQuellaUnlocked:Something slow:trigger.altonSpeakersTrack4.on
 root-3-trigger.musicMarcurioUnlocked:Something ominous:trigger.altonSpeakersTrack5.on
 root-3-trigger.musicDonovanUnlocked:Something fast:trigger.altonSpeakersTrack6.on
 root-3-trigger.musicPauloUnlocked:Something mysterious:trigger.altonSpeakersTrack7.on
-</>root-null:Never mind.
+</>root-null:관둔다.
 action end
 
 dialogue end

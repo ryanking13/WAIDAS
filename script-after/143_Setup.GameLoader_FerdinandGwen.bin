@@ -1,0 +1,152 @@
+
+
+
+// FERDINAND - GWEN ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Ferdinand-Gwen
+
+action:response:root
+Ferdinand
+root-1:요즘 어때요, Gwen?
+root-2:혹시 뭔가 배에서 수상한 일은 없나요?
+</>root-null:관둔다.
+action end
+
+action:statement:root-1
+Gwen:어...글쎄요.
+Gwen:전 괜찮아요.
+next:root-1-A
+action end
+
+action:response:root-1-A
+Ferdinand
+root-1-B:농담을 할 기분이 아닌가 보군요.
+root-2:혹시 뭔가 배에서 수상한 일은 없나요?
+</>root-null:Never mind.
+action end
+
+action:statement:root-1-B
+Gwen:.....아무 소용 없죠.
+Gwen:저는 그냥 안전하게 있고 싶어요.
+next:root-null
+action end
+
+action:statement:root-2
+Gwen:있어요, 완전 있어요.  제가 Donovan의 방에서 찾은 건 차치하고...
+Gwen:Alton이랑 Xu가 같이 돌아다니면서, 어제 밤에 뭘 했는지 묻더군요.
+Gwen:그리고 언제나 방 안에만 있는 승객이 있어요. 절대로 문을 열어주지 않구요.
+Gwen:수상한 게 너무 많아요...
+next:root-3
+action end
+
+action:response:root-3
+Ferdinand
+root-3-A:Alton과 Xu에 대해서?
+root-3-C:어떤 승객에 대해서?
+</>root-null:관둔다.
+action end
+
+action:statement:root-3-A
+Gwen:제가 듣기로는, 누군가 Xu의 방에 침입했다고 해요.
+Gwen:아마도 그게 누군지 알아내려 했던 모양이에요.
+Gwen:이런 조그마한 배에, 왜 그런 짓을 한 걸까요.
+next:root-3
+action end
+
+action:statement:root-3-C
+Gwen:그 사람에 대해서 아는 건 하나도 없어요. 그냥 언제나 방 안에만 있어요.
+Gwen:그 사람이 저를 스토킹하는 사람일 지도 모르겠네요.
+Gwen:그냥 누구든지 의심하게 돼요.
+next:root-3
+action end
+
+dialogue end
+
+
+
+
+
+// FERDINAND - GWEN (CHAPTER 4) ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Ferdinand-Gwen
+
+action:response:chap4
+Ferdinand
+chap4-A:기분은 좀 어때요?
+chap4-B:이런 식으로 끝나리라고는 기대하지 않았는데요.
+</>chap4-null:잘 있어요!
+action end
+
+action:statement:chap4-A
+Gwen:...
+Gwen:안 좋아요.
+next:chap4
+action end
+
+action:statement:chap4-B
+Gwen:저를 믿어주세요, 저는 결백하다고요.
+Gwen:저는 Donovan이랑 Paulo한테 무슨 일이 일어났는 지 전혀 모르겠어요, 저는 아무 관련 없다구요!
+Gwen:왜... 들어주지 않는 건가요?
+next:chap4
+action end
+
+dialogue end
+
+
+
+// FERDINAND - GWEN (AFTER CHAPTER 4) ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Ferdinand-Gwen
+
+action:response:chap6
+Ferdinand
+chap6-A:뭔가 불편하신 것은 없으신가요, Gwen양?
+</>chap6-null:잘 있어요!
+action end
+
+action:statement:chap6-A
+Gwen:하루 종일 묶여있었던 걸 생각하면, 아주 많다고 해야 할 것 같네요.
+Gwen:좋은 거라곤 하나도 없어요.
+next:chap6-B
+action end
+
+action:response:chap6-B
+Ferdinand
+chap6-C:지당하신 말씀입니다.  당신의 피드배은 우리에게 매우 소중합니다!
+chap6-D:흠, 알겠습니다.  혹시 우리 서비스를 개선하기 위한 방법으로 말해주실 만한 게 있나요?
+</>chap6-null:관둔다.
+action end
+
+action:statement:chap6-C
+Gwen:당신 목소리 어조로 봐서는 전혀 그런 것 같지가 않군요.
+next:chap6-B
+action end
+
+action:statement:chap6-D
+Gwen:다음 부터는 직원들이 승객을 살인자로 몰지 않았으면 좋겠군요.
+Gwen:왜 아무도 아직 안 짤린거죠? 그냥 이대로 냅둘 건가요?
+next:chap6-2
+action end
+
+action:response:chap6-2
+Ferdinand
+chap6-2-A:글쎄요, 선장이 그런 문제를 관리하는 사람이라서요.
+chap6-2-B:지당하신 말씀입니다.  당신의 피드배은 우리에게 매우 소중합니다!
+</>chap6-null:관둔다.
+action end
+
+action:statement:chap6-2-A
+Gwen:근데 선장님은...
+Gwen:...됐어요, 그만합시다.
+next:chap6-2
+action end
+
+action:statement:chap6-2-B
+Gwen:그 말을 계속 반복하는 건가요?
+next:chap6-2
+action end
+
+dialogue end

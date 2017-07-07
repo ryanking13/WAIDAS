@@ -1,0 +1,86 @@
+
+
+
+
+// FERDINAND - DARRYL ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Ferdinand-Darryl
+
+action:response:root
+Ferdinand
+root-1:오늘 하루 멋진 날을 보내고 계십니까?
+root-2:우리 배에서의 날들은 만족스러우십니까?
+</>root-null:관둔다.
+action end
+
+action:statement:root-1
+Darryl:어제랑 똑같죠 뭐.
+next:root-1-A
+action end
+
+action:response:root-1-A
+Ferdinand
+root-1-B:흠 그럼...어제는 어떠셨나요?
+root-1-C:뭔가 신경쓰이는 일이라도 있으셨나요?
+</>root-null:관둔다.
+action end
+
+action:statement:root-1-B
+Darryl:언제나 똑같은 날이었죠.
+next:root-null
+action end
+
+action:statement:root-1-C
+Darryl:마음이 부서진 채로, 그것 뿐이죠.
+Darryl:여자 문제에요.  제가 옳은 걸까요?
+next:root-1-D
+action end
+
+action:response:root-1-D
+Ferdinand
+</>root-null:전 잘 모르겠지만.  당신이 옳을 거라고 생각해요.
+action end
+
+action:statement:root-2
+Darryl:그래요 다 좋아요. 모든게 다 좋아요.
+next:root-2-A
+action end
+
+action:response:root-2-A
+Ferdinand
+root-2-B:그렇다면 기쁘군요!  무슨 문제가 있다면 얼마든지 말씀해주세요!
+action end
+
+action:statement:root-2-B
+Darryl:...사실, 한 가지 문제가 있어요.
+Darryl:제 개인 열쇠를 잃어버린 것 같습니다.
+Darryl:제 방에 놔뒀는데, 웃기게도 이게 사라져버렸어요.
+next:root-2-C
+action end
+
+action:response:root-2-C
+Ferdinand
+root-2-D:사실은 제 열쇠도 최근에 사라졌습니다만...
+root-2-E:어디 잘못 두거나 떨어뜨린 건 아닌가요?
+</>root-null:Sorry to hear that!
+action end
+
+action:statement:root-2-D
+Darryl:이 배 어딘가에 도둑놈이 있나 보군요.
+Darryl:또 뭔가를 잃어버린 사람이 없는 지 사람들 얘기를 들어봐야겠습니다.
+next:root-null
+action end
+
+action:statement:root-2-E
+Darryl:확실해요.
+Darryl:방법은 모르겠지만, 누군가 제 방에 들어와서 훔친 거라고 생각합니다.
+Darryl:그게 딱히 값 나가는 건 아니에요. 대부분의 사람들에게는요.
+Darryl:그 열쇠로 열 수 있는 거라고는 그냥 더러운 일기장인데 말이죠.
+next:root-null
+action end
+
+dialogue end
+
+
+

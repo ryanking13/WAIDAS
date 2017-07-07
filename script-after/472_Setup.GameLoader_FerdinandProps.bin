@@ -1,0 +1,115 @@
+
+dialogue start
+PilothouseControlsTopFerdinand
+
+action:response:root
+Ferdinand
+root-1:스위치를 킨다:trigger.achievementSwitch1.on
+root-2:버튼을 누른다:trigger.achievementSwitch2.on
+</>root-null:놔둔다.
+action end
+
+action:statement:root-1
+Ferdinand:이거 재밌군요!
+null:스위치를 껐다 켰다.
+next:root-null
+action end
+
+action:statement:root-2
+Ferdinand:붑 붑 붑!
+null:버튼을 눌러댔다.
+next:root-null
+action end
+
+dialogue end
+
+
+
+dialogue start
+PilothouseControlsMiddleFerdinand
+action:response:root
+Ferdinand
+root-1:레버를 올린다.:trigger.achievementSwitch3.on
+</>root-null:놔둔다.
+action end
+
+action:statement:root-1
+null:레버를 올리자, 배의 엔진이 이상한 소리를 내기 시작했다.
+Ferdinand:흠, 뭐 중요한 건 아니겠지!
+next:root-null
+action end
+dialogue end
+
+
+
+dialogue start
+PilothouseControlsBottomFerdinand
+action:response:root
+Ferdinand
+root-1:슬라이더를 올린다.:trigger.achievementSwitch4.on
+root-2:버튼을 누른다.:trigger.achievementSwitch5.on
+</>root-null:놔둔다.
+action end
+
+action:statement:root-1
+Ferdinand:오 멋진데요! 올렸다 내렸다 올렸다 내렸다...
+null:슬라이더를 움직였다.
+next:root-null
+action end
+
+action:statement:root-2
+Ferdinand:이렇게 많은 버튼이!
+null:버튼을 눌러댔다.
+next:root-null
+action end
+dialogue end
+
+
+
+dialogue start
+PilothouseWheelFerdinand
+action:statement:root
+null:이 장소의 다른 것과 다르게, 이 것의 용도는 명확하다.
+next:root-2
+action end
+
+action:response:root-2
+Ferdinand
+<!>root-3:돌린다.:trigger.shipDirectionChanged.on
+</>root-null:놔둔다.
+action end
+
+action:statement:root-3
+Ferdinand:위히이이이!
+null:배의 방향이 바뀌었다.
+next:root-null
+action end
+
+action:response:root2
+Ferdinand
+root-3:돌린다.
+</>root-null:놔둔다.
+action end
+
+dialogue end
+
+
+
+
+dialogue start
+FerdinandsShipBottleFerdinand
+action:statement:root
+Ferdinand:모든 항해사의 방에는 이런 잡동사니들이 있는 법이죠.
+next:root-null
+action end
+dialogue end
+
+dialogue start
+FerdinandsFishingRodFerdinand
+action:statement:root
+Ferdinand:미끼를 사는 걸 깜빡했고, 후크랑 다른 낚시 도구도 깜빡했군... 웁스.
+Ferdinand:어, 별 차이 없겠죠.
+next:root-null
+action end
+dialogue end
+

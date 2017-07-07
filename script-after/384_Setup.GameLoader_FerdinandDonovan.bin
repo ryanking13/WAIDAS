@@ -9,59 +9,59 @@ Ferdinand-Donovan
 
 action:response:root
 Ferdinand
-root-1:How are you doing on this beautiful day?
-root-2:Is everything on the ship to your satisfaction?
-</>root-null:Never mind.
+root-1:이 아름다운 날을 잘 보내고 계십니까?
+root-2:배의 생활에는 불편하신 게 없으십니까?
+</>root-null:관둔다.
 action end
 
 action:statement:root-1
-Donovan:I'm fine.
+Donovan:좋아.
 next:root-1-A
 action end
 
 action:response:root-1-A
 Ferdinand
-root-1-B:Are you sure?  Nothing I can help you with?
-root-1-C:You're not upset about the captain, I hope?
-root-1-D:You're not very talkative, huh?
+root-1-B:그래요?  제가 뭔가 도와드릴 건 없습니까?
+root-1-C:혹시 선장님 때문에 화나시거나 한 건 없으시죠?
+root-1-D:말이 되게 적으신 분이군요!
 </>root-null:Great!
 action end
 
 action:statement:root-1-B
-Donovan:No.
+Donovan:없어.
 next:root-1-A
 action end
 
 action:statement:root-1-C
 Donovan:...
-Donovan:No.
+Donovan:없어.
 next:root-1-A
 action end
 
 action:statement:root-1-D
-Donovan:Not when I have nothing to say.
+Donovan:내가 할 말이 없을 때는.
 next:root-1-A
 action end
 
 action:statement:root-2
-Donovan:Yes, everything's okay.
+Donovan:그래 다 좋아.
 next:root-2-A
 action end
 
 action:response:root-2-A
 Ferdinand
-root-2-B:I pride myself on being able to adjust to the passenger's requests!
-root-2-C:If there is anything you need, let me know immediately!
+root-2-B:승객 분이 만족스러우시다니 제가 정말로 자랑스럽군요!
+root-2-C:필요한 일이 있다면 언제든지 불러 주십시오!
 </>root-null:Farewell, then.
 action end
 
 action:statement:root-2-B
-Donovan:That's great.
+Donovan:좋은 자세군.
 next:root-2-A
 action end
 
 action:statement:root-2-C
-Donovan:Sure.
+Donovan:그래.
 next:root-2-A
 action end
 

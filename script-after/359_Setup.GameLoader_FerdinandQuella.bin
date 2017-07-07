@@ -1,0 +1,112 @@
+
+
+
+// FERDINAND - QUELLA ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Ferdinand-Quella
+
+action:response:root
+Ferdinand
+root-1:안녕하세요 Quella!  오늘 좀 어때요?
+root-2:배에 불편한 점은 없으십니까?
+</>root-null:관둔다.
+action end
+
+action:statement:root-1
+Quella:네 좋아요, 당신은요?
+next:root-1-A
+action end
+
+action:response:root-1-A
+Ferdinand
+root-1-B:좋네요, 좋아.  다른 승객들이랑은 잘 어울리고 계신가요?
+</>root-null:좋습니다.
+action end
+
+action:statement:root-2
+Quella:아무 문제 없어요! 침대가 있고, 글을 쓸 수 있는 책상이 있는 한, 저는 충분합니다.
+Quella:그리고 저는 배 타는 걸 좋아해서요.
+next:root-2-A
+action end
+
+action:response:root-2-A
+Ferdinand
+root-1-B:좋네요, 좋아.  다른 승객들이랑은 잘 어울리고 계신가요?
+</>root-null:저도 그렇게 느낍니다!
+action end
+
+
+action:statement:root-1-B
+Quella:물론이죠. 여긴 정말 여러가지 삶을 살아가는 사람들이 있어요.
+next:root-1-C
+action end
+
+action:response:root-1-C
+Ferdinand
+root-1-D:당신은 좀 현실 세계 사람 같군요.  혹시 다른 사람들에게 무슨 문제가 생긴다면 알려주세요!
+</>root-null:관둔다.
+action end
+
+action:statement:root-1-D
+Quella:잘 모르겠어요.  어떤 사람들은 너무 수줍어서 도와달라고 할 것 같지 않네요.
+next:root-1-E
+action end
+
+action:response:root-1-E
+Ferdinand
+root-gwen:Gwen은 어때요?
+root-trigger.ChapterTwoOn:Donovan은 어때요?
+root-trigger.ChapterThreeOn:Donovan은 어때요?  
+root-garv:Garv는 어때요?
+root-alton:Alton은 어때요?
+root-darryl:Darryl은 어때요?
+</>root-null:관둔다.
+action end
+
+action:statement:root-gwen
+Quella:Gwen은...문제가 있어요.
+Quella:그녀는 뭔가 망상증에 시달리고 있는 것 같아요.  그녀는 누군가 자신을 쫓아오고 있다고 생각해요.
+Quella:무엇 때문에 그런 망상을 하는 걸까요.
+next:root-1-E
+action end
+
+action:statement:root-trigger.ChapterTwoOn
+Quella:Donovan...그는 말할 거리가 있죠.
+Quella:그는 아무랑도 얘기를 안하고, 언제나 화난 것 처럼 보여요.
+Quella:부정적인 쪽으로요...뭔가 안 좋아요.
+next:root-1-E
+action end
+
+action:statement:root-trigger.ChapterThreeOn
+Quella:Donovan...그는 말할 거리가 있죠.
+Quella:그는 아무랑도 얘기를 안하고, 언제나 화난 것 처럼 보여요.
+Quella:부정적인 쪽으로요...뭔가 안 좋아요.
+next:root-1-E
+action end
+
+action:statement:root-garv
+Quella:Garv 언제나 친절하고 편안한 사람이죠.
+Quella:가끔은 그 사람이 되게 멀게 느껴지는 말을 해요, 아무 것도 신경 쓰지 않는 것 처럼요.
+Quella:뭔가 약간 심란하게 하죠.
+next:root-1-E
+action end
+
+action:statement:root-alton
+Quella:Alton은 참 다정한 사람이죠.  불안정해보이기도 하지만요.
+Quella:그는 뭔가 안 좋은 일들을 모두 자기 잘못처럼 생각해요.
+Quella:자신한테 불필요한 압박을 자꾸 주는 것 같아요
+next:root-1-E
+action end
+
+action:statement:root-darryl
+Quella:Darryl은 조용하고, 한편으로는 친절하고 생각이 깊은 사람이에요.
+Quella:근데 그가 말하는 방식은 뭔가 저를 걱정하게 만들어요.
+Quella:...뭐라 설명할 수는 없지만요.
+next:root-1-E
+action end
+
+dialogue end
+
+
+

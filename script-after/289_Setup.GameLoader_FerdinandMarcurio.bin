@@ -1,0 +1,91 @@
+
+
+// FERDINAND - MARCURIO ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Ferdinand-Marcurio
+
+action:response:root
+Ferdinand
+root-1:안녕하세요, Marcurio!  오늘 기분은 좀 어떻습니까?
+root-2:오늘도 열심히 일하는 하루가 될 것 같나요?
+root-3:지난 선장에 대해서 어떻게 생각하나요?
+</>root-null:관둔다.
+action end
+
+action:statement:root-1
+Marcurio:방금 전보다 안 좋아졌네요.
+next:root-1-A
+action end
+
+action:response:root-1-A
+Ferdinand
+root-1-B:이런 잡담을 별로 안 좋아하는 모양이군요!:trigger.chap3ferdMarcProgression2.on
+root-trigger.chap3ferdMarcProgression2:그거 좀 상처받는 데요!  아 너무 아파!
+</>root-null:관둔다.
+action end
+
+action:statement:root-1-B
+Marcurio:네, 안 좋아합니다.
+next:root-1-A
+action end
+
+action:statement:root-trigger.chap3ferdMarcProgression2
+Marcurio:...그래요.
+next:root-1-A
+action end
+
+
+action:statement:root-2
+Marcurio:매일매일 똑같죠. 아침, 점심, 저녁.
+next:root-2-A
+action end
+
+action:response:root-2-A
+Ferdinand
+root-2-A-1:당신은 참 규칙적인 사람이군요.  마음에 들어요!:trigger.chap3ferdMarcProgression.on
+root-trigger.chap3ferdMarcProgression:그리고 겸손하기까지!
+</>root-null:관둔다.
+action end
+
+action:statement:root-2-A-1
+Marcurio:뭐, 대부분의 직업이 다 규칙적인 거죠.
+Marcurio:딱히 특별할 건 없습니다.
+next:root-2-A
+action end
+
+action:statement:root-trigger.chap3ferdMarcProgression
+Marcurio:...그래요.
+next:root-2-A
+action end
+
+action:statement:root-3
+Marcurio:흠, 지난 선장이요?
+Marcurio:그는 뭐...좋은 사람이었죠. 뭔가 고독한 사람이어서, 딱히 신경을 안 썼어요.
+Marcurio:가끔 이상한 느낌을 주는 사람이었죠.
+next:root-3-A
+action end
+
+action:response:root-3-A
+Ferdinand
+root-3-B:이상한 느낌이요?  어디서 그런 느낌을 받았나요?
+root-3-C:그 이후엔 어떻게 됐죠?
+</>root-null:관둔다.
+action end
+
+action:statement:root-3-B
+Marcurio:잘 모르겠지만,  그 사람은 뭔가...귀족 같았어요.
+Marcurio:자기는 굉장히 부유한 사람이고, 이 장소는 다 자기 수준 아래에 있는 것 같았죠.
+Marcurio:왜 그런 사람이 이런 초라한 배에서 일하게 된 걸까요?
+next:root-3-A
+action end
+
+action:statement:root-3-C
+Marcurio:떠난 뒤로요? 제가 그걸 어떻게 압니까?
+Marcurio:그 사람은 그냥 제 보스였죠.  사생활은 모르고, 알고 싶지도 않아요.
+next:root-3-A
+action end
+
+
+dialogue end
+

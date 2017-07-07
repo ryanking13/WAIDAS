@@ -1,0 +1,76 @@
+
+
+
+
+// FERDINAND - GARV ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Ferdinand-Garv
+
+action:response:root
+Ferdinand
+root-trigger.chap3captainMissing:좋은 하루를 보내고 계십니까?
+root-2:뭔가 도와드릴 일은 없나요?
+</>root-null:관둔다.
+action end
+
+action:statement:root-trigger.chap3captainMissing
+Garv:선장이 실종되었는데도 그렇게 경박한 상태로 있는 게 참 신기하군요.
+next:root-1-A
+action end
+
+action:response:root-1-A
+Ferdinand
+root-1-B:오히려 지금이 우리가 가장 낙관적이어야 할 때죠!
+root-1-C:승객들을 당황하게 해서는 안 되니까요.
+action end
+
+action:statement:root-1-B
+Garv:이 상황에서 낙관적일 게 뭐가 있나 싶군요.
+Garv:이 배는 전혀 큰 배가 아니에요.  무슨 일이 일어났는 지 알아내기 어렵지 않을 겁니다.
+next:root-1-B-2
+action end
+
+action:response:root-1-B-2
+Ferdinand
+root-1-B-3:글쎄요...일단 확실하게 할 필요가 있겠죠.
+action end
+
+action:statement:root-1-B-3
+Garv:어떻게요?  배를 샅샅이 뒤져보는 건가요?
+Garv:사람이 숨을 만한 공간이 별로 없을 것 같은데요.
+next:root-null
+action end
+
+action:statement:root-1-C
+Garv:승객들은 언젠가는 당황할 겁니다.
+Garv:그게 지금이거나, 낙관론이 끝날 때거나.
+next:root-null
+action end
+
+action:statement:root-2
+Garv:전혀요. 내 애완동물들을 배에 태우는 걸 허락해주셔서 감사합니다.
+next:root-2-A
+action end
+
+action:response:root-2-A
+Ferdinand
+root-2-B:사실은, 그것에 대해서 전혀 몰랐습니다.
+root-2-C:지금은 뭐 그게 중요한 문제는 아니죠.
+action end
+
+action:statement:root-2-B
+Garv:그런 것 같네요. 그래도 그 이후에도 큰 문제삼지 않아주셨으니 말입니다.
+Garv:선장님이 돌아오면, 저를 바다로 던져버리실지도 모르겠네요!
+next:root-null
+action end
+
+action:statement:root-2-C
+Garv:그렇죠...
+next:root-null
+action end
+
+dialogue end
+
+
+

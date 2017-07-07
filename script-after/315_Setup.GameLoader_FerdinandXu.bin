@@ -1,0 +1,65 @@
+
+
+// FERDINAND - XU ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Ferdinand-Xu
+
+action:response:root
+Ferdinand
+root-1:오 Xu양!  요즘 어때요?
+root-2:승객들이 식사 대접에는 만족하고 계시나요?
+</>root-null:Never mind.
+action end
+
+action:statement:root-1
+Xu:아, 네 좋아요. 물어봐주셔서 감사해요.
+next:root-1-A
+action end
+
+action:response:root-1-A
+Ferdinand
+root-1-B:흠, 그러고 보니 선장님의 마스터 키가 안 보이던데. 혹시 주변에서 본 적 있나요?
+</>root-null:그렇군요, 다음에 봐요.
+action end
+
+action:statement:root-1-B
+Xu:아, 아뇨...어, 마스터 키란 게 뭔가요?
+next:root-1-C
+action end
+
+action:response:root-1-C
+Ferdinand
+root-1-D:아, 그냥 굉장히 중요한 열쇠에요. 선장님만 가지고 있는 건데, 모든 선실을 열 수 있는 열쇠에요.
+action end
+
+action:statement:root-1-D
+Xu:오, 이런. 그거 큰일이네요. 어째서 사라진 걸까요?
+Xu:혹시 찾게 되면 바로 알려드리도록 할게요.
+next:root-1-E
+action end
+
+action:response:root-1-E
+Ferdinand
+</>root-null:꼭 그렇게 해주세요.
+action end
+
+
+action:statement:root-2
+Xu:언제나 똑같죠 뭐. 승객들은 다 좋아보여요, 아마두요.
+Xu:뭐... 주는 팁 가지고 평가할 수는 없는 거겠지만요.
+next:root-2-A
+action end
+
+action:response:root-2-A
+Ferdinand
+root-2-B:하하, 그건 참 기쁜 소식이군요!
+action end
+
+action:statement:root-2-B
+Xu:글...쎄요...
+next:root-null
+action end
+
+dialogue end
+
