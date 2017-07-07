@@ -1,0 +1,92 @@
+
+dialogue start
+Cat-Garv
+
+action:response:root
+Cat
+root-1:냐옹!
+</>root-null:그르릉!
+action end
+
+action:statement:root-1
+Garv:응, 밥그릇이라면 채워뒀단다, 멍청한 고양이.
+next:root-2
+action end
+
+action:response:root-2
+Cat
+root-2-1:냐옹!
+</>root-2-null:떠난다
+action end
+
+action:statement:root-2-1
+Garv:그만 야옹대렴. 네가 배고프지 않다는 거 알아.
+Garv:그리고 대소변 상자도 어제 청소했어. 밖에다 오줌 질질 흘리고 다니지 말거라.
+next:root-2-2
+action end
+
+action:response:root-2-2
+Cat
+root-2-3:냐옹!
+</>root-2-2-null:떠난다
+action end
+
+action:statement:root-2-3
+Garv:뭐 이상한 거라도 먹었니. 대체 왜 날 자꾸 귀찮게 하는 거니.
+next:root-null
+action end
+
+
+
+action:response:root2
+Cat
+root2-1:냐옹!
+</>root2-null:그르릉!
+action end
+
+action:statement:root2-1
+Garv:뭔가 일이 복잡해졌구나, Sunshine.
+Garv:그 일등항해사가 말하는 건 별로 신경 안 쓰이지만... 아무래도 그 녀석 뭔가를 꾸미고 있는 것 같단 말야.
+Garv:그렇지만 우리가 나서서 보여줘야지, 안 그래?
+next:root2-2
+action end
+
+action:response:root2-2
+Cat
+root2-3:냐옹!
+</>root2-null:떠난다
+action end
+
+action:statement:root2-3
+Garv:좋았어.
+next:root2-null
+action end
+
+
+
+
+action:response:root3
+Cat
+root3-1:냐옹!
+</>root3-null:그르릉!
+action end
+
+action:statement:root3-1
+Garv:어젯밤에는 완벽했단다, Sunshine.
+Garv:내 말을 참 잘 따르는 구나. 그리고 내가 아는 어떤 놈들보다 훨씬 똑똑해.
+next:root3-2
+action end
+
+action:response:root3-2
+Cat
+root3-3:냐옹!
+</>root3-null:떠난다
+action end
+
+action:statement:root3-3
+Garv:이것과 페이지 사이에... 이정도면 충분하겠군.
+Garv:그럼 이제 퍼즐 조각이 맞춰지기를 기다려보자꾸나.
+next:root3-null
+action end
+
+dialogue end

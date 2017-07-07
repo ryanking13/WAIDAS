@@ -4,8 +4,8 @@ Cat-Darryl
 
 action:response:root
 Cat
-root-1:Meow!
-</>root-null:Hsss!
+root-1:냐옹!
+</>root-null:그르릉!
 action end
 
 action:statement:root-1
@@ -15,8 +15,8 @@ action end
 
 action:response:root-2
 Cat
-root-3:Meow!
-</>root-null:Hsss!
+root-3:냐옹!
+</>root-null:그르릉!
 action end
 
 action:statement:root-3
@@ -26,22 +26,22 @@ action end
 
 action:response:root-4
 Cat
-root-5:Meow!
-</>root-null:Hsss!
+root-5:냐옹!
+</>root-null:그르릉!
 action end
 
 action:statement:root-5
 Darryl:.......
-Darryl:Just sitting there blankly, mewing over and over.  There isn't anything going on in your head, is there?
-Darryl:Completely oblivious.  Nothing to celebrate or mourn.
-Darryl:I envy that.
+Darryl:그렇게 거기 앉아서 계속 야옹야옹거리는 건. 머리에 든 게 아무것도 없어서냐?
+Darryl:아무 고민 없이, 추억해야 할 것도 슬퍼해야 할 것도 없겠군.
+Darryl:부럽구만.
 next:root-6
 action end
 
 action:response:root-6
 Cat
-root-7:Meow!
-</>root-null:Hsss!
+root-7:냐옹!
+</>root-null:그르릉!
 action end
 
 action:statement:root-7

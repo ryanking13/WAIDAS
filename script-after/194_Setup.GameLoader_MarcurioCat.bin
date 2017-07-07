@@ -4,18 +4,18 @@ Marcurio-Cat
 
 action:response:root
 Marcurio
-root-A:Hey cat.
-root-B:Pet the cat
-</>root-null:Leave it alone
+root-A:어이 야옹아.
+root-B:쓰다듬는다
+</>root-null:놔둔다
 action end
 
 action:statement:root-A
-Sunshine:Meow!
+Sunshine:냐옹!
 next:root-null
 action end
 
 action:statement:root-B
-Sunshine:Purrrr....
+Sunshine:그르릉....
 next:root-null
 action end
 

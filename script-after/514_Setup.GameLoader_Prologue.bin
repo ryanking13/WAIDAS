@@ -4,7 +4,7 @@ Prologue
 action:statement:root
 ???:오, 진짜로 됐잖아.
 ???:그러니까 음... 돌아온걸 환영해.
-???:이리와서 나랑 얘기하자.  텔레파시는 너무 지치니까.
+???:이리와서 나랑 얘기하자.  텔레파시는 너무 지쳐.
 next:end
 
 action end
@@ -26,7 +26,7 @@ next:root-1-A
 action end
 
 action:statement:root-1-A
-Paulo:음... 혼란스러운 상황인 걸 이해해.
+Paulo:음... 혼란스러운 상황인 건 이해해.
 Paulo:뭔가 기억나는 건 있어?
 next:root-1-A-2
 action end

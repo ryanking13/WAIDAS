@@ -1,0 +1,129 @@
+
+dialogue start
+Cat-Gwen
+
+action:response:root
+Cat
+root-1:냐옹!
+</>root-null:그르릉!
+action end
+
+action:statement:root-1
+Gwen:오, 야옹아.
+next:root-2
+action end
+
+action:response:root-2
+Cat
+root-3:냐옹!
+</>root-null:그르릉!
+action end
+
+action:statement:root-3
+Gwen:너는 참 살갑구나.
+next:root-4
+action end
+
+action:response:root-4
+Cat
+root-5:냐옹!
+</>root-null:그르릉!
+action end
+
+action:statement:root-5
+Gwen:그래, 그래. 참 끈질기네!
+null:Gwen이 고양이를 쓰다듬었다.
+Gwen:자자. 보통 고양이들은 낯선 사람을 싫어하던데, 넌 전혀 안 그렇네?
+Gwen:좋은 일인 지는 잘 모르겠지만...
+Gwen:너는 그 노인이 기르는 고양이지? 그 사람은 괜찮아 보이는데, 그 사람 옆 방의 남자는 날 소름끼치게 만들어.
+Gwen:내 방이 저 아래 여자 옆 방이었으면 좋았을텐데. 그 사람은 되게 좋은 사람 같아.
+Gwen:Quella 였던가.  이름은 좀 이상하네.
+Gwen:....
+Gwen:내가 뭘 고양이랑 얘기하고 있는 거지, 미쳤나봐.
+next:root-6
+action end
+
+action:response:root-6
+Cat
+</>root-null:그르릉...
+action end
+
+
+action:response:root2
+Cat
+root2-1:냐옹!
+</>root2-null:그르릉!
+action end
+
+action:statement:root2-1
+Gwen:...야옹아 안녕.
+Gwen:너는 참 살갑구나.
+next:root2-2
+action end
+
+action:response:root2-2
+Cat
+root2-3:냐옹!
+</>root2-null:떠난다
+action end
+
+action:statement:root2-3
+Gwen:하! 내가 용기가 있었더라면.
+Gwen:그렇지만.... 용기가 없었어.
+next:root2-null
+action end
+
+
+
+action:response:root3
+Cat
+root3-1:냐옹!
+</>root3-null:그르릉!
+action end
+
+action:statement:root3-1
+Gwen:...야옹아 안녕.
+Gwen:이 밧줄을 물어 뜯어주지 않을래?
+next:root3-2
+action end
+
+action:response:root3-2
+Cat
+root3-3:야옹!
+</>root3-null:떠난다
+action end
+
+action:statement:root3-3
+Gwen:뭐 그래봤자 소용없겠지만.
+Gwen:사람들이 내가 범인이라고 생각하는 이상, 난 계속 이 상태겠지.
+next:root3-null
+action end
+
+
+action:response:root4
+Cat
+root4-1:냐옹!
+</>root4-null:떠난다!
+action end
+
+action:statement:root4-1
+Gwen:안녕 야옹아.
+Gwen:이 모든 일을 넌 믿을 수 있니?
+next:root4-2
+action end
+
+action:response:root4-2
+Cat
+root4-3:냐옹!
+</>root4-null:떠난다
+action end
+
+action:statement:root4-3
+Gwen:그래, 나도 못 믿겠어.
+Gwen:그래도 모든 걸 이해하려고 노력하는 중이야. 뭔가 한 조각을 붙잡은 것 같은 느낌이 드는데...
+next:root4-null
+action end
+
+
+dialogue end
+

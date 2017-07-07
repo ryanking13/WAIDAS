@@ -6,23 +6,23 @@ Donovan-Marcurio
 
 action:response:root
 Donovan
-root-1:Hey.
-</>root-null:Bye.
+root-1:어이.
+</>root-null:떠난다.
 action end
 
 action:statement:root-1
-Marcurio:...Hey.
-Marcurio:I don't see you around often.  Was there something you needed?
+Marcurio:왜.
+Marcurio:뭔가 필요한 거라도 있나?
 next:root-2
 action end
 
 action:response:root-2
 Donovan
-root-3:No.
+root-3:아니.
 action end
 
 action:statement:root-3
-Marcurio:Oh, okay.  Well, uh, bye.
+Marcurio:그래, 잘 가라고.
 next:root-null
 action end
 

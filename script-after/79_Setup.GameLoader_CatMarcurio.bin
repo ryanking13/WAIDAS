@@ -1,0 +1,21 @@
+
+
+
+dialogue start
+Cat-Marcurio
+
+action:response:root
+Cat
+root-1:냐옹!
+</>root-null:그르릉!
+action end
+
+action:statement:root-1
+Marcurio:오 젠장, 당장 꺼져!
+Marcurio:털, 침, 세균! 당장 부엌에서 나가지 못 해!
+Marcurio:우리 배에서 애완동물은 금지야. 밖으로 던져버려야 겠군.
+next:root-null
+action end
+
+dialogue end
+

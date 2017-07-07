@@ -1,0 +1,56 @@
+
+
+dialogue start
+Cat-Xu
+
+action:response:root
+Cat
+root-1:냐옹!
+</>root-null:그르릉!
+action end
+
+action:statement:root-1
+Xu:...아. 고양이잖아.
+next:root-2
+action end
+
+action:response:root-2
+Cat
+root-3:냐옹!
+</>root-null:그르릉!
+action end
+
+action:statement:root-3
+Xu:지금 난 생각할 게 너무 많아.
+Xu:다른 사람을 찾아보렴.
+next:root-null
+action end
+
+
+
+action:response:root2
+Cat
+root2-1:냐옹!
+</>root2-null:그르릉!
+action end
+
+action:statement:root2-1
+Xu:...어이 야옹아.
+Xu:...너는 내가 나쁘다고 생각하지 않지, 그렇지?
+next:root2-2
+action end
+
+action:response:root2-2
+Cat
+root2-3:냐옹!
+</>root-null:그르릉!
+action end
+
+action:statement:root2-3
+Xu:...Donovan한테 가서 모든 진실을 말해야 겠어. 아직 기회가 남아 있는 동안에.
+Xu:내가 그랬다면 뭔가 달라졌을지도 모르지.
+Xu:Alton이랑 Quella는 대체 뭐라고 생각말까...
+next:root-null
+action end
+
+dialogue end

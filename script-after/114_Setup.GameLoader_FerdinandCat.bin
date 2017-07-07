@@ -1,0 +1,41 @@
+
+
+
+dialogue start
+Ferdinand-Cat
+
+action:response:root
+Ferdinand
+root-A:오 야옹아!
+root-B:쓰다듬는다
+</>root-null:놔둔다
+action end
+
+action:statement:root-A
+Sunshine:그르릉!
+next:root-null
+action end
+
+action:statement:root-B
+Sunshine:그르릉!
+Ferdinand:나를 경계하는 데...
+next:root-B-2
+action end
+
+action:response:root-B-2
+Ferdinand
+root-B-3:그래도 쓰다듬는다
+</>root-null:관둔다
+action end
+
+action:statement:root-B-3
+Cat:Meowrr!
+Ferdinand:으악!  물었어!
+Ferdinand:당장 나가 멍청한 털덩어리!  물에 빠져버리라지!
+next:root-null
+action end
+
+dialogue end
+
+
+

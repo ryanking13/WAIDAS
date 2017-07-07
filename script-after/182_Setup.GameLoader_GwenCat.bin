@@ -4,52 +4,52 @@ Gwen-Cat
 
 action:response:root
 Gwen
-root-A:Hello kitty!
-root-B:Pet the cat
-</>root-null:Leave it alone
+root-A:야옹아 안녕!
+root-B:쓰다듬는다
+</>root-null:놔둔다
 action end
 
 action:statement:root-A
-Sunshine:Meow!
+Sunshine:냐옹!
 next:root-null
 action end
 
 action:statement:root-B
-Sunshine:Purrrr....
+Sunshine:그르릉....
 next:root-null
 action end
 
 
 action:response:root2
 Gwen
-root2-1:Hello, kitty...
-</>root-null:Leave it alone
+root2-1:야옹아 안녕...
+</>root-null:놔둔다
 action end
 
 action:statement:root2-1
-Sunshine:Meow!
+Sunshine:냐옹!
 next:root2-2
 action end
 
 action:response:root2-2
 Gwen
-root2-3:You know I'm innocent, right?
-</>root-null:Leave it alone
+root2-3:너는 내가 결백하다는 걸 알지, 그렇지?
+</>root-null:놔둔다
 action end
 
 action:response:root2-3
-Sunshine:Meow!
+Sunshine:냐옹!
 next:root2-4
 action end
 
 action:statement:root2-4
 Gwen
-root2-5:Well, thanks.  I think.
+root2-5:그래 고마워.
 action end
 
 action:statement:root2-5
 Sunshine:...
-Sunshine:Meow!
+Sunshine:냐옹!
 next:root2-null
 action end
 

@@ -1,0 +1,32 @@
+
+
+dialogue start
+Cat-Ferdinand
+
+action:statement:root
+Ferdinand:오 안녕 야옹아! 배 탐방 중이니?
+Ferdinand:우리 배에 애완동물은 반입이 금지되어 있는데, 주인이 멋대로 태웠나 보군요.
+Ferdinand:하지만 전 아주 모범적인 일등항해사니까, 이 일은 선장님한테 보고하고 그녀가 결정하게 하도록 하죠.
+next:root-1
+action end
+
+action:response:root-1
+Cat
+root-2:냐옹!
+root-3:그르릉!
+action end
+
+action:statement:root-2
+Ferdinand:야옹아, 전 아주 중요한 일등항해사 업무를 해야 하니 다른 곳에 가보세요.
+next:root-null
+action end
+
+action:statement:root-3
+Ferdinand:꺼져 털덩어리.
+next:root-null
+action end
+
+dialogue end
+
+
+

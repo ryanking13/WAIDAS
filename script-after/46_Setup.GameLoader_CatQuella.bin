@@ -1,0 +1,35 @@
+
+dialogue start
+Cat-Quella
+
+action:response:root
+Cat
+root-1:냐옹!
+</>root-null:그르릉!
+action end
+
+action:statement:root-1
+Quella:야옹아! 어머머 너무 귀엽다. 내가 먹이를 줘도 되겠니?
+next:root-2
+action end
+
+action:response:root-2
+Cat
+root-3:냐옹!
+</>root-null:그르릉!
+action end
+
+action:statement:root-3
+null:Quella는 먹이를 주었다.
+Quella:할 수만 있다면 고양이를 기를텐데. 한 다섯마리 정도.
+Quella:그럼 완전 심슨 가족에 나오는 고양이 할머니 같아져 버리겠지. 하핫.
+Quella:그냥 너랑 이러는 거에 만족해야 겠지?
+next:root-4
+action end
+
+action:response:root-4
+Cat
+</>root-null:그르릉...
+action end
+
+dialogue end

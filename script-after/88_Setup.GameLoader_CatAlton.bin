@@ -1,0 +1,91 @@
+
+dialogue start
+Cat-Alton
+
+action:response:root
+Cat
+root-1:냐옹!
+</>root-end:그르릉!
+action end
+
+action:statement:root-1
+Alton:귀여운 야옹아 안녕!
+Alton:전망실에 앉아 있는 건 너무 지루해. 너라도 나랑 같이 있어 주라!
+next:root-2
+action end
+
+action:response:root-2
+Cat
+root-3:냐옹!
+</>root-2-no:떠난다
+action end
+
+action:statement:root-2-no
+Alton:싫은가 보네.
+next:root-null
+action end
+
+action:statement:root-3
+Alton:기쁜 걸!  다른 사람들은 다 바빠서 전혀 들러주질 않거든.
+Alton:내가 그 사람들의 긴장을 풀어줘야 하는 역할인데도 말야.
+Alton:특히 Xu가 들러준다면 참 좋을텐데...
+Alton:....
+Alton:고양이랑 얘기하려고 하다니, 내가 미쳤지.
+next:root-null
+action end
+
+
+
+action:response:root2
+Cat
+root2-1:냐옹!
+</>root2-end:그르릉!
+action end
+
+action:statement:root2-1
+Alton:...안녕.
+Alton:미안, 지금은 너랑 놀아줄 기분이 아냐.
+next:root2-2
+action end
+
+action:response:root2-2
+Cat
+root2-3:야옹!
+</>root2-null:떠난다
+action end
+
+action:statement:root2-3
+Alton:하...
+Alton:집으로 돌아가고 싶다.
+Alton:그냥... 이해가 안 돼.
+next:root2-null
+action end
+
+dialogue end
+
+
+
+action:response:root3
+Cat
+root3-1:냐옹!
+</>root-end:그르릉!
+action end
+
+action:statement:root3-1
+Alton:아, 야옹아.
+Alton:다 괜찮아질 거야...그렇지?
+next:root3-2
+action end
+
+action:response:root3-2
+Cat
+root3-3:냐옹!
+</>root3-null:떠난다
+action end
+
+action:statement:root3-3
+Alton:다 예전으로 돌아갔으면 좋겠다.
+Alton:대체 무슨 일이 일어나는 거야.  Xu...선장...
+Alton:뭘 해야 할지, 뭘 할 수 있는 지 전혀 모르겠어.
+next:root3-null
+action end
