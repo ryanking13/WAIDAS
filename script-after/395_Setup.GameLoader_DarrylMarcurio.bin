@@ -1,0 +1,36 @@
+
+
+// DARRYL - MARCURIO ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Darryl-Marcurio
+
+action:response:root
+Darryl
+root-1:널 아침에 눈 뜨게 하는 건 뭐지?
+</>root-null:떠난다.
+action end
+
+action:statement:root-1
+Marcurio:내 알람시계?
+next:root-1-A
+action end
+
+action:response:root-1-A
+Darryl
+root-1-B:내 말은... 너한테 동기부여를 해 주는 게 뭐지?
+action end
+
+action:statement:root-1-B
+Marcurio:음... 모든 것에 대해서?
+Marcurio:성공이지.
+Marcurio:이 배는 평범함이라는 악취로 가득해. 매일 아침 일어날 때마다 죽을 만큼 뛰쳐 나가고 싶어지지.
+Marcurio:나는 존나 대단한 요리사가 될 거야. 그리고 4성 레스토랑을 경영 하는 거지.
+Marcurio:여기 있는 다른 사람들과는 달리, 나는 모든 것에 필사적으로 살아가지.
+Marcurio:뭘 하든지 간에, 내가 하는 것에 보통이란 없어.
+next:root-null
+action end
+	
+dialogue end
+
+

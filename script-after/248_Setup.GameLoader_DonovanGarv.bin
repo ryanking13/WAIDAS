@@ -1,0 +1,40 @@
+
+
+
+// DONOVAN - GARV ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Donovan-Garv
+
+action:response:root
+Donovan
+root-1:어이.
+</>root-null:떠난다.
+action end
+
+action:statement:root-1
+Garv:오 반갑네. 어 자네 이름이...Donovan?
+Garv:혹시 자네 내 앵무새에게 먹이를 줘보지 않겠나? 즐겁다네.
+next:root-2
+action end
+
+action:response:root-2
+Donovan
+root-3:아니, 별로 그러고 싶지 않군.
+action end
+
+action:statement:root-3
+Garv:뭐 그러게나. 별로 동물을 좋아하지 않는가 보군.
+Garv:그거 아는가? 동물을 대하는 모습을 보면 그 사람에 대해서 많은 걸 알 수 있다네.
+next:root-4
+action end
+
+action:response:root-4
+Donovan
+</>root-null:대단하군.  그럼 이만.
+action end
+
+dialogue end
+
+
+

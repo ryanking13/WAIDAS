@@ -1,0 +1,28 @@
+
+
+dialogue start
+Ferdinand-EvilDonovan
+
+action:response:root
+Ferdinand
+root-A:Donovan, 제발, 미쳤습니까!  일등항해사로서 말하건대, 이건 심각하게 선박 규정을 위반하는 행동입니다! regulations!
+root-B:당신을 쏜 사람이 누군지는 못 봤습니까? 가까이에서 총을 맞았는데 누군지 모른다는 건 이상한데요.
+</>root-C:관둔다.
+action end
+
+action:statement:root-A
+Donovan:주둥아리 좀 닥치지.  계속 말하면 당신을 제일 먼저 쏴버리겠어.
+next:root
+action end
+
+action:statement:root-B
+Donovan:맞았을 때 등을 돌리고 있었다.
+Donovan:돌아보려 했지만 검은 망토밖에 보지 못했어.
+Donovan:몇 마디를 들었는데, 전혀 이해할 수 없는 목소리였다. 내가 숨겨놓은 녹음기를 알아채고 있었던 모양이더군.
+Donovan:여기서 총이나 망토를 찾을 수 있을 줄 았았는데. 아니였어.
+Donovan:이미 그것들은 바다 저편에 가라앉아 있을지도 모르겠군.
+next:root
+action end
+
+
+dialogue end

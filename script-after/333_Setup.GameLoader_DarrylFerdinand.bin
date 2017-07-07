@@ -1,0 +1,45 @@
+
+
+
+
+// DARRYL - FERDINAND ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Darryl-Ferdinand
+
+action:response:root
+Darryl
+root-1:당신은 왜 항해사가 된 거지?
+</>root-null:떠난다.
+action end
+
+action:statement:root-1
+Ferdinand:오호 그건 참 대답하기 어려운 질문이군요!  전 어렸을 때부터 바다를 사랑했답니다.
+Ferdinand:제 아버지가 언제나 절 데리고 바다로 낚시를 하러 갔죠.
+Ferdinand:그러다 어느 순간 제가 바다와 사랑에 빠졌다는 걸 알 게 되었습니다.
+next:root-2
+action end
+
+action:response:root-2
+Darryl
+root-3:꼭 준비된 대사 같군.  아무도 그렇게 간단하지 않아.
+</>root-null:그래.  잘 있으라고.
+action end
+
+action:statement:root-3
+Ferdinand:저런 제 어린 시절의 꿈을 믿지 못하나 보군요.
+Ferdinand:장담하건대, 사실입니다!  제 돌아가신 아버지의 명예를 걸죠!
+next:root-4
+action end
+
+action:response:root-4
+Darryl
+</>root-null:뭐 그러시던지.
+action end
+
+dialogue end
+
+
+
+
+

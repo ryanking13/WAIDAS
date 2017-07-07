@@ -1,0 +1,31 @@
+
+
+dialogue start
+Alton-EvilDonovan
+
+action:response:root
+Alton
+root-A:잠깐만... 다른 방법이 있을 거야!
+root-B:허세부리는 거지, 그렇지?  이런 걸로는 아무 것도 해결되지 않아.
+root-C:나...나는 그저 여행가고 싶어서 이 일을 한 거라고.  나는 사건이랑 아무 관련 없어...
+</>root-D:관둔다.
+action end
+
+action:statement:root-A
+Donovan:만약 그렇다면, 내가 여기에 이러고 있지 않겠지.
+Donovan:수 없이 고민해봤다.  이게 내가 할 수 있는 최선의 방법이야.
+next:root
+action end
+
+action:statement:root-B
+Donovan:잘 봐 지금 우리가 어디에 있는 지.  무슨 일이 일어났는 지.  이래도 연기 같나?
+Donovan:나는 지금 심각해.  그러니까 빨리 누가 살인범인지 머리를 굴리는 게 나을 거야.
+next:root
+action end
+
+action:statement:root-C
+Donovan:닥쳐.
+next:root
+action end
+
+dialogue end

@@ -7,34 +7,34 @@ Donovan-Darryl
 
 action:response:root
 Donovan
-root-1:Hey.
-</>root-null:Bye.
+root-1:어이.
+</>root-null:떠난다.
 action end
 
 action:statement:root-1
-Darryl:Heh.  Hey.
-Darryl:As sullen as ever, huh?
+Darryl:어 그래.
+Darryl:언제나처럼 우울한가?
 next:root-2
 action end
 
 action:response:root-2
 Donovan
-root-3:I don't know what you mean.
+root-3:무슨 뜻인지 모르겠군.
 </>root-null:Bye.
 action end
 
 action:statement:root-3
-Darryl:You sure?  Your face looks like the grim reaper himself.
+Darryl:그래?  네 얼굴이 꼭 죽음의 신 같다는 뜻이지.
 next:root-4
 action end
 
 action:response:root-4
 Donovan
-root-5:I'd rather that than be smirking like an idiot all the time.  Is everything a joke to you?
+root-5:언제나 히죽히죽 웃고 다니는 머저리보다는 낫지. 너한테는 모든 게 다 우습나?
 action end
 
 action:statement:root-5
-Darryl:Well...of course.  You, me, life.  What is it, if not a big cosmic joke?
+Darryl:뭐 그렇지. 너, 나, 인생. 다 뭐냐.. 완전 거대한 장난 같지 않아?
 next:root-null
 action end
 
