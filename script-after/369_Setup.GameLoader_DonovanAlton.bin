@@ -1,0 +1,48 @@
+
+
+// DONOVAN - ALTON ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Donovan-Alton
+
+action:response:root
+Donovan
+root-1:어이.
+</>root-null:떠난다.
+action end
+
+action:statement:root-1
+Alton:아, 안녕하세요!  혹시 전망실에 놀러오실 생각 없나요?
+next:root-2
+action end
+
+action:response:root-2
+Donovan
+root-A:난 바빠.
+root-B:차라리 내 눈알을 파 버리겠어.
+action end
+
+action:statement:root-A
+Alton:아, 아쉽네요.  다음에라도!
+next:root-null
+action end
+
+action:statement:root-B
+Alton:...하, 하하!  장난이죠?  웃기려고 그런 거구나!
+next:root-3
+action end
+
+action:response:root-3
+Donovan
+root-4:제발 좀 닥쳐.
+</>root-null:마음대로 생각하라고.
+action end
+
+action:statement:root-4
+Alton:음...  어...  방해해서 미안해요.
+null:그의 얼굴이 붉어졌다.
+next:root-null
+action end
+
+dialogue end
+

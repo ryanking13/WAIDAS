@@ -1,0 +1,77 @@
+
+
+// DONOVAN - QUELLA ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Donovan-Quella
+
+action:response:root
+Donovan
+root-1:어이.
+</>root-null:떠난다.
+action end
+
+action:statement:root-1
+Quella:아, 안녕하세요. 모임 때는 못 본 것 같은데요!
+Quella:기분은 어때요?
+next:root-2
+action end
+
+action:response:root-2
+Donovan
+root-A:좋아.
+root-B:별로 모임을 좋아하지 않아서.
+</>root-null:Bye.
+action end
+
+action:statement:root-A
+Quella:좋네요!  항해는 기분 좋나요?
+Quella:저는 계속 방 안에서 글만 쓰고 있거든요! 하하!
+Quella:뭐 실제로 밖에서 맑은 바다 공기를 마시진 못하더라도, 바다 위에 있다는 건 느껴지니까요.
+Quella:당신도 그렇게 느끼나요?
+next:root-A-1
+action end
+
+action:response:root-A-1
+Donovan
+root-A-2:솔직히 말해서, 당신이 느끼는 걸 전혀 이해 못 하겠군.
+root-A-3:그런 식으로는 생각 못 해봤군.
+action end
+
+action:statement:root-A-2
+Quella:흠.  뭐 그래요!  우리가 생각하는 방식이 다른가 보죠.  그럴 수도 있는 거죠.
+next:root-null
+action end
+
+action:statement:root-A-3
+Quella:그렇다니까요!  예를 들면, 집 근처의 바에 가는 것과, 지구 반대편의 바에 가는 것의 차이죠.
+Quella:당신은 그게 똑같다고 생각할 지 모르지만, 실제로는 완전히 다른 느낌인 거죠.
+Quella:집에서 멀리 벗어난다는 것은 뭔가 끓어오르게 만드는 거에요.
+next:root-A-4
+action end
+
+action:response:root-A-4
+Donovan
+</>root-null:뭐 그런 걸로 치지.
+action end
+
+action:statement:root-B
+Quella:정말요?  제법 중요한 모임이었는데.
+Quella:선장님에 대한 거였어요.  그녀가 실종되었다는 것 같아서.
+Quella:어떤 사람들은 최악의 상황을 걱정하고 있어요...당신은 어때요?
+next:root-C
+action end
+
+action:response:root-C
+Donovan
+root-D:내 관심 거리가 아냐.
+action end
+
+action:statement:root-D
+Quella:오...그래요.
+next:root-null
+action end
+
+dialogue end
+
+

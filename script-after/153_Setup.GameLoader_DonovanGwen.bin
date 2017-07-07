@@ -1,0 +1,53 @@
+
+
+// DONOVAN - GWEN ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Donovan-Gwen
+
+action:response:root
+Donovan
+root-1:어이.
+root-2:내 방에서 뭘 했지?
+root-null:떠난다.
+action end
+
+action:statement:root-1
+Gwen:...
+next:root-null
+action end
+
+action:statement:root-2
+Gwen:네...뭐라구요?
+Gwen:무슨 말을 하시는 건지 모르겠는데요...
+next:root-3
+action end
+
+action:response:root-3
+Donovan
+root-4:내가 없을 때 니가 내 방에 몰래 들어왔다는 걸 알 고 있어.:trigger.chap3donGwenProgress.on
+root-trigger.chap3donGwenProgress:내 방 카메라에 그 모습이 똑똑히 담겨있지. 알아 들어?
+root-5:뭘 찾으려고 했던 거지?
+</>root-null:하, 그렇게 계속 멍청한 척 하라고.
+action end
+
+action:statement:root-4
+Gwen:...무슨 뜻인지 모르겠네요.
+Gwen:무슨 증거로 그렇게 말하는 건가요?
+next:root-3
+action end
+
+action:statement:root-trigger.chap3donGwenProgress
+Gwen:그냥 뭘 좀 찾고 있었어요...당신을 다른 사람이랑 착각했어요.
+Gwen:난, 음, 미안해요...
+next:root-3
+action end
+
+action:statement:root-5
+Gwen:...
+next:root-3
+action end
+
+
+dialogue end
+

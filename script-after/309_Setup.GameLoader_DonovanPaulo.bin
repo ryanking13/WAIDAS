@@ -1,0 +1,64 @@
+
+
+// DONOVAN - PAULO ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Donovan-Paulo
+
+action:response:root
+Donovan
+root1:어이.
+</>root-null:떠난다.
+action end
+
+action:statement:root1
+Paulo:당신 뭐야? 어떻게 들어온 거야?
+next:root2
+action end
+
+action:response:root2
+Donovan
+root-A:회사가 사용하지 않는 걸 가지고 있어서 말야.
+root-B:너 같은 꼬마가 이런 배에서 혼자 뭘 하는 걸까?
+</>root-null:관둔다.
+action end
+
+action:statement:root-A
+Paulo:미쳤군요.
+next:root2
+action end
+
+action:statement:root-B
+Paulo:배 타고 있죠.
+next:root-C
+action end
+
+action:response:root-C
+Donovan
+root-C-1:부모님은?
+root-C-2:이런 배에 꼬마 혼자 있는 건 위험해, 넌 여기 있어서는 안 돼.
+</>root-null:관둔다.
+action end
+
+action:statement:root-C-1
+Paulo:*부르르 떨림*
+next:root-C
+action end
+
+action:statement:root-C-2
+Paulo:그게 제가 문을 잠그고 있는 이유죠. 잠그고 있던 이유라고 하는게 맞겠지만요.
+next:root-D
+action end
+
+action:response:root-D
+Donovan
+root-E:잠금장치는 그냥 지연 수단일 뿐이지. 제대로 뭔갈 막아주지 못해.
+action end
+
+action:statement:root-E
+Paulo:그런 것 같네요.
+next:root-C
+action end
+
+dialogue end
+

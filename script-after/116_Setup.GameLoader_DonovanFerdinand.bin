@@ -1,0 +1,64 @@
+
+
+// DONOVAN - FERDINAND ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Donovan-Ferdinand
+
+action:response:root
+Donovan
+root-1:어이.
+</>root-null:떠난다.
+action end
+
+action:statement:root-1
+Ferdinand:오 반가워요, 소중한 승객님!
+Ferdinand:제가 편안한 여행을 위해 뭔가 도와드릴 일이 있나요?
+Ferdinand:어떤 문제라도 편하게 말씀해주세요.
+next:root-2
+action end
+
+action:response:root-2
+Donovan
+root-3:왜 그런 말투를 쓰지?
+root-4:내 방 베개가 너무 딱딱한 것 같더군.
+</>root-null:물어볼 것이 없다.
+action end
+
+action:statement:root-3
+Ferdiand:제 말투에 무슨 문제라도 있나요?
+next:root-A
+action end
+
+action:response:root-A
+Donovan
+root-B:약이라도 빤 것 같군.
+root-C:저능아 같군.
+</>root-null:...신경 끄자.
+action end
+
+action:statement:root-B
+Ferdinand:아, 무슨 뜻인지 알겠습니다. 바다와 함께하는 사람은 언제나 에너지가 넘치기 마련이죠.
+Ferdinand:하지만 저는 절대로 불법적인 것을 섭취하지는 않습니다!
+next:root-B-2
+action end
+
+action:response:root-B-2
+Donovan
+root-null:납득이 가지 않는 설명이었다.
+action end
+
+action:statement:root-C
+Ferdinand:...
+null:그는 못들은 척 했다.
+next:root-null
+action end
+
+action:statement:root-4
+Ferdinand:베개!  푹신푹신!  이해했다!
+Ferdinand:당장 Xu에게 말해서 더 푹신푹신하고 편안한 베개를 제공해 드리겠습니다!
+next:root-null
+action end
+
+dialogue end
+
