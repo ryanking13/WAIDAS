@@ -1,0 +1,54 @@
+
+
+
+// DARRYL - ALTON ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Darryl-Alton
+
+action:response:root
+Darryl
+root-1:넌 왜 이 배에 탔지?
+</>root-null:떠난다.
+action end
+
+action:statement:root-1
+Alton:어, 전 언제나 여행을 하고 싶었거든요. 근데 나중에 일에 치여 살 때는 이런 기회가 없을 것 같아서...
+Alton:그래서 지금 여기까지 왔죠.
+next:root-2
+action end
+
+action:response:root-2
+Darryl
+root-2-A:무슨 일에 치여살 예정인데?
+root-2-B:여행은 너에게 무슨 가치가 있지?
+action end
+
+action:statement:root-2-A
+Alton:저는 컴퓨터공학을 전공하고 있는 데요. 그래서 아마 그 쪽 일을 하지 않을까 싶어요.
+Alton:그렇게 막 되고 싶어서 하는 건 아닌데, 사람들이 이 쪽이 유망하다고 해서요.
+next:root-3
+action end
+
+action:statement:root-2-B
+Alton:음, 뭐 새로운 장소에 가는 것도 좋지만, 무엇보다 사람을 만나는 거겠죠?
+Alton:저는 사람들이랑 잘 지내고 싶거든요. 제가 음, 그렇게 썩 붙임성이 좋은 편이 아니라서.
+next:root-null
+action end
+
+action:response:root-3
+Darryl
+root-4:그럼 진짜고 하고 싶은 건 뭔데?
+action end
+
+action:statement:root-4
+Alton:어...음악이 정말 좋구요.  그리고 게임도 좋아해요.
+Alton:그래서 게임용 음악을 만들거나, 게임을 만들거나 해볼 수도 있겠죠.  근데 그건 미친 짓 같아요.
+Alton:그러니까, 그건 진짜 돈 벌기 어렵잖아요.  저한테는 가능성이 없을 것 같아요.
+Alton:저한테 별로 재능도 없는 것 같구요.
+next:root-null
+action end
+
+dialogue end
+
+

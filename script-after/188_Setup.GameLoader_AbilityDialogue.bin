@@ -1,0 +1,301 @@
+
+dialogue start
+AltonAbility
+
+action:response:root
+Alton
+root-2:Change the music.
+</>root-null:관둔다.:trigger.altonStopHeadphones.on
+action end
+
+action:response:root-2
+Alton
+root-2-A:Something modern:trigger.altonAbilityTrack1.on
+root-2-B:Something upbeat:trigger.altonAbilityTrack2.on
+root-2-trigger.musicDarrylUnlocked:Something weird:trigger.altonAbilityTrack3.on
+root-2-trigger.musicQuellaUnlocked:Something slow:trigger.altonAbilityTrack4.on
+root-2-trigger.musicMarcurioUnlocked:Something ominous:trigger.altonAbilityTrack5.on
+root-2-trigger.musicDonovanUnlocked:Something fast:trigger.altonAbilityTrack6.on
+root-2-trigger.musicPauloUnlocked:Something mysterious:trigger.altonAbilityTrack7.on
+</>root-null:관둔다.:trigger.altonStopHeadphones.on
+action end
+
+dialogue end
+
+
+/////////////////   Garv's Ability  /////////////////////////////////////////////////////////////////////
+
+dialogue start
+GarvAbility
+
+action:statement:root
+Garv:Sunshine!  이리 오렴!
+next:root-null
+action end
+
+dialogue end
+
+
+///////////////// Xu's Ability /////////////////////////////////////////////////////////////////////////////////////////
+
+
+dialogue start
+XuStealFail
+action:statement:root
+Xu:난 누구 근처로 다가가면, 그 사람이 뭘 주머니에 넣고 다니는 지 알 수 있어.
+next:root-null
+action end
+dialogue end
+
+
+dialogue start
+XuStealAlton
+action:statement:root
+Xu:언제나처럼, MP3랑 헤드폰을 들고다니는 군.
+Xu:...그리고 신형 스마트폰.  아마 이 녀석 수백 달러는 마음대로 쓸 수 있을 걸.
+next:root-null
+action end
+dialogue end
+
+dialogue start
+XuStealMarcurio
+action:statement:root
+Xu:메모장이랑 열쇠더미가 있네.
+next:root-null
+action end
+
+action:statement:root2
+Xu:메모장이랑 열쇠더미랑.
+Xu:그리고 페인트붓도 있네.
+Xu:저런 걸 들고 다니는 성격 같지는 않은데 - 결벽증이라도 있는 건가.
+next:root-null
+action end
+dialogue end
+
+dialogue start
+XuStealFerdinand
+action:statement:root
+Xu:스태프용 열쇠를 들고다니네.
+Xu:빗이 3개. 그리고... 화장품?
+next:root-null
+action end
+
+action:statement:root2
+Xu:스태프용 열쇠를 들고다니네. 그야 그렇겠지.
+Xu:그리고 집게랑, 갈퀴랑, 작은 바이스? 뭔가 공예라도 하는 건가?
+next:root-null
+action end
+dialogue end
+
+dialogue start
+XuStealDarryl
+
+action:statement:root
+Xu:한쪽 주머니에는 지갑이랑, 스마트폰...평범하네.
+Xu:반대쪽에는 빈 약병이 가득하네. 이건 좀 수상하군.
+next:root-null
+action end
+dialogue end
+
+dialogue start
+XuStealQuella
+action:statement:root
+Xu:1달러짜리 지폐가 가득하고, 메모장이 있네.
+Xu:가난한 예술가라.
+next:root-null
+action end
+dialogue end
+
+dialogue start
+XuStealDonovan
+action:statement:root
+Donovan:뭔가 문제라도?
+Xu:아? 아무 것도 아니에요.
+Xu:(이 녀석한테는 안 통하겠군.)
+next:root-null
+action end
+dialogue end
+
+dialogue start
+XuStealGarv
+action:statement:root
+Xu:이 사람이 가지고 있는 건...고양이 장난감?
+Xu:그리고 처음 보는 커다란 열쇠랑, 주사기.
+Xu:뭔가 좀...이상하군.
+next:root-null
+action end
+
+action:statement:root2
+Xu:동물용 장난감을 들고 다니네. 충실한 집사군.
+Xu:그리고 주사기. 마개를 제대로 끼웠어야 할텐데 말이야...
+next:root-null
+action end
+
+action:statement:root3
+Xu:동물용 장난감을 들고 다니네.
+Xu:그리고 작은 수건이랑, 소형 무전기가 있네.
+next:root-null
+action end
+dialogue end
+
+dialogue start
+XuStealGwen
+action:statement:root
+Xu:젠장, 칼을 넣고 다니잖아.
+Xu:가까이 가지 말아야겠어...
+next:root-null
+action end
+
+action:statement:root2
+Xu:아무것도 안 들고 다녀.
+Xu:문제가 될 것 같은 물건을 압수당했나본데.
+next:root-null
+action end
+dialogue end
+
+
+////////////////   Quella's Ability   ///////////////////////////////////////////////////////////////////////
+
+dialogue start
+QuellaEmpathyFail
+action:statement:root
+Quella:난 누군가와 말할 때, 그 사람의 목소리 톤을 읽을 수 있어.
+next:root-null
+action end
+dialogue end
+
+
+/////////////////   Ferdinand's Ability  /////////////////////////////////////////////////////////////////////
+
+dialogue start
+FerdinandIntercomAbility
+
+action:statement:root-1
+Ferdinand:안녕하세요 여러분!  사실 아무 이유도 없이 말해봤어요.
+Ferdinand:남은 여행을 즐겨주세요.
+Ferdinand:...아 참, 혹이 이 중에 노를 저을 줄 아는 사람 있나요?
+Ferdinand:하 하 하. 농담입니다!
+next:root-null
+action end
+
+action:statement:root-2
+Ferdinand:제 지난 항해에 대해서 말해드린 적이 있던가요?
+Ferdinand:만 명이 넘는 건장한 사내가 물 속에 들어가서...삼십 명만 나왔죠. 나머지는 상어가 먹어치웠구요.
+Ferdinand:소년이여, 힘들었던 날들을 기억하라!
+next:root-null
+action end
+
+action:statement:root-3
+Ferdinand:테스트, 테스트, 하나 둘 셋.
+Ferdinand:어라 켜져 있나? 음...크흠...
+Ferdinand:두 두 두... 제대로 놀아보자!
+Ferdinand:오, 진짜로 켜져 있었잖아. 웁스!
+next:root-null
+action end
+
+action:statement:root-4
+Ferdinand:여러분의 친구 일등항해사입니다!
+Ferdinand:옆 승객의 방에 침입해서 항아리를 깨트리는 것을 삼가주세요!
+Ferdinand:현실은 게임이 아닙니다!
+next:root-null
+action end
+
+action:statement:root-5
+Ferdinand:여러분의 친구 일등항해사입니다!
+Ferdinand:혹시 악몽을 꾸셨다면, 침착하세요.
+Ferdinand:제공하는 이불을 붙잡고 천천히 빠져나오시면 됩니다.
+next:root-null
+action end
+
+action:statement:root-6
+Ferdinand:여러분의 친구 일등항해사입니다!
+Ferdinand:언제나 꿈을 잃지 말고 정진하세요!
+Ferdinand:여러분의 꿈이 바보 같은 것이라면, 그러면 멈추고 얼른 직업을 찾아요 이 게으름뱅이!
+next:root-null
+action end
+
+action:statement:root-7
+Ferdinand:계속 같은 단어를 듣다보면 아무 의미 없이 소리만 남는다는 거 알고 있어요?
+Ferdinand:어디 한번 시험해 보죠!
+Ferdinand:고기!
+Ferdinand:고기! 
+Ferdinand:고기 고기 고기 고기 고기 고기!
+Ferdinand:고기 고기 고기 고기 고기 고기 고기 고기 고기 고기 고기 고기 고기 고기 고기 고기 고기 고기 고기 고기 고기 고기 고기!
+next:root-null
+action end
+
+action:statement:root-8
+Ferdinand:이거랑 컴퓨터를 연결해서 노래를 틀면 재밌겠죠?
+Ferdinand:자동으로 작동하게 만들어서 24시간 내내 트는 거죠!
+Ferdinand:그럼 뭘 틀어야 하지 - EDM, 싸이?
+next:root-null
+action end
+
+action:statement:root-9
+Ferdinand:오 기억 났어요! 빌린 비디오를 반납하는 걸 깜빡했어요!
+Ferdinand:이제 곧 연체료가 나올 텐데...
+Ferdinand:지금 당장 배를 돌려서 돌아가야겠어요!
+next:root-null
+action end
+
+action:statement:root-10
+Ferdinand:"언제나 시간은 무심하게 흘러가지..."
+Ferdinand:"우리 앞에 놓인 것은 아무도 알 수 없지."
+Ferdinand:"오늘에 만족한다면 그것으로 족한 것."
+Ferdinand:이것 참, 포츈 쿠키에 적인 말들이 다 이상하네요.
+next:root-null
+action end
+
+action:statement:root-11
+Ferdinand:여러분의 친구 일등항해사입니다!
+Ferdinand:언제나 미래를 바라보고 선택과 집중을 하세요!
+Ferdinand:과거에 머문다면 제대로 성장할 수 없습니다.
+Ferdinand:차분하고, 깔끔하게.
+Ferdinand:마약은 좋지요!
+next:root-null
+action end
+
+action:statement:root-12
+Ferdinand:그냥 갑자기 생각나서 그런데...
+Ferdinand:다들 조금씩 남을 돕는다면...세상은 더 좋은 곳이 되지 않을까요?
+Ferdinand:...
+Ferdinand:아! 죄송해요, 여러분. 해본 얘기였어요.
+Ferdinand:방금 들은 얘기는 그냥 잊어버려 주세요.
+next:root-null
+action end
+
+action:statement:root-13
+Ferdinand:여러분의 친구 일등항해사입니다!
+Ferdinand:누구나 흔들릴 때가 있는 법이고, 두려움과 맞서야 할 때가 있는 법이죠.
+Ferdinand:멍청한 문제에 쏟을 시간이 없다는 얘깁니다!
+next:root-null
+action end
+
+action:statement:root-14
+Ferdinand:
+next:root-null
+action end
+
+
+dialogue end
+
+
+
+
+
+
+
+///////////////// Gwen's Ability /////////////////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+GwenPeekFail
+action:statement:root
+Gwen:난 문 앞으로 가면, 열쇠구멍을 통해 안에 뭐가 있는 지 볼 수 있어.
+next:root-null
+action end
+dialogue end
+
+
+
+
+

@@ -1,0 +1,410 @@
+
+MINDREADING INIT
+
+ThoughtsInit:Smilla
+왜
+너무 지쳤어
+쉬고싶다
+이건 아냐
+끝인가
+제발
+도와줘
+아파
+모르겠어
+end thoughts
+
+ThoughtsInit:PauloIntro
+어이
+    보아하니 이미<n>목숨이 달아난 모양이군.
+     그렇지만 아직<n>죽기에는 일러.
+너의 이야기는<n>아직 끝나지 않았어.
+내 목소리를 따라와...
+end thoughts
+
+
+ThoughtsInit:Interlude
+   다른 승객들에 대해서<n>많은 것을 얻어내.
+한 사람 한 사람을 조종할 때마다<n>   점점 진실에 다가갈 수 있을 거야.
+베일을 한 겹씩 벗겨가다보면<n>최종적으로 네 살인에 대한 근원까지 도달할 수 있겠지.
+그렇지만 그것 말고 다른 게 있어...
+  이 수수께끼는 아마도<n>내가 생각하는 것만큼 단순하지 않을 거야.
+아주 복잡한 것이고.<n>  나쁜 것이지.
+  모든 게 다 끔찍하게 끝날 것만 같은<n>그런 느낌이 들어.
+나는...무서워.
+제발...도와줘...
+end thoughts
+
+
+
+ThoughtsInit:Paulo
+Another lost one
+I wonder who it is
+Can it help me?
+So much pain
+This one is different
+I need your help
+I am calling out to you
+Please come back
+It does not have to end this way
+We can still change things
+I can feel others below
+There is something wrong here
+Something dark is coming
+I can't stop it myself
+Come back
+end thoughts
+
+
+
+
+
+ThoughtsInit:Paulo2
+I have a very bad feeling about this
+What does it mean
+There's something different about this time
+Mom
+Dad
+I'm scared
+I wish I was normal
+So much blood
+I should be safe here
+Maybe this spirit can help us
+end thoughts
+
+ThoughtsInit:Paulo3
+It's getting closer
+I don't understand what's happening
+She'll protect me
+We can figure this out
+Mom
+Dad
+I'm scared
+Bodies everywhere
+Why do I see so many bodies
+Below us
+Things are going to be okay
+end thoughts
+
+ThoughtsInit:Cat2
+냐옹
+냐옹
+냐옹
+냐옹
+냐옹
+냐옹
+냐옹
+end thoughts
+
+
+
+ThoughtsInit:Alton2
+그녀를 믿을 수 없어
+그녀는 도둑이야
+지금까지 계속 훔쳤던 거야
+그녀가 정말로 좋다
+그녀가 너무 밉다
+너무 슬프다
+이 일을 한 건 실수야
+그냥 남들을 성가시게 하고 있을 뿐이야
+이번에는 다를 줄 알았는데
+end thoughts
+
+ThoughtsInit:Alton3
+믿을 수 없어
+선장님은 어딘가에 있을 거야
+대체 무슨 일이
+Donovan이 Xu한테서 훔친 게 뭐지?
+그녀는 도둑이야
+대체 왜 그녀를 좋아하는 걸까
+이 일을 한 건 실수야
+이번에는 다를 줄 알았는데
+end thoughts
+
+ThoughtsInit:Alton4
+대체 무슨 일이
+대체 무슨 일이
+대체 무슨 일이
+왜 Gwen이 선장님의 열쇠를?
+Xu가 선장님의 열쇠를 훔쳤다고? 왜?
+다 죽었을 리가 없어
+왜 이런 일이
+진정해
+진정해
+여기 와서는 안 됐어
+다 끔찍하게 끝날 거야
+end thoughts
+
+
+
+
+
+ThoughtsInit:Xu2
+그가 열쇠가 있단 걸 어떻게 알았지?
+사람들이 찾아낼까? 집에 돌아가야 하는 거야?
+왜 나한테 훔치라고 한 걸까
+다른 방안이 없었어
+돈이 필요해
+선장님은 어디에?
+느낌이 안 좋아
+그는 나에 대해 아무 것도 몰라
+그 사람들은 우리가 뭘 해야 하는 지 아무 것도 몰라
+end thoughts
+
+ThoughtsInit:Xu3
+점점 통제를 벗어나고 있어
+대체 마스터 키는 이 일과 무슨 상관인 거지
+뭔가 일어났어
+난 뭘 해야 하지?
+그들이 찾아내면, 난 집으로 돌아 가야만 해
+Donovan은 뭘 하려는 거지
+위험해
+Donovan에게 가서 말해야 할까?
+end thoughts
+
+ThoughtsInit:Xu32
+점점 통제를 벗어나고 있어
+뭔가 일어났어
+난 뭘 해야 하지?
+위험해
+그에게 말했어야 할까?
+그의 말대로일까? 연쇄살인마가...여기에?
+앞뒤가 안 맞아
+뭔가 다른 일이 벌어지고 있어
+end thoughts
+
+ThoughtsInit:Xu4
+점점 통제를 벗어나고 있어
+다들 사라져
+Donovan은 틀렸어
+그에게 말했어야 했어
+열쇠가 달랐어
+거짓말이야, Gwen의 열쇠는 달랐어
+다른 사람들한테 말해야 해
+누굴 믿어야 하지?
+end thoughts
+
+
+
+ThoughtsInit:Marcurio2
+이 배 다 엿 먹어
+이번이 마지막이다
+돈 없이는<n>여길 떠날 수 없어
+그만한 가치 있는 일이야
+잊지 마라
+end thoughts
+
+ThoughtsInit:Marcurio3
+그녀가 죽음을 초래한 거야
+닥치고 있어야 해
+어떻게든 넘겨라
+네 할 일을 해
+물건을 지켜
+돈이 있으면<n>여길 떠날 수 있어
+잊지 마라
+end thoughts
+
+ThoughtsInit:Marcurio4
+배가 도착하면<n>그녀는 풀려날 거야
+거짓말은 무덤까지 가지고 가는 거야
+네 할 일을 해
+물건을 지켜
+네 일에만 신경 쓰는 거야
+잊지 마라
+end thoughts
+
+
+ThoughtsInit:Donovan2
+개쓰레기자식
+부숴버린다
+없애버린다
+지워버린다
+너는 큰 실수를 했어
+해야만 한다면 다 죽인다
+이번에는 숨을 수 없어
+이곳에 있는 진실을 찾아낼 거다
+넌 함정에 걸렸어
+도망칠 곳은 없어
+end thoughts
+
+
+
+ThoughtsInit:Garv2
+저 멍청이들이 아니면 이런 일이 일어날 리가 없는데
+그 머저리가 다 망치고 있어
+언젠가는 값을 치르게 할 거야
+전문성이란 건 이미 옛 말인가?
+이런 일을 하기에는 너무 늙은 것 같군
+그들이 내게서 모든 걸 다 빼앗아 갔어
+아무도 믿을 수 없어
+말도 안 돼
+다 머저리들 뿐이야
+end thoughts
+
+ThoughtsInit:Garv3
+점점 더 복잡해지고 있어
+저 멍청이들이 아니면 이런 일이 일어날 리가 없는데
+아무도 믿을 수 없다
+다 머저리들 뿐이야
+그들이 내게서 모든 걸 다 빼앗아 갔어
+여긴 다 거짓말쟁이들이야
+그는 내가 이걸 참을 거라고 생각하는 건가
+말도 안 돼
+end thoughts
+
+ThoughtsInit:Garv4
+이건 써 먹을 수 있어
+그는 모든 걸 다 후회할 거다
+여기 머무를 순 없어
+Gwen의 결백함은 밝혀져야 해
+Quella는 쓸만한 아군이 되겠군
+저 카메라들이 다 망쳤어
+저 카메라들이 다 망쳤어
+안전하게 해야 해
+이제부터는 안 좋아질 뿐이야
+여긴 다 거짓말쟁이들이야
+그들이 내게서 모든 걸 다 빼앗아 갔어
+end thoughts
+
+
+
+ThoughtsInit:Ferdinand2
+두 두 두
+후우우우웅웅우우우
+둔 둔 둔 두우우운
+다 다 라 라 다 닷 닷
+부 바 비 데 붑
+end thoughts
+
+
+ThoughtsInit:Darryl2
+내 잘못이야
+내 잘못이야
+내 잘못이야
+그녀가 떠났어
+왜
+왜
+왜 방해하는 거야
+end thoughts
+
+ThoughtsInit:Darryl3
+내 잘못이야
+내 잘못이야
+내 잘못이야
+아무것도
+아프다
+이제 다 끝날 거야
+왜
+왜
+end thoughts
+
+ThoughtsInit:Darryl4
+내 잘못이야
+아무것도
+아프다
+도와줄 수가 없어
+이제 다 끝날 거야
+이제 다 끝날 거야
+이제 다 끝날 거야
+아무런 희망도 없어
+이 장소는 끔찍해
+왜
+왜
+end thoughts
+
+
+ThoughtsInit:Quella2
+제 시간에 끝낼 수 있을까?
+그냥 계속 써
+계속 써
+돌아가기엔 늦었어
+시간이 없어
+더 빨리 해야 해
+이게 소용있긴 한 걸까
+다 쓸모없어
+end thoughts
+
+ThoughtsInit:Quella3
+도와주고 싶어
+그는 뭔가 이상해
+다들 고통받고 있어
+다 괜찮아질 거야
+그냥 계속 써
+계속 써
+돌아가기엔 늦었어
+시간이 없어
+그만한 가치가 있을 거야
+end thoughts
+
+ThoughtsInit:Quella4
+그녀일리가 없어
+누가 이런 짓을
+우린 협력해야 해
+다 거짓말쟁이야
+도와주고 싶어
+다들 고통받고 있어
+다 괜찮아질 거야
+그냥 계속 써
+계속 써
+시간이 없어
+end thoughts
+
+
+ThoughtsInit:Gwen2
+안 돼
+안 돼
+안 돼
+안 돼
+그만해
+그만해
+그만해
+그만해
+왜 안 믿어주는 거야
+다 이상해
+그가 나를 쳐다보고 있어
+더 이상은
+더 이상은
+놔주지 않을 거야
+절대로 돌아가지 않아
+end thoughts
+
+ThoughtsInit:Gwen3
+안 돼
+안 돼
+안 돼
+안 돼
+그만해
+그만해
+그만해
+그만해
+왜 안 믿어주는 거야
+다 이상해
+더 이상은
+더 이상은
+그가 여기 있어
+그가 여기 있어
+그가 여기 있어
+나를 그냥 놔둬
+end thoughts
+
+ThoughtsInit:Gwen4
+왜 나한테 이런 일이 생긴거야
+왜 나한테 이런 일이 생긴거야
+왜 나한테 이런 일이 생긴거야
+내가 아냐
+나는 결백해
+나를 놔둬
+안 돼
+안 돼
+그만해
+그만해
+왜 안 믿어주는 거야
+왜 안 믿어주는 거야
+왜 안 믿어주는 거야
+왜 안 믿어주는 거야
+다 이상해
+그가 나를 쳐다보고 있어
+그만해
+그가 여기 있어
+그가 여기 있어
+그가 여기 있다는 걸 알아
+end thoughts

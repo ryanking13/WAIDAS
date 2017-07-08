@@ -2,8 +2,8 @@
 dialogue start
 GwensAxeGwen
 action:statement:root
-Gwen:I know it looks crazy to bring this with me, but...
-Gwen:I just feel more at ease if I have this around.
+Gwen:이걸 보면 아마 내가 미쳤다고 생각하겠지만...
+Gwen:이게 주변에 놓여 있어야 마음이 편해.
 action end
 dialogue end
 
@@ -12,10 +12,10 @@ dialogue start
 GwensBackpackGwen
 
 action:statement:root
-Gwen:All I took with me were some clothes, medication and memorabilia.
-Gwen:I wanted to travel light, after all.
-Gwen:...I'm getting tired of running.
-Gwen:Will I ever be far away enough?
+Gwen:내가 가져온 거라곤 약간의 옷이랑, 약, 그리고 소중한 것들.
+Gwen:최대한 가볍게 여행하고 싶어.
+Gwen:...더이상 도망치는 것도 치지고.
+Gwen:대체 언제가 되야 충분히 멀리 떨어질 수 있을까?
 next:root-null
 action end
 

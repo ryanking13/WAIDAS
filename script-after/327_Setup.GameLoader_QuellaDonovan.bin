@@ -7,21 +7,21 @@ Quella-Donovan
 
 action:response:root
 Quella
-root-1:I don't think we've met!  My name is Quella.
-root-2:You look upset.  Is something wrong?
-</>root-null:Never mind.
+root-1:당신은 처음 보는 것 같네요! 저는 Quella에요.
+root-2:당신 뭔가 화나보이는 데.  뭔가 신경쓰이는 일이라도 있어요?
+</>root-null:관둔다.
 action end
 
 
 action:statement:root-1
-Donovan:Okay.
+Donovan:그래.
 next:root-1-A
 action end
 
 action:response:root-1-A
 Quella
-root-1-B:And...what's your name?
-</>root-1-C:I guess I'll leave you alone.
+root-1-B:어...이름이 뭔가요?
+</>root-1-C:혼자 있고 싶은 가 보네요.
 action end
 
 action:statement:root-1-B
@@ -31,7 +31,7 @@ action end
 
 action:response:root-1-D
 Quella
-root-1-E:Great.  Nice to meet you, Donovan!
+root-1-E:좋은 이름이네요. 만나서 반가워요, Donovan!
 action end
 
 action:statement:root-1-E
@@ -40,35 +40,35 @@ next:root-null
 action end
 
 action:statement:root-1-C
-Donovan:Please do.
+Donovan:부디 그래 주시지.
 next:root-null
 action end
 
 
 action:statement:root-2
-Donovan:I'm fine.  There's nothing to talk about.
+Donovan:아니. 신경 끄시지.
 next:root-2-A
 action end
 
 action:response:root-2-A
 Quella
-root-2-B:You know, talking about our problems can help us get through them sometimes!
-</>root-1-C:I guess I'll leave you alone.
+root-2-B:있잖아요, 자기 문제에 대해서 얘기하는 건 때로는 되게 도움이 된다구요!
+</>root-1-C:혼자 있고 싶은 가 보네요.
 action end
 
 action:statement:root-2-B
-Donovan:Fascinating.
+Donovan:그거 멋지군.
 next:root-2-C
 action end
 
 action:response:root-2-C
 Quella
-root-2-D:You're sure I can't help in any way?
-</>root-1-C:I guess I'll leave you alone.
+root-2-D:내가 못 도와줄 거라고 생각해요?
+</>root-1-C:혼자 있고 싶은 가 보네요.
 action end
 
 action:statement:root-2-D
-Donovan:Positive.
+Donovan:그래.
 next:root-null
 action end
 

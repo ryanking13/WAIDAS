@@ -1,0 +1,40 @@
+
+
+
+dialogue start
+Darryl-EvilDonovan
+
+action:response:root
+Darryl
+root-A:뭐 이게 당신한테 있어서 성스러운 일이라도 되나? 뭘 하려는 거야 대체?
+root-B:여기서 뭔가 살인범에 대한 걸 찾아내지는 못 했나?
+</>root-null:관둔다.
+action end
+
+action:statement:root-A
+Donovan:네 주위를 둘러봐, 이 장소를 봐.  여기서 무슨 일이 일어났는 지를 보라고.  어떻게 역겨움을 느끼지 않을 수 있지?!
+Donovan:이런 사건이 더 발생할 단 하나의 가능성도 남겨두지 않겠어.
+next:root-A-1
+action end
+
+action:response:root-A-1
+Darryl
+root-A-2:네가 이 장소에 떨어지기 전에도 미션을 맡고 있었을 거 아냐. 다른 방법은 없었나?
+action end
+
+action:statement:root-A-2
+Donovan:그게 어찌되었 건 결과는 똑같아.  시간 낭비는 그만하자고!
+next:root
+action end
+
+action:statement:root-B
+Donovan:그래, 그렇게 생각할만 해. 근데 그렇지가 않더라고.
+Donovan:지문도 없고, 발자국도 없어.
+Donovan:납치당한 사람들은 다 약에 쩔어 있었어.  전혀 기억을 못 할 것 같더군.
+Donovan:상자에는 약간 식료품이 남아있는 것 빼곤 대부분 비어있었어. 마치 누군가 치우기라고 한 것 처럼 말이야.
+Donovan:핏자국은 비교적 새로 생긴 거여썽. 이 장소가 청소된 지는 얼마 안 된 것 같더군.
+Donovan:누군가 이걸 다 관리하고 있는 사람이 있어.
+next:root
+action end
+
+dialogue end

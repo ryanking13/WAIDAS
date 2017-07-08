@@ -1,0 +1,64 @@
+
+
+// GARV - DONOVAN ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Garv-Donovan
+
+action:response:root
+Garv
+root-1:자네는 어쩌다 이 배에 타게 되었는가?
+root-2:자네는 되게 배를 열심히 돌아다니는 구만.
+</>root-null:떠난다.
+action end
+
+action:statement:root-1
+Donovan:뭐든 간에, 당신이 알 바는 아닌 것 같군.
+next:root-1-A
+action end
+
+action:response:root-1-A
+Garv
+root-1-B:맞는 얘길세.  그렇지만 실종 사건이 있는 상황에서, 모든 사람은 의심의 대상이지.
+root-1-C:나한테 말해서 안될 게 뭔가?  뭔가 숨기고 있는 건 아니겠지?
+</>root-null:떠난다.
+action end
+
+action:statement:root-1-B
+Donovan:그래서 당신이 그 사건을 끝까지 조사하기라도 할 참인가?
+Donovan:여기서 이런 의미 없는 질문을 하고 있을 시간은 없어.
+next:root-null
+action end
+
+action:statement:root-1-C
+Donovan:문제될 것도, 도움 될 것도 아냐. 그래도 그렇게 계속 물어보니...
+Donovan:나는 내 오랜 친구를 만나러 가는 중이야.
+Donovan:이제 할 일이 있으니 가봐야 겠군.
+next:root-null
+action end
+
+action:statement:root-2
+Donovan:이런 배에서 다른 할 일도 없지.
+next:root-2-A
+action end
+
+action:response:root-2-A
+Garv
+root-2-B:뭔가 찾고 있는 건가?  아니면 누군가?
+root-2-C:모든 물건에 이름표라도 붙이려고 하는 건가?
+</>root-null:떠난다.
+action end
+
+action:statement:root-2-B
+Donovan:물론 아니지.
+Donovan:찻잔 같은 거에 누가 관심을 갖겠어?
+next:root-null
+action end
+
+action:statement:root-2-C
+Donovan:당신이 탐정 놀이를 하고 싶은 건 알겠군.
+Donovan:모든 사람을 의심하고 싶다면, 딱히 당신을 의심해서 안 될 이유도 없지?
+next:root-null
+action end
+
+dialogue end

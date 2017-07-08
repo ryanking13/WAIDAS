@@ -1,0 +1,38 @@
+
+
+
+// QUELLA - FERDINAND ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Quella-Ferdinand
+
+action:statement:root
+Ferdinand:소중한 승객님! 잘 지내고 있나요?
+Ferdinand:혹시 제가 뭔가 도와 드릴 일은 없나요?
+Ferdinand:일등항해사로서, 승객의 어떤 요구라도 들어드릴 준비가 되어 있습니다!
+next:root-1
+action end
+
+action:response:root-1
+Quella
+root-2:당신의 인생은 어때요?
+root-3:바다를 정말로 좋아하시나 봐요.
+</>root-null:관둔다.
+action end
+
+action:statement:root-2
+Ferdinand:아주 판타스틱합니다!
+Ferdinand:이렇게 웅장한 바다 위에서 여러분을 모실 수 있는 데 뭘 더 바랄 것이 있을 까요!
+next:root-1
+action end
+
+action:statement:root-3
+Ferdinand:사실 저는 소년이었을 때부터, 파란 색에 약해서 말이죠.
+Ferdinand:그것 때문에 배 멀미로 고생을 꽤나 했었죠.
+Ferdinand:하지만 그럼에도 불구하고 바다가 저를 불렀습니다. 마치 밀당하는 여자처럼 말이에요!
+Ferdinand:그래서 저는 육지 체질을 포기하고 바다에서 살기로 결심했고...  지금의 제가 있는 것이죠!
+next:root-1
+action end
+
+dialogue end
+

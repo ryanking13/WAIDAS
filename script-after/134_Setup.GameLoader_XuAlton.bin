@@ -1,0 +1,68 @@
+
+
+// XU - ALTON ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Xu-Alton
+
+action:response:root
+Xu
+root-fail:우리 얘기좀 해.
+</>root-null:관둔다.
+action end
+
+action:statement:root-fail
+Alton:...별로 얘기하고 싶은 기분이 아냐.
+Alton:나중에 하자.
+next:root-null
+action end
+
+
+action:response:root2
+Xu
+root2-A:내가 좀, 거칠게 말했던 걸 인정해.
+root2-B:다른 사람한테 이 일에 대해서 말했어?
+</>root-null:관둔다.
+action end
+
+action:statement:root2-A
+Alton:...뭐 그랬지.
+next:root2-harsh
+action end
+
+action:response:root2-harsh
+Xu
+root2-harsh-A:그래서 앞으로 네 계획은 뭔데?  이 배에 오래 있을 것 같지는 않은데.
+root2-harsh-B:너도 니 일이 별 필요 없다는 건 알지? 이 배에 DJ는 필요 없어.
+</>root2-null:관둔다.
+action end
+
+action:statement:root2-harsh-A
+Alton:나도 모르겠어. 그냥...한 동안 떠나고 싶네.
+Alton:여행하는 동안 정신이 맑아질 줄 알았는데.
+Alton:그렇게 간단하지 않은 가봐.
+next:root2-harsh
+action end
+
+action:statement:root2-harsh-B
+Alton:...너도 그렇게 느껴? 다 이상해.
+Alton:여기에 진짜로 크루즈 호화 여행을 하고 싶은 사람은 없어.  다들 그냥 어디론가 가려고 이 배에 타고 있을 뿐이야.
+Alton:내가 여기에 있는 이유가 그냥 보여주기용이라는 느낌도 들어.
+next:root2-harsh
+action end
+
+action:statement:root2-B
+Alton:...아니. 어쩌만 그게 나을 지도 모르지만. 안 그럴 거야.
+Alton:그러니까 그 일에 대해선 걱정 안 해도 돼.
+next:root2
+action end
+
+dialogue end
+
+
+
+
+
+
+
+

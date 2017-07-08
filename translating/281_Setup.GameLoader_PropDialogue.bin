@@ -93,7 +93,7 @@ dialogue end
 dialogue start
 DoorFail
 action:statement:root
-null:The door is locked.  I can't get in.
+null:잠겨 있어서 들어갈 수 없다.
 next:end
 action end
 dialogue end
@@ -101,8 +101,8 @@ dialogue end
 dialogue start
 DoorCatFail
 action:statement:root
-Cat:Hssss.
-null:You paw at the doorknob, but can't get it to open.
+Cat:그르릉.
+null:손잡이를 향해 손을 뻗어 보지만, 닿지 않는다.
 next:end
 action end
 dialogue end
@@ -113,128 +113,128 @@ dialogue end
 dialogue start
 DonovansSign
 action:statement:root
-null:B201 - Lodging
-null:Underneath the sign is a note.
-null:Welcome aboard, Donovan!  - F
+null:B201 - 숙소
+null:방 번호 아래 종이가 한 장 붙어 있다.
+null:즐거운 여행 되시게나, Donovan!  - F
 action end
 dialogue end
 
 dialogue start
 GarvsSign
 action:statement:root
-null:B202 - Lodging
-null:Underneath the sign is a note.
-null:Happy sailing, Garv!   - F
+null:B202 - 숙소
+null:방 번호 아래 종이가 한 장 붙어 있다.
+null:즐거운 여행 되시게나, Garv!   - F
 action end
 dialogue end
 
 dialogue start
 EmptyNESign
 action:statement:root
-null:B203 - Lodging
+null:B203 - 숙소
 action end
 dialogue end
 
 dialogue start
 GwensSign
 action:statement:root
-null:B204 - Lodging
-null:Underneath the sign is a note.
-null:Ahoy, Gwen!   - F
+null:B204 - 숙소
+null:방 번호 아래 종이가 한 장 붙어 있다.
+null:즐거운 여행 되시게나, Gwen!   - F
 action end
 dialogue end
 
 dialogue start
 PaulosSign
 action:statement:root
-null:B205 - Lodging
-null:Underneath the sign is a note, but most of it has been torn off.
+null:B205 - 숙소
+null:방 번호 아래 종이가 한 장 붙어 있지만, 찢어져서 읽을 수 없다.
 action end
 dialogue end
 
 dialogue start
 EmptySWSign
 action:statement:root
-null:B206 - Lodging
+null:B206 - 숙소
 action end
 dialogue end
 
 dialogue start
 QuellasSign
 action:statement:root
-null:B207 - Lodging
-null:Underneath the sign is a note.
-null:Salutations, Quella!   - F
+null:B207 - 숙소
+null:방 번호 아래 종이가 한 장 붙어 있다.
+null:즐거운 여행 되시게나, Quella!   - F
 action end
 dialogue end
 
 dialogue start
 DarrylsSign
 action:statement:root
-null:B208 - Lodging
-null:Underneath the sign is a note.
-null:Well met, Darryl!   - F
+null:B208 - 숙소
+null:방 번호 아래 종이가 한 장 붙어 있다.
+null:즐거운 여행 되시게나, Darryl!   - F
 action end
 dialogue end
 
 dialogue start
 MarcuriosSign
 action:statement:root
-null:B101 - Staff
-null:Underneath the sign is a note, but most of it has been torn off.
+null:B101 - 스태프
+null:방 번호 아래 종이가 한 장 붙어 있지만, 찢어져서 읽을 수 없다.
 action end
 dialogue end
 
 dialogue start
 XusSign
 action:statement:root
-null:B102 - Staff
-null:Underneath the sign is a note.
-null:Avast, Sue!   - F
+null:B102 - 스태프
+null:방 번호 아래 종이가 한 장 붙어 있다.
+null:즐거운 여행 되시게나, Sue!   - F
 action end
 dialogue end
 
 dialogue start
 CaptainsSign
 action:statement:root
-null:B103 - Captain's Quarters
+null:B103 - 선장실
 action end
 dialogue end
 
 dialogue start
 AltonsSign
 action:statement:root
-null:B104 - Staff
-null:Underneath the sign is a note.
-null:Pleasant sailing, Alton!
+null:B104 - 스태프
+null:방 번호 아래 종이가 한 장 붙어 있다.
+null:즐거운 여행 되시게나, Alton!
 action end
 dialogue end
 
 dialogue start
 ClosetsSign
 action:statement:root
-null:B105 - Storage
+null:B105 - 저장고
 action end
 dialogue end
 
 dialogue start
 FirstMatesSign
 action:statement:root
-null:B106 - First Mate's Quarters
+null:B106 - 일등항해사실
 action end
 dialogue end
 
 dialogue start
 DiningRoomSign
 action:statement:root
-null:101 - Dining Room
+null:101 - 식당
 action end
 dialogue end
 
 dialogue start
 ObservationRoomSign
 action:statement:root
-null:102 - Observation Room
+null:102 - 전망실
 action end
 dialogue end
 
@@ -245,7 +245,7 @@ dialogue end
 dialogue start
 NormalBed
 action:statement:root
-null:Now's not the time to sleep.
+null:잘 시간이 아냐
 next:root-null
 action end
 dialogue end
@@ -253,7 +253,7 @@ dialogue end
 dialogue start
 MessyBed
 action:statement:root
-null:So messy!
+null:난장판이군!
 next:root-null
 action end
 dialogue end
@@ -261,7 +261,7 @@ dialogue end
 dialogue start
 Dresser
 action:statement:root
-null:It's a giant rustic dresser, with four shelves to hold clothes in.
+null:거대한 옷장에, 네 개의 서랍이 있다.
 next:root-null
 action end
 dialogue end
@@ -269,7 +269,7 @@ dialogue end
 dialogue start
 DresserWMirror
 action:statement:root
-null:It's a giant, rustic dresser with a mirror on top.  It has four large shelves.
+null:거대한 옷장에, 네 개의 서랍이 있다.
 next:root-null
 action end
 dialogue end
@@ -281,7 +281,7 @@ dialogue end
 dialogue start
 EmptyCabinet
 action:statement:root
-null:A large cabinet used to hang clothes and store shoes in.
+null:옷과 신발을 넣을 수 있는 큰 수납장이다.
 next:root-null
 action end
 dialogue end
@@ -293,50 +293,50 @@ dialogue end
 dialogue start
 GarvsCatBed
 action:statement:root
-null:A small cushion for Garv's cat to sleep in.
+null:Garv의 고양이가 잘 수 있는 작은 공간이다.
 action end
 dialogue end
 
 dialogue start
 GarvsCatBedCat
 action:statement:root
-null:It actually looks kind of comfortable.
+null:완전 편해보인다.
 action end
 dialogue end
 
 dialogue start
 GarvsCatLitter
 action:statement:root
-null:A litterbox.  It has a faint smell of cat urine.  Lovely.
+null:배변통이다. 고양이 오줌의 냄새가 살짝 풍긴다.
 action end
 dialogue end
 
 dialogue start
 GarvsCatLitterCat
 action:statement:root
-null:That's really not necessary right now.
+null:지금은 전혀 필요없는 것이로군.
 action end
 dialogue end
 
 dialogue start
 GarvsBird
 action:statement:root
-null:A small bird hops around in the cage.
-Bird:Nobody puts baby bird in a corner!
+null:작은 새가 새장 안에 들어 있다.
+Bird:Nobody puts baby bird in a corner (영화 Dirty Dancing의 대사)!
 action end
 dialogue end
 
 dialogue start
 GarvsBirdCat
 action:statement:root
-null:The bird shrinks back into its cage.  It knows it's a potential meal.
+null:새가 새장으로 돌아갔다.  자기도 먹이가 될 수 있다는 걸 아는 것 같다.
 action end
 dialogue end
 
 dialogue start
 GarvsCatFood
 action:statement:root
-null:Two bowls sit on the floor, one holding water, and the other holding catfood.
+null:그릇이 두 개. 하나는 물, 하나는 고양이 사료가 들어있다.
 action end
 dialogue end
 
@@ -346,8 +346,8 @@ dialogue end
 dialogue start
 GwensAxe
 action:statement:root
-null:There is a big hatchet propped up against the wall.
-null:Nothing weird about that.
+null:거대한 도끼가 벽에 기대어져 있다.
+null:딱히 이상할 것 없지.
 action end
 dialogue end
 
@@ -355,20 +355,20 @@ dialogue start
 GwensBackpack
 
 action:statement:root
-null:A backpack lies on the floor.
+null:가방이 놓여 있다.
 next:root-1
 action end
 
 action:response:root-1
 <player>
-root-2:Root through it!
-</>root-null:Leave it.
+root-2:살펴본다!
+</>root-null:놔둔다.
 action end
 
 action:statement:root-2
-null:Shamelessly rooting through somebody else's backpack reveals...
-null:...assorted medicines, family photos, a can of mace, and what appear to be small souvenirs.
-null:A strange combination.
+null:양심의 가책도 없이 남의 가방을 살피기 시작했다...
+null:...약, 가족 사진, 호신 물품, 잡동사니들...
+null:이상한 조합이다.
 next:root-null
 action end
 dialogue end
@@ -376,18 +376,18 @@ dialogue end
 dialogue start
 GwensBackpackHandless
 action:statement:root
-null:A backpack lies on the floor.
+null:가방이 놓여 있다.
 next:root-1
 action end
 
 action:response:root-1
 <player>
-root-2:Root through it!
-</>root-null:Leave it.
+root-2:살펴본다!
+</>root-null:놔둔다.
 action end
 
 action:statement:root-2
-null:I need thumbs before I can do something like that.
+null:손가락이 있어야 살펴보지.
 next:root-null
 action end
 dialogue end
@@ -395,7 +395,7 @@ dialogue end
 dialogue start
 GwensPainting
 action:statement:root
-null:A lively painting of a house on the hill during a sunny day.
+null:아름다운 집이 그려진 그림이다.
 action end
 dialogue end
 
@@ -406,22 +406,22 @@ dialogue end
 dialogue start
 QuellasBooks
 action:statement:root
-null:Several books are stacked on the desk.
+null:책들이 책장에 꽂혀있다.
 action end
 dialogue end
 
 dialogue start
 QuellasPapers
 action:statement:root
-null:Papers with writing on them are scattered on the desk.
-null:On closer inspection, about 80% of the words are crossed out.
+null:글이 적인 종이 들이 마구 흩어져 있다.
+null:자세히 살펴보니, 80% 정도는 실패작인 모양이다.
 action end
 dialogue end
 
 dialogue start
 QuellasTrash
 action:statement:root
-null:A trash can overfilled with crumpled up pieces of paper.
+null:쓰레기통이 종이로 가득하다.
 action end
 dialogue end
 
@@ -431,53 +431,53 @@ dialogue end
 dialogue start
 DarrylsPicture
 action:statement:root
-null:A framed picture of a pretty woman.
+null:아름다운 여인이 그려진 그림이다.
 action end
 dialogue end
 
 dialogue start
 DarrylsPainting
 action:statement:root
-null:A painting hangs crookedly on the wall.  There's a woman on a cliff looking at the night sky.
-null:Wanderer above the Sea of Fog it isn't.
+null:여인이 밤하늘을 올려다보는 그림이다.
+null:'안개 바다 위의 방랑자' 같은 느낌이군
 action end
 dialogue end
 
 dialogue start
 DarrylsDiary
 action:statement:root
-null:A fancy leather-bound diary is on the desk.
+null:가죽으로 감싼 일기장이 놓여있다.
 next:root-1
 action end
 
 action:response:root-1
 <player>
-root-2:Read it!
-</>root-null:Never mind.
+root-2:읽는다!
+</>root-null:관둔다.
 action end
 
 action:statement:root-2
-null:It could not be any more obvious that this is a private diary, but who cares!
-null:Sadly, there is a metal lock around the mouth of the book, making it unopenable.
+null:누가봐도 개인적인 일기장이지만, 뭐 어때!
+null:아쉽게도, 잠금장치가 걸려있다.
 action end
 dialogue end
 
 dialogue start
 DarrylsDiaryHandless
 action:statement:root
-null:A fancy leather-bound diary is on the desk.
+null:가죽으로 감싼 일기장이 놓여있다.
 next:root-1
 action end
 
 action:response:root-1
 <player>
-root-2:Read it!
-</>root-null:Never mind.
+root-2:읽는다!
+</>root-null:관둔다.
 action end
 
 action:statement:root-2
-null:Without fingers, it is difficult to open the book.
-null:In fact, it is quite impossible.
+null:손가락이 있어야 책을 읽지.
+null:불가능한 일이다.
 action end
 dialogue end
 
@@ -485,80 +485,80 @@ dialogue end
 dialogue start
 DarrylsDiaryUnlocked
 action:statement:root
-null:A fancy leather-bound diary is on the desk.
+null:가죽으로 감싼 일기장이 놓여있다.
 next:root-1
 action end
 
 action:response:root-1
 <player>
-<!>root-2:Read it!
-</>root-null:Never mind.
+<!>root-2:읽는다!
+</>root-null:관둔다.
 action end
 
 action:statement:root-2
-null:Darryl's key is able to unlock the journal.
+null:Darryl의 열쇠로 잠금을 풀었다..
 next:root-3
 action end
 
 action:response:root-3
 <player>
-root-A:Page 1
-root-B:Page 2
-root-C:Page 3
-root-D:Page 4
-<!>root-E:Page 5:trigger.chap3readMarisJournal.on
-</>root-null:Stop reading.
+root-A:1 장
+root-B:2 장
+root-C:3 장
+root-D:4 장
+<!>root-E:5 장:trigger.chap3readMarisJournal.on
+</>root-null:그만 읽는다.
 action end
 
 action:statement:root-A
-null:Entry #1
-null:I've been told that reflecting on my thoughts could help.
-null:I doubt I'll end up sticking to the habit, but when I get to that point I'll try to write.
-null:I don't know why.  I don't believe for a second it'll do anything.
+null:1 쪽
+null:자신을 천천히 돌아보는 것이 도움이 될 거라는 얘기를 들었다.
+null:습관이 될 수 있을 지에 대해서는 의구심이 들지만, 일단 열심히 써보기로 했다.
+null:이유는 모르겠지만, 별로 도움이 될 것 같다는 생각은 안 든다.
 next:root-3
 action end
 
 action:statement:root-B
-null:Several pages have been torn from the journal.
-null:Entry #9
-null:I should be happy.
-null:Good career.  Good health.  Financially sound.
-null:Loving parents.  The most amazing husband in the world.
-null:I shouldn't be unhappy.  I don't have the right to be unhappy.
-null:I have more than I deserve, I would be spoiled or ungrateful to not appreciate what I have.
-null:So what the fuck is my problem?
+null:몇 장이 찢어져 있다.
+null:9 쪽
+null:난 분명 행복할텐데.
+null:좋은 직장에, 건강하고, 경제적으로도 문제가 없어.
+null:나를 사랑해주시는 부모님에, 이 세상에서 가장 멋진 남편이 있는 걸.
+null:불행하다고 느끼면 안 되는데, 그럴 권리는 하나도 없는데.
+null:나는 내가 가져야 할 것보다 더 많은 걸 가지고 있나봐. 이것 들에 감사하지 못하고 다 망쳐버릴 거 같아.
+null:대체 뭐가 문제인 걸까?
 next:root-3
 action end
 
 
 action:statement:root-C
-null:Entry #11
-null:Broke down again this morning.  I was able to come up with an excuse so that he wouldn't see me.
-null:I want to tell him how I feel, but...he doesn't need that weight.
-null:Don't be so selfish.  Take, take, take, that's all I can do.
-null:No matter how much I'm given, all I can do is bring people down.  I'll do it to him too at this rate.
-null:I don't deserve him.
+null:11 쪽
+null:오늘 아침에 또 쓰러졌다. 남편에게는 잘 핑계를 만들어 넘겼다.
+null:그에게 내가 지금 어떻게 느끼는 지 말하고 싶지만...그런 부담을 안겨선 안 되겠지.
+null:이기적이어선 안 돼. 견뎌내, 견뎌내, 견뎌내. 그게 내가 할 수 있는 전부야.
+null:이래서야 다른 사람들을 우울하게 할 뿐이야. 이러다간 남편한테까지도 영향을 줄 거야.
+null:난 그를 가질 자격이 없어.
 next:root-3
 action end
 
 action:statement:root-D
-null:Entry #15
-null:I started again.
-null:I'm such a fuck up.
-null:This time, I won't be able to hide my wrists.  People will see...oh god...
-null:I'm so fucking pathetic.
+null:15 쪽
+null:또 저질러버렸다.
+null:나는 정말 미친년이야.
+null:이번에는, 손목을 숨길 수가 없을 거야. 사람들이 보면...오 신이시여...
+null:나는 정말로 형편없어.
 next:root-3
 action end
 
 action:statement:root-E
-null:I'm sorry.  I'm so sorry.
-null:I just don't see any way forward, or any other way out.
-null:This was always coming.  There was no avoiding it.
-null:I just...can't.  I can't do it anymore.
-null:I want you to know I love you more than anything.
-null:Please, forget about me.  I know you deserve better.
-null:I love you.
-null:  - Mari
+null:미안해요.  정말로 미안해요.
+null:다른 방법이 없었어요.
+null:언제나 나를 덮쳐오고, 피할 수도 없었어요.
+null:그냥 난...더 이상은 못 할 것 같아요.
+null:그냥 내가 다른 어떤 것 보다도 당신을 사랑했다는 사실만 알아줬으면 좋겠어요.
+null:제발, 나를 잊고 살아요.  당신은 더 많은 걸 가질 수 있는 사람이에요.
+null:사랑해요.
+null:  - 마리
 next:root-3
 action end
 
@@ -573,32 +573,32 @@ dialogue end
 dialogue start
 MarcuriosBookcase
 action:statement:root
-null:A large bookcase filled with big intimidating looking books.
-null:All of them have something to do with food or cooking.
+null:거대한 책장에 커다란 책들이 꽂혀있다.
+null:다 요리나 음식과 관련된 것들이다.
 action end
 dialogue end
 
 dialogue start
 MarcuriosBookpile
 action:statement:root
-null:A precarious stack of books, all having to do with food preparation.
-null:Little pieces of paper stick out of them, marking important pages.
+null:음식 준비와 관련된 책들이다.
+null:작은 종이가 몇 장 삐져나와 있는데, 중요한 페이지를 표시하고 있다.
 action end
 dialogue end
 
 dialogue start
 MarcuriosBooks
 action:statement:root
-null:Books on kitchen management, utensils and assorted tools.
-null:It's surprising people write books about those things.  But apparently, they do.
+null:주방 관리에 관한 책이다.
+null:이런 것에 대한 책이 있다니 놀랍다.
 action end
 dialogue end
 
 dialogue start
 MarcuriosWallHole
 action:statement:root
-null:There's a massive hole in the wall's plaster.
-null:Behind it is a dingy metal wall.
+null:벽면에 거대한 구멍이 나있다.
+null:뒤에는 철로된 벽이 있다.
 action end
 dialogue end
 
@@ -608,8 +608,8 @@ dialogue end
 dialogue start
 XusDresser
 action:statement:root
-null:A cabinet with a see-through glass door.
-null:Inside are several uniforms hung up, along with some normal clothes and shoes.
+null:투명 유리문이 달린 옷장이다.
+null:여러 벌의 유니폼과 사복, 신발 등이 들어있다.
 action end
 dialogue end
 
@@ -619,30 +619,30 @@ dialogue end
 dialogue start
 AltonsSpeaker
 action:statement:root
-null:A really immense speaker.  How much does something like this cost?
-null:And what would motivate someone to bring it on a ship?
+null:거대한 스피커다.  얼마나 비쌀까?
+null:이런 걸 대체 왜 배에다 들고 탄 걸까?
 action end
 dialogue end
 
 dialogue start
 AltonsTech
 action:statement:root
-null:Assorted electronic devices lay bare on the floor.
-null:Careless!
+null:여러 전자 장비들이 바닥에 널브러져있다.
+null:안전 감각이 없군!
 action end
 dialogue end
 
 dialogue start
 AltonsComputer
 action:statement:root
-null:A laptop sits on the desk.  At the moment it's turned off.
+null:노트북이 놓여있다. 꺼진 상태다.
 action end
 dialogue end
 
 dialogue start
 AltonsComputerAlton
 action:statement:root
-Alton:It is unhealthy how attached I am to this computer.
+Alton:이 컴퓨터를 정말 많이 썼지.
 action end
 dialogue end
 
@@ -654,8 +654,8 @@ dialogue start
 ClosetCloset
 
 action:statement:root
-null:It's a metal closet for cleaning supplies.
-null:The door won't open.  It needs a key.
+null:청소 도구가 들어 있는 도구함이다.
+null:문이 닫혀 있어서, 열쇠가 필요하다.
 next:root-null
 action end
 dialogue end
@@ -664,8 +664,8 @@ dialogue start
 ClosetMop
 
 action:statement:root
-null:There's a mop in a bucket.
-null:It doesn't look like it's been used in a long time.
+null:걸레가 양동이에 들어있다.
+null:최근에 쓴 모양이다.
 next:root-null
 action end
 dialogue end
@@ -674,18 +674,18 @@ dialogue start
 ClosetTrash
 
 action:statement:root
-null:It's a trashcan.  It has trash in it.
+null:쓰레기 통. 쓰레기가 들어있다.
 next:root-2
 action end
 
 action:response:root-2
 <player>
-root-A:Investigate
-</>root-B:No thanks
+root-A:조사한다.
+</>root-B:아닌 것 같다.
 action end
 
 action:statement:root-A
-null:After rooting through the trash, it has become clear that everything in this trashcan is just plain trash.
+null:열심히 살펴본 결과, 쓰레기밖에 없었다.
 next:root-null
 action end
 dialogue end
@@ -697,22 +697,22 @@ dialogue end
 dialogue start
 KitchenWindow
 action:statement:root
-null:Behind lies the kitchen.  There are a couple of empty plates and scribbled out orders in the window.
+null:뒤로 주방이 보인다.  창 바로 뒤에 접시들이 놓여있다.
 action end
 dialogue end
 
 dialogue start
 ServingTray
 action:statement:root
-null:A little cart used to bring meals to guests in the dining room.
+null:음식을 나르기 위한 카트다.
 action end
 dialogue end
 
 dialogue start
 DiningRoomWallHole
 action:statement:root
-null:There's a massive hole in the wall's plaster.
-null:Behind it is a dingy metal wall.
+null:벽면에 거대한 구멍이 나있다.
+null:뒤에는 철로된 벽이 있다.
 action end
 dialogue end
 
@@ -722,21 +722,21 @@ dialogue end
 dialogue start
 KitchenTrash
 action:statement:root
-null:There's some trash in here.  What a surprise!
+null:쓰레기가 있다.  놀라워라!
 action end
 dialogue end
 
 dialogue start
 KitchenSink
 action:statement:root
-null:This sink is impeccably clean.  It even seems to give off a faint glow.
+null:깨끗하다.  반짝거리기까지 한다.
 action end
 dialogue end
 
 dialogue start
 KitchenStove
 action:statement:root
-null:There's a stove with four burners.  The stovetop looks brand new, but the dials show some use.
+null:네 개의 버너가 달린 스토브다.  스토브는 새 것인데, 다이얼은 쓰던 것 같다.
 action end
 dialogue end
 
@@ -749,12 +749,12 @@ action end
 
 action:response:root-2
 <player>
-root-null:Open it:trigger.chap6MarcurioScold.on
-</>root-null:Leave it alone.
+root-null:연다:trigger.chap6MarcurioScold.on
+</>root-null:놔둔다.
 action end
 
 action:statetement:root2
-null:It's a big wooden cupboard.  There's a padlock fastening both doors together.  It's locked tight.
+null:나무로 된 찬장이다. 단단하게 잠겨있다.
 next:root-null
 action end
 
@@ -763,18 +763,18 @@ dialogue end
 dialogue start
 KitchenCupboardHandless
 action:statement:root
-null:It's a big wooden cupboard.  It's got a padlock on the handles, but it's currently unlocked.
+null:나무로 된 찬장이다. 잠겨있지 않다.
 next:root-2
 action end
 
 action:response:root-2
 <player>
-root-3:Open it
-</>root-null:Leave it alone.
+root-3:열어본다
+</>root-null:관둔다.
 action end
 
 action:statement:root-3
-null:I need actual hands to be able to do that.
+null:손이 있어야 열어볼 텐데.
 next:root-null
 action end
 dialogue end
@@ -784,19 +784,19 @@ dialogue start
 KitchenFridge
 
 action:statement:root
-null:It's a big metal refrigerator.  It's got a big lock on the door, but right now it's unlocked.
+null:거대한 냉장고다.  문은 잠겨있지 않다.
 next:root-2
 action end
 
 action:response:root-2
 <player>
-root-null:Open it:trigger.chap6MarcurioScold.on
-</>root-null:Leave it alone.
+root-null:연다:trigger.chap6MarcurioScold.on
+</>root-null:놔둔다.
 action end
 
 action:statement:root2
-null:It's a big metal refrigerator.  Strangely enough, it has a big lock on the door.
-null:It's currently locked, and seems impossible to get into.
+null:거대한 냉장고다.  문이 단단히 잠겨있다.
+null:열어보는 건 불가능해 보인다.
 next:root-null
 action end
 
@@ -806,18 +806,18 @@ dialogue start
 KitchenFridgeHandless
 
 action:statement:root
-null:It's a big metal refrigerator.  It's got a big lock on the door, but right now it's unlocked.
+null:거대한 냉장고다.  문은 잠겨있지 않다.
 next:root-2
 action end
 
 action:response:root-2
 <player>
-root-3:Open it
-</>root-null:Leave it alone.
+root-3:열어본다
+</>root-null:관둔다.
 action end
 
 action:statement:root-3
-null:Without hands, that is quite impossible to do.
+null:손이 있어야 열어볼 텐데.
 next:root-null
 action end
 dialogue end
@@ -830,22 +830,22 @@ dialogue end
 dialogue start
 ObservationDJTableLeft
 action:statement:root
-null:There's a microphone and some kind of gadget laying on the desk.
+null:헤드폰과 여러 장비들이 놓여있다.
 action end
 dialogue end
 
 dialogue start
 ObservationDJTableRight
 action:statement:root
-null:There's an expensive-looking computer on the desk.  To its right is an MP3 player.
-null:Both of them seem to be password-locked.
+null:비싸보이는 컴퓨터다.  MP3도 놓여있다.
+null:둘다 비밀번호로 잠겨 있다.
 action end
 dialogue end
 
 dialogue start
 ObservationSpeakers
 action:statement:root
-null:Some pretty big speakers!
+null:거대한 스피커다!
 action end
 dialogue end
 
@@ -1064,7 +1064,7 @@ dialogue end
 dialogue start
 FerdinandsShipBottle
 action:statement:root
-null:An old model ship sits in a glass bottle.  Just how do they get those things in there, anyway?
+null:오래된 모형 선이 유리병 안에 들어있다. 대체 어떻게 넣은 거지?
 next:root-null
 action end
 dialogue end
@@ -1072,8 +1072,8 @@ dialogue end
 dialogue start
 FerdinandsFishingRod
 action:statement:root
-null:A fishing rod is propped up on the wall.  It looks brand new.
-null:There isn't any bait nearby, though...
+null:낚싯대가 벽에 기대져있다. 완전 새 것이다.
+null:미끼는 안보이는 걸...
 next:root-null
 action end
 dialogue end
@@ -1081,20 +1081,20 @@ dialogue end
 dialogue start
 FerdinandsCabinet
 action:statement:root
-null:It's completely empty, except for a single piece of paper.
+null:종이 몇 장 빼곤 아무 것도 없다.
 next:root-1
 action end
 
 action:response:root-1
 <player>
-root-2:Check it out.
-</>root-null:Leave it alone.
+root-2:살펴본다.
+</>root-null:놔둔다.
 action end
 
 action:statement:root-2
-null:On the paper is written all kinds of facts about Ferdinand.
-null:His full name, his previous work experience, his birthplace, his family history, and so on.
-null:It's not a very interesting read.
+null:종이 에는 Ferdinand에 대한 사실들이 적혀있다.
+null:그의 풀 네임, 이전 직장 경력, 생일, 가족력, 등등.
+null:딱히 흥미로운 내용은 없다.
 next:root-null
 action end
 dialogue end
@@ -1276,7 +1276,7 @@ dialogue start
 PaulosMessyBed
 
 action:statement:root
-null:The bed sheets have been pulled all over the place.
+null:침대 시트가 마구 흐트러져 있다.
 next:root-null
 action end
 dialogue end
@@ -1286,7 +1286,7 @@ dialogue start
 PaulosMessySuitcase
 
 action:statement:root
-null:The suitcase is open, and there are clothes spilling out of it.
+null:여행가방이 열려있고, 옷가지가 널부러져있다.
 next:root-null
 action end
 dialogue end
@@ -1296,8 +1296,8 @@ dialogue start
 PaulosMessyDrawer
 
 action:statement:root
-null:A couple of the drawers have been pulled out.
-null:On the side of the dresser...is that...blood?
+null:책장 몇 개가 열려있다.
+null:모서리에 저거...피?
 next:root-null
 action end
 dialogue end
@@ -1307,9 +1307,9 @@ dialogue start
 PaulosMessyBook
 
 action:statement:root
-null:There's a book on the ground.
-null:It's titled, Overcoming Social Anxiety.  It seems to be a self-help book.
-null:The pages are bent and crumpled by the way it's been thrown to the ground.
+null:책이 바닥에 떨어져있다.
+null:'사회 불안 장애를 극복하는 방법'.  아무래도 자기 계발 서적인 모양이다.
+null:바닥에 떨어진 채로 페이지가 구겨져있다.
 next:root-null
 action end
 dialogue end
