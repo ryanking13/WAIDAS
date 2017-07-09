@@ -1,0 +1,88 @@
+
+
+
+// MARCURIO - DONOVAN ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Marcurio-Donovan
+
+action:response:root
+Marcurio
+root-1:당신은 제법 보기 힘든 것 같군요.
+root-2:당신은 무슨 일을 하죠?
+root-3:어디로 갑니까?
+</>root-null:See ya.
+action end
+
+action:statement:root-1
+Donovan:우연은 아냐.
+next:root
+action end
+
+action:statement:root-2
+Donovan:별로 재미 없을 걸.
+next:root-2-A
+action end
+
+action:response:root-2-A
+Marcurio
+root-2-B:어디 시험해 보시죠.
+</>root-null:뭐 그래.
+action end
+
+action:statement:root-2-B
+Donovan:뭐 그럼.
+Donovan:나는 감청 장비를 만드는 컴퓨터 부품 회사에서 일하지.
+Donovan:무선에 아주 작고 적은 에너지를 쓰는 부품을 개발하는 일을 해.
+next:root-2-C
+action end
+
+action:response:root-2-C
+Marcurio
+root-2-D:멋지네요.  그런 직업을 가진 사람이 이런 촌구석으로 가는 배에는 왜?
+root-2-E:말하신 대로, 지루하군요.
+</>root-null:Never mind.
+action end
+
+action:statement:root-2-D
+Donovan:가족을 만나러 가, 내 어린 남동생이 최근 상태가 영 안 좋다고 해서.
+Donovan:정확히는 화해하러 가는 거지.
+next:root-brother
+action end
+
+action:statement:root-2-E
+Donovan:거봐.
+Donovan:뭐 지루하게 들리겠지만, 안정적인 직업이지.  나만큼 버는 사람 흔치 않다고.
+next:root-2-C
+action end
+
+action:response:root-brother
+Marcurio
+root-brother-1:그건 안타깝게 되었군요. 정확히 무슨 병이죠?
+root-brother-2:그럼 왜 그런 곳에 있는 거죠? 도시에 더 좋은 병원이 많을텐데요.
+</>root-null:관둔다.
+action end
+
+action:statement:root-brother-1
+Donovan:좀 애매하고, 희귀한 질병이지.
+Donovan:아주 느리게 진행되면서, 아주 고통스러운.
+Donovan:별로 더 말하고 싶지 않군.
+next:root-brother
+action end
+
+action:statement:root-brother-2
+Donovan:증상이 꽤나 심각하고 명확해.
+Donovan:더 좋은 병원으로 간다고 해서 별로 달라질 게 없어.
+Donovan:그래서 만나러 간다. 그것 뿐이야.
+next:root-brother
+action end
+
+action:statement:root-3
+Donovan:가족을 만나러.
+Donovan:화해하러 간다고 말해야 겠군.
+next:root
+action end
+
+dialogue end
+
+

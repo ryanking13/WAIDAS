@@ -1,0 +1,73 @@
+
+
+// XU - GARV ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Xu-Garv
+
+action:response:root
+Xu
+root-1:동물을 정말로 좋아하시나봐요.
+root-trigger.ChapterTwoOn:혹시 Donovan을 만나봤어요?
+root-3:무슨 일을 하시는데요?:trigger.chap1xuGarvProgress.on
+</>root-null:관둔다.
+action end
+
+action:statement:root-1
+Garv:물론이라네!  누가 동물을 안 좋아하겠는가.
+Garv:이 녀석들은 아주 순수하지.  더럽혀지지 않았어.
+next:root-null
+action end
+
+action:statement:root-trigger.ChapterTwoOn
+Garv:내 옆 방에 지내는 사람을 말하는 건가?  아니, 대화는 못 해봤는데, 무슨 이유라도 있는가?
+next:root-2-A
+action end
+
+action:response:root-2-A
+Xu
+root-2-B:아뇨, 그냥 한 번 대화를 해보고 싶어서요.
+action end
+
+action:statement:root-2-B
+Garv:그 사람은 뭐랄까 은둔형 스타일인 것 같아서. 별로 많이 보지 못했네.
+Garv:뭔가 나쁜 성격을 가진 사람인 것 같네.  내 고양이가 놀아달라고 하니까, 마치 찰 것 같이 쳐다보지 뭔가!
+Garv:동물을 사람하지 않는 그런 사람은...언제나 나쁜 사람이지.
+next:root-null
+action end
+
+action:statement:root-3
+Garv:오, 이런 질문을 하는 숙녀 분이 계실 줄이야.
+Garv:나는 도매상이라네, 기본적으로 싸게 물건을 사서 비싼 곳으로 옮겨 파는 일을 하지.
+Garv:별로 복잡한 일은 아니고, 그냥 거저 먹는 일이지.
+next:root-null
+action end
+
+
+
+action:response:root2
+Xu
+root2-A:왜 애완동물을 데리고 타신 건가요?
+root2-B:도매상이라고 하셨잖아요.  어떤 종류의 물건을 다루시는 건가요?:trigger.chap3xuGarvProgress.on
+</>root-null:Never mind.
+action end
+
+action:statement:root2-A
+Garv:아, 그걸 말일세.
+Garv:새로운 환경을 겪게 해주는 건 이 녀석들을 건강하게 만들어 주지.
+Garv:이녀석들도 최고급 선실에 묶고 싶어하지 않겠나?
+next:root2
+action end
+
+action:statement:root2-B
+Garv:오, 그래, 기억력이 좋구만.
+Garv:나는 음...아주 독특한 물건을 옮기지.  설명하기는 좀 어려워.
+Garv:굉장히 나르기 어려운 물건이라고만 말해두지.
+Garv:굉장히 귀한 인재들이 필요한 일이라 말일세.
+next:root2
+action end
+
+dialogue end
+
+
+

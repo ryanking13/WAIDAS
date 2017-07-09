@@ -1,0 +1,93 @@
+
+
+
+
+// XU - QUELLA ////////////////////////////////////////////////////////////////////////////
+
+
+dialogue start
+Xu-Quella
+
+action:response:root
+Xu
+root-1:완전 버려진 종이들이 많네요.
+root-2:듣기로는 작가라면서요?
+</>root-null:관둔다.
+action end
+
+action:statement:root-1
+Quella:하하하!  제 쓰레기통을 봤나보네요.
+Quella:맞아요, 지금 완전 심상이 안 떠오르거든요.  많이 쓰다 버렸죠.
+next:root-null
+action end
+
+action:statement:root-2
+Quella:작가가 되려고 하는 거죠.  아직 완성한 게 없는데 작가라고 부를 수 있을 지 모르겠네요.
+next:root-3
+action end
+
+action:response:root-3
+Xu
+root-3-A:그래도 뭔가 쓰시잖아요?
+root-3-B:무엇 때문에 쓰시는 건가요? 돈?
+</>root-3-null:집중할 수 있도록 전 가볼게요.
+action end
+
+action:statement:root-3-A
+Quella:소설을 쓰고있죠.
+Quella:근데, 실제로 쓰는 것 보단 쓰던 걸 고치는 걸 훨씬 많이 하는 것 같아요.
+Quella:가끔은 제가 이걸 영원히 완성 못 할 것 같다고 느껴요.
+next:root-3
+action end
+
+action:statement:root-3-B
+Quella:돈이요? 전혀 안 벌릴걸요.
+Quella:당연히 쓰는 동안에는 돈을 안 받구요.  다 쓰고 출판해야 하는데.
+Quella:근데 완성해도, 실제로 출판할 지 모르겠어요. 아마 출판사도 안 구할 것 같아요.
+Quella:뭐...소박하죠.
+next:root-4
+action end
+
+action:response:root-4
+Xu
+root-4-A:그럼 생활은 어떻게 하시나요?:trigger.quellasSavings.on
+root-4-trigger.quellasSavings:돈이 다 떨어지면요?
+root-4-trigger.quellasSavings-1:파산하는 거에 되게 침착하시네요.
+<!>root-4-B:왜 글을 쓰는 거에요?:trigger.unlockQuella.on
+action end
+
+action:statement:root-4-A
+Quella:모아둔 돈이 있어요.  그걸로 버티는 중이죠.
+Quella:지금부터 대충, 4-5개월 정도는 살 수 있을 것 같네요. 그 이후엔 파산이구요.
+next:root-4
+action end
+
+action:statement:root-4-trigger.quellasSavings
+Quella:그건 별로 생각 안 해봤네요!
+Quella:일단 그 전에 최대한 많이 쓰는 것만 생각하고 있어요.
+next:root-4
+action end
+
+action:statement:root-4-trigger.quellasSavings-1
+Quella:그렇죠.
+Quella:되게 무대책처럼 보일 지도 모르겠지만, 되게 자유롭다고 느껴요.
+Quella:글쓰는 건 제 꿈이에요.  이것보다 우선해야 할 건 없죠.
+Quella:하고 싶지 않은 걸 하면서 사는 것 보단, 그냥 도전하고 실패할 거에요.
+next:root-4
+action end
+
+action:statement:root-4-B
+Quella:좋은 질문이네요.  간단한 답은, 좋아서죠.
+Quella:그래도 말처럼 즐겁지만은 않아요.  자주 되게 진저리난다고 느껴요...계속 고쳐야 하거든요!
+Quella:별로 돈도 안 되구요.
+Quella:그냥 말로는 전할 수 없는 걸 사람들과 나누고 싶은 것 같아요.
+Quella:무엇보다, 세상에 뭔가 남겨놓고 가고 싶은 거죠.
+Quella:넝마가 되어 쓰러지더라도, 이런 걸 해볼 기회가 있었다는 것, 그걸로 충분한 거라고 생각해요.
+next:root-null
+action end
+
+dialogue end
+
+
+
+

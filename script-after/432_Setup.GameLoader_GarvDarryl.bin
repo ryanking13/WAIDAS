@@ -1,0 +1,83 @@
+
+
+// GARV - DARRYL ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Garv-Darryl
+
+action:response:root
+Garv
+root-1:자네는 왜 이 배에 타게 되었는가?
+root-2:선장의 실종에 대해서 어떻게 생각하지?
+</>root-null:떠난다.
+action end
+
+action:statement:root-1
+Darryl:그냥 잠시 떠나있고 싶었어요.
+next:root-1-A
+action end
+
+action:response:root-1-A
+Garv
+root-1-B:무엇으로부터 말인가?
+root-1-C:그럼 구체적으로 왜 이 배지?
+</>root-null:떠난다.
+action end
+
+action:statement:root-1-B
+Darryl:집으로부터. 일로부터. 어떤...기억으로부터요.
+Darryl:모든 것으로부터죠, 사실.
+next:root-1-A
+action end
+
+action:statement:root-1-C
+Darryl:여기가 아무도 저를 찾지 않을 마지막 장소니까요.
+next:root-1-D
+action end
+
+action:response:root-1-D
+Garv
+root-1-E:흥미롭군.  왜 사람들이 자네를 찾지?
+</>root-null:떠난다.
+action end
+
+action:statement:root-1-E
+Darryl:뭐 정확히 말해서 찾는다는 건 아닙니다만...
+Darryl:누군가 제가 사라졌다는 걸 깨닫고, 어디 갔는 지 알려고 할 때, 제가 여기 있다고는 생각 안 하겠죠.
+Darryl:그런 의미입니다.
+next:root-null
+action end
+
+action:statement:root-2
+Darryl:별 생각 없어요.
+Darryl:끔찍한 일이죠.  근데 제가 뭔가 할 생각은 없습니다.
+Darryl:아무 것도요.
+next:root-2-A
+action end
+
+action:response:root-2-A
+Garv
+root-2-B:정의라던가, 진실에 대해서는 관심 없는가?
+root-2-C:누가 했는 지나, 왜 했는 지에 대해서 생각이 있는가?
+</>root-null:떠난다.
+action end
+
+action:statement:root-2-B
+Darryl:진실이 무엇인지는 압니다. 그건 세상에 정의가 없다는 거죠.
+Darryl:알아야만 했죠.  저는 변호사입니다.
+Darryl:...아무것도 그녀를 돌려놓지 않아요.
+Darryl:진실을 아는 것과, 그것을 이해하는 건 다른 얘기지요.
+next:root-2-A
+action end
+
+action:statement:root-2-C
+Darryl:사실, 누가 뭘 했는지 아무것도 모르죠.
+Darryl:왜 자살은 배제하는 거죠?
+Darryl:뭐, 그래도 당신 질문에 대답하자면, 살인이라고 가정하면...
+Darryl:...솔직히 누가 범인일 지는 전혀 모르겠군요.
+next:root-2-A
+action end
+
+dialogue end
+
+

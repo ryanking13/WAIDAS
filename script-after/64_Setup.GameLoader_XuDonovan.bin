@@ -1,0 +1,145 @@
+
+
+// XU - DONOVAN ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Xu-Donovan
+
+action:response:root
+Xu
+root-1:그 재킷이랑 글러브는 왜 하고 다니는 거에요? 춥나요?
+root-2:난 당신이 뭘 했는지 알아.
+</>root-null:관둔다.
+action end
+
+action:statement:root-1
+Donovan:그래 그런데. 그래서?
+next:root-1-A
+action end
+
+action:response:root-1-A
+Xu
+root-1-B:뭐, 지금 한여름이니까요. 별로 춥진 않을 텐데요.
+</>root-1-null:Nothing.
+action end
+
+action:statement:root-1-B
+Donovan:너랑 무슨 상관이지?
+Donovan:날 좀 내버려둬.
+next:root-null
+action end
+
+action:statement:root-2
+Donovan:나한테 하는 말인가?
+next:root-2-A
+action end
+
+action:response:root-2-A
+Xu
+root-2-B:그래.
+root-2-C:당신, 내 방에 들어와서 열쇠를 훔쳤지.
+</>root-2-null:아니, 아니에요.
+action end
+
+action:statement:root-2-B
+Donovan:아닐텐데.
+next:root-null
+action end
+
+action:statement:root-2-C
+Donovan:내가 그랬다고 치자.
+Donovan:그걸 내 앞에서 당당하게 말하는 이유는?
+next:root-3
+action end
+
+action:response:root-3
+Xu
+root-3-A:이건 협박이야.  돌려주지 않으면 알리겠어.:trigger.donovansProof.on
+root-3-trigger.donovansProof:무슨 증거로 그렇게 말하는 거지?
+root-3-B:이유를 알고 싶어.:trigger.myOwnInterest.on
+root-3-trigger.myOwnInterest:나 자신을 위해서 조용히 하라고?  지금 위협하는 거야?:trigger.seriousDanger.on
+root-3-trigger.seriousDanger:무슨 소리야 '위험'이라니?
+root-3-C:그냥 내가 얼마나 똑똑한지 알려주고 싶어서.
+</>root-3-D:관둔다.
+action end
+
+action:statement:root-3-A
+Donovan:그 말에는 문제가 있군.
+Donovan:그 열쇠는 네 것이 아니었어.  네가 훔친 거지.  나한테 증거가 있어.
+Donovan:누가 누굴 협박한다고?
+next:root-3
+action end
+
+action:statement:root-3-trigger.donovansProof
+Donovan:내가 왜 말해줘야 하지?
+Donovan:내가 허세부리는 것 같다면, 내가 어떻게 네 방에 열쇠가 있다는 걸 알았는지 자신한테 한 번 물어보라고.
+next:root-3
+action end
+
+action:statement:root-3-B
+Donovan:나한테는 그 열쇠가 필요한 아주 중요한 이유가 있어.  그게 내가 알려줄 수 있는 전부다.
+Donovan:그냥 조용히 닥치고 있는 게 너한테 좋을 거라는 말을 믿어줬으면 좋겠군.
+next:root-3
+action end
+
+action:statement:root-3-trigger.myOwnInterest
+Donovan:충고다.  객관적으로 좀 행동해 봐.
+Donovan:첫째로 넌 이 해골이 그려진 열쇠를 훔쳤고, 그 다음엔 나한테 이렇게 말하는 거...별로 현명하지 않군.
+Donovan:그러한 무모함이 널 위험에 빠트릴 거다.
+next:root-3
+action end
+
+action:statement:root-3-trigger.seriousDanger
+Donovan:이미 네가 알아야 하는 것 보다 더 많이 알려줬어.
+Donovan:그냥 잊어버리는 게 현명한 방법일 거다.
+next:root-3
+action end
+
+action:statement:root-3-C
+Donovan:뭐 감동이라도 해야 하나?
+Donovan:축하해.  이제 가라.
+next:root-3
+action end
+
+action:statement:root-3-D
+Donovan:잊어 버린 걸로 해라.
+next:root-null
+action end
+
+
+
+
+action:response:root2
+Xu
+root2-1:그 재킷이랑 글러브는 왜 하고 다니는 거에요? 춥나요?
+</>root-null:관둔다.
+action end
+
+action:statement:root2-1
+Donovan:그래 그런데. 그래서?
+next:root2-1-A
+action end
+
+action:response:root2-1-A
+Xu
+root2-1-B:뭐, 지금 한여름이니까요. 별로 춥진 않을 텐데요.
+</>root-null:관둔다.
+action end
+
+action:statement:root2-1-B
+Donovan:추위란 상대적인 거지.
+next:root-null
+action end
+
+
+action:statement:root3
+Donovan:내가 말했듯이, 조용히 내 일에 신경 꺼.
+Donovan:이상한 사람이 내가 여기 왜 있는 지 알게 되면, 완전 재앙이야.
+Donovan:우린 지금 살고 죽는 문제에 대해서 얘기하는 거야.
+next:root3-null
+action end
+
+
+dialogue end
+
+

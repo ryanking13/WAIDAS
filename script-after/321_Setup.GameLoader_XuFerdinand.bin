@@ -1,0 +1,85 @@
+
+
+// XU - FERDINAND ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Xu-Ferdinand
+
+action:statement:root
+Ferdinand:오, 안녕하세요!  식사는 어땠나요?
+Ferdinand:일등항해사로서, 스태프들을 돕는 것은 제 임무죠.
+Ferdinand:혹시 제 도움이 필요한 것이 있다면, 부디 말해주세요!
+next:root-1
+action end
+
+action:response:root-1
+Xu
+root-trigger.ChapterTwoOn:최근에 선장님을 보신 적이 있나요?
+root-1-B:날씨가 굉장히 안 좋네요.  괜찮을까요?
+root-trigger.ChapterThreeOn:혹시 선장님 한테 무슨 일이 생긴 게 아닐까요?
+</>root-null:떠난다.
+action end
+
+action:statement:root-trigger.ChapterTwoOn
+Ferdinand:아니오, 못본 것 같군요.
+Ferdinand:잠시 어디갔나보죠. 어쩌면 여자화장실에 있을 지도 모르죠!
+Ferdinand:초조해하지 말아요, 우리 성실한 선장님은 분명 어딘가에서 배를 지휘하고 있을 겁니다!
+next:root-1-A-2
+action end
+
+action:statement:root-1-B
+Ferdinand:괜찮냐고요?  물론 다 괜찮죠!
+Ferdinand:수평선에 태풍이 있을 지도 모르겠습니다만, 큰 문제는 없을 겁니다.
+Ferdinand:용감한 선장님 옆에 제가 있는 한, 비와 바람 따위는 우리에게 상대가 안 되죠.
+Ferdinand:아무 지연 없이 예정 시각에 도착할 겁니다.
+next:root-1-B-2
+action end
+
+action:response:root-1-B-2
+Xu
+</>root-null:못 믿어서 미안해요.
+action end
+
+
+action:response:root-1-A-2
+Xu
+root-1-A-3:혹시 그녀에게 무슨 일이 일어 난 건 아닐까요?
+</>root-null:그렇게 말씀하신다면야...
+action end
+
+action:statement:root-1-A-3
+Ferdinand:그녀에게 무슨 일이?  오 신이시여, 그것 참 끔찍한 생각이군요!
+Ferdinand:우리 배는 안전 그 자체입니다.  대체 무슨 일이 생길 수 있겠어요?
+next:root-null
+action end
+
+
+action:statement:root-trigger.ChapterThreeOn
+Ferdinand:말했듯이, 아무 일도 없을 겁니다.
+Ferdinand:그녀는 이 근처 어딘가에 있을 거에요.
+Ferdinand:뭐 이렇게 오래 떠나있는 건 참 책임감 없는 행동이긴 하지만요!
+next:root-missing
+action end
+
+action:response:root-missing
+Xu
+root-missing-A:그럼 대체 그녀는 어디에 있는 걸까요?  이미 있을 것 같은 곳은 다 찾아봤는데...
+root-missing-B:혹시 뭔가 저한테 숨기는 거 있어요?
+</>root-null:관둔다.
+action end
+
+action:statement:root-missing-A
+Ferdinand:흠...그건 잘 모르겠네요.
+Ferdinand:아직 어딘가에 숨어있을 만한 장소가 있는 것 아닐까요.
+next:root-missing
+action end
+
+action:statement:root-missing-B
+Ferdinand:그럴리가요!  아무 것도 없습니다!  전혀요.
+Ferdinand:제가 왜 뭔가를 숨기겠습니까.
+next:root-missing
+action end
+
+dialogue end
+
+

@@ -6,45 +6,45 @@ Xu-Marcurio
 
 action:response:root
 Xu
-root-1:How's the kitchen doing?
-root-trigger.ChapterTwoOn:Have you seen the captain around lately?
-</>root-null:Nevermind.
+root-1:요즘 주방은 어때?
+root-trigger.ChapterTwoOn:혹시 최근에 선장님 본 적 있어?
+</>root-null:관둔다.
 action end
 
 action:statement:root-1
-Marcurio:Ha.  Understocked as always.
-Marcurio:Don't they realize I can only work with what I'm given?
-Marcurio:Better not complain when it's noodles three meals a day.
+Marcurio:뭐 언제나 자재부족에 시달리지.
+Marcurio:사람들은 내가 있는 걸로만 음식을 만들 수 있다는 걸 모르는 걸까.
+Marcurio:삼시세끼 면만 나와도 투정부리지 말라고.
 next:root-1-A
 action end
 
 action:statement:root-trigger.ChapterTwoOn
-Marcurio:Come to think of it, I haven't.  She wasn't down for dinner.
-Marcurio:Why do you ask?
+Marcurio:그러고 보니, 본적 없네.  식사하러도 안 오셨고.
+Marcurio:그건 왜?
 next:root-2-A
 action end
 
 action:response:root-1-A
 Xu
-root-1-A-2:I'm sure you'll figure something out, Marc.
-root-1-A-3:You always complain.  It's not really that bad, right?
+root-1-A-2:너라면 어떻게든 잘 할거야, Marc.
+root-1-A-3:너는 언제나 불평을 달고 살잖아.  실제로 그렇게 나쁜 상황은 아니지?
 action end
 
 action:statement:root-1-A-2
-Marcurio:Haha, yeah, throw the cook under the bus!
-Marcurio:Sheesh, thanks for the support.
+Marcurio:하하, 그래 그렇게 계속 막 몰아붙여 보라고.
+Marcurio:흫, 격려해줘서 고맙다.
 next:root-1-A-2-B
 action end
 
 action:statement:root-1-A-3
-Marcurio:The day I stop complaining is the day I give up.
-Marcurio:It could be worse, but it could sure as hell be better!
+Marcurio:내가 불평을 멈추는 날은 그만두는 날이지.
+Marcurio:상태가 더 심해질수도 있는데, 아마도 나아질 거다.
 next:root-null
 action end
 
 action:response:root-1-A-2-B
 Xu
-</>root-null:Any time.
+</>root-null:언제든지 말만 하셔.
 action end
 
 action:response:root-2-A

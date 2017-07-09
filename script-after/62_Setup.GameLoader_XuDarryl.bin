@@ -1,0 +1,199 @@
+
+
+
+// XU - DARRYL ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Xu-Darryl
+
+action:response:root
+Xu
+root-1:팁 고마웠어요.
+root-2:대체 밖에 무슨 흥미로운 게 있어서 나와 있는 건가요?
+root-3:무슨 일을 하시나요?
+</>root-null:관둔다.
+action end
+
+action:statement:root-1
+Darryl:흠?
+next:root-1-A
+action end
+
+action:response:root-1-A
+Xu
+root-1-B:당신은 언제나 팁을 많이 주죠.  고맙다구요.
+action end
+
+action:statement:root-1-B
+Darryl:아, 뭐 그래.  나도 한 때 웨이터일을 해서 말이야.  동점심이 든 거지.
+Darryl:별로 다시 하고 싶은 일은 아니지.  너는 이 일 수입은 좀 괜찮나?
+next:root-1-C
+action end
+
+action:response:root-1-C
+Xu
+root-1-D:당신 때보다 더 심할 지도요.
+root-1-E:매 순간 순간이 끔찍해요.
+action end
+
+action:statement:root-1-D
+Darryl:뭐 그래.  그럴 것 같군.
+next:root-null
+action end
+
+action:statement:root-1-E
+Darryl:하 이것 참!  솔직한 대답이군.
+Darryl:정말로 행복하지 않다면, 그걸 동기로 좀더 나은 곳으로 가도록 해보라고. 
+next:root-null
+action end
+
+action:statement:root-2
+Darryl:태양, 파도, 맑은 공기.  오랜 기억을 떠올리게 하지.
+Darryl:그러고보니, 네 친구랑은 무슨 일이 있었던 거지?
+next:root-2-A
+action end
+
+action:response:root-2-A
+Xu
+root-2-C:그냥 좀 싸웠어요.
+root-2-D:일하러 돌아갔어요.
+action end
+
+action:statement:root-2-C
+Darryl:그래?  그건 안타깝게 됐군.
+next:root-2-null
+action end
+
+action:statement:root-2-D
+Darryl:그래.  그 아무도 안 가는 전망실로 돌아간 모양이군.
+next:root-2-E
+action end
+
+action:statement:root-2-E
+Darryl:...뭐 너도 알겠다만 그 녀석은 너를 좋아하는 걸로 보이는데.
+Darryl:너는 별로 안 그런 것 같군, 안 그래?
+next:root-2-F
+action end
+
+action:response:root-2-F
+Xu
+root-2-G:어, 그게...
+root-2-H:그렇죠.
+action end
+
+action:statement:root-2-G
+Darryl:그렇게 주저하니까 괜히 그녀석이 희망을 갖는 거잖아.
+Darryl:그 녀석이 첫 발걸음을 내딛기나 할 지 모르겠군.
+Darryl:질질끌수록 더 상황이 악화될 걸.
+Darryl:깔끔하게 정리하는 게 좋아.
+next:root-2-J
+action end
+
+action:statement:root-2-H
+Darryl:모든 사람은 자신을 원하지 않는 사람을 원하는 법이지.
+next:root-null
+action end
+
+action:response:root-2-J
+Xu
+</>root-null:네, 생각해 볼게요.
+action end
+
+
+action:statement:root-3
+Darryl:난 변호사 일을 해.
+next:root-3-A
+action end
+
+action:response:root-3-A
+Xu
+root-3-B:오 멋진데요, 변호사 일은 맘에 드나요?:trigger.chap1xuDarrylProgress.on
+root-3-trigger.chap1xuDarrylProgress:싫으면, 왜 변호사가 된 건가요?
+root-3-C:완전 많이 벌겠네요, 그렇죠?
+</>root-null:관둔다.
+action end
+
+action:statement:root-3-B
+Darryl:흥, TV를 너무 많이 본 모양인데.
+Darryl:네가 변호사를 어떻다고 생각하는 지 모르겠는데, '멋지다'라고 할 만한 일은 없다는 것만 말해두지.
+next:root-3-A
+action end
+
+action:statement:root-3-trigger.chap1xuDarrylProgress
+Darryl:안정적이라서지.  좋은 커리어를 위해서.
+Darryl:여행, 글쓰기...그런 자유로움 대신.
+Darryl:그냥 변호사가 된 거지.
+next:root-3-A
+action end
+
+action:statement:root-3-C
+Darryl:눈빛이 반짝반짝한데?
+Darryl:다들 먹고 사는 데 바쁘지.  그런 점에서 난 운 좋은 편이긴 하지.
+Darryl:문제는...그걸로 좋은 걸까?
+next:root-3-A
+action end
+
+
+
+action:response:root2
+Xu
+root2-A:여기 있는 걸 참 좋아하시나 보네요.
+root2-B:여행하는 것, 글쓰는 것을 좋아하신다고 했잖아요.  왜 그럼 왜 하지 않는 건가요?
+</>root2-null:관둔다.
+action end
+
+action:statement:root2-A
+Darryl:뭐 그렇지.
+Darryl:보통 여긴 아무도 없어서.  그게 맘에 들어.
+next:root2-A-1
+action end
+
+action:response:root2-A-1
+Xu
+root2-A-2:안에 들어와봐요!  여기 계속 있으면 지루하지 않나요?
+root2-A-3:아, 제가 지금 방해하고 있는 건가요?
+</>root2-null:Never mind.
+action end
+
+action:statement:root2-A-2
+Darryl:...마음만 받지.
+Darryl:난 그냥 여기서 계속 이렇게 나와 있을 생각이야.
+next:root2-A-1
+action end
+
+action:statement:root2-A-3
+Darryl:뭐 별로.
+Darryl:신경쓰지 않아도 돼.
+next:root2-A-1
+action end
+
+action:statement:root2-B
+Darryl:그러면 좋겠지.  시간도 있고 돈도 있고.
+Darryl:언제나 아시아로 가보고 싶었지...남미랑...아프리카도.
+Darryl:웃기게도, 지금은 그런 욕구가 없어.
+next:root2-B-1
+action end
+
+action:response:root2-B-1
+Xu
+root2-B-2:왜요?  좋은 아이디어 같은데!
+root2-B-3:혼자 가는 건 지루하죠.  혹시라도 파트너가 필요하다면...
+</>root2-null:관둔다.
+action end
+
+action:statement:root2-B-2
+Darryl:그래.  좋은 아이디어야.
+Darryl:...그냥 더 이상 끌리지가 않아서.
+Darryl:그리고, 지금은 다른 방향으로의 휴가를 생각하고 있어서.
+next:root2-B-1
+action end
+
+action:statement:root2-B-3
+Darryl:아니, 나는 혼자로 충분해.
+next:root2-B-1
+action end
+
+
+dialogue end
+
+
