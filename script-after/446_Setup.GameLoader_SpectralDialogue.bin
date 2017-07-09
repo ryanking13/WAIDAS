@@ -1,0 +1,784 @@
+
+
+
+
+dialogue start
+GhostClueNotice
+
+action:statement:root
+null:내 자신에 대해서 조금 더 깨달은 느낌이 든다.
+next:root-null
+action end
+
+dialogue end
+
+
+dialogue start
+GhostUpgradeOne
+
+action:statement:root
+null:나 자신이 좀더 완전해진 느낌이 든다.
+null:이 세상에 더욱 연결된 것 같다.
+next:root-null
+action end
+
+dialogue end
+
+
+dialogue start
+GhostUpgradeTwo
+
+action:statement:root
+null:이게 내 예전 모습인가?
+null:마치 세상에 직접 닿을 수 있는 것 같은 느낌이 든다.
+null:사람들이 날 볼 수 있을까? 상호작용할 수 있을까?
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+dialogue start
+Ghost1-Alton
+action:statement:root
+Alton:...이상해.  누군가 있는 느낌인데.
+next:root-null
+action end
+dialogue end
+
+dialogue start
+Ghost1-Xu
+action:statement:root
+Xu:어라 뭔가 들린 것 같은데?
+next:root-null
+action end
+dialogue end
+
+dialogue start
+Ghost1-Marcurio
+action:statement:root
+Marcurio:...잠이 부족한 모양이군.  이제 환각까지 보다니.
+next:root-null
+action end
+dialogue end
+
+dialogue start
+Ghost1-Ferdinand
+action:statement:root
+Ferdinand:두 두두두 어라?
+Ferdinand:흠, 아무것도 아닌 것 같네요.
+next:root-null
+action end
+dialogue end
+
+dialogue start
+Ghost1-Darryl
+action:statement:root
+Darryl:...그녀를 잊지 못해서 환각까지 보는 모양이군.
+next:root-null
+action end
+dialogue end
+
+dialogue start
+Ghost1-Quella
+action:statement:root
+Quella:이상하네, 뭔가 본 것 같은데...
+next:root-null
+action end
+dialogue end
+
+dialogue start
+Ghost1-Garv
+action:statement:root
+Garv:...흠?
+Garv:아무것도 아니군.  아직 죽기에는 이른데 말이지.
+next:root-null
+action end
+dialogue end
+
+dialogue start
+Ghost1-Gwen
+action:statement:root
+Gwen:...뭔가가 척추를 훑고 지나가는 느낌이야.  누가 날 쳐다보고 있는 게 느껴져.
+next:root-null
+action end
+dialogue end
+
+dialogue start
+Ghost1-Donovan
+action:statement:root
+Donovan:...흠.
+next:root-null
+action end
+dialogue end
+
+
+
+
+dialogue start
+Ghost2-Alton
+action:statement:root
+Alton:방금 선장님의 모습이 보인 것 같은데?
+Alton:아냐, 그럴리가 없어. 스트레스를 너무 많이 받은 모양이야.
+next:root-null
+action end
+dialogue end
+
+dialogue start
+Ghost2-Xu
+action:statement:root
+Xu:Smilla?  선장님이에요?
+Xu:왜 아직 그녀가 여기 있는 것 같은 느낌이 드는 걸까?
+next:root-null
+action end
+dialogue end
+
+dialogue start
+Ghost2-Marcurio
+action:statement:root
+Marcurio:뭐?  아냐 그럴리 없어.  이건 환각이다.
+Marcurio:선장이 나를 쳐다보고 있는 것 같은 느낌이 들었는데.
+Marcurio:도움을 주려는 건가...아님 복수라도 하러 온건가?
+next:root-null
+action end
+dialogue end
+
+dialogue start
+Ghost2-Ferdinand
+action:statement:root
+Ferdinand:오, 유령 아가씨 안녕하세요!
+Ferdinand:사실, 전 유령을 믿지는 않는답니다. 뭔가 정신학적으로 이상이 생긴 걸까요?
+Ferdinand:젠장, 이럴 때는 정말 끔찍하단 말야.
+next:root-null
+action end
+dialogue end
+
+dialogue start
+Ghost2-Quella
+action:statement:root
+Quella:엄마?  엄마에요?
+Quella:아냐, 그럴리가 없어.  엄마보다는 선장님을 좀 더 닮았던 것 같은데.
+Quella:그냥 내가 보고 싶은 걸 봤다고 생각하는 걸까...
+next:root-null
+action end
+dialogue end
+
+dialogue start
+Ghost2-Garv
+action:statement:root
+Garv:아니 이럴리가, 이럴리가 없어!
+Garv:오, 아무것도 아니었군.  이제 나도 죽을 때가 된건가?
+Garv:이런 일을 하기에는 너무 늙은 것 같군.  슬슬 은퇴해야 겠어...
+next:root-null
+action end
+dialogue end
+
+dialogue start
+Ghost2-Donovan
+action:statement:root
+Donovan:루시? 당신이야...?  내가 다 해결할게, 나를 믿어줘.
+Donovan:아...아무것도 아니었군.  내가 미쳐가는 건가.
+next:root-null
+action end
+dialogue end
+
+dialogue start
+Ghost2-Gwen
+action:statement:root
+Gwen:시스?  당신이야?
+Gwen:당신이 예전에 죽었을 거라고 생각했어.  정말로 당신이야?
+next:root-2
+action end
+
+action:response:root-2
+Smilla
+root-null:귀를 기울인다:trigger.GhostTraumaPortal.on
+action end
+
+action:statement:root2
+Gwen:뭔가...달라진 것 같아.
+Gwen:몇달간 아주 끔찍한 악몽을 꾸고 있었던 것 같아.
+Gwen:...이젠 더 이상 그곳에 있지 않아.  절대로 돌아가지 않을 거야.
+next:root-null
+action end
+
+dialogue end
+
+dialogue start
+Ghost2-Darryl
+action:statement:root
+Darryl:마리?  정말로 당신이야?
+Darryl:내가 미안해, 다 내 잘못이야.  내가 당신의 일을 좀 더 잘 눈치챘더라면... 어떻게 그럴 수가 있었을까...
+Darryl:나였어야 했어.  나였어야 했다고.
+next:root-2
+action end
+
+action:response:root-2
+Smilla
+root-null:귀를 기울인다:trigger.GhostVoidPortal.on
+action end
+
+action:statement:root2
+Darryl:...
+Darryl:뭔가 이상한 느낌이 나를 훑고 지나간 느낌이야.
+Darryl:살아있는 악몽에서 깨어난 느낌이군.
+Darryl:마리...당신도 이런 악몽 속에 갇혀있었던 거야?
+next:root-null
+action end
+
+
+dialogue end
+
+
+
+
+
+//////////////////////////////   VOID   /////////////////////////////////////////////////
+
+
+
+dialogue start
+VoidPills1
+
+action:statement:root
+null:너는 그녀를 가질 자격이 없어.
+next:root-null
+action end
+dialogue end
+
+dialogue start
+VoidPills2
+
+action:statement:root
+null:우울해
+null:아무 의미 없어
+next:root-null
+action end
+dialogue end
+
+dialogue start
+VoidDiary
+
+action:statement:root
+null:네 잘못이야
+null:네 잘못이야
+null:네 잘못이야
+next:root-null
+action end
+dialogue end
+
+
+
+
+dialogue start
+VoidDarrylImage
+
+action:statement:root
+Darryl:          
+next:root-2
+action end
+
+action:response:root-2
+Smilla
+root-A:Darryl, 나에요.
+root-B:여기가 어디죠?
+root-null:Never mind.
+action end
+
+action:statement:root-A
+Darryl:마리
+Darryl:당신이야?
+next:root-A-2
+action end
+
+action:response:root-A-2
+Smilla
+root-A-A:아뇨, 나는 Smilla에요.  이 배의 선장이죠.
+root-mari:그래요, 마리에요.
+action end
+
+action:statement:root-A-A
+Darryl:누군지 모르겠군
+Darryl:아무 상관없지만
+next:root-A-B
+action end
+
+action:response:root-A-B
+Smilla
+root-A-C:날 기억하지 못해요?
+root-A-D:난 살해당했어요.  당신의 도움이 필요해요.
+root-A-E:정신 차려요!
+root-null:소용 없는 것 같다.
+action end
+
+action:statement:root-A-C
+Darryl:너는 그녀가 아냐
+Darryl:왜 그녀의 모습을 하고 있지
+Darryl:네가 누군지 모르겠군
+next:root-A-B
+action end
+
+action:statement:root-A-D
+Darryl:뭘 말하는 건지 모르겠군
+Darryl:난 아무도 도울 수 없어
+next:root-A-B
+action end
+
+action:statement:root-A-E
+Darryl:               
+next:root-A-B
+action end
+
+
+action:statement:root-B
+Darryl:우리 집
+Darryl:방금 회사에서 돌아왔어
+next:root-B-A
+action end
+
+action:response:root-B-A
+Smilla
+root-B-B:아니에요.  당신은 지금 배위에 있어요, 기억 안 나요?
+root-B-C:여기서 뭘 하는 거죠?
+root-B-D:바닥에 떨어져있는 건 다 뭐에요?
+root-null:관둔다.
+action end
+
+action:statement:root-B-B
+Darryl:아냐
+Darryl:난 지금 집에 있어
+next:root-B-A
+action end
+
+action:statement:root-B-C
+Darryl:나,
+Darryl:나는 지금 막 회사에서 돌아왔어
+Darryl:언제나 처럼
+next:root-B-A
+action end
+
+action:statement:root-B-D
+Darryl:오 신이시여
+Darryl:안 돼
+Darryl:어째서  
+Darryl:어째서  
+Darryl:어째서   
+next:root-B-A
+action end
+
+
+action:statement:root-mari
+Darryl:미안해
+Darryl:내가 미안해 
+Darryl:사랑해
+next:root-C
+action end
+
+action:response:root-C
+Mari
+root-C-A:왜 미안해하는 거야?
+root-C-B:미안해하지 않아도 돼
+action end
+
+action:statement:root-C-A
+Darryl:내가 좀 더 잘 했어야 했어
+Darryl:알아차렸어야 했어
+Darryl:내 잘못이야
+Darryl:좀 더 잘 했어야 했는데
+Darryl:내 잘못이야
+Darryl:내 잘못이야 
+next:root-C-2
+action end
+
+action:statement:root-C-B
+Darryl:내 잘못이야
+Darryl:어째서
+Darryl:내가 너를 그렇게 만든 걸까
+next:root-C
+action end
+
+action:response:root-C-2
+Mari
+root-C-C:일어나요.
+root-C-D:문제가 있어요.  지금 당신이 다른 사람들을 도와줘야 해요.
+root-C-E:당신 잘못이 아니에요.
+action end
+
+action:statement:root-C-C
+Darryl:사랑해
+Darryl:사랑해
+next:root-C-2
+action end
+
+action:statement:root-C-D
+Darryl:누구야
+Darryl:모르겠어
+Darryl:떠나지마
+Darryl:미안해
+next:root-C-2
+action end
+
+action:statement:root-C-E
+Darryl:그럼 왜
+Darryl:모르겠어
+Darryl:왜 떠난 거야
+next:root-why
+action end
+
+action:response:root-why
+Mari
+root-why-A:죽고 싶었어요.
+root-why-B:나 자신이 너무 싫었어요.
+root-why-C:너무 무거운 짐을 지고 있었어요.
+root-why-D:내가 너무 아팠어요.:trigger.chap5voidEndSwitch.on
+action end
+
+action:statement:root-why-A
+Darryl:대체 왜
+Darryl:이해할 수 없어
+Darryl:당신은 행복했잖아
+next:root-why
+action end
+
+action:statement:root-why-B
+Darryl:모두가 당신을 사랑했어
+Darryl:나도 당신을 사랑해
+Darryl:어떻게 자신을 싫어할 수가 있어
+next:root-why
+action end
+
+action:statement:root-why-C
+Darryl:내가 도와줄 수 있었을텐데
+Darryl:우리 함께 이겨나갈 수 있었을텐데
+Darryl:너 나아질 수 있었을텐데
+Darryl:이젠 더 이상 그럴 수 없어
+Darryl:모르겠어
+next:root-why
+action end
+
+action:statement:root-why-D
+Darryl:아프다니
+Darryl:그게 무슨 뜻이야
+next:root-null
+action end
+
+action:statement:root-why2
+Smilla:내가 제 정신이 아니었어요.  마음이 너무 아파서, 고칠 수도 없었어요.
+Smilla:언제나 끔찍하고 고통스러운 생각을 했고, 거기서 도망칠 수 없었어요.
+Smilla:생각과 감정이 뒤틀려서, 제 정신이 아니었어요.
+next:root-null
+action end
+
+action:statement:root-why3
+Darryl:다른 방법이 있었을 거야
+Darryl:당신을 돕고 싶어
+Darryl:하지만 이제 그럴 수가 없어
+Darryl:그럴 수 없어
+next:root-null
+action end
+
+action:statement:root-why4
+Smilla:알아요.  내가 미안해요...내가 아무것도 바꾸지 못해서.  너무 늦었어요.
+Smilla:하지만 당신은 아직 늦지 않았어요, Darryl.
+Smilla:당신은 아직 행복할 수 있어요.
+Smilla:지금부터라도, 지금은 행복해지길 원하지 않는다고 해도.  언젠가는 그럴 거에요. 그리고 당신을 그럴 수 있어요.
+Smilla:제발...희망을 놓지 말아요.
+next:root-null
+action end
+
+dialogue end
+
+dialogue start
+VoidClear
+
+action:statement:root
+Darryl:...
+Darryl:뭔가 이상한 느낌이 나를 훑고 지나간 느낌이야.
+Darryl:살아있는 악몽에서 깨어난 느낌이군.
+Darryl:마리...당신도 이런 악몽 속에 갇혀있었던 거야?
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+//////////////////////////////   TRAUMA   /////////////////////////////////////////////////
+
+
+
+
+dialogue start
+TraumaIntruder
+
+action:statement:root
+null:가버려 가버려 가버려 가버려
+next:root-null
+action end
+dialogue end
+
+dialogue start
+TraumaBed
+
+action:statement:root
+null:이건 정상이 아냐
+next:root-null
+action end
+dialogue end
+
+
+dialogue start
+TraumaNightstand
+
+action:statement:root
+null:제발 부탁이야
+next:root-null
+action end
+dialogue end
+
+
+dialogue start
+TraumaGwenImage
+
+
+action:statement:root
+Gwen:                        
+next:root-2
+action end
+
+action:response:root-2
+Smilla
+root-A:Gwen, 나야.
+root-B:여기가 어디지?
+root-null:Never mind.
+action end
+
+action:statement:root-A
+Gwen:누구야
+Gwen:가까이 오지마
+next:root-who
+action end
+
+action:response:root-who
+Smilla
+root-who-A:나야 Smilla.  이 배의 선장.
+root-who-B:네 여동생이야.
+root-2:관둔다.
+action end
+
+action:statement:root-who-A
+Gwen:선장...배...
+Gwen:무슨 소리를 하는 건지 모르겠어.
+next:root-who-captain
+action end
+
+action:response:root-who-captain
+Smilla
+root-who-captain-A:너는 지금 배 위에 있어.  기억나?
+root-who-captain-B:난 살해당했어.  너의 도움이 필요해
+root-who-captain-C:왜 그래?  너 좀 이상해.
+root-2:소용 없는 것 같다...
+action end
+
+action:statement:root-who-captain-A
+Gwen:아냐 그럴 리가 없어
+Gwen:난 배 안에 있지 않아
+Gwen:여긴 내 침실이야
+next:root-who-captain
+action end
+
+action:statement:root-who-captain-B
+Gwen:살해당하지 않았어
+Gwen:사람들은 나한테 네가 아프다고 말했어
+Gwen:네가 병원에서 죽었다고
+next:root-who-captain
+action end
+
+action:statement:root-who-captain-C
+Gwen:이건 꿈인가
+Gwen:네 목소리를 들을 수 있어, 하지만 네 입은 말하고 있지 않아
+Gwen:난 깨어날 수 있어
+next:root-who-captain
+action end
+
+
+action:statement:root-B
+Gwen:내 침실
+Gwen:이제 잘 시간이야
+Gwen:뭔가 이상해
+next:root-where
+action end
+
+action:response:root-where
+Smilla
+root-where-A:아냐...넌 배 안에 있어, 기억나?
+root-where-B:여기서 뭘 하는 거야?
+root-where-C:저 문에 있는 사람은 누구야?
+root-null:그만둔다.
+action end
+
+action:statement:root-where-A
+Gwen:거짓말 하지 마
+Gwen:너는 왜 여기에 있지
+Gwen:다른 사람이 보기 전에 얼른 가버려
+next:root-where
+action end
+
+action:statement:root-where-B
+Gwen:여기 있기 싫어
+Gwen:제발 부탁이야
+Gwen:가버려
+Gwen:난 혼자 내버려 둬
+Gwen:그만해
+next:root-where
+action end
+
+action:statement:root-where-C
+Gwen:안 돼
+Gwen:제발 안 돼
+Gwen:이건 꿈이야
+Gwen:현실이 아냐
+Gwen:그만해
+next:root-where
+action end
+
+
+
+
+action:statement:root-who-B
+Gwen:엘리사
+Gwen:넌 여기 있어선 안 돼
+Gwen:만약 그들이 네가 이 시간에 방 밖에 나온 걸 본다면
+Gwen:제발 돌아가
+next:root-who-sis
+action end
+
+action:response:root-who-sis
+Elisa
+root-who-sis-A:'그들' 이 누구야?
+root-who-sis-B:그 사람들은 여기에 없어.  우리 둘 뿐이야.
+action end
+
+action:statement:root-who-sis-A
+Gwen:그들은 알아
+Gwen:분명히 알아
+Gwen:하지만 모르는 척 하지
+next:root-who-sis
+action end
+
+action:statement:root-who-sis-B
+Gwen:거짓말 하지마
+Gwen:그는 알아
+Gwen:그가 지금 나를 지켜보고 있어
+next:root-fear
+action end
+
+action:response:root-fear
+Elisa
+root-fear-A:나를 믿어줘.  우리 둘 뿐이야.
+root-fear-B:제발 그웬, 정신차려!  난 네 도움이 필요해!
+root-fear-C:아냐, 그는 널 감시하고 있지 않아.  그는 먼 곳에 있어.
+action end
+
+action:statement:root-fear-A
+Gwen:믿어
+Gwen:아냐
+Gwen:넌 눈구야
+Gwen:나한테서 뭘 원하는 거야
+Gwen:나한테서 떨어져
+next:root-fear
+action end
+
+action:statement:root-fear-B
+Gwen:조용히 해
+Gwen:네가 그러면 우리 둘 다한테 문제가 생길 거야
+Gwen:제발 그들이 알아채기 전에 나를 혼자 내버려 둬 제발 제발 제발
+next:root-fear
+action end
+
+action:statement:root-fear-C
+Gwen:뭐
+Gwen:근데 왜 난 그가 나를 보고 있다는 게 느껴지지
+Gwen:언제나
+next:root-fear2
+action end
+
+action:response:root-fear2
+Elisa
+root-fear2-A:무서워 하고 있다는 거 이해해, 그렇지만 넌 지금 안전해.
+root-fear2-B:그만 떨쳐버려야 해
+root-fear2-C:집중해 Gwen.  넌 지금 꿈 속에 있어. 이건 현실이 아냐.:trigger.chap5traumaEndSwitch.on
+action end
+
+action:statement:root-fear2-A
+Gwen:아냐
+Gwen:너도 알잖아 여긴 위험해
+Gwen:너도 알고 있다는 걸 알아
+Gwen:너도 아파왔잖아
+next:root-fear2
+action end
+
+action:statement:root-fear2-B
+Gwen:어떻게
+Gwen:왜
+Gwen:그런 모든 걸 겪고서
+Gwen:불가능해
+next:root-fear2
+action end
+
+action:statement:root-fear2-C
+Gwen:우리가 꼬마였을 때처럼
+Gwen:일어나면 네가 있고
+Gwen:모든 게 꿈이었다고 알려주면 될 텐데
+Gwen:근데 어째서
+Gwen:왜 언제나 이렇게 현실처럼 느껴지는 걸까
+next:root-null
+action end
+
+action:statement:root-fear3
+Smilla:왜냐하면 Gwen, 그 중에 일부는 현실이니까.
+Smilla:일부는 아직도 네 마음 속에 존재해.  그 마음이 다시 만들어내는 거야.
+Smilla:하지만 일부일 뿐인 걸.  전부 진짜가 아냐.
+next:root-null
+action end
+
+action:statement:root-fear4
+Gwen:그럼 대체 차이가 뭔데
+Gwen:내가 꾸는 악몽과 현실이 똑같은 데
+Gwen:뭐가 뭐든 무슨 상관인 거야
+next:root-null
+action end
+
+action:statement:root-fear5
+Smilla:네가 깨어났을 때의 악몽은 네 힘으로 바꿀 수 있는 거야.
+Smilla:너를 도와줄 수 있는 사람들이 있어.  혼자 짊어질 필요는 없어.
+Smilla:딱 한 번만 믿음을 가지면 돼.
+next:root-null
+action end
+
+dialogue end
+
+
+dialogue start
+TraumaClear
+
+action:statement:root
+Gwen:뭔가...달라진 것 같아.
+Gwen:몇달간 아주 끔찍한 악몽을 꾸고 있었던 것 같아.
+Gwen:...이젠 더 이상 그곳에 있지 않아.  절대로 돌아가지 않을 거야.
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+

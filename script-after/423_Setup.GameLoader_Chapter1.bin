@@ -1,0 +1,436 @@
+
+
+
+dialogue start
+AltonMarcurioIntro
+
+action:statement:root
+
+Alton:어이, Marcurio!  이렇게 마주치니까 좋은 걸.
+Marcurio:그래?  무슨 일이라도 있어?
+Alton:오, 아냐 별로. 저녁은 끝났어?
+Marcurio:그래, 저녁 식사 타임은 끝났지.  그래도 주방으로 돌아가려고.
+Alton:주방에 있는 걸 정말 좋아하는구나.  네가 어디 놀러가는 건 한 번도 못 본 것 같아.
+Alton:전망실에서의 내 일은 끝나서, 난 이제 쉬러가려고!
+Marcurio:...그래서 뭔가 할 말이라도?
+Alton:아니 그냥, 아 그러고보니 Xu를 찾고 있는데. 걔도 지금 휴식 시간이지?
+Marcurio:그럼, 당연하지.
+Alton:어디있는 지 알아?
+Marcurio:아니.
+Alton:어, 그래.  그냥...오늘 아침에 되게 화나보이더라고, 넌 그렇게 안 느꼈어?
+Marcurio:글쎄.  모르겠군.
+Alton:무슨 일이 있는가 싶어서.
+Marcurio:별 일 없겠지.
+Alton:흠, 혹시 모르니까 한 번 그녀 방에 들러봐야 겠다.
+Marcurio:마음대로 해라.  난 주방으로 돌아간다.
+Alton:....잘 가....
+next:end
+
+action end
+dialogue end
+
+
+dialogue start
+AltonIntroTwo
+
+action:statement:root
+
+Alton:....
+Alton:위 층에 가서 Xu의 방을 확인할 수도 있는데, 그래도 되는 지 모르겠네.
+Alton:이상하려나?  모르겠네...
+next:end
+
+action end
+dialogue end
+
+
+
+dialogue start
+AltonXuCinematic
+
+action:statement:root
+Xu:Alton, 무슨 일이야?
+next:root-1
+action end
+
+action:response:root-1
+Alton
+root-2:별일 아냐.  넌 어때?
+action end
+
+action:statement:root-2
+Xu:난 뭐 별일 없지.  들어와.
+next:root-3
+action end
+
+action:response:root-3
+Alton
+root-4:그래.
+action end
+
+dialogue end
+
+
+dialogue start
+AltonXuCinematic2
+
+action:response:root
+Alton
+root-2-trigger.altonOne:뭔가 문제 없어?  오늘 아침에 되게 화나 보이던데.:trigger.altonThree.on
+root-2-trigger.altonTwo:아 맞아, 내가 믹스테이프를 만들었는데 말야.:trigger.altonFour.on
+</>root-2-trigger.altonBoth:아 그래... 다음에 봐.
+action end
+
+action:statement:root-2-trigger.altonOne
+Xu:다-당연하지!  다 괜찮아.  걱정하게 해서 미안해.
+next:root
+action end
+
+action:statement:root-2-trigger.altonTwo
+Xu:어, 그건 참...잘됐네.
+next:root-awk
+action end
+
+action:response:root-awk
+Alton
+root-awk2:나중에 전망실에 들러줄래?  내가 들려줄게, 믹스테이프.
+action end
+
+action:statement:root-awk2
+Xu:아...그래.  내가 좀 바빠서 말야, 별로 시간이 없을 것 같네.
+next:root
+action end
+
+action:statement:altonWait
+Xu:기다려!
+Xu:솔직하게 말할게.
+Xu:네 말 대로야.  어젯 밤에 일이 있었어.
+Xu:누가 내 방에 침입해서 물건을 훔쳐갔어.
+next:root-null
+action end
+
+action:response:root-3
+Alton
+root-4:뭐...뭐라고?!  어떻게?!
+action end
+
+action:statement:root-4
+Xu:모르겠어.  문 손잡이 느낌이 좀 달랐는데.  누가 억지로 열고 들어왔던 것 같아.
+next:root-5
+action end
+
+action:response:root-5
+Alton
+root-5-A:누가 왜 그런 짓을?
+root-5-key:뭘 훔쳐갔는데?
+root-5-B:다른 사람들한테 알려야 해!:trigger.altonKeepSecret.on
+<!>root-5-trigger.altonKeepSecret:누가 훔쳐갔는 지 알아내는 걸 도와줄게.
+action end
+
+action:statement:root-5-A
+Xu:뭔가 쓸모 있는 비싼 걸 찾고 있었던 것 같아.
+Xu:양심도 없는 사람들 같으니.
+Xu:근데 왜 나를 노린 건지는 모르겠어.  나는 별로 비싼 걸 가지고 있을 것 같이 생기지도 않았잖아.
+next:root-5
+action end
+
+action:statement:root-5-key
+Xu:어.  우리 가족 가보를 훔쳐갔어.  오래된 꽃병이야.
+Xu:별로 돈 나가는 건 아닌데,  잘 모르고 가져갔나봐.
+Xu:하지만 찾을 수 있다면, 정말, 정말로 좋겠는 데.
+next:root-5
+action end
+
+
+action:statement:root-5-B
+Xu:안 돼!
+Xu:음, 그러니까... 가능하면 우리 둘 만 아는 걸로 해뒀으면 좋겠어, 지금은.
+Xu:다른 스태프들을 믿을 수 있는 지 모르겠어.  누가 한 짓인지 모르니까...
+next:root-5
+action end
+
+action:statement:root-5-trigger.altonKeepSecret
+Xu:진짜?  굳이 네가 이런 일에 말려들 필요는 없는데...
+next:root-6
+action end
+
+action:response:root-6
+Alton
+root-7:우리 사이에 뭘, 안 그래?
+action end
+
+action:statement:root-7
+Xu:...고마워, Alton.
+Xu:일단 돌아다니면서 배의 사람들한테 물어보자.
+Xu:뭔가 알 수 있을 지도 몰라.
+next:root-8
+action end
+
+action:response:root-8
+Alton
+root-9:좋아! 해보자고!:trigger.follow.on
+action end
+
+action:statement:root-9
+null:Xu가 합류했다!
+next:null
+action end
+
+action:statement:root-10
+Xu:배의 모든 사람들한테 일단 물어보자.  지금 배엔 총 7명이 타고 있어.
+Xu:위층부터 찾아보자.
+Xu:Marcurio는 주방에 있을 거고, 일등항해사님은... 뭐 쉽게 찾을 수 있겠지.
+next:null
+action end
+
+dialogue end
+
+
+
+
+
+
+dialogue start
+AltonXuHint
+
+action:statement:root
+Xu:우리가 제대로 하고 있는 건지 모르겠어.
+Xu:그냥 사람들을 귀찮게 하고 있는 것 같아.
+next:root-1
+action end
+
+action:response:root-1
+Alton
+root-2:그래, 네 말이 맞아.
+root-3:완전 많은 걸 알아냈는 걸!
+action end
+
+action:statement:root-2
+Xu:모르겠어.  일단 방으로 돌아가서 다시 생각해보자.
+next:root-null
+action end
+
+action:statement:root-3
+Xu:진짜?  뭘 알아냈는데?
+next:root-4
+action end
+
+action:response:root-4
+Alton
+root-5:음....
+action end
+
+action:statement:root-5
+Xu:아닌 것 같네.
+next:root-2
+action end
+
+dialogue end
+
+
+
+
+// Mega Alton/Xu resolution dialogue ///////////////////////////////////////////////////////////////////////////////////////////
+
+
+dialogue start
+AltonXuResolution
+
+action:statement:root
+Xu:흠...결국 누가 내 방에 침입했는 지에 대해선 아무것도 알아낸 게 없네.
+Xu:뭔가 내가 놓친 게 있었을까.
+Xu:넌 어때?
+next:root-1
+action end
+
+action:response:root-1
+Alton
+root-2:난 누군지 알 것 같아.
+root-3:전혀 모르겠는 걸.
+action end
+
+action:statement:root-2
+Xu:진짜?  누구라고 생각하는 데?
+next:root-guess
+action end
+
+action:statement:root-3
+Xu:...결국 모든 사람들이랑 대화를 했는데 아무것도 알아내지 못한 거구나.
+Xu:뭐 사실 모두는 아니지, 선장님은 못 만났으니까.
+Xu:아마 그녀는 밤에 어딜 나갔나 봐.  맨날 밖에 돌아다니까, 운이 없네 우리.
+next:root-null
+action end
+
+action:response:root-guess
+Alton
+root-failCaptain:선장님
+root-failFerdinand:일등항해사 Ferdinand
+root-failMarcurio:요리장 Marcurio
+root-failDarryl:갑판 밖에 있던 Darryl
+root-failQuella:작가 Quella
+root-failDonovan:성깔 나쁜 Donovan
+root-failGarv:애완동물을 기르는 Garv
+root-failGwen:조용한 여자 Gwen
+action end
+
+action:statement:root-failCaptain
+Xu:진짜?  Smilla 선장님?
+Xu:우리가 대화는 못해봤지만, 그녀도 용의자긴 하지.
+Xu:근데 선장님은 마스터키를 가지고 있잖아.
+Xu:굳이 억지로 문을 따고 들어올 필요는 없었을 것 같은데...
+Xu:왜 그녀라고 생각해?
+next:root-fail
+action end
+
+action:statement:root-failFerdinand
+Xu:Ferdinand?  우리 일등항해사님이 문을 따고 들어온거라면 정말 안 좋은 상황이겠는데.
+Xu:또 그 사람은 새로 온 사람이잖아, 이번이 첫 항해라 별로 난 아는 게 없는데.
+Xu:왜 그라고 생각해?
+next:root-fail
+action end
+
+action:statement:root-failMarcurio
+Xu:Marcurio?  아냐, 그건 아닐 것 같아.
+Xu:매일 같은 장소에서 일하고, 우린 친한 친구인 걸.
+Xu:별로 막 좋은 녀석은 아니지만, 이런 일을 할 것 같진 않아.
+Xu:왜 그라고 생각해?
+next:root-fail
+action end
+
+action:statement:root-failDarryl
+Xu:Darryl?  흠...그 사람은 뭔가 이상하지. 미스터리해.
+Xu:그 사람은 대부분 바깥에 있지, 말도 별로 안 하고.
+Xu:왜 그라고 생각해?
+next:root-fail
+action end
+
+action:statement:root-failQuella
+Xu:Quella?  그녀는 식당에 되게 오래 있는 편이지.  그리고 팁을 완전 많이 줘!
+Xu:대화도 되게 많이 했어.  만야 그녀가 범인이라면 정말 끔찍하겠는 걸.
+Xu:왜 그녀라고 생각해?
+next:root-fail
+action end
+
+action:statement:root-failDonovan
+Xu:Donovan...가끔 보는데, 별로 말을 안 하는 사람이지.
+Xu:뭔가 언제나 감정이 없어보여.  무표정하게 무서운 얼굴로 돌아다닌다구.
+Xu:왜 그라고 생각해?
+next:root-fail
+action end
+
+action:statement:root-failGarv
+Xu:Garv?  그 사람은 되게 친절한 사람 같아.  팁도 되게 많이 주지!
+Xu:왜 그런 사람이 몰래 들어왔을까?
+Xu:왜 그라고 생각해?
+next:root-fail
+action end
+
+action:statement:root-failGwen
+Xu:Gwen?  흠, 그녀는 정말로 이상하지...아무랑도 대화를 안하고.
+Xu:그녀는 뭘 하는 사람일까. 진짜 도둑일지도 모르겠네.
+Xu:왜 그녀라고 생각해?
+next:root-fail
+action end
+
+action:response:root-fail
+Alton
+root-fail2:그냥 느낌이야.
+root-fail3:장난이야. 그냥 니가 어떻게 반응 하는 지 보려고 그랬어.
+action end
+
+action:statement:root-fail2
+Xu:그래, 니가 맞을 지도 모르지. 근데 좀 더 구체적인 증거가 필요해.
+Xu:그냥 직감만 가지고는 안 돼.
+next:root-null
+action end
+
+action:statement:root-fail3
+Xu:장난치니? Alton, 부탁이야.  니가 내 희망이라고!
+Xu:...결국 누가 범인인 지는 아무것도 모르는 거네.
+next:root-null
+action end
+
+
+action:statement:root-fail4
+Alton:음....아....
+Alton:에에에에취!
+Xu:오 이런, 너 아직도 먼지에 약하니?  방 청소를 하긴 해야겠네.
+Xu:...
+Xu:오 생각해보니, 어쩌면 먼지가 많아서 지문 같은게 남아있을 지도 모르겠네!
+Xu:지문을 따서 배의 모든 사람들이랑 비교해 보면 되겠네.
+next:root-null
+action end
+
+action:statement:root-fail5
+Alton:좋아, 어디 한 번 그런 게 남아 있는 지 볼까.
+Xu:잠깐, 그냥 농담해 본 거야. 진짜로 할 필요는 없어.
+Xu:사실 우리가 누구 지문인 지 알 수 있는 방법도 없다구.
+Alton:근데...지문이 없어.
+Xu:무슨 뜻이야?
+Alton:그러니까 여기 손자국은 남아있는데...지문은 없어.
+Xu:흠, 그래.  흠...
+Alton:그러니까, 아마도 장갑을 끼고 있었다는 거겠지?
+Xu:그렇겠네.
+next:root-null
+action end
+
+action:statement:root-fail6
+Xu:잠깐...그거야!  Alton, 넌 천재야!
+Xu:지문이 없다면, 지문이 없다면 장갑을 끼고 있었다는 거고, 그렇다면 용의자는...
+Xu:Donovan!  그 이상하게 조용한 사람.  왜 맨날 장갑을 끼고 다니는 건지 이상하다 했지.
+Xu:무조건 그 사람이야!
+next:ancitipation1
+action end
+
+action:statement:anticipation1
+Alton:어....
+next:root-null
+action end
+
+action:statement:anticipation2
+Xu:그럴 듯하지.  그 사람 언제나 나쁜 기운이 풍긴다고.
+next:root-null
+action end
+
+action:statement:anticipation3
+Alton:어어...
+next:root-null
+action end
+
+action:statement:anticipation4
+Xu:근데 왜 내 방에 들어와서 훔치려고 했을까 어, 그걸?
+next:root-null
+action end
+
+action:statement:anticipation5
+Alton:에에에에에에에취!!
+next:root-null
+action end
+
+
+action:statement:theReveal
+Alton:오 이런, 미안해.  부수려던 건 아니었는데.
+Xu:아냐, 괜찮아.  일단 나가자.  너 완전 아파보여!
+Alton:근데 이상해.  왜 Donovan이 이것들은 안 훔쳐갔을까?
+Alton:MP3도 있고, 이거 완전 좋은 모델인데!  나도 가지고 있던 건데, 잃어버렸지만.
+Xu:...어...
+Alton:이 헤드폰들도 완전 좋은 브랜드인데.  나도 똑같은 게 있었는 데, 근데...
+Alton:...잃어버렸지.
+Xu:...
+Alton:잃어버린 게 아니었구나.  네가 훔쳤어.
+Xu:Alton, 기다려봐, 그런 게 아냐.
+Alton:내가 아주 만만한 타겟이었구나?  돈을 산더미로 들고 다니는 멍청이.  그게 네가 나를 보는 방식이었군.
+Alton:반대로 당하니까 기분이 좋겠네.  아주 축하해.
+Xu:제발.  내 말 좀 들어봐!
+Alton:왜 또 뭘 더 나한테서 훔치게?  잘 있어라 간다.
+next:root-null
+action end
+
+action:statement:finale
+Xu:제기랄.
+next:root-null
+action end
+
+
+dialogue end
+

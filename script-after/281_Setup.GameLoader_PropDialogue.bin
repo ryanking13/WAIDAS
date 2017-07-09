@@ -5,8 +5,8 @@ dialogue start
 SaveConfirmation
 action:response:root
 <player>
-root-null:Save game:trigger.saveGame.on
-</>root-null:Cancel
+root-null:저장하기:trigger.saveGame.on
+</>root-null:취소
 action end
 dialogue end
 
@@ -14,9 +14,9 @@ dialogue end
 dialogue start
 SaveConfirmation2
 action:statement:root
-null:It's a copy of Euclid's "Elements".
-null:Skimming the book reveals only a bunch of dry mathematical principles.
-null:But there's something strange about the book.  For whatever reason, it feels like it's looking back at you.
+null:유클리드의 '원론'이다.
+null:살짝 넘겨보니 수식이 가득하다.
+null:왠지 모르게 당신을 쳐다보는 느낌이 든다.
 next:root-null
 action end
 dialogue end
@@ -24,27 +24,27 @@ dialogue end
 dialogue start
 SaveConfirmation2Ghost
 action:statement:root
-null:It's a copy of Euclid's "Elements".  A book filled with mathematical proofs.
-null:There's something strange about the book.  As you draw near it, a familiar feeling washes over you.
+null:유클리드의 원론이다. 수식으로 가득하다.
+null:왠지 익숙한 느낌이 든다.
 next:root-2
 action end
 
 action:response:root-2
 <player>
-root-3:Investigate:trigger.saveProp2Unlock.on
-</>root-null:Leave it alone
+root-3:조사한다:trigger.saveProp2Unlock.on
+</>root-null:놔둔다
 action end
 
 action:statement:root-3
-null:Whatever properties the doll in Paulo's room had, you can sense the same thing here.
-null:This book can be used to record your memories.
+null:Paulo의 방에서 느낀 것과 같은 감각을 느낄 수 있다.
+null:이 책을 당신의 기억을 담는 데에 쓸 수 있을 듯하다.
 next:root2
 action end
 
 action:response:root2
 <player>
-root-null:Save game:trigger.saveGame.on
-</>root-null:Cancel
+root-null:저장하기:trigger.saveGame.on
+</>root-null:취소
 action end
 
 dialogue end
@@ -52,8 +52,8 @@ dialogue end
 dialogue start
 SaveConfirmation3
 action:statement:root
-null:Someone didn't finish their cup of tea.
-null:For some reason, while looking into the tea you had a strange sense of deja vu.
+null:누군가 먹다 남긴 차가 있다.
+null:왠지 모르게 데자뷰가 느껴진다.
 next:root-null
 action end
 dialogue end
@@ -62,27 +62,27 @@ dialogue end
 dialogue start
 SaveConfirmation3Ghost
 action:statement:root
-null:Someone didn't finish their cup of tea.
-null:For some reason, while looking into the tea you had a strange sense of deja vu.
+null:누군가 먹다 남긴 차가 있다.
+null:왠지 모르게 데자뷰가 느껴진다.
 next:root-2
 action end
 
 action:response:root-2
 <player>
-root-3:Investigate:trigger.saveProp3Unlock.on
-</>root-null:Leave it alone
+root-3:조사한다:trigger.saveProp3Unlock.on
+</>root-null:놔둔다
 action end
 
 action:statement:root-3
-null:This cup of tea can be used to record your memories.
-null:It may be best not to think too hard about it.
+null:이 차를 당신의 기억을 담는 데에 쓸 수 있을 듯하다.
+null:딱히 이상하게 생각하지 말자.
 next:root2
 action end
 
 action:response:root2
 <player>
-root-null:Save game:trigger.saveGame.on
-</>root-null:Cancel
+root-null:저장하기:trigger.saveGame.on
+</>root-null:취소
 action end
 
 dialogue end
@@ -743,7 +743,7 @@ dialogue end
 dialogue start
 KitchenCupboard
 action:statement:root
-null:It's a big wooden cupboard.  It's got a padlock on the handles, but it's currently unlocked.
+null:나무로 된 찬장이다. 지금은 잠겨있지 않다.
 next:root-2
 action end
 
@@ -858,16 +858,16 @@ dialogue end
 dialogue start
 PilothouseControlsTop
 action:statement:root
-null:The counter holds countless unlabeled buttons and switches.
-null:Only the captain or first mate should really mess with them, however.
+null:수많은 버튼과 스위치들이다.
+null:선장이나 일등항해사만이 무슨 기능을 하는 지 알 것이다.
 action end
 dialogue end
 
 dialogue start
 PilothouseControlsTopHandless
 action:statement:root
-null:The counter holds countless unlabeled buttons and switches.
-null:Sadly, they were designed for people who have hands.
+null:수많은 버튼과 스위치들이다.
+null:슬프게도, 두 손을 가진 존재를 위해서 만들어진 모양이다.
 action end
 dialogue end
 
@@ -875,16 +875,16 @@ dialogue end
 dialogue start
 PilothouseControlsMiddle
 action:statement:root
-null:There are two really big levers in the center of the counter.  They seem important.
-null:People inexperienced with boats should probably not touch them.
+null:정 중앙에 두 개의 커다란 레버가 있다. 중요한 것 같다.
+null:잘 모르는 사람은 건드리면 안 될 것 같다.
 action end
 dialogue end
 
 dialogue start
 PilothouseControlsMiddleHandless
 action:statement:root
-null:There are two really big levers in the center of the counter.  They seem important.
-null:Unfortunately, they require hands to operate.
+null:정 중앙에 두 개의 커다란 레버가 있다. 중요한 것 같다.
+null:손이 없어서 조작할 수 없다.
 action end
 dialogue end
 
@@ -892,16 +892,16 @@ dialogue end
 dialogue start
 PilothouseControlsBottom
 action:statement:root
-null:Buttons, sliders, and little round meters.  Of course, none of it is labeled in any way.
-null:Perhaps they should be left to the captain and first mate to handle.
+null:버튼, 슬라이더, 미터기 등이 있다. 라벨링은 되어 있지 않다.
+null:선장이나 일등항해사는 다룰 수 있을 것이다.
 action end
 dialogue end
 
 dialogue start
 PilothouseControlsBottomHandless
 action:statement:root
-null:Buttons, sliders, and little round meters.  Of course, none of it is labeled in any way.
-null:They can't be manipulated without hands though.
+null:버튼, 슬라이더, 미터기 등이 있다. 라벨링은 되어 있지 않다.
+null:손이 없으면 다룰 수 없다.
 action end
 dialogue end
 
@@ -909,19 +909,19 @@ dialogue end
 dialogue start
 PilothouseWheel
 action:statement:root
-null:It looks like this is the steering wheel to the ship.
+null:이 배의 타륜이다.
 next:root-2
 action end
 
 action:response:root-2
 <player>
-root-3:Turn it.
-</>root-null:Leave it alone.
+root-3:돌린다.
+</>root-null:놔둔다.
 action end
 
 action:statement:root-3
-null:It's probably best left alone.
-null:Only the captain and the first mate know enough to operate the ship's controls.
+null:놔두는 것이 좋아보인다.
+null:선장과 일등항해사만이 조종하는 법을 알 것이다.
 action end
 dialogue end
 
@@ -929,18 +929,18 @@ dialogue end
 dialogue start
 PilothouseWheelHandless
 action:statement:root
-null:It looks like this is the steering wheel to the ship.
+null:이 배의 타륜이다.
 next:root-2
 action end
 
 action:response:root-2
 <player>
-root-3:Turn it.
-</>root-null:Leave it alone.
+root-3:돌린다.
+</>root-null:놔둔다.
 action end
 
 action:statement:root-3
-null:Hands are needed for that.
+null:그러는 데에는 손이 필요하다.
 action end
 dialogue end
 
@@ -956,18 +956,18 @@ dialogue end
 dialogue start
 DonovansComputer
 action:statement:root
-null:There is an open laptop running on the desk.
+null:책상에 노트북이 놓여있다.
 next:root-1
 action end
 
 action:response:root-1
 <player>
-root-2:See what's on the computer.
-</>root-null:Leave it alone.
+root-2:무엇이 들어 있는 지 본다.
+</>root-null:놔둔다.
 action end
 
 action:statement:root-2
-null:It needs a password to log in.
+null:패스워드가 걸려있다.
 next:root-password
 action end
 
@@ -977,12 +977,12 @@ root-fail:"password"
 root-fail:"1234"
 root-fail:"donovan"
 root-fail:"yoloswag420blazeit"
-</>root-null:I have no idea what it is.
+</>root-null:모르겠다.
 action end
 
 action:statement:root-fail
-null:Incorrect password.
-null:In what world would a guess like that actually work?
+null:잘못된 패스워드입니다.
+null:이걸 알 턱이 있나.
 next:root-password
 action end
 
@@ -993,19 +993,19 @@ dialogue end
 dialogue start
 DonovansComputerHandless
 action:statement:root
-null:There is an open laptop running on the desk.
+null:책상에 노트북이 놓여있다.
 next:root-1
 action end
 
 action:response:root-1
 <player>
-root-2:See what's on the computer.
-</>root-null:Leave it alone.
+root-2:무엇이 들어 있는 지 볼까...
+</>root-null:놔둔다.
 action end
 
 action:statement:root-2
-null:The computer is currently logged out and needs a password.
-null:Sadly, the keyboard cannot be operated without fingers.
+null:패스워드가 걸려있다.
+null:아쉽게도, 손가락 없이는 타자를 칠 수가 없다.
 next:root-null
 action end
 
@@ -1018,7 +1018,7 @@ dialogue end
 dialogue start
 DonovansHardware
 action:statement:root
-null:A pair of black boxes sit in the corner of the room, gently humming.
+null:검은색 상자들이 방구석에 놓여있다.
 next:root-null
 action end
 dialogue end
@@ -1028,7 +1028,7 @@ dialogue end
 dialogue start
 DonovansCameras
 action:statement:root
-null:All sorts of surveillance gadgets are littered on the floor.
+null:감시용 도구들이 바닥에 널브러져 있다.
 next:root-null
 action end
 dialogue end
@@ -1039,7 +1039,7 @@ dialogue end
 dialogue start
 DonovansCamerasTwo
 action:statement:root
-null:All sorts of surveillance gadgets are littered on the floor.
+null:감시용 도구들이 바닥에 널브러져 있다.
 next:root-null
 action end
 dialogue end
@@ -1049,7 +1049,7 @@ dialogue end
 dialogue start
 SkeletonKey
 action:statement:root
-null:A golden rod lies on the dresser.  It has a strange design on the top.
+null:황금색 열쇠가 놓여있다.  이상한 디자인이다.
 next:root-null
 action end
 dialogue end
@@ -1092,7 +1092,7 @@ root-2:살펴본다.
 action end
 
 action:statement:root-2
-null:종이 에는 Ferdinand에 대한 사실들이 적혀있다.
+null:종이에는 Ferdinand에 대한 사실들이 적혀있다.
 null:그의 풀 네임, 이전 직장 경력, 생일, 가족력, 등등.
 null:딱히 흥미로운 내용은 없다.
 next:root-null
@@ -1114,48 +1114,48 @@ dialogue end
 dialogue start
 CaptainsJournal
 action:statement:root
-null:On the front cover of the journal, someone has written the name Smilla.
+null:일기장 앞에 Smilla라는 이름이 적혀있다.
 next:root-1
 action end
 
 action:response:root-1
 <player>
-root-A:Page 1
-root-B:Page 2
-root-C:Page 3:trigger.GhostBGProgressJournal.on
-</>root-null:Leave it alone.
+root-A:1 장
+root-B:2 장
+root-C:3 장:trigger.GhostBGProgressJournal.on
+</>root-null:놔둔다.
 action end
 
 action:statement:root-A
-null:Just when I thought I had exhausted all possibilities, I lucked out.
-null:I got a tip about a recent opening for a captain of this small cruise ship.
-null:Strangely it's not part of a larger cruise line, but is still financed by some company.
-null:The ship looks really small and a bit run down, but I don't have the luxury of being picky.
-null:Given all that's happened, I can't expect a good ref from any past employers...so I'm stuck with this.
-null:But hey, how bad could it be?
+null:모든 가능성이 사라졌다고 생각했을 때에, 갑자기 행운이 밀려들었다.
+null:작은 크루즈 선의 선장이 될 기회를 얻은 것이다.
+null:딱히 거대한 크루즈 선단에 소속된 건 아닌데, 이상하게도 후원해주는 회사들이 있었다.
+null:배 자체는 완전 작고, 좀 낡았지만, 난 딱히 럭셔리한 것에 까다로운 성격은 아니다.
+null:지금까지 일어난 일을 생각해보면, 앞으로 내 지난 고용주들이 더 좋은 기회를 주진 않을 것 같으니...이 일을 맡기로 했다.
+null:뭐 나빠봐야 얼마나 나쁘겠어?
 next:root-1
 action end
 
 action:statement:root-B
-null:I've gotten settled in and met the staff and passengers.
-null:It's a pretty...colorful lot.
-null:I get the sense that most people are here for the same reason I am - there's no where else to go.
-null:One of the passengers is just a child, on his own.  I can't imagine what his family is like...
-null:Some of the others have been through hell and back.  You can just see it in their eyes.
-null:Maybe I've arrived amongst my own people.
+null:배에 타서 스태프들과 승객들을 만났다.
+null:뭐랄까...다들 되게 독특하다.
+null:여기 있는 사람들은 다 나와 똑같은 이유로 이 배에 탄 것 같은 느낌이 든다. 더 이상 아무데도 갈 곳이 없어서.
+null:한 승객은 완전 꼬마인데, 혼자 배를 탄 모양이다. 대체 어떻게 되먹은 가족이람...
+null:일부는 지옥에라도 갔다 온 것 같아 보였다. 그들의 눈이 말해주고 있었다.
+null:어쩌면 나한테 딱 맞는 사람들과 함께 있는 것 같다.
 next:root-1
 action end
 
 action:statement:root-C
-null:I already knew this wasn't going to be a five star cruise before I got here, but I had no idea.
-null:Everything is so disorganized, I'm surprised the ship hasn't shut down for one reason or another.
-null:For instance, food seems to go missing from the kitchen on a recurring basis.  Why?  No one knows.
-null:There also isn't any set boarding time for everyone - the passengers come whenever they want before a set date.
-null:A couple of them had already moved in and were ready to go before I got here.
-null:And weirdest of all, the ship's displacement is just...off.
-null:For a boat of this size and capacity, it sits lower in the water than it should.  Like...
-null:Like there's leftover cargo on the ship somewhere that nobody knows about.
-null:There must be something, at least, that's making this ship heavier than it appears.
+null:오성급 배가 아니라고는 알고 있었지만, 정말 이젠 아무것도 모르겠다.
+null:제대로 돌아가는 게 하나도 없다, 여태까지 어떻게 침몰하지 않고 운항한 건지 모르겠다.
+null:예를 들어, 식료품이 자꾸 주방에서 사라진다. 대체 왜?
+null:출항 시간도 정해져 있지 않다. 승객들은 정해진 날짜 안에서 오고 싶을 때 배에 탄다.
+null:일부는 내가 오기 전부터 배에 타고 있었던 모양이다.
+null:무엇보다 이상한 건, 이 배의 배수량이...전혀 예상과 맞지 않다. 
+null:이 정도 배라면 보통 좀 더 가볍게 물 위에 뜨기 마련인데... 이건 마치.
+null:마치 이 배에 아무도 모르는 숨겨진 화물이라도 있는 것 같다.
+null:적어도 배의 어딘가에 이 배를 더 무겁게 만드는 것이 있는 건 분명하다.
 next:root-1
 action end
 
@@ -1166,62 +1166,62 @@ dialogue start
 CaptainsDresser
 
 action:statement:root
-null:It's a giant, rustic dresser with a mirror on top.  It has four large shelves.
+null:거울이 달린 거대한 찬장이다. 네 개의 서랍이 있다.
 next:root-2
 action end
 
 action:response:root-2
 <player>
-root-A:Top left shelf
-root-B:Top right shelf
-root-C:Bottom left shelf
-root-D:Bottom right shelf
-</>root-null:Never mind.
+root-A:왼쪽 위 서랍
+root-B:오른쪽 위 서랍
+root-C:왼쪽 아래 서랍
+root-D:오른쪽 아래 서랍
+</>root-null:관둔다.
 action end
 
 action:statement:root-A
-null:The shelf is packed from corner to corner with bottles of absinthe.  Some of them are empty.
-null:...Not exactly what you expect to find in a dresser.  The captain liked to drink hard, apparently.
+null:서랍 속에 압생트 술이 가득하다. 일부는 비어있다.
+null:...옷장 속에 왜 이런게. 선장은 술꾼이었던게 확실해 보인다.
 next:root-2
 action end
 
 action:statement:root-B
-null:Clothes have been messily shoved in this shelf, unfolded.
+null:옷이 정리되지 않은 채 삐져나와있다.
 next:root-2
 action end
 
 action:statement:root-C
-null:In the shelf there is a passport and a book.
+null:서랍 안에 책과 여권이 들어있다.
 next:root-C-2
 action end
 
 action:response:root-C-2
 <player>
-root-C-A:Investigate the passport
-root-C-B:Investigate the book:trigger.GhostBGProgressDresser.on
-</>root-2:Never mind.
+root-C-A:여권을 조사한다
+root-C-B:책을 조사한다:trigger.GhostBGProgressDresser.on
+</>root-2:관둔다.
 action end
 
 action:statement:root-C-A
-null:The passport's pages are almost completely full with work visas from different countries.
-null:France, Germany, Turkey, America, Mexico, Cambodia...and still more.
-null:The captain was a floater, it looks like.
+null:각종 나라들의 비자로 가득 차있다.
+null:프랑스, 독일, 터키, 미국, 멕시코, 캄보디아...
+null:이 선장은 돌아다니는 걸 좋아했던 모양이다.
 next:root-C-2
 action end
 
 action:statement:root-C-B
-null:It's a copy of Euclid's Elements, a treatise on mathematics and geometry.
-null:It's an extremely dry book.  Not your typical leisurely read.
-null:There's a photo being used as a bookmark - it's a picture of an older woman and a young girl.  A mother and daughter?
-null:On the back of the photo something is scribbled.
+null:유클리드의 '원론'이다. 수식으로 가득하다.
+null:완전 딱딱한 책이다.
+null:책갈피로 쓰이는 사진이 꽂혀있다. 나이 든 여성과 젊은 여자아이의 사진이다. 어머니와 딸인가?
+null:사진 뒷면에 뭔가 적혀있다.
 null: 1954 - 1992
 next:root-C-2
 action end
 
 action:statement:root-D
-null:This shelf contains more clothes.
-null:Mixed in are different uniforms and IDs in all sorts of different languages.
-null:Quite the world traveler.
+null:선반에 옷가지가 가득하다.
+null:여러 민속 복장들과, 여러 나라 언어로 적인 ID카드가 들어있다.
+null:완전 세계를 떠돌아 다니는 사람이군.
 next-root-2
 action end
 
@@ -1233,12 +1233,12 @@ CaptainsChest
 
 action:response:root
 <player>
-root-1:Open the chest
-</>root-null:Leave it alone.
+root-1:궤짝을 연다.
+</>root-null:놔둔다.
 action end
 
 action:statement:root-1
-null:The giant chest is locked.  Which makes sense.  Most giant chests are usually locked.
+null:거대한 궤짝이 잠겨있다. 보통 이런 것들은 잠겨있기 마련이지.
 next:root-null
 action end
 
@@ -1250,12 +1250,12 @@ CaptainsChestHandless
 
 action:response:root
 <player>
-root-1:Open the chest
-</>root-null:Leave it alone.
+root-1:궤짝을 연다
+</>root-null:놔둔다.
 action end
 
 action:statement:root-1
-null:Doing something like that would require fingers, which you do not have.
+null:손이 있어야 그럴 수 있을텐데 말이지.
 next:root-null
 action end
 
