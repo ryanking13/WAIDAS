@@ -1,0 +1,119 @@
+
+
+
+
+// MARCURIO - XU ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Marcurio-Xu
+
+action:response:root
+Marcurio
+root-1:Alton이랑은 별로 잘 안 되었나 보지?
+root-2:넌 이 끔찍한 장소에서 어떻게 탈출할 생각이지?
+root-3:넌 어쩌다 이 배에 갇히게 된 거냐?
+</>root-null:Bye.
+action end
+
+action:statement:root-1
+Xu:그래.
+next:root-1-A
+action end
+
+action:response:root-1-A
+Marcurio
+root-1-B:확 걷어차버렸냐?
+root-1-C:그게 다야?
+</>root-null:별로 대화하지 않고 싶은 것 같군.
+action end
+
+action:statement:root-1-B
+Xu:아냐, 그건 아닌데...
+Xu:지금 나로선 할 수 있는 방법이 없네.
+next:root-1-A
+action end
+
+action:statement:root-1-C
+Xu:미안, 지금은 물어보지 말아줘.
+next:root-1-A
+action end
+
+action:statement:root-2
+Xu:방법을 찾고 있어.
+Xu:돈을 모아서 떠나는 건...꽤나 어렵겠고.  떠난 뒤에 직업을 찾는 건 거의 불가능할 거고.
+Xu:뭔가 확 한탕 칠 만한 일이 있어야 할 것 같은데.
+next:root-2-A
+action end
+
+action:response:root-2-A
+Marcurio
+root-2-B:되게 음흉하게 들리는 데.
+root-2-C:어떤 종류의 일?
+</>root-null:잘해보라고.
+action end
+
+action:statement:root-2-B
+Xu:뭐 엄청난 일은 아닐 거야.
+Xu:난 자제할 줄 알아.
+next:root-2-A
+action end
+
+action:statement:root-2-C
+Xu:글쎄.  도둑질?  급하면 협박 정도는 할 수 있겠는데.
+Xu:아직까지는 아냐.  근데 점점 가까워지고 있어.
+next:root-2-D
+action end
+
+action:response:root-2-D
+Marcurio
+root-2-E:협박?  제정신이 아니군.  통하지도 않을 걸.
+action end
+
+action:statement:root-2-E
+Xu:그럴지도.  아닐지도.
+Xu:그게 마지막 남은 방법이면, 해야지 어쩌겠어.
+next:root-null
+action end
+
+action:statement:root-3
+Xu:그건 지금껏 물어본 적 없는 것 같은데. 갑자기 왜?
+next:root-3-A
+action end
+
+action:response:root-3-A
+Marcurio
+root-3-B:그냥 갑자기 알고싶어졌으니까.
+root-3-C:같은 일하는 사람이 어떤 사람인 지 알고 싶어져서.
+<!>root-trigger.chap3MarcPressesXu:너만 보면 내 눈이 멀 것 같으니까. 그러니까 책임져 줘.:trigger.chap3XuUnlocked.on
+</>root-null:관둔다.
+action end
+
+action:statement:root-3-B
+Xu:그게 진짜 이유라고?
+Xu:그런 이유라면, 별로 과거를 들추고 싶지 않은 걸.
+next:root-3-A
+action end
+
+action:statement:root-3-C
+Xu:너랑 같은 거야.  네가 왜 여기 왔는 지는 굳이 안 물어보겠지만.
+Xu:우린 서로 믿잖아, 안 그래?  그런 건 별로 중요한 일이 아니지.
+next:root-3-A
+action end
+
+action:statement:root-trigger.chap3MarcPressesXu
+Xu:뭣, 뭐.  진심이야?  그런 식으로 나오는 거야?
+Xu:....
+Xu:신이시여,  너 진지하구나.
+Xu:그래 좋아.  대신 너 혼자만 알고 있어라.
+Xu:난 원래 학생 비자로 대학에 다니러 왔었어.  허가받고 비자를 따는 건...무지하게 비쌌지.
+Xu:근데 망해버렸어.  낙제당했지.
+Xu:그 상태로 집에 돌아갈 수는 없었어.  내 가족이 나를 보내려고 얼마나 애썼는데.
+Xu:그래서 그냥...좌절했지.  할 수 있는 직업을 아무거나 찾았어.
+Xu:그게 어쩌다보니 이거였던 거야.  그게 나의 이야기.
+next:root-null
+action end
+
+dialogue end
+
+
+

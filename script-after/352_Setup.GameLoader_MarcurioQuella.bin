@@ -1,0 +1,151 @@
+
+
+
+// MARCURIO - QUELLA ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Marcurio-Quella
+
+action:response:root
+Marcurio
+root-1:요즘 자주 안 보이는 것 같던데요.
+root-2:지금 일어나는 일을 다 어떻게 생각해요?
+</>root-null:떠난다.
+action end
+
+action:statement:root-1
+Quella:아, 그렇죠.
+Quella:계속 방안에만 있거든요, 책을 쓰고 있어서.
+Quella:이 일은 별로 사람들을 만나는 일이 아니다보니.
+next:root-1-A
+action end
+
+action:response:root-1-A
+Marcurio
+root-1-B:책을 써요?  되게 어려운 일을 하시네요.  인상적이군요.
+root-1-C:이전에도 책을 쓴 적이 있나요, 아니면 이게 첫 책?
+</>root-null:떠난다.
+action end
+
+action:statement:root-1-B
+Quella:고마워요!  어려운 지는 잘 모르겠지만요.
+Quella:누구나 책을 쓸 수 있죠.  다는 아니려나요, 뭐 어쨌든.
+Quella:책을 완성하는 데 크게 어려운 일은 없답니다!
+Quella:칭찬은 제가 책을 완성하기까지 기다려주세요.
+next:root-1-A
+action end
+
+action:statement:root-1-C
+Quella:이게 처음이에요.  그래서 뭐, 아마추어죠.  다른 사람들이 어떻게 하는 지 배우고 있어요.
+Quella:이상하게 들릴 지 모르겠지만, 돈 버는 데에는 흥미가 없어요.
+Quella:그냥 뭘 남기고 싶어서 그래요.  내가 이 세상에서 사그라지기 전에.
+next:root-1-D
+action end
+
+action:response:root-1-D
+Marcurio
+root-1-E:이곳의 사람들은 다 그냥 헤매고 있는 것 같은데, 당신은 확고한 열정이 있는 것 같네요.  멋지네요.
+root-1-F:죽음에 대해서 관심이 많으시군요.
+</>root-null:떠난다.
+action end
+
+action:statement:root-1-E
+Quella:고마워요.  사실 가끔 이게 가치가 있는 지 잘 모르겠다는 생각을 해서, 그렇게 말해주니 좋네요.
+Quella:여기 있는 사람들을 다 잘 알고 있지는 못하지만.
+Quella:다들 자기의 길을 갖고 있을 거에요.  누군가는 좀 빠르고, 누군가는 좀 느릴 뿐이죠.
+next:root-1-D
+action end
+
+action:statement:root-1-F
+Quella:죽음에 관심이 많다는 건 별로 적절하지 못한 표현이네요.  삶이란 죽음이니까요.
+Quella:죽음에 대해서 어ㅣ야기하는 건 전혀 이상한 일이 아니에요.  오히려 더욱 더 얘기해야만 하는 주제죠!
+Quella:아주 자연스럽고, 언제나 일어나는 일이니까요.
+next:root-1-D
+action end
+
+action:statement:root-2
+Quella:선장님의 실종에 대한 것 말인가요?
+Quella:모르겠어요.  내가 탐정도 아니고.  그렇지만...
+Quella:별로 좋은 느낌은 아니네요.  단순히 선장님의 실종을 넘어서, 뭔가 다 좀...이상해요.
+next:root-2-A
+action end
+
+action:response:root-2-A
+Marcurio
+root-2-B:뭔가 생각되는 거라도 있습니까?
+root-2-C:당신은 되게 승객들이랑 얘기를 많이하는 것 같던데요.
+</>root-null:떠난다.
+action end
+
+action:statement:root-2-B
+Quella:생각되는 거요...?  글쎄요.
+Quella:누군가 배가 출발하기 전부터 선장님을 알고 있지 않았을까 생각해요.
+Quella:근데 그녀는 몰랐다?  아마도...변장 같은 걸로?
+Quella:...이상한 소리를 했군요.  그냥 해본 소리에요.
+next:root-3
+action end
+
+action:response:root-3
+Marcurio
+root-3-A:뭐 완전히 이상한 얘기는 아니였어요.
+root-3-B:그건 별로 증거가 없는 얘기군요.
+action end
+
+action:statement:root-3-A
+Quella:그래요? 흠.
+Quella:만약 이게 맞는 거라면, 누군가는 가짜 신분을 대고 있다는 거겠죠.
+Quella:경찰이 있다면 알 수 있을텐데...여긴 없군요.
+Quella:그래서 결국 별로 쓸모 없는 생각이었네요.
+next:root-2-A
+action end
+
+action:statement:root-3-B
+Quella:맞아요.  사실 아무 증거도 없죠.
+Quella:그녀는 밤중에 아무 흔적도 없이 사라졌어요.  대체 어디로 간 걸까요?
+next:root-2-A
+action end
+
+action:statement:root-2-C
+Quella:제가 이렇게 매일 방안에만 있지만, 저는 사람을 만나는 걸 정말로 좋아해요.
+Quella:사람에 대해서 알고 친해지는 걸 좋아하죠.  나쁜 점까지도요.
+next:root-4
+action end
+
+action:response:root-4
+Marcurio
+root-4-A:I see.  Just make sure that curiosity doesn't get you in trouble.
+root-4-B:I think people are boring idiots.  Most people, at least.
+</>root-null:Talk to you later.
+action end
+
+action:statement:root-4-A
+Quella:...What's that supposed to mean?
+next:root-4-C
+action end
+
+action:response:root-4-C
+Marcurio
+root-4:It means take care of yourself.  That's all.
+action end
+
+action:statement:root-4-B
+Quella:I'm not going to argue with you about the 'idiots' part, I suppose.  In some cases.
+Quella:But everyone has a rhyme and reason.  A deeper motivation.  Even if it's not one you share or agree with.
+Quella:Finding out what that is never gets boring for me.
+next:root-4-D
+action end
+
+action:response:root-4-D
+Marcurio
+root-4-E:That's exactly the kind of hobby that can get people hurt.
+action end
+
+action:statement:root-4-E
+Quella:....
+next:root-4
+action end
+
+dialogue end
+
+
+

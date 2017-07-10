@@ -1,0 +1,122 @@
+
+
+
+
+
+// MARCURIO - DARRYL ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Marcurio-Darryl
+
+action:response:root
+Marcurio
+root-1:당신같은 사람이 이 밖에서 뭘 하는 거죠?
+root-2:당신은 어디로 가요?
+</>root-null:떠난다..
+action end
+
+action:statement:root-1
+Darryl:'당신같은 사람'이라는 게 무슨 뜻인지 잘 모르겠군.
+next:root-1-A
+action end
+
+action:response:root-1-A
+Marcurio
+root-1-B:되게 고급지게 보여서.  거창한 직업이라도 있을 것 같은데요?
+root-1-C:중요한 회사 미팅이라도 가는 것 처럼 보여서요.
+</>root-null:Never mind.
+action end
+
+action:statement:root-1-B
+Darryl:나는 변호사였지, 그렇게 볼 수도 있겠군.
+next:root-job
+action end
+
+action:response:root-job
+Marcurio
+root-job-A:오, 내가 그런 일을 할 수 있다면 사람이라도 죽일 텐데.
+root-job-B:흠 그러면, 변호사님께서 이 밖에서 무슨 일을?
+</>root-null:떠난다.
+action end
+
+action:statement:root-job-A
+Darryl:이 직업을 어떻게 생각하는 지는 모르겠지만, 사람을 죽일만한 가치는 전혀 없다고 말해두지.
+Darryl:나는 부동산 관련 분야를 다뤄.  이 분야 법은 재밌는 게 하나도 없다고.
+next:root-job-A1
+action end
+
+action:response:root-job-A1
+Marcurio
+root-job-A2:뭐, 그래도 돈은 잘 벌잖아요?
+root-gloomy:되게 우울한 사람이시네, 당신도 알아요?
+action end
+
+action:statement:root-job-A2
+Darryl:돈은 잘 벌지, 그래도 그만큼 바쳐야 하는 것도 많아.
+Darryl:세상에는 돈보다 중요한 게 있지.
+next:root-null
+action end
+
+action:statement:root-job-B
+Darryl:그냥 도시에서 잠시 좀 벗어나고 싶어서.
+Darryl:뭐, 모든 것에서부터라고 하는 게 맞겠군.
+next:root-null
+action end
+
+action:statement:root-1-C
+Darryl:아니.  그건 사실이랑 정 반대야.
+Darryl:나는 어디에도 안 가.  그게 내가 가는 곳이지.
+next:root-null
+action end
+
+
+action:statement:root-2
+Darryl:어디에도 안 가.
+next:root-2-A
+action end
+
+action:response:root-2-A
+Marcurio
+root-2-B:그건 별로 답변이 안되는 군요.  사람들은 다들 어디로 가죠.
+root-gloomy:당신은 제가 본 사람 중에서 가장 부유한 우울증 환자 같네요.
+</>root-null:See ya.
+action end
+
+action:statement:root-2-B
+Darryl:그건 네가 잘못 알고 있는거야.  그 누구도 어디로 가지 않아.
+Darryl:특히 이 배에 있는 사람들은 말이야.
+next:root-null
+action end
+
+action:statement:root-gloomy
+Darryl:나는 별로 우울하진 않아, 그런 건 신경도 안 쓰거든.
+Darryl:정확히는 아무런 감정도 느끼질 않아.
+Darryl:네가 나를 그렇게 보고 있다면, 관둬.
+next:root-gloomy-2
+action end
+
+action:response:root-gloomy-2
+Marcurio
+root-gloomy-3:뭐, 당신이 좆같은 삶을 살아왔다는 건 알겠네요.  끔찍하겠습니다.
+action end
+
+action:statement:root-gloomy-3
+Darryl:...
+next:root-gloomy-4
+action end
+
+action:response:root-gloomy-4
+Marcurio
+root-gloomy-5:당신이 혼자서 어두운 공상이나 하게 전 가봐야겠군요.
+action end
+
+action:statement:root-gloomy-5
+Darryl:...
+next:root-null
+action end
+
+dialogue end
+
+
+
+

@@ -1,0 +1,203 @@
+
+
+
+// MARCURIO - GWEN ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Marcurio-Gwen
+
+action:response:root
+Marcurio
+root-1:좀 어때?
+</>root-null:떠난다.
+action end
+
+action:statement:root-1
+Gwen:전...괜찮아요.
+next:root-2
+action end
+
+action:response:root-2
+Marcurio
+root-2-A:뭔가 문제가 있어 보이는데.
+root-2-B:당신한테 질문이 있어, 그리고 답할 때는 내 눈을 똑바로 보고 말해줬으면 좋겠군.
+</>root-null:떠난다.
+action end
+
+action:statement:root-2-A
+Gwen:아뇨.  아무것도 아니에요.
+next:root-3
+action end
+
+action:response:root-3
+Marcurio
+root-3-A:거짓말을 하고 있군.
+root-3-B:뭐 맘이 바뀌면 말해달라고.
+root-3-C:우린 같은 곳에서 온 것 같군. 안 그래?
+</>root-null:떠난다.
+action end
+
+action:statement:root-3-A
+Gwen:....
+Gwen:그렇게 생각한다면, 제가 별로 할말이 없네요.
+Gwen:저는 괜찮다고 말했어요.
+next:root-3
+action end
+
+action:statement:root-3-B
+Gwen:그러죠.  맘이 바뀐다면요.
+Gwen:하지만 아닐 거에요.
+next:root-3
+action end
+
+action:statement:root-3-C
+Gwen:저는 특별히 어디라고 말할 만한 곳에서 오지 않았는데요.  제가 어느 지역이라고 해도 모를 걸요.
+next:root-3-D
+action end
+
+action:response:root-3-D
+Marcurio
+root-3-E:그런 뜻이 아냐. 내 말은...관두지.
+action end
+
+action:statement:root-3-E
+Gwen:.....
+next:root-null
+action end
+
+action:statement:root-2-B
+Gwen:네?
+next:root-2-C
+action end
+
+action:response:root-2-C
+Marcurio
+root-2-D:선장의 실종에 대해서 뭔가 아는 것이 있나?
+root-2-E:혹시 Ferdinand가 너에게 접촉하던가?  뭔가...도와달라고?
+</>root-null:Never mind.
+action end
+
+action:statement:root-2-D
+Gwen:......
+Gwen:아뇨. 없어요.
+next:root-2-C
+action end
+
+action:statement:root-2-E
+Gwen:일등항해사님이요?  아뇨...한번도 대화를 안 해봤어요.
+Gwen:전 별로 사람들이랑 얘기하는 걸 안 좋아해서.
+next:root-2-C
+action end
+
+dialogue end
+
+
+
+
+
+// MARCURIO - GWEN (CHAPTER 4) ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Marcurio-Gwen
+
+action:response:chap4
+Marcurio
+chap4-A:어이.
+</>chap4-null:떠난다.
+action end
+
+action:statement:chap4-A
+Gwen:안녕하세요...
+Gwen:당신도 제가 범인이라고 생각하나요?  제가...Donovan과 Paulo를 죽였다구요?
+next:chap4-B
+action end
+
+action:response:chap4-B
+Marcurio
+chap4-C:당연하지. 확실한 걸.
+chap4-D:아니, 별로.
+action end
+
+action:statement:chap4-C
+Gwen:아냐...그럴리가 없어...
+Gwen:난 아니야...
+next:chap4-null
+action end
+
+action:statement:chap4-D
+Gwen:그럼 왜 아무 말도 안 하는 거에요?  다른 사람한테도 그렇게 말해줄 수 없나요?
+Gwen:대체 아무것도 모르겠어...
+next:chap4-null
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+dialogue start
+Marcurio-Gwen
+
+
+action:response:root5
+Marcurio
+root5-A:운이 좋은 걸.  Xu한테 가서 자유를 줘서 감사하다고 말하라고.:trigger.relationshipGwenMarc.on
+root-null:떠난다.
+action end
+
+action:statement:root5-A
+Gwen:맞아요.  Ferdinand가 그녀가 어떻게 진실을 밝혔는 지 알려줬어요.
+Gwen:그래서...그게 전부에요?  나한테 그런 짓을 해놓고서, 전혀 죄책감이 없는 것 같군요.
+next:root5-B
+action end
+
+action:response:root5-B
+Marcurio
+<!!>root5-C:난 지금부터 무슨 일이 발생할 지가 더 걱정이거든.:trigger.epilogueGM3.on
+<!!>root5-D:그런 일을 겪게 해서 미안하군, 하지만 중요한 이유가 있었어.:trigger.epilogueGM2.on
+<!!>root5-E:일일 뿐이야.  개인적인 건 없어.  딱히 죄책감을 느낄 이유도 없지.:trigger.epilogueGM1.on
+action end
+
+action:statement:root5-C
+Gwen:왜요?  다른 사람들이 알아낼까봐서?
+Gwen:대체 뭘 감추고 있는 거에요, Marcurio?
+next:root5-F
+action end
+
+action:response:root5-F
+Marcurio
+root5-G:나 자신은 걱정하지 않아.  여기 있는 다른 모두를 걱정하는 거다.
+action end
+
+action:statement:root5-G
+Gwen:다른 사람들이요?  당신은 진실이 다른 사람들을 위험에 빠트릴 거라고 생각하는 건가요?
+Gwen:당신은 틀렸어요.  이게 우리가 모든 걸 바로잡을 수 있는 유일한 방법이에요.
+next:root-null
+action end
+
+action:statement:root5-D
+Gwen:아무 죄도 없는 사람을 가두는 데에 무슨 이유가 있단 말이에요?
+Gwen:그리고 그 모든 걸 다 얘기해놓고서...
+next:root-null
+action end
+
+action:statement:root5-E
+Gwen:어떻게 그런 식으로 말할 수 있죠?  자신의 행동이 다른 사람들한테 어떤 영향을 줄 지 전혀 생각하지 않나요?
+Gwen:당신 정말로 사람이긴 한거야?
+next:root-null
+action end
+
+
+
+action:statement:root6
+Gwen:별로 당신이랑 할 얘기는 없어요.
+next:root-null
+action end
+
+
+
+dialogue end

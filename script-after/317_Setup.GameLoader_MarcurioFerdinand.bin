@@ -1,0 +1,93 @@
+
+
+// MARCURIO - FERDINAND ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Marcurio-Ferdinand
+
+action:statement:root
+Ferdinand:오 이것 참 여기서 보기 힘든 얼굴을 만났군요!
+Ferdinand:혹시 주방 일에 대해서 제가 뭔가 도와드릴 일이 있나요?
+next:root-1
+action end
+
+action:response:root-1
+Marcurio
+root-2:살만합니까?
+root-3:당신은 왜 언제나 배 구석구석을 돌아다니는 거죠?
+</>root-null:떠난다.
+action end
+
+action:statement:root-2
+Ferdinand:인간은 언제나 살아있는 동물이죠!
+Ferdinand:살아있다는 것, 그것은 우리에게 주어진 큰 축복이 아니겠습니까!
+next:root-2-A
+action end
+
+action:response:root-2-A
+Marcurio
+root-2-B:언제나 더럽게 행복하시군요.
+root-2-C:되게 얼간이처럼 말하시는군요.
+root-2-D:아무도 여기서 일하고 싶지 않아해요. 당신 빼고는.
+</>root-null:관둔다.
+action end
+
+action:statement:root-2-B
+Ferdinand:왜요, 그건 정말로 좋은 일이잖아요?
+Ferdinand:이런 복잡한 세상에서 늘 행복하게 사는 건 쉬운 일은 아니지만, 그렇지 않은 것 보다야 훨씬 낫지요!
+Ferdinand:그렇게 생각하지 않나요?
+next:root-2-A
+action end
+
+action:statement:root-2-C
+Ferdinand:괜히 심술부리고 싶으신 가 보군요.
+next:root-2-A
+action end
+
+action:statement:root-2-D
+Ferdinand:그래요, 나만 빼고는.
+Ferdinand:솔직히 말하죠, Marcurio. 우리는 세상에서 가장 멋진 배에 있지는 않아요.
+Ferdinand:우리가 세상에서 가장 위대한 직업을 가진 것도 아니구요.
+Ferdinand:하지만 이 장소를 아름답게 만드는 것은, 우리 인생에서 도전해볼 만한 것이 아닐까요?
+next:root-2-A
+action end
+
+action:statement:root-3
+Ferdinand:일등항해사로서, 이 배에서 일어나는 모든 일을 아는 것은 제 임무니까요!
+Ferdinand:또한, 지금은 선장님을 대신해서 두 배로 일해야 하는 것이죠.
+next:root-3-A
+action end
+
+action:response:root-3-A
+Marcurio
+root-3-B:이전 일등항해사는 그다지 배 전체를 관리하는 걸 신경쓰는 것 같지 않던데요.
+root-3-C:승객 숙소 주변이나, 주방 쪽까지 둘러볼 필요는 없을 텐데요?
+root-3-D:그게 전부에요?  진짜로?
+</>root-null:관둔다.
+action end
+
+action:statement:root-3-B
+Ferdinand:모든 사람들은 자기가 일하는 방식이 있는 법이죠.
+Ferdinand:저는, 예를 들면, 내버려 두지 않고 제 임무를 모두 하는 쪽을 선호합니다!
+next:root-3-A
+action end
+
+action:statement:root-3-C
+Ferdinand:큰 그림 보지 못하는 군요, Marcurio!
+Ferdinand:모든 것을 효율적으로 관리하기 위해선,  머리부터 발끝까지 모두 알아야 하는 법이에요.
+Ferdinand:배는 겉은 돛과 몸체와 바퀴로 이루어져 있지만, 그 심장은 사람으로 이루어지는 법이랍니다.
+Ferdinand:가장 중요한 사람들에 대해서 알지 못 한다면, 그것은 배를 제대로 이해하지 못하고 있는 것이죠.
+next:root-3-A
+action end
+
+action:statement:root-3-D
+Ferdinand:그 말은 상처주는데요!  절 믿지 못하는 이유가 뭘까요.
+Ferdinand:저한테 어떤 의심의 눈초리를 보내는 것인지는 모르겠지만, 이것만 말해두죠. 저는 오로지 진실만을 말하는 남자입니다.
+next:root-3-A
+action end
+
+dialogue end
+
+
+
+

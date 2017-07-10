@@ -1,0 +1,112 @@
+
+
+
+
+// MARCURIO - GARV ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Marcurio-Garv
+
+action:response:root
+Marcurio
+root-1:어디로 가십니까?
+root-2:왜 집에서 손주들이랑 안 놀고 이런 데 계시죠?
+</>root-null:떠난다.
+action end
+
+action:statement:root-1
+Garv:독특한 인사법이구만.
+Garv:업무 건으로 가는 길일세.  회사 감사를 하러 가는 길이지.
+Garv:어떤 멍청이가 일 하다가 사고를 쳐서 회사를 말아먹었다고 하는 군.
+Garv:그 녀석의 징계를 포함한 뒷처리를 하러 가는 길일세.
+next:root-1-A
+action end
+
+action:repsonse:root-1-A
+Marcurio
+root-1-B:감사요?  제가 보기에 당신은 그런 일을 할 지위는 아닐 것 같은데요.
+root-1-C:그건 꽤나 잔인한 일이군요.
+</>root-null:떠난다.
+action end
+
+action:statement:root-1-B
+Garv:뭐 어떻게 보는 가에 따라 다른 것이지.
+Garv:나보다 아래에 있는 사람도, 위에 있는 사람도 있다네.  언제나 그럴 것이고.
+next:root-1-A
+action end
+
+action:statement:root-1-C
+Garv:사회는 냉혹한 법이지.  감정보다 이익을 우선 시 하지 않으면 다 빼앗기고 만다네.
+Garv:그리고 내가 말한 사람은 별로 불쌍한 사람도 아니야. 내 말을 믿게.
+next:root-cold
+action end
+
+action:response:root-cold
+Marcurio
+root-cold-1:별로 도덕 같은 걸 중요하게 여기시지 않는 모양이군요.
+root-cold-2:이익을 위해서라면 무슨 일이라도 하실 겁니까?
+</>root-null:떠난다.
+action end
+
+action:statement:root-cold-1
+Garv:나도 도덕적 가치관은 있다네.  하지만 인생에서 때로는 개인적 가치관을 접어둬야 하는 법이지.
+Garv:그게 우리가 사는 세상일세.  믿고싶지 않다면 주위를 잘 한 번 둘러보게.
+next:root-cold
+action end
+
+action:statement:root-cold-2
+Garv:뭐, 그 말을 물어보는 자네가 생각하는 것만큼 멀리 나가진 않을 걸세.
+Garv:하지만 그래도, 막상 닥치면 어디까지 할 수 있을 지는 모르겠군. 나 자신과 나의 것을 지키기 위해서라면 말이야.
+Garv:자네는 자네의 한계가 어디까지라고 딸 잘라 말할 수 있는가? 어떤 상황이 닥쳤을 때에?
+next:root-cold-3
+action end
+
+action:response:root-cold-3
+Marcurio
+root-cold-A:무슨 말을 하시는 건지 잘 모르겠군요.
+root-cold-B:그건 확실히 말 못하겠군요.
+action end
+
+action:statement:root-cold-A
+Garv:아니, 자네는 잘 이해하고 있네.  그렇지만 괜찮아.  확고한 자의식은 중요한 법이지.
+Garv:내가 그것을 젊은이에게서 빼앗을 수는 없는 것 아니겠나?
+next:root-null
+action end
+
+action:statement:root-cold-B
+Garv:요즘 세상에 자네같이 솔직한 사람은 드문 법이지.
+Garv:자네같은 사람은 이 세상을 잘 헤쳐나갈 수 있을 걸세.
+next:root-null
+action end
+
+action:statement:root-2
+Garv:웃긴 농담이라고 하려는 건 같네만.
+Garv:나는 손주가 없다네.  자식들 뿐이지.  그것도 내 인생의 절반만을 함께했고.
+Garv:인간 관계란 복잡하고 어질러진 시련이지.
+next:root-2-A
+action end
+
+action:response:root-2-A
+Marcurio
+root-2-B:이혼이라도 하셨습니까?
+root-2-C:가족보다 동물에 더 애정을 쏟으시는 것 같군요.
+</>root-null:떠난다.
+action end
+
+action:statement:root-2-B
+Garv:솔직히 말해서, 자네와는 관련 없는 일일세.
+next:root-2-A
+action end
+
+action:statement:root-2-C
+Garv:이 녀석들은 훨씬 더 알기 쉽지.  내가 잘 대해주면, 이 녀석들도 잘 대해줘.  반대도 마찬가지고.
+Garv:깔끔하고.  간단하지.
+Garv:물론 나는 내 아이들을 이런 멍청한 새보다 훨씬 좋아한다네.
+Garv:그렇지만, 멍청한 새는 매춘부 같은 아내 뒤를 쫄래쫄래 따라갈 일도 없지
+next:root-2-A
+action end
+
+
+dialogue end
+
+

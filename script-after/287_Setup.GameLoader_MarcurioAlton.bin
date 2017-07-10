@@ -1,0 +1,161 @@
+
+
+
+
+
+// MARCURIO - ALTON ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Marcurio-Alton
+
+action:response:root
+Marcurio
+root-1:너랑 Xu사이에 좋은 소식을 못 들은 것 같은데?
+root-2:넌 이 일 끝나면 뭘 할 생각이냐?
+</>root-null:Bye.
+action end
+
+action:statement:root-1
+Alton:뭐...그렇지.
+Alton:그녀가 너한테 뭐라고 말하던?
+next:root-1-A
+action end
+
+action:response:root-1-A
+Marcurio
+root-1-B:아무것도.  그냥 보니까 그런 것 같아서.  크게 차이기라도 했나?
+action end
+
+action:statement:root-1-B
+Alton:아니,  훨씬 더...많은 일이 있었어.  뭔가 더 복잡해져버렸네.
+next:root-1-C
+action end
+
+action:response:root-1-C
+Marcurio
+root-1-C-1:뭐, 사실은 원래부터 복잡한 걸 알고 있었다만.
+root-1-D:네가 일찌감치 뭔가 말했다면 달라졌을 지도 모르지.
+</>root-null:관둔다.
+action end
+
+action:statement:root-1-C-1
+Alton:젠장, 난 멍청이야.  아무것도 모르겠어.
+Alton:...왜 나한테 말 안해줬던 거야?
+next:root-1-C-2
+action end
+
+action:response:root-1-C-2
+Marcurio
+root-1-C-3:너도 나처럼 그녀에 대해서 몰랐던 거지.
+root-1-C-4:네가 스스로 알아내야 하는 거야.
+root-1-C-5:네가 막 그녀 뒤를 쫓아다니는 게 보기 웃겼거든.
+</>root-null:떠난다.
+action end
+
+action:statement:root-1-C-3
+Alton:뭐, 이제는 그녀를 알 것 같아.  그녀가 뭘 하는 지도.
+Alton:아마 들었어도 못 믿었을 것 같아.
+next:root-1-C-2
+action end
+
+action:statement:root-1-C-4
+Alton:오 그러셔?  참 자애로움이 넘치시는 걸.
+next:root-1-C-2
+action end
+
+action:statement:root-1-C-5
+Alton:뭐, 네 개인적인 즐거움을 알게 되서 참 기쁘네.
+next:root-1-C-2
+action end
+
+action:statement:root-1-D
+Alton:아무것도 해서는 안 됐어.  그냥 처음부터 다가가면 안 됐어.
+next:root-1-E
+action end
+
+action:response:root-1-E
+Marcurio
+root-1-F:아니면 그냥 네 마음 속에 담아주고 있는 걸 말해버려.
+root-1-G:여자들은 무섭지.  그냥 저지르고 편해져 버리는 게 어때.
+</>root-null:떠난다.
+action end
+
+action:statement:root-1-F
+Alton:나도...그러고 싶어, 근데...
+Alton:..........
+next:root-1-F-1
+action end
+
+action:response:root-1-F-1
+Marcurio
+root-1-F-2:흠?
+action end
+
+action:statement:root-1-F-2
+null:Alton의 얼굴이 피를 다 빨린 것 처럼 하얘졌다.
+null:마치 울 것 같은 표정이었다.
+next:root-null
+action end
+
+action:statement:root-1-G
+Alton:비꼬는 거 아는데, 그게 딱 내 지금 기분이다.
+Alton:나 되게 애처롭지 않냐?
+next:root-1-G-1
+action end
+
+action:response:root-1-G-1
+Marcurio
+root-null:맞아.
+action end
+
+action:statement:root-2
+Alton:이 일 뒤에?  별로 생각 안 하고 있어.
+Alton:사실, 아무 생각 없어.
+next:root-2-A
+action end
+
+action:response:root-2-A
+Marcurio
+root-2-B:뭐, 해야 하지 않아?
+root-2-C:DJ나 계속 해봐. 앞으로 남은 일생동안.
+</>root-null:See ya.
+action end
+
+action:statement:root-2-B
+Alton:생각해봐야 하는 건 알고 있는데, 내가 뭘 할 수 있는 지 모르겠어.
+Alton:내가 별로 잘하는 일이 없어서.  좋아하는 것도 없고.
+next:root-3
+action end
+
+action:response:root-3
+Marcurio
+root-3-A:그건 멍청한 답이군.  넌 내가 내 일을 좋아하는 것처럼 보여?  그냥 하는 거라고.
+action end
+
+action:statement:root-3-A
+Alton:...
+next:root-null
+action end
+
+action:statement:root-2-C
+Alton:음악은 좋아해.  이거면 열심히 일할 수 있을 것 같고.
+Alton:근데 이건 취미로만 하고 싶어.
+Alton:일로는 별로 하고 싶지 않아.
+next:root-4
+action end
+
+action:response:root-4
+Marcurio
+root-4-A:열심히 고민해봐.  나는 또 하루종일 주방에서 일이나 하련다.
+action end
+
+action:statement:root-4-A
+Alton:...
+next:root-null
+action end
+
+dialogue end
+
+
+
+
