@@ -1,0 +1,97 @@
+
+
+// GARV - XU ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Garv-Xu
+
+action:response:root
+Garv
+root-1:여기 생활은 어떤가?  월급은 어느 정도 받지?
+root-2:고용인들 열쇠로는 어떤 것들을 열 수 있지?
+</>root-null:떠난다.
+action end
+
+action:statement:root-1
+Xu:심각해요.  월급 진짜 심각해요.  그 정도로만 해둘게요.
+Xu:그런 의미에서 팁은 언제나 환영이에요.
+next:root-1-A
+action end
+
+action:response:root-1-A
+Garv
+root-1-B:다른 사람들은 어느 정도 받는다고 생각하나?
+root-1-C:다른 수입원은 없나?
+</>root-null:떠난다.
+action end
+
+action:statement:root-1-B
+Xu:흠 추측하기로, Marcurio는 저랑 비슷하게 받을 거에요.
+Xu:Alton은, 제법 돈을 받을 거구요.  아마도 회사에서 그는 다른 옵션으로 생각하는 가 봐요.
+Xu:공평하지는 않은데, 뭐 어쩌겠어요.
+next:root-3
+action end
+
+action:response:root-3
+Garv
+root-3-A:혹시 선장님은 얼마나 버는 지 아는가? 아니면, 얼마나 벌었...는 지?
+root-3-B:되게 어려운 환경인가 보구만.
+</>root-null:떠난다.
+action end
+
+action:statement:root-3-A
+Xu:뭔가 암시라도 하는 거에요?
+Xu:그녀가 얼마나 버는 지 궁금하긴 하죠.  일단 우리들 중에서 제일 많이 버는 건 확실하구요.
+Xu:그 이상한 일등항해사도 마찬가지일걸요.
+Xu:그래도 선장님이 받는 건 적절한 돈이죠.
+next:root-3
+action end
+
+action:statement:root-3-B
+Xu:네, 뭐 다들 그렇죠.
+Xu:Alton이나 Ferdinand는 대부분 시간에 뭘 하는 지 모르겠어요.  다른 사람들도 모를 걸요.
+Xu:누가 보던 여기 구조는 이상해요.
+next:root-3
+action end
+
+action:statement:root-1-C
+Xu:다른 방식?  무슨 소리를 하시는 건지...
+Xu:팁을 받죠.
+Xu:그것 말고는, 다른 방식의 수입이랄 건 없네요.
+next:root-null
+action end
+
+action:statement:root-2
+Xu:그건 제가 들어본 것 중에 제일 이상한 질문이네요.
+Xu:일반 직원들은 별로 추가적인 권한이 없구요.
+Xu:선장님이랑 일등항해사님은 도구실이나 다른 구획에 갈 수 있을 거에요.
+Xu:다른 직원들은 그냥 일에 필요한 곳에 갈 수 있는 열쇠만 받죠.
+next:root-2-A
+action end
+
+action:response:root-2-A
+Garv
+root-2-B:혹시 조타실의 캐비닛은 열 수 있나?
+root-2-C:다른 직원이라고 하면?
+</>root-null:떠난다.
+action end
+
+action:statement:root-2-B
+Xu:어...그럼요.  거기가 열쇠를 돌려놓는 곳이니까요.  우리 모두 열 수 있어야죠.
+Xu:안 그러면 어디다 열쇠를 놓아두겠어요?
+next:root-2-A
+action end
+
+action:statement:root-2-C
+Xu:되게 흥미가 많으신가 보네요?
+Xu:Marcurio는 주방 식자재 관련 열쇠가 있고, Alton은 전자장비들.
+Xu:Ferdinand는 웬만한 곳은 다 열 수 있을 거구요.
+Xu:저는 딱히 없네요.  그냥 웨이터니까요.
+Xu:답변이 되었나요?
+next:root-2-A
+action end
+
+dialogue end
+
+
+

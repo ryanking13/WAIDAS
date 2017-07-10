@@ -1,0 +1,184 @@
+
+
+
+// GARV - MARCURIO ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Garv-Marcurio
+
+action:response:root
+Garv
+root-1:자네 여기서 행복한가?  돈은 많이 받는가?
+root-2:선장에 대해서 어떻게 생각하나?
+</>root-null:떠난다.
+action end
+
+action:statement:root-1
+Marcurio:월급은 별로에요, 뭐 어떻게든 살만한 정도죠.  여기서 일하는 건 나름의 이점이 있습니다.
+Marcurio:승객이 적으니까, 보통 주방은 완전히 제 관리가 되죠.
+Marcurio:업무시간에는 바쁘지만, 개인 공부나 연습을 할 시간이 있어요.
+Marcurio:적어도, 식자재가 남아있는 동안에는요.
+next:root-1-A
+action end
+
+action:response:root-1-A
+Garv
+root-1-B:다른 직업을 가질 생각은 안 해봤나?
+root-1-C:혹시 선장한테 월급에 대해서 얘기해볼 생각은 안 해봤나?
+</>root-null:떠난다.
+action end
+
+action:statement:root-1-B
+Marcurio:뭐 좋은 일이라도 추천해주시려구요? 개인 식당이라도 경영하시는게 아니라면, 관심 없습니다.
+Marcurio:물론 여기서 나가서 좀 더 일류 식당에서 일하고는 싶죠. 하지만 쉬운 일이 아니죠.
+next:root-1-A
+action end
+
+action:statement:root-1-C
+Marcurio:당신은 대체 이 일이랑 무슨 상관이죠?
+Marcurio:나는 그닥 월급에 집착하지는 않아요, 이차적인 문제죠.
+Marcurio:돈을 위해서 쓸데없이 멍청한 짓은 안 할 겁니다.
+next:root-1-D
+action end
+
+action:response:root-1-D
+Garv
+root-1-E:모든 사람은 합당한 가치가 있지.
+action end
+
+action:statement:root-1-E
+Marcurio:그렇죠.  저는 꽤 비쌉니다.
+next:root-null
+action end
+
+
+action:statement:root-2
+Marcurio:솔직하게 말하자면, 좀 이상한 사람이죠.
+Marcurio:배의 여러가지 일에 대해서나, 뭐 이것저것 다요.
+Marcurio:배를 더 좋게 할 이상한 아이디어를 내곤 했죠.
+Marcurio:그런 밝은 사람이 왜 이런 거지 같은 곳에 선장으로 오게 됐는 지 모르겠네요.
+next:root-2-A
+action end
+
+action:response:root-2-A
+Garv
+root-2-B:이상한 아이디어라고 하면? 결국 이제는...없어지게 된 아이디어들을 말하는 건가?
+<!>root-2-C:자네는 선장의 실종에 대해서 크게 신경쓰지 않는 것 같구먼.
+</>root-null:떠난다.
+action end
+
+action:statement:root-2-B
+Marcurio:웃기려고 그런 말을 하시는 거라고 믿죠.
+Marcurio:저도 그녀가 가졌던 멍청한 아이디어를 생각 안 해본 건 아니에요.
+Marcurio:실제로, 그게 의도했던 대로 되었다면, 저한테도 도움이 되었을 거에요.
+Marcurio:하지만 그런 식의 관리가 이 배를 성공적으로 만들진 못했죠.
+next:root-2-A
+action end
+
+action:statement:root-2-C
+Marcurio:저도 이 상황을 나쁘다고는 생각하고 있어요.  모두가 그렇듯이요.
+Marcurio:그렇지만 딱히 겉으로 드러낸다고 해서 도움이 되는 건 없잖아요.
+Marcurio:제가 딱히 할 수 있는 것도 없어요. 저는 경찰이 아니라 살인 사건을 해결할 능력 따위 없죠.
+Marcurio:그냥 요리사인 뿐인걸요.
+next:root-3-C
+action end
+
+action:response:root-3-C
+Garv
+root-3-D:그렇군.  그냥 신경 끄고 뭔가 해결되길 기다리겠다는 거구만.  현명한 방법이야.:trigger.chap3MarcUnlocked.on
+action end
+
+action:statement:root-3-D
+Marcurio:맞아요.  당신 같은 괴짜 늙은이는 이해해 줄 것 같았죠.
+Marcurio:주변에서 여럿 잘못된 친구를 사귀어서 골로 가는 사람들을 봤거든요.
+Marcurio:그래서 제 일에만 신경쓰라는 교훈을 얻었죠.  영웅처럼 행동해서 좋을 것 하나도 없어요.
+Marcurio:그냥 할 일을 할 뿐입니다.
+next:root-null
+action end
+
+
+
+action:response:root2
+Garv
+root2-1:자네 여기서 행복한가?  돈은 많이 받는가?
+root2-A:자네 생각엔 이 일 이후에도 이 배가 이대로 사용될 것 같은가?
+</>root2-null:관둔다.
+action end
+
+action:statement:root2-1
+Marcurio:월급은 별로에요, 뭐 어떻게든 살만한 정도죠.  여기서 일하는 건 나름의 이점이 있습니다.
+Marcurio:승객이 적으니까, 보통 주방은 완전히 제 관리가 되죠.
+Marcurio:업무시간에는 바쁘지만, 개인 공부나 연습을 할 시간이 있어요.
+Marcurio:적어도, 식자재가 남아있는 동안에는요.
+next:root2-1-A
+action end
+
+action:response:root2-1-A
+Garv
+root2-1-B:다른 직업을 가질 생각은 안 해봤나?
+root2-1-C:혹시 선장한테 월급에 대해서 얘기해볼 생각은 안 해봤나?
+</>root2-null:떠난다.
+action end
+
+action:statement:root2-1-B
+Marcurio:뭐 좋은 일이라도 추천해주시려구요? 개인 식당이라도 경영하시는게 아니라면, 관심 없습니다.
+Marcurio:물론 여기서 나가서 좀 더 일류 식당에서 일하고는 싶죠. 하지만 쉬운 일이 아니죠.
+next:root2-1-A
+action end
+
+action:statement:root2-1-C
+Marcurio:당신은 대체 이 일이랑 무슨 상관이죠?
+Marcurio:나는 그닥 월급에 집착하지는 않아요, 이차적인 문제죠.
+Marcurio:돈을 위해서 쓸데없이 멍청한 짓은 안 할 겁니다.
+next:root2-1-D
+action end
+
+action:response:root2-1-D
+Garv
+root2-1-E:모든 사람은 합당한 가치가 있지.
+action end
+
+action:statement:root2-1-E
+Marcurio:그렇죠.  저는 꽤 비쌉니다.
+next:root2-null
+action end
+
+action:statement:root2-A
+Marcurio:문 닫을 것 같냐고요?  그럴지도 모르죠.
+Marcurio:솔직히, 지금까지 어떻게 이 배가 잘 다녔는지도 모르겠어요.
+Marcurio:누가 이 배 주인인지도 모르고요.  그 사람들이 알아서 잘 하겠죠.
+next:root2-A-1
+action end
+
+action:response:root2-A-1
+Garv
+root2-A-2:누가 이 배를 소유하는 지 모른다고?:trigger.chap4garvMarcProgress.on
+root2-trigger.chap4garvMarcProgress:그러면...급료는 어디에서 나오나?
+root2-A-3:이런 혼란한 상황에 연관되고 싶어할 사람은 없을 것 같구먼.
+</>root2-null:떠난다.
+action end
+
+action:statement:root2-A-2
+Marcurio:모릅니다.
+Marcurio:선장도 형식 상으로는 피고용인이에요, 저처럼.
+Marcurio:이 배의 실제 주인은...실제로 만나 본 적이 없어요.
+next:root2-A-1
+action end
+
+action:statement:root2-trigger.chap4garvMarcProgress
+Marcurio:어...글쎄요...
+Marcurio:전 그냥 현금을 받아서.
+Marcurio:그러는 편이...간단하죠.
+next:root2-A-1
+action end
+
+action:statement:root2-A-3
+Marcurio:배 이미지 문제 때문에 우리가 잘리거나 할 거라고 생각하나요?
+Marcurio:아니길 빌어야죠.  그래도 뭐 누가 압니까, 그럴 지도요.
+next:root2-A-1
+action end
+
+dialogue end
+
+
+
