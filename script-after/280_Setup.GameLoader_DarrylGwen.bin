@@ -1,0 +1,150 @@
+
+
+
+
+// DARRYL - GWEN ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Darryl-Gwen
+
+action:response:root
+Darryl
+root-1:당신은 이 배에 왜 탄 거지?
+</>root-null:관둔다.
+action end
+
+action:statement:root-1
+Gwen:음, 집보다는 나아서요.
+next:root-2
+action end
+
+action:response:root-2
+Darryl
+root-3:여기 있는 대부분의 사람들이 그렇게 생각하는 것 같군.  그래서 어디로 가려고?
+action end
+
+action:statement:root-3
+Gwen:먼 곳. 아주 먼 곳.
+next:root-4
+action end
+
+action:response:root-4
+Darryl
+root-5:그래...뭐 말대로 멀리 갔다 쳐.  그 다음엔 뭘 할 생각인데?
+</>root-null:잘해보라고.
+action end
+
+action:statement:root-5
+Gwen:그 이후 일은...생각해 본 적 없어요.
+Gwen:공부를 좀더 하고 싶을지도요.
+Gwen:언제나 과학자가 되고 싶었죠.
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+// DARRYL - GWEN (CHAPTER 4) ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Darryl-Gwen
+
+action:response:chap4
+Darryl
+chap4-A:잘 지내고 있나?
+</>chap4-null:Bye.
+action end
+
+action:statement:chap4-A
+Gwen:네....뭐.
+Gwen:당신은 제가 안 했다는 걸 알죠...?
+next:chap4-B
+action end
+
+action:response:chap4-B
+Darryl
+chap4-C:그럼.  알지.
+chap4-D:난 아무것도 몰라.
+action end
+
+action:statement:chap4-C
+Gwen:그럼 다른 사람한테 좀 말해줘요.  절 좀 도와주세요.
+next:chap4-C-1
+action end
+
+action:response:chap4-C-1
+Darryl
+chap4-C-2:증거가 없어.
+chap4-C-3:다 상관없는 일이야.
+chap4-null:Bye.
+action end
+
+action:statement:chap4-C-2
+Gwen:그래도...말해주는 정도도 안 되나요?  사람들이 당신 얘기는 들을 거에요.  같이 설득해줘요!
+next:chap4-null
+action end
+
+action:statement:chap4-C-3
+Gwen:상관 없다는 게 무슨 소리에요?  살인자가 이 배에 돌아다니고 있을 수도 있는데!
+next:chap4-null
+action end
+
+action:statement:chap4-D
+Gwen:그렇겠죠...아무도 나를 믿어주지 않아...
+next:chap4-null
+action end
+
+
+
+
+action:response:chap6
+Darryl
+chap6-A:잘 해결되어서 기쁘군.:trigger.chap6darrylGwenProgress.on
+chap6-trigger.chap6darrylGwenProgress:너는 풀려났지만, 상황은 더 안 좋아졌군.
+</>chap6-null:Never mind.
+action end
+
+action:statement:chap6-A
+Gwen:...고마워요.
+Gwen:별로 기뻐보이진 않지만요.
+next:chap6
+action end
+
+action:statement:chap6-trigger.chap6darrylGwenProgress
+Gwen:맞아요.
+Gwen:Marcurio가 제 방에 열쇠를 몰래 가져다뒀죠, Xu는 그가 매수당한 거라고 했지만.
+Gwen:결국 누군가는 이 일의 배후에 있단 얘기니까요.
+next:chap6-2
+action end
+
+action:response:chap6-2
+Darryl
+chap6-2A:당신이 사건을 해결하려고 하는 것 처럼 들리는 군.
+chap6-2B:그걸로 매수 건이 전부 끝난 걸까.
+</>chap6-null:떠난다.
+action end
+
+action:statement:chap6-2A
+Gwen:...모르겠어요.
+Gwen:내가 뭔가 사건의 조각을 쥐고 있는 느낌이 들어요.  모든 것이 마스터 키와 관련되어 있는 것 같아요.
+next:chap6-2
+action end
+
+action:statement:chap6-2B
+Gwen:저도 그게 궁금해요.
+Gwen:여러 사람이 처음부터 관련되어 있다면...전체 그림을 보기 어렵겠군요.
+Gwen:각각의 관련자들이 전체 사건에서 하나의 부품일 뿐이었다면, 최종 결과는 알지 못하겠죠.
+Gwen:Donovan이 이 모든 것을 하나로 엮을 수 있는 걸 발견했던 걸까요.
+next:chap6-2
+action end
+
+dialogue end
+
+
+
+
+

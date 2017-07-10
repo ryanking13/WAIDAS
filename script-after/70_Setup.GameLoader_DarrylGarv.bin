@@ -1,0 +1,121 @@
+
+
+// DARRYL - GARV ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Darryl-Garv
+
+action:response:root
+Darryl
+root-1:당신은 왜 이 배에 타게 된 거죠?
+root-trigger.chap3darrylGarvProgress:당신은 참 냉혹한 사람이군요.
+</>root-null:관둔다.
+action end
+
+action:statement:root-1
+Garv:나는 그냥 나를 필요로 하는 곳에 맞춰서 돌아다니는 거라네.
+Garv:그 외에는 아무 것도 없다네. 인생이 다 그런 것 아니겠나.
+next:root-2
+action end
+
+action:response:root-2
+Darryl
+root-A:저도 지금까지 그렇게 생각했죠.
+<!>root-B:집에서는 당신을 기다리지 않나요?
+</>root-null:떠난다.
+action end
+
+action:statement:root-A
+Garv:나이가 차면 다들 느끼게 되는 것이지.  얼마 지나면, 옳바른 길도 잘못된 길도 없다는 걸 알게 돼.
+Garv:뭐가 얼마나 좋고 나쁘건, 삶은 한 방향으로 나아갈 뿐이지.
+Garv:다른 점은 자신이 삶과 함께 움직이는 가, 아닌가 뿐이네.
+next:root-A-1
+action end
+
+
+action:response:root-A-1
+Darryl
+root-A-2:인생에서 굴곡을 많이 겪으신 것 같군요.
+root-A-3:삶의 적절한 방향이란 게 있다고는 생각하지 않으신가보죠?
+root-B:집에서는 당신을 기다리지 않나요?
+</>root-null:떠난다.
+action end
+
+action:statement:root-A-2
+Garv:그래, 몇번이고 돌바닥에 부딪혀봤다네.  그 위에 누워서 잘 정도로.
+Garv:그래도 전체적으로 난 제법 편한 삶을 살아온 것 같다네.
+Garv:중요한 건, 내가 언제나 스스로가 어디로 가고 있는 지 생각했다는 점이지. 모든 일이 계획된 것처럼 말이야.
+Garv:실제로는 아무것도 몰랐는데 말이지.
+next:root-A-1
+action end
+
+action:statement:root-A-3
+Garv:뭐 미친 것처럼 들릴 지 모르겠네만, 사람들은 너무 자아발전에 사로잡혀있는 것 같다네.
+Garv:나는 우리가 무슨 일을 하던 결국 같은 곳에 도착한다고 생각하네.
+Garv:우리는 모두 삶에서 얻을 수 있는 것이 정해져 있는 법이야.
+next:root-A-1
+action end
+
+action:statement:root-B
+Garv:오 그럼, 그럼.  내 아이들보다 동물들과 더 많은 시간을 보내긴 하지만 말이네.
+Garv:자네는 어떤가?  아내는 있나?  아이들은?
+next:root-B-1
+action end
+
+action:response:root-B-1
+Darryl
+root-B-2:아내가 있었죠.
+action end
+
+action:statement:root-B-2
+Garv:나도 마찬가지네.  이혼이란 정말로 끔찍한 일이지.
+Garv:서로 얼마나 가깝건, 타인은 서로를 완전히 이해할 수는 없는 법이야.
+Garv:언제나 벽이 가로 막고 있지.  깊은 곳에는 타인이 알 수 없는 것이 있어.
+Garv:그것이 가끔은 우리를 갈가리 찢어지게 만드는 것이지.
+next:root-B-3
+action end
+
+action:response:root-B-3
+Darryl
+root-B-4:무슨 말씀을 하시는 지 알 것 같군요.:trigger.chap3GarvUnlocked.on
+action end
+
+action:statement:root-B-4
+Garv:참 안타까운 일이지.
+Garv:가끔은 내가 믿을 만한 것이라고는 이 조그만 동물들밖에 없는 것 같다네.
+Garv:물론 이 녀석들은 벽돌같이 멍청하지만, 그래도 믿을 수 있는 존재들이지. 그게 내가 동물을 좋아하는 이유일 걸세.
+Garv:...뭐 어찌되었건, 이런 늙은이의 사설을 들어줘서 고맙네.
+Garv:또 보지.
+next:root-null
+action end
+
+action:statement:root-trigger.chap3darrylGarvProgress
+Garv:믿어주게, 자네는 절반도 몰라.
+Garv:나는 이런 상황을 많이 봐왔네...사람들은 정말로 끔찍한 일을 할 수 있지.
+Garv:인간.  우리는 거창한 척 하지만 결국은 한낱 동물일 뿐이야.
+next:root-C
+action end
+
+action:response:root-C
+Darryl
+root-C-1:정말로 그렇게 생각해요?
+root-C-2:끔찍한 견해군요.
+</>root-null:관둔다.
+action end
+
+action:statement:root-C-1
+Garv:...모르지.  그냥 과장하고 있는 걸지도.
+Garv:늙은이의 헛소리에 신경쓰지 말게.
+next:root-C
+action end
+
+action:statement:root-C-2
+Garv:...아마도.
+Garv:자네는 내가 무엇을 겪었는 지 몰라.
+next:root-C
+action end
+
+dialogue end
+
+
+

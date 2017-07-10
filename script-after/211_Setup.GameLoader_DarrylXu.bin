@@ -1,0 +1,132 @@
+
+
+
+// DARRYL - XU ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Darryl-Xu
+
+action:response:root
+Darryl
+root-1:너는 왜 이 배에서 일하고 있지?
+<!>root-trigger.chap3DarrylsKeyDarryl:Quella가 말하길, 네가 내 열쇠를 훔쳤다면서?:trigger.chap3DarrylsKeyDarryl.off
+</>root-null:떠난다.
+action end
+
+action:statement:root-1
+Xu:다른 방법이 없어서요.
+Xu:저 같은 사람을 받아줄 다른 곳이 없었거든요.
+next:root-2
+action end
+
+action:response:root-2
+Darryl
+root-2-A:공부를 더 할 생각은 없나?
+root-2-B:나도 한 때 그랬지.
+root-2-null:떠난다.
+action end
+
+action:statement:root-2-A
+Xu:그것도 돈이 필요하니까요, 아니면 지원을 받거나, 대출을 하거나.
+Xu:다 저한텐 무리인 것들이에요.
+Xu:한 때는 기회가 있었지만, 제가 다 망쳐버렸죠.  대가를 치르는 걸지도요.
+next:root-null
+action end
+
+action:statement:root-2-B
+Xu:뭐 딱히 트집잡는 건 아닌데요.  당신이 어떤 환경에 있었 건, 저랑은 다를 거에요.
+Xu:제가 이 일을 그만두면, 하...전 그냥 여기에 갇혔어요.
+next:root-null
+action end
+
+
+action:statement:root-trigger.chap3DarrylsKeyDarryl
+Xu:내가...훔쳐요?  난 그런 일을 한 적이 없는데요.
+Xu:죄송한데, 뭔가 오해가 있을 거에요. 저는...
+next:root-foundOut-1
+action end
+
+action:response:root-foundOut-1
+Darryl
+root-foundOut-2:연기는 그만 둬.  난 Quella의 말을 믿는다.
+action end
+
+action:statement:root-foundOut-2
+Xu:아뇨, 제 말은, 지금 당신은 이해 못하고 있어요.
+next:root-foundOut-3
+action end
+
+action:response:root-foundOut-3
+Darryl
+root-foundOut-4:네가 한 일을 알리지 않을 그럴 듯한 이유를 대봐.:trigger.chap3darrylXuProgress.on
+root-trigger.chap3darrylXuProgress:그건 별로 이유가 안 되는데.  너는 방도 있고 여기서 잘 사는데.  따로 돈 필요없잖아.
+action end
+
+action:statement:root-foundOut-4
+Xu:네?!
+Xu:젠장, 나는 그냥, 돈이 좀 필요했어요.
+Xu:여기서는 쥐꼬리만한 월급만 주고, 정말로 절박했다고요.
+next:root-foundOut-3
+action end
+
+
+action:statement:root-trigger.chap3darrylXuProgress
+Xu:...
+Xu:저는 불법체류자에요, 알겠어요?
+Xu:저는 학생 비자로 대학에 왔고, 어...낙제당했죠.
+Xu:제 가족은 저를 여기 보내려고 모든 걸 다 바쳤어요.  이대로는 못 돌아가요.
+Xu:그래서 그냥 실종된 척 했어요.  멍청했죠.  돈 없이는 멀리 도망가지도 못 하는데.
+Xu:이 일은 전혀 신분 증명을 요구 안 했어요.  결국 여기에 이렇게 갇히게 되었지만요.
+Xu:나갈 기회를 얻기 위해선, 뭐든 긁어 모아야 해요.
+Xu:...이 일을 잃고 나면, 저한테 무슨 일이 생길 지 모르니까요.
+next:root-foundOut-7
+action end
+
+action:response:root-foundOut-7
+Darryl
+root-foundOut-8:이건 제대로 사는 방법이 아냐.  육지에 도착하면, 그때 해결하자.:trigger.chap3XuUnlocked.on
+action end
+
+action:statement:root-foundOut-8
+Xu:...당신이 아무 것도 안해도, 이미 다들 알고 있는 것 같더군요.
+Xu:난 Donovan이 제일 무서워요.  그가 뭘 꾸미고 있는 지 전혀 모르겠어요...
+next:root-null
+action end
+
+
+action:response:root2
+Darryl
+root2-A:대학에서 무슨 일이 있었지? 넌 잘했을 것 같은데.
+root2-B:계속 이러고 있을 순 없어.  너도 알잖아.
+</>root2-null:떠난다.
+action end
+
+action:statement:root2-A
+Xu:좋은 학생이 될 수도 있었겠죠, 노력했다면.  그러려고 비자를 받고 온거구요.
+Xu:제가 왜 중퇴했는 지는...많은 일들이 있었어요.
+Xu:제가 어떻게 할 수 있을 거라 생각했는데.  그렇지 않더군요.
+next:root2
+action end
+
+action:statement:root2-B
+Xu:돌아가면, 웬만해선 다시 중국을 떠나지 못할 거에요.
+Xu:돌아간다는 생각을 하면, 뭔가 모래로 빨려들어가는 것 같아요.
+Xu:다신 떠날 수 없고...머물러야 하는 것.  그렇지 않나요?
+next:root2-C
+action end
+
+action:response:root2-C
+Darryl
+root2-D:굳이 그럴 필요는 없어.  너는 네 길을 스스로 찾을 수 있을 거다.
+action end
+
+action:statement:root2-D
+Xu:그게 누구한테나 쉬운 일이 아니죠.
+Xu:저는 다른 방식으로 당신보다 힘든 삶을 살아왔어요.
+next:root2
+action end
+
+dialogue end
+
+
+
