@@ -1,0 +1,288 @@
+
+
+
+
+// GWEN - MARCURIO ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Gwen-Marcurio
+
+action:response:root
+Gwen
+root-1:당신은 어디에서 왔나요?:trigger.gwenAskedMarc.on
+root-trigger.gwenAskedMarc:당신은 어디로 가나요?
+</>root-null:관둔다.
+action end
+
+action:statement:root-1
+Marcurio:이 일을 하기 전 말인가?  브롱스에서 살았지.
+next:root-1-A
+action end
+
+action:response:root-1-A
+Gwen
+root-1-B:거긴 어땠어요?
+action end
+
+action:statement:root-1-B
+Marcurio:거길 떠나서 도착한 곳이 이 거지 같은 배야.
+Marcurio:그 정도면 대답이 되었을 것 같은데.
+next:root-null
+action end
+
+action:statement:root-trigger.gwenAskedMarc
+Marcurio:뭘 하자는 거지?
+Marcurio:승객들이랑 노가리까는 건 내 업무가 아냐.
+Marcurio:대화할 사람이 필요하다면, 가서 Alton이나 만나보라고.
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+// GWEN - MARCURIO (CHAPTER 4) ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Gwen-Marcurio
+
+action:response:chap4
+Gwen
+chap4-A:제발...내 말을 들어줘요.
+</>chap4-null:아무 것도 말하지 않는다
+action end
+
+action:statement:chap4-A
+Marcurio:그래. 듣고 이어.
+next:chap4-B
+action end
+
+action:response:chap4-B
+Gwen
+chap4-C:절 믿어줘요.  제가 한 일이 아니에요.
+chap4-D:전 살면서 그 열쇠를 한 번도 본 적이 없어요.
+chap4-E:아직 진짜 살인자가 돌아다니고 있을 거에요...
+<!>chap4-trigger.chap4MarcPast:당신은 알죠.  제가 결백하다는 걸 알고 있죠.:trigger.chap4marcGwenMusic.on
+</>chap4-null:...관둔다.
+action end
+
+action:statement:chap4-C
+Marcurio:왜 당신을 믿어야 하지?  처음 왔을 때부터 여기저기 돌아다니면서 모든 사람을 의심하고 다녔던 당신을?
+Marcurio:당신이 의심받는 건 당연한 거야.
+next:chap4-C-1
+action end
+
+action:response:chap4-C-1
+Gwen
+chap4-C-2:누군가 나를 쫓아오고 있다고 생각했어요. 그래서...:trigger.chap4gwenMarcProgression.on
+chap4-trigger.chap4gwenMarcProgression:누가...나를 집으로 데려가려고 한다고 생각했어요.:trigger.chap4MarcPast.on
+action end
+
+action:statement:chap4-C-2
+Marcurio:그 말 다시 한번 곱씹어봐. 그 말은 당신 상황을 더욱 악화시킬 뿐이라고.
+Marcurio:누가 당신을 따라오고 있다고 생각했다고?  왜 그런 건데?
+next:chap4-C-1
+action end
+
+
+action:statement:chap4-trigger.chap4gwenMarcProgression
+Marcurio:들어봐.
+Marcurio:난 당신이 어떤 일을 겪었는 지 몰라, 하지만 약간은 공감할 수 있지.
+Marcurio:하지만 다른 사람들은 전혀 몰라.  아니 신경쓰지도 않아.  절대로 이해하지 못 할 거라고.
+Marcurio:넌 뭔가...다른 해결책을 찾아야 해.
+next:chap4-C-4
+action end
+
+action:response:chap4-C-4
+Gwen
+chap4-C-4-A:어떻게 해야할까요?
+chap4-C-4-B:공감할 수 있다구요?
+action end
+
+action:statement:chap4-C-4-A
+Marcurio:사람들을 만나.  당신과 같은 일을 겪은 사람들.
+Marcurio:난 잘 모르지만, 그런 사람들 끼리의 네트워크가 있을 거라고 생각해.
+Marcurio:...난 한 번도 그러려고 안 했지.  어쩌면 시도해봤어야 했을 지도.
+next:chap4-C-4
+action end
+
+action:statement:chap4-C-4-B
+Marcurio:내 가족은 완전 엉망이었어.
+Marcurio:아버지는...문제가 많은 사람이었지.
+Marcurio:날 피투성이가 될 때까지 때리곤 했어.  주변에 뭐든 잡히는 걸 닥치는 대로 이용해서.
+Marcurio:이러다 죽겠다고 생각한 게 한 두번이 아냐.  그 녀석도 사실 그럴 생각이었던 것일지도 모르지.
+next:chap4-thePast
+action end
+
+action:response:chap4-thePast
+Gwen
+chap4-thePast-1:다른 누군가한테 말하지는 않았나요?
+chap4-thePast-2:근데 당신은...괜찮아 보여요.
+chap4-thePast-3:말해줘서 고마워요.
+action end
+
+action:statement:chap4-thePast-1
+Marcurio:대체 누구한테?  말한다고 어떻게 도와주겠어?
+Marcurio:피떡이 된 나를 보고서, 사람들은 무슨 일이 있어났는 지 다 알고 있었을 거야.
+Marcurio:아무도 신경쓰지 않았지.
+next:chap4-thePast
+action end
+
+action:statement:chap4-thePast-2
+Marcurio:5년, 10년 전에 나를 봤다면 그런 말 못할 걸.
+Marcurio:나는 완전히 망가졌었어, 절망했었지.  그래서 정말로 멍청한 짓을 했어.
+Marcurio:...여기를 첫 도피처로 선택한 거야.
+next:chap4-thePast
+action end
+
+action:statement:chap4-thePast-3
+Marcurio:...고마워하지 마.
+Marcurio:내가 당신을 도와줄 수 있는 건 전혀 없어.
+next:chap4-B
+action end
+
+
+action:statement:chap4-D
+Marcurio:그 말은 좀 이상한데, 열쇠는 당신 방에 있었다고.
+Marcurio:이상한 일이야 차고 넘치지만.
+next:chap4-B
+action end
+
+action:statement:chap4-E
+Marcurio:우리가 그 녀석을 찾는다면, 바로 당신을 풀어주지.
+Marcurio:그 전에는 당신이 유력한 용의자야.
+next:chap4-F
+action end
+
+action:response:chap4-F
+Gwen
+chap4-G:당신은 제가 살인자라고 생각하나요?
+action end
+
+action:statement:chap4-G
+Marcurio:들어봐.  내가 어떻게 생각하는 가는 전혀 중요하지 않아.
+Marcurio:왜냐면 어찌되었건 난 당신을 풀어주지 않을 거거든.
+next:chap4-B
+action end
+
+
+action:statement:chap4-trigger.chap4MarcPast
+Marcurio:그럼, 알지.  하지만 당신은 나에 대해서 모르는 게 많아.
+Marcurio:비밀 하나 알려주지.
+Marcurio:난 당신이 아니었다는 걸 알아.
+Marcurio:...
+Marcurio:왜냐면 내가 바로 당신 방에 열쇠를 가져다 둔 사람이거든.
+next:chap4-marcConfess
+action end
+
+action:response:chap4-marcConfess
+Gwen
+chap4-marcConfess-1:뭐라고요?  대체 당신이 왜?!
+chap4-marcConfess-2:다른 사람들한테 말해야 해요!  그래야 제가 풀려날 수 있어요!
+chap4-marcConfess-3:왜 저한테 그걸 말해주는 거죠?:trigger.chap4MarcConfessedPlant.on
+action end
+
+action:statement:chap4-marcConfess-1
+Marcurio:좀 복잡한 얘기야.
+Marcurio:네가 별로 이해해줄 거라고 생각되지 않는 군.
+next:chap4-marcConfess
+action end
+
+action:statement:chap4-marcConfess-2
+Marcurio:그건 정말 최후에 가서야 할 일이지.
+Marcurio:들어봐, Gwen.  우리는 둘 다 좆같은 과거를 겪고 여기까지 왔지.  서로를 잘 이해할 수 있어.
+Marcurio:그치만 이건 다른 문제지.  이건 비즈니스야.
+Marcurio:우리가 감당할 수 있는 것보다 훨씬 큰 일이 굴러가고 있어.  그냥 흐름에 몸을 맡기라는 게 내가 해줄 수 있는 충고다.
+Marcurio:다치는 일은 없을 거야.  내가 아는 대로 당신이 결백하다면, 나중에 경찰한테 잠시 조사받고 풀려날 거야.
+Marcurio:...아마도.
+Marcurio:그때까지는, 이 조그마한 연극이 계속되어야 해.
+next:chap4-marcConfess
+action end
+
+action:statement:chap4-marcConfess-3
+Marcurio:뭐, 당신이 알아둬야 한다고 생각해서.  당신은 진실을 알 자격이 있어.
+Marcurio:딱히 개인적으로 저지른 일은 아냐, 난 그냥 지시에 따르고 있을 뿐이다.
+Marcurio:하지만 이걸 말해주는 건, 안다고 해서 당신이 할 수 있는 일이 하나도 없기 때문이야.
+Marcurio:가서 사람들한테 이 얘기를 해봐.  다들 안 믿어 줄 걸?  당신은 나랑 반대되는 주장을 하게 되는 거야.
+Marcurio:그냥 조용이 있으면, 모든 게 당신 모르는 사이에 잘 지나갈 거야. 알아 들어?
+next:chap4-null
+action end
+
+dialogue end
+
+
+
+
+// GWEN - MARCURIO (CHAPTER 5) ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Gwen-Marcurio
+
+action:response:chap5
+Gwen
+chap5-A:당신이...제 방에 열쇠를 가져다두었죠.
+chap5-B:아직 살인자가 돌아다니고 있어요.  그들이 나를 몰아가려 했죠.
+</>chap5-null:관둔다.
+action end
+
+action:statement:chap5-A
+Marcurio:그래.  내가 당신한테 말했지.
+Marcurio:다시 생각해보니 그게 최선의 방법은 아니었던 것 같군.
+next:chap5-A-1
+action end
+
+action:response:chap5-A-1
+Gwen
+chap5-A-2:당신이 나한테 다 뒤집어 씌웠어!
+chap5-A-3:이제 당신이 전망실에 묶여있어야 할 차례 아닌가요?
+chap5-A-4:대체 왜?  왜 이런 일을 한 거죠?
+</>chap5-null:관둔다.
+action end
+
+action:statement:chap5-A-2
+Marcurio:육지에 도착할 때까지였을 뿐이야.  너한테는 아무 일도 없었을 거라고.
+next:chap5-A-1
+action end
+
+action:statement:chap5-A-3
+Marcurio:그래봤자 아무 도움도 안 돼.
+Marcurio:내가 한 건 그냥 지시에 따른 것 뿐.  나 혼자 했던 일도 아니었지.
+Marcurio:오히려 다음 번에 사라지는 게 내 쪽이었을 지도 모르겠군.
+next:chap5-A-1
+action end
+
+action:statement:chap5-A-4
+Marcurio:돈 때문이지.
+Marcurio:Xu가 다 밝혀버렸지만 말이야.
+next:chap5-A-1
+action end
+
+action:statement:chap5-B
+Marcurio:조사를 도와달라고 말할 생각이라면 거절하지.
+Marcurio:나는 수영을 못해서 말이야.
+next:chap5-B-1
+action end
+
+action:response:chap5-B-1
+Gwen
+chap5-B-2:범인에 대해서 의심가는 것 없어요?
+chap5-B-3:당신은 겁쟁이야.
+</>chap5-null:관둔다.
+action end
+
+action:statement:chap5-B-2
+Marcurio:범인이 누구던지간에, 이 일에 능숙하다는 건 분명하군.
+Marcurio:Donovan은 배의 어디든 들어갈 수 있었고, 뭐든 조사할 수 있었어.
+Marcurio:근데도 누군가 그를 앞질렀다.
+Marcurio:그런 사람을 붙잡으려면...배를 전부 감시할 수 있는 게 아니고서야 무리지.
+Marcurio:우리가 CCTV라도 살펴볼 수 있다면 해볼만할텐데 말이야.
+next:chap5-B-1
+action end
+
+action:statement:chap5-B-3
+Marcurio:현실주의자지.
+next:chap5-B-1
+action end
+
+dialogue end

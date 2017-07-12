@@ -1,0 +1,176 @@
+
+
+// GWEN - DARRYL ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Gwen-Darryl
+
+action:response:root
+Gwen
+root-1:당신은 어디서 왔어요?
+root-3:당신은 어디로 가고 있어요?
+</>root-null:관둔다.
+action end
+
+action:statement:root-1
+Darryl:나?  지구에서 유일하게 위대한 도시에서 왔지.  뉴욕.
+next:root-2
+action end
+
+action:response:root-2
+Gwen
+root-2-A:거긴 좋았나요?
+</>root-2-null:관둔다.
+action end
+
+action:statement:root-2-A
+Darryl:좋아했냐고?  아니, 혐오했지.  절대 거기로는 안 돌아갈 거야.
+next:root-2-B
+action end
+
+action:response:root-2-B
+Gwen
+root-2-C:근데 방금은...
+action end
+
+action:statement:root-2-C
+Darryl:그냥 농담해본 거야.  위대한 도시는 무슨, 그냥 도시지.
+Darryl:모든 도시는 그냥 도시지.  사람들이 실제보다 거창한 걸 만들어내는 것 뿐.
+Darryl:어디에 있느냐보다 중요한 건 네가 누구냐지.
+next:root-null
+action end
+
+
+action:statement:root-3
+Darryl:어, 아무데도 안 가.
+next:root-4
+action end
+
+action:response:root-4
+Gwen
+root-5:어디로 가는 지 몰라요?
+action end
+
+action:statement:root-5
+Darryl:아니, 어디로 가는 지 알아.
+Darryl:아무데로도 안 가.
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+// GWEN - DARRYL (CHAPTER 4) ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Gwen-Darryl
+
+action:response:chap4
+Gwen
+chap4-A:제발...내 얘기를 들어줘요.
+</>chap4-null:아무 말도 하지 않는다
+action end
+
+action:statement:chap4-A
+Darryl:...
+Darryl:그럼.  들어주지.
+next:chap4-B
+action end
+
+action:response:chap4-B
+Gwen
+chap4-C:절 믿어줘요.  제가 한 일이 아니에요.
+chap4-D:전 살면서 그 열쇠를 한 번도 본 적이 없어요.
+chap4-E:아직 진짜 살인자가 돌아다니고 있을 거에요...
+</>chap4-null:...관둔다.
+action end
+
+action:statement:chap4-C
+Darryl:당신을 믿어.
+Darryl:하지만 내가 믿고 안 믿고는 중요한 문제가 아니지.  현실은 똑같아.
+Darryl:난 당신을 도울 수 없어, Gwen.
+next:chap4-B
+action end
+
+action:statement:chap4-D
+Darryl:그럴지도 모르지.
+next:chap4-B
+action end
+
+action:statement:chap4-E
+Darryl:그렇겠지.  그 사람이 남자던 여자던.
+Darryl:누구던지간에.
+next:chap4-B
+action end
+
+dialogue end
+
+
+
+
+// GWEN - DARRYL (CHAPTER 5) ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Gwen-Darryl
+
+action:response:chap5
+Gwen
+chap5-A:제가 풀려날 수 있게 도와줘서 고마워요.
+chap5-B:살인자가 아직 우리 주변에 있어요.  그들이 저를 몰아가려 했죠.
+</>chap5-null:관둔다.
+action end
+
+action:statement:chap5-A
+Darryl:비꼬는 거군.
+Darryl:나는 별로 도와준게 없어. 나도 네가 결백하다고 생각했지만.
+Darryl:증거가 없어서 말이지...
+next:chap5-A-1
+action end
+
+action:response:chap5-A-1
+Gwen
+chap5-A-2:열심히 주장해줬으면, 도움이 되었을 텐데요.
+chap5-A-3:해보지도 않았잖아요.
+</>chap5-null:관둔다.
+action end
+
+action:statement:chap5-A-2
+Darryl:그럴지도.
+Darryl:몇몇 사람들이 네 죄에 대해서 열심히 주장했어서 말야.
+Darryl:만약 반대하는 사람이 있었다면 어떻게 되었을까.
+next:chap5-A-1
+action end
+
+action:statement:chap5-A-3
+Darryl:...네 말이 맞아.
+Darryl:미안하다, Gwen.
+next:chap5-A-1
+action end
+
+
+action:statement:chap5-B
+Darryl:...이상하지. 그렇지 않아?
+Darryl:지금까지 선장과 Donovan의 실종에 대한 구체적인 증거가 없어.
+Darryl:정말 신중하고 치밀하게 계획된 거란 말이지.
+Darryl:근데 너를 범인으로 몰아넣은 방식은 뭔가...허술해.
+next:chap5-B-1
+action end
+
+action:response:chap5-B-1
+Gwen
+chap5-B-2:뭘 말하고 싶으신 거죠?
+</>chap5-null:떠난다.
+action end
+
+action:statement:chap5-B-2
+Darryl:생각해봐.  살인자는 더 그럴듯한 이유를 만들어낼 수 있었을 거야.
+Darryl:하지만 대신 열쇠를 놓아두는 방법을 사용했지, 정말 허술한 증거로 말이야.
+Darryl:마치 아무 신경쓰지 않는 것처럼, 아니면 이런 일이 일어날 것을 기대조차 하지 않은 것처럼.
+Darryl:...잘 이해하지 못하겠군.  하지만 마음에 안 들어.
+next:root-null
+action end
+
+
+dialogue end

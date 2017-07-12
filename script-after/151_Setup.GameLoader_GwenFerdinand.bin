@@ -1,0 +1,368 @@
+
+
+
+// GWEN - FERDINAND ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Gwen-Ferdinand
+
+action:statement:root
+Ferdinand:안녕하세요, 레이디!  좋은 하루 보내고 계신가요?
+Ferdinand:혹시 도움이 필요하신 게 있다면 언제든지 말씀해주세요!
+next:root-1
+action end
+
+action:response:root-1
+Gwen
+<!>root-2:방송 하시는 걸 들었는데요.
+</>root-null:관둔다.
+action end
+
+action:statement:root-2
+Ferdinand:일등항해사로서, 승객들의 걱정은 제 걱정이나 마찬가지입니다!
+Ferdinand:뭔가 신경쓰이는 일이라도 있으신가요?
+next:root-3
+action end
+
+action:response:root-3
+Gwen
+<!>root-4:누군가 저를 미행하는 것 같아요.
+</>root-null:No.
+action end
+
+action:statement:root-4
+Ferdinand:오 마이 갓!  배 위에서요?  왜 그렇게 느끼시나요?
+next:root-5
+action end
+
+action:response:root-5
+Gwen
+root-6:그게 좀 설명하기 어려워요.  그냥 느껴져요.  그가 절 보고 있다는 걸.:trigger.chap2gwenFerdProgress.on
+root-trigger.chap2gwenFerdProgress:이상하게 들린다는 거 알아요.  하지만 제발 믿어줘요.
+action end
+
+action:statement:root-6
+Ferdinand:그래요...
+next:root-5
+action end
+
+action:statement:root-trigger.chap2gwenFerdProgress
+Ferdinand:진정하세요, 아가씨.  다 이해합니다.
+Ferdinand:가끔 특출난 직감을 가진 당신같은 사람이 있는 법이죠.
+Ferdinand:눈보다 먼저 위험을 감시하는 사람들.
+Ferdinand:뱃사람으로서, 저도 그런 직감을 가지고 있다고 자신있게 말할 수 있습니다.
+Ferdinand:솔직히 말하면, 저도 이 배에서 나쁜 기운이 느껴지는군요.  하지만 승객들이 걱정하지 않게 신중하게 기다리고 있는 상황입니다.
+next:root-9
+action end
+
+action:response:root-9
+Gwen
+root-9-A:나쁜 기운이라니요?:trigger.chap2gwenFerdProgress2.on
+root-trigger.chap2gwenFerdProgress2:그-그럼 어떻게 하실 생각이죠?
+action end
+
+action:statement:root-9-A
+Ferdinand:저는 Donovan을 수상하다고 생각하고 있어요. 그게 진짜 이름인지부터요.
+Ferdinand:그에게서는 뭔가 그릇된 욕구가 느껴져요.
+Ferdinand:그는 마치 이 배에서 누군가를 격렬하게 쫓고 있는 것 같습니다.
+next:root-9
+action end
+
+action:statement:root-trigger.chap2gwenFerdProgress2
+Ferdinand:아직 확실하지 않아요.  조금만 더 무엇인가를 알게되면, 뭔가 할 수 있을 것 같은데요...
+Ferdinand:만약 그가 방에서 나온다면, 그의 방을 조사할 기회가 있을 것 같군요.
+Ferdinand:하지만 그에게 다가갈 생각은 하지 마세요.  그는 위험해요.
+Ferdinand:그 사람이 머물고 있는 B201호실에도 다가가지 마세요.  아래층에 위쪽 가장 왼쪽 방 당신도 알죠?
+Ferdinand:혹시라도 직접 조사할 생각은 절대로 하지마세요!  그건 저한테 맡겨두시길 바랍니다.
+next:root-13
+action end
+
+action:response:root-13
+Gwen
+root-null:그-그럼요.  당연하죠.:trigger.gwensSearchOn.on
+action end
+
+
+
+action:statement:root2
+Ferdinand:오 또 만나는 군요, 레이디.  저는 언제나 배의 안전을 위해 최선을 다하고 있습니다.
+Ferdinand:과연 Donovan의 방에 숨겨진 비밀은 무엇일 것인가...
+Ferdinand:하지만 다시 부탁하건대, 성급한 짓은 절대로 하지 마세요!
+next:root-null
+action end
+
+action:statement:afterSearch
+Ferdinand:좀 어떠십니까?  마음이 진정되셨다면 좋겠군요.
+next:afterSearch-1
+action end
+
+action:response:afterSearch-1
+Gwen
+<!>afterSearch-2:Donovan에 대한 건데요...
+action end
+
+action:statement:afterSearch-2
+Ferdinand:아 그래요. Donovan.  제가 말씀한 대로 가까이 가지 않으셨겠죠?
+next:afterSearch-3
+action end
+
+action:response:afterSearch-3
+Gwen
+afterSearch-4:사실, 음, 그의 방을 잠깐 둘러봤어요.
+action end
+
+action:statement:afterSearch-4
+Ferdinand:이런 철부지같으니!  제가 위험하다고 그렇게 경고했잖습니까!
+Ferdinand:그런데도 그렇게 자기 발로 위험한 곳에 걸어들어가다니요!
+Ferdinand:...뭔가 발견했나요?
+next:afterSearch-5
+action end
+
+action:response:afterSearch-5
+Gwen
+afterSearch-computer:뭔가 기계 부품...? 같은 것들을 발견했어요.  블랙 박스랑 전선들이요.
+afterSearch-cameras:카메라랑 녹음기가 잔뜩 있었어요.
+afterSearch-key:뭐가 잔뜩 새겨진 이상하게 생긴 금색 막대기가 있었어요.:trigger.chap2gwenFerdProgress3.on
+<!>afterSearch-trigger.chap2gwenFerdProgress3:그가 저를 미행하고 있다고 생각해요?  우리가 어떻게 해야 할까요?:trigger.chapterTwoClose.on
+action end
+
+action:statement:afterSearch-computer
+Ferdinand:해커일지도 모르겠군요!  다른 사람들의 정보를 훔치고 다니는 겁니다.
+Ferdinand:굉장히 수상하군요.  좋은 정보에요.
+next:afterSearch-5
+action end
+
+action:statement:afterSearch-cameras
+Ferdinand:이 배 내부를 훔쳐보는 걸까요?  대체 그 카메라들로 뭘 하려는 걸까요?
+Ferdinand:맘에 안드는군요.  알아봐줘서 고마워요.
+next:afterSearch-5
+action end
+
+action:statement:afterSearch-key
+Ferdinand:뭔가 새겨진 금색 막대기요?  그건 분명히...
+Ferdinand:...
+Ferdinand:알려줘서 고마워요.
+Ferdinand:이젠 그 남자가 나쁜 짓을 하려 한다는 것이 확실해졌습니다.
+next:afterSearch-5
+action end
+
+
+action:statement:afterSearch-trigger.chap2gwenFerdProgress3
+Ferdinand:솔직히 말하자면...그것보다 심각한 일인 것 같군요.
+Ferdinand:...다른 사람한테는 말하지 마세요. 최근에 선장님이 실종됐습니다.
+next:afterSearch-null
+action end
+
+action:statement:afterSearch2
+Ferdinand:최악의 상황이 걱정되는군요.
+Ferdinand:하지만 걱정하지 마세요.  저한테 다 해결할 계획이 있습니다.
+Ferdinand:그 동안에는, 이 일은 우리 둘만의 비밀로 하죠.
+Ferdinand:이제는 이 배의 누구도 믿지 마세요.  특히 Donovan은요.  할 수 있겠죠?
+next:afterSearch-10
+action end
+
+action:response:afterSearch-10
+Gwen
+<!!>afterSearch-10-A:꼭 그래야 할까요?  다른 사람들한테 선장님에 대해서 알리면 안될까요?:trigger.epilogueGF3.on
+<!!>afterSearch-10-B:전 아직도 Donovan이 뭘 하려는 건지 모르겠어요.:trigger.epilogueGF2.on
+<!!>afterSearch-10-C:네...당신을 믿을게요.:trigger.epilogueGF1.on
+action end
+
+action:statement:afterSearch-10-A
+Ferdinand:남들에게 알리는 것만 빼면 다 괜찮아요, 왜냐하면...
+Ferdinand:선장님의 실종 사건 배후에 아직 누가 있을 수도 있으니까요.
+Ferdinand:이 나쁜 소식을 퍼트리면, 그 사람이 겁 먹어서 감추려들지도 모르는 일이지요.
+Ferdinand:일단 조사를 할 시간이 필요합니다.  모든 것이 확실해질 때까지.
+next:root-null
+action end
+
+action:statement:afterSearch-10-B
+Ferdinand:좀 알려주기 어려운 문제에요.
+Ferdinand:이것만 말씀드리죠.  당신이 얘기한 Donovan의 방에서 발견했다는 물건.
+Ferdinand:그건 Donovan이 가지고 있어서는 안 되는 물건이에요.
+Ferdinand:대체 그가 그걸로 무슨 일을 할 생각이었을 지 너무 두렵습니다.
+next:root-null
+action end
+
+action:statement:afterSearch-10-C
+Ferdinand:아주 좋아요.  협력해줘서 고마워요.
+Ferdinand:하지만 이제부터 위험한 일은 절대로 하지 말아요.
+Ferdinand:만약 당신에게 나쁜 일이 생긴다면 전 정말로 고개를 들 수가 없을 겁니다.
+next:root-null
+action end
+
+
+
+action:statement:afterChapTwo
+Ferdinand:조심해요, Gwen.  그리고 제가 당신에게 말한 것을 기억해요.
+Ferdinand:당신을 미행하는 사람이 혼자인지조차 아직 모르는 상황입니다.
+next:end
+action end
+
+
+
+dialogue end
+
+
+
+
+
+
+// GWEN - FERDINAND (CHAPTER 4) ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Gwen-Ferdinand
+
+action:response:chap4
+Gwen
+chap4-A:제발...제 말을 들어줘요.
+</>chap4-null:아무 말도 하지 않는다
+action end
+
+action:statement:chap4-A
+Ferdinand:안녕하세요, Gwen양.
+Ferdinand:이런 식으로 만나게 되는 게 참 슬프군요.
+Ferdinand:참 잔인한 상황입니다.
+next:chap4-B
+action end
+
+action:response:chap4-B
+Gwen
+chap4-C:절 믿어줘요.  제가 한 일이 아니에요.
+chap4-D:전 살면서 그 열쇠를 한 번도 본 적이 없어요.
+chap4-E:아직 진짜 살인자가 돌아다니고 있을 거에요...
+</>chap4-null:...관둔다.
+action end
+
+action:statement:chap4-C
+Ferdinand:전 물론 당신을 믿어요, 레이디.  저는 언제나 사람을 믿습니다.
+Ferdinand:하지만 사실이 이런 걸요.
+Ferdinand:이제는 당신이 Donovan에 대해서 보였던 관심도 다 이해가 되는 상황이에요.
+next:chap4-C-1
+action end
+
+action:response:chap4-C-1
+Gwen
+chap4-C-2:하지만...Donovan이 의심스럽다고 한 사람은 내가 아니라 당신이었잖아요!
+action end
+
+action:statement:chap4-C-2
+Ferdinand:그건 잘못 이해한 거에요. 나는 당신한테 그런 행동을 하라고 한 적이 없습니다.
+Ferdinand:오히려, 당신은 제 말을 무시하고 그의 방에 침입했죠.
+next:chap4-B
+action end
+
+action:statement:chap4-D
+Ferdinand:흠, 저도 그 말을 정말로 믿고 싶어요.
+Ferdinand:하지만, 보세요.  열쇠는 당신 방에서 발견되었잖아요.
+Ferdinand:보지는 못하고 가져다 두기만 했나 보군요.
+next:chap4-B
+action end
+
+action:statement:chap4-E
+Ferdinand:누굴 여기다 묶어놓아도 같은 얘기를 했을 것 같군요.
+Ferdinand:그럼 누군가는 거짓말을 하고 있는 거겠구요, 그렇지요?
+Ferdinand:이런 말하기 참 그렇지만, 제가 보기에 거짓말쟁이는 당신인 것 같군요.
+next:chap4-B
+action end
+
+dialogue end
+
+
+
+
+
+
+
+// GWEN - FERDINAND (CHAPTER 4) POST RELEASE ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Gwen-Ferdinand
+
+action:statement:chap5
+Ferdinand:오, 안녕하세요 아가씨.
+Ferdinand:기분은 좀 괜찮나요?
+Ferdinand:어, 그, 제가 당신을 묶어놓고 살인자라고 얘기한 거에 대해서 사과했던가요?
+Ferdinand:안 그랬다면, 그...
+Ferdinand:정말로 미안합니다.
+next:chap5-2
+action end
+
+action:response:chap5-2
+Gwen
+chap5-trigger.ending2GwenSuspicion:제가 Donovan의 방에서 본 것에 대해서 말했었죠.
+chap5-A:절 왜 풀어주신 거죠?
+chap5-B:대체 살인자는 누구죠?
+</>chap5-null:관둔다.
+action end
+
+action:statement:chap5-A
+Ferdinand:우리 직원 중 한 명이 당신 방에 열쇠를 가져다 둔 것으로 밝혀졌습니다.  바로 내 코 앞에서!
+Ferdinand:그런 일을 한 이유가 뭐라고 했는 지 아세요?  뇌물을 받았답니다!  바로 내 코 앞에서!
+Ferdinand:이런 일을 방지하지 못한 제가 얼마나 수치스러운지 모르실 겁니다.
+next:chap5-2
+action end
+
+action:statement:chap5-B
+Ferdinand:그게...사실 전혀 모르겠어요.
+Ferdinand:아니, 그게 아니라!  당신이 아니라는 이유는 확실히 있었어요. 소거법에 따라서요.
+next:chap5-2
+action end
+
+action:statement:chap5-trigger.ending2GwenSuspicion
+Ferdinand:네 그랬죠, 저는 Donovan한테 다가가지 말라고 말렸지만요.
+next:chap5-pressure
+action end
+
+action:response:chap5-pressure
+Gwen
+chap5-pressure-A:당신은 계속 그의 방이 어딘지 언급하면서, 그가 수상하다고도 했죠.
+chap5-pressure-B:제가 그의 방에서 본 마스터 키에 대해서도 말했잖아요.
+action end
+
+action:statement:chap5-pressure-A
+Ferdinand:그래요, 그건 다 당신이 혹시라도 성급한 짓을 하지 않을까 걱정되어서 그런 거였어요.  그의 방에 들어간다던지 하는 거요!
+Ferdinand:제가 말한 거랑 반대로 행동한 건 제 잘못이 아니잖습니까, 그렇지 않나요?
+next:chap5-pressure
+action end
+
+action:statement:chap5-pressure-B
+Ferdinand:그런가요?  잘...기억이 안나는 군요.  카메라랑...컴퓨터랑...기억이 좀 흐릿하군요.
+next:chap5-pressure2
+action end
+
+action:response:chap5-pressure2
+Gwen
+chap5-pressure2-A:해골이 그려진 이상한 막대기에 대해서 말했어요.  그게 마스터 키였죠.  당신은 일등항해사니까 당연히 그게 뭔지 알았을 거구요.
+chap5-pressure2-B:Donovan한테 그가 마스터 키를 가지고 있었다는 걸 당신도 알고 있었다고 말한다면 그가 어떻게 반응할 지 궁금하군요.:trigger.chap6FerdClue3.on
+action end
+
+action:statement:chap5-pressure2-A
+Ferdinand:아, 그리고보니 그랬던 것 같군요.  솔직히 말해서 그때 별로 말에 집중하지 못했습니다.  너무 많은 일이 동시에 일어나고 있었거든요...
+Ferdinand:그때 제가 알았다면, 전 분명 그가 왜, 어떻게 그걸 가지고 있는 지 알아보려 했을 겁니다!  그렇지 않나요?
+next:chap5-pressure2
+action end
+
+action:statement:chap5-pressure2-B
+Ferdinand:그건 아마도 우리가 영원히 모를 것 같군요.
+next:chap5-null
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

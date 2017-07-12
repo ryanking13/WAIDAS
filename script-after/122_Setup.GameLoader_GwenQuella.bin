@@ -1,0 +1,179 @@
+
+
+
+// GWEN - QUELLA ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Gwen-Quella
+
+action:response:root
+Gwen
+root-1:당신은 어디서 왔어요?
+root-2:당신은 어디로 가나요?
+</>root-null:관둔다.
+action end
+
+action:statement:root-1
+Quella:저요?  토론토에서 왔어요.
+next:root-1-A
+action end
+
+action:response:root-1-A
+Gwen
+root-1-B:거기 생활은 좋았나요?
+root-1-C:왜 이 배에 탄 거에요?
+</>root-null:관둔다.
+action end
+
+action:statement:root-1-B
+Quella:뭐 무난했어요.  대도시는 다 비슷비슷하죠.
+Quella:어디서 사는 지는 그다지 중요한 게 아니죠.
+Quella:이웃들은 나쁘지 않았구요.
+next:root-1-A
+action end
+
+action:statement:root-1-C
+Quella:그냥 생각을 좀 정리하려구요.
+Quella:책 쓰는 데 집중도 하고.
+Quella:가족은 이 아이디어를 되게 싫어했는데, 저한테는 좋은 것 같아요.
+next:root-1-A
+action end
+
+action:statement:root-2
+Quella:특별히 없어요.  도착하면 그냥 호텔을 잡겠죠.
+Quella:언젠가는 집으로 돌아갈 거구요.
+Quella:그 전에 첫 작품을 완성하면 좋겠는데요.
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+// GWEN - QUELLA (CHAPTER 4) ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Gwen-Quella
+
+action:response:chap4
+Gwen
+chap4-A:우리...얘기 좀 해요.
+</>chap4-null:관둔다
+action end
+
+action:statement:chap4-A
+Quella:그럼요!
+next:chap4-B
+action end
+
+action:response:chap4-B
+Gwen
+chap4-C:절 믿어줘요.  제가 한 일이 아니에요.:trigger.chap4gwenQuellaProgress.on
+chap4-D:전 살면서 그 열쇠를 한 번도 본 적이 없어요.
+chap4-E:아직 진짜 살인자가 돌아다니고 있을 거에요...
+</>chap4-null:...관둔다.
+action end
+
+action:statement:chap4-C
+Quella:당신을 믿어요, Gewn.  당신이 이 일을 했을 리가 없어요.
+Quella:문제는, 그걸 어떻게 증명해야 할까요?
+next:chap4-B
+action end
+
+action:statement:chap4-D
+Quella:나도 누가 당신이 자는 사이에 몰래 열쇠를 가져다둔 게 아닐까 의심하고 있어요.
+Quella:혹시 생각나는 사람 있어요?
+next:chap4-D-1
+action end
+
+action:response:chap4-D-1
+Gwen
+chap4-B:웃기게 들릴 거 같지만, 정말 전혀 의심가는 사람이 없어요.
+chap4-trigger.chap4MarcConfessedPlant:Marcurio가 열쇠를 가져다 뒀다고 제게 실토했어요.
+action end
+
+action:statement:chap4-trigger.chap4MarcConfessedPlant
+Quella:네? 진짜요?!
+Quella:미쳤네요.  실토했다구요?  만약 우리가 밝히더라도 사람들이 자기편을 들어줄거라고 확신하고 있었나본데요.
+Quella:배의 선원 중 한 명이 이 일에 가담했다면, 어쩌면 Xu나 Alton도...?
+next:chap4-B
+action end
+
+action:statement:chap4-E
+Quella:그게 지금 제가 가장 걱정하는 거에요.
+Quella:당신이 모함당한 거라면, 지금 이 배의 누구도 안전하지 않아요.
+next:chap4-B
+action end
+
+dialogue end
+
+
+
+
+// GWEN - QUELLA (CHAPTER 5) ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Gwen-Quella
+
+action:response:chap5
+Gwen
+chap5-trigger.chap4gwenQuellaProgress:믿어줘서 고마워요.
+chap5-B:조심해요, Quella.  아직 살인자가 돌아다니고 있어요.
+chap5-C:좀 어때요?
+</>chap5-null:관둔다.
+action end
+
+action:statement:chap5-trigger.chap4gwenQuellaProgress
+Quella:물론이죠.  의심할 여지가 없었는데요.
+next:chap5-innocent
+action end
+
+action:response:chap5-innocent
+Gwen
+chap5-innocent-A:다른 사람들은 다 저를 의심했는데, 왜 당신은?
+</>chap5-null:관둔다.
+action end
+
+action:statement:chap5-innocent-A
+Quella:음 그냥, 우리가 얘기했을 때요.
+Quella:당신이 누구도 다치게 하고 싶지 않아 한다는 걸 느꼈어요.  그것 뿐이에요.
+next:chap5
+action end
+
+action:statement:chap5-B
+Quella:고마워요.  조심할게요.
+Quella:이 일이 좋게 끝날 거라고는 생각 되지 않지만,
+Quella:그래도 믿음을 가지려고 해요.
+next:chap5-B-1
+action end
+
+action:response:chap5-B-1
+Gwen
+chap5-B-2:믿음이요?:trigger.chap5gwenQuellaProgress.on
+chap5-trigger.chap5gwenQuellaProgress:저는 기적을 믿지 않아요.
+</>chap5-null:떠난다.
+action end
+
+action:statement:chap5-B-2
+Quella:...그게 뭐랄까.
+Quella:세상은 아름답고, 사람들은 모두 선하다고 믿는 거에요.
+Quella:언젠가 모든 것이 잘 해결될 거라고.  그게 기적같은 일일지라도요.
+next:chap5-B-1
+action end
+
+action:statement:chap5-trigger.chap5gwenQuellaProgress
+Quella:그래요. 기적이란 건 없을 지도 모르죠.
+Quella:웃기게도, 그래도 저는 아직 누군가 우리를 지켜주고 있다고 생각해요.
+next:chap5
+action end
+
+action:statement:chap5-C
+Quella:잘 해결되어서 기뻐요.
+next:chap5
+action end
+
+dialogue end
+
+
+

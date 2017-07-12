@@ -1,0 +1,184 @@
+
+
+
+
+// GWEN - GARV ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Gwen-Garv
+
+action:response:root
+Gwen
+root-1:당신은 어디에서 왔나요?
+root-2:당신은 어디로 가나요?
+</>root-null:관둔다.
+action end
+
+action:statement:root-1
+Garv:글쎄, 나도 잘 모르겠구만.
+Garv:난 여기저기를 돌아다녀서 말일세.
+Garv:아이들과 예전의 아내와 많은 후회가 남아있는 곳은 온타리오지.
+Garv:그게 자네가 제일 원하는 대답인 것 같구만.
+next:root-null
+action end
+
+action:statement:root-2
+Garv:배가 향하는 곳이지.  그게 자네가 가는 곳이기도 하지 않나?
+next:root-2-A
+action end
+
+action:response:root-2-A
+Gwen
+root-2-B:제 말은, 당신은 왜 이 배에 탄 건가요?:trigger.gwenAskedGarv.on
+root-2-C:좀 더 길게 봐서는 어디로 향하시죠?
+root-trigger.gwenAskedGarv:왜 창고가 못 쓰게 된 건가요?:trigger.chap2gwenGarvProgression.on
+root-trigger.chap2gwenGarvProgression:죽은 두 사람에 대해서는 별로 슬퍼하시지 않는 것 같군요.
+</>root-null:관둔다.
+action end
+
+action:statement:root-2-B
+Garv:우리 회사가 새로 쓰기로 한 창고로 가는 길이라네.
+Garv:예전에 썼던 제일 큰 창고가 얼마 전에 못 쓰게 되어서 말이야.
+Garv:사업이 잘 안 된 거지. 얼른 일하러 가지 않으면 큰 일이 생길 거라네.
+next:root-2-A
+action end
+
+action:statement:root-2-C
+Garv:길게 봐서?  은퇴하지 않겠나.
+Garv:젊을 때는, 모든 것에 다 계획이 필요하다고 생각하지.
+Garv:이걸 하고, 그 다음엔 이걸 하고, 그리고 이걸 하고.  일직선으로 나아가는 것이지.
+Garv:나는 그냥 파도에 실려 이게 날 데려다 주는 곳으로 가는 거라네.
+Garv:출렁이면서 말이야.
+next:root-2-A
+action end
+
+action:statement:root-trigger.gwenAskedGarv
+Garv:듣기로는 업무상 사고가 있었다고 하더군.
+Garv:두 멍청이가 자살을 해서, 문제가 생겼지.
+Garv:갑자기 이상한 규제가 생겨서 어쩔 수 없이 그 장소를 포기해야 했다네.
+Garv:엉망이지.
+next:root-2-A
+action end
+
+action:statement:root-trigger.chap2gwenGarvProgression
+Garv:사람들은 언제 어디서나 죽는다네.
+Garv:나는 그 두 사람을 몰라, 아무 접점도 없고.  그 뿐이지.
+Garv:중요한 건 그들이 사업을 망쳤다는 것뿐.  동정은 하지 않는다네.
+next:root-2-A
+action end
+
+dialogue end
+
+
+
+
+// GWEN - GARV (CHAPTER 4) ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Gwen-Garv
+
+action:response:chap4
+Gwen
+chap4-A:제발...제 얘기를 들어줘요.
+</>chap4-null:아무 말도 하지 않는다
+action end
+
+action:statement:chap4-A
+Garv:말해보게나.
+next:chap4-B
+action end
+
+action:response:chap4-B
+Gwen
+chap4-C:절 믿어줘요.  제가 한 일이 아니에요.
+chap4-D:전 살면서 그 열쇠를 한 번도 본 적이 없어요.
+chap4-E:아직 진짜 살인자가 돌아다니고 있을 거에요...
+</>chap4-null:...관둔다.
+action end
+
+action:statement:chap4-C
+Garv:난 자네를 믿는다네.  문제는, 나같은 사람이 소수라는 점이지.
+Garv:솔직하게 말해서, 누군가 자네를 몰아간 거라면 굉장히 치밀해.  자네가 지금 상황에서 가장 완벽한 희생양일세.
+next:chap4-C-1
+action end
+
+action:response:chap4-C-1
+Gwen
+chap4-C-2:뭐라구요...?
+action end
+
+action:statement:chap4-C-2
+Garv:조용하고, 불안해하고, 망상증에, 방어적이지.  승객들과 접점도 별로 없고, 수상한 과거가 있는 느낌이 들지.
+Garv:자신을 열렬히 변호하려 하지도 않고, 그냥 주변 환경에 휩쓸려버리지.
+Garv:Gwen, 자네는 정말 완벽한 표적이라네.
+next:chap4-B
+action end
+
+action:statement:chap4-D
+Garv:그럼 누가 몰래 가져다 놓은 거겠군.
+Garv:그런 일을 할 수 있는 사람은 그럼, 배의 선원일 거야.
+Garv:그들을 심문해 보라고 말하고 싶지만, 그러려면 그들이 자네를 직접 찾아오기를 기다리는 수밖에 없구먼.
+next:chap4-B
+action end
+
+action:statement:chap4-E
+Garv:나도 그렇게 느끼고 있다네.  아마 자네의 일이 해결되고 나면 더 큰 의문이 남겠지.
+Garv:내가 생각하고 있는 것은 자네 방에 놓인 열쇠가 무슨 중요한 의미를 갖느냐는 걸세.
+Garv:그 열쇠를 가지고 있을 수 있었던 건 선원 중에서도 일부밖에 없을 텐데...내 생각엔 용의자가 상당히 좁혀지는 것 같구먼.
+next:chap4-B
+action end
+
+dialogue end
+
+
+
+
+// GWEN - GARV (CHAPTER 5) ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Gwen-Garv
+
+action:response:chap5
+Gwen
+chap5-A:살인자가 아직 우리 주변에 있어요.  그들이 저를 몰아가려 했죠.
+chap5-B:뭔가 증거를 찾은 것이 있나요?
+</>chap5-null:관둔다.
+action end
+
+action:statement:chap5-A
+Garv:그래, 그들이 실패해서 정말 다행이군.
+Garv:그들의 계획은 아마 육지에 도착한 후 모두가 자네한테 집중하고 있을 때, 조용히 빠져나가는 것이었겠지.
+Garv:이제 그들도 선택지가 별로 없을 걸세.
+next:chap5
+action end
+
+action:statement:chap5-B
+Garv:잘 모르겠다네.
+Garv:직원들을 믿을 수 있는 지 모르겠네만, 중요한 증거가 있다면 아마 그들이 찾아내지 않았을까 싶다네.
+Garv:하지만 정황적 증거는 아직 있을 수 있지.
+next:chap5-B-2
+action end
+
+action:response:chap5-B-2
+Gwen
+chap5-B-3:좀 더 확실한 증거가 없을까요
+chap5-B-4:정황적 증거라고 하심은
+</>chap5-null:관둔다.
+action end
+
+action:statement:chap5-B-3
+Garv:보통 범인들이 어떻게 증거를 처리하는가?  바다에 던져버리지.
+Garv:그렇다면 우리는 찾을 방법이 없다네.
+Garv:의심받을 만한 것은 이미 다 던져버리고 없을 것이야.
+next:chap5-B-2
+action end
+
+action:statement:chap5-B-4
+Garv:물질적인 증거가 아니라, 정황을 따져봤을 때 나오는 증거지.
+Garv:예를들어...나는 Donovan이 선장을 찾기 위해서 마스터 키를 가지고 있었다는 얘기를 들었다네.
+Garv:만야 그가 그 일 때문에 노려진 거라면...누군가 이 사실을 미리 알고 있었던 사람이 용의자가 되겠지.
+Garv:Donovan이 사라지기 전에 그가 누군지 알고 있는 사람이 있었을까?
+next:chap5-B-2
+action end
+
+dialogue end

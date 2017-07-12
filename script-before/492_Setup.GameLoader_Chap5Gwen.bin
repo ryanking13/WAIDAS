@@ -5,29 +5,29 @@ Gwen-EvilDonovan
 
 action:response:root
 Gwen
-root-A:I'm sorry...
-root-B:Please don't do this.
-<!>root-trigger.chap6FerdEnd3:I told someone what I saw in your room.  Ferdinand knew.
-</>root-null:Never mind.
+root-A:미안해요...
+root-B:제발 이러지 말아요.
+<!>root-trigger.chap6FerdEnd3:내가 당신 방에서 본 걸 Ferdiand에게 말했어요.
+</>root-null:관둔다
 action end
 
 action:statement:root-A
-Donovan:You should be.
-Donovan:I know it was you who broke into my room.
-Donovan:I don't know or care how you did it, but why?
+Donovan:그러셔야지.
+Donovan:네가 내 방에 침입했다는 건 알았어.
+Donovan:어떻게 그랬는 지는 알 바 아냐.  왜 그랬지?
 next:root-A-1
 action end
 
 action:response:root-A-1
 Gwen
-root-A-2:It's hard to explain.  I thought you were following me.  I was...paranoid.
-root-trigger.chap6FerdEnd3:Ferdinand told me you were suspicious.  I told him what I saw in your room.
+root-A-2:설명하기 좀 어려워요.  누군가 나를 쫓아오고 있다고 생각해어요.  피해망상이었죠.
+root-trigger.chap6FerdEnd3:Ferdinand가 당신이 의심스럽다고 했어요.  그래서 그한테 제가 당신 방에서 본 걸 말했죠.
 action end
 
 action:statement:root-A-2
-Donovan:Clearly.
-Donovan:But your paranoia wasn't completely wrong.  Just misguided.
-Donovan:After all, there's a killer on board.
+Donovan:아무렴.
+Donovan:뭐 그 망상이 완전히 잘못된 건 아니었어.  방향이 좀 틀렸을 뿐이지.
+Donovan:어쨌든, 살인자는 배 안에 있었으니.
 next:root
 action end
 

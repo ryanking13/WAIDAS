@@ -1,0 +1,154 @@
+
+
+
+
+// GWEN - ALTON ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Gwen-Alton
+
+action:response:root
+Gwen
+root-1:당신은 어디서 왔어요?
+root-2:당신은 어디로 가요?
+</>root-null:관둔다.
+action end
+
+action:statement:root-1
+Alton:저는 보스턴의 작은 마을에서 왔어요.  별 특별한 것 없는 곳이죠.
+Alton:당신은 어디서 왔어요?
+next:root-1-A
+action end
+
+action:response:root-1-A
+Gwen
+root-1-B:어, 저도 보스턴 근교에서 왔어요.
+</>root-null:가볼게요.
+action end
+
+action:statement:root-1-B
+Alton:진짜요?  알고보면 근처에 살았을 지도 모르겠네요!  어느 구에 살았는데요?
+next:root-1-C
+action end
+
+action:response:root-1-C
+Gwen
+root-1-D:어...글렌스...데일?
+action end
+
+action:statement:root-1-D
+Alton:글렌스데일?  보스턴에 글렌스데일이 있다는 건 몰랐네요.
+Alton:이상하네, 그 주변은 대충 다 안다고 생각했는데.
+Alton:글렌스데일이라...
+next:root-null
+action end
+
+action:statement:root-2
+Alton:이 일 이후에요?  모르죠, 아마도 복학할 것 같아요.
+Alton:외국에서 영어를 가르치는 것도 재밌겠네요.
+Alton:뭐...컴퓨터 공학 쪽 일을 하는 게 나을 지도요.
+Alton:모르겠네요.  한 1년 뒤쯤 다시 물어봐줄래요?
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+// GWEN - ALTON  (CHAPTER 4) ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Gwen-Alton
+
+action:response:chap4
+Gwen
+chap4-A:제발...내 얘기를 들어줘요.
+</>chap4-null:아무 말도 하지 않는다
+action end
+
+action:statement:chap4-A
+Alton:아...네...?
+next:chap4-B
+action end
+
+action:response:chap4-B
+Gwen
+chap4-C:절 믿어줘요.  제가 한 일이 아니에요.
+chap4-D:전 살면서 그 열쇠를 한 번도 본 적이 없어요.
+chap4-E:아직 진짜 살인자가 돌아다니고 있을 거에요...
+</>chap4-null:...관둔다.
+action end
+
+action:statement:chap4-C
+Alton:저도 당신을 믿고 싶어요, 근데...
+Alton:다른 사람들이...아시잖아요.
+next:chap4-B
+action end
+
+action:statement:chap4-D
+Alton:그래요, 하지만 당신 방에서 발견된 걸요. 그렇잖아요?
+Alton:당신이 본 적 있을 거에요. 그래야만 하는 거구요.
+next:chap4-B
+action end
+
+action:statement:chap4-E
+Alton:그건...정말로 나쁜 상황이죠.  정말로요.
+Alton:하지만 사람들은 당신이 살인자라고 말하는 걸요. 전...잘 모르겠어요.
+next:chap4-B
+action end
+
+dialogue end
+
+
+
+
+
+// GWEN - ALTON  (CHAPTER 4) ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Gwen-Alton
+
+action:response:chap5
+Gwen
+chap5-A:이제야 제 결백함이 증명되었네요.
+chap5-B:살인자가 아직 우리 주변에 있어요.  그들이 저를 몰아가려 했죠.
+</>root-null:관둔다.
+action end
+
+action:statement:chap5-A
+Alton:네...의심해서 미안해요.
+Alton:다른 사람들이 당신이라고 확신해서...다른 가능성을 생각할 수가 없었어요.
+next:chap5-A-1
+action end
+
+action:response:chap5-A-1
+Gwen
+chap5-A-2:괜찮아요.  이해해요.
+chap5-A-3:저라고 그렇게 확신한 사람이 누군데요?
+</>chap5-null:관둔다.
+action end
+
+action:statement:chap5-A-2
+Alton:이해해줘서 고마워요.
+Alton:진실이 밝혀져셔 기쁘군요.
+next:chap5-A-1
+action end
+
+action:statement:chap5-A-3
+Alton:뭐, 대부분 스태프들이죠.
+Alton:Marcurio랑 Ferdinand가 제일 그랬고.  Xu도요.
+Alton:Garv는 처음에는 확신하시는 것 같더니, 나중에는 마음을 바꾼 것 같아요.
+next:chap5-A-1
+action end
+
+action:statement:chap5-B
+Alton:그렇군요...
+Alton:하지만 당신이 결백하다고 밝혀졌으니, 이제 누가 배후에 있는지 밝혀낼 수 있을 거에요.
+Alton:그렇죠?
+next:chap5
+action end
+
+dialogue end
