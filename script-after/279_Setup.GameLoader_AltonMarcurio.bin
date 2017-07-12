@@ -1,0 +1,129 @@
+
+
+
+
+dialogue start
+Alton-Marcurio
+
+action:response:root
+Alton
+root-1:어이 Marcurio, 뭐하고 있어?
+root-trigger.ChapterTwoOn:뭐 하나 물어봐도 돼?
+root-trigger.lookingforxu:Xu 본 적 있어?
+</>root-null:관둔다.
+action end
+
+action:statement:root-1
+Marcurio:청소중이다.
+next:root-1-A
+action end
+
+action:statement:root-trigger.lookingforxu
+Marcurio:아까 말했지만, 쉬는 타임이야.  만나고 싶으면 방에 가봐.
+next:root-trigger.lookingforxu-A
+action end
+
+action:response:root-1-A
+Alton
+root-1-A-1:좋네.  어, 잘 돼가?
+</>root-1-A-2:수고해.
+action end
+
+action:response:root-trigger.lookingforxu-A
+Alton
+root-null:그, 그래.
+action end
+
+action:statement:root-1-A-1
+Marcurio:...그래 잘 돼간다.
+Marcurio:좀 가라.
+next:root-null
+action end
+
+
+action:statement:root-trigger.ChapterTwoOn
+Marcurio:...싫다고 해도 물어볼 거잖아?
+next:root-darkSide
+action end
+
+action:response:root-darkSide
+Alton
+root-darkSide-A:Xu에 대해서 어떻게 생각해?
+root-darkSide-B:혹시 네 물건 중에 최근에 사라지거나 한 거 있어?
+</>root-darkSide-null:관둔다.
+action end
+
+action:statement:root-darkSide-A
+Marcurio:뭐, 솔직하게 말하자면.
+Marcurio:나쁘게 듣진 마라.  나는 걔를 싫어하진 않지만, 뭔가 불쾌해.
+Marcurio:승객들한테 친절하게 대하는 게 웨이터의 일인 건 맞는데.
+Marcurio:그게 진짜 그녀의 모습이라고 할 수는 없지.  그 녀석이라고 언제나 에이프런을 입고 있는 건 아니잖아?
+next:root-null
+action end
+
+action:statement:root-darkSide-B
+Marcurio:...
+Marcurio:아니, 없는데.
+Marcurio:난 여기를 엄격하게 관리하고 있어.
+Marcurio:식자재가 사라지는 일은 절대 없을 거다.
+next:root-null
+action end
+
+
+
+action:statement:xuIsFollowing
+Marcurio:둘이서 같이 돌아다니는 걸 보다니.
+Marcurio:희귀한 일인 걸.
+Marcurio:뭐 그래서.  볼일이라도?
+next:xuIsFollowing-1
+action end
+
+action:response:xuIsFollowing-1
+Alton
+<!>xuIsFollowing-2:어제 밤에 무슨 일 없었어?:trigger.altonXuTalkedtoMarcurio.on
+xuIsFollowing-3:주방은 좀 어때?
+xuIsFollowing-4:별로 우리를 안 보고싶어하는 얼굴인데?
+</>null:관둔다.
+action end
+
+action:statement:xuIsFollowing-2
+Marcurio:저녁 식사 후에 청소하고 정리했지, 언제나처럼.
+next:xuIsFollowing-5
+action end
+
+action:response:xuIsFollowing-5
+Alton
+xuIsFollowing-6:내내 청소만 했다고?
+xuIsFollowing-7:그거 완전 일 중독인데.
+action end
+
+action:statement:xuIsFollowing-6
+Marcurio:아니, 계획도 짰지.
+Marcurio:관리해야 하는 식자재들이 있으니까.
+Marcurio:계획을 안 짜고 대충 사용했다간, 큰 일이 벌어질 걸.
+Marcurio:배의 다른 누구보다도 이런 관리 일을 많이 한다고 자부하지.
+Marcurio:...그래서 뭐, 밤 내내 주방에 있었어.
+next:root-null
+action end
+
+action:statement:xuIsFollowing-7
+Marcurio:여기서 탈출하기 위해서라면 뭐든 할 거다.
+Marcurio:거지 같은 장소에서 일해야 한다면, 내가 그 곳은 가장 나은 거지 같은 장소로 만들겠어.
+Marcurio:나는 환경에 적응하지 않아.  내가 환경을 만든다.
+next:root-null
+action end
+
+action:statement:xuIsFollowing-3
+Marcurio:별 일 없어.  뭐 만지지 마라.
+Marcurio:내가 다 세팅해놓은 거니까 어지럽히지 마.
+next:xuIsFollowing-1
+action end
+
+action:statement:xuIsFollowing-4
+Marcurio:뭐, 별 일 아냐.
+next:xuIsFollowing-1
+action end
+
+
+dialogue end
+

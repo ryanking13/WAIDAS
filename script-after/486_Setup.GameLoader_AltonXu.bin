@@ -1,0 +1,172 @@
+
+
+dialogue start
+Alton-Xu
+
+action:response:root
+Alton
+root-1:얘기좀 해.
+</>root-null:관둔다.
+action end
+
+action:statement:root-1
+Xu:...그래...말해봐.
+next:root-2
+action end
+
+action:response:root-2
+Alton
+root-used:네가 나랑 친하게 지낸 게 정말로 그것 때문인 거야?  날 이용해먹으려고?
+root-why:왜? 대체 왜 그런 거야?
+</>root-null:관둔다.
+action end
+
+action:statement:root-used
+Xu:아냐...절대로 그런 게 아냐.
+Xu:미안해...나도 뭐라 말해야 할 지 모르겠어.
+next:root-2
+action end
+
+action:statement:root-why
+Xu:정말 미안해...미안해.
+Xu:그런 게 아냐...알잖아...
+Xu:말하기 어려운 사정이 있어.
+next:root-why-2
+action end
+
+action:response:root-why-2
+Alton
+root-why-3:말해줘.
+root-why-4:훔친 것들로 뭘 하려고 했어? 팔 거야?
+action end
+
+action:statement:root-why-3
+Xu:...
+Xu:미안해...용서 안 해줄 거라는 걸 알아.
+next:root-why-2
+action end
+
+action:statement:root-why-4
+Xu:...맞아.  나...돈이 필요해. 진짜 절실하게 필요해.
+next:root-why-5
+action end
+
+action:response:root-why-5
+Alton
+root-why-6:그렇다고 이래도 되는 거야?:trigger.chap2altonSad.on
+action end
+
+action:statement:root-why-6
+Xu:모두가 너처럼 잘 사는 게 아냐, Alton.
+Xu:너는 그냥 놀고 싶어서 이 배를 탄 거겠지만, 다른 사람들은 먹고 살기 위해서 어쩔 수 없는 거라고.
+Xu:나는 이 일이 없으면 말 그대로 죽어.  Marcurio도 마찬가지고.
+Xu:그들도 그걸 알아서, 쥐꼬리만한 돈으로 우리를 부려먹지.
+Xu:반면에, 너는 매일 할 일 없이 앉아있기만 하는 데도 우리보다 많은 돈을 받아.
+Xu:너보다 훨씬 못나게 사는 사람들이 이 세계에 가득하다고 하면 기분이 어때?
+Xu:너는 그렇게 특권을 누리고 있는데, 그걸 느끼지는 하니?
+next:root-6
+action end
+
+action:response:root-6
+Alton
+<!!>root-6-A:변명은 거기까지야?:trigger.epilogueAX1.on
+<!!>root-6-B:그런다고 네가 한 일이 정당화되지는 않아.:trigger.epilogueAX2.on
+<!!>root-6-C:그런 상황인 줄은 몰랐어.:trigger.epilogueAX3.on
+action end
+
+action:statement:root-6-A
+Xu:뭐? 난 진실을 얘기하는 거야.  변명이 아니라.
+Xu:역시 너는 남들 따위 신경쓰지 않는 구나.
+Xu:너도 다른 사람들이랑 똑같아.
+next:root-null
+action end
+
+action:statement:root-6-B
+Xu:맞아.  내 행동을 정당화할 생각은 없어.
+Xu:하지만 이해한 척은 관 둬.
+Xu:한 번도 제대로 경험해 본 적 없는 사람이 옳고 그름을 말하는 건 참 쉽지.
+next:root-null
+action end
+
+action:statement:root-6-C
+Xu:우린 갇혔어.
+Xu:넌 여길 떠나서, 제대로 된 직업을 얻고, 삶을 살 수 있지.  그렇지만 난 아냐.
+Xu:난 이 끔찍한 곳에서 남은 인생을 보내게 될 거야.
+Xu:있잖아...내가 한 일은 다 미안해.
+Xu:내가 그러고 싶어서 한 게 아니라는 것만 알아줘.
+next:root-null
+action end
+
+
+action:statement:root2
+Xu:더 이상 할 얘기는 없어.
+next:root2-null
+action end
+
+
+action:response:root3
+Alton
+root3-A:네 방에서 Donovan이 뭘 훔쳤다고 했었지?
+root3-trigger.ChapterThreeOn:오늘 선장님 본 적 있어?
+</>root-null:관둔다.
+action end
+
+action:statement:root3-A
+Xu:어...그게 가보인데.
+Xu:어머니한테 받은 찻잔 세트야.
+next:root3-A-1
+action end
+
+action:response:root3-A-1
+Alton
+root3-A-2:아, 그랬었지!
+root3-A-3:너 오래된 꽃병이라고 하지 않았어?
+</>root3-null:관둔다.
+action end
+
+action:statement:root3-A-2
+Xu:대체 왜 그런 걸 훔쳐간 걸까?
+Xu:이해를 못하겠네.  근데 그 사람이 이유를 말해줄 것 같지는 않지.
+next:root3-A-1
+action end
+
+action:statement:root3-A-3
+Xu:어...?  내가 그랬던가?
+Xu:그 꽃병이 말이지...찻잔 세트에 포함되어 있는 거야.
+Xu:그래 그런 뜻으로 말한 거였어.  그게 사실은 그...차를 담는 병이었던 거지.
+next:root3-A-1
+action end
+
+action:statement:root3-trigger.ChapterThreeOn
+Xu:...아니.  본 적 없네.
+Xu:어제도 못 본 것 같아.
+next:root3-B
+action end
+
+action:response:root3-B
+Alton
+root3-B-1:우리가 오늘 못 찾으면 어떡하지?
+root3-B-2:그녀한테 무슨 일이 일어났다고 생각해?
+</>root3-null:관둔다.
+action end
+
+action:statement:root3-B-1
+Xu:글쎄.
+Xu:...모르겠는 걸.
+next:root3-B
+action end
+
+action:statement:root3-B-2
+Xu:제발 아니길 빌어.
+Xu:만약 무슨 일이 일어난 거라면...
+Xu:아 내가 무슨 소리를 하는 거람.
+next:root3-B
+action end
+
+dialogue end
+
+
+
+
+
+

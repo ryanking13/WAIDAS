@@ -1,0 +1,182 @@
+
+
+dialogue start
+Alton-Gwen
+
+action:response:root
+Alton
+root-1:안녕하세요, 뭔가 도와드릴 일이 있나요?
+root-2:뭔가 찾고있나요?
+root-3:전망실에 놀러와요!
+</>root-null:관둔다.
+action end
+
+action:statement:root-1
+Gwen:...
+Gwen:...아뇨.  괜찮아요.
+next:root-1-A
+action end
+
+action:statement:root-2
+Gwen:...
+Gwen:...별로요.
+Gwen:Um.  Bye.
+next:root-2-A
+action end
+
+action:statement:root-3
+Gwen:...
+Gwen:...괜찮아요.
+Gwen:미안해요.
+next:root-3-A
+action end
+
+action:response:root-1-A
+Alton
+root-null:그렇군요.
+action end
+
+action:response:root-2-A
+Alton
+root-null:미안해요.  그런 것처럼 보여서요.
+action end
+
+action:response:root-3-A
+Alton
+root-null:아.
+action end
+
+
+action:response:xuIsFollowing
+Alton
+<!>xuIsFollowing-1:혹시 지난 밤에 무슨 일 없었나요?:trigger.altonXuTalkedtoGwen.on
+</>null:관둔다.
+action end
+
+action:statement:xuIsFollowing-1
+Gwen:...
+Gwen:... 
+Xu:별로 말하고 싶어하지 않는 것 같아.
+Xu:그냥 가자.
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+// ALTON - GWEN (CHAPTER 4) ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Alton-Gwen
+
+action:response:chap4
+Alton
+chap4-A:좀 괜찮아요?
+chap4-Z:마침내 관객이 생겼군요!
+</>chap4-null:관둔다.
+action end
+
+action:statement:chap4-A
+Gwen:아니요.  모두가 날 살인자라고 생각하고 있잖아요.
+Gwen:이제 저한테 무슨 일이 벌어지는 걸까요...?
+next:chap4-B
+action end
+
+action:response:chap4-B
+Alton
+chap4-C:난 당신이라고 생각하지 않아요. 왜인지는 잘 모르겠지만.
+chap4-D:경찰이 도착할 때까지 기다리는 거죠 뭐.
+</>chap4-null:관둔다
+action end
+
+action:statement:chap4-C
+null:그녀는 그 말을 들어도 별로 기운 내는 것 같지 않다.
+null:오히려 더 절망에 빠진 것같다.
+next:chap4-B
+action end
+
+action:statement:chap4-D
+Gwen:그렇네요...
+Gwen:그 사람들이 진실을 밝혀내주겠죠.  그게 무엇이었던 간에.
+Gwen:반드시 그럴 거에요.
+next:chap4-B
+action end
+
+action:statement:chap4-Z
+Gwen:뭐요?
+next:chap4-Y
+action end
+
+action:response:chap4-Y
+Alton
+chap4-X:지금까지 열심히 홍보해도 아무도 안 왔거든요...근데 지금은 당신이 있네요!
+action end
+
+action:statement:chap4-X
+Gwen:............
+next:chap4-W
+action end
+
+action:response:chap4-W
+Alton
+chap4-V:웃기지 않나요?  되게 아이러니하죠.
+action end
+
+action:statement:chap4-V
+Gwen:............................
+next:chap4-U
+action end
+
+action:response:chap4-U
+Alton
+chap4-null:...아닌가보네요.
+action end
+
+dialogue end
+
+
+
+
+
+// ALTON - GWEN (AFTER CHAPTER 4) ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Alton-Gwen
+
+action:response:chap6
+Alton
+chap6-A:기분은 좀 괜찮아요?
+chap6-B:음...미안해요.  전부 다.
+</>chap6-null:관둔다.
+action end
+
+action:statement:chap6-A
+Gwen:네...괜찮아요.
+Gwen:생각할 거리가 좀 많아요.
+next:chap6
+action end
+
+action:statement:chap6-B
+Gwen:괜찮아요.  당신 잘못이 아니에요.
+next:chap6-C
+action end
+
+action:response:chap6-C
+Alton
+chap6-D:뭐...전망실은 좀 어땠나요?  음악은 마음에 들었어요?
+</>chap6-null:그래요.
+action end
+
+action:statement:chap6-D
+Gwen:제가 진짜...
+Gwen:...
+Gwen:네 뭐.  좋았어요.
+next:chap6-null
+action end
+
+dialogue end
+

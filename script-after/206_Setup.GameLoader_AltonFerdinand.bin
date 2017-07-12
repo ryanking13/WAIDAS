@@ -1,0 +1,143 @@
+
+
+dialogue start
+Alton-Ferdinand
+
+action:statement:root
+Ferdinand:안녕하세요, Alton군!  혹시 제 도움이 필요한 게 있나요?
+Ferdinand:일등항해사로서, 선원의 어려움을 돕는 것은 중요한 일이지요!
+next:root-1
+action end
+
+action:response:root-1
+Alton
+<!>root-1-trigger.xuIsFollowing:지난 밤에 뭘 하셨나요?  그냥 궁금해서요.:trigger.altonXuTalkedtoFerdinand.on
+root-1-A:배는 좀 어때요?
+root-1-B:승객들은 좀 어때요?
+</>root-null:아무것도 아니에요.
+action end
+
+action:statement:root-1-trigger.xuIsFollowing
+Ferdinand:어젯 밤이요?  흠 배의 기록들이 잘 적혀있는 지 확인하고 있었지요.
+Ferdinand:조타실의 장비들을 확인했구요.
+Ferdinand:그러다 좀 늦게 잠자리에 들었어요.
+next:root-1-trigger.xuIsFollowing-1
+action end
+
+action:response:root-1-trigger.xuIsFollowing-1
+Alton
+root-1-trigger.xuIsFollowing-2:그건 보통 선장님이 하는 업무 아닌가요?
+root-1-trigger.xuIsFollowing-3:그게 다 필요한 일인가요?
+</>root-null:멋지네요.
+action end
+
+action:statement:root-1-trigger.xuIsFollowing-2
+Ferdinand:일단은 아니긴 하지만...선장님의 일을 돕는 것도 일등항해사로서의 임무가 아닐까요?
+Ferdinand:그녀가 모든 걸 다 관리할 수는 없는 것이니까요.  그래서 제가 그녀의 눈과 귀과 되어 주는 겁니다!
+Ferdinand:그렇게 해서 배의 일이 언제나 잘 돌아가도록 하는 것이죠.
+next:root-null
+action end
+
+action:statement:root-1-trigger.xuIsFollowing-3
+Ferdinand:별 필요없는 일처럼 보일 수도 있겠지만, 언제 무슨 일이 일어날 지는 아무도 모른답니다.
+Ferdinand:소 잃고 외양간 고치는 것보다야, 철저하게 대비하는 것이 낫지요.
+Ferdinand:유비무환이라는 말 아시죠?
+next:root-null
+action end
+
+
+action:statement:root-1-A
+Ferdinand:아주 순항중입니다!  제 시간에 목적지에 도착할 것 같군요!
+Ferdinand:이 모든 일은 우리 뛰어난 선장님 덕분이죠.  그녀는 정말로 프로랍니다.
+next:root-1-A-1
+action end
+
+action:response:root-1-A-1
+Alton
+root-1-A-1-A:얼마나 걸릴까요?
+root-captain:선장님은 좀 어때요?
+</>root-null:떠난다
+action end
+
+action:statement:root-1-A-1-A
+Ferdinand:예정대로면, 이틀 후에 도착할 거에요.
+Ferdinand:그런데 지금 보니 날씨가 나빠질 것 같아 보이는 군요!
+next:null
+action end
+
+action:statement:root-captain
+Ferdinand:선장님은 어제 밤에는 평소보다 일찍 잠자리에 든 것 같네요.
+Ferdinand:그러고보면 우리 둘은 참 죽이 잘 맞는 것 같지 않나요!
+Ferdinand:그녀는 사람들을 대하는 게 좀 서툴지만, 전 완전 외향적인 사람이죠.
+Ferdinand:또 저는 좀 세심한 부분에 약한 반면에, 그녀는 완전 성실함의 표본!
+Ferdinand:이런 둘이 있으니 이렇게 이 배가 평안하지 않겠습니까?
+next:root-null
+action end
+
+
+action:statement:root-1-B
+Ferdinand:다들 만족스러워 하고 있지요.
+Ferdinand:하지만 그 부분은 이 배의 엔터테이너인 당신이 좀 더 힘써줘야 하는 부분입니다!
+Ferdinand:승객들에게 전망실에 대해서는 잘 소개했겠죠?
+next:root-1-B-1
+action end
+
+action:response:root-1-B-1
+Alton
+root-2:아무도 전망실에 안 오는 걸요.
+</>root-1-B-1-C:그럼요!
+action end
+
+action:statement:root-1-B-1-C
+Ferdinand:아주 잘하고 있어요!
+next:null
+action end
+
+action:statement:root-2
+Ferdinand:하하!  Alton, 농담도!
+Ferdinand:당신의 끼와 재능이면 어디든 즐겁게 만들 수 있을 거에요!
+Ferdinand:파티! 신나는 파티!
+next:root-2-A
+action end
+
+action:response:root-2-A
+Alton
+root-2-A-1:그렇게 말씀하신다면...해볼게요. 
+root-2-A-2:전혀 아니에요.
+root-2-A-3:그럼 일등항해사님도 들러보시죠?
+root-2-A-4:무슨 소리를 하시는 건지 모르겠네요.
+action end
+
+action:statement:root-2-A-1
+Ferdinand:그렇죠?
+Ferdinand:하하하!
+Ferdinand:자자 가서 일합시다!
+next:root-null
+action end
+
+action:statement:root-2-A-2
+Ferdinand:모든 사람들은 가끔 다 안 될 때가 있는 법이죠.  중요한 것은 그럴 때 우울함을 잘 떨쳐내는 겁니다!
+Ferdinand:제가 그럴 때 어떻게 하는 지 알려드릴까요?
+Ferdinand:그냥 무시합니다!
+Ferdinand:예스!
+Ferdinand:그러면 그냥 다 지나갑니다. 왜 그런 지는 몰라요! 그냥 그런 것이에요!
+Ferdinand:좋은 대화였습니다, Alton!  이제 가서 일하세요!
+next:root-null
+action end
+
+action:statement:root-2-A-3
+Ferdinand:어, 흠, 그래요, 갈게요, 진짜 갈게요.
+Ferdinand:그치만, 제가 좀 바쁘답니다. 아주 바빠요.
+Ferdinand:배에 있다보면 참 이게, 알잖아요.
+Ferdinand:그렇지만, 제가 없는 게 더 나을 거에요.  상사가 있으면 신경쓰이잖습니까!
+next:root-null
+action end
+
+action:statement:root-2-A-4
+null:반응이 없다.
+null:이미 끝난 대화에 신경쓰지 않는 것 같다.
+next:root-null
+action end
+
+
+dialogue end

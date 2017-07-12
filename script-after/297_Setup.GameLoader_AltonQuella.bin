@@ -1,0 +1,89 @@
+
+
+dialogue start
+Alton-Quella
+
+action:response:root
+Alton
+<!>root-trigger.xuIsFollowing:그냥 궁금해서 그러는데, 지난 밤에 뭘 하셨나요?:trigger.altonXuTalkedtoQuella.on
+root-1:잘 지내고 계신가요?
+</>root-null:관둔다.
+action end
+
+action:statement:root-trigger.xuIsFollowing
+Quella:언제나 똑같죠...글을 썼어요.
+Quella:너무 늦게 자서 오늘 아침에는 죽을 것 같았죠.  그래도 밤에 글이 잘 써지는 걸 어쩌겠어요!
+Quella:그건 왜 물어보시나요?
+next:root-trigger.xuIsFollowing-1
+action end
+
+action:response:root-trigger.xuIsFollowing-1
+Alton
+root-trigger.xuIsFollowing-2:아 그게, 아무도 전망실에 오시질 않더라구요.
+</>root-null:Nothing.
+action end
+
+action:statement:root-trigger.xuIsFollowing-2
+Quella:다들 저처럼 할 일이 있었을 거에요.
+Quella:걱정마요.  다들 언젠가 들르겠죠.
+next:root-null
+action end
+
+
+action:statement:root-1
+Quella:저는 잘 지내고 있어요!
+Quella:열심히 글을 쓰고 있죠, 그것 뿐이에요!
+next:root-1-A
+action end
+
+action:response:root-1-A
+Alton
+root-1-A-1:그거 멋지네요! 혹시 시간이 된다면 전망실에 들러보시지 않겠어요?
+root-book:글쓰기는 잘 되가시나요?
+</>root-null:가봐야겠네요.
+action end
+
+action:statement:root-1-A-1
+Quella:아 거기서 일하시나보군요?
+Quella:가보고 싶지만, 제가 늘 좀 바빠서요...
+next:root-1-A
+action end
+
+action:statement:root-book
+Quella:책을 쓰려고 하는데요.
+Quella:초안은 거의 완성되었는데, 아직 해야 할 일이 많아요.
+Quella:그래서 더 열심히 해야죠!
+next:root-book2
+action end
+
+action:response:root-book2
+Alton
+root-book-A:책은 어떤 내용인가요?
+</>root-null:떠난다.
+action end
+
+action:statement:root-book-A
+Quella:오, 관심있어요?
+Quella:먼 미래에 대한 SF 소설이에요.
+Quella:세계가 죽어가고 있고, 멸망이 코앞인 상황이죠.
+Quella:그 상황을 타개하고자 하는 몇몇 사람들의 얘기를 다루고 있어요.
+next:root-book3
+action end
+
+action:response:root-book3
+Alton
+root-book3-A:그건 좀...우울한 내용이군요.
+</>root-null:힘내요.
+action end
+
+action:statement:root-book3-A
+Quella:그렇게 들릴지도 모르지만, 기본적으로는 행복한 이야기에요.
+Quella:끝나는 것에 대한 이야기죠.  모든 것은 결국 끝나는 것이긴 하지만, 우리가 미처 준비하기 전에 끝이 다가오는 경우가 많아요.
+Quella:하지만 끝은 필요하죠.  우리가 지금 이 순간을 즐겨야 한다는 것을 알려주니까요.
+Quella:지금 이 순간이 악몽같이 느껴지더라도, 위안을 느낄 수 있다는 것도요.
+Quella:행복한 이야기라고 말하기는 좀 그렇네요.  씁쓸하면서도 달콤한 이야기...?
+next:root-book3
+action end
+
+dialogue end
+
