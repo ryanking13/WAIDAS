@@ -1,0 +1,261 @@
+
+
+
+
+// QUELLA - DARRYL ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Quella-Darryl
+
+action:response:root
+Quella
+root-1:뭔가 근심이 많아보이는데요.
+root-2:언제나 여기 있는 것 같네요?
+</>root-null:관둔다.
+action end
+
+action:statement:root-1
+Darryl:근심?  아니, 그냥...생각을 좀.
+next:root-thoughts
+action end
+
+action:response:root-thoughts
+Quella
+root-thoughts-A:무슨 생각하는데요?:trigger.chap2quellaDarrylProgression3.on
+root-thoughts-B:별로 대화나누는 걸 안 좋아해요?
+root-trigger.chap2quellaDarrylProgression3:아쉽게 놓친 짝사랑이라도 생각해요?
+</>root-null:떠난다.
+action end
+
+action:statement:root-thoughts-A
+Darryl:그냥, 어떤 사람을 좀 생각하고 있었어요.
+next:root-thoughts
+action end
+
+action:statement:root-thoughts-B
+Darryl:지금 별로 이야기할 기분이 아니라서요.  미안합니다.
+Darryl:그래도 말 걸어줘서 고마워요.
+next:root-thoughts
+action end
+
+action:statement:root-trigger.chap2quellaDarrylProgression3
+Darryl:뭐...아니요.  비슷합니다.
+next:root-thoughts
+action end
+
+action:statement:root-2
+Darryl:뭐 그렇죠.
+Darryl:바다를 바라보고 있으면 차분해지거든요.
+next:root-ocean
+action end
+
+action:response:root-ocean
+Quella
+root-ocean-A:참 예쁘네요.:trigger.chap2quellaDarrylProgression.on
+root-trigger.chap2quellaDarrylProgression:무가치하다?  그건 좀 차분하다기보다는 좀 무섭네요...
+root-ocean-B:당신은 무서울 정도로 차분하군요:trigger.trigger.chap2quellaDarrylProgression2.on
+root-trigger.chap2quellaDarrylProgression2:무슨 일을 하셨고, 왜 그만두셨는데요?
+</>root-null:떠난다.
+action end
+
+action:statement:root-ocean-A
+Darryl:장엄하죠.
+Darryl:바다나 별을 보고 있으면, 내가 얼마나 무가치한 존재인지 알게 돼요.
+next:root-ocean
+action end
+
+action:statement:root-trigger.chap2quellaDarrylProgression
+Darryl:어쩌면 둘 다죠.  어렸을 때는 바다가 무서웠어요.
+Darryl:가도 가도 끝없이 가라앉고, 바닥에 닿을 수 없는 것...
+Darryl:여기서 바라보는 바다는 아름다운 푸른색이지만, 조금만 안으로 들어가면 아무 빛도 없는 검은색이죠.
+Darryl:그게 저를 두렵게 합니다.  왜 그럴까요?  하지만 그런 감정은 살다보면...무시하게 되죠.
+next:root-ocean
+action end
+
+action:statement:root-ocean-B
+Darryl:뭐, 더 이상 걱정할 게 별로 없어서요.
+Darryl:하던 일도 접었고, 그냥 유랑생활 중이라.
+next:root-ocean
+action end
+
+action:statement:root-trigger.chap2quellaDarrylProgression2
+Darryl:저는 변호사였습니다.  겉으로만 세련되고 지루한 일이죠.
+Darryl:그만둔 이유는...그냥 모든 것으로부터 벗어나서 쉬고 싶었거든요.
+Darryl:좀 이른 은퇴라고 해도 되겠군요.
+next:root-ocean
+action end
+
+
+
+action:response:root2
+Quella
+<!>root2-trigger.chap3readMarisJournal:미안하지만, 당신이 가지고 있던 일기를 읽었어요.
+root2-A:아까는 왜 그런 거에요?
+root2-B:선장님의 실종이 당신을 뭔가 짜증나게 하는 것 같은데요.
+root2-C:뭔가 이상한 일 없었나요?
+</>root2-null:관둔다.
+action end
+
+action:statement:root2-A
+Darryl:선장...살인...그런 거에 쏟을 에너지가 없거든요.
+Darryl:애초에 할 수 있는 일도 없고요.
+Darryl:저는 그녀를 도울 수 없고, 사실은 여기 있는 그 누구도 저는 도울 수 없어요.
+next:root2
+action end
+
+action:statement:root2-B
+Darryl:그녀의 일은 뭔가...제가 아는 다른 사람을 떠올리게 해요.
+Darryl:이제는 아무 상관없는 일이지만.
+next:root2
+action end
+
+action:statement:root2-C
+Darryl:제 방에서 뭔가 사라졌습니다.  일기장의 열쇠요.
+Darryl:사라졌다기보단, 누가 훔쳐간 거겠군요.  아무래도 배에 도둑이 있는 것 같아요.
+Darryl:왜 열쇠를 가져갔는지 모르겠군요.  뭔가 돈되는 거라도 열 수 있을 거라고 생각했나봅니다.
+next:root2
+action end
+
+action:statement:root2-trigger.chap3readMarisJournal
+Darryl:뭐요?  그건 개인적인 거에요.  아주 개인적인 거요.
+Darryl:그래서 잠궈뒀는데, 아니 애초에 열쇠는 어디서 구한 겁니까?
+next:root3
+action end
+
+action:response:root3
+Quella
+root3-1:Xu의 방에 열쇠가 있더군요.  그녀가 훔친 것 같아요.
+action end
+
+action:statement:root3-1
+Darryl:그래요? 어...일단 알려줘서 고마워요.
+Darryl:근데 그걸 왜 당신이 써본거죠.
+next:root3point5
+action end
+
+action:response:root3point5
+Quella
+root3-2:열쇠는 돌려줄게요, 대신 나랑 얘기 좀 해요.:trigger.chap3DarrylSpills.on
+action end
+
+
+action:statement:root3-2
+Darryl:더 이상 얘기할 것 없어요.
+Darryl:일기장을 읽었다고 했죠.  그럼 무슨 일이 있었는 지 다 알잖아요.
+Darryl:3년 간의 결혼생활이었어요.  교외로 이사해서 자식 계획도 다 짰었죠.
+Darryl:그녀는 일 때문에 지쳐했지만, 그래도 행복해했어요.  제 생각으로는.
+Darryl:약물을 자기한테 투여했어요.  아주 많이.  살아날 미연의 가능성이라도 없애고 싶었던가봐요.
+Darryl:일을 마치고 집에 돌아왔을 때...그녀를 발견했어요.
+next:root3-3
+action end
+
+action:response:root3-3
+Quella
+root3-A:미안해요.
+root3-B:약물을 가지고 있었다구요?
+root3-C:당신 잘못이 아니에요.
+action end
+
+action:statement:root3-A
+Darryl:네.
+next:root3-3
+action end
+
+action:statement:root3-B
+Darryl:불안증세 때문이었죠.  가끔 패닉 증상이 왔었어요.
+Darryl:수면제도 사용하고 있었죠.  그녀는 가끔 긴장때문에 잠을 못 잤거든요.
+Darryl:아주 느리고, 조용했을 거라고 했어요.  약을 투여했을 때부터 죽음에 이르기까지 여섯 시간에서 열 시간 정도 걸렸을 거라고.
+Darryl:그 날은 늦게까지 일을 했죠.  안 그랬다면 막을 수도 있었을 텐데.
+next:root3-3
+action end
+
+action:statement:root3-C
+Darryl:조짐이 있었어요.  오랜 시간동안.
+Darryl:하지만 제가 눈치채지 못했죠.  그녀도 제게 말하지 않았구요.
+Darryl:대체 왜?  왜 난 눈치채지 못했을까?  그렇게 긴 시간동안 그녀가 고통받고 있었는데, 난 아무것도 해주지 못했어.
+Darryl:아무것도.
+next:root3-4
+action end
+
+action:response:root3-4
+Quella
+root3-why:그녀가 당신한테 감췄다면, 몰랐을 수도 있는 거에요.
+root3-support:다른 사람들한테는 이 일을 말했나요?
+root3-counsel:상담은 받아봤어요?
+root3-escape:Darryl, 지금 당신 바로 죽을 것 같아보여요...당신 지금 솔직하게 어디로 가는 거에요?:trigger.darrylUnlocked.on
+action end
+
+action:statement:root3-why
+Darryl:...그래요.
+Darryl:하지만 내가...내가 알았다면.  그녀는 아직도 살아있을 거에요.
+next:root3-4
+action end
+
+action:statement:root3-support
+Darryl:제 가족, 그리고 그녀의 가족한테요.
+Darryl:아무도 눈치채지 못했었죠.
+next:root3-4
+action end
+
+action:statement:root3-counsel
+Darryl:...몇 번.  하지만 그만뒀죠.
+Darryl:별로 도움이 안 돼서.
+next:root3-4
+action end
+
+action:statement:root3-escape
+Darryl:최대한 멀리.
+Darryl:별로 상관없어요.  이젠 아무것도 중요하지 않아요.
+next:root3-death
+action end
+
+action:response:root3-death
+Quella
+<!!>root3-death-A:신은 언제나 감당할 수 있는 만큼의 시련만 줘요.:trigger.epilogueQD1.on
+<!!>root3-death-B:Darryl...대체 뭘 하려는 거에요?:trigger.epilogueQD2.on
+<!!>root3-death-C:언제든 대화가 필요하다면, 나한테 말해줘요.:trigger.epilogueQD3.on
+action end
+
+action:statement:root3-death-A
+Darryl:...그런 격언은 다 개소리지.
+next:root-null
+action end
+
+action:statement:root3-death-B
+Darryl:...
+Darryl:우린 그냥 남이에요.  당신이 나를 신경 쓸 필요 없습니다.
+Darryl:그러니까 제발...나를 놔둬요.
+next:root-null
+action end
+
+action:statement:root3-death-C
+Darryl:그럴 일은 없을 것 같군요.
+Darryl:그래도...고마워요.
+next:root-null
+action end
+
+
+
+action:response:root4
+Quella
+root4-B:선장님의 실종이 당신을 뭔가 짜증나게 하는 것 같은데요.
+root4-C:치료를 받아요.  당신 정상이 아니에요.
+root4-null:관둔다.
+action end
+
+action:statement:root4-B
+Darryl:그녀의 일은 Mari를 떠오르게 합니다.
+Darryl:많은 것이 그녀를 떠오르게 하죠.
+Darryl:...모든 것이.
+next:root4
+action end
+
+action:statement:root4-C
+Darryl:별로 정상이고 싶지도 않아요.
+Darryl:저한테 내려진 벌입니다.
+next:root4
+action end
+
+dialogue end
+
+

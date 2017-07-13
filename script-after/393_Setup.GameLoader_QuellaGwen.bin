@@ -1,0 +1,233 @@
+
+
+// QUELLA - GWEN ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Quella-Gwen
+
+action:response:root
+Quella
+root-1:혹시 무슨 고민거리 있어요?
+root-2:안녕하세요, 전 Quella에요.:trigger.chap2greetGwen.on
+</>root-null:Never mind.
+action end
+
+action:statement:root-1
+Gwen:...
+Gwen:아니요.
+next:root-null
+action end
+
+action:statement:root-2
+Gwen:...
+Gwen:안녕하세요, 전 Gwen이에요.
+Gwen:어...
+Gwen:반가워요.
+next:root-greetedGwen
+action end
+
+action:response:root-greetedGwen
+Quella
+root-greetedGwen-1:주변에서 거의 못 본 것 같은데요!
+root-greetedGwen-2:요즘 좀 어때요?
+root-greetedGwen-3:별 일 없어요?:trigger.chap2everythingsFine.on
+<!>root-trigger.chap2everythingsFine:누가봐도 뭔가 고민하고 있는 얼굴이에요.  나한테 말해봐요.
+root-trigger.chap2everythingsNotFine:아무 일도 없을 거에요.  만약에 무슨 일이 생긴다면, 나한테 말해요.:trigger.chap2quellaGwenProgress.on
+</>root-null:관둔다.
+action end
+
+action:statement:root-greetedGwen-1
+Gwen:...네.
+Gwen:저는 보통 방에만 있어서요...
+next:root-greetedGwen
+action end
+
+action:statement:root-greetedGwen-2
+Gwen:별로요.
+Gwen:...별로 아무데도 관심없어요.
+next:root-greetedGwen
+action end
+
+action:statement:root-greetedGwen-3
+Gwen:...
+Gwen:...별 일 없어요.
+next:root-greetedGwen
+action end
+
+action:statement:root-trigger.chap2everythingsNotFine
+Gwen:...고마워요.
+Gwen:그게...확실하지가 않아요.
+Gwen:집을 나오고서 계속 느끼는 기분 나쁜 감각인데.
+Gwen:누군가 여기 있어요. 느껴져요.
+next:root-greetedGwen
+action end
+
+
+action:statement:root-trigger.chap2everythingsFine
+Gwen:...
+Gwen:아무한테도 말하지 말아요...
+Gwen:누군가 절 쫓아오고 있어요.
+next:root-shadow
+action end
+
+action:response:root-shadow
+Quella
+root-shadow-why:왜 당신을 쫓아오는 건가요?
+root-shadow-who:누가 당신을 쫓아오는 건가요?
+root-shadow-what:왜 누군가 당신을 쫓아온다고 생각하게 되었나요?:trigger.unlockGwen.on
+action end
+
+
+action:statement:root-shadow-why
+Gwen:제 생각에는...저를 다시 데려가려고 하는 것 같아요.
+Gwen:저는 집을 떠나면 안 돼요.  하지만 더 이상 거기서는 지낼 수가 없어요.
+Gwen:....
+Gwen:미안해요, 자세한 건 말할 수 없어요.  그들이 듣고 있을 지도 몰라요.
+next:root-shadow
+action end
+
+action:statement:root-shadow-who
+Gwen:잘 모르겠어요.
+Gwen:...하지만 시선이 느껴져요.  언제나 저를 쳐다보는.
+next:root-shadow
+action end
+
+action:statement:root-shadow-what
+Gwen:...그냥 느낌이에요.
+Gwen:누군지는 몰라요, 그렇지만 이 곳의 누군가가 타겟을 찾고 있어요.
+Gwen:끔찍하게 지독한 감각이 느껴져요.  
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+// QUELLA - GWEN (CHAPTER 4) ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Quella-Gwen
+
+action:response:chap4
+Quella
+chap4-A:걱정 마요, Gwen.  당신의 결백이 밝혀지도록 노력할게요.
+</>chap4-null:떠난다.
+action end
+
+action:statement:chap4-A
+Gwen:정말요?  고마워요.  당신이 저를 믿어주는 유일한 사람이에요.
+Gwen:하지만 어떻게?
+next:chap4-B
+action end
+
+action:response:chap4-B
+Quella
+chap4-C:당신 방에서 열쇠를 처음 찾은 게 누군가요?
+action end
+
+action:statement:chap4-C
+Gwen:이 배의 모든 직원들이요.  Ferdinand, Marcurio, Xu, 그리고 Alton.
+Gwen:그들이 같이 배를 수색하고 있었어요.
+next:chap4-D
+action end
+
+action:response:chap4-D
+Quella
+chap4-E:열쇠가 이상한 장소에 놓여있었던 게 이번이 처음이 아니에요.
+chap4-F:그들과 얘기해 봤나요?
+</>chap4-null:떠난다.
+action end
+
+action:statement:chap4-E
+Gwen:그게 무슨 소리에요?
+next:chap4-G
+action end
+
+action:response:chap4-G
+Quella
+chap4-G-2:배의 선원 중에 누군가가 마스터 키에 대해서 아는 걸 숨기고 있을 지도 몰라요...
+action end
+
+action:statement:chap4-G-2
+Gwen:그들이요?
+next:chap4-D
+action end
+
+action:statement:chap4-F
+Gwen:아니요, 저는 묶여있는 입장이니까요.
+Gwen:그 사람들이 여기 와서 말을 걸어주지 않는 이상 무리겠죠.
+Gwen:정말로 이야기를 해보고 싶은데...
+next:chap4-D
+action end
+
+
+
+
+
+action:response:chap6
+Quella
+chap6-A:당신이 결백할 줄 알고 있었어요.  당신을 구속하다니 정말 바보같은 짓이었어요.
+chap6-trigger.chap2quellaGwenProgress:좀 어떄요?  아무 문제없어요?
+</>chap6-null:떠난다.
+action end
+
+action:statement:chap6-A
+Gwen:믿어줘서 고마워요.
+Gwen:...Marcurio도 제가 결백하다는 걸 알고 있었어요.  그렇지만 그는 저를 의심하는 척했죠.
+next:chap6-B
+action end
+
+action:response:chap6-B
+Quella
+chap6-C:신경쓰지 말아요.  당신과는 이제 관계 없는 일이에요.
+chap6-D:그게 누군가가 당신을 범인으로 몰아갔다고 생각하는 이유인가요?
+</>chap6-null:떠난다.
+action end
+
+action:statement:chap6-C
+Gwen:그래요...그럴 지도 모르겠어요.
+Gwen:뭔가 그는 자기 자신 안의 악마와 싸우고 있는 것 같았아요.
+next:chap6-B
+action end
+
+action:statement:chap6-D
+Gwen:모르겠어요.
+Gwen:꼭 저를 노린 건 아닐 지도 몰라요.
+Gwen:뭔가 더 큰 일에 어쩌다 휘말려버린 것 같아요.
+next:chap6-B
+action end
+
+action:statement:chap6-trigger.chap2quellaGwenProgress
+Gwen:저는 당신한테 있어서 그냥 타인일 뿐인데.
+Gwen:...왜 저한테 이렇게 신경을 많이 써주시는 건가요?
+next:chap6-2
+action end
+
+action:response:chap6-2
+Quella
+chap6-2-A:그런 거 없어요.  꼭 이유가 필요해요?I don't know if I have a reason.  Do I need one?:trigger.chap6quellaGwenProgress.on
+chap6-trigger.chap6quellaGwenProgress:이상한 게 아니에요, 지금까지 당신이 삶에서 배운 게 그런 것일 뿐이죠.
+action end
+
+action:statement:chap6-2-A
+Gwen:...
+Gwen:아니오.
+Gwen:저는 지금까지 살면서 단 한 번도...이유없이 저를 신경써주는 사람이 없었어요.
+Gwen:사람들이 저한테 친절하게 대할수록, 전 오히려 의심해요.
+Gwen:제가 이상한 걸까요?
+next:chap6-2
+action end
+
+action:statement:chap6-trigger.chap6quellaGwenProgress
+Gwen:...그래요.  당신은 제가 삶에서 배우지 못했던 걸 알려주는군요.
+Gwen:삶에는 아직 제가 모르는 게 많은 것 같아요.
+next:chap6-null
+action end
+
+dialogue end
+
+
+

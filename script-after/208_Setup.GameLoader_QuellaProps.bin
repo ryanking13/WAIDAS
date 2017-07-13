@@ -1,0 +1,227 @@
+
+
+
+dialogue start
+QuellasBooksQuella
+action:statement:root
+Quella:글쓰기에 관련된 책들이다.
+Quella:이미 수없이 읽은 지 오래라, 이젠 왜 들고 다니는 지도 모르겠다!
+action end
+dialogue end
+
+dialogue start
+QuellasPapersQuella
+action:statement:root
+Quella:이 한 장면을 완성하지 못하고 있다.
+Quella:이미 다섯 번은 대사를 다시 쓴 것 같은데, 아직도 마음에 안 든다.
+Quella:현실에서 사람들이 이런 식으로 대화하던가?  Quella야...좀 더 힘내봐.
+action end
+dialogue end
+
+dialogue start
+QuellasTrashQuella
+action:statement:root
+Quella:배를 탄지 별로 오래 되지도 않았는데, 벌써 종이로 쓰레기통이 가득하다.
+Quella:이래서야 시간 내로 완성할 수 있을까?
+Quella:...뭐 결국 해야 할 일은 계속 쓰는 것밖에 없지.
+action end
+dialogue end
+
+
+
+
+
+
+
+dialogue start
+XusLootDownQuella
+action:response:root
+Quella
+<!>root-1:조사한다.:trigger.chap3DarrylsKey.on
+</>root-null:놔둔다.
+action end
+
+action:statement:root-1
+Quella:전자기기와 보석들이 상자에 담겨있다.  전부 다 Xu의 것인가?
+Quella:잠깐...이 열쇠에는 'Darryl'이라고 써져 있잖아.
+Quella:...
+Quella:어떤 상황인 지 알 것 같네.
+Quella:이 열쇠는 가져가자.  이게 일기장을 여는 열쇠겠지 아마?
+next:root-null
+action end
+
+action:statement:root2
+Quella:전자기기와 보석들이 상자에 담겨있다.
+Quella:여기서 Darryl의 열쇠를 찾았다.  아마도 여기에 Xu의 소유물은 아무 것도 없을 것이다.
+next:root-null
+action end
+
+dialogue end
+
+
+
+dialogue start
+PaulosMessyBedQuella
+
+action:statement:root
+null:침대 시트가 마구 흐트러져 있다.
+next:root-2
+action end
+
+action:response:root-2
+Quella
+root-A:조사한다
+</>root-null:놔둔다
+action end
+
+action:statement:root-A
+null:열심히 조사해봤지만 별로 의미있는 것은 없었다.
+Quella:여기서 Paulo가 범인이랑 몸싸움을 한 건가?
+next:root-null
+action end
+dialogue end
+
+
+dialogue start
+PaulosMessySuitcaseQuella
+
+action:statement:root
+null:여행가방에서 옷가지가 흘러나와 있다.
+next:root-2
+action end
+
+action:response:root-2
+Quella
+root-A:조사한다
+</>root-null:놔둔다
+action end
+
+action:statement:root-A
+null:여행가방 안에 옷과 구겨진 사진, 그리고 교과서가 들어있다.
+next:root-3
+action end
+
+action:response:root-3
+Quella
+root-B:사진을 살펴본다.
+root-C:교과서를 살펴본다.
+</>root-null:놔둔다
+action end
+
+action:statement:root-B
+null:부모로 보이는 두 사람 사이에 남자아이가 서있다.
+null:잘 꾸며진 방에서, 옷을 단정하게 차려입고 있다.
+Quella:Paulo와 그의 부모님이겠지?
+Quella:근데 웃고있는 것 같지 않네...
+next:root-3
+action end
+
+action:statement:root-C
+null:작문, 생물학, 역사, 그리고 삼각법에 대한 교과서다.
+Quella:삼각법은 고등학교에서 배우는 거 아니던가?  몇 살인거야, 이 꼬마?
+next:root-3
+action end
+
+dialogue end
+
+
+dialogue start
+PaulosMessyDrawerQuella
+
+action:statement:root
+null:서랍장 몇개가 열려있다.
+null:안쪽에는...저거...피?
+next:root-2
+action end
+
+action:response:root-2
+Quella
+root-A:서랍장을 조사한다:trigger.chap4Bracelet.on
+root-B:피를 조사한다
+</>root-null:놔둔다
+action end
+
+action:statement:root-A
+null:대부분 옷가지들 뿐이다.
+null:제일 위쪽 서랍에는 양말 위에 팔찌가 놓여있다.
+null:팔찌와 양말 모두 피로 붉게 물들어 있다.
+Quella:팔찌에 'M'이라는 글자가 새겨져있네. 흠...
+next:root-2
+action end
+
+action:statement:root-B
+Quella:이게 다 Paulo의 피인가?  신이시여...
+Quella:서랍장 모서리에 강하게 부딪힌 것 같네.
+Quella:작은 꼬마한테 대체 누가 이런 짓을?
+next:root-2
+action end
+
+dialogue end
+
+
+dialogue start
+PaulosMessyBookQuella
+
+action:statement:root
+null:책이 바닥에 떨어져있다.
+null:"부끄러움을 극복하는 방법"이라고 적혀있다.  자기계발서인 모양이다.
+null:바닥에 떨어질 때 페이지가 구겨진 모양이다.
+next:root-2
+action end
+
+action:response:root-2
+Quella
+<!>root-A:조사한다:trigger.chap6FerdClue1.on
+</>root-null:놔둔다
+action end
+
+action:statement:root-A
+null:105페이지가 펼쳐져 있다.  별로 특별한 건 없다.
+Quella:흠...이 다음 장이 없는데?
+Quella:누가 찢어버린 것 같은데.  찢어진 흔적만 남아있네.
+next:root-2
+action end
+
+dialogue end
+
+
+
+dialogue start
+SavePropQuella
+
+action:statement:root
+null:테디 베어다.
+null:제법 낡은 것 같다.
+next:root-2
+action end
+
+action:response:root-2
+Quella
+root-A:조사한다
+</>root-null:놔둔다
+action end
+
+action:statement:root-A
+Quella:뭔가, 이걸 보고 있으면 이상한 기분이 들어.
+Quella:누가 나를 쳐다보는 것만 같아.
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

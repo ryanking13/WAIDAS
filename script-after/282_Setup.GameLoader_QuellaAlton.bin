@@ -1,0 +1,233 @@
+
+
+
+// QUELLA - ALTON ////////////////////////////////////////////////////////////////////////////
+
+
+dialogue start
+Quella-Alton
+
+action:response:root
+Quella
+root-1:전망실은 좀 어때요?
+root-2:우울해보이는 것 같은데요.  무슨 일 있어요?
+</>root-null:관둔다.
+action end
+
+
+action:statement:root-1
+Alton:아무도 없죠.
+Alton:언제나처럼.
+next:root-1-A
+action end
+
+action:response:root-1-A
+Quella
+root-1-B:곧 다들 들를 거에요.
+root-1-C:다들 자기 일에 바쁜 것 같네요.
+</>root-null:떠난다.
+action end
+
+action:statement:root-1-B
+Alton:그래요, 그렇겠죠.
+Alton:아마도.
+next:root-null
+action end
+
+action:statement:root-1-C
+Alton:다들 바쁜 것 같죠.
+Alton:그래도 한 번쯤 쉬어줄 시간이 필요하지 않겠어요?  왜 여기로는 안 오는 걸까요?
+Alton:가끔은 사람들이 절 피하는 것 같다는 느낌이 들어요.
+next:root-null
+action end
+
+
+action:statement:root-2
+Alton:모르겠어요...그냥...
+Alton:제가 멍청이었죠.  다 알았어야 했는데.
+next:root-2-A
+action end
+
+action:response:root-2-A
+Quella
+root-2-C:여자 문제에요?
+root-2-B:뭘 말인가요?
+action end
+
+action:statement:root-2-C
+Alton:네...그렇죠.
+Alton:티나나요?
+next:root-2-A
+action end
+
+action:statement:root-2-B
+Alton:그녀를 정말로 좋아했어요.  그냥 돕고싶었어요...
+Alton:근데 그녀는 절 이용했어요!  그게 그녀가 저를 가까이에 둔 이유였어요!
+next:root-used
+action end
+
+action:response:root-used
+Quella
+root-used-A:끔찍한 기분이겠네요.
+root-used-B:미리 알 수 있는 방법 같은 건 없었을 거에요.
+root-used-C:가끔은 그런 일도 있는 거에요.
+action end
+
+action:statement:root-used-A
+Alton:고마워요...제일 끔찍한 부분은 제가 얼마나 우둔하게 행동했는 지에요.
+Alton:그녀는 뒤에서 저를 한참 비웃고 있었을 걸요.
+next:root-used
+action end
+
+action:statement:root-used-C
+Alton:저는 뭐 언제나 일어나는 일이지만요.
+next:root-used
+action end
+
+action:statement:root-used-B
+Alton:아뇨 있었어요.
+Alton:언제나 그랬는데, 전혀 상상도 못하고.
+Alton:다른 사람들은 아무도 저랑 안 어울려주는데, 왜 그녀만 나랑 잘 어울려줬을까?
+next:root-used-2
+action end
+
+action:response:root-used-2
+Quella
+root-used-2-A:그렇지 않아요.:trigger.chap2AltonReassure.on
+root-used-2-trigger.chap2AltonReassure:지금 내가 당신과 대화하고 있잖아요.
+root-used-2-B:왜 그렇게 자기비하를 해요.  잘못한 건 그녀 쪽 아닌가요?:trigger.chap2AltonReassure2.on
+root-used-2-trigger.chap2AltonReassure2:그녀가 당신을 그런 식으로 여겼을 거라고는 생각하지 않아요.  그녀랑 대화하려고 시도해봤나요?:trigger.chap2altonDenial.on
+action end
+
+action:statement:root-used-2-A
+Alton:착한 척 할 필요 없어요.  전 여기서 하루 종일 혼자 있죠.
+Alton:제가 사람들이랑 얘기하려 하면, 다들 얼른 대화를 끝내고 싶어하죠.
+Alton:이번에는 다를 줄 알았는데. 멍청해, 정말 멍청해...
+next:root-used-2
+action end
+
+action:statement:root-used-2-trigger.chap2AltonReassure
+Alton:그래요, 그치만 그건 제가 이렇게 우울해하고 있기 때문이죠.
+Alton:저랑 대화하는 게 즐거워서 그런 건 아니잖아요.
+next:root-used-2-A
+action end
+
+action:statement:root-used-2-B
+Alton:네...그렇죠.  맞아요.
+Alton:그래도 내 잘못이에요.  눈치챘어야 했는데.
+Alton:제가 그냥 그녀한테 있어서 속이기 좋은 멍청한 남자였던 거에요.
+next:root-used-2
+action end
+
+action:statement:root-used-2-trigger.chap2AltonReassure2
+Alton:...아니요.
+Alton:해봐야 겠네요...대체 얼마나 더 끔찍한 일이 벌어질 지.
+next:root-null
+action end
+
+
+
+
+
+
+
+
+action:response:root2
+Quella
+root-1:전망실은 좀 어때요?
+<!>chap2Alton:전보다 더 얼굴색이 안좋은데요?
+</>root-null:관둔다.
+action end
+
+action:statement:chap2Alton
+Alton:Xu랑 얘기해봤어요.
+Alton:그녀가 언제나 저를 증오했다는 걸 알았어요.
+next:chap2Alton2
+action end
+
+action:response:chap2Alton2
+Quella
+chap2Alton2-A:당신이 너무 확대해석 하는 거 아닐까요.
+chap2Alton2-B:둘이 잘 안 맞는 것 같네요.
+action end
+
+action:statement:chap2Alton2-A
+Alton:아뇨, 명확하게 말했어요.
+Alton:그녀 눈에는 제가 돈많은 어린애로 보이나봐요, 그게 그녀가 나를 싫어하는 이유구요.
+next:chap2Alton2
+action end
+
+action:statement:chap2Alton2-B
+Alton:그럴지도요.
+Alton:그녀는 저한테 언제나 착하게 대해줬죠.  참 친절했는데.  앞에서만 그런거였다니.
+Alton:우리는 같은 눈높이로 서로를 바라본 적이 없었나봐요.  그녀는 저를 처음부터 특혜를 받은 사람으로 봤죠.
+Alton:처음부터 이 일을 해서는 안 됐어요.
+next:chap2Alton2-C
+action end
+
+action:response:chap2Alton2-C
+Quella
+chap2Alton2-E:그게 무슨 뜻이에요?:trigger.chap2fullPossess.on
+action end
+
+
+action:statement:chap2Alton2-E
+Alton:이 배를 타면 여행할 수 있을 거라고 생각했어요.  많은 사람들을 만나고, 그럼 좋을 거라고.
+Alton:하지만 모든 사람들이 저를 쓸모없는 기생충같은 시선으로 보는군요.
+Alton:여기서 가장 쉬운 일을 맡고 있는데도, 이렇게 버려진 채로, 아무도 저를 좋아하지 않아요.
+Alton:모든 게 다 실수였어요.  집으로 돌아가야겠어요.  떠나와서는 안 됐어.
+next:root-null
+action end
+
+
+action:statement:chap2Final
+Alton:이 배를 타면 여행할 수 있을 거라고 생각했어요.  많은 사람들을 만나고, 그럼 좋을 거라고.
+Alton:하지만 모든 사람들이 저를 쓸모없는 기생충같은 시선으로 보는군요.
+Alton:여기서 가장 쉬운 일을 맡고 있는데도, 이렇게 버려진 채로, 아무도 저를 좋아하지 않아요.
+Alton:모든 게 다 실수였어요.  집으로 돌아가야겠어요.  떠나와서는 안 됐어.
+next:root-null
+action end
+
+
+action:response:chap3
+Quella
+chap3-A:좀 어때요?
+chap3-B:여행이 하고 싶어서 이 배를 탔다고 했죠?
+</>chap3-null:관둔다.
+action end
+
+action:statement:chap3-A
+Alton:그냥 괜찮아요.
+Alton:어쨌든 제 잘못이었으니까요 뭐.
+next:chap3
+action end
+
+action:statement:chap3-B
+Alton:네, 뭔가 엄청난 뜻을 가지고 탄 건 아니였어요.
+Alton:그냥 밖으로 나가서 세상을 좀 더 알려고 한 거죠.
+Alton:현실은 예상처럼 로맨틱하지는 않네요.
+next:chap3-travel
+action end
+
+action:response:chap3-travel
+Quella
+chap3-travel-A:좀 더 안정적인 직장을 갖고 싶다는 소리처럼 들리네요.
+chap3-travel-B:대학 졸업한 후에 여행하면서 갭이어를 보내는 건가요?
+</>chap3-null:관둔다.
+action end
+
+action:statement:chap3-travel-A
+Alton:아마도요.  사무직은 맡으면,  그쪽 사람들을 만나겠죠.
+Alton:여기 사람들은 뭔가 다...달라요.
+Alton:그런 곳이 좀 더 저한테 맞는 것 같네요.
+next:chap3-travel
+action end
+
+action:statement:chap3-travel-B
+Alton:갭이어요? 뭐 그런거죠.
+Alton:작년에 졸업했으니까요.
+next:chap3-travel
+action end
+
+dialogue end
+

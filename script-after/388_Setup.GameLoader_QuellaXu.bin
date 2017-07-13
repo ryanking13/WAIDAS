@@ -1,0 +1,132 @@
+
+
+
+// QUELLA - XU ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Quella-Xu
+
+action:response:root
+Quella
+root-trigger.chap3DarrylsKeyQuella:당신 방에서 이 상자를 찾았어요...:trigger.chap3DarrylsKeyQuella.off
+root-1:웨이터 일은 좀 어때요?
+root-2:뭔가 화나 보이는데요?
+</>root-3:관둔다.
+action end
+
+action:statement:root-1
+Xu:뭐...좋아요.
+Xu:승객이 적으니까, 일은 그리 힘들지 않은 편이죠.
+next:root-1-A
+action end
+
+action:response:root-1-A
+Quella
+root-1-B:별로 좋아하는 것 같은 말투가 아닌데요.
+</>root-1-null:떠난다.
+action end
+
+action:statement:root-1-B
+Xu:그게, 월급이 적거든요.
+Xu:진짜 적아요.
+Xu:팁을 많이 받아도 별로 못 버는 수준이에요.
+next:root-1-C
+action end
+
+action:response:root-1-C
+Quella
+root-1-D:그건 좀 불쌍하네요.
+root-1-E:돈이 전부가 아니에요.  일을 좋아하면 된 거 아닌가요?
+</>root-1-F:Never mind.
+action end
+
+action:statement:root-1-D
+Xu:당신처럼 은행도 저를 불쌍하게 여겨주면 참 좋을텐데요.
+next:root-1-C
+action end
+
+action:statement:root-1-E
+Xu:우리가 생각하는 방식이 좀 다른 것 같네요.
+Xu:돈은 이 세상의 전부에요.  돈은 신이에요.  싫어할 순 있어도, 돈은 세상 모든 걸 다 조종하죠.
+next:root-1-C
+action end
+
+
+action:statement:root-2
+Xu:아...아니에요.  별 일 없어요.
+Xu:뭔가 좀 망쳐버려서요.
+next:root-2-A
+action end
+
+action:response:root-2-A
+Quella
+root-2-B:누구나 다 실수는 하는 거죠!
+root-2-C:빨리 사과하는 게 고민하고 있는 것 보다 나을 거에요!
+</>root-2-null:관둔다.
+action end
+
+action:statement:root-2-B
+Xu:실수라고 불러야 하는 건 아니에요.
+Xu:그냥 좀 복잡한 일이죠.
+next:root-2-A
+action end
+
+action:statement:root-2-C
+Xu:조언 고마워요.  근데 사과한다고 풀릴 상황은 아닌 것 같네요.
+next:root-2-A
+action end
+
+
+
+
+
+action:statement:root-trigger.chap3DarrylsKeyQuella
+Xu:잠깐만요, 제 방에 들어갔다구요?
+Xu:직원 방에 멋대로 들어가시다니...
+next:root-foundOut
+action end
+
+action:response:root-foundOut
+Quella
+root-foundOut-1:Darryl의 열쇠를 찾았어요.  당신이 훔친 거라고 생각되는데요.
+action end
+
+action:statement:root-foundOut-1
+Xu:그-그건 좀 섣부른 추측이신데요.
+Xu:그 사람이 식사 후에 열쇠를 놔두고 가서 돌려주려고 했던 거에요.
+next:root-pressure
+action end
+
+action:response:root-pressure
+Quella
+root-pressure-A:Ferdinand가 직원이 승객의 소지품을 훔쳤다는 걸 알면 어떻게 반응할까요?:trigger.chap3gwenXuProgress.on
+root-trigger.chap3gwenXuProgress:진정해요.  아무한테도 말 안 할 거에요.  하지만 앞으론 이런 일을 하면 안 돼요.
+</>root-null:관둔다.
+action end
+
+action:statement:root-pressure-A
+Xu:말하면 안 돼요!  그럼 전 짤린다구요!
+Xu:앞으로 절대로 이런 일은 없을 거에요, 다 돌려다 놓을게요.  그러니까 제발...
+next:root-pressure
+action end
+
+action:statement:root-trigger.chap3gwenXuProgress
+Xu:...
+Xu:...고마워요.  여기서 짤리면 전 아무데도 갈 곳이 없어요.
+next:root-pressure-B
+action end
+
+action:response:root-pressure-B
+Quella
+root-pressure-C:그래도 Darryl이 뭐라고 할 지는 제가 알 수가 없네요.  아마도 당신이랑 얘기를 하려고 할 거에요.
+action end
+
+action:statement:root-pressure-C
+Xu:...그렇겠죠...
+next:root-null
+action end
+
+
+dialogue end
+
+
