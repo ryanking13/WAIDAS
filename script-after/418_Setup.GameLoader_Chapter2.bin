@@ -1,0 +1,293 @@
+
+
+// Chapter Two's introduction skit  ///////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+FerdinandIntroSkit
+
+action:statement:root
+Intercom:*에헴*
+Intercom:테스트, 테스트, 좋아...작동하는 군.
+Intercom:안녕하세요, 승객 여러분!  이 배의 일등항해사 Ferdinand가 알려드립니다.
+Intercom:간단한 공지를 드립니다.
+Intercom:어떠한 것이든 배에서 위험하다고 느끼는 것이 있다면, 저에게 말씀해주십시오!
+Intercom:여러분의 안전을 위해서 가능한 모든 방법을 동원해서 노력하겠습니다.
+Intercom:이상입니다.  즐거운 밤 보내시길 바랍니다!
+next:end
+action end
+
+dialogue end
+
+
+dialogue start
+FerdinandIntroSkit2
+
+action:statement:root
+Gwen:...
+Gwen:...안전...
+next:end
+action end
+
+dialogue end
+
+
+dialogue start
+GwenIsNosy
+
+action:statement:root
+Gwen:그러겠다고 말했지만...
+Gwen:내가 그에 대해서 아무것도 모른다면, 내가 정말로 안전하다고 말할 수 있을까?
+Gwen:강해지자. Gwen, 강해지자.  넌 할 수 있어.
+Gwen:201호였지...?
+next:end
+action end
+
+dialogue end
+
+
+
+
+// Donovan's door dialogues  ///////////////////////////////////////////////////////////////////////////////
+
+
+dialogue start
+DonovanDoorFailAll
+
+action:statement:root
+null:문이 잠겨있다.
+next:end
+action end
+
+action:statement:root2
+Gwen:누군가 안에서 움직이는 소리가 들린다.  Donovan이 안에 있을 때 들어갈 수는 없다...
+next:root2-2
+action end
+
+action:response:root2-2
+<player>
+root2-3:노크한다.
+</>root2-null:관둔다.
+action end
+
+action:statement:root2-3
+Donovan:뭐지?
+next:root2-4
+action end
+
+action:response:root2-4
+<player>
+root2-5:대화를 요청한다.
+</>root2-null:떠난다.
+action end
+
+action:statement:root2-5
+Donovan:싫어.  꺼져.
+next:root-null
+action end
+
+dialogue end
+
+
+dialogue start
+DonovanDoorFailGwen
+
+action:statement:root
+null:문이 잠겨있다.
+next:end
+action end
+
+action:statement:root2
+Gwen:누군가 안에서 움직이는 소리가 들린다.  Donovan이 안에 있을 때 들어갈 수는 없다...
+next:root2-2
+action end
+
+action:response:root2-2
+<player>
+root2-3:노크한다.
+</>root2-null:관둔다.
+action end
+
+action:statement:root2-3
+Donovan:뭐지?
+next:root2-4
+action end
+
+action:response:root2-4
+<player>
+root2-5:...
+</>root2-null:떠난다.
+action end
+
+action:statement:root2-5
+Donovan:날 좀 내버려둬.
+next:root-null
+action end
+
+dialogue end
+
+
+dialogue start
+DonovanDoorFailAlton
+
+action:statement:root
+null:문이 잠겨있다.
+next:end
+action end
+
+action:statement:root2
+null:문이 잠겨있다.  누군가 안에 있는 것 같다.
+next:root2-2
+action end
+
+action:response:root2-2
+<player>
+root2-3:노크한다.
+</>root2-null:관둔다.
+action end
+
+action:statement:root2-3
+Donovan:뭐지?
+next:root2-4
+action end
+
+action:response:root2-4
+<player>
+root2-4-A:저 Alton 인데요!  얘기 좀 하지 않을래요?
+root2-4-B:마지막으로 선장님을 본게 언제죠?
+root2-4-C:혹시 최근에 주변에서 이상한 거 본 적 없어요?
+</>root2-4-null:관둔다.
+action end
+
+action:statement:root2-4-A
+Donovan:아니.  가라.
+next:root2-null
+action end
+
+action:statement:root2-4-B
+Donovan:그게 너랑 무슨 상관이지?
+next:root2-5
+action end
+
+action:statement:root2-4-C
+Donovan:있지.  어떤 남자가 사람들 방을 두드리고 다니면서 이상한 질문을 해대는 거.
+next:root2-4
+action end
+
+action:response:root2-5
+<player>
+root2-5-A:그냥 궁금해서요!
+root2-5-B:선장님한테 무슨 일이 일어난 것 같아요.
+<!>root2-5-C:선장님이 죽었어요.
+action end
+
+action:statement:root2-5-A
+Donovan:오, 그냥 궁금해서?  그럼 이제 꺼져.
+next:root2-5
+action end
+
+action:statement:root2-5-B
+Donovan:흥미롭군.
+next:root2-6
+action end
+
+action:response:root2-6
+<player>
+root2-6-A:별로 걱정되지 않나 본데요.
+root2-6-B:당신이랑 관련이 있는 것 같은데요.
+action end
+
+action:statement:root2-6-A
+Donovan:걱정할 게 뭐 있어?
+Donovan:하루 종일 생각만 해서 뭐해.
+Donovan:내가 이 배가 빙산으로 가고 있는 것 같다, 라고 말하면 넌 그걸 듣고 걱정되나?
+next:root2-5
+action end
+
+action:statement:root2-6-B
+Donovan:무슨 얘기가 하고 싶은 거야?
+Donovan:네 생각에는 선장한테 무슨 일이 생겼고, 그게 나랑 관련이 있다?
+Donovan:명탐정나셨네.
+next:root2-5
+action end
+
+action:statement:root2-5-C
+Donovan:...
+Donovan:왜 그렇게 생각하지?
+next:root2-7
+action end
+
+action:response:root2-7
+<player>
+root2-8:밖에서 만나요, 거기서 얘기하죠.:trigger.altonLuredDonovan.on
+action end
+
+action:statement:root2-8
+Donovan:...
+Donovan:그래.
+Donovan:장난치는 거라면 죽여버린다.
+next:root-null
+action end
+
+dialogue end
+
+
+
+dialogue start
+CatUnlockDoor
+
+action:statement:root
+null:문이 안에서 잠겨있다.  손잡이를 돌리면 열릴 것 같다.
+null:손잡이는 충분히 닿을만한 높이에 있다...
+next:root-1
+action end
+
+action:response:root-1
+<player>
+<!>root-2:문을 연다.:trigger.donovansDoorUnlocked.on
+action end
+
+action:statement:root2
+null:문이 안에서 잠겨있다.  손잡이를 돌리면 열릴 것 같다.
+null:그렇지만, 굳이 열 이유가 없다.
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+dialogue start
+PaulosMessageTwo
+
+action:statement:root
+null:어이 친구.
+null:방해해서 미안한데, 할 얘기가 있어.
+null:시간 될 때 내 방으로 돌아와.
+next:null
+action end
+
+dialogue end
+
+
+dialogue start
+PaulosMessageThree
+
+action:statement:root
+null:좋아...배의 방향이 바뀌었어.
+null:이걸로 충분히 시간을 벌 수 있을 거야.
+null:내 방으로 돌아와. 얘기 좀 하자.
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+

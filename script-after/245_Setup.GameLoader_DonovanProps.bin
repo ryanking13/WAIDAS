@@ -1,0 +1,753 @@
+
+dialogue start
+MarcuriosWallHoleDonovan
+action:statement:root
+Donovan:벽의 벽토에 구멍이 나있군.
+Donovan:벽을 두드려보니 뒤에 바닥에서 천장까지 넓은 빈 공간이 있는 것 같다.
+Donovan:얼마나 깊이 이어지는 것일까.
+action end
+dialogue end
+
+
+dialogue start
+DiningRoomWallHoleDonovan
+action:statement:root
+Donovan:벽의 벽토에 구멍이 나있군.
+Donovan:벽을 두드려보니 뒤에 빈 공간이 있는 것 같다.
+Donovan:숨겨진 공간이 있는 모양이군.
+action end
+dialogue end
+
+
+
+
+
+
+
+////  DONOVAN'S PROP DIALOGUES   ///////////////////////////////////////////////////
+
+
+// Donovan's room   ////////////////////////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+DonovansComputerDonovan
+
+action:response:root
+Donovan
+root-1:로그인
+</>root-null:놔둔다
+action end
+
+action:response:root-1
+Donovan
+root-email:이메일 확인
+root-camera:카메라 확인
+</>root-null:로그오프
+action end
+
+action:statement:root-camera
+Donovan:살펴볼 기록이 가득하군.
+Donovan:특정 일의 기록을 살펴보거나, 특정 카메라를 살펴볼 수 있다.
+next:root-camera2
+action end
+
+action:response:root-camera2
+Donovan
+root-days:각 날의 기록
+root-cameras:각 카메라의 기록
+</>root-1:뒤로가기
+</>root-null:로그오프
+action end
+
+action:response:root-days
+Donovan
+root-day1:이틀 전의 기록
+root-day2:어제의 기록
+root-day3:오늘의 기록
+</>root-camera2:뒤로가기
+action end
+
+action:response:root-cameras
+Donovan
+root-cameraB1:B2 카메라
+root-cameraB2:B1 카메라:trigger.chap6donovansFootage.on
+</>root-1:뒤로가기
+action end
+
+action:statement:root-day1
+Donovan:이틀 전...분명 선장이 마지막으로 목격된 날이다.
+Donovan:오전이나 오후에는 딱히 수상한 행동을 보이는 사람이 없다.
+Donovan:밤에는 선장이 방에서 나와 1층 갑판으로 올라갔다.
+Donovan:그리고 돌아오지 않았다.
+Donovan:1층에는 카메라를 설치하지 못했으니, 그녀의 기록은 이것이 마지막이다.
+Donovan:그녀가 사라지고 나서 다음날 아침이 되기까지, 모든 사람들이 1층으로 올라갔다가 내려왔다.
+Donovan:그러니, 이 사이에는 무슨 일이든 일어날 수 있었다는 거군.
+Donovan:마지막으로 주목할만한 것은, 이날 밤 Xu가 방에 돌아왔을 때 마스터키를 들고 있었다는 것이다.
+Donovan:선장이 사라지고 난 이후에 조타실에서 열쇠를 가져온 것은 분명하다.
+next:root-days
+action end
+
+action:statement:root-day2
+Donovan:어제는 여러가지 일이 일어났다.
+Donovan:Alton과 Xu가 사람들한테 뭔가를 물어보면서 돌아다녔다.  수상하군.
+Donovan:Quella도 사람들과 대화하면서 계속 돌아다녔다.
+Donovan:저녁에는 Gwen이 내 방에 들어왔다.  그때 내 방문의 잠금이 해제되어 있었다.
+Donovan:그녀가 무엇인 가 가져가지 않은 건 확실하다. 그녀의 목적을 알 수가 없다.
+next:root-days
+action end
+
+action:statement:root-day3
+Donovan:오늘은 아직 끝나지 않았지만, 살펴봐야 할 기록이 많다.
+Donovan:새벽에는 Ferdinand가 Garv의 방에 방문했다. 수상하군.
+Donovan:조금 지나서 아침에 그는 사람들을 소집해서 미팅을 했다.
+Donovan:그 이후에는 대부분 사람들이 1층으로 가서 기록이 남아있지 않다.
+next:root-days
+action end
+
+action:statement:root-cameraB1
+Donovan:B1은 제일 낮은 층이고, 대부분의 승객들이 머무는 곳이다.
+Donovan:예상대로, 많은 사람들이 하루 종일 돌아다녔다.
+Donovan:계속 이 층에 있던 것은 검은 고양이 한 마리 뿐이었다.
+Donovan:가끔은 작은 물건을 입에 넣고 옮기는 모습이 보였다.
+Donovan:이 층은 딱히 수상한 일이 없었던 것으로 보인다.
+next:root-cameras
+action end
+
+action:statement:root-cameraB2
+Donovan:B2는 중간층으로, 직원들의 숙소가 있다.
+Donovan:찍힌 사람들은 대부분 카메라가 없는 위 갑판으로 올라간다.
+Donovan:Marcurio와 Garv가 청소용구가 있는 곳에 자주 들락날락거린다.
+Donovan:사실 출항한 날부터 거의 매일 그랬지.
+Donovan:Ferdinand는 언제나 이상하게 웃으면서 모든 곳을 돌아 다닌다.
+Donovan:Darryl은 하루에 한 두번 정도 이 층을 지나치는데, 대부분의 시간을 위 갑판에서 보낸다.
+next:root-cameras
+action end
+
+
+action:response:root-email
+Donovan
+root-A:이메일 #1
+root-B:이메일 #2
+root-C:이메일 #3:trigger.musicDonovanUnlocked.on
+</>root-1:뒤로가기
+</>root-null:로그오프
+action end
+
+action:statement:root-A
+null:안녕 Donovan. 우리가 마지막으로 대화한 지도 제법 지났네.
+null:군을 떠난 이후로 네가 잘 지내고 있을 거라고 믿어.  아무래도 좀 거친 곳이었으니까.
+null:사실은, 네 도움이 필요해서 연락했어.  아주 특별한 사람이 필요한 사건이야.
+null:바로 그야, Donovan.
+null:도와줄 생각 있으면 연락 줘.
+null:  - L 
+next:root-1
+action end
+
+action:statement:root-B
+null:그가 작은 크루즈 선에 올라탄 걸 확인했어.
+null:하지만 이제는 경계를 넘어서, 더 이상 추적이 불가능해.  어떻게 해보려고 하는 동안에 그는 도망치고 말거야.
+null:내가 계급장 떼고 직접 쫓을 수도 있지만, 난 저번에 그에게 너무 접근했어.  내 신상은 이미 노출되었을 거야.
+null:그가 모르는 외부인이 필요해.  너만이 이 일을 할 수 있어, Donovan.
+null:그가 마지막으로 일을 벌인지 오랜 시간이 지났어.  그래서 아마 그는 고립된 배를 절호의 기회라고 생각할 거야.
+null:첨부된 파일에 필요한 모든 내용이 들어있어.  남은 건 너한테 달려있어.
+null:  - L 
+next:root-1
+action end
+
+action:statement:root-C
+null:아, 그리고 마지막으로 한 가지 말해둘 게 있어.
+null:네가 떠나게 된 것에 대해서 나를 미워하는 것 알아.  하지만 너는 정상이 아니었어, Donovan.  그때 너한테 필요한 건 휴식이었어.
+null:아직 고통스러울 수도 있겠지만, 이것만 기억해...
+null:난 너를 이 일에 끼게 하기 위해서 수많은 규칙을 어기고, 내 철학도 깼어.  이건 다 너를 정말로 믿으니까 그러는 거야.
+null:그러니까 제발, 냉정하게 프로답게 임해줘.  무모한 짓 하지말고, 일을 끝내고, 집으로 돌아와.
+null:나를 위해서.
+null:  - 루실
+next:root-1
+action end
+
+dialogue end
+
+
+dialogue start
+DonovansHardwareDonovan
+action:statement:root
+Donovan:내 외장 하드드라이브와 서버다.
+Donovan:여기서는 별로 필요없지만, 가지고 다녀서 손해볼 것도 없지.
+next:root-null
+action end
+dialogue end
+
+dialogue start
+DonovansCamerasDonovan
+action:statement:root
+Donovan:음성 녹음기와 카메라다.
+Donovan:언제나 몸 속에 숨기고 다닌다.  별로 도움이 될 거라 기대하진 않지만.
+next:root-null
+action end
+dialogue end
+
+dialogue start
+DonovansCamerasTwoDonovan
+action:statement:root
+Donovan:몇몇 남은 도청용 카메라다.
+Donovan:이 배의 모든 곳에 카메라를 설치할 수는 없었지.
+Donovan:몇몇 곳은 너무 개방되어 있어서, 카메라가 눈에 띄기 쉬웠다.
+next:root-null
+action end
+dialogue end
+
+dialogue start
+SkeletonKeyDonovan
+
+action:response:root
+<player>
+root-1:열쇠를 가져간다:trigger.donovanMasterKey.on
+root-null:놔둔다
+action end
+
+action:statement:root-1
+Donovan:이 열쇠가 있으면, 이 배의 모든 곳에 들어갈 수 있다.
+Donovan:지금까지 Marcurio와 선장실을 제외하고 모든 방을 조사했다.
+Donovan:컴퓨터에 남은 기록을 살펴볼 수도 있다.  이 배의 여러 기록들이 남아있을 것이다.
+Donovan:...모든 것을 종합하면 선장이 있는 곳을 찾을 수 있을 것이다.
+next:root-null
+action end
+dialogue end
+
+
+
+// Garv's Room   ////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+dialogue start
+GarvsDresserDonovan
+
+action:statement:root
+null:거대한 옷장이다.  4개의 서랍이 있다.
+next:root1
+action end
+
+action:response:root1
+Donovan
+root-A:왼쪽 위 서랍
+root-B:오른쪽 위 서랍
+root-C:왼쪽 아래 서랍
+root-D:오른쪽 아래 서랍
+</>root-null:관둔다.
+action end
+
+action:statement:root-A
+null:고양이와 새 먹이가 들어있다.
+next:root1
+action end
+
+action:statement:root-B
+null:고양이 오줌 냄새가 가득하다.
+null:Bleh.
+next:root1
+action end
+
+action:statement:root-C
+null:옷가지들이 들어있다.
+null:물론 사람 옷이다.
+next:root1
+action end
+
+action:statement:root-D
+null:여러 약과 응급 처치 용품이 들어있다.
+null:밴드랑, 바늘, 그리고...심지어 링거액까지?
+next:root1
+action end
+
+dialogue end
+
+
+// Empty NE Room   ////////////////////////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+EmptyNEDresserDonovan
+
+action:statement:root
+null:거대한 옷장이다.
+next:root1
+action end
+
+action:response:root1
+Donovan
+root-A:왼쪽 위 서랍
+root-B:오른쪽 위 서랍
+root-C:왼쪽 아래 서랍
+root-D:오른쪽 아래 서랍:trigger.achievementSecretThree.on
+</>root-null:관둔다.
+action end
+
+action:statement:root-A
+null:비어있다.
+next:root1
+action end
+
+action:statement:root-B
+null:앞에는 공기청정제가 들어있다.
+null:뒤에는 부패된 쥐가 들어있다.
+null:...어머나.
+next:root1
+action end
+
+action:statement:root-C
+null:비어있다.
+next:root1
+action end
+
+action:statement:root-D
+null:구겨진 영수증이 가득하다.
+null:그 아래에는 구겨진 메모가 있다.
+null:"준비가 끝날 때까지 이 돈으로 호텔비를 감당해."
+null:"조금만 지나면 분배되는 돈으로 충분히 당신을 도와줄 수 있을 거야."
+null:"당연하지만, 이 돈이랑 메모지는 절대 남이 안 보는 곳에 보관해."
+null: - C 
+next:root1
+action end
+
+dialogue end
+
+
+
+// Gwen's room       ////////////////////////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+GwensDresserDonovan
+
+action:statement:root
+null:거대한 옷장이다.  네 개의 서랍이 있다.
+next:root1
+action end
+
+action:response:root1
+Donovan
+root-A:왼쪽 위 서랍
+root-B:오른쪽 위 서랍
+root-C:왼쪽 아래 서랍
+root-D:오른쪽 아래 서랍
+</>root-null:관둔다.
+action end
+
+action:statement:root-A
+null:옷가지로 가득하다.  특히 속옷.
+null:딱히 볼 것이 없다.
+next:root1
+action end
+
+action:statement:root-B
+null:더 많은 옷이 있다.  당연하다, 옷장이니까.
+next:root1
+action end
+
+action:statement:root-C
+null:명함 한 장 빼고는 비어있다.
+null:  구조된 사람들을 위한 그룹 테라피
+null:뒷면에는 여러 연락처가 적혀있다.
+next:root1
+action end
+
+action:statement:root-D
+null:비어있다.
+next:root1
+action end
+
+dialogue end
+
+
+dialogue start
+GwensAxeDonovan
+action:statement:root
+Donovan:왜 도끼같은 걸 들고다니는 거지?
+Donovan:날을 보면 한 번도 쓴 적이 없는 것 같다.
+Donovan:그녀는 현실과 동떨어져 있는 것 같다. 계속 지켜봐야겠다.  
+next:null
+action end
+dialogue end
+
+dialogue start
+GwensBackpackDonovan
+
+action:statement:root
+null:가방이 바닥에 놓여있다.
+next:root-1
+action end
+
+action:response:root-1
+<player>
+root-2:살핀다!
+</>root-null:놔둔다.
+action end
+
+action:statement:root-2
+Donovan:가족 유품과 호신용 스프레이가 들어있다.
+Donovan:기대하던 게 아니군.
+next:root-null
+action end
+dialogue end
+
+
+
+
+// Marcurio's room   ////////////////////////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+MarcuriosBookcaseDonovan
+
+action:statement:root
+null:거대한 책장이다.
+null:다 식자재 또는 요리와 관련된 내용이다.
+next:root1
+action end
+
+action:response:root1
+Donovan
+<!>root2:자세히 살펴본다.
+</>root-null:관둔다.
+action end
+
+action:statement:root2
+Donovan:이걸 다 살펴보려면 제법 큰일이겠군. 어디서부터 시작한다...?
+next:root3
+action end
+
+action:response:root3
+Donovan
+root-A:위 칸
+root-B:중간 칸
+root-C:아래 칸
+</>root-null:충분히 봤다.
+action end
+
+action:response:root-A
+Donovan
+root-A-1:요리의 기본
+root-A-2:온도 관리
+root-A-3:빵 굽고 튀기기
+root-A-4:요리사의 백과사전
+root-A-5:음식이란 무엇인가
+root3:돌아가기
+action end
+
+action:statement:root-A-1
+null:요리에 대한 전반적인 내용을 다루는 책인 것 같다.
+null:별로 본 흔적이 없다.  사놓고 까먹은 게 확실해보인다.
+next:root-A
+action end
+
+action:statement:root-A-2
+null:제목만 봐도 재미없어 보인다.
+null:확인해보니 정말로 그렇다.
+null:가끔은 표지만 봐도 알 수 있는 법이지.
+next:root-A
+action end
+
+action:statement:root-A-3
+null:이 책에는 작은 메모지들이 가득 붙어 있다.
+null:읽기 어려운 글씨로 다른 페이지들을 가리키고 있다.
+next:root-A
+action end
+
+action:statement:root-A-4
+null:한 페이지만 눈에 띄게 접혀있다.
+null:커다란 글씨로 휘갈긴 문장이 보인다.
+null:"나는 이 배에서 절대로 나갈 수 없을 거야."
+next:root-A
+action end
+
+action:statement:root-A-5
+null:속표지에 휘갈긴 글씨가 보인다.
+null: 좆같은 책
+next:root-A
+action end
+
+action:response:root-B
+Donovan
+root-B-1:깨끗한 주방 만들기
+root-B-2:100개 초보자 레시피
+root-B-3:고기 관리하기
+root-B-4:계절에 관계없는 레시피
+</>root3:돌아가기
+action end
+
+action:statement:root-B-1
+null:깐깐한 사람들만을 위한 책 같다.
+null:채소를 가나다 순으로 정렬하기 같은 내용이 적혀 있다.
+next:root-B
+action end
+
+action:statement:root-B-2
+null:대부분의 레시피에 줄이 그어져있다.
+null:각각의 밑에 몇 개의 재료가 동그라미쳐져있다.  아마도 지금 없는 재료들인 것같다.
+next:root-B
+action end
+
+action:statement:root-B-3
+null:어떻게 이런 제목을 출판사가 허락해줬을까?
+next:root-B
+action end
+
+action:statement:root-B-4
+null:책 뒤에 빈 위스키 병이 여럿 감추어져있다.
+null:과연, 계절과 관계없는 레시피다.
+next:root-B
+action end
+
+action:response:root-C
+Donovan
+root-C-1:주방 관리
+root-trigger.chap3noChestKey:성공적인 레스토랑 만들기:trigger.chap3chestKey.on
+root-trigger.chap3chestKey:성공적인 레스토랑 만들기
+root-C-3:최고의 셰프
+root-C-4:요리의 기술과 과학
+root-C-5:아마추어에서 프로까지
+</>root3:돌아가기
+action end
+
+action:statement:root-C-1
+null:수없이 읽은 흔적이 보인다.
+next:root-C
+action end
+
+action:statement:root-trigger.chap3noChestKey
+null:속표지에 휘갈겨 쓴 글씨가 보인다.
+null:왜 이 일을 하고 있는지 절대로 잊지 마
+null:책의 중간이 불룩 튀어나와있다.
+null:살펴보니, 열쇠가 하나 들어있다.
+null:찾은 사람이 임자지.
+next:root-C
+action end
+
+action:statement:root-trigger.chap3chestKey
+null:속표지에 휘갈겨 쓴 글씨가 보인다.
+null:왜 이 일을 하고 있는지 절대로 잊지 마
+null:열쇠가 없어져서, 이제는 평평하다.
+next:root-C
+action end
+
+action:statement:root-C-3
+null:요리사가 가져야할 마음가짐에 대해서 적혀있다.
+null:책의 맨 뒷부분에서만 음식에 대해서 이야기한다.
+next:root-C
+action end
+
+action:statement:root-C-4
+null:숫자와 재미없는 도표가 가득하다.
+null:마지막 페이지에 휘걀겨 쓴 글씨가 있다.
+null:쓸모없어, 이런 측정을 할 수 있는 장비따위 없다고!
+next:root-C
+action end
+
+action:statement:root-C-5
+null:너무 많이 읽었는지 페이지가 뜯겨지려 한다.
+null:그것 외에 딱히 특별한 점은 없다.
+next:root-C
+action end
+
+dialogue end
+
+
+
+// Sue's room    ////////////////////////////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+SuesDresserDonovan
+
+action:statement:root
+null:거대한 옷장이다.  네 개의 서랍이 있다.
+next:root-2
+action end
+
+action:response:root-2
+Donovan
+root-A:왼쪽 위 서랍
+root-B:오른쪽 위 서랍
+root-C:왼쪽 아래 서랍
+root-D:오른쪽 아래 서랍
+</>root-null:관둔다.
+action end
+
+action:statement:root-A
+null:영어 공부를 위한 교과서가 가득하다.
+null:공부한 성과를 얻었군.
+next:root-2
+action end
+
+action:statement:root-B
+null:옷가지가 들어있다.
+next:root-2
+action end
+
+action:statement:root-C
+null:바이브레이터와 콘돔이 들어있다.
+next:root-2
+action end
+
+action:statement:root-D
+null:중국어로 쓰인 책과 DVD가 들어있다.  무슨 내용인 지는 알 수가 없다.
+next:root-2
+action end
+
+dialogue end
+
+
+
+// Alton's room     ////////////////////////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+AltonsDresserDonovan
+
+action:statement:root
+null:거대한 옷장이다, 네 개의 서랍이 있다.
+next:root-2
+action end
+
+action:response:root-2
+Donovan
+root-A:왼쪽 위 서랍
+root-B:오른쪽 위 서랍:trigger.achievementSecretOne.on
+root-C:왼쪽 아래 서랍
+root-D:오른쪽 아래 서랍
+</>root-null:관둔다.
+action end
+
+action:statement:root-A
+null:생일 카드, 크리스마스 카드 등이 들어있다.
+null:다 어머니나 할머니로 부터 받은 것이다.  화목하구만.
+next:root-2
+action end
+
+action:statement:root-B
+null:프로그래밍 교과서다.  새것처럼 보인다.
+null:그 아래에는...학교 성적표가 들어있다.
+null:첫 2년 간은 전부 A.  GPA 3.9.
+null:3학년에는 수강 취소랑 F만 있다.  아니 C가 딱 하나 있다.  그걸로 끝이다.
+null:맨 밑에는...퇴학 통지서가 있다.
+next:root-2
+action end
+
+action:statement:root-C
+null:옷가지가 있다.
+next:root-2
+action end
+
+action:statement:root-D
+null:전자기기들이 있다.
+next:root-2
+action end
+
+dialogue end
+
+
+
+// Closet   ////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+ClosetDonovan
+
+action:statement:root
+null:청소 용구가 들어있는 보관함이다.
+null:문을 열려면 열쇠가 필요하다.
+next:root-null
+action end
+
+action:statement:root2
+null:청소 용구가 들어있는 보관함이다.
+null:마스터 키로 문을 열 수 있다.
+null:안에는 여러 청소 용구들이 들어있다.  맨 위 서랍에는 종이더미가 있다.
+next:root-2
+action end
+
+action:response:root-2
+Donovan
+root-A:청소 용구를 조사한다.
+root-B:종이더미를 조사한다.
+</>root-null:관둔다.
+action end
+
+action:statement:root-A
+null:그냥 청소 용구들이다.
+null:대부분 오래되고 낡아보인다. 예외적으로 표백제는 새로 산 것 같다.
+null:좋지 않군.
+next:root-2
+action end
+
+action:statement:root-B
+null:주문 내역과 영수증이 가득하다...흥미로운 것은 없다.
+null:잠깐.  중간에 손글씨가 써진 종이가 있다.
+next:root-3
+action end
+
+action:response:root-3
+Donovan
+root-C:주문 내역과 영수증을 조사한다.
+root-D:손글씨가 써진 종이를 조사한다.:trigger.GhostBGProgressCloset.on
+</>root-null:관둔다.
+action end
+
+action:statement:root-C
+null:대부분의 지출은 직원이 한 것이다.  식자재 등을 산 기록도 남아있다.
+null:승객들이 지불한 요금 내역도 있다.
+null:이상하게도, 지출이 언제나 수익보다 훨씬 많다.
+next:root-3
+action end
+
+action:statement:root-D
+null:"이 글이 선한 사람에게 발견되었기를 바란다."
+null:"누군가 내가 없는 사이에 내 방에 침입했다.  아마도 그 이상한 궤짝과 관계된 일일 것이다."
+null:"뭔가 단단히 잘못되고 있다.  내 방을 열수 있는 건 마스터 키 뿐이고, 나만이 마스터 키를 가지고 있는 거...맞지?"
+null:"계획이 있다, 하지만 실패할 지도 모른다.  만약 실패한다면, 누군가는 이 일을 알아야 한다."
+null:"나는 존재해서는 안되는 문을 찾고 있다.  어딘가 구석이나, 보통은 잘 찾지 않는 곳에 숨겨져 있을 것이다."
+null:"분명 궤짝안 안에 들어있는 것과 관계된 일이다, 하지만 난 그걸 열 수가 없다."
+null:"조심하자.  이 배에는 눈과 귀가 있다.  사람들은 알아서는 안 되는 것을 알고있다.  가짜 동료가 있다."
+next:root-3
+action end
+
+
+dialogue end
+
+
+
+// Captain's room   ////////////////////////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+CaptainsChestDonovan
+
+action:response:root
+<player>
+root-1:연다
+</>root-null:놔둔다.
+action end
+
+action:statement:root-1
+Donovan:배의 마스터 키도 이 궤짝을 열지 못하는 군.  보아하니 억지로 따는 데도 시간이 걸릴 듯 하고.
+Donovan:맞는 열쇠가 있다면 열어볼 수 있을텐데, 없는 이상 시간 낭비다.
+next:root-null
+action end
+
+action:response:root2
+<player>
+root3:연다
+</>root-null:놔둔다.
+action end
+
+action:statement:root3
+null:Marcurio의 밤에서 찾은 열쇠로 궤짝이 열렸다.
+null:안에는 페인트와 롤러, 그리고 손글씨가 써진 메모가 있다.
+null:"절대로 싼 걸 쓰지 마.  조악한 페인트는 햇빛, 비, 소금물에 금방 상한다."
+null:"기한 전에 페인트가 갈라지면 어떤 재앙이 벌어지는 지 알고 있을 거라 믿는다.  멍청한 짓 하지마."
+null:"확실하게 실외용의 최상급 페인트를 사용하라고."
+Donovan:다 먼지가 쌓여있다.  최근에 사용된 것 같진 않다.
+Donovan:누군가 배의 외벽을 자주 페인트칠 한 건 명백하군.
+Donovan:과연 왜 그랬을까.
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
