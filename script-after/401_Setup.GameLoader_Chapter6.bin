@@ -1,0 +1,142 @@
+
+dialogue start
+chap6PaulosDoor
+
+action:statement:root
+null:여기는 들어가선 안 된다.  나중에 조사하기 위해서 잠겨있다.
+action end
+
+dialogue end
+
+
+dialogue start
+CatUnlockPaulosDoor
+
+action:statement:root
+null:문이 안에서 잠겨있다.  손잡이를 돌리면 열 수 있을 것 같다.
+null:하지만, 굳이 열어야 할 이유가 없다.
+next:root-null
+action end
+
+action:statement:root2
+null:문이 안에서 잠겨있다.  손잡이를 돌리면 열 수 있을 것 같다.
+null:손잡이는 충분히 닿을 수 있는 높이에 있다...
+next:root-3
+action end
+
+action:response:root-3
+<player>
+root-4:문을 연다.:trigger.paulosDoorUnlocked.on
+action end
+
+dialogue end
+
+
+dialogue start
+chap6gwenEpiphany
+
+action:statement:root
+Gwen:"내가 Donovan을 완전히 오해하고 있었어."
+Gwen:"그는 선장을 찾고 있었고...이 배에는 연쇄살인마가 있다?"
+Gwen:"그런데 나는 그의 방에 침입했고, 결국 그 열쇠는 내게 죄를 덮어씌우는 데 쓰였다...인과응보인가."
+Gwen:"잠깐만.  그때 Donovan이 그 열쇠를 가지고 있었다는 걸 알고 있던 사람이...한 명 더 있잖아."
+Gwen:"그 사람이 알게 된건...내가 말했기 때문이지."
+next:root4-null
+action end
+
+dialogue end
+
+
+
+dialogue start
+chap6FerdinandClue1
+
+action:statement:root
+Quella:왠지 모르겠지만, 이걸 굉장히 중요할 거 같다.
+Quella:기억해두자.  언젠가 쓸 일이 있을 것이다...
+next:root-null
+action end
+
+dialogue end
+
+
+dialogue start
+chap6FerdinandClue2
+
+action:statement:root
+Garv:흠, Marcurio가 내 고양이를 쫓아 Gwen의 방으로 들어갔다라는 건가.  수상하구먼.
+Garv:그렇지만, 이 일에 뭔가 더 숨겨진 것이 있을 듯 하네.
+Garv:기억해두도록 하세나.  나중에 중요하게 쓰일 지도 모르네.
+next:root-null
+action end
+
+dialogue end
+
+
+dialogue start
+chap6FerdinandClue3
+
+action:statement:root
+Gwen:Ferdinand는 Donovan에 대한 스파이로 나를 이용한 거야.  이젠 알겠어.
+Gwen:하지만, 아직 확실한 증거가 없다.
+Gwen:뭔가 증거가 밝혀지면, 이 사실은 아주 중요해질 거야.
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+
+/////////  Garv clue dialogues  ///////////////////////////////////////
+
+dialogue start
+MarcurioScold
+
+action:statement:root
+Marcurio:어이!  당장 거기서 비켜!  그건 주방 직원만 쓸 수 있는 거다.
+Marcurio:멋대로 음식을 가져가지 말라고.
+next:root-null
+action end
+
+dialogue end
+
+
+dialogue start
+chap6GarvClue1
+
+action:statement:root
+null:Marcurio가 이 어두운 측면에 대해서 많은 것을 알고 있음은 분명하다.
+null:증거가 모든 것을 말해주지는 않지만, 분명 선장과 Donovan의 일에도 연관이 있을 것이다.
+null:하지만 머리에 총을 가져다 대기 전에는 그가 입을 열지 않을 것 같다.
+next:root-null
+action end
+
+dialogue end
+
+
+dialogue start
+chap6GarvClue2
+
+action:statement:root
+Darryl:Garv의 속마음이 어떤 지 언제나 의심스러웠지. 계속 그가 수상했어.
+Darryl:그가 범인이라는 증거는 없지만, 그가 뭔가를 숨기고 있다는 건 확실해.
+Darryl:뭔가 증거가 밝혀지면, 방금 우리의 대화는 중요해질 거야.
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+

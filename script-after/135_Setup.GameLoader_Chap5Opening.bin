@@ -1,0 +1,129 @@
+
+
+dialogue start
+chap5Opening
+
+action:statement:root
+Garv:자네가 말한 대로 밖으로 나왔으니, 이제 무슨 일을 하려는 건지 말해주지 않겠나?
+next:root-null
+action end
+
+action:statement:root2
+Ferdinand:물론이죠!  갑자기 모두를 방해해서 죄송합니다.
+Ferdinand:중요한 공지가 있습니다.
+Ferdinand:Donovan이 찾고 있던 이 배의 비밀이 실재한다는 것을...알게 되었습니다.
+Ferdinand:그리고 더 중요한 것은, 그게 어디인 지를 찾았어요.  다만 안에 무엇이 있는 지 모를 뿐이죠.
+Ferdinand:그렇지만 지금부터 알게될 겁니다.  우리 모두 같이 갑니다.  미연의 사태를 방지하기 위해서!
+next:root2-null
+action end
+
+action:statement:root3
+Garv:과연.  우리 모두 같이 움직이면, 서로를 감시하고 지킬 수 있겠군.
+Quella:그래서...우리는 뭘 찾으려는 거에요?
+Xu:Donovan은 선장님이 이 배의 숨겨진 공간에 있을 거라고 했어요.
+Xu:그의 말대로 비밀 공간은 발견했죠.  그 다음은...가봐야 알겠죠.
+Marcurio:뭐 다시 말하자면, 안에 뭐가 있을지는 아무도 모릅니다.
+Darryl:...맘에 안드는 군 .
+Marcurio:무엇이요?
+Darryl:이 계획.  뭔가 불안해.
+Marcurio:뭐, 어쩔 수 없는 일이죠. Ferdinand, 이제 슬슬 들어갈까요?
+Ferdinand:...그래요!  갑시다.
+next:root3-null
+action end
+
+action:statement:root4
+Ferdinand:이 쯤인 것 같은데...여기다!
+Quella:신이시여...저거 문이야?
+Garv:얼마 전에 페인트칠을 한 것 같구먼.  누군가 여기를 숨기고 있었군.
+Ferdinand:이제는 숨겨져 있지 않죠!  문이 잠겨있지만...
+Ferdinand:이럴 때를 위한 마스터 키가 있죠!
+Ferdinand:...열려라...........참깨!!!
+Marcurio:이것 봐라.  진짜 숨겨진 공간이잖아.
+Xu:아래로 깊이 들어가는데요.  사다리가 있어요.
+Ferdinand:갑시다 여러분.  미지의 땅을 향하여 전진!
+next:root4-null
+action end
+
+action:statement:rootbottomdeck
+Marcurio:어마어마한 규모군.  대체 어떻게 이만한 공간이 있는 거야?
+Darryl:완전 어둡군, 혹시 뭔가 보이는 사람 있나?
+Xu:저거 땅에...피?
+next:rootbottomdeck-null
+action end
+
+action:statement:root5
+Alton:뭐...뭐라고?
+Quella:신이시여...
+null:........
+Ferdinand:...사람들.  아래에 사람들이 있어요.
+next:root5-null
+action end
+
+action:statement:root6
+Quella:살아있는 것 같아요...반응은 하지 않지만.
+Quella:대체 왜 여기에?  무슨 일이 일어나고 있는 거죠?
+Alton:토할 것 같아...
+Marcurio:다들 여기 좀 봐요.
+next:root6-null
+action end
+
+action:statement:root7
+Ferdinand:잠깐.  이 사람은 분명...Donovan과 같이 사라진 승객이잖아요!
+Xu:네?!  그가 왜 여기에?  그치만 Donovan과 선장님은 안 보이는데요.
+Xu:심하게 다친 것 같아요.  혹시...?
+next:root7-null
+action end
+
+action:statement:root8
+???:살아있냐고?
+???:살아있어.  하지만 오락가락 하는 중이지.
+next:root8-null
+action end
+
+action:statement:root9
+Garv:방금 누가 말했지?
+Darryl:너무 어두워서 잘 안 보여.  저쪽 방향에서 목소리가 들렸는데.
+Alton:익숙한 목소리였는데요.
+next:root9-null
+action end
+
+
+action:statement:root10
+Donovan:한꺼번에 내려올 줄은 몰랐는데...
+Donovan:오히려 잘 됐군.
+Xu:Donovan, 무슨 일이 있었던 거에요?!  죽은 줄 알았잖아요!
+Donovan:난 그렇게 쉽게 죽지 않아.
+Donovan:아직 죽기 전에 해야 할 일이 남았다.
+Marcurio:쭉 여기 있었던 건가?  여기서 뭘 하던 거지?
+Donovan:기다리고 있었어. 계속...기다리고 있었어...
+next:root10-null
+action end
+
+action:statement:root11
+Quella:Donovan, 이건 대체 다 뭐에요?  이 사람들은 다 누구에요?  Paulo는 어떻게 된 거에요?
+Alton:선장님은 못 찾았은 거에요?  그렇다면 당신이 여기 왔을 때...그녀는 이미... she...
+Marcurio:왜 더 일찍 나타나지 않은 거지?  왜 지금까지 기다리고 있었던 거지?  대체 무슨 일을 꾸미고 있는 거냐?
+next:root11-null
+action end
+
+action:statement:root12
+Donovan:대답해 줄 생각 없어.
+Donovan:이제 아무 상관 없다.
+Donovan:하지만 괜찮아...그래도 해결책은 있으니까.
+Donovan:최후의 방법...
+Donovan:그래...이게 내가 여기에 온 이유지.
+next:root12-null
+action end
+
+action:statement:root13
+Darryl:대체 뭘...?
+Donovan:그가 여기 있어, 확실하다.
+Donovan:너희 중에 그가 누구던, 넌 오늘 여기서 죽는다.  절대 도망 못 가.
+Donovan:개처럼 짖게 만들어주지.
+Donovan:...너희 모두에게 한 번의 기회를 주지.  범인을 잡을 기회 말이야.
+Donovan:하지만 아무도 밝혀내지 못하면...내가 할 수 있는 방법은 한 가지 뿐이지.
+Donovan:그러니까 아는 걸 말해봐.
+next:root13-null
+action end
+
+dialogue end
