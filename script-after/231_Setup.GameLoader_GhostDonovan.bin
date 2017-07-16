@@ -1,0 +1,238 @@
+
+
+
+// GHOST/ALTON - DONOVAN ////////////////////////////////////////////////////////////////////////////
+
+
+dialogue start
+GhostAlton-Donovan
+
+action:statement:root2
+Donovan:여기서는 안 돼.  얘기는 밖에서 하지.
+next:end
+action end
+
+action:statement:root3
+Donovan:그래.  분명히 선장이 죽었다고 말했지.
+Donovan:어떻게 그걸 알았는 지 말해줬으면 좋겠군.
+next:root3-1
+action end
+
+action:response:root3-1
+<player>
+root3-A:나만의 방식이 있었다고 말해두죠.
+root3-B:나는 선장의 영혼이에요.  지금 Alton의 몸을 조종하고 있어요.
+</>root-null:관둔다.
+action end
+
+action:statement:root3-A
+Donovan:...
+Donovan:겨우 그 말을 하려고 나를 불러낸 건가?  뭘 얻어내려는 거지?
+Donovan:나한테서 무엇을 숨기려 드는 건 아주 나쁜 아이디어야.
+Donovan:기억해두겠어.
+next:root3-1
+action end
+
+action:statement:root3-B
+Donovan:네 딴에는 그게 재밌는 농담인가 보지?
+Donovan:머릿 속에 똥만 들어차있나보군.
+Donovan:너는 어리고 순수하군.  진짜 고통이란 게 무엇인지 몰라.
+Donovan:하지만 곧 알게 될 거다.
+next:root-null
+action end
+
+
+action:response:afterChapTwo
+<player>
+afterChapTwo-A:선장을 마지막으로 본 것이 언제?
+afterChapTwo-B:최근 배에서 이상한 것을 본 적 있는지?
+</>null:관둔다.
+action end
+
+action:statement:afterChapTwo-A
+Donovan:그게 너랑 무슨 상관이지?
+next:afterChapTwo-A-2
+action end
+
+action:statement:afterChapTwo-B
+Donovan:어떤 인간이 돌아다니면서 멍청한 질문으로 사람들을 괴롭히는 걸 봤지.
+next:afterChapTwo
+action end
+
+action:response:afterChapTwo-A-2
+<player>
+afterChapTwo-A-2-A:그냥 궁금증이다.
+afterChapTwo-A-2-B:선장에게 무슨 일이 생긴 것 같다.
+</>null:관둔다.
+action end
+
+action:statement:afterChapTwo-A-2-A
+Donovan:그냥 궁금해서?  그럼 여기서 당장 꺼져.
+next:null
+action end
+
+action:statement:afterChapTwo-A-2-B
+Donovan:네가 무슨 생각을 하던 나랑은 상관 없어.
+next:null
+action end
+
+dialogue end
+
+
+
+
+
+
+// GHOST - DONOVAN (CHAPTER 3) ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Ghost-Donovan
+
+action:response:root4
+<player>
+root4-1:선장에게 무슨 일이 있어났다고 생각하는지?
+root4-2:우리가 무엇을 해야할 지?
+root4-3:누가 선장을 없애고 싶어했다고 생각하는지?
+root4-captain:선장에 대해서 뭔가 말해줄 수 있는 것?
+root-trigger.chap3SecretArea:이 배의 숨겨진 공간에 대해서 아는 것이 있는지?
+</>root4-null:관둔다.
+action end
+
+action:statement:root4-1
+Donovan:나는 초능력자가 아니야.  딱히 당신보다 더 아는 것은 없어.
+next:root4
+action end
+
+action:statement:root4-2
+Donovan:스스로 생각해라.  다른 사람이 뭘하던 나랑은 상관 없어.
+Donovan:이미 몇번이고 말했다고 생각하는데.
+next:root4
+action end
+
+action:statement:root4-3
+Donovan:나한테서 뭘 바라는 거지?  내가 그걸 어떻게 알아?
+Donovan:그리고 나한테 들어서 뭐하게?
+Donovan:가십거리랑 소문을 듣고서 이 사건을 해결하기라도 하려는 건가?
+next:root4
+action end
+
+action:statement:root4-captain
+Donovan:한 번도 얘기해 본 적 없어.  내가 아는 건 그녀가 이 배의 키를 조종하는 사람이라는 것 뿐이다.
+next:root4
+action end
+
+action:statement:root-trigger.chap3SecretArea
+Donovan:없어.  난 며칠 전에 이 배에 탔을 뿐이다.
+Donovan:대부분의 시간은 벽만 보면서 얼른 시간이 지나가달라고 생각하면서 보냈지.
+Donovan:뭔가를 알게 된다면 내가 제일 마지막일 걸.
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+// GHOST XU - DONOVAN (CHAPTER 3 - CONFESSION) ////////////////////////////////////////////////////////////////////////////
+
+
+dialogue start
+GhostXu-Donovan
+
+action:response:root
+Xu
+root-1:선장님에게 무슨 일이 일어났다고 생각하는 지?
+root-2:우리가 뭘 해야 할지?
+root-3:누가 선장님을 없애고 싶어했다고 생각하는지?
+<!>root-4:네가 내 방에 들어와서 마스터 키를 훔쳤다는 걸 알아.
+</>root-null:관둔다.
+action end
+
+action:statement:root-1
+Donovan:나는 초능력자가 아니야.  딱히 너보다 더 아는 것은 없어.
+next:root
+action end
+
+action:statement:root-2
+Donovan:스스로 생각해라.  다른 사람이 뭘하던 나랑은 상관 없어.
+Donovan:이미 몇번이고 말했다고 생각하는데.
+next:root
+action end
+
+action:statement:root-3
+Donovan:나한테서 뭘 바라는 거지?  내가 그걸 어떻게 알아?
+Donovan:그리고 나한테 들어서 뭐하게?
+Donovan:가십거리랑 소문을 듣고서 이 사건을 해결하기라도 하려는 건가?
+next:root
+action end
+
+
+action:statement:root-4
+Donovan:그리고 나는 네가 마스터 키를 먼저 훔쳤다는 걸 알지.
+Donovan:너는 지금 나한테 뭔가를 요구할 수 있는 위치가 아냐.
+next:root-5
+action end
+
+action:response:root-5
+Xu
+root-A:어떻게 그걸 알았지?
+root-B:그 열쇠가 왜 필요한지 말해줘.
+action end
+
+action:statement:root-A
+Donovan:내가 그걸 말해줄 이유는 없지.
+Donovan:딱히 너한테 빚진 것도 없잖아?
+next:root-5
+action end
+
+action:statement:root-B
+Donovan:그건 안되겠는데, 왜냐면 별로 말해주고 싶지 않거든.
+next:root-6
+action end
+
+action:response:root-6
+Xu
+root-7:말해주지 않으면, 모든 사람한테 당신이 내 방에 침입해서 열쇠를 훔쳤다는 걸 알리겠어.
+action end
+
+action:statement:root-7
+Donovan:해봐, 그럼 너도 네 직장을 잃을 걸.
+Donovan:돈이 꽤 궁하지?  짤리면 어떻게 될까?
+next:root-8
+action end
+
+action:response:root-8
+Xu
+root-9:상관 없어.  선장님이 사라져버린 상황인데.  네가 왜 그렇게 마스터 키가 꼭 필요했는지 알아야겠어.:trigger.chap3DonovanConfesses.on
+action end
+
+action:statement:root-9
+Donovan:젠장.  너...진지하군.
+Donovan:갑자기 왜 이래?
+Donovan:...
+Donovan:좋아.  하지만 여기서는 아냐.  내 방으로 가자.
+next:root-null
+action end
+
+
+action:response:root2
+Xu
+root2-1:조사는 잘 돼가요?
+</>root2-null:관둔다.
+action end
+
+action:statement:root2-1
+Donovan:내가 말했지. 아무 말도 하지 말고, 내 근처로 오지 마.
+Donovan:그 외에 네가 신경쓸 건 아무것도 없어.
+Donovan:이상한 사람이 내가 여기 있는 이유를 알게되면, 그야말로 재앙이다.
+Donovan:지금 우리는 죽고 사는 문제를 얘기하는 거다.
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+

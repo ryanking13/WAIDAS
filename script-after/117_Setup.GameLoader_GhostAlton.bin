@@ -1,0 +1,186 @@
+
+
+// CHAPTER 3  GHOST - ALTON  ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Ghost-Alton
+
+action:response:root2
+<player>
+root2-1:선장에게 무슨 일이 있어났다고 생각하는지?
+root2-2:우리가 무엇을 해야할 지?
+root2-3:누가 선장을 없애고 싶어했다고 생각하는지?
+root2-4:선장에 대해서 뭔가 말해줄 수 있는 것?
+root-trigger.chap3SecretArea:이 배의 숨겨진 공간에 대해서 아는 것이 있는지?
+</>root2-null:관둔다.
+action end
+
+action:statement:root2-1
+Alton:난...그녀가 죽었다고 믿지 않아요.  그럴리가 없어.  Marcurio가 너무 부정적인 것 뿐일 거에요.
+Alton:그녀는 여기 어딘가에 있을 거에요.  아마 어디 이상한 곳에 잘못 들어갔다가 갇혀있는 거겠죠?
+next:root2
+action end
+
+action:statement:root2-2
+Alton:선장님을 찾아야 해요!  그녀가 여기 없으면 우리가 뭘 할 수 있겠어요?
+Alton:선장님 방은 며칠 째 잠겨있는데, 어떻게하면 열 수 있을 지 모르겠어요.
+Alton:그녀가 마스터 키를 가진 사람이었으니까요.  하지만 제 생각에는 다른 스페어 키가 있을 것 같아요.
+next:root2
+action end
+
+action:statement:root2-3
+Alton:이 배의 누구도 선장님을 죽이고 싶어했을 리가 없어요.  그건 말도 안 되는 이야기에요.
+next:root2
+action end
+
+action:statement:root2-4
+Alton:선장님?  그녀는 별로 사람들이랑 잘 지내는 편이 아니었죠.  그래도 저는 그녀가 좋았어요.  언제나 최선을 다하는 사람이었죠.
+Alton:뭐, 약간은 거슬리는 때도 있었지만.  그건 그냥 새로 부임해서 그랬다고 생각해요.
+Alton:그냥 강한 첫인상을 주고 싶었던 거겠죠.
+next:root2-captain
+action end
+
+action:response:root2-captain
+<player>
+root2-captain-A:그녀가 누구랑 사이가 나빴는지?:trigger.SmillaMarcurio.on
+root2-captain-B:거슬린다는 게 무슨 뜻?:trigger.GhostBGProgressAlton.on
+root2-captain-C:그녀가 선장이 된 건 언제?
+</>root2-null:관둔다.
+action end
+
+action:statement:root2-captain-A
+Alton:어, 그런 뜻으로 말한 건 아니에요.
+Alton:그렇게 나쁘진 않았어요.  약간의 의견 차이가 있었던 것 정도죠.
+Alton:그녀랑 Marcurio가 생각하는 방식이 좀 달랐었거든요.
+next:root2-captain
+action end
+
+action:statement:root2-captain-B
+Alton:대체로 그녀는 착했는데요.  가끔 좀 엄격했어요.
+Alton:제가 전망실에서 전기를 되게 많이 쓴다는 걸 알고서 제 스피커들을 다 망치로 부셔버릴 거라고 했어요.
+Alton:물론 실제로 그런 건 아니에요!
+next:root2-captain
+action end
+
+action:statement:root2-captain-C
+Alton:이번이 그녀의 첫 항해였어요.  그래서 아무도 그녀랑 익숙하지 않았죠.
+Alton:예전에는 다른 배에서 일했다고 하는데, 그래서 모르는 건 없는 것 같더라구요.
+next:root2-captain
+action end
+
+action:statement:root-trigger.chap3SecretArea
+Alton:여러 군데 있다고 듣긴 했어요.  예전에 이 배가 밀수선이었을 때의 잔재라고 하더라구요.
+Alton:솔직히 말하면, 찾아다녀보기도 했어요.  예전에.
+Alton:결국 아무것도 못 찾았지만요.
+Alton:그치만 실제로 숨겨진 장소가 있다면, 이렇게 긴 시간동안 아무도 발견하지 못하지는 않았겠죠?
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+// CHAPTER 4  GHOST - ALTON ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Ghost-Alton
+
+action:response:root3
+<player>
+root3-A:Donovan과 Paulo에게 무슨 일이 일어났다고 생각하는지?
+root3-B:Gwen이 범인이라고 생각하는지?
+root3-C:이런 일들이 일어난 이유가 뭐라고 생각하는지?
+root3-D:이제 뭘 해야 할지?
+root3-E:선장님에 대해서 뭔가 말해줄 수 있는 것?
+</>root-null:관둔다.
+action end
+
+action:statement:root3-A
+Alton:이제는 진실을 인정해야 할 것 같네요.  선장님은...사라졌어요.
+Alton:Donovan과 Paulo도 아마...같은 상황이겠죠.
+Alton:아무것도 모르겠어요.  어떻게?  우리가 어떻게 했어야 했지?
+next:root3
+action end
+
+action:statement:root3-B
+Alton:음...그래야만 하겠죠?  발견한 게 있으니.
+Alton:다들 그녀일 거라고 확신하는 것 같아요.  전 잘 모르겠어요.  사실 그 누구라고 했어도 못 믿었을 것 같아요.
+next:root3-B1
+action end
+
+action:response:root3-B1
+<player>
+root3-B2:누가 그녀 방에 열쇠를 가져다뒀을 가능성에 대해서 생각해 본 적 있는지?
+root3-B3:그녀가 왜 그랬을 거라고 생각하는지?
+</>root-null:관둔다.
+action end
+
+action:statement:root3-B2
+Alton:다른 사람이 가져다둔 거라구요?  그러니까 그 말은, 다른 사람이 그녀에게 죄를 덮어씌우려고?
+Alton:그 말도 가능성이 있네요.  마스터 키가 있으면 그녀 방 문을 열 수 있으니 별로 어려운 일도 아니었을 것이고.
+Alton:왜 그 가능성을 더 일찍 생각하지 못했을까요.
+next:root3-B1
+action end
+
+action:statement:root3-B3
+Alton:모르겠어요.  이 모든 상황이 그냥 혼란스러워요, 대체 무슨 일이 일어나고 있는 건지.
+next:root3-B1
+action end
+
+
+action:statement:root3-C
+Alton:사람 잘못 찾으셨네요.  전 진짜 전혀 모르겠거든요.
+Alton:미안해요.
+next:root3
+action end
+
+action:statement:root3-D
+Alton:모르겠어요.  다른 사람들은 그냥 육지에 도착할 때까지 조용히 기다려야 한다고 해요.
+Alton:사실 그게 제일 합리적인 방법인 것 같구요.
+next:root3
+action end
+
+
+action:statement:root3-E
+Alton:아직도 그녀가 사라졌다는 게 믿기지 않아요.  하지만...이미 다 일어난 일인 걸...
+Alton:그녀는 별로 사람들이랑 잘 지내는 편이 아니었죠.  그래도 저는 그녀가 좋았어요.  언제나 최선을 다하는 사람이었죠.
+Alton:뭐, 약간은 거슬리는 때도 있었지만.  그건 그냥 새로 부임해서 그랬다고 생각해요.
+next:root3-captain
+action end
+
+action:response:root3-captain
+<player>
+root2-captain-A:그녀가 누구랑 사이가 나빴는지?:trigger.SmillaMarcurio.on
+root2-captain-B:거슬린다는 게 무슨 뜻?:trigger.GhostBGProgressAlton.on
+root2-captain-C:그녀가 선장이 된 건 언제?
+</>root3-null:관둔다.
+action end
+
+action:statement:root3-captain-A
+Alton:어, 그런 뜻으로 말한 건 아니에요.
+Alton:그렇게 나쁘진 않았어요.  약간의 의견 차이가 있었던 것 정도죠.
+Alton:그녀랑 Marcurio가 생각하는 방식이 좀 달랐었거든요.
+next:root3-captain
+action end
+
+action:statement:root3-captain-B
+Alton:대체로 그녀는 착했는데요.  가끔 좀 엄격했어요.
+Alton:제가 전망실에서 전기를 되게 많이 쓴다는 걸 알고서 제 스피커들을 다 망치로 부셔버릴 거라고 했어요.
+Alton:물론 실제로 그런 건 아니에요!
+Alton:어쨌든 선장님은...대부분 착했어요.
+next:root3-captain
+action end
+
+action:statement:root3-captain-C
+Alton:그녀는 이번이 첫 항해였어요.
+Alton:대체 왜 누가 그녀를 해친 걸까요?
+next:root3-captain
+action end
+
+
+
+dialogue end
+
+

@@ -1,0 +1,183 @@
+
+
+
+dialogue start
+DonovansComputerFerdinand
+
+
+action:statement:root
+null:책상 위에 켜진 노트북이 있다.
+next:root-menu
+action end
+
+action:response:root-menu
+<player>
+root-login:노트북을 살펴본다.
+</>root-null:놔둔다
+action end
+
+action:statement:root-login
+null:로그인 하는 데 비밀번호가 필요하다.
+next:root-password
+action end
+
+action:response:root-password
+<player>
+root-fail:"비밀번호"
+root-fail:"1234"
+root-succeed:"루실"
+root-fail:"도노반"
+root-fail:"내가이걸어떻게알아"
+</>root-null:모르겠다.
+action end
+
+action:statement:root-fail
+null:Incorrect password.
+Ferdinand:이런!  아니었군요!
+Ferdinand:사실, 맞을 리가 없지만요.
+next:root-password
+action end
+
+action:statement:root-succeed
+Ferdinand:오, 이거...로그인 되었군요!
+Ferdinand:저 완전 해커인데요!
+Ferdinand:하핫.
+next:root-1
+action end
+
+
+action:response:root-1
+Ferdinand
+root-email:이메일 확인
+root-camera:카메라 확인
+</>root-null:로그오프
+action end
+
+action:statement:root-camera
+Ferdinand:아무래도 누군가 스파이짓을 하고 있나보군요!  기록이 엄청 많은데요.
+Ferdinand:흠...특정 일의 기록을 살펴보거나, 특정 카메라를 살펴볼 수 있는 모양이군요.
+next:root-camera2
+action end
+
+action:response:root-camera2
+Ferdinand
+root-days:각 날의 기록
+root-cameras:각 카메라의 기록
+</>root-1:Back
+</>root-null:Log off
+action end
+
+action:response:root-days
+Ferdinand
+root-day1:선장이 사라진 날의 기록
+root-day2:이틀 전의 기록
+root-day3:어제의 기록
+root-day4:오늘의 기록
+</>root-camera2:뒤로가기
+action end
+
+action:response:root-cameras
+Ferdinand
+root-cameraB1:B2 카메라
+root-cameraB2:B1 카메라:trigger.chap6donovansFootage.on
+</>root-1:Back
+action end
+
+action:statement:root-day1
+Ferdinand:흠, 선장님이 사라지신 지 벌써 3일이 지났군요. 
+Ferdinand:아무래도 그녀가 화장실에 있을 거라는 제 가설을 수정할 필요가 있겠네요.
+Ferdinand:어디 보자...이날 밤에, 선장님이 방에서 나와 1층으로 올라갔군요.
+Ferdinand:거기는 카메가 없어서 이 다음에 뭘 했는 지는 알 수가 없군요.
+Ferdinand:그녀가 올라가고 나서 다음 날 아침까지 모든 배의 탑승객들이 1층에 올라갔다가 내려왔다라.
+Ferdinand:그래서, 이 기록은 범인을 전혀 특정하지 못하는 군요.  아쉬워라!
+next:root-camera2
+action end
+
+action:statement:root-day2
+Ferdinand:이틀 전에는 여러가지 일이 있었지요.
+Ferdinand:Alton과 Xu가 사람들한테 뭔가를 물어보면서 돌아다녔고.
+Ferdinand:Quella도 사람들과 대화하면서 계속 돌아다녔다.
+Ferdinand:저녁에는 Gwen양이 이 방에 침입했군요.  내가 그렇게 경고를 했는데도!
+next:root-days
+action end
+
+action:statement:root-day3
+Ferdinand:어제는...흥미로운 날이었지요.
+Ferdinand:새벽에는, 제가 Garv의 방에 들어가는 모습이 있군요.  Donovan이 이것도 본 모양입니다?
+Ferdinand:아침에는, 제가 승객들을 불러보아 상황을 설명하는 미팅을 가졌구요.
+Ferdinand:그 이후에는, Donovan이 여기저기를 돌아다니는 기록이 있군요.
+Ferdinand:마스터 키를 이용해서 선장님의 방이랑, 그리고 제 방에도 들어왔군요!  이거 참!
+Ferdinand:그러나 저녁에는 1층에 올라갔고...돌아오지 않았다.
+Ferdinand:여기서 기록이 끝나는 군요.  누군가 그가 하던 일을 눈치채고 없애버렸다는건가.
+next:root-days
+action end
+
+action:statement:root-day4
+Ferdinand:이런!  오늘의 기록은 없군요.
+Ferdinand:아무래도 누군가 어제 카메라를 전부 찾아내서 꺼버린 모양이군요.
+Ferdinand:Donovan의 실종 후에 이렇게 된 것이 우연은 아니겠지요.
+Ferdinand:흠, 대체 누가 이런 짓을 할 수 있을까요?
+next:root-days
+action end
+
+action:statement:root-cameraB1
+Ferdinand:B1은 제일 낮은 층이고, 대부분의 승객들이 머무는 곳이다.
+Ferdinand:예상대로, 많은 사람들이 하루 종일 돌아다녔다.
+Ferdinand:계속 이 층에 있던 것은 검은 고양이 한 마리 뿐이었다.
+Ferdinand:가끔은 작은 물건을 입에 넣고 옮기는 모습이 보였다.
+Ferdinand:이 층은 딱히 수상한 일이 없었던 것으로 보인다.
+next:root-cameras
+action end
+
+action:statement:root-cameraB2
+Ferdinand:B2는 중간층으로, 직원들의 숙소가 있다.
+Ferdinand:찍힌 사람들은 대부분 카메라가 없는 위 갑판으로 올라간다.
+Ferdinand:Marcurio와 Garv가 청소용구가 있는 곳에 자주 들락날락거린다.
+Ferdinand:출항한 날부터 거의 매일.
+Ferdinand:Darryl은 하루에 한 두번 정도 이 층을 지나치는데, 대부분의 시간을 위 갑판에서 보낸다.
+next:root-cameras
+action end
+
+
+action:response:root-email
+Ferdinand
+root-A:이메일 #1
+root-B:이메일 #2
+root-C:이메일 #3:trigger.musicDonovanUnlocked.on
+</>root-1:뒤로가기
+</>root-null:로그오프
+action end
+
+action:statement:root-A
+null:안녕 Donovan. 우리가 마지막으로 대화한 지도 제법 지났네.
+null:군을 떠난 이후로 네가 잘 지내고 있을 거라고 믿어.  아무래도 좀 거친 곳이었으니까.
+null:사실은, 네 도움이 필요해서 연락했어.  아주 특별한 사람이 필요한 사건이야.
+null:바로 그야, Donovan.
+null:도와줄 생각 있으면 연락 줘.
+null:  - L
+next:root-1
+action end
+
+action:statement:root-B
+null:그가 작은 크루즈 선에 올라탄 걸 확인했어.
+null:하지만 이제는 경계를 넘어서, 더 이상 추적이 불가능해.  어떻게 해보려고 하는 동안에 그는 도망치고 말거야.
+null:내가 계급장 떼고 직접 쫓을 수도 있지만, 난 저번에 그에게 너무 접근했어.  내 신상은 이미 노출되었을 거야.
+null:그가 모르는 외부인이 필요해.  너만이 이 일을 할 수 있어, Donovan.
+null:그가 마지막으로 일을 벌인지 오랜 시간이 지났어.  그래서 아마 그는 고립된 배를 절호의 기회라고 생각할 거야.
+null:첨부된 파일에 필요한 모든 내용이 들어있어.  남은 건 너한테 달려있어.
+null:  - L 
+next:root-1
+action end
+
+action:statement:root-C
+null:아, 그리고 마지막으로 한 가지 말해둘 게 있어.
+null:네가 떠나게 된 것에 대해서 나를 미워하는 것 알아.  하지만 너는 정상이 아니었어, Donovan.  그때 너한테 필요한 건 휴식이었어.
+null:아직 고통스러울 수도 있겠지만, 이것만 기억해...
+null:난 너를 이 일에 끼게 하기 위해서 수많은 규칙을 어기고, 내 철학도 깼어.  이건 다 너를 정말로 믿으니까 그러는 거야.
+null:그러니까 제발, 냉정하게 프로답게 임해줘.  무모한 짓 하지말고, 일을 끝내고, 집으로 돌아와.
+null:나를 위해서.
+null:  - 루실
+next:root-1
+action end
+
+dialogue end

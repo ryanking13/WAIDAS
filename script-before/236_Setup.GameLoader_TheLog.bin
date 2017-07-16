@@ -16,22 +16,22 @@ action end
 
 action:response:root-2
 ???
-<?>root-A:Are you talking to me?
-<?>root-B:Who are you?
-<?>root-C:What are you doing here?
+<?>root-A:나에게 말하는 거야?
+<?>root-B:당신은 누구지?
+<?>root-C:여기서 뭘 하는 거야?
 <!>root-D:Can you help me at all?
 action end
 
 action:statement:root-A
-???:You can speak.  You can even sense my presence.
-???:I have not met something like this in a long time.
-???:What are you?
+???:너는 나에게 말을 걸 수 있어.  나의 존재를 느낄 수 있어.
+???:너 같은 존재를 만난 지 정말 오랜 시간이 지났어.
+???:너는 누구야?
 next:root-A-2
 action end
 
 action:response:root-A-2
 ???
-root-A-3:I'm a ghost.  I was murdered by someone here.
+root-A-3:나는 유령.  살해당했어.
 root-A-4:Forgotten what?
 root-A-5:What do you mean, "voices"?
 </>root-2:Back to my other questions...

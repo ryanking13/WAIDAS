@@ -1,0 +1,231 @@
+
+
+// GHOST/ALTON - QUELLA ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Ghost-Quella
+
+action:response:root
+<player>
+root-1:선장님을 마지막으로 본 것이 언제?
+root-2:최근 배에서 이상한 것을 본 적 있는지?
+</>root-null:관둔다.
+action end
+
+action:statement:root-1
+Quella:아마...어제 낮이었던 것 같아요.
+Quella:오늘은 전혀 못본 것 같네요.
+Quella:제가 거의 하루종일 방에만 있긴 하지만요.
+next:root-null
+action end
+
+action:statement:root-2
+Quella:아뇨, 전혀 없네요.  그건 왜요?
+next:root-2-A
+action end
+
+action:response:root-2-A
+<player>
+root-2-B:선장님에게 무슨 일이 일어난 것 같다.
+</>root-null:관둔다.
+action end
+
+action:statement:root-2-B
+Quella:...그게 정말이에요?
+Quella:만야 정말 그렇게 생각한다면, 다른 사람들에게 알려야해요.
+Quella:저보다 중요한 사람한테요!
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+// CHAPTER 3  GHOST - QUELLA  ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Ghost-Quella
+
+action:response:root2
+<player>
+root2-1:선장에게 무슨 일이 있어났다고 생각하는지?
+root2-2:우리가 무엇을 해야할 지?
+root2-3:누가 선장을 없애고 싶어했다고 생각하는지?
+root2-captain:선장에 대해서 뭔가 말해줄 수 있는 것?
+</>root2-null:관둔다.
+action end
+
+action:statement:root2-1
+Quella:지금은 판단을 보류해두고 있어요.  성급한 결론은 좋지 않아요.
+next:root2
+action end
+
+action:statement:root2-2
+Quella:배를 수색해보는 것도 괜찮아보이네요.  또 이 배의 누군가가 그녀에게 일어난 일에 대해서 알 수도 있구요.
+Quella:Donovan이라는 사람은 뭔가 비밀이 많은 것 같아요.  그 사람이 무슨 생각을 하고있는지 알고싶네요...
+next:root2
+action end
+
+action:statement:root2-3
+Quella:전혀 모르겠네요.  그녀가 이번에 처음 부임한 거라는 걸 고려하면, 개인적인 원한은 없지 않을까요.
+next:root2
+action end
+
+action:statement:root2-captain
+Quella:다른 사람들의 생각이 틀렸으면 좋겠네요.  저는 그녀가 무사했으면 좋겠어요.
+Quella:그녀는 대단한 사람이죠.
+next:root2-captain2
+action end
+
+action:response:root2-captain2
+<player>
+root2-captain2-A:그녀랑 같이 있었던 적이 있는지?:trigger.SmillaQuella.on
+root2-captain2-trigger.SmillaQuella:많은 일을 겪었다?:trigger.GhostBGProgressQuella.on
+root2-captain2-B:그녀가 다른 사람들이랑은 잘 지냈는지?
+</>root2-null:Never mind.
+action end
+
+action:statement:root2-captain2-A
+Quella:제가 글을 쓰고 있을 때 방에 들른 적이 있죠.  제 초안을 읽고 피드백을 주기도 했어요.
+Quella:내가 누구인 지를 발견하는 걸 진심으로 돕고싶어했어요.  타인에 대해서 많이 공감할 줄 아는 사람이었어요.
+Quella:다시 만나서 보답하고 싶네요.  분명히 많은 일을 겪은 사람일 테니까.
+next:root2-captain2
+action end
+
+action:statement:root2-captain2-trigger.SmillaQuella
+Quella:정말 따뜻하고 활발해보이는 사람이 사실은 오히려 가장 힘들고 고통받고 있는 경우가 있죠.
+Quella:그녀는 정말로 친절했지만, 자기 자신에 대해서는 전혀 얘기하지 않았어요.  어디서 왔는지, 이 일은 하기 전에는 무슨 일을 했는지.
+Quella:제 생각에는 그녀가 과거로부터 도망치기 위해서 여기에 온 것 같아요.  뭔가 잊어야하는 일이 있어서.
+next:root2-captain2
+action end
+
+action:statement:root2-captain2-B
+Quella:자주 아래 층에 내려와서 사람들에게 안부를 물었어요.
+Quella:그녀는 몇몇 사람들이랑 특히 잘 지내긴 했지만, 모든 사람들이 다 그녀를 좋아했다고 생각해요.
+next:root2-captain2
+action end
+
+
+action:statement:root-trigger.chap3SecretArea
+Quella:네에에?  그게 뭐에요?
+Quella:전혀 들어본 적도 없네요.  미안해요.
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+// CHAPTER 4   GHOST - QUELLA ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Ghost-Quella
+
+action:response:root3
+<player>
+root3-A:Donovan과 Paulo에게 무슨 일이 일어났다고 생각하는지?
+root3-B:Gwen이 범인이라고 생각하는지?
+root3-C:이런 일들이 일어난 이유가 뭐라고 생각하는지?
+root3-D:이제 뭘 해야 할지?
+root3-captain:선장님에 대해서 뭔가 말해줄 수 있는 것?
+</>root-null:관둔다.
+action end
+
+action:statement:root3-A
+Quella:모두가 그녀가 죽었다고 생각하는 것 같아요.
+Quella:그렇게 빠르게 단정짓는 게 참 이상하지만, 다른 가능성이 없어보이긴 하네요.
+next:root3
+action end
+
+action:statement:root3-B
+Quella:솔직히 말해서, 아니요.
+Quella:그녀가 그런 짓을 했을 것 같지 않아요.  그녀는 좀 이상하지만...살인을 저지를 것 같지는 않아요.
+Quella:그녀가 이 세 건의 살인 사건의 배후에 있다니.  미쳤어요.
+next:root3-B1
+action end
+
+action:response:root3-B1
+<player>
+root3-B2:누군가 그녀 방에 열쇠를 가져다놓았을 거라는 생각은 해봤는지?
+root3-B3:그녀의 결백을 밝히는 방법?
+root3-B4:아직 살인자가 자유롭게 돌아다니고 있다고 생각하는지?
+</>root3-null:관둔다.
+action end
+
+action:statement:root3-B2
+Quella:네, 그럼요.  가능성 있죠.
+Quella:왜 사람들이 그걸 생각 못하는지 이상할 정도에요.
+next:root3-B1
+action end
+
+action:statement:root3-B3
+Quella:잘 모르겠네요.  다른 용의자를 찾는다?
+Quella:하지만 그건 불가능해보여요.  세 사람의 실종에 대해서 아는 게 너무도 부족하니까요...
+next:root3-B1
+action end
+
+action:statement:root3-B4
+Quella:저는 그렇게 생각해요.
+Quella:Gwen이 모든 죄를 뒤집어써서 그 사람은 정말로 편하겠지요.
+next:root3-B1
+action end
+
+action:statement:root3-C
+Quella:모르겠어요.I don't know.
+Quella:제가 아는 건...뭔가 커다란 일이 여기서 벌어지고 있다는 거에요.
+Quella:제 직감이에요.
+next:root3
+action end
+
+action:statement:root3-D
+Quella:우리가 진실에 다가가기 위해선, 우선 Gwen의 결백이 밝혀져야 한다고 생각해요.
+Quella:그러고 나서야 진짜 범인에게 집중할 수 있겠죠.  그게 누구든지.
+next:root3
+action end
+
+action:statement:root3-captain
+Quella:그냥 슬퍼요.  모든 게 다 슬퍼요.  대체 누가 그런 짓을 했을까요.
+next:root3-captain2
+action end
+
+action:response:root3-captain2
+<player>
+root3-captain2-A:그녀랑 같이 있었던 적이 있는지?:trigger.SmillaQuella.on
+root3-captain2-trigger.SmillaQuella:많은 일을 겪었다?:trigger.GhostBGProgressQuella.on
+root3-captain2-B:그녀가 다른 사람들이랑은 잘 지냈는지?
+</>root3-null:관둔다.
+action end
+
+action:statement:root3-captain2-A
+Quella:제가 글을 쓰고 있을 때 방에 들른 적이 있죠.  제 초안을 읽고 피드백을 주기도 했어요.
+Quella:내가 누구인 지를 발견하는 걸 진심으로 돕고싶어했어요.  타인에 대해서 많이 공감할 줄 아는 사람이었어요.
+Quella:다시 만나서 보답하고 싶네요.  분명히 많은 일을 겪은 사람일 테니까.
+next:root3-captain2
+action end
+
+action:statement:root3-captain2-trigger.SmillaQuella
+Quella:정말 따뜻하고 활발해보이는 사람이 사실은 오히려 가장 힘들고 고통받고 있는 경우가 있죠.
+Quella:그녀는 정말로 친절했지만, 자기 자신에 대해서는 전혀 얘기하지 않았어요.  어디서 왔는지, 이 일은 하기 전에는 무슨 일을 했는지.
+Quella:제 생각에는 그녀가 과거로부터 도망치기 위해서 여기에 온 것 같아요.  뭔가 잊어야하는 일이 있어서.
+next:root3-captain2
+action end
+
+action:statement:root3-captain2-B
+Quella:자주 아래 층에 내려와서 사람들에게 안부를 물었어요.
+Quella:그녀는 몇몇 사람들이랑 특히 잘 지내긴 했지만, 모든 사람들이 다 그녀를 좋아했다고 생각해요.
+next:root3-captain2
+action end
+
+dialogue end
+
+
+
+
