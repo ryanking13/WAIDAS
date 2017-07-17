@@ -1,0 +1,693 @@
+
+// GHOST/ALTON - XU ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Ghost-Xu
+
+action:statement:root
+Xu:어이, Alton.  여기서 볼 줄은 몰랐는데.
+Xu:어...별일 없어?
+next:root-1
+action end
+
+action:response:root-1
+Alton
+root-1-A:선장님을 마지막으로 본 것이 언제?
+root-1-B:최근 배에서 이상한 것을 본 적 있는지?
+</>root-null:관둔다.
+action end
+
+action:statement:root-1-A
+Xu:음...정확히 기억나지 않네.  어젯 밤이 마지막이었던 것 같아.
+next:root-null
+action end
+
+action:statement:root-1-B
+Xu:뭐, 내 방에 누군가 침입했다는 거?
+Xu:매일 일어날 만한 일은 아니지.
+next:root-1-C
+action end
+
+action:response:root-1-C
+Alton
+root-1-D:네 방에서 훔쳐간 게 정확히 뭐였지?
+</>root-null:관둔다.
+action end
+
+action:statement:root-1-D
+Xu:가보로 물려받은 거야.
+Xu:그게, 음, 자기 꽃병이지.
+next:root-1-E
+action end
+
+action:response:root-1-E
+Alton
+root-1-F:방을 침입하고서 훔쳐간게 겨우 꽃병?  믿겨지지가 않는데.
+action end
+
+action:statement:root-1-F
+Xu:그래.  사실 그렇지.
+Xu:근데 실제로 Donovan이 뭘 훔쳐갔는 지 말해줄 수가 없어.  내가 그걸 가지고 있었다는 걸 그가 아는 것만으로도 이미 충분히 나쁜 상황인 걸.
+Xu:솔직하게 못 말해줘서 미안해, 나한테도 이유가 있어.
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+
+// CHAPTER 3   GHOST - XU  ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Ghost-Xu
+
+action:response:root2
+<player>
+root2-1:선장에게 무슨 일이 있어났다고 생각하는지?
+root2-2:우리가 무엇을 해야할지?
+root2-3:누가 선장을 없애고 싶어했다고 생각하는지?
+root2-captain:선장에 대해서 뭔가 말해줄 수 있는 것?
+root-trigger.chap3SecretArea:이 배의 숨겨진 공간에 대해서 아는 것이 있는지?
+</>root2-null:관둔다.
+action end
+
+action:statement:root2-1
+Xu:...모르겠어요.  Marcurio는 그녀가 죽었을거라고 말하는데, 저는 믿을 수가 없어요.
+Xu:지금의 상황을 이해하려고 노력하는 중이에요.
+next:root2
+action end
+
+action:statement:root2-2
+Xu:모르겠어요.  우리는 탐정이 아니고, 여긴 격리된 곳이니.
+Xu:그냥...그녀가 무사했으면 좋겠어요.  곧 찾을 수 있을 거라고 믿고 싶어요.
+next:root2
+action end
+
+action:statement:root2-3
+Xu:그녀는 정말로 좋은 사람이었죠.  왜 누가 그녀를 해치고 싶어 했을까요.
+Xu:몇몇 승객들은 좀 이상하죠.  Donovan은 특히 무섭구요.
+Xu:그렇지만 그 중에 과연 살인자가 있을까요?
+next:root2
+action end
+
+action:statement:root2-captain
+Xu:저는 그녀를 썩 잘 알지는 못했어요.  그녀는 좀 이상한 사람이었죠.
+next:root2-captain2
+action end
+
+action:response:root2-captain2
+<player>
+root2-captain2-A:그녀는 언제부터 이 배의 선장이었는지?
+root2-captain2-B:어떤 점이 이상했는지?:trigger.SmillaMarcurio.on
+root2-captain2-trigger.SmillaMarcurio:그녀랑 잘 지냈는지?
+</>root2-captain2-null:관둔다.
+action end
+
+action:statement:root2-captain2-A
+Xu:이번 여행이 처음이었어요.  출항 직전에 고용되었다고 하더라구요.
+Xu:아마도 배 운항을 취소할 수 없는 상황에서 급하게 고용한 거겠죠.
+next:root2-captain2
+action end
+
+action:statement:root2-captain2-B
+Xu:이상한 뜻으로 해석하지는 말아요, 저는 그녀를 정말로 좋아했으니까요.
+Xu:그녀는 그냥...너무 정직했어요.  좋은 의미에서든, 나쁜 의미에서든.  전략적이라는 말을 모르는 사람 같았죠.
+Xu:그녀는 Marcurio랑 엄청 싸웠어요.  한 번은 Alton을 거의 울뻔하게 만들었고.
+next:root2-captain2
+action end
+
+action:statement:root2-captain2-trigger.SmillaMarcurio
+Xu:우리는 되게 잘 지냈죠.  제가 그녀의 사이드킥이었다고나 할까요.
+Xu:그녀는 참 좋은 사람이었거든요.
+next:root2-captain2
+action end
+
+action:statement:root-trigger.chap3SecretArea
+Xu:숨겨진 공간이요?  아니요...모르겠네요.
+Xu:있을 지도 모른다는 얘기는 들었는데, 그게 전부에요.  별로 진짜라고 생각하지는 않아요.
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+// CHAPTER 4  GHOST - XU ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Ghost-Xu
+
+action:response:root3
+<player>
+root3-A:Donovan과 Paulo에게 무슨 일이 일어났다고 생각하는지?
+root3-B:Gwen이 범인이라고 생각하는지?
+root3-C:이런 일들이 일어난 이유가 뭐라고 생각하는지?
+root3-captain:선장님에 대해서 뭔가 말해줄 수 있는 것?
+root3-D:이제 뭘 해야 할지?
+</>root-null:관둔다.
+action end
+
+action:statement:root3-A
+Xu:선장님에게 일어난 것과 같은 일이겠죠, 아마도.
+Xu:하지만 아직은 다 추측일 뿐이죠. 진상이 밝혀지려면...
+Xu:...미안해요, 하면 안 될 말을 했네요.
+next:root3-A1
+action end
+
+action:response:root3-A1
+<player>
+root3-A2:Donovan이 왜 마스터 키를 필요로했는지?
+root3-null:관둔다.
+action end
+
+action:statement:root3-A2
+Xu:그는 선장님이 살아서 이 배의 어딘가에 있을 거라고 생각했어요.
+Xu:왜 그렇게 생각하는 지는 저한테 말해주지 않았어요.  제가 아는 거라곤 그가 이 배의 숨겨진 공간을 찾고 있었다는 것 정도에요.
+Xu:그는 선장님이 거기 있을 거라고 했어요.
+next:root3-A3
+action end
+
+action:response:root3-A3
+<player>
+root3-A4:그의 말대로 아직 선장이 이 배에 있을 거라고 생각하는지?
+root3-A5:선장을 찾던 사람이 선장과 똑같이 실종된 것이 우연이라고 생각하는지?
+root3-A6:Donovan이 뭔가 다른 얘기를 하지 않았는지?
+</>root-null:관둔다.
+action end
+
+action:statement:root3-A4
+Xu:쭉 의심하고 있었는데.  지금은 확실하게 아닐 거라고 생각해요.
+Xu:이제는 굉장히 단순한 답이 있는 걸요.
+next:root3-A3
+action end
+
+action:statement:root3-A5
+Xu:...글쎄요.
+Xu:아직은 잘 모르겠어요.
+next:root3-A3
+action end
+
+action:statement:root3-A6
+Xu:그는...누군가 선장님을 납치했을 거라고 얘기했어요.  정확히 누군지는 모른다고 했는데, 분명 남...
+Xu:그냥, 모른다고 했어요.  그도 좀 모호한 상황이었던 것 같아요.
+next:root3-A3
+action end
+
+
+action:statement:root3-B
+Xu:저는 그 누구도 범인이라고 믿고 싶지 않아요.  하지만 딱히 다른 선택지가 없네요.  Gwen이 한 일인 것 같아요.
+Xu:솔직히 말해서, 여기 사람들 중에서 그녀가 제일 불안정해 보였죠.
+next:root3-B1
+action end
+
+action:response:root3-B1
+<player>
+root3-B2:만약 누가 그녀의 방에 열쇠를 가져다 둔 것이라면?
+root3-B3:왜 그녀가 그랬다고 생각하는지?
+</>root-null:관둔다.
+action end
+
+action:statement:root3-B2
+Xu:...아니요, 그건 아닐 것 같아요.  누군가 그러려면 처음에 열쇠를 가질 수 있는 방법을 알아야 할텐데.
+Xu:그럴 수 있는 사람이 별로 없거든요.
+Xu:...어쨌든, 제가 그녀의 방에서 열쇠를 발견한 사람이고, 저는 가져다 두지 않았어요.
+next:root3-E
+action end
+
+action:response:root3-E
+<player>
+root3-E1:별로 확신하지 않는 것 같다.
+action end
+
+action:statement:root3-E1
+Xu:무, 무슨 소리를 하는 거에요?
+Xu:세 사람이 실종되었잖아요. 혼란스러워서 그래요, 알겠어요?
+next:root3-B1
+action end
+
+action:statement:root3-B3
+Xu:모르겠어요.  모르는게 나을지도요.
+Xu:그냥 빨리 다 끝났으면 좋겠어요.
+next:root3-B1
+action end
+
+
+action:statement:root3-C
+Xu:모르겠어요.  Donovan은 무슨 생각이 있었던 것 같은데.
+Xu:결국 그가 이렇게 된 걸 보면, 그가 맞았을 것 같지는 않네요.
+next:root3
+action end
+
+action:statement:root3-D
+Xu:가만히 기다려야죠.  서로를 돌보고 안심시키면서요.
+Xu:곧 육지에 도착할 거에요.  그럼 그냥 다 잊어버리면 돼요.
+Xu:다...괜찮아질 거야.  괜찮아질 거야.
+next:root3
+action end
+
+
+action:statement:root3-captain
+Xu:저는 그녀를 썩 잘 알지는 못했어요.  그녀는 좀 이상한 사람이었죠.
+next:root3-captain2
+action end
+
+action:response:root3-captain2
+<player>
+root3-captain2-A:그녀는 언제부터 이 배의 선장이었는지?
+root3-captain2-B:어떤 점이 이상했는지?:trigger.SmillaMarcurio.on
+root3-captain2-trigger.SmillaMarcurio:그녀랑 잘 지냈는지?
+</>root3-captain2-null:관둔다.
+action end
+
+action:statement:root3-captain2-A
+Xu:이번 여행이 처음이었어요.  출항 직전에 고용되었다고 하더라구요.
+Xu:아마도 배 운항을 취소할 수 없는 상황에서 급하게 고용한 거겠죠.
+next:root3-captain2
+action end
+
+action:statement:root3-captain2-B
+Xu:이상한 뜻으로 해석하지는 말아요, 저는 그녀를 정말로 좋아했으니까요.
+Xu:그녀는 그냥...너무 정직했어요.  좋은 의미에서든, 나쁜 의미에서든.  전략적이라는 말을 모르는 사람 같았죠.
+Xu:그녀는 Marcurio랑 엄청 싸웠어요.  한 번은 Alton을 거의 울뻔하게 만들었고.
+next:root3-captain2
+action end
+
+action:statement:root3-captain2-trigger.SmillaMarcurio
+Xu:우리는 되게 잘 지냈죠.  제가 그녀의 사이드킥이었다고나 할까요.
+Xu:그녀는 참 좋은 사람이었거든요.
+next:root3-captain2
+action end
+
+
+
+dialogue end
+
+
+
+
+
+
+
+// CHAPTER 4 CONFESSION  GHOST/QUELLA - XU ////////////////////////////////////////////////////////////////////////////
+
+
+
+dialogue start
+GhostQuella-Xu
+
+action:response:root3
+<player>
+root3-A:Donovan과 Paulo에게 무슨 일이 일어났다고 생각하는지?
+<!>root3-B:Gwen이 범인이라고 생각하는지?
+root3-D:이제 뭘 해야 할지?
+root3-captain:선장님에 대해서 뭔가 말해줄 수 있는 것?
+</>root-null:관둔다.
+action end
+
+
+action:statement:root3-captain
+Xu:저는 그녀를 썩 잘 알지는 못했어요.  그녀는 좀 이상한 사람이었죠.
+next:root3-captain2
+action end
+
+action:response:root3-captain2
+<player>
+root3-captain2-A:그녀는 언제부터 이 배의 선장이었는지?
+root3-captain2-B:어떤 점이 이상했는지?:trigger.SmillaMarcurio.on
+root3-captain2-trigger.SmillaMarcurio:그녀랑 잘 지냈는지?
+</>root3-captain2-null:관둔다.
+action end
+
+action:statement:root3-captain2-A
+Xu:이번 여행이 처음이었어요.  출항 직전에 고용되었다고 하더라구요.
+Xu:아마도 배 운항을 취소할 수 없는 상황에서 급하게 고용한 거겠죠.
+next:root3-captain2
+action end
+
+action:statement:root3-captain2-B
+Xu:이상한 뜻으로 해석하지는 말아요, 저는 그녀를 정말로 좋아했으니까요.
+Xu:그녀는 그냥...너무 정직했어요.  좋은 의미에서든, 나쁜 의미에서든.  전략적이라는 말을 모르는 사람 같았죠.
+Xu:그녀는 Marcurio랑 엄청 싸웠어요.  한 번은 Alton을 거의 울뻔하게 만들었고.
+next:root3-captain2
+action end
+
+action:statement:root3-captain2-trigger.SmillaMarcurio
+Xu:우리는 되게 잘 지냈죠.  제가 그녀의 사이드킥이었다고나 할까요.
+Xu:그녀는 참 좋은 사람이었거든요.
+next:root3-captain2
+action end
+
+action:statement:root3-A
+Xu:선장님에게 일어난 것과 같은 일이겠죠, 아마도.
+Xu:하지만 아직은 다 추측일 뿐이죠. 진상이 밝혀지려면...
+Xu:...미안해요, 하면 안 될 말을 했네요.
+next:root3-A1
+action end
+
+action:response:root3-A1
+<player>
+root3-A2:왜 Donovan이 마스터 키를 필요로 했는지?
+</>root3-null:관둔다.
+action end
+
+action:statement:root3-A2
+Xu:그는 선장님이 살아서 이 배의 어딘가에 있을 거라고 생각했어요.
+Xu:왜 그렇게 생각하는 지는 저한테 말해주지 않았어요.  제가 아는 거라곤 그가 이 배의 숨겨진 공간을 찾고 있었다는 것 정도에요.
+Xu:그는 선장님이 거기 있을 거라고 했어요.
+next:root3-A3
+action end
+
+action:response:root3-A3
+<player>
+root3-A4:그의 말대로 아직 선장이 이 배에 있을 거라고 생각하는지?
+root3-A5:선장을 찾던 사람이 선장과 똑같이 실종된 것이 우연이라고 생각하는지?
+root3-A6:Donovan이 뭔가 다른 얘기를 하지 않았는지?
+</>root-null:관둔다.
+action end
+
+action:statement:root3-A4
+Xu:쭉 의심하고 있었는데.  지금은 확실하게 아닐 거라고 생각해요.
+Xu:이제는 굉장히 단순한 답이 있는 걸요.
+next:root3-A3
+action end
+
+action:statement:root3-A5
+Xu:...글쎄요.
+Xu:아직은 잘 모르겠어요.
+next:root3-A3
+action end
+
+action:statement:root3-A6
+Xu:...했어요.  선장님이 다른 누군가에게 납치당했을 거라고.
+Xu:그는 정확히 누구인지는 모르지만, 분명히...남자일 거라고 햇어요.  그는 그 남자를 찾아내기 위해서 왔다고 했죠.
+Xu:그래서 당신은 범인이 아니라고 믿어요.  그렇지 않았다면 이 얘기를 해주지 않았을 거구요.
+next:root3-A3
+action end
+
+
+
+action:statement:root3-B
+Xu:저는 그 누구도 범인이라고 믿고 싶지 않아요.  하지만 딱히 다른 선택지가 없네요.  Gwen이 한 일인 것 같아요.
+Xu:솔직히 말해서, 여기 사람들 중에서 그녀가 제일 불안정해 보였죠.
+next:root3-B1
+action end
+
+action:response:root3-B1
+<player>
+root3-B3:왜 그녀가 그랬다고 생각하는지?
+<!>root3-B2:만약 누가 그녀의 방에 열쇠를 가져다 둔 것이라면?
+</>root-null:관둔다.
+action end
+
+action:statement:root3-B3
+Xu:모르겠어요.  모르는게 나을지도요.
+Xu:그냥 빨리 다 끝났으면 좋겠어요.
+next:root3-B1
+action end
+
+action:statement:root3-B2
+Xu:...아니요, 그건 아닐 것 같아요.  누군가 그러려면 처음에 열쇠를 가질 수 있는 방법을 알아야 할텐데.
+Xu:그럴 수 있는 사람이 별로 없거든요.
+Xu:...어쨌든, 제가 그녀의 방에서 열쇠를 발견한 사람이고, 저는 가져다 두지 않았어요.
+next:root3-E
+action end
+
+action:response:root3-E
+<player>
+root3-E1:별로 확신하지 않는 것 같네요, 뭘 숨기고 있죠, Xu?
+action end
+
+action:statement:root3-E1
+Xu:...
+Xu:당신은 믿어도 될 것 같네요.  Donovan이 말한대로라면...
+Xu:제가 Gwen의 방에서 열쇠를 찾았다고 했죠.  제가 거기에 가져다 둔 것도 아니구요.  그렇지만...
+Xu:그 열쇠는 Donovan의 열쇠와 다른 거였어요.  다른 디자인의 열쇠였어요.
+Xu:아마 둘 다 마스터 키가 맞을 거에요.  하지만 Gwen의 것이 Donovan의 것이 아니라는 것은 확실해요.
+next:root3-E2
+action end
+
+action:response:root3-E2
+<player>
+root3-E3:다른 사람들에게 알려야 해요!  Gwen은 결백한 거잖아요!:trigger.chap4QuellaXuConfession.on
+action end
+
+action:statement:root3-E3
+Xu:...못해요.  이건 당신과 저만 알아야 해요.
+Xu:당신 마음은 알지만...다른 사람은 이 일을 알아서는 안 돼요.
+Xu:이해할 필요 없어요.  이해하지 못할 거에요.  당신은 여기 오래 있지 않았으니까.
+next:root3-null
+action end
+
+
+
+
+action:statement:root3-D
+Xu:가만히 기다려야죠.  서로를 돌보고 안심시키면서요.
+Xu:곧 육지에 도착할 거에요.  그럼 그냥 다 잊어버리면 돼요.
+Xu:다...괜찮아질 거야.  괜찮아질 거야.
+next:root3
+action end
+
+dialogue end
+
+
+
+
+
+
+
+// CHAPTER 4 CONFESSION  GHOST/ALTON - XU ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+GhostAlton-Xu
+
+action:response:root3
+<player>
+<!>root3-A:네 방에서 Donovan이 뭘 훔쳤다고 했었지?
+root3-C:왜 이런 일이 일어났다고 생각하는 지?
+root3-D:우리가 무엇을 해야할 지?
+root3-captain:선장에 대해서 뭔가 말해줄 수 있는 것?
+</>root-null:관둔다.
+action end
+
+
+action:statement:root3-captain
+Xu:그녀를 썩 잘 알지는 못했지만, 좀 이상한 사람이었지.
+next:root3-captain2
+action end
+
+action:response:root3-captain2
+<player>
+root3-captain2-A:그녀가 언제부터 선장이었지?
+root3-captain2-B:이상해?:trigger.SmillaMarcurio.on
+root3-captain2-trigger.SmillaMarcurio:그녀랑 잘 지냈어?
+</>root3-captain2-null:관둔다.
+action end
+
+action:statement:root3-captain2-A
+Xu:이번 여행부터.  출항 직전에 고용되었다고 하더라.
+Xu:아마도 배 운항을 취소할 수 없는 상황에서 급하게 고용한 거겠지.I guess things came up, but they can't just cancel the trip.  So, they settled.
+next:root3-captain2
+action end
+
+action:statement:root3-captain2-B
+Xu:이상한 뜻으로 해석하지는 마, 나는 그녀를 정말로 좋아했으니까.
+Xu:그녀는 그냥...너무 정직했지.  좋은 의미에서든, 나쁜 의미에서든.  전략적이라는 말을 모르는 사람 같았어.
+Xu:Marcurio랑 엄청 싸웠지. 너를 거의 울뻔하게도 했고.
+Xu:...그녀가 진짜로 너한테 화났던 거 아닌 거 알지?  너무 진지하게 받아들이지 마.
+next:root3-captain2
+action end
+
+action:statement:root3-captain2-trigger.SmillaMarcurio
+Xu:우리는 되게 잘 지냈지.  내가 그녀의 사이드킥이었다고나 할까.
+Xu:그녀는 참 좋은 사람이었거든.
+next:root3-captain2
+action end
+
+
+
+action:statement:root3-A
+Xu:어...그게 가보인데.
+Xu:어머니한테 받은 찻잔 세트야.
+next:root3-A1
+action end
+
+action:response:root3-A1
+<player>
+root3-A-2:아, 그랬었지!
+root3-A-3:너 오래된 꽃병이라고 하지 않았어?
+</>root3-null:관둔다.
+action end
+
+action:statement:root3-A2
+Xu:대체 왜 그런 걸 훔쳐간 걸까?
+Xu:이해를 못하겠네.  근데 그 사람이 이유를 말해줄 것 같지는 않지.
+next:root3-A1
+action end
+
+action:statement:root3-A3
+Xu:어...?  내가 그랬던가?
+Xu:그 꽃병이 말이지...찻잔 세트에 포함되어 있는 거야.
+Xu:그래 그런 뜻으로 말한 거였어.  그게 사실은 그...차를 담는 병이었던 거지.
+next:root3-A4
+action end
+
+action:response:root3-A4
+<player>
+root3-A5:그가 마스터 키를 훔쳐간 것 알아.  거짓말은 그만해.
+action end
+
+action:statement:root3-A5
+Xu:...무, 무슨 소리야?  Donovan이 어떻게 마스터 키를 얻은 건지는 모르지만, 나한테서 가져간 건 아냐.
+Xu:나는 그냥 웨이터인 뿐인데, 어떻게 그런 걸 가지고 있겠어.
+Xu:왜 그런 생각을 하게 된 거야?
+next:root3-A6
+action end
+
+action:response:root3-A6
+<player>
+root3-A7:넌 조타실에서 열쇠를 훔쳤지.  다른 사람들한테서 물건을 훔친 것처럼.:trigger.chap4xuProgress.on
+root3-trigger.chap4xuProgress:다 알아.  내가 모르는 건 네가 왜 마스터 키를 훔쳤느냐 뿐이야.
+action end
+
+action:statement:root3-A7
+Xu:...젠장.
+Xu:뭘 더 알고 있어?  뭐...그게 중요하지도 않은 것 같지만.
+next:root3-A6
+action end
+
+action:statement:root3-trigger.chap4xuProgress
+Xu:네가 말한대로야.
+Xu:다른 사람들한테서 물건을 훔친 것처럼, 돈이 필요해서 그랬어.
+Xu:그게 있으면 어느 방이던 들어갈 수 있으니까.
+next:root3-confess
+action end
+
+action:response:root3-confess
+<player>
+root3-confess2:아니.  선장님이 사라졌던 때에 네가 열쇠를 훔쳣지.  그건 절대 우연이 아냐.:trigger.chap4AltonXuConfession.on
+action end
+
+action:statement:root3-confess2
+Xu:...
+Xu:내가 열쇠를 훔친 이후로, 모든 게 다 꼬이기 시작했어.
+Xu:그냥 모른 척 기다리면 다 지나갈 줄 알았는데...내가 잘못 생각했어.
+Xu:이런 일은 일어나면 안 됐어.  난 이런 걸 원하지 않았어...
+Xu:....
+Xu:그날 밤에, 쪽지를 받았어.
+Xu:나보고 조타실에서 마스터 키를 훔쳐서.
+Xu:아무도 모르게 숨겨두라는 쪽지.
+next:root3-confess-F
+action end
+
+action:response:root3-confess-F
+<player>
+root3-confess-F-1:누구한테서?
+root3-confess-F-2:왜 그런 지시를 한걸까?
+<!>root3-confess-F-3:왜 지시를 따른거야?
+action end
+
+action:statement:root3-confess-F-1
+Xu:몰라.  이름은 없었어.
+Xu:필체도 알아볼 수 없었고.
+next:root3-confess-F
+action end
+
+action:statement:root3-confess-F-2
+Xu:내 추측인데, Donovan이 열쇠를 찾아내는 걸 막으려던 게 아닐까.
+Xu:뭐, 어쨌든 그는 열쇠를 찾아냈지만.  그리고...사라졌지.
+next:root3-confess-F
+action end
+
+action:statement:root3-confess-F-3
+Xu:그게 내가 처음 받은 지시가 아냐.  뭐랄까...약속이지.
+Xu:나는 작은 심부름을 하고, 돈을 받아.
+Xu:언제나 이해하지 못하는 지시가 내려와, 하지만 이해할 필요는 없었지.  의심은 갔지만, 딱히 누구에게 피해가 갈만한 일은 시키지 않았으니까.
+next:root3-confess-G
+action end
+
+action:response:root3-confess-G
+<player>
+<!!>root3-confess-1:알려줘서 고마워.  이제 우리가 어떻게 해야할까?:trigger.epilogueAX6.on
+<!!>root3-confess-2:뇌물을 받았다고?  왜 더 일찍 얘기하지 않은 거야?:trigger.epilogueAX5.on
+<!!>root3-confess-3:세 사람이 실종된 거 다 네 잘못이야!:trigger.epilogueAX4.on
+action end
+
+action:statement:root3-confess-1
+Xu:Gwen이 죄를 뒤집어 쓰고 있는 이상, 진실은 밝혀지지 않겠지.
+Xu:그녀의 결백을 밝혀야지 조사를 계속할 수 있을 거야.
+Xu:누군가 분명 그녀의 방에 열쇠를 가져다놓은 거지?  그게 유일한 가능성이고.
+Xu:누군지 대충 알 것 같아.  분명 직원 중 한 명일거야.
+Xu:그한테 이걸 말하려면 마음을 단단히 먹어야겠네...
+next:root-null
+action end
+
+action:statement:root3-confess-2
+Xu:안 돼. 그랬다간 당장 해고당했을 걸.
+Xu:그리고 돈도 많이 줬는 걸.  정말로...많이.
+Xu:난 돈이 필요해, Alton.  나는 절대로 이런 일이 일어나길 바란 게 아냐.
+Xu:내가 이런 일이 있을 줄 알았다면...
+next:root-null
+action end
+
+action:statement:root3-confess-3
+Xu:아, 아냐.  내가 한 일은 전혀 관계없어...
+Xu:...네가 맞아.  Donovan에게 다 얘기했어야 했어.  하지만 그러지 못했어.
+Xu:그리고 그가 사라져버렸어.
+Xu:난 정말 끔찍한 사람이구나.
+next:root-null
+action end
+
+
+
+
+action:statement:root3-B
+Xu:나는 그 누구도 범인이라고 믿고 싶지 않아. 하지만 딱히 다른 선택지가 없네.  Gwen이 한 일 같아.
+Xu:솔직히 말해서, 여기 사람들 중에서 그녀가 제일 불안정해 보였지.
+next:root3-B1
+action end
+
+action:response:root3-B1
+<player>
+root3-B2:누군가 그녀의 방에 열쇠를 가져다둔 거였다면?
+root3-B3:왜 그녀가 그랬을까?
+</>root-null:관둔다.
+action end
+
+action:statement:root3-B2
+Xu:...아니, 그건 아닐 것 같아.  누군가 그러려면 처음에 열쇠를 가질 수 있는 방법을 알아야 할텐데.
+Xu:그럴 수 있는 사람이 별로 없잖아.
+Xu:...어쨌든, 내가 그녀의 방에서 열쇠를 발견한 사람이고, 나는 가져다 두지 않았어.
+next:root3-B1
+action end
+
+
+action:statement:root3-B3
+Xu:전혀 모르겠어.  어쩌면 모르는 게 나을지도.
+Xu:그냥 다 지나갔으면 좋겠어.
+next:root3-B1
+action end
+
+
+action:statement:root3-C
+Xu:모르겠어.  Donovan은 무슨 생각이 있었던 것 같은데.
+Xu:결국 그가 이렇게 된 걸 보면, 그가 맞았을 것 같지는 않네.
+next:root3
+action end
+
+action:statement:root3-D
+Xu:가만히 기다려야지.  서로를 돌보고 안심시키면서.
+Xu:곧 육지에 도착할 거야.  그럼 그냥 다 잊어버리면 돼.
+Xu:다...괜찮아질 거야.  괜찮아질 거야.
+next:root3
+action end
+
+dialogue end
+

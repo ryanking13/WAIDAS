@@ -1,0 +1,333 @@
+
+
+// GHOST/ALTON - GWEN ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Ghost-Gwen
+
+action:response:root
+<player>
+root-1:선장님을 마지막으로 본 것이 언제?
+root-2:최근 배에서 이상한 것을 본 적 있는지?
+</>root-null:관둔다.
+action end
+
+action:statement:root-1
+Gwen:...
+Gwen:몰라요.
+next:root-null
+action end
+
+action:statement:root-2
+Gwen:...
+Gwen:아마도요.
+next:root-3
+action end
+
+action:response:root-3
+<player>
+root-4:네?
+action end
+
+action:statement:root-4
+Gwen:...
+Gwen:별로 말하고 싶지 않아요.
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+
+// CHAPTER 3  GHOST - GWEN  ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Ghost-Gwen
+
+action:response:root2
+<player>
+root2-1:선장에게 무슨 일이 있어났다고 생각하는지?
+root2-2:우리가 무엇을 해야할 지?
+root2-3:누가 선장을 없애고 싶어했다고 생각하는지?
+root2-4:선장에 대해서 뭔가 말해줄 수 있는 것?
+root-trigger.chap3SecretArea:이 배의 숨겨진 공간에 대해서 아는 것이 있는지?
+</>root2-null:관둔다.
+action end
+
+action:statement:root2-1
+Gwen:그녀가 사라지다니...믿을 수가 없어...
+Gwen:난 여기서 안전하지 않아. 사실 한 번도 안전했던 적이 없었어.
+next:root2
+action end
+
+action:statement:root2-2
+Gwen:도착할 때까지 나 자신을 지킬 거에요.  그러고 나서는 도망칠 거야.
+Gwen:이번에는 좀 더 잘 할거야.
+next:root2
+action end
+
+action:statement:root2-3
+Gwen:모르겠어요.  아마...그일지도?
+Gwen:하지만 여전히 그가 누군지 확실하지 않아.  아...모든 게 너무...
+next:root2
+action end
+
+action:statement:root2-4
+Gwen:그녀랑 얘기해본 적이 없어요.  사실은 저는 아무와도 얘기하지 않아요.
+Gwen:좋은 사람같아 보였어요.
+next:root2
+action end
+
+action:statement:root-trigger.chap3SecretArea
+Gwen:아니요. 되게 무서운 얘기네요.
+Gwen:애초에 그런 게 왜 있어야 하죠?
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+// CHAPTER 4  GHOST - GWEN ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Ghost-Gwen
+
+action:response:root3
+<player>
+root3-1:당신이 정말로 선장과 Donovan, Paulo를 죽였는지?
+</>root-null:관둔다.
+action end
+
+action:statement:root3-1
+Gwen:아니에요!  절대로...그렇지 않아...
+Gwen:그 사람들이 사라졌다는 것도...사람들이 나를 방에서 깨울 때야 알았어요.  그리고 내게 열쇠를 보여줬죠.
+next:root3-2
+action end
+
+action:response:root3-2
+<player>
+root3-trigger.chap4AllConfessions:당신 방에서 발견된 열쇠가 Donovan의 것과 다르다는 것을 알았는지?
+root3-A:Donovan의 열쇠는 어떻게 가지게 된 건지?
+root3-B:Donovan과 Paulo에게 무슨 일이 있어났다고 생각하는지?
+</>root3-null:관둔다.
+action end
+
+action:statement:root3-A
+Gwen:난...난 몰라요.  한 번도 살펴본 적 없어요.
+Gwen:누가 나한테 보여주기 전까지는 그게 내 방에 있다는 것조차 몰랐어요.  맹세해요.
+Gwen:이렇게 말해도 아무도 날 믿어주지 않겠지.
+next:root3-2
+action end
+
+
+action:statement:root3-B
+Gwen:전혀 모르겠어요.  제가 뭔가 아는 것이 있다면, 말하지 않을 이유가 없어요.
+Gwen:말했듯이, 저는 그들이 사라졌다는 것도 오늘 아침에 알았고, 그거 알자마자 여기로 끌려왔어요.
+Gwen:Donovan의 사라졌다는 걸 알았을때...그 누구보다도 제길 충격을 받은 게 저에요.  저는 분명히 그가...
+next:root3-C
+action end
+
+action:response:root3-C
+<player>
+root3-D:살인자일 거라고 생각했다?
+action end
+
+action:statement:root3-D
+Gwen:그것 뿐만 아니라...그가 저를 미행하고 있다고 생각했어요.
+Gwen:저는 그의 마음 속의 분노를 느낄 수 있었어요.  그는 언제나 분노하고 있었죠.
+Gwen:그는 무엇인가를 찾고 있는 것 같았어요.  혹은 어떤 사람을.
+Gwen:그런 걸 보면 제가 아는 어떤 사람이 떠올라요.
+next:root3-truth
+action end
+
+action:response:root3-truth
+<player>
+root3-truth-A:다른 사람들도 그를 의심스러워 했다.:trigger.ending2GwenFerdinand.on
+root3-truth-B:그는 선장을 찾고 있었다.:trigger.end2Donovan.on
+root3-truth-trigger.end2Donovan:Donovan은 연쇄살인마가 선장을 납치해서, 그녀가 배의 어딘가에 살아있을 거라고 생각했다.  :trigger.ending2GwenKiller.on
+root3-truth-C:당신은 편집증인 것 같다.
+</>root3-null:떠난다.
+action end
+
+action:statement:root3-truth-A
+Gwen:일등항해사님도 그를 의심했죠.
+Gwen:다시 생각해보니...그가 Donovan을 굉장히 의심했어요.
+next:root3-truth
+action end
+
+action:statement:root3-truth-B
+Gwen:그게 정말이에요?  선장님을 찾고 있었다구요?  저는 그녀가 죽었다고 생각했는데.
+next:root3-truth
+action end
+
+action:statement:root3-truth-C
+Gwen:당신이 막약 저였다면 똑같았을 거에요.
+next:root3-truth
+action end
+
+action:statement:root3-truth-trigger.end2Donovan
+Gwen:네?  그런 얘기는 처음 들었어요...
+Gwen:그러니까 그는 연쇄살인마를 쫓고 있었고...그래서 그 카메라랑 장비들을 가지고 있던 거였다?
+next:root3-truth
+action end
+
+
+
+action:statement:root3-trigger.chap4AllConfessions
+Gwen:정말요?  그럼 대체 그건 누구의 열쇠인데요?  왜 사람들은 제가 Donovan의 것을 가지고 있는 거라고 생각하는 건데요?
+Gwen:당신은 그게 다른 열쇠라는 걸 어떻게 알았죠?
+next:root3-twoKeys
+action end
+
+action:response:root3-twoKeys
+<player>
+root3-twoKeys-A:몇몇 사람들만 그게 다른 열쇠라는 걸 안다.  당신은 노려졌던 것.
+root3-twoKeys-B:누구의 열쇠인지 안다.  아마도 진범의 마스터 키일 것.
+root3-twoKeys-C:Donovan의 열쇠를 본 적있다.  좀더 낡고 해골이 그려진 디자인이었다.:trigger.ending2GwenKey.on
+action end
+
+action:statement:root3-twoKeys-A
+Gwen:만약 당신이 말하는 게 사실이라면, 분명 누군가 저를 엮으려고 그런 것이군요.
+Gwen:제발, 당신이 이 사실을 사람들에게 알려야해요.
+next:root3-twoKeys
+action end
+
+action:statement:root3-twoKeys-B
+Gwen:그러니까, 내 방에서 발견된 열쇠가 다른 열쇠였다?  정말 이상하군요.
+Gwen:그렇다면 살인자는 Donovan이 마스터 키를 가지고 있었다는 걸 분명히 알았겠네요.
+next:root3-twoKeys
+action end
+
+action:statement:root3-twoKeys-C
+Gwen:해골 모양?  그거 어디서 본 것 같은데요.
+Gwen:분명히 본 것 같아요...정확히 언제 어디에서였는지는 기억이 안나지만.
+Gwen:아마 알았다면 다르게 반응했겠죠.
+next:root3-2
+action end
+
+
+dialogue end
+
+
+
+
+
+// CHAPTER 4  GHOST - GWEN (AFTER CONFESSIONS) ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Ghost-Gwen
+
+action:response:root4
+<player>
+root4-trigger.chap4AllConfessions:당신 방에서 발견된 열쇠가 Donovan의 것과 다르다는 것을 알았는지?
+root4-B:Donovan과 Paulo에게 무슨 일이 있어났다고 생각하는지?
+root4-captain:선장에 대해서 말해줄 수 있는 것이 있는지?
+</>root4-null:관둔다.
+action end
+
+action:statement:root4-captain
+Gwen:그녀는 좋은 사람 같아 보였어요, 얘기해본 적은 없지만.
+Gwen:자주 아래로 내려와서 사람들에게 안부를 묻거나 하는 것을 봤어요.
+next:root4-null
+action end
+
+action:statement:root4-B
+Gwen:전혀 모르겠어요.  제가 뭔가 아는 것이 있다면, 말하지 않을 이유가 없어요.
+Gwen:말했듯이, 저는 그들이 사라졌다는 것도 오늘 아침에 알았고, 그거 알자마자 여기로 끌려왔어요.
+Gwen:Donovan의 사라졌다는 걸 알았을때...그 누구보다도 제길 충격을 받은 게 저에요.  저는 분명히 그가...
+next:root4-C
+action end
+
+action:response:root4-C
+<player>
+root4-D:살인자일 거라고 생각했다?
+action end
+
+action:statement:root4-D
+Gwen:그것 뿐만 아니라...그가 저를 미행하고 있다고 생각했어요.
+Gwen:저는 그의 마음 속의 분노를 느낄 수 있었어요.  그는 언제나 분노하고 있었죠.
+Gwen:그는 무엇인가를 찾고 있는 것 같았어요.  혹은 어떤 사람을.
+Gwen:그런 걸 보면 제가 아는 어떤 사람이 떠올라요.
+next:root4-truth
+action end
+
+action:response:root4-truth
+<player>
+root4-truth-A:다른 사람들도 그를 의심스러워 했다.:trigger.ending2GwenFerdinand.on
+root4-truth-B:그는 선장을 찾고 있었다.:trigger.end2Donovan.on
+root4-truth-trigger.end2Donovan:Donovan은 연쇄살인마가 선장을 납치해서, 그녀가 배의 어딘가에 살아있을 거라고 생각했다.:trigger.ending2GwenKiller.on
+root4-truth-C:당신은 편집증인 것 같다.
+</>root4-null:떠난다.
+action end
+
+action:statement:root4-truth-A
+Gwen:일등항해사님도 그를 의심했죠.
+Gwen:다시 생각해보니...그가 Donovan을 굉장히 의심했어요.
+next:root4-truth
+action end
+
+action:statement:root4-truth-B
+Gwen:그게 정말이에요?  선장님을 찾고 있었다구요?  저는 그녀가 죽었다고 생각했는데.
+next:root4-truth
+action end
+
+action:statement:root4-truth-C
+Gwen:당신이 막약 저였다면 똑같았을 거에요.
+next:root4-truth
+action end
+
+action:statement:root4-truth-trigger.end2Donovan
+Gwen:네?  그런 얘기는 처음 들었어요...
+Gwen:그러니까 그는 연쇄살인마를 쫓고 있었고...그래서 그 카메라랑 장비들을 가지고 있던 거였다?
+next:root4-truth
+action end
+
+
+
+
+
+action:statement:root4-trigger.chap4AllConfessions
+Gwen:정말요?  그럼 대체 그건 누구의 열쇠인데요?  왜 사람들은 제가 Donovan의 것을 가지고 있는 거라고 생각하는 건데요?
+Gwen:당신은 그게 다른 열쇠라는 걸 어떻게 알았죠?
+next:root4-twoKeys
+action end
+
+action:response:root4-twoKeys
+<player>
+root4-twoKeys-A:몇몇 사람들만 그게 다른 열쇠라는 걸 안다.  당신은 노려졌던 것.
+root4-twoKeys-B:누구의 열쇠인지 안다.  아마도 진범의 마스터 키일 것.
+<!>root4-twoKeys-C:Donovan의 열쇠를 본 적있다.  좀더 낡고 화난 해골이 그려진 디자인이었다.:trigger.ending2GwenKey.on
+action end
+
+action:statement:root4-twoKeys-A
+Gwen:만약 당신이 말하는 게 사실이라면, 분명 누군가 저를 엮으려고 그런 것이군요.
+Gwen:제발, 당신이 이 사실을 사람들에게 알려야해요.
+next:root4-twoKeys
+action end
+
+action:statement:root4-twoKeys-B
+Gwen:그러니까, 내 방에서 발견된 열쇠가 다른 열쇠였다?  정말 이상하군요.
+Gwen:그렇다면 살인자는 Donovan이 마스터 키를 가지고 있었다는 걸 분명히 알았겠네요.
+next:root4-twoKeys
+action end
+
+action:statement:root4-twoKeys-C
+Gwen:화난 해골 모양?  그거 어디서 본 것 같은데요.
+Gwen:분명히 본 것 같아요...정확히 언제 어디에서였는지는 기억이 안나지만.
+Gwen:아마 알았다면 다르게 반응했겠죠.
+next:root4-null
+action end
+
+
+dialogue end
+
+
+

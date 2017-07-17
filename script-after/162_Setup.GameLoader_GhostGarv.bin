@@ -1,0 +1,446 @@
+
+
+
+// GHOST/ALTON - GARV ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Ghost-Garv
+
+action:response:root
+<player>
+root-1:선장님을 마지막으로 본 것이 언제?
+root-2:최근 배에서 이상한 것을 본 적 있는지?
+</>root-null:관둔다.
+action end
+
+action:statement:root-1
+Garv:선장님 말인가?  흠...
+Garv:아 그래, 어제 밤에 봤었지.  똑똑히 기억하네.
+Garv:배에 애완동물을 반입하는 것은 안된다고 나한테 주의를 줬었지.
+Garv:썩 친절한 여인은 아니었다네.
+next:root-null
+action end
+
+action:statement:root-2
+Garv:이상한 것?  별로.  뭔가 찾고 있는가?
+next:root-2-A
+action end
+
+action:response:root-2-A
+<player>
+root-2-B:선장님에게 무슨 일이 일어난 것 같다.
+</>root-null:관둔다.
+action end
+
+action:statement:root-2-B
+Garv:그게 정말인가?  그리고보니 오늘 하루동안 그녀를 못 보긴 했네만.
+Garv:내가 그 일에 대해서 뭘 도와줄 수 있는지 모르겠구먼, 난 그냥 승객일뿐이니 말이야.
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+// CHAPTER 3  GHOST - GARV  ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Ghost-Garv
+
+action:response:root2
+<player>
+root2-1:선장에게 무슨 일이 있어났다고 생각하는지?
+root2-2:우리가 무엇을 해야할 지?
+root2-3:누가 선장을 없애고 싶어했다고 생각하는지?
+root2-captain:선장에 대해서 뭔가 말해줄 수 있는 것?
+root-trigger.chap3SecretArea:이 배의 숨겨진 공간에 대해서 아는 것이 있는지?
+</>root2-null:관둔다.
+action end
+
+action:statement:root2-1
+Garv:확신은 없네만, 누군가가 선장님에게 무슨 일을 저지른 것 같다네.
+Garv:그렇다면 우리가 최대한 빨리 행동할 수록 좋겠지.
+Garv:가만히 기다려서는 안 되네.
+next:root2
+action end
+
+action:statement:root2-2
+Garv:내가 탐정은 아니지만 말이야, 세상에 완전범죄는 없는 법이라네.
+Garv:무엇인가 알고있는 누군가가 있거나, 흔적이 남아있을 것이네.
+Garv:어딘가에는 이 문제를 해결할 수 있는 열쇠가 있을 것이야.
+next:root2
+action end
+
+action:statement:root2-3
+Garv:누구를 의심하게 만들려고 하는 건 아니네만, 그 일등항해사가 좀 이상하다고 생각하지 않는가?
+Garv:그는 이상할 정도로 선장님이 무사하다는 것을 확신한단 말이지.
+next:root2
+action end
+
+action:statement:root2-captain
+Garv:그녀는 굉장히 곧은 사람이었지.
+Garv:열심히 일하고, 정직하고, 난 그런 사람을 좋아한다네.
+Garv:그렇지만 아직 젊어서 이상적이고 감정적이지.  삶은 그렇게 만만하지 않은데 말이야.
+next:root2-captain2
+action end
+
+action:response:root2-captain2
+<player>
+root2-captain2-A:감정적이라는 게 무슨 뜻?
+root2-captain2-B:그녀랑 같이 있었던 적이 있는지?
+</>root2-null:관둔다.
+action end
+
+action:statement:root2-captain2-A
+Garv:주변을 둘러보게.  주변의 사람들, 그리고 우리가 어디에 있는지.
+Garv:자네는 지금 연옥에 있어.  우리가 모두 그렇고, 그런 사실을 알고 있지.  무엇인가가 잘못되었고, 그래서 우리가 이런 쓰레기 더미 위에 있는 것이야.
+Garv:우리 모두가 원하는 것은 이 곳에서 벗어나 다시 제대로된 삶으로 돌아가는 것이지.
+Garv:하지만 선장은...여기서 정말로 뭔가 중요한 일을 하고 있다고 생각하는 모양이더군.  이 곳을 제대로된 장소로 만들려고 노력하고 있었어.
+Garv:좀 슬픈 일이지 않은가?
+next:root2-captain2
+action end
+
+action:statement:root2-captain2-B
+Garv:내 애완동물을 들킨 것이 첫 만남이었지.
+Garv:이 배에는 애완동물 반입금지 조항이 있다는데, 난 그걸 그때 처음 들어서 말이야.
+Garv:다른 직원들은 신경 안 썼는데, 뭐 그녀는 규칙대로 한 것이지.
+Garv:그게 이 배의 선장이라네.
+next:root2-captain2
+action end
+
+action:statement:root-trigger.chap3SecretArea
+Garv:언젠가 들은 것이 있는 것 같네만.
+Garv:나는 그저 승객일 뿐이라,  실제로 그다지 아는 것은 없다네.
+Garv:왜 그런 독특한 질문을 하는 것인지 궁금하구먼.
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+
+// CHAPTER 4  GHOST - GARV ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+Ghost-Garv
+
+action:response:root3
+<player>
+root3-A:Donovan과 Paulo에게 무슨 일이 일어났다고 생각하는지?
+root3-B:Gwen이 범인이라고 생각하는지?
+root3-C:이런 일들이 일어난 이유가 뭐라고 생각하는지?
+root3-D:이제 뭘 해야 할지?
+root3-captain:선장님에 대해서 뭔가 말해줄 수 있는 것?
+</>root-null:관둔다.
+action end
+
+action:statement:root3-A
+Garv:선장님에게 일어난 것과 같은 일이 일어났겠지.
+next:root3
+action end
+
+action:statement:root3-B
+Garv:배의 직원들은 대부분 그렇다고 생각하는 것 같더구먼.
+Garv:나는 좀 의문스럽다네.
+next:root3-B1
+action end
+
+action:response:root3-B1
+<player>
+root3-B2:어떤 의문?
+root3-B3:진범이 누구라고 생각하는 지?
+root3-B4:Gwen의 결백을 밝힐 방법?
+</>root3-null:관둔다.
+action end
+
+action:statement:root3-B2
+Garv:유일한 증거는 Gwen의 방에서 열쇠가 나왔다는 것이지.
+Garv:하지만 그 열쇠를 그녀의 방에 몰래 놔두는 것은 정말로 간단한 일이지 않은가.
+Garv:그래서 사실 그것만 가지고는 그녀가 살인에 연관되었다는 증거가 전혀 되지 않는다네.
+next:root3-B1
+action end
+
+action:statement:root3-B3
+Garv:Gwen이 범인이라고 지목된 경위를 고려하면, 이 배의 직원 중에 범인이 있거나...혹은 최소한 가담한 것이 아닐까 생각하네.
+Garv:만약 배의 직원이 그녀의 방에 열쇠를 가져다 둔 것이라면, 수색 중에 열쇠가 발견되는 것도 당연하겠지.
+Garv:수색이 좀 갑작스러운 면도 있었다고 생각한다네.  선장의 실종에 대한 반응은 그렇게 느렸는데 말이야.
+next:root3-B1
+action end
+
+action:statement:root3-B4
+Garv:Gwen이 Donovan에게서 열쇠를 빼앗은 것이 아니라는 것만 증명한다면 충분하겠지.
+Garv:이 배의 직원들이 열쇠를 발견했지.  나는 분명 그들 중에 그녀를 범인으로 몰아가려한 사람이 있다고 생각하네.
+Garv:그들이 진실을 말해준다면, 진범에 한발짝 다가갈 수 있을 것이야.
+next:root3-B2
+action end
+
+action:statement:root3-C
+Garv:Donovan이 선장을 찾고 있던 거라면, 범인이 자신이 들키는 것을 막으려고 그랬다고 생각할 수 있지.
+Garv:Paulo군에 대한 건 모르겠다네.  그는 언제나 자기 방에만 있어서, 어떻게 사건과 연관된 것인지 모르겠구먼.
+Garv:내 생각에는 살인자가 무차별적이고 무계획적인 것 같다네.
+next:root3
+action end
+
+action:statement:root3-D
+Garv:그냥 앉아서 배가 육지에 도착하는 걸 기다려서는 안 되네.
+Garv:내 생각이 맞다면, 아직 살인자가 멀쩡하게 배를 돌아다니고 있을 것이야.
+Garv:우리가 도착하면, 살인자는 아무렇지 않게 진실을 감춘 채로 사라지겠지.
+Garv:그 전에 다른 피해자가 발생할 가능성도 배제할 수 없고 말이야.
+Garv:우리는 Gwen이 결백한 지 확실하게 밝히고, 조사를 계속해야 하네.
+Garv:Donovan이 갔던 곳을 살펴봐야 할 것 같구먼.
+next:root3
+action end
+
+action:statement:root3-captain
+Garv:그녀는 굉장히 곧은 사람이었지.
+Garv:열심히 일하고, 정직하고, 난 그런 사람을 좋아한다네.
+Garv:그렇지만 아직 젊어서 이상적이고 감정적이지.  삶은 그렇게 만만하지 않은데 말이야.
+next:root3-captain2
+action end
+
+action:response:root3-captain2
+<player>
+root3-captain2-A:감정적이라는 게 무슨 뜻?
+root3-captain2-B:그녀랑 같이 있었던 적이 있는지?
+</>root3-null:관둔다.
+action end
+
+action:statement:root3-captain2-A
+Garv:주변을 둘러보게.  주변의 사람들, 그리고 우리가 어디에 있는지.
+Garv:자네는 지금 연옥에 있어.  우리가 모두 그렇고, 그런 사실을 알고 있지.  무엇인가가 잘못되었고, 그래서 우리가 이런 쓰레기 더미 위에 있는 것이야.
+Garv:우리 모두가 원하는 것은 이 곳에서 벗어나 다시 제대로된 삶으로 돌아가는 것이지.
+Garv:하지만 선장은...여기서 정말로 뭔가 중요한 일을 하고 있다고 생각하는 모양이더군.  이 곳을 제대로된 장소로 만들려고 노력하고 있었어.
+Garv:좀 슬픈 일이지 않은가?
+next:root3-captain2
+action end
+
+action:statement:root3-captain2-B
+Garv:내 애완동물을 들킨 것이 첫 만남이었지.
+Garv:이 배에는 애완동물 반입금지 조항이 있다는데, 난 그걸 그때 처음 들어서 말이야.
+Garv:다른 직원들은 신경 안 썼는데, 뭐 그녀는 규칙대로 한 것이지.
+Garv:그게 이 배의 선장이라네.
+next:root3-captain2
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// CHAPTER 3  GHOST DARRYL - GARV  ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+GhostDarryl-Garv
+
+action:response:root
+<player>
+<!>chap6:당신은 굉장히 침착해 보이네요.
+root-2:우리가 무엇을 해야할 지?
+root-3:누가 선장을 없애고 싶어했다고 생각하는지?
+</>root2-null:관둔다.
+action end
+
+action:statement:root-2
+Garv:내가 탐정은 아니지만 말이야, 세상에 완전범죄는 없는 법이라네.
+Garv:무엇인가 알고있는 누군가가 있거나, 흔적이 남아있을 것이네.
+Garv:어딘가에는 이 문제를 해결할 수 있는 열쇠가 있을 것이야.
+next:root
+action end
+
+action:statement:root-3
+Garv:누구를 의심하게 만들려고 하는 건 아니네만, 그 일등항해사가 좀 이상하다고 생각하지 않는가?
+Garv:그는 이상할 정도로 선장님이 무사하다는 것을 확신한단 말이지.
+next:root
+action end
+
+
+
+action:statement:chap6
+Garv:자네도 그런 것 같네만.
+Garv:사람들이 사라지고 있어.  무슨 일이 일어날 지 걱정되지 않는가?
+next:chap6-2
+action end
+
+action:response:chap6-2
+<player>
+chap6-A:딱히 잃을 게 없어서 그런 걸지도요.
+chap6-B:딱히 다른 사람들한테 무슨 일이 일어나던 신경쓰지 않아서 그런 걸지도요.
+</>root-null:떠난다.
+action end
+
+action:statement:chap6-A
+Garv:상실은 삶의 일부지.  아무것도 잃을 것이 없다면, 그건 정말로 살아있다고 말할 수 있는 것인가?
+next:chap6-life
+action end
+
+action:response:chap6-life
+<player>
+chap6-life2:저는 그냥 살아있는 시체에요.
+chap6-life3:당신은 많은 것을 잃어온 것 같은데, 아직 더 잃을 것이 남아있나요?
+action end
+
+action:statement:chap6-life2
+Garv:나도 한때 그렇게 느낀 적이 있었지.
+Garv:자네에게 지금 필요한 건 시간인 것 같구먼.
+Garv:시간은 모든 것을 이긴다네.
+next:chap6-2
+action end
+
+action:statement:chap6-life3
+Garv:내 자신이 남아있지 않은가.  그리고 내 일도 남아있지.
+Garv:그 둘만은 내가 앞으로도 잃지 않을 것들이네.
+next:chap6-2
+action end
+
+action:statement:chap6-B
+Garv:차갑구먼.
+Garv:그런 차가운 말을 들으면 다른 사람들은 충격 받을지도 모르네.
+next:chap6-cold
+action end
+
+action:response:chap6-cold
+<player>
+chap6-cold2:당신은 아니죠.  당신도 나와 똑같이 느끼는 것 같은데요.
+chap6-cold3:변호사로 몇십년을 살아보니, 사람을 보게 되는 방식이 달라지더군요.:trigger.chap6garvCold.on
+chap6-trigger.chap6garvCold:사람들은 다 거짓말쟁이고 사기꾼이죠.  왜 저말고 다른 사람들을 신경써야 합니까?:trigger.chap6GarvClue2.on
+action end
+
+action:statement:chap6-cold2
+Garv:나는...나는 그렇지 않다네.
+next:chap6-cold
+action end
+
+action:statement:chap6-cold3
+Garv:그런가?  알 것 같구먼.  언제나 사람들의 최악의 면만 보게 되는 일이니...
+Garv:부작용이 있는 일이로군.  사람들의 진짜 모습을 보게 되는 건, 정말로 끔찍한 일이지.
+next:chap6-cold
+action end
+
+action:statement:chap6-trigger.chap6garvCold
+Garv:맞는 말이야.  사람들은 모두 서로에게 값어치를 매기지.  더 큰 것을 위해서라면 얼마든지 뒤에서 칼을 찌를 것이야.
+Garv:내가 어렸을 때는 반대로 생각했었지.  순진했지.  하지만 진실을 배웠다네.
+Garv:처음은 결혼이었지.  그녀가 나를 몇년 동안 속였어.
+Garv:그녀는 법정에서도 거짓말을 했고, 내 집과 아이들을 빼앗아갔지.
+Garv:다음은 직장에서야.  회사에 나의 모든 걸 바쳤다네.
+Garv:내가 모든 걸 가지고 있을 때에는 모두 잘 대해줬지.  그런데 내가 모든 걸 잃어버렸을 때에는, 주변에 아무도 남지 않았어.
+Garv:인간이란...그냥 동물일 뿐이야.  육식 동물.
+Garv:자네는 먹이 사슬의 꼭대기에 있는 것 같구먼.
+next:root-null
+action end
+
+
+dialogue end
+
+
+
+
+
+
+
+// CHAPTER 4  GHOST DARRYL - GARV ////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+GhostDarryl-Garv
+
+action:response:root3
+<player>
+<!>chap6:당신은 굉장히 침착해 보이네요.
+root3-A:Donovan과 Paulo에게 무슨 일이 일어났다고 생각하는지?
+root3-B:Gwen이 범인이라고 생각하는지?
+root3-C:이런 일들이 일어난 이유가 뭐라고 생각하는지?
+root-null:관둔다.
+action end
+
+action:statement:root3-A
+Garv:선장님에게 일어난 것과 같은 일이 일어났겠지.
+next:root3
+action end
+
+action:statement:root3-B
+Garv:배의 직원들은 대부분 그렇다고 생각하는 것 같더구먼.
+Garv:나는 좀 의문스럽다네.
+next:root3-B1
+action end
+
+action:response:root3-B1
+<player>
+root3-B2:어떤 의문?
+root3-B3:진범이 누구라고 생각하는 지?
+root3-B4:Gwen의 결백을 밝힐 방법?
+root3-null:관둔다.
+action end
+
+action:statement:root3-B2
+Garv:유일한 증거는 Gwen의 방에서 열쇠가 나왔다는 것이지.
+Garv:하지만 그 열쇠를 그녀의 방에 몰래 놔두는 것은 정말로 간단한 일이지 않은가.
+Garv:그래서 사실 그것만 가지고는 그녀가 살인에 연관되었다는 증거가 전혀 되지 않는다네.
+next:root3-B1
+action end
+
+action:statement:root3-B3
+Garv:Gwen이 범인이라고 지목된 경위를 고려하면, 이 배의 직원 중에 범인이 있거나...혹은 최소한 가담한 것이 아닐까 생각하네.
+Garv:만약 배의 직원이 그녀의 방에 열쇠를 가져다 둔 것이라면, 수색 중에 열쇠가 발견되는 것도 당연하겠지.
+Garv:수색이 좀 갑작스러운 면도 있었다고 생각한다네.  선장의 실종에 대한 반응은 그렇게 느렸는데 말이야.
+next:root3-B1
+action end
+
+action:statement:root3-B4
+Garv:Gwen이 Donovan에게서 열쇠를 빼앗은 것이 아니라는 것만 증명한다면 충분하겠지.
+Garv:이 배의 직원들이 열쇠를 발견했지.  나는 분명 그들 중에 그녀를 범인으로 몰아가려한 사람이 있다고 생각하네.
+Garv:그들이 진실을 말해준다면, 진범에 한발짝 다가갈 수 있을 것이야.
+next:root3-B2
+action end
+
+action:statement:root3-C
+Garv:Donovan이 선장을 찾고 있던 거라면, 범인이 자신이 들키는 것을 막으려고 그랬다고 생각할 수 있지.
+Garv:Paulo군에 대한 건 모르겠다네.  그는 언제나 자기 방에만 있어서, 어떻게 사건과 연관된 것인지 모르겠구먼.
+Garv:내 생각에는 살인자가 무차별적이고 무계획적인 것 같다네.
+next:root3
+action end
+
+
+
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

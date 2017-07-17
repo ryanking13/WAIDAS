@@ -55,6 +55,7 @@ root2-1:선장에게 무슨 일이 있어났다고 생각하는지?
 root2-2:우리가 무엇을 해야할 지?
 root2-3:누가 선장을 없애고 싶어했다고 생각하는지?
 root2-captain:선장에 대해서 뭔가 말해줄 수 있는 것?
+root-trigger.chap3SecretArea:이 배의 숨겨진 공간에 대해서 아는 것이 있는지?
 </>root2-null:관둔다.
 action end
 
