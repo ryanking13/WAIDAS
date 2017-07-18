@@ -10,45 +10,45 @@ Ghost-Marcurio
 
 action:response:root
 <player>
-root-1:When was the last time you saw the captain?
-root-2:Have you noticed anything odd around the ship recently?
-</>root-null:Never mind.
+root-1:선장님을 마지막으로 본 것이 언제?
+root-2:최근 배에서 이상한 것을 본 적 있는지?
+</>root-null:관둔다.
 action end
 
 action:statement:root-1
-Marcurio:The captain?  Hmm...
-Marcurio:I know I saw her last night, but I don't think I've seen her today.
+Marcurio:선장님?  흠...
+Marcurio:어제 밤에 봤었지, 오늘 본 기억은 없군.
 next:root-1-A
 action end
 
 action:response:root-1-A
 <player>
-root-1-B:Doesn't that seem strange to you?
-</>root-null:Never mind.
+root-1-B:뭔가 이상하지 않아?
+</>root-null:관둔다.
 action end
 
 action:statement:root-1-B
-Marcurio:Eh, not really.  It's not like she ever swings by the kitchen.
-Marcurio:She's also not much of a people person.  Wouldn't be the first time I went a day without seeing her.
+Marcurio:별로.  그녀가 심심하면 부엌에 들르는 것도 아니고.
+Marcurio:별로 사람이랑 지내는 걸 좋아하는 분도 아니니.  하루종일 안 보인 게 이번이 처음도 아닐 걸.
 next:root-null
 action end
 
 action:statement:root-2
-Marcurio:Why, what's up?
-Marcurio:Oh, are you playing detective for Xu or something?
+Marcurio:무슨 일이야?
+Marcurio:Xu랑 탐정놀이라도 하는 중인가?
 next:root-2-A
 action end
 
 action:response:root-2-A
 <player>
-root-2-B:Answer the qestion.  This is serious.
-</>root-2-null:Never mind.
+root-2-B:질문에 대답해.  심각한 문제야.
+</>root-2-null:관둔다.
 action end
 
 action:statement:root-2-B
-Marcurio:Oh, is that right?
-Marcurio:In that case, no, I haven't seen anything strange.
-Marcurio:But go ahead, play detective.  Have fun.
+Marcurio:오, 그러셔?
+Marcurio:별로 이상한 건 본 적 없어.
+Marcurio:탐정 놀이 재밌게 하셔.
 next:root-null
 action end
 
@@ -66,76 +66,76 @@ Ghost-Marcurio
 
 action:response:root2
 <player>
-root2-1:What do you think has happened to the captain?
-root2-2:What should we all do?
-root2-3:Who might want to get rid of the captain?
-root2-4:What can you tell me about the captain?
-root-trigger.chap3SecretArea:Do you know about any secret areas on the ship?
-<!>trigger.chap6kitchenExposed:I found some interesting things in the kitchen cabinet and fridge...
-</>root2-null:Never mind.
+root2-1:선장에게 무슨 일이 있어났다고 생각하는지?
+root2-2:우리가 무엇을 해야할지?
+root2-3:누가 선장을 없애고 싶어했다고 생각하는지?
+root2-4:선장에 대해서 뭔가 말해줄 수 있는 것?
+root-trigger.chap3SecretArea:이 배의 숨겨진 공간에 대해서 아는 것이 있는지?
+<!>trigger.chap6kitchenExposed:주방의 캐비넷이랑 냉장고에서 흥미로운 것을 발견했는데...
+</>root2-null:관둔다.
 action end
 
 action:statement:root2-1
-Marcurio:At first I thought she was just holed up somewhere, but now...
-Marcurio:It's not a big ship.  I would have seen her by now.  I'm sure of it.
-Marcurio:The only possibility is she isn't on the ship anymore.
+Marcurio:처음에는 어디 구멍에 빠진 게 아닌가 생각했죠, 지금은...
+Marcurio:별로 큰 배가 아니니니까요.  지금까지 못 찾았다면 확실하죠.
+Marcurio:그녀는 더 이상 이 배에 없습니다.
 next:root2
 action end
 
 action:statement:root2-2
-Marcurio:I can only speak for myself.  I'm going to continue to do my job.
-Marcurio:Other than that, shit.  If it comes down to it, what do we do?  Arrest each other?
+Marcurio:저에 대해서 말하자면, 계속 맡은 일을 할 겁니다.
+Marcurio:그것 말고는, 젠장.  대체 뭘 해야 할까요?  서로 체포라도 해야 하나?
 next:root2
 action end
 
 action:statement:root2-3
-Marcurio:Jesus, I don't know.  No one?
-Marcurio:She barely started working on the ship, so it's not like anyone had enough time to dislike her.
+Marcurio:모릅니다.  아무도 없을 걸요?
+Marcurio:그녀는 이제 막 이 배에서 일하기 시작했으니, 벌써 누가 그녀를 증오할 것 같지는 않군요.
 next:root2
 action end
 
 action:statement:root2-4
-Marcurio:Not much.  She's worryingly absent, recently.
+Marcurio:잘 몰라요.  최근에 안 보이는 게 걱정될 뿐이죠.
 next:root2-captain
 action end
 
 action:response:root2-captain
 <player>
-root2-captain-A:Is that all you can say?
-root2-trigger.SmillaMarcurio:But you haven't gotten along with her very well.:trigger.SmillaMarcurio2.on
-root2-trigger.SmillaMarcurio2:What kinds of things did she micromanage?:trigger.GhostBGProgressMarcurio.on
-</>root2-null:Never mind.
+root2-captain-A:그게 전부?
+root2-trigger.SmillaMarcurio:당신은 그녀와 별로 사이가 안 좋았다고 들었는데?:trigger.SmillaMarcurio2.on
+root2-trigger.SmillaMarcurio2:어떤 걸 세세하게 관리했는지?:trigger.GhostBGProgressMarcurio.on
+</>root2-null:관둔다.
 action end
 
 action:statement:root2-captain-A
-Marcurio:I dunno, what do you want me to tell you?
-Marcurio:I work in the kitchen all day.  She drives the ship.  Didn't see her a lot.
+Marcurio:뭘 듣기를 원하는 건가요?
+Marcurio:저는 하루 종일 주방에서 일하고, 그녀는 항해를 관리하죠.  별로 볼 일이 없어요.
 next:root2-captain
 action end
 
 action:statement:root2-trigger.SmillaMarcurio
-Marcurio:Ugh.  Everyone's a gossip around here, huh?
-Marcurio:Well, it's not my fault she was a nazi about everything.
-Marcurio:I mean, look around you.  Do you think this is a four-star cruise line heading to Bermuda?
-Marcurio:And she couldn't accept other peoples' word on things.  She had to micromanage everything.
+Marcurio:그런 가십거리는 다들 어디서 듣는지.
+Marcurio:뭐, 그녀는 좀 독재자스러운 면이 있었죠.
+Marcurio:둘러봐요.  이게 4성급 크루즈 선도 아니잖아요.
+Marcurio:근데 그녀는 다른 사람들의 말을 안 듣고, 모든 걸 세세하게 관리하려고 했죠.
 next:root2-captain
 action end
 
 action:statement:root2-trigger.SmillaMarcurio2
-Marcurio:You know she always wanted to come back here and check on the stock?  And the appliances?
-Marcurio:I've been running this kitchen immaculately for a very long time.  I know what I'm doing.
-Marcurio:You know, we've got our own way of doing things here, and there are reasons for them.
-Marcurio:Very good reasons.
+Marcurio:그녀가 매일 와서 식자재 잔량을 확인하고 기구를 점검한 것 알아요?
+Marcurio:저는 오랫동안 주방을 빈틈없이 관리해왔어요.  저는 제가 뭘 해야하는지 안다구요.
+Marcurio:다 우리만의 방식이 있고, 그런 일을 하는 이유가 있어요.
+Marcurio:아무 합리적인 이유가.
 next:root2-captain
 action end
 
 
 
 action:statement:root-trigger.chap3SecretArea
-Marcurio:I know that some people like to think this ship was used for smuggling back in the day, and had secret compartments.
-Marcurio:But I'll bet the ship was just as boring and useless then as it is now.
-Marcurio:In all my time here, I certainly haven't seen anything that would tell me otherwise.
-Marcurio:The first-mate, on the other hand, loves to romanticize this heap of metal.  Maybe you should ask him.
+Marcurio:사람들은 이 배가 예전에 밀수선이었고, 숨겨진 공간이 있을 거라고들 얘기하더군요.
+Marcurio:근데 제 생각에 이 배는 지금처럼 아무 쓸모없는 배였을 겁니다.
+Marcurio:지금까지 쭉 여기서 일한 결과, 그게 제가 내린 결론이에요.
+Marcurio:일등항해사님은 뭐, 이 철덩어리를 사랑하는 것같으니, 그 사람한테 물어보시죠.
 next:root-null
 action end
 
@@ -158,129 +158,129 @@ Ghost-Marcurio
 
 action:response:root3
 <player>
-root3-A:What do you think happened to Donovan and Paulo?
-root3-B:Do you believe that Gwen is guilty?
-root3-C:Why do you think all of this has happened?
-root3-D:What should we do now?
-root3-captain:What can you tell me about the captain?
-<!>trigger.chap6kitchenExposed:I found some interesting things in the kitchen cabinet and fridge...
-</>root-null:Never mind.
+root3-A:Donovan과 Paulo에게 무슨 일이 일어났다고 생각하는지?
+root3-B:Gwen이 범인이라고 생각하는지?
+root3-C:이런 일들이 일어난 이유가 뭐라고 생각하는지?
+root3-D:이제 뭘 해야 할지?
+root3-captain:선장님에 대해서 뭔가 말해줄 수 있는 것?
+<!>trigger.chap6kitchenExposed:주방의 캐비넷이랑 냉장고에서 흥미로운 것을 발견했는데...
+</>root-null:관둔다.
 action end
 
 action:statement:root3-A
-Marcurio:The same thing that happened to the captain, I'd guess.
-Marcurio:If they aren't on the ship, they must be off of it.
-Marcurio:And I don't think it's likely three people all lost their footing and slipped off at the same time.
-Marcurio:So the answer's pretty simple.  Someone killed them.
+Marcurio:선장님에게 일어난 일과 같은 일이겠지요.
+Marcurio:배에서 찾을 수 없다면, 배에 없는 것이죠.
+Marcurio:세 사람이 동시에 구멍에 실수로 빠졌다는 건 있기 어려운 일이잖습니까.
+Marcurio:간단해요.  누군가 그들을 죽인 겁니다.
 next:root3-A1
 action end
 
 action:response:root3-A1
 <player>
-root3-A2:You don't seem very upset.
-root3-A3:How do you think they were killed?
-</>root-null:Never mind.
+root3-A2:당신은 별로 당황한 것 같지 않다.
+root3-A3:그들이 어떻게 죽었다고 생각하는지?
+</>root-null:관둔다.
 action end
 
 action:statement:root3-A2
-Marcurio:Being upset or not has nothing to do with it.
-Marcurio:Weepin' doesn't bring anyone back.  So I've learned to stop trying a long time ago.
-Marcurio:Besides, I didn't know any of those people.
+Marcurio:딱히 당황할 이유가 없죠.
+Marcurio:울어봤자 누가 살아돌아오지 않아요.  어릴 적부터 그걸 배웠죠.
+Marcurio:또, 그 둘은 제가 모르는 사람이니까요.
 next:root3-A1
 action end
 
 action:statement:root3-A3
-Marcurio:How the hell am I supposed to know?
-Marcurio:Considering we haven't found any crime scene, I'd guess it was quick and quiet.
-Marcurio:Anything else is random guessing.
+Marcurio:제가 그걸 어떻게 압니까?
+Marcurio:아무도 살해 현장을 못 찾았다는 건, 아주 조용하고 빠르게 이루어졌다는 거겠죠.
+Marcurio:그 외에는 다 상상일 뿐입니다.
 next:root3-A1
 action end
 
 
 action:statement:root3-B
-Marcurio:It kinda speaks for itself, doesn't it?
-Marcurio:The master key was last seen with Donovan.  He goes missin', and all of a sudden Gwen has it?
-Marcurio:We also know Donovan would have never willingly given it to anyone.  He was on some sort of crusade.
+Marcurio:그럴 수밖에 없는 상황이죠.
+Marcurio:마스터 키가 마지막으로 발견된 것이 Donovan의 방.  그리고 그가 사라졌고, 그걸 갑자기 Gwen이 가지고 있다?
+Marcurio:Donovan이 당연히 누구한테 줬을리는 없죠.  그는 그걸로 어떤 대단한 일을 하려는 것 같았으니까요.
 next:root3-B1
 action end
 
 action:response:root3-B1
 <player>
-root3-B2:You didn't answer the question.
-root3-B3:What if the key was planted in her room?
-root3-B4:Why do you think she did it, then?
-</>root3-null:Never mind.
+root3-B2:당신은 질문에 제대로 대답하지 않았다.
+root3-B3:만약 누가 그녀의 방에 열쇠를 가져다 둔 것이라면?
+root3-B4:왜 그녀가 그랬다고 생각하는지?
+</>root3-null:관둔다.
 action end
 
 action:statement:root3-B2
 Marcurio:....
-Marcurio:Yes.  I think it was Gwen.  Happy?
+Marcurio:예. 저는 Gwen이 범인이라고 생각합니다.  이걸로 만족해요?
 next:root3-B1
 action end
 
 action:statement:root3-B3
-Marcurio:Interesting thought, but I doubt it.
-Marcurio:For that to make sense, the person who had planted it would have to know for sure it would be found.
-Marcurio:No one had any control or foresight over where we searched, or if we even searched anything at all, except for the ship staff.
-Marcurio:And I know staff isn't involved in this.
+Marcurio:재미있는 생각이지만, 아닐 것 같군요.
+Marcurio:그게 가능하려면, 열쇠를 숨겨놓은 사람은 그것이 발견될 것이라 확신하고 있어야 해요.
+Marcurio:아무도 우리가 어떻게 수색을 할 지 모르는 상황이었죠, 아예 수색을 안 할수도 있었구요.  배의 직원을 제외하고는요.
+Marcurio:저는 배의 직원이 이 일에 연관되었다고는 생각하지 않습니다.
 next:root3-B1
 action end
 
 action:statement:root3-B4
-Marcurio:Who the hell knows.
-Marcurio:She did seem kinda off.  It's always the quiet unassuming ones, isn't it?
-Marcurio:She could just be nuts.  I've seen dumber reasons for murder than that.
+Marcurio:그걸 누가 압니까.
+Marcurio:그녀는 좀 이상해보였죠.  언제나 조용히 있었구요.
+Marcurio:어쩌면 그냥 미쳤던 걸지도 모르죠.
 next:root3-B1
 action end
 
 
 action:statement:root3-C
-Marcurio:What makes you so sure there's one big reason?
-Marcurio:Sometimes, shit happens.  Sometimes worse than other times.
+Marcurio:왜 꼭 하나의 거창한 이유가 있을거라고 생각합니까?
+Marcurio:가끔씩 그냥 거지같은 일이 생기는 거죠.
 next:root3
 action end
 
 
 action:statement:root3-D
-Marcurio:We've got Gwen restrained.  That should be the end of it.
-Marcurio:We can wait 'til we hit land and there's an official investigation.
-Marcurio:Though honestly, what are they gonna find that we already haven't?
+Marcurio:우리가 Gwen을 속박해뒀어요.  그걸로 끝입니다.
+Marcurio:이대로 육지에 도착할 때까지 기다렸다가, 경찰이 조사하게 하면 돼요.
+Marcurio:솔직히, 그 사람들이 우리가 못 찾은 걸 찾을 수 있을지는 모르겠네요.
 next:root3
 action end
 
 
 action:statement:root3-captain
-Marcurio:Not much.  It's a shame what has happened, that's for sure.
+Marcurio:별로.  그녀에게 일어난 일은 안타깝네요.
 next:root3-captain2
 action end
 
 action:response:root3-captain2
 <player>
-root3-captain2-A:Is that all you can say?
-root3-trigger.SmillaMarcurio:But you haven't gotten along with her very well.:trigger.SmillaMarcurio2.on
-root3-trigger.SmillaMarcurio2:What kinds of things did she micromanage?:trigger.GhostBGProgressMarcurio.on
-</>root3-null:Never mind.
+root3-captain2-A:그게 전부?
+root3-trigger.SmillaMarcurio:당신은 그녀와 별로 사이가 안 좋았다고 들었는데?:trigger.SmillaMarcurio2.on
+root3-trigger.SmillaMarcurio2:어떤 걸 세세하게 관리했는지?:trigger.GhostBGProgressMarcurio.on
+</>root3-null:관둔다.
 action end
 
 action:statement:root3-captain2-A
-Marcurio:I dunno, what do you want me to tell you?
-Marcurio:I work in the kitchen all day.  She drives the ship.  Didn't see her a lot.
+Marcurio:뭘 듣기를 원하는 건가요?
+Marcurio:저는 하루 종일 주방에서 일하고, 그녀는 항해를 관리하죠.  별로 볼 일이 없어요.
 next:root3-captain2
 action end
 
 action:statement:root3-trigger.SmillaMarcurio
-Marcurio:Ugh.  Everyone's a gossip around here, huh?
-Marcurio:Well, it's not my fault she was a nazi about everything.
-Marcurio:I mean, look around you.  Do you think this is a four-star cruise line heading to Bermuda?
-Marcurio:And she couldn't accept other peoples' word on things.  She had to micromanage everything.
+Marcurio:그런 가십거리는 다들 어디서 듣는지.
+Marcurio:뭐, 그녀는 좀 독재자스러운 면이 있었죠.
+Marcurio:둘러봐요.  이게 4성급 크루즈 선도 아니잖아요.
+Marcurio:근데 그녀는 다른 사람들의 말을 안 듣고, 모든 걸 세세하게 관리하려고 했죠.
 next:root3-captain2
 action end
 
 action:statement:root3-trigger.SmillaMarcurio2
-Marcurio:You know she always wanted to come back here and check on the stock?  And the appliances?
-Marcurio:I've been running this kitchen immaculately for a very long time.  I know what I'm doing.
-Marcurio:You know, we've got our own way of doing things here, and there are reasons for them.
-Marcurio:Very good reasons.
+Marcurio:그녀가 매일 와서 식자재 잔량을 확인하고 기구를 점검한 것 알아요?
+Marcurio:저는 오랫동안 주방을 빈틈없이 관리해왔어요.  저는 제가 뭘 해야하는지 안다구요.
+Marcurio:다 우리만의 방식이 있고, 그런 일을 하는 이유가 있어요.
+Marcurio:아주 합리적인 이유가.
 next:root3-captain2
 action end
 
@@ -289,146 +289,146 @@ action end
 
 
 action:statement:trigger.chap6kitchenExposed
-Marcurio:You mean, the cabinet and fridge that I always have tightly locked when I'm not around?
-Marcurio:Yes, I'm sure you have.
+Marcurio:제가 언제나 잠궈놓는 저 캐비넷과 냉장고를 말하는 겁니까?
+Marcurio:어디 말해보시죠.
 next:chap6Garv
 action end
 
 action:response:chap6Garv
 <player>
-chap6Garv-trigger.chap6fridgeAlcohol:There was a strange smell of alcohol in the fridge.
-chap6Garv-trigger.chap6cabinetBox:I found a box with weird notes in the cabinet.
-chap6Garv-trigger.chap6ledger:There was a ledger of kitchen stock in the cabinet.
-chap6Garv-trigger.chap6marcurioSummary:I get the feeling you're holding out a lot on me.
-</>chap6Garv-null:Never mind.
+chap6Garv-trigger.chap6fridgeAlcohol:냉장고에서 알콜 냄새가 났다.
+chap6Garv-trigger.chap6cabinetBox:캐비넷에 수상한 메모지가 들어있는 박스가 있었다.
+chap6Garv-trigger.chap6ledger:캐비넷에 식자재에 대한 장부가 있었다.
+chap6Garv-trigger.chap6marcurioSummary:당신 많은 걸 숨기고 있는 것 같다.
+</>chap6Garv-null:관둔다.
 action end
 
 action:statement:chap6Garv-trigger.chap6fridgeAlcohol
-Marcurio:Wait...how did you get into the fridge?  I definitely locked it.
-Marcurio:Er, I mean, I don't know what you're talking about.
+Marcurio:잠깐...냉장고는 어떻게 열어본 겁니까?  분명히 잠궈놨는데.
+Marcurio:어, 무슨 소리를 하는 건지 모르겠군요.
 next:chap6Garv-denial
 action end
 
 action:response:chap6Garv-denial
 <player>
-chap6Garv-alcohol1:That's not going to work.  Why are you trying to lie to me?
-chap6Garv-alcohol2:There isn't a bar on the ship.  What are you doing with all that booze?
-chap6Garv-trigger.chap6fridgeBooze:How do you not know what it was?  You were the one stocking it.
-</>chap6Garv:Back to my other questions...
+chap6Garv-alcohol1:왜 감추려 하는가?
+chap6Garv-alcohol2:이 배에 술집은 없는데, 왜 술이 있는 것인지?
+chap6Garv-trigger.chap6fridgeBooze:당신이 관리자면서, 무엇이 들어있는지 모른다는 게 말이 되는 일인지?
+</>chap6Garv:다른 질문
 action end
 
 action:statement:chap6Garv-alcohol1
-Marcurio:Alright, fine, you got me.
-Marcurio:But you had no right to be rooting around the kitchen in the first place!
+Marcurio:그래요, 말할게요.
+Marcurio:하지만 당신이 주방의 물건을 살펴볼 권리가 없다는 건 확실하게 말해둬야겠습니다!
 next:chap6Garv-denial
 action end
 
 action:statement:chap6Garv-alcohol2
-Marcurio:I'm not drinking on the side, if that's what you're insinuating.
-Marcurio:Anyway, it wasn't booze you were smelling.  I'm not sure what the stuff was, I never drank it.
+Marcurio:혹시 의심하고 있으실까봐 말하자면, 제가 몰래 마시려고 가져다둔 건 아니에요.
+Marcurio:당신이 맡은 냄새는 술이 아니에요.  정확히 뭔 지는 모르겠는데, 일단 저는 마신 적이 없습니다.
 next:chap6Garv-denial
 action end
 
 action:statement:chap6Garv-trigger.chap6fridgeBooze
-Marcurio:It's...it's not stuff I used for cooking, exactly.  I just stored it there to keep it cool.
-Marcurio:It was some kind of medicinal supplies.  So it's outside my department.
+Marcurio:그건 그...제가 요리에 사용하는 재료가 아니라서요.  그냥 차갑게 보관하고만 있는 거에요.
+Marcurio:의약품의 일종이라, 저는 잘 모르는 분야입니다.
 next:chap6Garv-denial
 action end
 
 
 action:statement:chap6Garv-trigger.chap6cabinetBox
-Marcurio:Wait, how did you find that?!  I don't understand...
-Marcurio:Well, you probably have questions about that.
+Marcurio:잠깐, 그건 어떻게 찾은 거에요?!
+Marcurio:뭐, 그것에 대해서 궁금한 게 많으실텐데 물어보시죠.
 next:chap6Garv-notes
 action end
 
 action:response:chap6Garv-notes
 <player>
-chap6Garv-notes1:You were being instructed to pick up and drop off things.  What things?:trigger.chap6marcurioBox.on
-chap6Garv-notes2:Who was writing those notes?
-chap6Garv-notes3:Why are the notes so vague and anonymous?  Does anyone else know about this?:trigger.chap6bribeExcuse.on
-chap6Garv-trigger.chap6bribeExcuse:Stop making excuses.  You're taking bribes.
-</>chap6Garv:Back to my other questions...
+chap6Garv-notes1:어떤 물건을 옮기라고 적혀있었는데, 그게 무엇이었는지?:trigger.chap6marcurioBox.on
+chap6Garv-notes2:누가 그 메모를 쓴 것인지?
+chap6Garv-notes3:왜 메모의 내용이 애매하고 익명인지?  이 일을 아는 다른 사람이 있는지?:trigger.chap6bribeExcuse.on
+chap6Garv-trigger.chap6bribeExcuse:그만 변명해, 뇌물을 받은 거잖아.
+</>chap6Garv:다른 질문
 action end
 
 action:statement:chap6Garv-notes1
-Marcurio:Just supplies from the kitchen, really.  Some food or water.
-Marcurio:Occasionally I've had to drop off things like blankets or cleaning supplies.
-Marcurio:It's all pretty mundane.
+Marcurio:주방의 물건들이죠.  음식이나 물같은 것.
+Marcurio:가끔은 담요나 청소 도구 같은 걸 요구하기도 하더군요.
+Marcurio:언제나 평범한 것들이었어요.
 next:chap6Garv-notes
 action end
 
 action:statement:chap6Garv-notes2
-Marcurio:I don't know.  I keep the notes to try and see if I can figure it out.
-Marcurio:The handwriting changes, meaning it's probably been different people over time.
-Marcurio:The only thing that's clear is that one of these people is on the ship now.
+Marcurio:몰라요.  저도 알아내려고 노력은 했습니다만.
+Marcurio:글씨체가 바뀌는 걸 보면, 시간이 지나면서 계속 다른 사람이 보내는 것 같아요.
+Marcurio:확실한 건 지금 배에 탄 사람 중에 있다는 거죠.
 next:chap6Garv-notes
 action end
 
 action:statement:chap6Garv-notes3
-Marcurio:As far as I can tell, no.  And I'd like it to stay that way.
-Marcurio:It seems shady, but if I wasn't doing this stuff they'd pay someone else to.
-Marcurio:I've been trying to figure out who it is and what their goal is.
+Marcurio:아무도 몰라요.  그리고 이 상태로 두고 싶구요.
+Marcurio:좀 수상하긴 하지만, 딱히 다른 사람에게 피해를 끼치는 일은 없었어요.
+Marcurio:저도 계속 누가 어떤 목적으로 이런 일을 하는 지 알아내려고 했습니다.
 next:chap6Garv-notes
 action end
 
 action:statement:chap6Garv-trigger.chap6bribeExcuse
-Marcurio:Yeah.  I am.
-Marcurio:If you're thinking of turning me in, consider this...
-Marcurio:Someone on this ship is the one bribing me.  And you don't know who it is or how they'll react.
+Marcurio:그래.  맞아요.
+Marcurio:저를 고발할 생각이라면, 잘 생각해봐요.
+Marcurio:이 배의 누군가가 저를 매수하고 있었고, 아직 그게 누군지 모른다는 걸요.
 next:chap6Garv-notes
 action end
 
 
 action:statement:chap6Garv-trigger.chap6ledger
-Marcurio:Shit.  You found that, huh?  I really don't understand how...
+Marcurio:젠장.  그것도 찾았어요?  대체 어떻게...
 next:chap6Garv-ledger
 action end
 
 action:response:chap6Garv-ledger
 <player>
-chap6Garv-ledger1:You've been stealing food from your own kitchen.  Why?:trigger.chap6marcurioLedger.on
-chap6Garv-ledger2:Someone knew what you were doing.  Was it the captain?
-</>chap6Garv:Back to my other questions...
+chap6Garv-ledger1:왜 주방의 식자재를 훔치고 있었던 것인지?:trigger.chap6marcurioLedger.on
+chap6Garv-ledger2:누군가 당신이 하는 일을 알고있었는데, 그게 선장이었는지?
+</>chap6Garv:다른 질문
 action end
 
 action:statement:chap6Garv-ledger1
-Marcurio:Is it really stealing?  
-Marcurio:Well sure, the ship pays for the food...but I'm the one that needs it to do their job.
-Marcurio:Someone really wants a share of the stock.  And they're paying well for it.  Really well.
+Marcurio:그게 정말로 훔쳤다고 말할 수 있는 건가요?
+Marcurio:물론, 배에서 돈을 주고 산 음식들이긴 하지만...결국 그걸 쓸모있게 만드는 건 저잖아요.
+Marcurio:누군가가 식자재를 정말 필요로 했고.  그것에 대한 합당한 대가를 지불했어요.
 next:chap6Garv-ledger
 action end
 
 action:statement:chap6Garv-ledger2
-Marcurio:Yeah, the captain started taking stock of every single thing on the ship.  Including the food.
-Marcurio:She wasn't too happy about her results.
-Marcurio:I feigned incompetence, but I'm not sure she bought it.
+Marcurio:그래요, 선장님이 배의 쌀 한톨까지 신경쓰기 시작했죠.
+Marcurio:별로 결과가 만족스럽지는 않았을 겁니다.
+Marcurio:제가 무능력한 척 했거든요. 그녀가 그걸 눈치챘는지는 모르겠지만.
 next:chap6Garv-ledger
 action end
 
 action:statement:chap6Garv-trigger.chap6marcurioSummary
-Marcurio:I've thought a lot about what all of this is about.
-Marcurio:I have one theory, but it's sort of ridiculous.
+Marcurio:이 모든 일이 대체 뭘까 생각해봤죠.
+Marcurio:제가 낸 결론이 하나 있어요, 좀 이상한 결론이지만요.
 next:chap6Garv-summary
 action end
 
 action:response:chap6Garv-summary
 <player>
-chap6Garv-summary1:What's your theory?
-chap6Garv-summary2:Surely after all this time, you have to have at least one lead.:trigger.chap6GarvClue1.on
+chap6Garv-summary1:어떤 결론?
+chap6Garv-summary2:당연히 그런 많은 일을 했는데, 뭔가 아는 것이 있어야 한다.:trigger.chap6GarvClue1.on
 action end
 
 action:statement:chap6Garv-summary1
-Marcurio:I've considered that someone's smuggling something.  Like an animal.
-Marcurio:They'd need foodstuffs to keep it fed, and something to tranquilize it.
-Marcurio:It's not very plausible though, is it?
+Marcurio:누군가가 뭔가를 밀수하고 있는 거에요.  동물같은 것.
+Marcurio:계속 먹이고 관리하는 데 음식과 여러 물건들이 필요한 거죠.
+Marcurio:뭐, 별로 썩 그럴듯한 얘기는 아니죠?
 next:chap6Garv-summary
 action end
 
 action:statement:chap6Garv-summary2
-Marcurio:I've kept my distance on purpose.
-Marcurio:If I find out too much and they know, the deal would be broken off.  Or something worse.
-Marcurio:Even if I had some magical piece of information, I'm not sure why I'd speak openly about it.
+Marcurio:저는 제 목적에 따라서 일부러 거리를 뒀어요.
+Marcurio:너무 많은 걸 알게되면, 계약이 파기되었을테니까요.  혹은 더 심한 일이 생겼거나.
+Marcurio:제가 남들이 모르는 정보를 알고 있다고 해서, 굳이 말할 필요는 없죠.
 next:null
 action end
 
@@ -449,163 +449,163 @@ GhostXu-Marcurio
 
 action:response:root2
 <player>
-root2-2:What should we all do?
-root2-3:Who might want to get rid of the captain?
-root3-captain:What can you tell me about the captain?
-root-trigger.chap3SecretArea:Do you know about any secret areas on the ship?
-<!>trigger.chap6kitchenExposed:I found some interesting things in the kitchen cabinet and fridge...
+root2-2:우리가 무엇을 해야할지?
+root2-3:누가 선장을 없애고 싶어했다고 생각하는지?
+root3-captain:선장에 대해서 뭔가 말해줄 수 있는 것?
+root-trigger.chap3SecretArea:이 배의 숨겨진 공간에 대해서 아는 것이 있는지?
+<!>trigger.chap6kitchenExposed:주방의 캐비넷이랑 냉장고에서 흥미로운 것을 발견했는데...
 </>root2-null:Never mind.
 action end
 
 
 action:statement:root2-2
-Marcurio:I can only speak for myself.  I'm going to continue to do my job.
-Marcurio:Other than that, who knows.  If it comes down to it, what do we do?  Arrest each other?
+Marcurio:나는 계속 맡은 일을 할 거야.
+Marcurio:그것 말고는, 젠장.  대체 뭘 할 수 있지?  서로 체포라도 해야 하나?
 next:root2
 action end
 
 action:statement:root2-3
-Marcurio:Jesus, I don't know.  No one?
-Marcurio:She barely started working on the ship, so it's not like anyone had enough time to dislike her.
+Marcurio:몰라.  아무도 없을 걸?
+Marcurio:그녀는 이제 막 이 배에서 일하기 시작했으니, 벌써 누가 그녀를 증오할 것 같지는 않은데.
 next:root2
 action end
 
 
 action:statement:root-trigger.chap3SecretArea
-Marcurio:I know that some people like to think this ship was used for smuggling back in the day, and had secret compartments.
-Marcurio:But I'll bet the ship was just as boring and useless then as it is now.
-Marcurio:In all my time here, I certainly haven't seen anything that would tell me otherwise.
-Marcurio:The first-mate, on the other hand, loves to romanticize this heap of metal.  Maybe you should ask him.
+Marcurio:사람들은 이 배가 예전에 밀수선이었고, 숨겨진 공간이 있을 거라고들 얘기하더군.
+Marcurio:근데 내 생각에 이 배는 지금처럼 아무 쓸모없는 배였을 거다.
+Marcurio:지금까지 쭉 여기서 일한 결과, 그게 내가 내린 결론이야.
+Marcurio:일등항해사님은 뭐, 이 철덩어리를 사랑하는 것같으니, 그 사람한테 물어봐.
 next:root-null
 action end
 
 
 
 action:statement:root3-captain
-Marcurio:Not much.  It's a shame what has happened, that's for sure.
+Marcurio:별로.  그녀에게 일어난 일은 안타깝군.
 next:root3-captain2
 action end
 
 action:response:root3-captain2
 <player>
-root3-captain2-A:Is that all you can say?
-root3-trigger.SmillaMarcurio:But you haven't gotten along with her very well.:trigger.SmillaMarcurio2.on
-root3-trigger.SmillaMarcurio2:What kinds of things did she micromanage?:trigger.GhostBGProgressMarcurio.on
-</>root3-null:Never mind.
+root3-captain2-A:그게 전부?
+root3-trigger.SmillaMarcurio:너는 그녀와 별로 사이가 안 좋았지?:trigger.SmillaMarcurio2.on
+root3-trigger.SmillaMarcurio2:어떤 걸 세세하게 관리했는지?:trigger.GhostBGProgressMarcurio.on
+</>root3-null:관둔다.
 action end
 
 action:statement:root3-captain2-A
-Marcurio:I dunno, what do you want me to tell you?
-Marcurio:I work in the kitchen all day.  She drives the ship.  Didn't see her a lot.
+Marcurio:뭘 듣기를 원하는 거야?
+Marcurio:나는 하루 종일 주방에서 일하고, 그녀는 항해를 관리하지.  별로 볼 일이 없어.
 next:root3-captain2
 action end
 
 action:statement:root3-trigger.SmillaMarcurio
-Marcurio:Ugh.  Everyone's a gossip around here, huh?
-Marcurio:Well, it's not my fault she was a nazi about everything.
-Marcurio:I mean, look around you.  Do you think this is a four-star cruise line heading to Bermuda?
-Marcurio:And she couldn't accept other peoples' word on things.  She had to micromanage everything.
+Marcurio:그런 가십거리는 다들 어디서 듣는지.
+Marcurio:뭐, 그녀는 좀 독재자스러운 면이 있었지.
+Marcurio:둘러봐요.  이게 4성급 크루즈 선도 아니잖아.
+Marcurio:근데 그녀는 다른 사람들의 말을 안 듣고, 모든 걸 세세하게 관리하려고 했지.
 next:root3-captain2
 action end
 
 action:statement:root3-trigger.SmillaMarcurio2
-Marcurio:You know she always wanted to come back here and check on the stock?  And the appliances?
-Marcurio:I've been running this kitchen immaculately for a very long time.  I know what I'm doing.
-Marcurio:You know, we've got our own way of doing things here, and there are reasons for them.
-Marcurio:Very good reasons.
+Marcurio:그녀가 매일 와서 식자재 잔량을 확인하고 기구를 점검한 것 알아?
+Marcurio:나는 오랫동안 주방을 빈틈없이 관리해왔다고.  나는 내가 뭘 해야하는지 알아.
+Marcurio:다 우리만의 방식이 있고, 그런 일을 하는 이유가 있는 거야.
+Marcurio:아주 합리적인 이유가.
 next:root3-captain2
 action end
 
 
 action:response:root3
 <player>
-root3-A:What do you think happened to Donovan and Paulo?
-<!>root3-B:Do you believe that Gwen is guilty?
-root3-D:What should we do now?
-root3-captain:What can you tell me about the captain?
-<!>trigger.chap6kitchenExposed:I found some interesting things in the kitchen cabinet and fridge...
-</>root-null:Never mind.
+root3-A:Donovan과 Paulo에게 무슨 일이 일어났다고 생각하는지?
+<!>root3-B:Gwen이 범인이라고 생각하는지?
+root3-D:이제 뭘 해야 할지?
+root3-captain:선장님에 대해서 뭔가 말해줄 수 있는 것?
+<!>trigger.chap6kitchenExposed:주방의 캐비넷이랑 냉장고에서 흥미로운 것을 발견했는데...
+</>root-null:관둔다.
 action end
 
 action:statement:root3-A
-Marcurio:The same thing that happened to the captain, I'd guess.
-Marcurio:If they aren't on the ship, they must be off of it.
-Marcurio:And I don't think it's likely three people all lost their footing and slipped off at the same time.
-Marcurio:So the answer's pretty simple.  Someone killed them.
+Marcurio:선장님에게 일어난 일과 같은 일이겠지.
+Marcurio:배에서 찾을 수 없다면, 배에 없는 거야.
+Marcurio:세 사람이 동시에 구멍에 실수로 빠졌다는 건 있기 어려운 일이지.
+Marcurio:간단해.  누군가 그들을 죽인 거야.
 next:root3-A1
 action end
 
 action:response:root3-A1
 <player>
-root3-A2:You don't seem very upset.
-root3-A3:How do you think they were killed?
-</>root-null:Never mind.
+root3-A2:별로 당황한 것 같지 않은데.
+root3-A3:그들이 어떻게 죽었다고 생각하는지?
+</>root-null:관둔다.
 action end
 
 action:statement:root3-A2
-Marcurio:Being upset or not has nothing to do with it.
-Marcurio:Weepin' doesn't bring anyone back.  So I've learned to stop trying a long time ago.
-Marcurio:Besides, I didn't know any of those people.
+Marcurio:딱히 당황할 이유가 없지.
+Marcurio:울어봤자 누가 살아돌아오지 않아.  어릴 적부터 그걸 배웠지.
+Marcurio:또, 그 둘은 제가 모르는 사람이니까.
 next:root3-A1
 action end
 
 action:statement:root3-A3
-Marcurio:How the hell am I supposed to know?
-Marcurio:Considering we haven't found any crime scene, I'd guess it was quick and quiet.
-Marcurio:Anything else is random guessing.
+Marcurio:내가 그걸 어떻게 알아?
+Marcurio:아무도 살해 현장을 못 찾았다는 건, 아주 조용하고 빠르게 이루어졌다는 거겠지.
+Marcurio:그 외에는 다 상상일 뿐이야.
 next:root3-A1
 action end
 
 
 action:statement:root3-B
-Marcurio:It kinda speaks for itself, doesn't it?
-Marcurio:The master key was last seen with Donovan.  He goes missin', and all of a sudden Gwen has it?
-Marcurio:We also know Donovan would have never willingly given it to anyone.  He was on some sort of crusade.
+Marcurio:그럴 수밖에 없는 상황이지.
+Marcurio:마스터 키가 마지막으로 발견된 것이 Donovan의 방.  그리고 그가 사라졌고, 그걸 갑자기 Gwen이 가지고 있다?
+Marcurio:Donovan이 당연히 누구한테 줬을리는 없지.  그는 그걸로 어떤 대단한 일을 하려는 것 같았으니까.
 next:root3-B1
 action end
 
 action:response:root3-B1
 <player>
-root3-B3:What if the key was planted in her room?
-<!>root3-trigger.chap4QuellaXuConfession:The key Donovan had and the key I found in Gwen's room...they weren't the same.
-</>root3-null:Never mind.
+root3-B3:만약 누가 그녀의 방에 열쇠를 가져다둔 거였다면?
+<!>root3-trigger.chap4QuellaXuConfession:Donovan이 가지고 있던 열쇠랑, Gwen의 방에서 나온 열쇠는...달랐어.
+</>root3-null:관둔다.
 action end
 
 
 action:statement:root3-B3
-Marcurio:Interesting thought, but I doubt it.
-Marcurio:For that to make sense, the person who had planted it would have to know for sure it would be found.
-Marcurio:No one had any control or foresight over where we searched, or if we even searched anything at all, except for the ship staff.
-Marcurio:And I know staff isn't involved in this.
+Marcurio:재미있는 생각이지만, 아닐 것 같군.
+Marcurio:그게 가능하려면, 열쇠를 숨겨놓은 사람은 그것이 발견될 것이라 확신하고 있어야 해.
+Marcurio:아무도 우리가 어떻게 수색을 할 지 모르는 상황이었지, 아예 수색을 안 할수도 있었고.  배의 직원을 제외하고는 말이야.
+Marcurio:나는 배의 직원이 이 일에 연관되었다고는 생각하지 않아.
 next:root3-B1
 action end
 
 action:statement:root3-trigger.chap4QuellaXuConfession
-Marcurio:They...they weren't the same?  That doesn't make sense.
-Marcurio:There should only be one master key to the ship.  What are you saying?
+Marcurio:...달랐다고?  그건 말도 안 돼.
+Marcurio:이 배에 마스터 키는 하나 뿐이라고.  대체 무슨 소리야?
 next:root3-confession
 action end
 
 
 action:statement:root3-C
-Marcurio:What makes you so sure there's one big reason?
-Marcurio:Sometimes, shit happens.  Sometimes worse than other times.
+Marcurio:왜 꼭 하나의 거창한 이유가 있을거라고 생각해?
+Marcurio:가끔씩 그냥 거지같은 일이 생기는 거지.
 next:root3
 action end
 
 
 action:statement:root3-D
-Marcurio:We've got Gwen restrained.  That should be the end of it.
-Marcurio:We can wait 'til we hit land and there's an official investigation.
-Marcurio:Though honestly, what are they gonna find that we already haven't?
+Marcurio:우리가 Gwen을 속박해뒀어.  그걸로 끝이야.
+Marcurio:이대로 육지에 도착할 때까지 기다렸다가, 경찰이 조사하게 하면 돼.
+Marcurio:솔직히, 그 사람들이 우리가 못 찾은 걸 찾을 수 있을지는 모르겠군.
 next:root3
 action end
 
 
 action:response:root3-confession
 Xu
-root3-confession-2:There must be two master keys, then.
-root3-confession-3:I'm saying Gwen must be innocent.  The key in her room wasn't taken from Donovan!
+root3-confession-2:마스터 키가 두 개였던 거지.
+root3-confession-3:Gwen은 결백해.  그녀 방의 열쇠는 Donovan의 것이 아냐!
 action end
 
 action:statement:root3-confession-2
