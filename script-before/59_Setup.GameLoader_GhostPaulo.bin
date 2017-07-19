@@ -10,25 +10,25 @@ Ghost-Paulo
 
 action:response:root2
 ???
-root2-trigger.lookingforxu:What should I do next?
-root2-trigger.xuIsFollowing:What should I do next? 
-root2-trigger.gwenStillUnlocked:What should I do next?  
-root2-trigger.gwenToFerdinand:What should I do next?   
-root2-trigger.gwenMasterKey:What should I do next?    
-root2-trigger.chap2catTime:What should I do next?          
-root2-trigger.ferdinandUnlocked:What should I do next?     
+root2-trigger.lookingforxu:이제 뭘 해야 할까?
+root2-trigger.xuIsFollowing:이제 뭘 해야 할까?
+root2-trigger.gwenStillUnlocked:이제 뭘 해야 할까?
+root2-trigger.gwenToFerdinand:이제 뭘 해야 할까?
+root2-trigger.gwenMasterKey:이제 뭘 해야 할까?
+root2-trigger.chap2catTime:이제 뭘 해야 할까?
+root2-trigger.ferdinandUnlocked:이제 뭘 해야 할까?
 
-root2-trigger.chap3StartHint:What should I do next?      
-root2-trigger.chap3DarrylHint:What should I do next?       
-root2-trigger.chap3XuHint:What should I do next?        
-root2-trigger.chap3DonovanHint:What should I do next?         
+root2-trigger.chap3StartHint:이제 뭘 해야 할까?
+root2-trigger.chap3DarrylHint:이제 뭘 해야 할까?
+root2-trigger.chap3XuHint:이제 뭘 해야 할까?
+root2-trigger.chap3DonovanHint:이제 뭘 해야 할까?
 
-<?>root2-trigger.BeforeChapterThree:About me...
-<?>root2-trigger.ChapterThreeOn:More about me...
-<?>root2-trigger.PaulosBGClosed:About you...
-<?>root2-trigger.PaulosBGOpen:More about you...:trigger.musicPauloUnlocked.on
-<?>root2-aboutShip:About the ship...
-</>root2-null:Nevermind.
+<?>root2-trigger.BeforeChapterThree:나에 대해서...
+<?>root2-trigger.ChapterThreeOn:좀 더 나에 대해서...
+<?>root2-trigger.PaulosBGClosed:너에 대해서...
+<?>root2-trigger.PaulosBGOpen:좀 더 너에 대해서...:trigger.musicPauloUnlocked.on
+<?>root2-aboutShip:배에 대해서...
+</>root2-null:관둔다.
 action end
 
 

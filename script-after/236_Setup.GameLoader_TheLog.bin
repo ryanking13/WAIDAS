@@ -1,0 +1,296 @@
+
+
+//  Bathroom ghost dialogues
+
+
+
+dialogue start
+TheLog
+
+action:statement:root
+???:안녕, 목소리야.
+???:내가 마지막으로 인식된 적이 언제인지 기억 못하겠네.
+???:많은 목소리들이 나에게 닿았지만, 나를 느낄 수 있는 이들은 없었지.
+next:root-2
+action end
+
+action:response:root-2
+???
+<?>root-A:나에게 말하는 거야?
+<?>root-B:당신은 누구지?
+<?>root-C:여기서 뭘 하는 거야?
+<!>root-D:나를 도와줘.
+action end
+
+action:statement:root-A
+???:너는 나에게 말을 걸 수 있어.  나의 존재를 느낄 수 있어.
+???:너 같은 존재를 만난 지 정말 오랜 시간이 지났어.
+???:너는 누구야?
+next:root-A-2
+action end
+
+action:response:root-A-2
+???
+root-A-3:나는 유령이야.  살해당했어.
+root-A-4:내가 누구인지 잊어버렸어.
+root-A-5:"목소리"라는 게 무슨 뜻이야?
+</>root-2:다른 질문
+action end
+
+action:statement:root-A-3
+???:과연, 그렇구나.
+???:너는 이 배의 목소리들 중 하나였어.  그러다 어느 순간 침묵했지.
+???:하지만 넌 침묵할 준비가 되지 않았어.  아직 말해야만 하는 것이 남아있어.
+???:넌 그게 무엇인지 잊어버린 것 같지만, 아직 그것은 남아있어.
+next:root-A-2
+action end
+
+action:statement:root-A-4
+???:너는 네가 모르는 것을 몰라.
+???:너는 아직 말해야만 하는 것이 남아있어.
+???:그게 너를 이 장소에 묶어두고 있어.
+next:root-A-2
+action end
+
+action:statement:root-A-5
+???:그들의 목소리가 들리지 않니?
+???:다른 모든 방향은 조용하지만, 여기에는 목소리들이 가득해.
+???:대부분 무엇인가를 강하게 부르고 있어.  주의, 안전, 휴식, 복수.  비밀이 가득해.
+???:어떤...어떤 다른 목소리들도 있어.
+???:그들은 굉장히 조용해.  나도 듣기 힘들 정도로.
+???:그들은 왜 말하지 않지?
+next:root-A-2
+action end
+
+
+action:statement:root-B
+???:질문을 이해하지 못하겠어.
+???:나는 나야.
+???:예전에는 내가 다른 존재였을 수 있지.  너처럼.  또 다른 목소리들처럼.
+???:나도 몰라.
+next:root-2
+action end
+
+action:statement:root-C
+???:나는 아무것도 하지 않아.
+???:나는 그냥...존재해.
+next:root-C-2
+action end
+
+action:response:root-C-2
+???
+root-C-3:왜 화장실에 있는 거야?
+root-C-4:여기서 사람들을...지켜보고 있는 거야?  화장실에서?
+</>root-2:다른 질문
+action end
+
+action:statement:root-C-3
+???:나는 이 배에서 내가 원하는 곳 어디든지 갈 수 있어.
+???:그냥 어떤 이유로, 여기가...편해.
+next:root-C-2
+action end
+
+action:statement:root-C-4
+???:질문을 이해하지 못하겠어.
+???:목소리들이 이곳에 오면, 굉장히 편안해져.
+???:기분 좋아져.
+next:root-C-2
+action end
+
+action:statement:root-D
+???:이상하네.
+???:네 목소리는 굉장히 커.  심지어...나보다도.
+???:그렇지만, 넌 내가 느낄 수 있는 걸 느끼지 못하고 있어.  너는 모든 목소리를 듣지 못하지?
+???:가끔 여기 들르면, 내가 들은 내용을 말해줄게.
+next:root-null
+action end
+
+
+
+
+
+
+action:statement:nothingNew
+???:내가 지금 아는 것을 다 말해줬어.
+???:나중에 다시 돌아와.
+next:root-null
+action end
+
+action:statement:nothingNewAgain
+???:내가 들은 것을 다 말해줬어.
+???:악몽이 시작되려고 해.  아니면 이미 이것이 다 악몽인 걸까?
+???:다른 목소리들의 차례가 다 지났어.
+???:이제 네 차례야.
+next:root-null
+action end
+
+
+
+
+
+action:statement:chapter1
+???:들려.
+???:아주 혼란스러운 목소리가.
+???:비밀을 감추고 있어.  어떤 것은 작고 가볍지만, 어떤 것은 무거워.
+???:무거워.  아주 무거워...이 배를 가라앉힐 정도로.
+???:이 장소에는 무엇인가 잘못된 것이 있어.  느낄 수 있어?
+???:...
+???:말해줘...너는 이 세상이 정의롭다고 믿니?
+next:chapter1-choice
+action end
+
+action:response:chapter1-choice
+???
+chapter1-yes:그래, 세상은 정의로운 곳이야.:trigger.LogHasSpoken.on
+chapter1-no:정의란 것은 존재하지 않아.:trigger.LogHasSpoken.on
+action end
+
+action:statement:chapter1-yes
+???:너는 모르겠지만, 그 대답은 잔인해.
+???:목소리들이 정의라는 것을 말해...하지만 난 그런 것이 느껴지지 않아.
+???:이 장소에서 고통이 느껴져.  너는 느껴지지 않니?
+next:root-null
+action end
+
+action:statement:chapter1-no
+???:다른 목소리들은 너의 생각에 동의하지 않아.  하지만 그들은 틀렸어.
+???:그들은 몰라.  그들은 알고싶지 않아해.
+???:진실이 그들의 발 아래에 있어, 바로 보이는 곳에...하지만 그들은 아무것도 하지않아.
+???:너는 할 수 있어.
+next:root-null
+action end
+
+
+
+
+action:statement:chapter2
+???:들려.
+???:거짓말하는 목소리가.  잘못된 길을 가고 있어.
+???:너는 진실을 찾고싶어하지만, 목소리들은 너를 잘못된 곳으로 이끌 거야.
+???:그들이 점점 가까이 다가오고있어...누군가는 곧 침묵당할거야.  어떤 목소리가 마지막 소리를 내게 될까?
+???:...
+???:말해줘...너는 인간의 본성이 선하다고 생각하니?
+next:chapter2-choice
+action end
+
+action:response:chapter2-choice
+???
+chapter2-yes:인간은 원래 착해.:trigger.LogHasSpoken.on
+chapter2-no:인간은 원래 사악해.:trigger.LogHasSpoken.on
+action end
+
+action:statement:chapter2-yes
+???:아이는 순수한 상태로 세상에 나온다는 이야기를 들은 적이 있어.
+???:하지만 자라면서, 고통에 잠식당하는 거야.
+???:기생충이 사람 사이를 옮겨다니면서, 태초까지 거슬러 올라가는 거지.
+???:비틀린 이야기구나.
+next:root-null
+action end
+
+action:statement:chapter2-no
+???:아이가 사납고 이기적인 상태로 세상에 나온다는 이야기를 들은 적이 있어.
+???:하지만 자람녀서, 자제력을 배우는 거야.  문명을 깨우치지.
+???:그렇지만 그들의 본성은 남아있어.  가만히 지켜보면서, 때를 기다리는 거야...
+???:슬픈 이야기구나.
+next:root-null
+action end
+
+
+
+
+
+action:statement:chapter3
+???:들려.
+???:목소리가 바뀌었어.  뭔가 아주 사악한 일이 벌어지려고 해.
+???:웃음소리가 들리니?  점점 커지고 있어...
+???:...그게 또 일어날거야.
+???:....그게 또 일어날거야.
+???:...
+???:말해줘...너는 해피 엔딩을 원하니?
+next:chapter3-choice
+action end
+
+action:response:chapter3-choice
+???
+chapter3-yes:응.:trigger.LogHasSpoken.on
+chapter3-no:아니.:trigger.LogHasSpoken.on
+action end
+
+action:statement:chapter3-yes
+???:그건 기쁘지...목소리들은 그걸 원해.  다 끝나고, 모든 게 해결되는 것.
+???:하지만 우리는 끝을 향해 나아가는 걸까?
+???:해피 엔딩을 위해서 희생해야 하는 것이 무엇일지 두려워...
+next:root-null
+action end
+
+action:statement:chapter3-no
+???:가끔은 불쾌한 것이 가장 필요한 것이지.
+???:독을 마셔야만 치료되는 병에 대한 이야기를 들은 적이 있어...
+???:쓴 약이 심하게 번진 종양을 치료하는 것.
+???:하지만 독이 지나가고 나면 대체 무엇이 얼마나 남아있을까?
+next:root-null
+action end
+
+
+
+
+
+
+action:statement:chapter4
+???:들려.
+???:목소리들이 부서지고 있어.  모든 방향으로 흩어지고 있어.
+???:이제 길이 명확하지 않아...구원의 기회야.
+???:사신을 조심해.  모든 곳을 지켜보고있어, 하지만 붉은색만을 볼 수 있지.
+???:죽음은 광기를 심화시킬 뿐.  아래에서는 분노의 비명이 들려.
+???:그것의 마음은 자기자신의 강력한 힘에 의해서 파괴되었어...정말 멍청한 자야.
+???:그것은 너를 검은 방에서 기다려.
+???:...
+???:말해줘...너는 지금까지 일어난 모든 일들을 이해해?
+next:chapter4-choice
+action end
+
+action:response:chapter4-choice
+???
+chapter4-yes:응.:trigger.LogHasSpokenAgain.on
+chapter4-no:아니.:trigger.LogHasSpokenAgain.on
+action end
+
+action:statement:chapter4-yes
+???:모든 것에는 이유가 있어.  우연이란 것은 없어.
+???:느끼지 못할 수도 있지만, 너는 이곳에 이끌려 온 거야.
+???:네가 그들의 목소리를 들었을 수도 있지, 내가 그런 것처럼...
+???:너에겐 특별한 것이 있어.
+???:그래...너만이 이것을 멈출 수 있어.
+next:root-null
+action end
+
+action:statement:chapter4-no
+???:이 장소는 어디에나 있어.
+???:이게 하나의 악몽이라고 생각해?  아니, 이건 현실이야.
+???:언제나 이랬지...네가 무엇을 하던, 계속될 거야.
+???:하지만 다 괜찮아질 거야.
+???:이것만 기억해.  네가 기억하지 않으면 잊혀질 사람들을 기억해.
+next:root-null
+action end
+
+
+
+
+
+
+
+
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+
+
