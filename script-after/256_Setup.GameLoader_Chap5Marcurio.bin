@@ -1,0 +1,116 @@
+
+
+dialogue start
+Marcurio-EvilDonovan
+
+action:response:root
+Marcurio
+root-trigger.chap5XuConfession:나도 Xu와 같은 사람에게서 지시를 받았어.
+root-A:여기 있는 사람 전부를 쏠 생각이야?  미쳤어?!
+root-B:당신이 틀린 거면 어떻게하려고 그래?
+root-C:그래서 당신의 마지막 계획은 뭔데?
+</>root-null:관둔다.
+action end
+
+action:statement:root-A
+Donovan:멍청한 소리 하지마.  다 쏠리가 없잖아.
+Donovan:대부분 쏠 뿐이지.
+next:root
+action end
+
+action:statement:root-B
+Donovan:계속해봐.
+next:root-B-1
+action end
+
+action:response:root-B-1
+Marcurio
+root-B-2:만약 이 배에 연쇄살인마가 안 타고 있다면?  아예 다른 사건이라면?
+root-B-3:네가 들은 살인마에 대한 인적사항이 틀렸다면?
+action end
+
+action:statement:root-B-2
+Donovan:연쇄살인마는 이 배에 있어.
+Donovan:Paulo의 부상이 이전 희생자들과 일치해.  그리고 그런 정보는 아주 일부의 사람들만 알고 있지.
+Donovan:아직 선장은 못 찾았지만, 어쨌든 이건 확실해.
+next:root
+action end
+
+action:statement:root-B-3
+Donovan:난 아주 믿을만한 사람에게서 살인마가 남자라는 정보를 받았어.
+Donovan:아주 구체적인 정보는 아니지만, 딱 적당하게 용의자가 추려졌군.
+next:root
+action end
+
+action:statement:root-C
+Donovan:그런 거 없어.  여기서 끝이다.
+next:root
+action end
+
+
+action:statement:root-trigger.chap5XuConfession
+Donovan:멋진데.  두번째 공범자가 나왔군.
+Donovan:그래서 어떤 지시를 받았지?  누구에게?
+next:root-marcConfession
+action end
+
+action:response:root-marcConfession
+Marcurio
+root-marcConfession-A:모든 지시는 익명이었어.  누군지는 몰라.
+root-marcConfession-B:내가 두번째 열쇠를 받았어.
+root-marcConfession-C:Gwen이 의심받게 하기 위해 그녀의 방에 열쇠를 숨겨놓으라는 지시를 받았어.:trigger.chap5MarcConfession.on
+<!>root-trigger.chap5MarcConfession:열쇠를 나한테 전해주기 전에 꼬마를 납치한 게 틀림없어.  분명히 의도된 거다.:trigger.chap5MarcConfession2.on
+action end
+
+action:statement:root-marcConfession-A
+Donovan:물론 그렇겠지. 그리고 너는 그걸 아무런 의심도 없이 실행했다는 거군.
+Donovan:머저리같으니.
+next:root-marcConfession
+action end
+
+action:statement:root-marcConfession-B
+Donovan:그것도 누군지 모르게 전달되었겠지?  누가 보냈는지 짚이는 것이 있나?
+next:root-marcConfession-B-1
+action end
+
+action:response:root-marcConfession-B-1
+Marcurio
+root-marcConfession-B-2:없어.  한밤중에 청소용구함에 누군가가 놓아두고 갔다.
+action end
+
+action:statement:root-marcConfession-B-2
+Donovan:내가 총에 맞고 난 바로 뒤겠군.
+Donovan:분명 살인자겠군.
+next:root-marcConfession
+action end
+
+action:statement:root-marcConfession-C
+Donovan:술술 불어줘서 고맙군.
+Donovan:하지만 그들이 의심을 피하고 싶었던 거라면, 왜 꼬마를 납치한 거지?
+Donovan:그 두 행동은 완전히 모순되는 것 같은데 말이야...
+next:root-marcConfession
+action end
+
+action:statement:root-trigger.chap5MarcConfession
+Donovan:맞아...우연이란 건 존재하지 않아.
+Donovan:하지만 모순된단 말이지.  만약 열쇠를 버리고 의심받지 않는 것이 목적이었다면...왜 희생자를 늘린 거지?
+Donovan:뭔가 놓치고 있는 것이 있어...
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

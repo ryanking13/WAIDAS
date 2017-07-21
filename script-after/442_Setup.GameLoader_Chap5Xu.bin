@@ -1,0 +1,83 @@
+
+
+dialogue start
+Xu-EvilDonovan
+
+action:response:root
+Xu
+root-A:당신 미쳤어요?  당신이 이러는 거 우리가 가만히 지켜보고 있을 줄 알아요?
+root-B:우리가 어떻게 여기에 내려왔는 지 궁금하지 않아요?  어떻게 마스터키를 구했는지?
+</>root-null:관둔다.
+action end
+
+action:statement:root-A
+Donovan:누구든지 갑자기 움직이는 녀석은 내가 쏜다.  내가 얼마나 총을 잘 쏘는지 시험해 보시던지.
+next:root
+action end
+
+action:statement:root-B
+Donovan:그게 살인자가 누구인지와 관련이 있나?
+next:root-B-1
+action end
+
+action:response:root-B-1
+Xu
+root-B-2:여기로 내려오려면 마스터 키가 있어야하죠.  마스터 키를 가진 사람이 살인자일 거에요.
+root-B-3:누군지 모르는 사람이 Gwen을 범인으로 몰아가기 위해서 열쇠를 드러냈어요.
+action end
+
+action:statement:root-B-2
+Donovan:물론이지. 하지만 난 두 번째 마스터 키를 본 적이 없어.  그건 어디서 얻었지?
+next:root-B-1
+action end
+
+action:statement:root-B-3
+Donovan:결국 원래 누구 소유였는지는 모른다는 거군.
+next:root-B-4
+action end
+
+action:response:root-B-4
+Xu
+root-B-5:몰라요.  하지만 열쇠를 가지고 있던 사람은 오랜 시간동안 직원들을 매수하고 있었어요.
+<!>root-B-confession:내가 받은 지시 중에 하나가 원래의 마스터키를 훔쳐서 내 방에 숨겨두는 거였어요.:trigger.chap5XuConfession.on
+root-B-6:왜 이곳에 들어올 수 있는 유일한 방법을 그들이 내버린 걸까요?
+</>root-B-7:몰라요.
+action end
+
+action:statement:root-B-5
+Donovan:흠, 그건...기억해둬야겠군.
+Donovan:그럼 살인자가 오랫동안 이 배랑 관계를 맺어왔다는 건데.  대체 왜?
+next:root-B-4
+action end
+
+action:statement:root-B-confession
+Donovan:그걸로 보수는 잘 받았나?
+Donovan:네가 열쇠를 훔친 것 때문에 이 긴 연쇄가 이어져서 결국 내가 총에 맞고 Paulo는 반죽음이 되었다고.
+Donovan:넌 정말 구제할 수 없는 멍청이다.
+Donovan:또 다른 누가 살인자를 도왔지?  이제 밝힐 때가 됐는데.
+next:root-B-4
+action end
+
+action:statement:root-B-6
+Donovan:좋은 지적이야.  흠...어쩌면 세 번째 열쇠가 있을지도 모르지.
+Donovan:이곳에 아무런 단서도 남아있지 않은 것을 생각하면, 그들은 이 장소가 발견되는 걸 고려했을지도 몰라.
+Donovan:그렇다면 아마 이제 손을 씻고, 손실을 최소화하는 방향으로 계획을 한 거겠지.
+Donovan:그리고 그게 완벽하게 적중했고.
+next:root-B-4
+action end
+
+action:statement:root-B-7
+Donovan:쓸모없군.
+Donovan:하지만 그것도 퍼즐의 일부다.
+Donovan:알고있는 다른 걸 말해봐.
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+

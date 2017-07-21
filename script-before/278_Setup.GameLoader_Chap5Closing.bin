@@ -4,70 +4,70 @@ dialogue start
 chap5ClosingBad
 
 action:statement:root
-Donovan:This has gone on long enough.
-Donovan:None of you have proof of the real killer.
-Donovan:You failed, but I won't.  I will purge this horrible place.
-Donovan:Alton.  Last words.
-Alton:What?  I don't understand...
+Donovan:이제 얘기는 충분히 들었다.
+Donovan:아무도 진짜 살인자가 누군지 밝혀내지 못했어.
+Donovan:너희들은 실패다.  하지만 난 그러지 않을거야.  나는 이 끔찍한 장소를 정화하겠다.
+Donovan:Alton.  남길 말이 있나.
+Alton:뭐?  무슨 소리...
 next:root-null
 action end
 
 action:statement:rootFinal
-Donovan:This has gone on long enough.
-Donovan:It's clear there were at least two people working together.  But I don't have enough evidence for both of them.
-Donovan:I'm not going to take a chance on letting one of them go.
-Donovan:I can't trust my profile anymore, but...I'll do what I can.
-Donovan:This nightmare ends now.
-Donovan:Alton.  Last words.
-Alton:What?  I don't understand...
+Donovan:이제 얘기는 충분히 들었다.
+Donovan:적어도 두 사람이 공범이라는 것은 확실해졌어.  그러나 찾아낼 증거가 부족해.
+Donovan:하지만 그 중 단 한 사람도 도망칠 기회를 주지 않을거다.
+Donovan:이제는 인적사항도 못 믿겠어.  하지만...내 할 일은 끝내야지.
+Donovan:이 악몽은 여기서 끝이다.
+Donovan:Alton.  남길 말이 있나.
+Alton:뭐?  무슨 소리...
 next:root-null
 action end
 
 action:statement:root2
-Xu:Oh my god!  Alton!!!
-Quella:Donovan, no!  Please wait!
-Garv:Oh my god...
+Xu:Alton!!!
+Quella:Donovan, 그만둬요!  제발!
+Garv:신이시여...
 next:root2-null
 action end
 
 action:statement:root3
 Donovan:Garv.
-Garv:You idiot!  This isn't going to solve anything!  You have no idea - 
+Garv:멍청한 녀석!  이런 건 아무것도 해결해주지 않아!  너는 전혀- 
 next:root3-null
 action end
 
 action:statement:root4
-Quella:STOP!!!
-Marcurio:You fucking psychopath!
+Quella:그만해!!!
+Marcurio:이 미친 싸이코패스가!
 Donovan:Ferdinand.
-Ferdinand:Acta est fabula, plaudite!
+Ferdinand:이야기는 끝났다, 박수를 쳐라! (*라틴어 명언)
 next:root4-null
 action end
 
 action:statement:root5
-Gwen:Oh god...oh god...
-Xu:No...please...
+Gwen:아...아...
+Xu:그만해...제발...
 Donovan:Darryl?
-Quella:No!  Donovan, wait!  Listen to me!!!
-Darryl:Go ahead.
+Quella:그만해!  Donovan, 제발!  말을 들어!!!
+Darryl:해봐.
 next:root5-null
 action end
 
 action:statement:root6
-Donovan:God dammit!  Why would you do that?
+Donovan:젠장!  뭐하는 거야?
 Darryl:Quella...!
 next:root6-null
 action end
 
 action:statement:root7
-Xu:You MONSTER!!!
-Gwen:No...Donovan...
-Marcurio:You psycho!  You're gonna get the fuckin' chair, you know that?!  There's no way out of this for you!
+Xu:이 괴물!!!
+Gwen:안 돼...Donovan...
+Marcurio:싸이코 자식!  넌 절대로 편하게 죽지는 못 할거다!  이런 일을 저지르고도 무사할 줄 알아?!
 next:root7-null
 action end
 
 action:statement:root8
-Donovan:I know.
+Donovan:나도 알아.
 next:root8-null
 action end
 
@@ -85,65 +85,65 @@ dialogue start
 chap5ClosingFerdinand
 
 action:statement:root
-Donovan:I've heard enough.
-Donovan:I think it's clear who I'm after.
+Donovan:충분히 들었어.
+Donovan:내가 쫓고 있던 사람이 누군지 명확해졌어.
 next:root-null
 action end
 
 action:statement:root2
-Donovan:Ferdinand...you were the only one that could have broken into Paulo's room that night.
-Donovan:Paulo's injuries fit the profile.  There's no mistaking it.
-Donovan:On top of all that, there's strong circumstantial evidence pointing to you.
+Donovan:Ferdinand...너만이 그날 밤에 Paulo의 방에 침입할 수 있는 사람이었어.
+Donovan:Paulo의 부상은 이전의 기록들과 일치해.
+Donovan:그것 말고도, 확실한 증거가 당신을 가리키고 있어.
 next:root-null
 action end
 
 action:statement:root4
-Donovan:Ferdinand - or whatever your real name is - you're the scum I came here for.
+Donovan:Ferdinand - 네 진짜 이름은 뭐였던 간에 - 내가 찾던 쓰레기 새끼는 너다.
 next:root-null
 action end
 
 action:statement:root5
-Ferdinand:Haha!
-Ferdinand:You have no idea about anything - you're just guessing!
-Ferdinand:Why are all these people down here?  Do you think I did all of this?
-Ferdinand:Who was it giving orders to the staff?  That's been going on for longer than I've been here.
+Ferdinand:하하!
+Ferdinand:그건 그냥 추측일 뿐이잖아요!
+Ferdinand:왜 이 많은 사람들이 여기에 있는데요?  정말로 내가 이걸 다 했다고 생각하나요?
+Ferdinand:누가 직원들한테 비밀 지시를 내렸는데요?  그건 내가 오기 전부터 이루어진 일이라고요.
 next:root-null
 action end
 
 action:statement:root6
-Donovan:Who are you, really?
+Donovan:대체 너는 누구지?
 Ferdinand:...
-Ferdinand:I am but a humble first mate, who has been caught up in some great deception!
+Ferdinand:저는 비천한 일등항해사일 뿐입니다, 그냥 커다란 사기에 휘말린 사람이죠!
 next:root-null
 action end
 
 action:statement:root7
-Donovan:Do you think this is a joke?  Tell me the truth!
-Quella:Wait!  This is going too far!
-Ferdinand:Ha...hngh...that hurts...
-Donovan:Who are you?
-Ferdinand:I'm just a...salesman.  I ran out of money, so I tried to fake my credentials for this job.
-Ferdinand:My real name is Ted.  I...I was just desperate.
-Ferdinand:I'm sorry I lied.  I knew it would look bad.  But there's something else going on here!
+Donovan:지금 이게 장난치는 걸로 보이나?  진실을 말해!
+Quella:기다려요!  당신 너무 지나쳐요!
+Ferdinand:하...으윽...아파...
+Donovan:너는 누구지?
+Ferdinand:나는 그냥...세일즈맨이에요.  돈이 다 떨어져서, 신분을 속이고 이 일을 한 것뿐이에요.
+Ferdinand:진짜 이름은 테드에요.  그냥...그냥 너무 절박했어요.
+Ferdinand:거짓말해서 미안해요.  나쁜 일이라는 건 알아요.  하지만 여기서는 뭔가 다른 일이 일어나고 있다구요!
 next:root-null
 action end
 
 action:statement:root8
-Ferdinand:Agh!!
-Donovan:Who are you?
-Ferdinand:Ha...what do you want me to say?
+Ferdinand:으아악!!
+Donovan:너는 누구지?
+Ferdinand:하...나한테서 무슨 얘기를 듣고 싶은 거야?
 next:root-null
 action end
 
 action:statement:root9
-Ferdinand:That you succeeded?  That you found the person you were chasing all these years?
-Ferdinand:You don't even care about the truth...you just want to hurt me, right?
-Ferdinand:Nothing you do here matters.  You'll never know the whole truth!
+Ferdinand:몇 년동안 쫓아다니던 사람을 찾아서 축하한다고?
+Ferdinand:당신은 진실 따위 신경쓰지도 않아...그냥 나를 아프게 하고 싶을 뿐이잖아, 안 그래?
+Ferdinand:다른 일들은 당신한테 아무 의미도 없겠지.  너는 절대로 진실을 알지 못해!
 next:root-null
 action end
 
 action:statement:root10
-Donovan:Wipe that smirk off your face.
+Donovan:썩어빠진 얼굴 치워.
 next:root-null
 action end
 
@@ -166,12 +166,12 @@ Ferdinand:...
 Darryl:...   
 Quella:...    
 Gwen:...     
-Donovan:...Was that a moment of remose?
-Garv:Wait...what?  What's going on?
-Donovan:You were just telling us how you murdered the captain.
-Garv:What?  I'd never say something like that - I mean, I never...
-Donovan:Getting cold feet?  We all heard you.
-Garv:I don't understand...
+Donovan:...갑자기 추억을 곱씹고 싶으셨나?
+Garv:잠깐...뭐?  무슨 일이 일어난 거야?
+Donovan:방금 네가 어떻게 선장을 살해했는지 밝혔다고.
+Garv:뭐?  내가 그런 말을 하려고 했을리가, 아니, 나는 절대로...
+Donovan:겁 먹었나?  우린 다 들었는데.
+Garv:이게 대체 무슨...
 Donovan:It makes sense, given the camera footage I have of you, and Marcurio's testimony.
 Donovan:The evidence points to you secretly bribing the staff.  They were helping you keep this place a secret.
 Donovan:The captain must have begun to figure out what was happening.  So she had to be killed.
@@ -229,7 +229,7 @@ next:root-null
 action end
 
 action:statement:root9
-Donovan:Die, scum.
+Donovan:죽어라, 쓰레기.
 next:root-null
 action end
 

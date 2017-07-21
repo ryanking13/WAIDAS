@@ -1,0 +1,184 @@
+
+
+//  Epilogue dialogues
+
+
+
+// Bad epilogue  ///////////////////////////////////////////////////////
+
+dialogue start
+BadEpilogue
+
+action:statement:root
+???:곧 저희가 배에 도착할 겁니다.  남은 일은 저희가 다 처리하겠습니다.
+next:root-null
+action end
+
+action:statement:root2
+Marcurio:이 날씨를 뚫고 무사히 도착할 수 있어서 다행이군.
+Marcurio:아무도 키를 잡을 줄 모르는 상황이었는데 말이야.
+Marcurio:다들 괜찮아?
+next:root2-null
+action end
+
+action:statement:root3
+Xu:...
+Gwen:....
+Marcurio:그래...나도 똑같아.
+Xu:그들은 잘못한 게 없어.  그들은 결백했다고.
+Xu:우리가 다 잘못한 거야!  그들이...
+Xu:그들이 죽은 건...다 우리 잘못이야. 
+Paulo:...ㅈ...ㅜ...ㄱ...ㅇ...ㅡ...ㄴ...ㄱ...ㅓ...ㄴ...
+next:root3-null
+action end
+
+action:statement:root4
+Gwen:아직 제대로 반응을 안 해줘...계속 앞만 보고 있어.
+Gwen:아무 얘기도 하지 않고.  계속 말을 따라하고만 있어...
+Xu:대체 무슨 일이 있었던 거지?  얘는 대체 뭘 본 거야?
+Xu:아무것도 모르겠어...
+Paulo:...ㅇ...ㅏ...ㅁ...ㅜ...ㄱ...ㅓ...ㅅ...
+Marcurio:힘든 건 알지만, 지금은 집중해야 해.  모르는 건 나중에 알아내면 돼.
+Marcurio:그리고...다른 사람들이 나머지 비밀을 밝히게 놔두는 게 최선일 거야.
+Paulo:...ㅂ...ㅣ...ㅁ...ㅣ...ㄹ...ㅇ...ㅡ...ㄹ...
+next:root4-null
+action end
+
+action:statement:root5
+Gwen:내가 그럴 수 있을 지 모르겠어.
+Gwen:여기서 분명히 뭔가 다른 일이 벌어졌어.  이 배에서.  뭔가 다른 일이.
+Gwen:나는 무슨 일이 일어난 건지 알고싶어.  제대로 이해하고 싶어.
+Gwen:그냥 이대로 놔두는 건...싫어.
+Paulo:...ㅅ..ㅣ...ㄹ...ㅎ...ㅇ...ㅓ...
+next:root5-null
+action end
+
+dialogue end
+
+
+
+
+
+
+// Ferdinand epilogue  ///////////////////////////////////////////////////////
+
+dialogue start
+FerdinandEpilogue
+
+action:statement:root
+Marcurio:다시 육지를 볼 수 있는 날이 올 줄은 몰랐군.
+Xu:Darryl이 배를 몰 수 있어서 다행이야, 안 그랬으면 어떻게 됐을지.
+Darryl:짧게 항해한 경력이 이렇게 쓰일 줄이야.
+next:root-null
+action end
+
+action:statement:root2
+Alton:그래서...이젠 어떻게 하죠?
+Marcurio:뭐, 경찰을 불렀으니, 그들이 알아서 하겠지.
+Marcurio:그들이 모든 진실을 알아낼 수도.
+Xu:Donovan은 결과적으로 그가 원하던 것을 얻은 것 같아요.  그가 찾던 연쇄살인마는 배에 있었으니...
+Alton:저는...Ferdinand가 그런 일을 했다는 걸 믿을 수가 없어요.  그가 선장님도 죽인 걸까요?
+Gwen:그렇겠죠.  그는 사람들을 고문하고, 고통받는 걸 지켜보는 걸 즐겼어요.  그게 진짜 그의 모습이에요, 다른 건 다 가짜였어요.
+Garv:언제나 연기를 하고 있었다는 거구먼.  소름돋는 일이야...
+Quella:하지만 그가 꼭 거짓말을 해야했을까요?  그냥 잡혀서 감옥에 갈 수도 있었을 텐데.  그리고 Donovan도...
+Darryl:우리가 할 수 있는 일은 아무것도 없었어.  그는 이미 오래전부터 포기한 상태였으니까.
+Darryl:이게 우리가 기대할 수 있었떤 최상의 결말일 거야.
+Quella:최상의 결말이라...그럴지도요.  하지만 다른 사람들은요?
+next:root-null
+action end
+
+action:statement:root3
+Marcurio:나는 더이상 배에 머물 수 없지.  이런 일이 일어났으니까.
+Marcurio:하지만 다음 직장을 찾을 거다.  그리고 이 배에서 실제로 무슨 일이 일어났건, 나랑은 별 상관없는 일이야.
+Alton:중요한 것은 이제 다 끝났다는 거에요.  Ferdiand는...더이상 없으니, 이제 다칠 사람은 없어요.
+Garv:그렇다네.  우리에게 일어난 일은 비극이지만, Donovan은 원하던 바를 이루고 죽은 게야.
+Garv:선장님은 돌아올 수 없게 되었지만, 이걸로 모든 사건은 끝이라네.
+Darryl:끝이요?  뭐...그렇겠죠.
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+// Garv epilogue  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+GarvEpilogue
+
+action:statement:root
+Ferdinand:자, 다들 다친데 없이 잘 도착하셨나요!  내리실 때에 다치지 않도록 조심해주세요.
+Marcurio:다행히 겨우 몇번만에 제대로 선착장에 정박시켰네요.  대체 누가 당신한테 자격증을 준겁니까?
+Ferdinand:...뭐, 중요한 건 우리가 잘 도착했다는 거 아니겠습니까?
+next:root-null
+action end
+
+action:statement:root2
+Xu:경찰들이 곧 도착할 거에요.  그들이 남은 사람들을 돌봐줄 거에요.
+Alton:Donovan이 말한 게 사실일까요?  사람들이...거기에 있던 이유?
+Quella:인간 납치.  성노예.  얘기는 들어봤어요.  하지만 내 눈으로 직접 보게 될 줄이야...
+Gwen:너무 잔인해요.  Garv는 그 불쌍한 사람들이 무슨 일을 당할지 전혀 신경도 쓰지 않았겠죠.
+Darryl:그렇겠지.  그는 사람들에게 약을 먹이고 폭력을 가했어.  자신이 무슨 일을 하고 있는 건지 분명히 알고있었을 것인데도.
+Marcurio:우리 발밑에서 언제나 일어나고 있었던 거야. 그리고 우리가 그걸 방치했어.  가능하게 만든 거야.
+Marcurio:Donovan의 말이 맞았어.  우리가...내가...그런 일이 일어나게 한 거야.
+Ferdinand:그렇습니다.  하지만 우리는 이제 진실을 알았어요, 고쳐나가면 됩니다!
+Ferdinand:우리의 잘못도 있고, 제 잘못이 있겠지만, 어쨌든 진정한 악은 Garv였습니다.
+Ferdinand:선장님이 여기에 있었다면, 그녀도 기뻐했을 겁니다.  드디어 그녀의 일도 끝을 맺은 거에요!
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+// Final epilogue  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+FinalEpilogue
+
+
+action:statement:root
+Marcurio:다시 육지를 볼 수 있는 날이 올 줄은 몰랐군.
+Xu:Darryl이 배를 몰 수 있어서 다행이야, 안 그랬으면 어떻게 됐을지.
+Darryl:짧게 항해한 경력이 이렇게 쓰일 줄이야.
+next:root-null
+action end
+
+action:statement:root2
+Marcurio:경찰들이 곧 도착할 거야.  그들이 남은 사람들을 돌봐주겠지.
+Marcurio:그러고나면, 나는 떠난다.  이 배는 바다에 침수시켜 버리라지.
+Alton:믿을 수 없어요.  Ferdinand와 Garv가 둘 모두 범인이었다니...그런 짓을 했다니...그러고도 전혀 죄책감을 느끼지 않았다니.
+Darryl:멋진 팀이었지.  연쇄살인마랑 납치범이라.  둘 중 어느쪽이 더 심한 쓰레기인지.
+Quella:Darryl, Gwen...당신들이 나서주지 않았다면, 아무도 이 일을 알지 못했을 거에요.
+Quella:당신들이 말해준 덕분에 진실이 밝혀졌어요.  고마워요.
+Gwen:전 오히려 당신한테 도움을 받았는 걸요.  고마워요, Quella.
+Xu:Donovan이 아직 살아있었으면 좋겠어요.  그는 그렇게 죽어서는 안 됐는데.  선장님도.
+Quella:맞아요.  그가 없었다면 우리는 절대로 무슨 일이 일어나고 있었는 지 알지 못했겠죠.
+Quella:모든 것을 바로잡을 수는 없어요.  그리고 앞으로 많은 시간이 걸릴 거에요.  하지만...이제부터 우리가 고쳐나가면 돼요.
+Quella:더 이상의 희생자는 없어요.  악몽은 끝났어요.
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

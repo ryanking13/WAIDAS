@@ -1,0 +1,204 @@
+
+
+
+dialogue start
+Quella-EvilDonovan
+
+action:response:root
+Quella
+<!>trigger.chap6quellaPaulosRoom:Paulo가 사라지고 난 뒤에 그의 방을 살펴봤어요.
+root-A:당신 지금 제정신이 아니에요, Donovan.  이런 일은 옳지 않아요.
+root-B:Paulo의 상태는?  그는 괜찮은 거에요?
+root-C:먼저 다친 사람들을 돌봐야하지 않나요?  다른 건 나중에 해결해도 되잖아요.
+</>root-null:관둔다.
+action end
+
+action:statement:root-A
+Donovan:나는 지금 아주 머리가 맑아.
+Donovan:여기서 살인자를 보내준다는 건 더 많은 희생자가 생길 거라는 뜻이지.  너는 이제 그들이 무슨 일을 하는지 알잖아.
+Donovan:이 배가 육지에 도착하면, 그들은 도망갈거다.  지금이 이걸 끝낼 마지막 기회야.
+next:root-A-1
+action end
+
+action:response:root-A-1
+Quella
+root-A-2:그걸 위해서 무고한 사람을 죽여도 된다구요?
+root-A-3:확실하게 그들을 가려낼 수 있는 증거는 없어요?
+action end
+
+action:statement:root-A-2
+Donovan:세상의 많은 무고한 사람들이 전쟁과 정치때문에 죽어가지.
+Donovan:그거에 비하면, 이건 아무것도 아니야.
+next:root
+action end
+
+action:statement:root-A-3
+Donovan:만약 있었다면, 내가 지금 이러고 있지 않겠지.  이미 모든 걸 끝냈을 거야.
+Donovan:하지만 이 장소에는 이미 단서라곤 하나도 남아있지 않아.
+Donovan:살인자도 여기서 모두 같이 끝날 거라고는 생각도 못했을 걸?
+next:root
+action end
+
+action:statement:root-B
+Donovan:아니.  상태가 안 좋아.
+Donovan:과연 살인자가 이 배에 타있을까라는 내 일말의 의심이 덕분에 사라졌지.
+Donovan:Paulo의 부상은 과거의 희생자들과 일치해.  아직 고문이 많이 이루어지지는 않았지만.
+Donovan:그래도, 손가락은 대부분 부러졌고, 질식의 흔적도 있고, 다른...부상도 있지.
+Donovan:가만히 두면 별로 오래가진 못할 거다.
+next:root
+action end
+
+action:statement:root-C
+Donovan:살인자를 죽이고 나서 돌봐도 돼.
+Donovan:그 전에는 정말로 안전하다고 말할 수 없어.
+next:root
+action end
+
+
+action:statement:trigger.chap6quellaPaulosRoom
+Ferdinand:들어갔다구요?  하지만 방을 잠궈뒀을텐데!  어떻게 들어간 건가요?
+Donovan:닥쳐.
+Donovan:거기서 뭘 찾았지?
+next:root-paulo
+action end
+
+action:response:root-paulo
+Quella
+root-trigger.chap6FerdEnd1:그의 책 한 권이 바닥에 떨어져있었어요.  페이지가 뜯겨져나간 채로.:trigger.chap5paulosHint.on
+root-trigger.chap6FerdEnd2:Marcurio의 팔찌를 옷장에서 발견했어요.  피가 묻어있었어요.
+<!>root-trigger.chap5paulosPage:당신이 찾은 페이지가 그의 방에 있던 책에서 나온 거라면?
+</>root:관둔다.
+action end
+
+action:statement:root-trigger.chap6FerdEnd1
+Donovan:만약 몸싸움이 있었다면 바닥에 떨어졌을만 해.
+Donovan:그것 자체로는 단서가 되지 않는 것 같군.
+next:root-paulo
+action end
+
+action:statement:root-trigger.chap5paulosPage
+Donovan:그게 꼬마의 주머니 속에 들어있던 페이지겠군.
+Donovan:납치되기 직전에 페이지를 찢은 거겠지.
+Donovan:우연이라고 하기에는 너무 잘 들어맞으니까.  근데 왜?
+next:root-paulosHint
+action end
+
+action:response:root-paulosHint
+Quella
+root-paulosHint1:그냥 의도치 않은 행동이었을 수도 있죠.
+root-paulosHint2:찢은 페이지에 뭔가 특별한 것이 있을 수도 있죠.:trigger.chap5ferdNail1.on
+root-paulosHint3:페이지에 뭔가 메세지를 남겨두지 않았나요?
+action end
+
+action:statement:root-paulosHint1
+Donovan:그럴지도 모르지.  하지만 그럼 이건 아무 의미 없는 정보로군.
+next:root-paulosHint
+action end
+
+action:statement:root-paulosHint3
+Donovan:딱히 어떤 글자가 적혀있지는 않아.
+Donovan:일부러 페이지를 뜯은 거라면, 뭔가 메세지를 남길 시간이 없었던 걸지도 모르지.
+next:root-paulosHint
+action end
+
+action:statement:root-paulosHint2
+Donovan:종이는 깔끔하게 뜯겨져 있어.  아무래도 일부러 이 페이지를 뜯은 것 같군.
+Donovan:왜?  이 페이지에 무엇이 있길래?
+Donovan:페이지 번호는, 106쪽이군.
+Donovan:...방 번호일지도 모르지.  106호는 없지만, B-106는 있어.
+Donovan:일등항해사의 방 아닌가?
+Ferdinand:어...그런데요.
+Ferdinand:이것 참 우연이군요.  책에 다른 많은 페이지들도 방 번호가 될 수 있는 데 말이죠!
+Donovan:별로 많지는 않지.
+Ferdinand:어, 이거 참 정말로 불행한 우연이군요.
+Donovan:확실하지는 않지만...의심스럽군.
+next:root-paulo
+action end
+
+action:statement:root-trigger.chap6FerdEnd2
+Marcurio:잠깐, 그 일은 나랑 얘기했잖아!  그런 게 아니었다고!
+Donovan:변명을 잘 해야 할 거야.  거기서 뭘 하고 있었지, Marcurio?
+Marcurio:나는 거기 없었어.  적어도 그 때는.
+Marcurio:내 팔찌는 멍청한 고양이가 가져간 거다.  그 녀석이 꼬마의 방에 떨어트린 거야.
+Garv:그의 말이 맞네.  내가 Sunshine이 밤에 팔찌를 가지고 다니는 것을 봤어.
+Donovan:그 말은 터무니없군.  어떻게 고양이가 성인 남자한테서 팔찌를 빼앗을 수 있지?  그리고 왜?
+Marcurio:그게 상관있나?  내 말을 뒷받침해주는 증인이 있잖아.
+next:root-bracelet
+action end
+
+action:response:root-bracelet
+Quella
+root-bracelet1:고양이는 보석을 좋아하죠.  그가 무릎을 굽혔을 때 낚아챌 수 있었을 거에요.
+root-bracelet2:거짓말이야,  그가 고양이에게 팔찌를 준 거에요.
+root-bracelet1:고양이가 옷장위에 있었다면 충분히 팔찌를 낚아챌 수 있었겠죠.
+action end
+
+action:statement:root-bracelet1
+Donovan:가능한 얘기군.  그게 실제로 일어난 일인가?
+Marcurio:그럼.  그게 중요한가?  뭔가 달라져?
+Donovan:...잘 모르겠군.
+next:root-bracelet
+action end
+
+action:statement:root-bracelet2
+Marcurio:그 팔찌는 선물로 받은거야.  몇년이나 하고다녔던 거라고.  내가 그걸 왜 짐승따위한테 주겠어?
+next:root-bracelet3
+action end
+
+action:response:root-bracelet3
+Quella
+root-bracelet4:왜냐면 고양이가 당신을 방해하지 않고 조용히 하기를 원했을테니까요.:trigger.chap5catExplanation.on
+root-bracelet5:사실 별로 팔찌를 좋아하지 않았던 거죠.
+root-bracelet6:팔찌를 알리바이로 쓰고 싶었던 거겠죠.
+action end
+
+action:statement:root-bracelet5
+Marcurio:...방금 선물받은 중요한거라고 말했을텐데요.
+Marcurio:그리고 다시 말하지만, 만약 그렇다고 해도 대체 뭐가 달라지는데?
+next:root-bracelet3
+action end
+
+action:statement:root-bracelet6
+Marcurio:당신 말대로면, 내가 고양이한테 팔찌를 주고, 고양이가 그걸 어딘가에 떨어트리고, 내가 거기에 있었던 것처럼 한다?
+Marcurio:그런다고 내 알리바이가 생기지는 않아요.  전혀 말도 안 된다고.
+next:root-bracelet3
+action end
+
+action:statement:root-bracelet4
+Marcurio:그래...그 말대로라고 쳐요.  그렇다고 그게 어떻게 다른 일이랑 연결되는 건데요.
+Marcurio:저 인간이 우릴 향해서 총을 겨누고 있는 상황인데, 겨우 고양이가 내 팔찌를 가져간 것 하나로 말싸움을 하고 있을 셈이에요?!
+Garv:자네가 Gwen의 방에 있었기 때문에 관계가 있는 일이지.
+Garv:지시를 받고 마스터 키를 그녀의 방에 숨기려 했을 때 말이야.
+Garv:환풍구를 타고 들어간 고양이가 거기에 있었고...자네를 방해했던 거로구먼.  노는 걸 좋아하는 아이니까.
+Garv:일을 처리하려면 방해되지 않게 떨어트려 놓을 필요가 있었는데, 거칠게 다뤘다가는 Gwen이 일어났겠지.
+Garv:그래서 뭔가를 줘서 주의를 분산시키려 했던 거야.  그 사이에 열쇠를 숨겼던 거고.
+Marcurio:...그래요.  그 말대로에요.
+Marcurio:제가 Gwen의 방에 열쇠를 숨기는 도중에 일어난 일이에요.  그래서 그게 어쨌는데요?
+Donovan:조용히 해봐.
+Marcurio:계속 똑같은 말만 반복하게 하는데...
+Donovan:닥쳐!
+next:root-null
+action end
+
+action:statement:root-garvsHint
+Donovan:이 머저리들아, 정말로 모르겠나?
+Donovan:팔찌에 피가 묻어있다는 건 고양이가 Paulo가 납치된 후에 그 방에 들어갔다는 거야.
+Donovan:그 말은, Marcurio가 열쇠를 숨긴 시점은 Paulo가 납치되기 전이라는 거고.
+Donovan:생각해봐.  만약 Gwen의 방에 마스터 키가 있었다면...누가 어떻게 Paulo의 방에 침입할 수 있지?
+Donovan:그 시점에서 그의 방을 열 수 있는 건 딱 한 사람밖에는 없어.
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+
+
