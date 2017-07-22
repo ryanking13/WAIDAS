@@ -1,0 +1,358 @@
+
+
+dialogue start
+chap5ClosingBad
+
+action:statement:root
+Donovan:이제 얘기는 충분히 들었다.
+Donovan:아무도 진짜 살인자가 누군지 밝혀내지 못했어.
+Donovan:너희들은 실패다.  하지만 난 그러지 않을거야.  나는 이 끔찍한 장소를 정화하겠다.
+Donovan:Alton.  남길 말이 있나.
+Alton:뭐?  무슨 소리...
+next:root-null
+action end
+
+action:statement:rootFinal
+Donovan:이제 얘기는 충분히 들었다.
+Donovan:적어도 두 사람이 공범이라는 것은 확실해졌어.  그러나 찾아낼 증거가 부족해.
+Donovan:하지만 그 중 단 한 사람도 도망칠 기회를 주지 않을거다.
+Donovan:이제는 인적사항도 못 믿겠어.  하지만...내 할 일은 끝내야지.
+Donovan:이 악몽은 여기서 끝이다.
+Donovan:Alton.  남길 말이 있나.
+Alton:뭐?  무슨 소리...
+next:root-null
+action end
+
+action:statement:root2
+Xu:Alton!!!
+Quella:Donovan, 그만둬요!  제발!
+Garv:신이시여...
+next:root2-null
+action end
+
+action:statement:root3
+Donovan:Garv.
+Garv:멍청한 녀석!  이런 건 아무것도 해결해주지 않아!  너는 전혀- 
+next:root3-null
+action end
+
+action:statement:root4
+Quella:그만해!!!
+Marcurio:이 미친 싸이코패스가!
+Donovan:Ferdinand.
+Ferdinand:이야기는 끝났다, 박수를 쳐라! (*라틴어 명언)
+next:root4-null
+action end
+
+action:statement:root5
+Gwen:아...아...
+Xu:그만해...제발...
+Donovan:Darryl?
+Quella:그만해!  Donovan, 제발!  말을 들어!!!
+Darryl:해봐.
+next:root5-null
+action end
+
+action:statement:root6
+Donovan:젠장!  뭐하는 거야?
+Darryl:Quella...!
+next:root6-null
+action end
+
+action:statement:root7
+Xu:이 괴물!!!
+Gwen:안 돼...Donovan...
+Marcurio:싸이코 자식!  넌 절대로 편하게 죽지는 못 할거다!  이런 일을 저지르고도 무사할 줄 알아?!
+next:root7-null
+action end
+
+action:statement:root8
+Donovan:나도 알아.
+next:root8-null
+action end
+
+
+dialogue end
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+dialogue start
+chap5ClosingFerdinand
+
+action:statement:root
+Donovan:충분히 들었어.
+Donovan:내가 쫓고 있던 사람이 누군지 명확해졌어.
+next:root-null
+action end
+
+action:statement:root2
+Donovan:Ferdinand...너만이 그날 밤에 Paulo의 방에 침입할 수 있는 사람이었어.
+Donovan:Paulo의 부상은 이전의 기록들과 일치해.
+Donovan:그것 말고도, 확실한 증거가 당신을 가리키고 있어.
+next:root-null
+action end
+
+action:statement:root4
+Donovan:Ferdinand - 네 진짜 이름은 뭐였던 간에 - 내가 찾던 쓰레기 새끼는 너다.
+next:root-null
+action end
+
+action:statement:root5
+Ferdinand:하하!
+Ferdinand:그건 그냥 추측일 뿐이잖아요!
+Ferdinand:왜 이 많은 사람들이 여기에 있는데요?  정말로 내가 이걸 다 했다고 생각하나요?
+Ferdinand:누가 직원들한테 비밀 지시를 내렸는데요?  그건 내가 오기 전부터 이루어진 일이라고요.
+next:root-null
+action end
+
+action:statement:root6
+Donovan:대체 너는 누구지?
+Ferdinand:...
+Ferdinand:저는 비천한 일등항해사일 뿐입니다, 그냥 커다란 사기에 휘말린 사람이죠!
+next:root-null
+action end
+
+action:statement:root7
+Donovan:지금 이게 장난치는 걸로 보이나?  진실을 말해!
+Quella:기다려요!  당신 너무 지나쳐요!
+Ferdinand:하...으윽...아파...
+Donovan:너는 누구지?
+Ferdinand:나는 그냥...세일즈맨이에요.  돈이 다 떨어져서, 신분을 속이고 이 일을 한 것뿐이에요.
+Ferdinand:진짜 이름은 테드에요.  그냥...그냥 너무 절박했어요.
+Ferdinand:거짓말해서 미안해요.  나쁜 일이라는 건 알아요.  하지만 여기서는 뭔가 다른 일이 일어나고 있다구요!
+next:root-null
+action end
+
+action:statement:root8
+Ferdinand:으아악!!
+Donovan:너는 누구지?
+Ferdinand:하...나한테서 무슨 얘기를 듣고 싶은 거야?
+next:root-null
+action end
+
+action:statement:root9
+Ferdinand:몇 년동안 쫓아다니던 사람을 찾아서 축하한다고?
+Ferdinand:당신은 진실 따위 신경쓰지도 않아...그냥 나를 아프게 하고 싶을 뿐이잖아, 안 그래?
+Ferdinand:다른 일들은 당신한테 아무 의미도 없겠지.  너는 절대로 진실을 알지 못해!
+next:root-null
+action end
+
+action:statement:root10
+Donovan:썩어빠진 얼굴 치워.
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+chap5ClosingGarv
+
+action:statement:root
+Marcurio:...
+Xu:... 
+Ferdinand:...  
+Darryl:...   
+Quella:...    
+Gwen:...     
+Donovan:...갑자기 추억을 곱씹고 싶으셨나?
+Garv:잠깐...뭐?  무슨 일이 일어난 거야?
+Donovan:방금 네가 어떻게 선장을 살해했는지 밝혔다고.
+Garv:뭐?  내가 그런 말을 하려고 했을리가, 아니, 나는 절대로...
+Donovan:겁 먹었나?  우린 다 들었는데.
+Garv:이게 대체 무슨...
+Donovan:Marcurio의 증언과 카메라의 기록을 생각하면 당신이 범인이라는 건 타당해.
+Donovan:당신이 직원들을 매수해서, 이 장소를 숨기는 데에 이용하고 있었고.
+Donovan:그러다 선장이 눈치를 채서, 그녀를 죽여야만 했다.
+Donovan:그리고 내가 이 장소를 발견하기 직전까지 와서, 나도 죽여야만 했다라.
+next:root-null
+action end
+
+action:statement:root4
+Garv:자네가 무엇을 들었건, 상관없어...그렇게 단순한 문제가 아닐세.
+Garv:자네 말대로 내가 선장을 죽인 거라면, 왜 Paulo는 살아서 여기에 있단 말인가?
+Garv:그리고 내가 이 모든 일을 저지를 이유가 하나도 없지 않은가.  내가 그냥 희생양이라는 생각은 안 해봤나?
+Garv:그리고...이건 대체 다 무엇인가?  여긴 대체 어디고?  대체 무슨 일이 벌어진 건가?
+next:root-null
+action end
+
+action:statement:root5
+Donovan:이제 점점 모든 게 다 이해되기 시작했어.
+Donovan:직원들이 연관되어 있는 것...이 배의 목적...모든 게 하나의 사실을 가리키고 있어.
+Donovan:이 배는 사람을 실어 나르는 화물선이다.
+Donovan:겉으로는 크루즈 선인 척 사람들을 태우고 항해를 해.
+Donovan:하지만 그건 그냥 허울일 뿐이야.  실제 승객들은 여기있는 사람들이지.
+Donovan:아무도 모르게, 약을 먹이고 움직이지 못하게 해서 배에 싣고, 그리고 파는 거야.
+Donovan:이런 것을 예전에도 본 적이 있지.  성노예 사업을 말이야.  하지만 이 정도로 체계적으로 이루어지는 건 처음 보는군.
+Donovan:지금까지 쭉 이 일이 있어왔다고 생각하면...토할 것 같군.
+next:root-null
+action end
+
+action:statement:root6
+Garv:나...나는 아무것도 모르네.  즈, 증거를 다시 보게나.
+Garv:분명히 뭔가 잘못된 걸세.  내가 이 모든 일의 범인이라고?  아냐...
+Garv:아무나, 좀 말해주게.  이건 말도 안 돼는 일이야.
+Marcurio:솔직하게 말할까요?  저는 당신이 의심스러워지기 시작했습니다.
+Garv:뭐?  아냐, Donovan의 말을 듣지 말게.  그는 미쳤다고, 우리를 다 인질로 잡고 있지 않나!
+Darryl:분명 이 배에 뭔가 이상한 것이 있다고 생각했지만, 이 정도로 썩어빠진 일이 돌아가고 있었을 줄이야...
+Quella:Garv...사실이에요?  당신이 이 모든 일의 범인이에요?
+next:root-null
+action end
+
+action:statement:root7
+Garv:..............
+Garv:마치 나보다 위에 있다는 듯이 얘기하지 마.
+Garv:너희들.  너희들은 다 똑같아.  너희들은 자신이 남들과 다르다고 생각하겠지, 하지만 너희들도...결국은 다 똑같아.
+Garv:사기꾼, 살인자, 강도, 도둑, 너희들 전부!  대체 무슨 자격으로 나를 판단해?
+Garv:나는 우리 모두의 실체를 알아.  인간은 그냥 동물이야!  비열하고, 욕망으로 가득한 동물!
+Garv:인간은...절대로 발전하지 않아.  욕망과 감정에 노예일 뿐이라고.
+Garv:이 모든 일은 너희들이 정말로 원하지 않았다면 세상에 존재할 수도 없는 것들이야!
+next:root-null
+action end
+
+action:statement:root8
+Garv:난 네가 뭘 원하는 지 알아.  내가 다 줄게.  아주 공정하게.
+Garv:이 일이 얼마나 돈을 많이 벌어다주는 지 모르지?  난 너를 억만장자로 만들어줄 수도 있어!!
+Garv:그 돈이면 네 인생을 바꿀 수 있어. 모든 문제는 다 해결될 거야, 영원히.  네가 해야 하는 건 그냥 -
+next:root-null
+action end
+
+action:statement:root9
+Donovan:죽어라, 쓰레기.
+next:root-null
+action end
+
+
+dialogue end
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+dialogue start
+chap5ClosingFinal
+
+
+action:statement:root
+Donovan:...잠깐.
+Donovan:Paulo의 납치에서 알 수 있는 사실은 직원 중 한 사람이 이 일의 배후에 있다는 거야.
+Donovan:하지만 Marcurio가 받은 지시에서 알 수 있는 사실은 이 일에 승객 중 한 사람이 연관되어 있다는 거지. 
+Donovan:딱 하나, 이 모순되는 사실을 설명할 수 있는 가설이 있어.
+Donovan:내가 사실은 두 사람을 쫓고 있었던 거야.  두 사람이 서로 다른 동기와 방식으로 행동했던 거지.
+Donovan:내가 잘못된 정보를 받은 건가?  만약 그렇다면...이제는 아무것도 확신할 수가 없어.
+Donovan:둘 모두를 밝힐 수 없다면, 내가 할 수 있는 선택은 하나밖에 없지.
+next:root-null
+action end
+
+
+
+action:statement:root7
+Donovan:충분히 들었어.
+Donovan:마침내 이해했어.
+Donovan:나를 이 배에 오게 만들었고, Paulo를 납치한 사람...
+Donovan:나와 선장을 쏘고, 직원들을 매수한 사람...
+Donovan:그 둘은 서로 다른 사람이었어.  그들은 서로 정보를 공유하고, 협력했어.  그게 그들이 늘 한 발 앞서 있었던 이유야.
+Donovan:Paulo와 관련된 단서들이 가리키는 사람은?  Ferdinand.
+Donovan:직원들과 관련된 단서들이 가리키는 사람은?  Garv.
+Donovan:그 단서들은 서로 모순되었던 게 아냐.  둘 다였던 거지.
+next:root-null
+action end
+
+action:statement:root8
+Garv:그 가설은 이상하지 않은가.  자네는 분명히 한 사람을 쫓고 있다고 했네.  인적사항이 있다고 말했잖는가.
+Garv:그리고 자네가 쫓는 살인범이 왜 굳이 다른 사람과 협력하려고 했다는 말인가?
+Donovan:이상하게 생각할 지도 모르지.
+Donovan:하지만 나 이전부터 누군가가 살인범을 쫓고 있었어.  아마 살인범은 자기가 쫓기고 있다는 것을 눈치챘겠지.
+Donovan:그래서 자신을 감출 수 있는 다른 사람을 찾았다...는 건 충분히 그럴듯한 얘기잖아?
+Donovan:Gwen이 내 방에서 찾은 걸 Ferdinand에게 말한 시점에서, 그는 내가 자신을 쫓고있음을 눈치챘다.
+Donovan:그래서 그는 나에게 접근해서 나를 제거하도록 Garv에게 그 사실을 얘기했지.
+Donovan:내가 사라지자, Ferdinand는 이제 자신이 안전하다고 생각하고 Paulo를 노렸어.  동시에 Garv는 Gwen을 범인으로 몰기 위한 밑작업을 했다.
+Garv:자네가 날 의심하는 것은 이해하네.  하지만 내가 Gwen의 결백을 밝히는 걸 도와줬다는 사실은 알고있나?
+Garv:나는 Paulo의 방에서 단서를 찾는 것도 도왔어!  내가 왜 그런 일을 했겠나?
+Donovan:왜냐면 당신의 계획은 우리 모두를 이곳으로 불러들이는 거였을테니까.
+Donovan:내 죽음이 너무 사람들의 이목을 끌었어.  그래서 당신은 위험을 줄이는 방법을 택했다.
+Donovan:이곳에 남아있는 증거들을 모두 없애버리고, 대신 죄를 뒤집어쓸 사람을 찾았어.
+Donovan:그 희생양은 Gwen이 아니었어.  바로 Ferdinand지.
+Donovan:Paulo의 방에서 나온 단서는 Ferdinand를 옮아매는 것이지, 당신이 아니야.  그리고 여기서 나온 단서도 마찬가지.
+Donovan:당신은 내가 쫓는 연쇄살인마의 이야기를 바탕으로 단서들을 남겨둬서, 사람들이 남은 단서를 끼워맞춰서 그 결론에 다다를 수 있도록 만들어뒀어.
+Donovan:어때, 내 말이 맞나?
+next:root-null
+action end
+
+action:statement:root9
+Ferdinand:맞아요!  끝내주는 추리에요!
+Ferdinand:저는 분명히 Gwen양을 범인으로 모는 방법이 너무 얄팍하다고 생각했는데, Garv가 계속 밀어붙였죠.  이제야 알겠네!
+next:root-null
+action end
+
+action:statement:root10
+Garv:대체 무슨 소리를 하는 게야?!  나는 이 일과 아무런 관련이 없어!
+Ferdinand:물론 그러시겠죠.  당신이 저한테 Donovan을 처리했다고 말했잖아요. 그리고 복사한 마스터 키로 Gwen양을 범인으로 몰았다고도 말했잖아요.
+Ferdinand:하!  당신은 처음부터 사람들이 그 열쇠의 정체를 알아낼 거라는 사실을 알았겠죠.  이 교활한 늙은이가!
+Garv:다, 닥쳐...이 사람은 미쳤다고!  이 사람이 얘기하는 건 전부 모르는 얘기야!
+Donovan:다 알고있잖아.
+Ferdinand:처음부터 나를 팔아치울 생각이었군, 내가 그렇게 당신을 도왔는데!  어쩜 야비하기도 하지.
+Garv:닥쳐, 이 미친놈이!  네가 모든 걸 다 망쳤어!
+Garv:네가 저 추격자를 배에 들였고, 선장에게 내가 하고 있던 일을 흘렸지...그건 협박이었다고, 도와준 게 아니라!
+Ferdinand:뭐, 그래요.  그래도 난 선장이랑 추격자를 제거하는 걸 도왔잖아요.  그 정도면 쌤쌤 아닌가요?
+next:root-null
+action end
+
+action:statement:root11
+Garv:들어보게...저 자가 자네가 지금까지 줄곧 쫓고있던 사람이야!  저 자라고!
+Garv:만약 나말고 저 자를 죽인다면, 내가 자네를 억만장자로 만들어주겠네. 자네가 해야 하는 건 그냥 -
+next:root-null
+action end
+
+action:statement:root12
+Ferdinand:오, 진짜로 쏴버렸잖아!  잘했어요!
+Ferdinand:뭐, 수고했어요.
+Ferdinand:이런다고 딱히 이 모든 일의 보상이 되는 지는 모르겠지만.
+Donovan:너는 전혀 양심의 가책을 느끼지 않나?  아무것도?
+Ferdinand:모르겠네요, 그래야하나요?
+next:root-null
+action end
+
+
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
