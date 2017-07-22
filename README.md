@@ -1,80 +1,63 @@
-### Why Am I Dead At Sea 한국어 번역 작업
+## Why Am I Dead At Sea 한국어 패치
 
-17/07/06
 
-- 스크립트 번역 진행도 : 7 / 136
+![whyamideadatsea](http://cdn.akamai.steamstatic.com/steam/apps/359400/header.jpg)
 
-17/07/07
+---
 
-- 스크립트 번역 진행도 : 35 / 136
-- Cat-* *-Cat 스크립트 번역 완료
-- Donovan-* 스크립트 번역 완료
+## INSTALL
 
-17/07/08
+### 준비물
 
-- 스크립트 번역 진행도 : 46 / 136 ( 62kb / 627kb )
-- Ferdinand-* 스크립트 번역 완료
+- JPEXS Free Flash Decompiler(<a href="https://www.free-decompiler.com/flash/download/">다운로드 링크</a>)
 
-17/07/09
+- 패치 파일 (Clone or Download -> Download Zip)
 
-- 스크립트 번역 진행도 : 62 / 136 ( 160kb / 627kb )
+### 설치
 
-17/07/10
+##### 1. Why Am I Dead At Sea 게임 swf 파일 (WhyAmIDeadAtSea.swf)을 찾는다.
 
-- 스크립트 번역 진행도 : 83 / 136 ( 239kb / 627kb )
-- Xu-* 스크립트 번역 완료
-- Marcurio-* 스크립트 번역 완료
-- Garv-* 스크립트 번역 완료
+- 스팀 기준, 속성-로컬 파일-로컬 컨텐츠 폴더 보기
 
-17/07/11
+##### 2. 찾은 swf 파일을, JPEX Free Flash Decompiler를 다운로드 받은 폴더에 옮긴다.
+- ffdec.bat파일과 swf파일이 같은 폴더에 위치하도록 한다.
 
-- 스크립트 번역 진행도 : 87 / 136 ( 257kb / 627kb )
-- Darryl-* 스크립트 번역 완료
+##### 3. 패치 파일에서, patch-data 폴더와 run.bat 파일도 JPEX Free Flash Decompiler를 다운로드 받은 폴더에 옮긴다.
 
-17/07/12
 
-- 스크립트 번역 진행도 : 102 / 136 ( 340kb / 627kb )
-- Gwen-* 스크립트 번역 완료
-- Alton-* 스크립트 번역 완료
 
-17/07/13
+![](./markdown-image/0.PNG)
 
-- 스크립트 번역 진행도 : 109 / 136 ( 386kb / 627kb )
-- Quella-* 스크립트 번역 완료
 
-17/07/14
+##### 4. run.bat을 실행한다.
 
-- 스크립트 번역 진행도 : 115 / 136 ( 440kb / 627kb )
-- *Props 스크립트 번역 완료
-- Chapter# 스크립트 번역 완료
+##### 5. ffdec.exe를 실행하여 JPEX Free Flash Decompiler를 키고, WhyAmIDeadAtSea.swf를 연다.
 
-17/07/16
+##### 6. fonts폴더에서 AppleKid 폰트를 선택한다.
 
-- 스크립트 번역 진행도 : 120 / 136
+##### 7. Source Font에서 한글이 지원되는 폰트를 고르고, Embed...버튼을 눌러 `Hangul`을 추가시키고 저장 후 종료한다.
 
-17/07/17
+##### 8. swf 파일을 다시 원래의 게임 폴더로 옮긴다.
 
-- 스크립트 번역 진행도 : 123 / 136
+##### 9. Why am I Dead at Sea를 즐긴다.
 
-17/07/19
 
-- 스크립트 번역 진행도 : 127 / 136
+---
 
-17/07/20
+### 번역 제안
 
-- 스크립트 번역 진행도 : 128 / 136
-- Ghost-* 스크립트 번역 완료
+마음에 들지 않는 번역이 있으면 자유롭게 `Issues` 또는 def6488@gmail.com으로 제시해주세요.
 
-17/07/21
+---
 
-- 스크립트 번역 진행도 : 134 / 136
+### TODO
 
-17/07/22
+- 한글 행간 간격 조절
 
-- 스크립트 번역 진행도 : 136 / 136
-- 1차 번역 완료
-- 스크립트 원문 삭제
+---
 
-17/07/23
+### 기타
 
-- 패치 파일 제작 (beta)
+- 좋은 폰트 추천받습니다.
+
+---
