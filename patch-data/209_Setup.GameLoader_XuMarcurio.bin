@@ -49,39 +49,39 @@ action end
 
 action:response:root-2-A
 Xu
-root-2-A-3:Just curious.  I haven't seen her around either.
-root-2-A-4:Do you think something happened to her?
+root-2-A-3:그냥 궁금해서.  최근에 그녀를 못봤거든.
+root-2-A-4:그녀에게 무슨 일이 일어났다고 생각해?
 action end
 
 action:statement:root-2-A-3
-Marcurio:Well, I wouldn't normally complain.  She's always bugging me.
-Marcurio:But it has been unusually long since I last saw her.
+Marcurio:뭐, 나야 안 오면 좋지.  그녀는 언제나 날 달달 볶으니까.
+Marcurio:그렇지만 평소보다 훨씬 오래 못 보긴 했네.
 next:root-null
 action end
 
 action:statement:root-2-A-4
-Marcurio:...I wonder about that.
-Marcurio:Listen.  Keep your head down, alright?
+Marcurio:...글쎄.
+Marcurio:뭐, 신경 꺼.
 next:root-caution
 action end
 
 action:response:root-caution
 Xu
-root-caution-A:What does that mean?
-root-caution-B:You think someone did something to the captain?
+root-caution-A:무슨 소리야?
+root-caution-B:누군가 선장님에게 무슨 일을 저질렀다고 생각해?
 action end
 
 action:statement:root-caution-A
-Marcurio:You know, this is an old ship.  It's kind of broken down.
-Marcurio:Who knows what could cause it to break down or take water?
-Marcurio:Don't rock the boat, Sue.
+Marcurio:여긴 오래된 배니까.  여기저기 부서져있고.
+Marcurio:작은 일에 쉽게 부서져서 물이라도 들어오면 큰일난다고.
+Marcurio:괜히 소란 피우지마, Xu.
 next:root-null
 action end
 
 action:statement:root-caution-B
-Marcurio:That's exactly the kind of thing you shouldn't concern yourself with.
-Marcurio:Look, I'm sure there's nothing to worry about.
-Marcurio:She'll turn up tomorrow.
+Marcurio:그게 바로 니가 신경 꺼야 하는 종류의 일이야.
+Marcurio:아무것도 걱정할 것 없어.
+Marcurio:내일이면 그녀가 나타날 걸.
 next:root-null
 action end
 

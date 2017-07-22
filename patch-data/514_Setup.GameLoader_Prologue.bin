@@ -3,8 +3,8 @@ Prologue
 
 action:statement:root
 ???:오, 진짜로 됐잖아.
-???:그러니까 음... 돌아온걸 환영해.
-???:이리와서 나랑 얘기하자.  텔레파시는 너무 지쳐.
+???:그러니까 음... 돌아온 걸 환영해.
+???:이리와서 나랑 얘기하자.  텔레파시로 대화하는 건 너무 지쳐.
 next:end
 
 action end
@@ -16,7 +16,7 @@ dialogue start
 Ghost-Paulo
 
 action:statement:root
-Paulo:여어.  나는 Paulo야.
+Paulo:안녕.  나는 Paulo야.
 next:root-1
 action end
 
@@ -152,7 +152,7 @@ action end
 
 action:statement:root-1-A-2-B-3-what-how-C-4-G
 Paulo:저기 보이는 고양이를 한번 조종해 봐.
-Paulo:저 녀석의 영혼은 별로 저항하지 않을거라, 쉽게 완전히 조종할 수 있을 거야.
+Paulo:동물의 영혼은 별로 저항하지 않아서, 쉽게 조종할 수 있을 거야.
 Paulo:무슨 일이 일어나는 지 보자고.
 next:end
 action end

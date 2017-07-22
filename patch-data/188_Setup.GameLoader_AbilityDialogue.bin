@@ -4,19 +4,19 @@ AltonAbility
 
 action:response:root
 Alton
-root-2:Change the music.
+root-2:음악을 바꾼다.
 </>root-null:관둔다.:trigger.altonStopHeadphones.on
 action end
 
 action:response:root-2
 Alton
-root-2-A:Something modern:trigger.altonAbilityTrack1.on
-root-2-B:Something upbeat:trigger.altonAbilityTrack2.on
-root-2-trigger.musicDarrylUnlocked:Something weird:trigger.altonAbilityTrack3.on
-root-2-trigger.musicQuellaUnlocked:Something slow:trigger.altonAbilityTrack4.on
-root-2-trigger.musicMarcurioUnlocked:Something ominous:trigger.altonAbilityTrack5.on
-root-2-trigger.musicDonovanUnlocked:Something fast:trigger.altonAbilityTrack6.on
-root-2-trigger.musicPauloUnlocked:Something mysterious:trigger.altonAbilityTrack7.on
+root-2-A:모던한 노래:trigger.altonAbilityTrack1.on
+root-2-B:신나는 노래:trigger.altonAbilityTrack2.on
+root-2-trigger.musicDarrylUnlocked:이상한 노래:trigger.altonAbilityTrack3.on
+root-2-trigger.musicQuellaUnlocked:느린 노래:trigger.altonAbilityTrack4.on
+root-2-trigger.musicMarcurioUnlocked:우울한 노래:trigger.altonAbilityTrack5.on
+root-2-trigger.musicDonovanUnlocked:빠른 노래:trigger.altonAbilityTrack6.on
+root-2-trigger.musicPauloUnlocked:신비로운 노래:trigger.altonAbilityTrack7.on
 </>root-null:관둔다.:trigger.altonStopHeadphones.on
 action end
 

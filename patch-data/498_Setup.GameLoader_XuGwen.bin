@@ -62,42 +62,42 @@ Xu-Gwen
 
 action:response:chap4
 Xu
-chap4-A:Hey, Gwen.
-</>chap4-null:Goodbye.
+chap4-A:안녕하세요, Gwen.
+</>chap4-null:떠난다.
 action end
 
 action:statement:chap4-A
-Gwen:Xu...please tell them.  It wasn't me.
-Gwen:You're friends with them.  They'd listen to you.  You know it wasn't me, right?
+Gwen:Xu...제발 사람들한테 얘기해줘요.  난 아니에요.
+Gwen:당신은 그 사람들의 친구잖아요.  당신 얘기라면 들어줄 거에요.  당신은 제가 아니라는 걸 알잖아요, 그렇죠?
 next:chap4-B
 action end
 
 action:response:chap4-B
 Xu
-chap4-C:I don't know that, no.  If it wasn't you, who was it?
-chap4-D:I think you're mistaken.  I don't have any friends.
-</>chap4-null:See ya.
+chap4-C:나는 몰라요.  당신이 아니라면, 대체 누군데요?
+chap4-D:뭔가 착각하신 것 같네요.  전 친구가 없어요.
+</>chap4-null:떠난다.
 action end
 
 action:statement:chap4-C
-Gwen:What...?  I don't know.
-Gwen:I really don't know...
+Gwen:네...?  저도 몰라요.
+Gwen:정말로 몰라요...
 next:chap4-B
 action end
 
 action:statement:chap4-D
-Gwen:What do you mean?  What about Marcurio?  Alton?  Quella?
-Gwen:You get along with them so well...
+Gwen:그게 무슨 뜻이에요? Marcurio나 Alton, Quella는요?
+Gwen:그 사람들이랑 잘 지내는 것 같아 보였는데...
 next:chap4-E
 action end
 
 action:response:chap4-E
 Xu
-chap4-F:Gwen, don't be so naive.  Look around.  None of us are friends here.
+chap4-F:Gwen, 당신은 너무 순진해요.  주변을 둘러봐요.  여기 있는 사람들 중에 친구라고 부를 수 있는 사람은 아무도 없어요.
 action end
 
 action:statement:chap4-F
-Gwen:I don't understand...
+Gwen:모르겠어요...
 next:chap4-null
 action end
 
@@ -105,31 +105,31 @@ action end
 
 action:response:chap6
 Xu-Gwen
-chap6-A:Hey, so uh...how's it going?
-</>See ya.
+chap6-A:어...좀 어때요?
+</>떠난다.
 action end
 
 action:statement:chap6-A
-Gwen:Save it.  Ferdinand filled me in on your part in all of this.
+Gwen:Ferdinand가 당신이 한 일을 말해줬어요.
 next:chap6-B
 action end
 
 action:response:chap6-B
 Xu
-chap6-C:I was the one that got Marcurio to spill, and got you freed.
-chap6-D:Well, you're a lot more talkative now, I see.
-</>chap6-null:Never mind.
+chap6-C:제가 Marcurio가 비밀을 불게 만들고, 당신을 풀어줬죠.
+chap6-D:갑자기 말이 많아지셨네요.
+</>chap6-null:관둔다.
 action end
 
 action:statement:chap6-C
-Gwen:That's worth something, I guess.  Thank you.
-Gwen:You owe me some answers, though.
+Gwen:그건 정말로 고마워요.
+Gwen:그렇지만 당신은 아직 나한테 알려주지 않은 것이 있죠.
 next:chap6-B
 action end
 
 action:statement:chap6-D
-Gwen:There's a lot more to say.
-Gwen:The captain...Donovan...that child...someone has to talk for them.
+Gwen:해야 할 말이 있으니까요.
+Gwen:선장님...Donovan...그 꼬마...누군가는 그들에 대해서 말해야 해요.
 next:chap6-B
 action end
 
