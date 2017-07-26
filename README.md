@@ -3,6 +3,7 @@
 
 ![whyamideadatsea](http://cdn.akamai.steamstatic.com/steam/apps/359400/header.jpg)
 
+### CAUTION : CURRENTLY NOT WORKING PROPERLY!
 ---
 
 ## INSTALL
