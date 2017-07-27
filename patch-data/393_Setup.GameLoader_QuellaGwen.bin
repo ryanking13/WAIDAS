@@ -9,7 +9,7 @@ action:response:root
 Quella
 root-1:혹시 무슨 고민거리 있어요?
 root-2:안녕하세요, 전 Quella에요.:trigger.chap2greetGwen.on
-</>root-null:Never mind.
+</>root-null:관둔다.
 action end
 
 action:statement:root-1

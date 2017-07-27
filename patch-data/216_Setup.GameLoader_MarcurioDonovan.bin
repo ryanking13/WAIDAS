@@ -11,7 +11,7 @@ Marcurio
 root-1:당신은 제법 보기 힘든 것 같군요.
 root-2:당신은 무슨 일을 하죠?
 root-3:어디로 갑니까?
-</>root-null:See ya.
+</>root-null:떠난다.
 action end
 
 action:statement:root-1
@@ -41,7 +41,7 @@ action:response:root-2-C
 Marcurio
 root-2-D:멋지네요.  그런 직업을 가진 사람이 이런 촌구석으로 가는 배에는 왜?
 root-2-E:말하신 대로, 지루하군요.
-</>root-null:Never mind.
+</>root-null:관둔다
 action end
 
 action:statement:root-2-D

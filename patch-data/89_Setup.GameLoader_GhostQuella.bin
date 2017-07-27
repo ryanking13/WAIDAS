@@ -86,7 +86,7 @@ action:response:root2-captain2
 root2-captain2-A:그녀랑 같이 있었던 적이 있는지?:trigger.SmillaQuella.on
 root2-captain2-trigger.SmillaQuella:많은 일을 겪었다?:trigger.GhostBGProgressQuella.on
 root2-captain2-B:그녀가 다른 사람들이랑은 잘 지냈는지?
-</>root2-null:Never mind.
+</>root2-null:관둔다.
 action end
 
 action:statement:root2-captain2-A

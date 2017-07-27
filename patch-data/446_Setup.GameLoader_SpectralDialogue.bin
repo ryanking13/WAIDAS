@@ -284,7 +284,7 @@ action:response:root-2
 Smilla
 root-A:Darryl, 나에요.
 root-B:여기가 어디죠?
-root-null:Never mind.
+root-null:관둔다.
 action end
 
 action:statement:root-A
@@ -557,7 +557,7 @@ action:response:root-2
 Smilla
 root-A:Gwen, 나야.
 root-B:여기가 어디지?
-root-null:Never mind.
+root-null:관둔다.
 action end
 
 action:statement:root-A

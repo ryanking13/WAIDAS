@@ -24,7 +24,7 @@ action:response:root-1-A
 Marcurio
 root-1-B:되게 고급지게 보여서.  거창한 직업이라도 있을 것 같은데요?
 root-1-C:중요한 회사 미팅이라도 가는 것 처럼 보여서요.
-</>root-null:Never mind.
+</>root-null:관둔다
 action end
 
 action:statement:root-1-B

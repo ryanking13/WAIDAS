@@ -56,7 +56,7 @@ Darryl-Gwen
 action:response:chap4
 Darryl
 chap4-A:잘 지내고 있나?
-</>chap4-null:Bye.
+</>chap4-null:떠난다.
 action end
 
 action:statement:chap4-A
@@ -80,7 +80,7 @@ action:response:chap4-C-1
 Darryl
 chap4-C-2:증거가 없어.
 chap4-C-3:다 상관없는 일이야.
-chap4-null:Bye.
+chap4-null:떠난다.
 action end
 
 action:statement:chap4-C-2
@@ -105,7 +105,7 @@ action:response:chap6
 Darryl
 chap6-A:잘 해결되어서 기쁘군.:trigger.chap6darrylGwenProgress.on
 chap6-trigger.chap6darrylGwenProgress:너는 풀려났지만, 상황은 더 안 좋아졌군.
-</>chap6-null:Never mind.
+</>chap6-null:관둔다.
 action end
 
 action:statement:chap6-A

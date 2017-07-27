@@ -74,7 +74,7 @@ action:response:root-2-C
 Marcurio
 root-2-D:선장의 실종에 대해서 뭔가 아는 것이 있나?
 root-2-E:혹시 Ferdinand가 너에게 접촉하던가?  뭔가...도와달라고?
-</>root-null:Never mind.
+</>root-null:관둔다.
 action end
 
 action:statement:root-2-D

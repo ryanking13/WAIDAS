@@ -28,19 +28,19 @@ dialogue end
 dialogue start
 DonovansComputerGwen
 action:statement:root
-Gwen:It looks like he left his computer on...
+Gwen:컴퓨터를 켜두고 간 것 같다...
 next:root-1
 action end
 
 action:response:root-1
 Gwen
-root-2:See what's on the computer.
-</>root-null:Leave it alone.
+root-2:살펴본다.
+</>root-null:놔둔다.
 action end
 
 action:statement:root-2
-Gwen:Oh.  I need a password to log on.  That makes sense.
-Gwen:I have no idea what it would be, though.  I guess that's that.
+Gwen:아, 패스워드가 걸려있네.
+Gwen:아무거나 쳐봐도 안 되겠지.
 next:root-null
 action end
 dialogue end
@@ -50,7 +50,7 @@ dialogue end
 dialogue start
 DonovansHardwareGwen
 action:statement:root
-Gwen:These look like they have something to do with his computer, but I'm not sure exactly what they are.
+Gwen:뭔가 컴퓨터랑 같이 사용하는 도구같은 데, 정확히 어디에 쓰는 것인지는 모르겠네.
 next:root-null
 action end
 dialogue end
@@ -60,8 +60,8 @@ dialogue end
 dialogue start
 DonovansCamerasTwoGwen
 action:statement:root
-Gwen:These are...microphones?  Cameras?  And they're small, designed to be concealed.
-Gwen:What is he using these for?
+Gwen:이건...녹음기?  카메라?  숨기기에 좋은 디자인이야.
+Gwen:어디에 쓰려던 걸까?
 next:root-null
 action end
 dialogue end
@@ -71,8 +71,8 @@ dialogue end
 dialogue start
 DonovansCamerasGwen
 action:statement:root
-Gwen:Why would someone bring all of this surveillance equipment on board?
-Gwen:What is he hoping to see?
+Gwen:왜 이런 장비들을 배에 들고 탄 거지?
+Gwen:대체 뭘 하려는 거야?
 next:root-null
 action end
 dialogue end
@@ -82,8 +82,8 @@ dialogue end
 dialogue start
 SkeletonKeyGwen
 action:statement:root
-Gwen:It's a...metal rod?  It has holes and engravings all over it.  I'm not quite sure what it is.
-Gwen:There's a creepy face engraved on the top.
+Gwen:이건...검은색 막대?  어디에 쓰는 건지 모르겠네.
+Gwen:뭔가 괴상한 얼굴같은 게 머리 부분에 새겨져있어.
 next:root-null
 action end
 dialogue end

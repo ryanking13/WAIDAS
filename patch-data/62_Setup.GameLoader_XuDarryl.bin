@@ -152,7 +152,7 @@ action:response:root2-A-1
 Xu
 root2-A-2:안에 들어와봐요!  여기 계속 있으면 지루하지 않나요?
 root2-A-3:아, 제가 지금 방해하고 있는 건가요?
-</>root2-null:Never mind.
+</>root2-null:관둔다.
 action end
 
 action:statement:root2-A-2

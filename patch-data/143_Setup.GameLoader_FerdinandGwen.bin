@@ -23,7 +23,7 @@ action:response:root-1-A
 Ferdinand
 root-1-B:농담을 할 기분이 아닌가 보군요.
 root-2:혹시 뭔가 배에서 수상한 일은 없나요?
-</>root-null:Never mind.
+</>root-null:관둔다.
 action end
 
 action:statement:root-1-B

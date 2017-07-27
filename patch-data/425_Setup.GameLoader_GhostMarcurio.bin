@@ -454,7 +454,7 @@ root2-3:누가 선장을 없애고 싶어했다고 생각하는지?
 root3-captain:선장님에 대해서 뭔가 말해줄 수 있는 것?
 root-trigger.chap3SecretArea:이 배의 숨겨진 공간에 대해서 아는 것이 있는지?
 <!>trigger.chap6kitchenExposed:주방의 캐비넷이랑 냉장고에서 흥미로운 것을 발견했는데...
-</>root2-null:Never mind.
+</>root2-null:관둔다.
 action end
 
 

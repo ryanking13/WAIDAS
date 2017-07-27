@@ -493,7 +493,7 @@ action end
 
 action:statement:root3-captain2-A
 Xu:이번 여행부터.  출항 직전에 고용되었다고 하더라.
-Xu:아마도 배 운항을 취소할 수 없는 상황에서 급하게 고용한 거겠지.I guess things came up, but they can't just cancel the trip.  So, they settled.
+Xu:아마도 배 운항을 취소할 수 없는 상황에서 급하게 고용한 거겠지.
 next:root3-captain2
 action end
 
@@ -521,8 +521,8 @@ action end
 
 action:response:root3-A1
 <player>
-root3-A-2:아, 그랬었지!
-root3-A-3:너 오래된 꽃병이라고 하지 않았어?
+root3-A2:아, 그랬었지!
+root3-A3:너 오래된 꽃병이라고 하지 않았어?
 </>root3-null:관둔다.
 action end
 

@@ -49,7 +49,7 @@ action:response:root2
 Xu
 root2-A:왜 애완동물을 데리고 타신 건가요?
 root2-B:도매상이라고 하셨잖아요.  어떤 종류의 물건을 다루시는 건가요?:trigger.chap3xuGarvProgress.on
-</>root-null:Never mind.
+</>root-null:관둔다.
 action end
 
 action:statement:root2-A
