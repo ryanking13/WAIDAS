@@ -21,7 +21,7 @@ action:response:root-2
 Donovan
 root-A:좋아.
 root-B:별로 모임을 좋아하지 않아서.
-</>root-null:Bye.
+</>root-null:떠난다.
 action end
 
 action:statement:root-A

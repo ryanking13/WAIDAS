@@ -12,7 +12,7 @@ action:response:root
 Marcurio
 root-1:너랑 Xu사이에 좋은 소식을 못 들은 것 같은데?
 root-2:넌 이 일 끝나면 뭘 할 생각이냐?
-</>root-null:Bye.
+</>root-null:관둔다.
 action end
 
 action:statement:root-1
@@ -118,7 +118,7 @@ action:response:root-2-A
 Marcurio
 root-2-B:뭐, 해야 하지 않아?
 root-2-C:DJ나 계속 해봐. 앞으로 남은 일생동안.
-</>root-null:See ya.
+</>root-null:떠난다.
 action end
 
 action:statement:root-2-B

@@ -27,7 +27,7 @@ action end
 action:response:root-3
 Gwen
 <!>root-4:누군가 저를 미행하는 것 같아요.
-</>root-null:No.
+</>root-null:아니에요.
 action end
 
 action:statement:root-4

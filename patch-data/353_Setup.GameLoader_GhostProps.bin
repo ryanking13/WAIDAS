@@ -32,7 +32,7 @@ root-fail:"내가이걸어떻게알아"
 action end
 
 action:statement:root-fail
-null:Incorrect password.
+null:잘못된 비밀번호.
 Ferdinand:이런!  아니었군요!
 Ferdinand:사실, 맞을 리가 없지만요.
 next:root-password

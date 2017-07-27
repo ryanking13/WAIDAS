@@ -33,15 +33,15 @@ action end
 
 action:response:root-1-C
 Garv
-root-1-D:승진하고 싶다는 생각을 해본 적이 없다는 말인가?
+root-1-D:사실은 승진하고 싶은 마음을 품고있지는 않은가?
 </>root-null:떠난다.
 action end
 
 action:statement:root-1-D
-Ferdinand:......I hope you are not implying what I think you are.
-Ferdinand:Perhaps the subordinate usually benefits from their superior's absence, but sailing is a collaborative enterprise!
-Ferdinand:I would wish no harm on the captain for something as petty as title!
-Ferdinand:In fact, the thought thoroughly repulses me!  I am repulsed!
+Ferdinand:......제가 생각하고 있는 뜻으로 그 말을 하신 게 아니라고 믿겠습니다.
+Ferdinand:상급자가 없으면 이득을 얻는 종류의 일도 있겠습니다만, 항해라는 것은 협업이에요!
+Ferdinand:저는 우리 선장님이 아무 데도 다친 곳없이 무사히 돌아오기를 기원하고 있습니다.
+Ferdinand:선장님이 혹시라도 다치셨을까 생각하면, 너무 끔찍해요!
 next:root-null
 action end
 

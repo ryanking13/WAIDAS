@@ -20,7 +20,7 @@ action end
 action:response:root-trigger.xuIsFollowing-1
 Alton
 root-trigger.xuIsFollowing-2:아 그게, 아무도 전망실에 오시질 않더라구요.
-</>root-null:Nothing.
+</>root-null:아무것도 아니에요.
 action end
 
 action:statement:root-trigger.xuIsFollowing-2

@@ -20,7 +20,7 @@ action end
 action:response:root-2
 Donovan
 root-3:무슨 뜻인지 모르겠군.
-</>root-null:Bye.
+</>root-null:떠난다.
 action end
 
 action:statement:root-3

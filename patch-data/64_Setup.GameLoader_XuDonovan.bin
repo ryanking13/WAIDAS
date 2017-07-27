@@ -20,7 +20,7 @@ action end
 action:response:root-1-A
 Xu
 root-1-B:뭐, 지금 한여름이니까요. 별로 춥진 않을 텐데요.
-</>root-1-null:Nothing.
+</>root-1-null:아무것도 아니에요.
 action end
 
 action:statement:root-1-B

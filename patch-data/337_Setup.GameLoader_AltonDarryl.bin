@@ -22,7 +22,7 @@ action end
 action:response:root-press
 Alton
 root-press-1:아무것도요?
-</>root-null:Oh, okay.
+</>root-null:떠난다.
 action end
 
 action:statement:root-press-1
@@ -35,7 +35,7 @@ action end
 action:response:root-press-2
 Alton
 root-press-A:선장님이 맘에 안 들어요?
-</>root-null:Oh, okay.
+</>root-null:관둔다.
 action end
 
 action:statement:root-press-A

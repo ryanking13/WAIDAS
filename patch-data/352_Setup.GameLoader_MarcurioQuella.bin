@@ -113,31 +113,31 @@ action end
 
 action:response:root-4
 Marcurio
-root-4-A:I see.  Just make sure that curiosity doesn't get you in trouble.
-root-4-B:I think people are boring idiots.  Most people, at least.
-</>root-null:Talk to you later.
+root-4-A:그렇군요.  그 호기심이 당신을 위험에 빠트리지 않도록 주의해주세요.
+root-4-B:저는 사람들은 지루한 얼간이라고 생각해요.  대부분.
+</>root-null:떠난다.
 action end
 
 action:statement:root-4-A
-Quella:...What's that supposed to mean?
+Quella:...그게 무슨 뜻이에요?
 next:root-4-C
 action end
 
 action:response:root-4-C
 Marcurio
-root-4:It means take care of yourself.  That's all.
+root-4:그냥 조심하라는 뜻입니다.
 action end
 
 action:statement:root-4-B
-Quella:I'm not going to argue with you about the 'idiots' part, I suppose.  In some cases.
-Quella:But everyone has a rhyme and reason.  A deeper motivation.  Even if it's not one you share or agree with.
-Quella:Finding out what that is never gets boring for me.
+Quella:'얼간이'라는 표현은 뭐...일단 넘어가기로 하고.  당신 말이 맞을 수도 있어요.
+Quella:하지만 모든 사람들은 각자의 삶의 방식과 이유가 있고, 자신만의 동기가 있는 거에요.  그게 당신이 이해하고 공감할 수 없는 것일지라도.
+Quella:저에게 있어서, 그런 걸 발견하는 건 전혀 지루하지 않던걸요.
 next:root-4-D
 action end
 
 action:response:root-4-D
 Marcurio
-root-4-E:That's exactly the kind of hobby that can get people hurt.
+root-4-E:그건 사람들을 상처입힐 수 있는 취미로군요.
 action end
 
 action:statement:root-4-E

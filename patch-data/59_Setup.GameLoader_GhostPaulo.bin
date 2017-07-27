@@ -157,7 +157,7 @@ action end
 action:response:root2-catHint
 ???
 <?>root2-catHint-2:좀 더 말해줘...
-</>root2:Okay.
+</>root2:알겠어.
 action end
 
 action:statement:root2-catHint-2

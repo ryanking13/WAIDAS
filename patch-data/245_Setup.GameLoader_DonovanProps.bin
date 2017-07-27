@@ -243,7 +243,7 @@ action end
 
 action:statement:root-B
 null:고양이 오줌 냄새가 가득하다.
-null:Bleh.
+null:윽.
 next:root1
 action end
 

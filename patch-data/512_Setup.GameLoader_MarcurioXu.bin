@@ -12,7 +12,7 @@ Marcurio
 root-1:Alton이랑은 별로 잘 안 되었나 보지?
 root-2:넌 이 끔찍한 장소에서 어떻게 탈출할 생각이지?
 root-3:넌 어쩌다 이 배에 갇히게 된 거냐?
-</>root-null:Bye.
+</>root-null:떠난다.
 action end
 
 action:statement:root-1

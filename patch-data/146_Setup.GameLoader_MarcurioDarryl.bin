@@ -12,7 +12,7 @@ action:response:root
 Marcurio
 root-1:당신같은 사람이 이 밖에서 뭘 하는 거죠?
 root-2:당신은 어디로 가요?
-</>root-null:떠난다..
+</>root-null:떠난다.
 action end
 
 action:statement:root-1
@@ -79,7 +79,7 @@ action:response:root-2-A
 Marcurio
 root-2-B:그건 별로 답변이 안되는 군요.  사람들은 다들 어디로 가죠.
 root-gloomy:당신은 제가 본 사람 중에서 가장 부유한 우울증 환자 같네요.
-</>root-null:See ya.
+</>root-null:떠난다.
 action end
 
 action:statement:root-2-B
