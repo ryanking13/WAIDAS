@@ -10,18 +10,18 @@ Ghost-Paulo
 
 action:response:root2
 ???
-root2-trigger.lookingforxu:힌트가 필요해.
-root2-trigger.xuIsFollowing:힌트가 필요해.
-root2-trigger.gwenStillUnlocked:힌트가 필요해.
-root2-trigger.gwenToFerdinand:힌트가 필요해.
-root2-trigger.gwenMasterKey:힌트가 필요해.
-root2-trigger.chap2catTime:힌트가 필요해.
-root2-trigger.ferdinandUnlocked:힌트가 필요해.
+root2-trigger.lookingforxu:이제 뭘 해야 할까?
+root2-trigger.xuIsFollowing:이제 뭘 해야 할까? 
+root2-trigger.gwenStillUnlocked:이제 뭘 해야 할까?  
+root2-trigger.gwenToFerdinand:이제 뭘 해야 할까?   
+root2-trigger.gwenMasterKey:이제 뭘 해야 할까?    
+root2-trigger.chap2catTime:이제 뭘 해야 할까?     
+root2-trigger.ferdinandUnlocked:이제 뭘 해야 할까?      
 
-root2-trigger.chap3StartHint:이제 무엇을 해야 할까?
-root2-trigger.chap3DarrylHint:이제 무엇을 해야 할까?
-root2-trigger.chap3XuHint:이제 무엇을 해야 할까?
-root2-trigger.chap3DonovanHint:이제 무엇을 해야 할까?
+root2-trigger.chap3StartHint:이제 뭘 해야 할까?       
+root2-trigger.chap3DarrylHint:이제 뭘 해야 할까?        
+root2-trigger.chap3XuHint:이제 뭘 해야 할까?         
+root2-trigger.chap3DonovanHint:이제 뭘 해야 할까?          
 
 <?>root2-trigger.BeforeChapterThree:나에 대해서...
 <?>root2-trigger.ChapterThreeOn:좀 더 나에 대해서...

@@ -70,36 +70,36 @@ action end
 action:statement:root-1-A-2-B-3-where
 Paulo:너는 지금 작은, 다른 사람들이 크루즈 선이라고 부르는 곳에 있어.
 Paulo:뭐 실제로는 작은 페리에 가깝지.
-Paulo:지금은 바다 한 가운데어 항해 중이라, 정확한 위치는 모르겠네.
+Paulo:지금은 바다 한 가운데에서 항해 중이라, 정확한 위치는 모르겠네.
 next:root-questions2
 action end
 
 action:statement:root-1-A-2-B-3-who
 Paulo:몰라.
 Paulo:그렇지만... 알아내기 어렵지는 않을 거야.
-Paulo:어디선가 시체를 찾아낸다면, 그게 아마 너겠지.
+Paulo:어디든 시체가 있다면, 그게 아마 너겠지.
 next:root-questions2
 action end
 
 action:statement:root-1-A-2-B-3-you
 Paulo:내 이름은 Paulo.
 Paulo:난 죽은 사람을 볼 수 있어.
-Paulo:나도 잘 이해하는 건 아니라...
+Paulo:나도 내 능력을 잘 이해하는 건 아니야...
 next:root-questions2
 action end
 
 action:statement:root-1-A-2-B-3-why
 Paulo:그래, 그게 굉장히 중요한 질문이지?
 Paulo:근데 나도 몰라. 네 기억이 전부 사라졌고, 내가 되찾아 올 수 없었어.
-Paulo:나는 네 마지막 기억의 단편만 건져낼 수 있었어. 고통, 충격, 혼란... 순식간에 죽은 건 아니었지.
-Paulo:나도 널 더 돕고 싶어. 미안해.
+Paulo:나는 네 마지막 기억의 단편만 건져낼 수 있었어. 고통, 충격, 혼란... 넌 순식간에 죽은 건 아니었어.
+Paulo:나도 알려주고 싶지만, 더 이상은 아는 게 없어.
 next:root-questions2
 action end
 
 action:statement:root-1-A-2-B-3-what
 Paulo:솔직히 말해서, 난 네 도움이 필요해.
 Paulo:지금 여기서 뭔가 안 좋은 일이 벌어지고 있어. 이 배의 사람들에게 말야. 느낄 수 있어.
-Paulo:뭐라 설명할 수는 없지만, 우리는 살아있는 악몽 속으로 발걸음을 내딛고 있어.
+Paulo:구체적으로 설명할 수는 없지만, 점점 불길한 악몽이 다가오고 있어.
 Paulo:나 혼자서는 그걸 막을 수 없어. 나는 그냥 꼬마일 뿐이고, 다른 사람들은 내 말에 귀 기울여 주지 않아.
 next:root-1-A-2-B-3-what-how
 action end
@@ -128,7 +128,7 @@ action:statement:root-1-A-2-B-3-what-how-C-4-D
 Paulo:...아마도.  그렇지만 너무 흥분하지는 마. 네 존재는 너무나도 희박하니까.
 Paulo:네가 준비되지 않은 사람의 몸 속에 들어가려하면, 그 사람들의 의식이 너를 튕겨낼 거야.
 Paulo:누군가의 생각과 감정을 이해하고 나서야, 그 사람의 몸 속에 들어갈 수 있을 거야.
-Paulo:그러니까, 네가 누군가를 너 많이 이해할 수록, 네가 조종할 수 있는 것이 늘어나는 거지.
+Paulo:그러니까, 네가 누군가를 더 많이 이해할 수록, 네가 조종할 수 있는 것이 늘어나는 거지.
 next:root-1-A-2-B-3-what-how-C-5
 action end
 
@@ -140,10 +140,10 @@ action end
 
 
 action:statement:root-1-A-2-B-3-what-how-C-4-E
-Paulo:내가 봐온 바로는, 두 단계가 있어.  처음엔 사람들이 너에게 모든 전혀 의식을 내주지 않을 거야.
+Paulo:내가 봐온 바로는, 조종에는 두 단계가 있어.  처음엔 사람들이 너에게 모든 전혀 의식을 내주지 않을 거야.
 Paulo:그렇지만 누군가를 이해한다면, 너는 그 사람의 행동에 영향을 줄 수 있어.
 Paulo:그러면 너는 그 사람이 특정한 행동을 하도록 할 수 있지만, 이건 그 사람의 몸을 공유하는 것이고, 빼앗는 것은 아냐.
-Paulo:예를 들어, 너는 그 사람이 의도하지 않는 말은 하도록 할 수 없지.
+Paulo:예를 들어, 너는 그 사람이 의도하지 않는 말은 하게 할 수 없지.
 Paulo:하지만 네가 그 사람의 모든 것을 이해한다면, 너는 그 사람을 완전히 조종할 수 있어.
 Paulo:몸을 완전히 빼앗아서, 그들의 목소리로 말할 수 있지.
 Paulo:물론 쉽게 그런 레벨에 도달할 수 있는 건 아냐.
