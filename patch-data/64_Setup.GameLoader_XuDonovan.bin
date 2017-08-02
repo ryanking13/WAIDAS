@@ -84,7 +84,7 @@ action end
 
 action:statement:root-3-trigger.myOwnInterest
 Donovan:충고다.  객관적으로 좀 행동해 봐.
-Donovan:첫째로 넌 이 해골이 그려진 열쇠를 훔쳤고, 그 다음엔 나한테 이렇게 말하는 거...별로 현명하지 않군.
+Donovan:첫째로 넌 이 열쇠를 훔쳤고, 그 다음엔 나한테 이렇게 말하는 거...별로 현명하지 않군.
 Donovan:그러한 무모함이 널 위험에 빠트릴 거다.
 next:root-3
 action end

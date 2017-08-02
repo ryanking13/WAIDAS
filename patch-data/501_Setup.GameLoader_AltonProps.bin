@@ -41,13 +41,13 @@ action end
 
 action:response:root-3
 Alton
-root-3-A:Something modern:trigger.altonSpeakersTrack1.on
-root-3-B:Something upbeat:trigger.altonSpeakersTrack2.on
-root-3-trigger.musicDarrylUnlocked:Something weird:trigger.altonSpeakersTrack3.on
-root-3-trigger.musicQuellaUnlocked:Something slow:trigger.altonSpeakersTrack4.on
-root-3-trigger.musicMarcurioUnlocked:Something ominous:trigger.altonSpeakersTrack5.on
-root-3-trigger.musicDonovanUnlocked:Something fast:trigger.altonSpeakersTrack6.on
-root-3-trigger.musicPauloUnlocked:Something mysterious:trigger.altonSpeakersTrack7.on
+root-3-A:모던한 노래:trigger.altonSpeakersTrack1.on
+root-3-B:신나는 노래:trigger.altonSpeakersTrack2.on
+root-3-trigger.musicDarrylUnlocked:이상한 노래:trigger.altonSpeakersTrack3.on
+root-3-trigger.musicQuellaUnlocked:느린 노래:trigger.altonSpeakersTrack4.on
+root-3-trigger.musicMarcurioUnlocked:우울한 노래:trigger.altonSpeakersTrack5.on
+root-3-trigger.musicDonovanUnlocked:빠른 노래:trigger.altonSpeakersTrack6.on
+root-3-trigger.musicPauloUnlocked:신비한 노래:trigger.altonSpeakersTrack7.on
 </>root-null:관둔다.
 action end
 

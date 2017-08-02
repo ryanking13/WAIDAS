@@ -262,9 +262,9 @@ dialogue start
 VoidDiary
 
 action:statement:root
-null:네 잘못이야
-null:네 잘못이야
-null:네 잘못이야
+null:네 잘못이야 
+null:네 잘못이야  
+null:네 잘못이야   
 next:root-null
 action end
 dialogue end

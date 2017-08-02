@@ -2,8 +2,6 @@
 
 
 ![whyamideadatsea](http://cdn.akamai.steamstatic.com/steam/apps/359400/header.jpg)
-
-### CAUTION : CURRENTLY NOT WORKING PROPERLY!
 ---
 
 ## INSTALL
@@ -51,8 +49,12 @@
 
 ---
 
-### TODO
+### 게임 진행 중 문제 발생시
 
-- 한글 행간 간격 조절
+선택지가 소실되는 문제가 몇 차례 확인되었습니다.
+
+확인되는 대로 수정하고 있으나, 진행 중 문제 발생시
+
+swf 파일을 원본 파일로 교체하고 문제가 발생하는 부분을 진행하고 난 뒤에, 다시 swf파일을 패치된 파일로 교체하여 진행해주세요.
 
 ---

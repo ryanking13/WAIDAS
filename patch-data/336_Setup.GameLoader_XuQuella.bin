@@ -52,7 +52,7 @@ action:response:root-4
 Xu
 root-4-A:그럼 생활은 어떻게 하시나요?:trigger.quellasSavings.on
 root-4-trigger.quellasSavings:돈이 다 떨어지면요?
-root-4-trigger.quellasSavings-1:파산하는 거에 되게 침착하시네요.
+root-4-trigger.quellasSavings-1:되게 침착하시네요.
 <!>root-4-B:왜 글을 쓰는 거에요?:trigger.unlockQuella.on
 action end
 
@@ -78,7 +78,7 @@ action end
 
 action:statement:root-4-B
 Quella:좋은 질문이네요.  간단한 답은, 좋아서죠.
-Quella:그래도 말처럼 즐겁지만은 않아요.  자주 되게 진저리난다고 느껴요...계속 고쳐야 하거든요!
+Quella:그래도 말처럼 즐겁지만은 않아요.  자주 진저리난다고 느껴요...계속 고쳐야 하거든요!
 Quella:별로 돈도 안 되구요.
 Quella:그냥 말로는 전할 수 없는 걸 사람들과 나누고 싶은 것 같아요.
 Quella:무엇보다, 세상에 뭔가 남겨놓고 가고 싶은 거죠.

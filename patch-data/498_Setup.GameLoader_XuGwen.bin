@@ -15,7 +15,7 @@ root-2:직업이 어떻게 돼요?
 action end
 
 action:statement:root-1
-Gwen:...네?  아, 아뇨.  아무것도 아니네요.
+Gwen:...네?  아, 아뇨.  아무것도 아니에요.
 next:root-1-A
 action end
 

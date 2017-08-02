@@ -32,8 +32,8 @@ root-1-trigger.xuIsFollowing-3:그게 다 필요한 일인가요?
 action end
 
 action:statement:root-1-trigger.xuIsFollowing-2
-Ferdinand:일단은 아니긴 하지만...선장님의 일을 돕는 것도 일등항해사로서의 임무가 아닐까요?
-Ferdinand:그녀가 모든 걸 다 관리할 수는 없는 것이니까요.  그래서 제가 그녀의 눈과 귀과 되어 주는 겁니다!
+Ferdinand:일단은 그렇긴 하지만...선장님의 일을 돕는 것도 일등항해사로서의 임무가 아닐까요?
+Ferdinand:그녀가 모든 걸 다 관리할 수는 없는 것이니까요.  그래서 제가 그녀의 눈과 귀가 되어주는 겁니다!
 Ferdinand:그렇게 해서 배의 일이 언제나 잘 돌아가도록 하는 것이죠.
 next:root-null
 action end
