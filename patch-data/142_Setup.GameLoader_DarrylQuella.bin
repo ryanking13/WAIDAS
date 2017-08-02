@@ -8,13 +8,13 @@ Darryl-Quella
 
 action:response:root
 Darryl
-root-1:책은 좀 잘 되어가나?
-<!>root-B:저번에 죽는 것이 어떤 것인지 안다고 했었지.  그건 무슨 뜻이지?
+root-1:책은 좀 잘 되어가요?
+<!>root-B:저번에 죽는 것이 어떤 것인지 안다고 했는데.  그게 무슨 뜻이죠?
 </>root-null:관둔다.
 action end
 
 action:statement:root-1
-Quella:보통 사람들이 물어보면 긍정적으로 대답하는데요..
+Quella:보통 사람들이 물어보면 긍정적으로 대답하는데요...
 Quella:...지금은 그냥 답이 없어요.
 Quella:아이디어는 좋은 것 같은데, 그걸 글로 옮길 수가 없네요.
 Quella:그냥 글을 쓰면 다 엉망이고 부족하게 느껴져요.
@@ -25,15 +25,15 @@ action end
 
 action:response:root-2
 Darryl
-root-3:뭐 초보 작가들한테는 흔한 일이지.
-root-4:아무도 글 쓰는 일을 쉽다고 하지 않아.
-root-5:난 너를 믿어.
+root-3:뭐 초보 작가들한테는 흔한 일이죠.
+root-4:글 쓰는 일은 누구한테나 쉽지 않죠.
+root-5:난 당신을 믿어요.
 </>root-null:관둔다.
 action end
 
 action:statement:root-3
-Quella:제가 저를 초보라고 불러도 될 지 모르겠네요.
-Quella:시간이 지나면 나아지겠지만, 그건 저한테 충분하지 않은 것이라서요.
+Quella:그렇죠.
+Quella:시간이 지나면 나아질거에요. 하지만, 그건 저한테 충분히 주어지지 않는 것이라서요.
 next:root-2
 action end
 
@@ -58,7 +58,7 @@ action end
 
 action:response:root-B-2
 Darryl
-root-B-3:그래서 당신은 어째서 죽음을 받아들인 사람인데?
+root-B-3:죽음을 받아들였다는 게 무슨 뜻이죠?
 action end
 
 action:statement:root-B-3
@@ -80,9 +80,9 @@ action end
 
 action:response:root-B-6
 Darryl
-root-C:치료는 받아봤나?
-root-D:왜 가족이랑 같이 있지 않는 거지?
-root-E:...물어봐서 미안하다.
+root-C:치료는 받아봤어요?
+root-D:왜 가족이랑 같이 있지 않는 건가요?
+root-E:...물어봐서 미안합니다.
 action end
 
 action:statement:root-C
@@ -93,7 +93,7 @@ action end
 
 action:response:root-C-1
 Darryl
-root-C-2:내가 감당할 수 있어.  필요한만큼 얼마든지 돈을 내주지.
+root-C-2:내가 감당할 수 있어요.  필요한만큼 얼마든지 돈을 내줄게요.
 action end
 
 action:statement:root-C-2
@@ -117,7 +117,7 @@ action end
 
 action:response:root-F
 Darryl
-root-G:당신은 정말로...강한 사람이군.:trigger.chap3QuellaUnlocked.on
+root-G:당신은 정말로...강한 사람이군요.:trigger.chap3QuellaUnlocked.on
 action end
 
 action:statement:root-G
@@ -134,8 +134,8 @@ action end
 
 action:response:root2
 Darryl
-root2-A:왜 글을 쓰지?  왜 이런 때에?
-root2-B:내가 읽어 봐도 되나?  네가 쓰는 이야기?
+root2-A:왜 글을 쓰지요?  왜 이런 때에?
+root2-B:내가 읽어 봐도 될까요?  당신이 쓰는 이야기?
 </>root2-null:떠난다.
 action end
 
@@ -155,8 +155,8 @@ action end
 
 action:response:root2-C
 Darryl
-root2-D:결국은 누군가한테 보여줄 거잖아.
-root2-E:분명 재밌을 거야.  내가 고치는 걸 도와줄 수도 있지.
+root2-D:결국은 누군가한테 보여줄 거잖아요.
+root2-E:분명 재밌을 거에요.  내가 고치는 걸 도와줄 수도 있죠.
 </>root2-null:그러면 관둔다.
 action end
 
