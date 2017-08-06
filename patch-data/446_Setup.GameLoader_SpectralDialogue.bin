@@ -355,14 +355,14 @@ action end
 action:statement:root-B-C
 Darryl:나,
 Darryl:나는 지금 막 회사에서 돌아왔어
-Darryl:언제나 처럼
+Darryl:언제나처럼
 next:root-B-A
 action end
 
 action:statement:root-B-D
 Darryl:오 신이시여
 Darryl:안 돼
-Darryl:어째서  
+Darryl:어째서 
 Darryl:어째서  
 Darryl:어째서   
 next:root-B-A
@@ -370,9 +370,9 @@ action end
 
 
 action:statement:root-mari
-Darryl:미안해
+Darryl:미안해 
 Darryl:내가 미안해 
-Darryl:사랑해
+Darryl:사랑해 
 next:root-C
 action end
 
@@ -387,8 +387,8 @@ Darryl:내가 좀 더 잘 했어야 했어
 Darryl:알아차렸어야 했어
 Darryl:내 잘못이야
 Darryl:좀 더 잘 했어야 했는데
-Darryl:내 잘못이야
 Darryl:내 잘못이야 
+Darryl:내 잘못이야  
 next:root-C-2
 action end
 
@@ -407,8 +407,8 @@ root-C-E:당신 잘못이 아니에요.
 action end
 
 action:statement:root-C-C
-Darryl:사랑해
-Darryl:사랑해
+Darryl:사랑해 
+Darryl:사랑해  
 next:root-C-2
 action end
 
@@ -690,7 +690,7 @@ action end
 action:statement:root-fear-A
 Gwen:믿어
 Gwen:아냐
-Gwen:넌 눈구야
+Gwen:넌 누구야
 Gwen:나한테서 뭘 원하는 거야
 Gwen:나한테서 떨어져
 next:root-fear
@@ -736,7 +736,7 @@ action end
 action:statement:root-fear2-C
 Gwen:우리가 꼬마였을 때처럼
 Gwen:일어나면 네가 있고
-Gwen:모든 게 꿈이었다고 알려주면 될 텐데
+Gwen:모든 게 꿈이었다고 알려주면 될텐데
 Gwen:근데 어째서
 Gwen:왜 언제나 이렇게 현실처럼 느껴지는 걸까
 next:root-null
@@ -751,7 +751,7 @@ action end
 
 action:statement:root-fear4
 Gwen:그럼 대체 차이가 뭔데
-Gwen:내가 꾸는 악몽과 현실이 똑같은 데
+Gwen:내가 꾸는 악몽과 현실이 똑같은데
 Gwen:뭐가 뭐든 무슨 상관인 거야
 next:root-null
 action end

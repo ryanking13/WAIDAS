@@ -97,7 +97,7 @@ root-3:연다:trigger.chap6kitchenExposed.on
 action end
 
 action:statement:root-3
-Marcurio:뭔가 포장이 잘못 뜯긴 것 같다. 젠장.
+Marcurio:뭔가 포장이 실수로 뜯어진 것같다. 젠장.
 next:root-investigate
 action end
 
@@ -110,9 +110,9 @@ root-C:중앙 공간
 action end
 
 action:statement:root-A
-null:왼쪽 공간에는 액체류가 담긴 병,단지들이 들어있다.
+null:왼쪽 공간에는 액체류가 담긴 병, 단지들이 들어있다.
 null:몇 개 빼간 흔적이 남아있다.
-null:약간의 술냄새가 난다.  다가가니 냄새가 더욱 명확해진다.
+null:약간의 알코올 냄새가 난다.  다가가니 냄새가 더욱 명확해진다.
 next:root-investigate
 action end
 
@@ -125,7 +125,7 @@ action end
 action:statement:root-C
 null:중앙 공간에는 여러 식자재들이 들어있다.
 null:매우 엄격하게 관리되는 것들이다.
-null:근데 중앙에 이상하게 빈 플라스틱 용기들이 있다.  유통기한이 한참 지나기 전에 사용된 것으로 보인다.
+null:근데 중앙에 이상하게 빈 비닐 봉투가 있다.  유통기한이 한참 지나기 전에 사용된 것으로 보인다.
 next:root-investigate
 action end
 

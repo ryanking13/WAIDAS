@@ -54,7 +54,7 @@ chap4-A:제발...내 말을 들어줘요.
 action end
 
 action:statement:chap4-A
-Marcurio:그래. 듣고 이어.
+Marcurio:그래. 듣고 있어.
 next:chap4-B
 action end
 
