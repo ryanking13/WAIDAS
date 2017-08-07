@@ -58,3 +58,9 @@
 swf 파일을 원본 파일로 교체하고 문제가 발생하는 부분을 진행하고 난 뒤에, 다시 swf파일을 패치된 파일로 교체하여 진행해주세요.
 
 ---
+
+### 샘플 스크린샷
+
+![](./markdown-image/sample0.png)
+
+![](./markdown-image/sample1.png)
