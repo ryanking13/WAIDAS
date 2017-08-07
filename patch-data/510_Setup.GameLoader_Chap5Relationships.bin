@@ -74,46 +74,46 @@ dialogue start
 QuellaDarrylFinish
 
 action:statement:root3
-Darryl:괜찮아?
+Darryl:괜찮아요?
 Quella:그냥 좀 지쳤을 뿐이에요.  고마워요.
-Darryl:지금 작업하는 책을 완성하고나면, 이 일에 대해서 써보는 것도 괜찮을 것 같군.
+Darryl:지금 작업하는 책을 완성하고나면, 이 일에 대해서 써보는 것도 괜찮을 것 같군요.
 Quella:괜찮네요.  아쉽게도, 그럴 시간은 저한테 주어지지 않을 것 같지만요.
 Quella:...음, 이걸로 헤어지는 건 아니겠죠?  나랑 같이 가지 않을래요?
-Darryl:나는 아무 곳으로도 가지 않아.
+Darryl:나는 아무 곳으로도 가지 않아요.
 Quella:어머, 나돈데.  같이 가면 어때요?
 Quella:이것 하나만 약속해줘요.
 Quella:나보다 먼저 가지 말아요.
 Darryl:...
-Darryl:그래.  약속하지.
+Darryl:그래.  약속할게요.
 next:root-null
 action end
 
 action:statement:root2
-Darryl:괜찮아?
+Darryl:괜찮아요?
 Quella:그냥 좀 지쳤을 뿐이에요.  고마워요.
-Darryl:이제 여기서 헤어져야겠군.
+Darryl:이제 여기서 헤어져야겠네요.
 Quella:...있잖아요, 나한테 좋은 생각이 있어요.  우리 둘이 같이 다니는 거 어때요?
-Darryl:별로 좋은 생각같지 않은데.  나는 내가 어디로 가는지 몰라.
+Darryl:별로 좋은 생각같지 않은데요.  나는 내가 어디로 가는지 몰라요.
 Quella:괜찮아요.  가면서 찾아내면 되죠!
-Darryl:내가 별로 만족스러운 동행인은 아닐거야.
+Darryl:내가 별로 만족스러운 동행인은 아닐거에요.
 Quella:그런 거 별로 바라지 않아요.
-Darryl:...그래.  분명히 난 경고했어.
+Darryl:...그래.  분명히 난 경고했어요.
 Quella:못들은 걸로 할게요.
 next:root-null
 action end
 
 action:statement:root1
-Darryl:괜찮아?
+Darryl:괜찮아요?
 Quella:그냥 좀 지쳤을 뿐이에요.  고마워요.
-Darryl:이제 여기서 헤어져야겠군.
+Darryl:이제 여기서 헤어져야겠군요.
 Quella:...있잖아요, 나한테 좋은 생각이 있어요.  우리 둘이 같이 다니는 거 어때요?
-Darryl:별로 그러고 싶지 않은데.
-Darryl:나는 아무도 없는 곳으로 가고싶을 뿐이야.
+Darryl:별로 그러고 싶지 않은데요.
+Darryl:나는 아무도 없는 곳으로 가고싶을 뿐이에요.
 Quella:Darryl...난 당신을 돕고 싶어요.  다 괜찮아질 거에요, 믿어줘요.
 Darryl:...
 Darryl:내가 딱히 괜찮아지고 싶어하지 않는다면?
-Darryl:이제부터 내가 뭘 할지 당신이 신경쓸 이유는 하나도 없어.
-Darryl:전에도 말했듯이...우린 그냥 타인일 뿐이야.
+Darryl:이제부터 내가 뭘 할지 당신이 신경쓸 이유는 하나도 없어요.
+Darryl:전에도 말했듯이...우린 그냥 타인일 뿐이에요.
 Darryl:그럼 이만.
 next:root-null
 action end
