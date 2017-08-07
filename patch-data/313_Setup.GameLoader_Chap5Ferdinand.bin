@@ -5,7 +5,7 @@ Ferdinand-EvilDonovan
 
 action:response:root
 Ferdinand
-root-A:Donovan, 제발, 미쳤습니까!  일등항해사로서 말하건대, 이건 심각하게 선박 규정을 위반하는 행동입니다! regulations!
+root-A:Donovan, 제발, 미쳤습니까!  일등항해사로서 말하건대, 이건 심각하게 선박 규정을 위반하는 행동입니다!
 root-B:당신을 쏜 사람이 누군지는 못 봤습니까? 가까이에서 총을 맞았는데 누군지 모른다는 건 이상한데요.
 </>root-C:관둔다.
 action end

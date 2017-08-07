@@ -208,7 +208,7 @@ action end
 
 action:response:chap6-2
 Quella
-chap6-2-A:그런 거 없어요.  꼭 이유가 필요해요?I don't know if I have a reason.  Do I need one?:trigger.chap6quellaGwenProgress.on
+chap6-2-A:그런 거 없어요.  꼭 이유가 필요해요?:trigger.chap6quellaGwenProgress.on
 chap6-trigger.chap6quellaGwenProgress:이상한 게 아니에요, 지금까지 당신이 삶에서 배운 게 그런 것일 뿐이죠.
 action end
 
