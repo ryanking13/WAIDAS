@@ -50,7 +50,7 @@ action end
 action:statement:root2-xuHint-2
 Paulo:흠... 그 Alton이라는 사람이 관심있는 여자가 있는 것 같던데.
 Paulo:그는 위층에 있지?  그를 한번 조종해봐.
-Paulo:아마 Xu라는 이름의 여자를 찾고 있을 거야...
+Paulo:아마 Sue라는 이름의 여자를 찾고 있을 거야...
 next:root2
 action end
 
@@ -69,7 +69,7 @@ action:response:root2-xuFollowHint
 action end
 
 action:statement:root2-xuFollowHint-2
-Paulo:Xu가 이 배의 모든 사람들이랑 얘기해보자고 했지?
+Paulo:Sue가 이 배의 모든 사람들이랑 얘기해보자고 했지?
 Paulo:대부분은 위층에 있을 거야.  거기서부터 시작해봐.
 Paulo:아래층에 있는 사람도 있는데, 그들은 대부분 자기 방 안에 있을 거야...
 next:root2
@@ -91,7 +91,7 @@ action:response:root2-gwenHint
 action end
 
 action:statement:root2-gwenHint-2
-Paulo:지금 당장 조종할 수 있는 사람은 Xu 딱 한 명이지.
+Paulo:지금 당장 조종할 수 있는 사람은 Sue 딱 한 명이지.
 Paulo:그녀는 물질적인 것에 굉장히 집착하지.
 Paulo:그런 그녀가 가난한 예술가랑 만나면 어떻게 될까?
 next:root2
@@ -138,9 +138,9 @@ action end
 
 action:statement:root2-gwenKeyHint-2
 Paulo:사람을 완전히 조종해보는 데에 Alton이 좋은 후보가 될 것 같아.  그는 뭐랄까...강한 의지가 있는 사람이 아니라서.
-Paulo:그와 Xu 사이에 갈등이 있지.  그게 그의 마음을 여는 열쇠가 될 거야.
+Paulo:그와 Sue 사이에 갈등이 있지.  그게 그의 마음을 여는 열쇠가 될 거야.
 Paulo:그의 감정을 다 드러나게 하려면, 얘기를 잘 들어주는 사람이 필요해.
-Paulo:그가 먼저 Xu와 대화하게 하고, 그리고 나서 Quella가 그의 얘기를 들어주면, 아마도 될 거야.
+Paulo:그가 먼저 Sue와 대화하게 하고, 그리고 나서 Quella가 그의 얘기를 들어주면, 아마도 될 거야.
 Paulo:그렇게 그를 완전히 조종할 수 있게 되면 Donovan과 대화할 수 있을 거야. 그 뒤에는...아무도 모르지.
 next:root2
 action end
@@ -195,7 +195,7 @@ action:statement:root2-trigger.chap3StartHint
 Paulo:이전까지는 네가 누군지 의문이 있었는데...이제는 확실해졌네.
 Paulo:대체 누가 이 배의 선장을 살해한 걸까?
 Paulo:Darryl은 이 사건을 다른 사람들보다 좀 더 개인적으로 받아들이는 것 같아.  왜 그런지 궁금한 걸.
-Paulo:...뜬금없다고 생각할 수도 있는데, 내 생각에는 Xu방의 상자가 중요할 것 같아.
+Paulo:...뜬금없다고 생각할 수도 있는데, 내 생각에는 Sue 방의 상자가 중요할 것 같아.
 next:root2-chap3startHint
 action end
 
@@ -238,9 +238,9 @@ action end
 action:statement:root2-trigger.chap3XuHint
 Paulo:흠...아무래도 너한테 단서가 부족한 것 같네.
 Paulo:다시 처음으로 돌아가보자.
-Paulo:네가 살해당한 날 밤에, 누군가 Xu의 방에서 무엇인가를 훔쳤지.
+Paulo:네가 살해당한 날 밤에, 누군가 Sue의 방에서 무엇인가를 훔쳤지.
 Paulo:그게 뭔지 궁금하지 않아?  굉장히 중요할 것 같은데.
-Paulo:그걸 아는 사람은 두 사람밖에 없지. Xu랑...그녀의 방에 침입한 사람.
+Paulo:그걸 아는 사람은 두 사람밖에 없지. Sue랑...그녀의 방에 침입한 사람.
 next:root2-chap3xuHint
 action end
 
@@ -251,7 +251,7 @@ action:response:root2-chap3xuHint
 action end
 
 action:statement:root2-chap3xuHint-2
-Paulo:Xu는 Donovan이 자기 방에 침입했다고 생각하잖아?
+Paulo:Sue는 Donovan이 자기 방에 침입했다고 생각하잖아?
 Paulo:하지만 Donovan이 그녀의 약점을 쥐고 있어서, 풀어나가기 어려운 상황이지.
 Paulo:만약 그 중 한 명을 완전히 조종할 수 있다면, 뭔가 길이 보이지 않겠어?
 next:root2
@@ -491,7 +491,7 @@ shipDirection-1:무슨 일이야?
 action end
 
 action:statement:shipDirection-1
-Paulo:미안, 방해하려던 건 아닌데.  Xu의 비밀을 잡아낸 건 잘했어.
+Paulo:미안, 방해하려던 건 아닌데.  Sue의 비밀을 잡아낸 건 잘했어.
 Paulo:별로 네 죽음과 관계있어 보이지는 않지만, 혹시 모르잖아?
 Paulo:뭐 그걸 말하려던 건 아니고.  좋은 소식과 나쁜 소식이 있어.
 next:shipDirection-2

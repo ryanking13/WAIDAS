@@ -28,7 +28,7 @@ action end
 action:statement:root-3
 Alton:기쁜 걸!  다른 사람들은 다 바빠서 전혀 들러주질 않거든.
 Alton:내가 그 사람들의 긴장을 풀어줘야 하는 역할인데도 말야.
-Alton:특히 Xu가 들러준다면 참 좋을텐데...
+Alton:특히 Sue가 들러준다면 참 좋을텐데...
 Alton:....
 Alton:고양이랑 얘기하려고 하다니, 내가 미쳤지.
 next:root-null
@@ -85,7 +85,7 @@ action end
 
 action:statement:root3-3
 Alton:다 예전으로 돌아갔으면 좋겠다.
-Alton:대체 무슨 일이 일어나는 거야.  Xu...선장...
+Alton:대체 무슨 일이 일어나는 거야.  Sue...선장...
 Alton:뭘 해야 할지, 뭘 할 수 있는 지 전혀 모르겠어.
 next:root3-null
 action end

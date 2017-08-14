@@ -145,7 +145,7 @@ Marcurio-Gwen
 
 action:response:root5
 Marcurio
-root5-A:운이 좋은 걸.  Xu한테 가서 자유를 줘서 감사하다고 말하라고.:trigger.relationshipGwenMarc.on
+root5-A:운이 좋은 걸.  Sue한테 가서 자유를 줘서 감사하다고 말하라고.:trigger.relationshipGwenMarc.on
 root-null:떠난다.
 action end
 

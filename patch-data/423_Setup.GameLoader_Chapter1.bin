@@ -13,7 +13,7 @@ Marcurio:그래, 저녁 식사 타임은 끝났지.  그래도 주방으로 돌�
 Alton:주방에 있는 걸 정말 좋아하는구나.  네가 어디 놀러가는 건 한 번도 못 본 것 같아.
 Alton:전망실에서의 내 일은 끝나서, 난 이제 쉬러가려고!
 Marcurio:...그래서 뭔가 할 말이라도?
-Alton:아니 그냥, 아 그러고보니 Xu를 찾고 있는데. 걔도 지금 휴식 시간이지?
+Alton:아니 그냥, 아 그러고보니 Sue를 찾고 있는데. 걔도 지금 휴식 시간이지?
 Marcurio:그럼, 당연하지.
 Alton:어디있는 지 알아?
 Marcurio:아니.
@@ -36,7 +36,7 @@ AltonIntroTwo
 action:statement:root
 
 Alton:....
-Alton:위 층에 가서 Xu의 방을 확인할 수도 있는데, 그래도 되는 지 모르겠네.
+Alton:위 층에 가서 Sue의 방을 확인할 수도 있는데, 그래도 되는 지 모르겠네.
 Alton:이상하려나?  모르겠네...
 next:end
 

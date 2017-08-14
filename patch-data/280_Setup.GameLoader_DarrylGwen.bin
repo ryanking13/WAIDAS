@@ -116,7 +116,7 @@ action end
 
 action:statement:chap6-trigger.chap6darrylGwenProgress
 Gwen:맞아요.
-Gwen:Marcurio가 제 방에 열쇠를 몰래 가져다뒀죠, Xu는 그가 매수당한 거라고 했지만.
+Gwen:Marcurio가 제 방에 열쇠를 몰래 가져다뒀죠, Sue는 그가 매수당한 거라고 했지만.
 Gwen:결국 누군가는 이 일의 배후에 있단 얘기니까요.
 next:chap6-2
 action end

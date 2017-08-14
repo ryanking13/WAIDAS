@@ -35,7 +35,7 @@ action end
 
 action:statement:root-2
 Marcurio:무슨 일이야?
-Marcurio:Xu랑 탐정놀이라도 하는 중인가?
+Marcurio:Sue랑 탐정놀이라도 하는 중인가?
 next:root-2-A
 action end
 
@@ -681,7 +681,7 @@ Marcurio:알겠군.
 Marcurio:너도 지시를 받고 있었던 거지?  과연 그런 거군.
 Marcurio:좋아.  정답이야.  참 잘했어요.
 Marcurio:열쇠를 받아서 그걸 Gwen의 방에 숨겨두라는 지시가 있었고, 난 그걸 실행했다.  그래서 이 일은 비밀로 유지되어야 해.
-Marcurio:사람들이 알게 되면 이 배의 상황이 완전히 뒤집히겠지.  난 돈이 필요해, Xu.  정말로 필요해.
+Marcurio:사람들이 알게 되면 이 배의 상황이 완전히 뒤집히겠지.  난 돈이 필요해, Sue.  정말로 필요해.
 next:root3-confession3
 action end
 
@@ -715,7 +715,7 @@ action end
 
 action:statement:root3-confession3-C
 Marcurio:뭐?  그 멍청이가 알게되면, 무슨 일이 일어날 지 알 수가 없다고.
-Marcurio:Xu, 제발, 좀 이성적으로 생각해...
+Marcurio:Sue, 제발, 좀 이성적으로 생각해...
 next:root3-confession4
 action end
 

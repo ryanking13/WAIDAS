@@ -56,7 +56,7 @@ action end
 
 action:statement:root-4
 Ferdinand:베개!  푹신푹신!  이해했다!
-Ferdinand:당장 Xu에게 말해서 더 푹신푹신하고 편안한 베개를 제공해 드리겠습니다!
+Ferdinand:당장 Sue에게 얘기해서 더 푹신푹신하고 편안한 베개를 제공해 드리겠습니다!
 next:root-null
 action end
 

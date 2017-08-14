@@ -95,7 +95,7 @@ action end
 
 action:statement:root-day2
 Ferdinand:이틀 전에는 여러가지 일이 있었지요.
-Ferdinand:Alton과 Xu가 사람들한테 뭔가를 물어보면서 돌아다녔고.
+Ferdinand:Alton과 Sue가 사람들한테 뭔가를 물어보면서 돌아다녔고.
 Ferdinand:Quella도 사람들과 대화하면서 계속 돌아다녔다.
 Ferdinand:저녁에는 Gwen양이 이 방에 침입했군요.  내가 그렇게 경고를 했는데도!
 next:root-days

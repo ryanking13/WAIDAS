@@ -42,7 +42,7 @@ Quella
 action end
 
 action:statement:root-1
-Quella:전자기기와 보석들이 상자에 담겨있다.  전부 다 Xu의 것인가?
+Quella:전자기기와 보석들이 상자에 담겨있다.  전부 다 Sue의 것인가?
 Quella:잠깐...이 열쇠에는 'Darryl'이라고 써져 있잖아.
 Quella:...
 Quella:어떤 상황인 지 알 것 같네.
@@ -52,7 +52,7 @@ action end
 
 action:statement:root2
 Quella:전자기기와 보석들이 상자에 담겨있다.
-Quella:여기서 Darryl의 열쇠를 찾았다.  아마도 여기에 Xu의 소유물은 아무 것도 없을 것이다.
+Quella:여기서 Darryl의 열쇠를 찾았다.  아마도 여기에 Sue의 소유물은 아무 것도 없을 것이다.
 next:root-null
 action end
 

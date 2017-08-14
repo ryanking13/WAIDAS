@@ -124,7 +124,7 @@ action end
 
 action:response:root3
 Quella
-root3-1:Xu의 방에 열쇠가 있더군요.  그녀가 훔친 것 같아요.
+root3-1:Sue의 방에 열쇠가 있더군요.  그녀가 훔친 것 같아요.
 action end
 
 action:statement:root3-1

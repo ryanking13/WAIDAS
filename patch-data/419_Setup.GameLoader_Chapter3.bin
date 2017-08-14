@@ -49,7 +49,7 @@ next:root-null
 action end
 
 action:statement:root4
-Marcurio:Xu, 안 갈거야?
+Marcurio:Sue, 안 갈거야?
 Xu:...아 갈게!  가야지.
 next:root-null
 action end

@@ -9,7 +9,7 @@ action:response:root
 Alton
 root-1:어이 Marcurio, 뭐하고 있어?
 root-trigger.ChapterTwoOn:뭐 하나 물어봐도 돼?
-root-trigger.lookingforxu:Xu 본 적 있어?
+root-trigger.lookingforxu:Sue 본 적 있어?
 </>root-null:관둔다.
 action end
 
@@ -48,7 +48,7 @@ action end
 
 action:response:root-darkSide
 Alton
-root-darkSide-A:Xu에 대해서 어떻게 생각해?
+root-darkSide-A:Sue에 대해서 어떻게 생각해?
 root-darkSide-B:혹시 네 물건 중에 최근에 사라지거나 한 거 있어?
 </>root-darkSide-null:관둔다.
 action end
