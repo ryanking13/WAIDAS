@@ -1,5 +1,6 @@
-## Why Am I Dead At Sea 한국어 패치
+# Why Am I Dead At Sea 한국어 패치
 
+## 현재 게임 업데이트로 인해 제대로 동작하지 않습니다. (2018/07/12)
 
 ![whyamideadatsea](http://cdn.akamai.steamstatic.com/steam/apps/359400/header.jpg)
 ---
