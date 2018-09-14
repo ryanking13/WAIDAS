@@ -1,7 +1,5 @@
 # Why Am I Dead At Sea 한국어 패치
 
-## 현재 게임 업데이트로 인해 제대로 동작하지 않습니다. (2018/07/12)
-
 ![whyamideadatsea](http://cdn.akamai.steamstatic.com/steam/apps/359400/header.jpg)
 ---
 
@@ -13,11 +11,27 @@
 
 - 패치 파일 (Clone or Download -> Download Zip)
 
+### 주의사항
+
+게임이 업데이트 되면서 최신 버전에 대해서 패치가 동작하지 않습니다.
+
+```
+steam://nav/console
+```
+
+에 접속해서
+
+```
+download_depot 359400 359401 2994259498244540482
+```
+
+위 커맨드로 패치가 적용되는 버전을 사용해주세요.
+
 ### 설치
 
 ##### 1. Why Am I Dead At Sea 게임 swf 파일 (WhyAmIDeadAtSea.swf)을 찾는다.
 
-- 스팀 기준, 속성-로컬 파일-로컬 컨텐츠 폴더 보기
+- download_depot 결과 생성된 폴더
 
 ##### 2. 찾은 swf 파일을, JPEX Free Flash Decompiler를 다운로드 받은 폴더에 옮긴다.
 - ffdec.bat파일과 swf파일이 같은 폴더에 위치하도록 한다.
@@ -44,6 +58,8 @@
 ![](./markdown-image/6.PNG)
 
 ##### 8. swf 파일을 다시 원래의 게임 폴더로 옮긴다.
+
+- depot 폴더가 아닌, 게임 파일이 원래 설치된 폴더
 
 ##### 9. Why am I Dead at Sea를 즐긴다.
 
